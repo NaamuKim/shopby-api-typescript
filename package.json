@@ -1,0 +1,26 @@
+{
+  "name": "shopby-api-typescript",
+  "version": "1.0.0",
+  "description": "shopby-api-fetching-with-openapi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NaamuKim/shopby-api-typescript.git"
+  },
+  "author": "naamukim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NaamuKim/shopby-api-typescript/issues"
+  },
+  "homepage": "https://github.com/NaamuKim/shopby-api-typescript#readme",
+  "dependencies": {
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "prettier": "^3.1.1",
+    "ts-morph": "^21.0.1"
+  }
+}
