@@ -14,7 +14,6 @@ program
       console.error('input file path required');
       return;
     }
-    console.log('options', options);
     const file = await generateFullTypedFile(input);
     const fileContentAsString = file.getFullText();
     await writeFile(options.output, fileContentAsString);
