@@ -4,7 +4,7 @@
   "description": "shopby-api-fetching-with-openapi",
   "main": "index.js",
   "scripts": {
-    "start:ts-codegen": "ts-node ./ts-codegen/index.ts"
+    "start:ts-codegen": "ts-node-transpile-only ./ts-codegen/index.ts"
   },
   "repository": {
     "type": "git",

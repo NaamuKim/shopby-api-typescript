@@ -5,7 +5,7 @@ program
   .name('ts-codegen')
   .argument('<file>', 'input file path')
   .option(
-    '-o, --output <output>',
+    '-o, --output <file>',
     'output file path',
     process.cwd() + '/output.ts'
   )
@@ -14,7 +14,7 @@ program
       console.error('input file path required');
       return;
     }
-    // TODO: output 옵션이 감지되지 않는 에러 발생
+    console.log('options', options);
     const file = await generateFullTypedFile(input);
     const fileContentAsString = file.getFullText();
     await writeFile(options.output, fileContentAsString);
