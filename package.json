@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/NaamuKim/shopby-api-typescript#readme",
   "dependencies": {
+    "@tanstack/react-query": "^5.17.7",
+    "openapi-fetch": "^0.8.2",
     "typescript": "^5.3.3"
   },
   "devDependencies": {
