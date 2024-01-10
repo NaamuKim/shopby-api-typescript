@@ -1,6 +1,6 @@
 import project from './project';
 import { modifyNullableDescriptionToUndefinedType } from './undefinedCheck';
-import { sliceEnumDescription } from './sliceEnum';
+import { sliceUnionWithDescription } from './sliceUnionWithDescription';
 import { pipe } from './fn';
 
 export const generateFullTypedFile = (filePath: string) => {
@@ -8,6 +8,6 @@ export const generateFullTypedFile = (filePath: string) => {
   return pipe(
     sourceFile,
     modifyNullableDescriptionToUndefinedType,
-    sliceEnumDescription
+    sliceUnionWithDescription
   );
 };
