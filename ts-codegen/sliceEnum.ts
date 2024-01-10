@@ -1,24 +1,26 @@
 import { SourceFile, SyntaxKind } from 'ts-morph';
 
+// TODO 콜론 기준 앞 뒤를 나누어 영어인 부분을 리턴해야함
+function isEnglish(text: string): boolean {
+  return /^[A-Za-z]+$/.test(text);
+}
 export function sliceEnumDescription(sourceFile: SourceFile) {
   sourceFile.forEachDescendant((node) => {
     // '@enum' 주석이 있는지 확인
-    if (node.getKind() === SyntaxKind.PropertySignature) {
-      const propertySignature = node;
-      const comments = propertySignature.getLeadingCommentRanges();
-      const hasEnumComment = comments.some((comment) =>
-        comment.getText().includes('@enum')
-      );
+    if (node.getKind() === SyntaxKind.UnionType) {
+      const unionTypeNode = node;
+      console.log(unionTypeNode.getText());
 
-      if (hasEnumComment) {
-        // 문자열 리터럴 타입인 경우 처리
-        const text = propertySignature.getType().getText();
-        const replacedText = text
-          .split('|')
-          .map((part) => part.trim().match(/^"([^:]+)"/)?.[1] ?? part.trim())
-          .join(' | ');
-        //   propertySignature.replaceWithText(`${propertyName}?: ${replacedText}`);
-      }
+      const stringUnionArray = unionTypeNode.getText().split(' | ');
+      if (stringUnionArray.length === 1) return;
+
+      const removedDescriptionWithColon = stringUnionArray.map((text) => {
+        if (!text.includes(':')) return text;
+        return text.split(':')[0] + '"';
+      });
+
+      if (removedDescriptionWithColon.length === 1) return;
+      unionTypeNode.replaceWithText(removedDescriptionWithColon.join(' | '));
     }
   });
   return sourceFile;

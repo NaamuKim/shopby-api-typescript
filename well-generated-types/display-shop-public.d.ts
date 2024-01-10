@@ -864,11 +864,7 @@ export interface components {
          * @example [MAIN]
          * @enum {string}
          */
-        pageTypes:
-          | 'MAIN: Main page'
-          | 'CATEGORY: Exhibition Category'
-          | 'EVENT: Special exhibition'
-          | 'PRODUCT: Product';
+        pageTypes: 'MAIN' | 'CATEGORY' | 'EVENT' | 'PRODUCT';
       };
       /**
        * @description 팝업 노출 위치
@@ -876,22 +872,22 @@ export interface components {
        * @enum {string}
        */
       popupPosition:
-        | 'MIDDLE: Middle'
-        | 'LEFT: Left Middle'
-        | 'RIGHT: Right Middle'
-        | 'MIDDLE_TOP: Middle Top'
-        | 'LEFT_TOP: Top Left'
-        | 'RIGHT_TOP: Right Top'
-        | 'MIDDLE_BOTTOM: Middle Bottom'
-        | 'LEFT_BOTTOM: Left Bottom'
-        | 'RIGHT_BOTTOM: Bottom Right';
+        | 'MIDDLE'
+        | 'LEFT'
+        | 'RIGHT'
+        | 'MIDDLE_TOP'
+        | 'LEFT_TOP'
+        | 'RIGHT_TOP'
+        | 'MIDDLE_BOTTOM'
+        | 'LEFT_BOTTOM'
+        | 'RIGHT_BOTTOM';
       detailInfo?: {
         /**
          * @description 팝업 넓이 단위 - 일반 팝업에만 해당
          * @example PIXEL
          * @enum {string}
          */
-        screenWidthUnit: 'PERCENT: %' | 'PIXEL: pixel';
+        screenWidthUnit: 'PERCENT' | 'PIXEL';
         /**
          * @description 팝업 넓이 - 일반 팝업에만 해당
          * @example 300
@@ -922,11 +918,7 @@ export interface components {
          * @example FIXED
          * @enum {string}
          */
-        screenType:
-          | 'FIXED: Fixed Layer Window'
-          | 'FIXED_TOP: Fixed Top Layer Pane'
-          | 'LAYER: Move Layer Window'
-          | 'WINDOW: Window Popup Window';
+        screenType: 'FIXED' | 'FIXED_TOP' | 'LAYER' | 'WINDOW';
         /**
          * @description 공통 - 팝업 노출 위치 (좌측 여백) - 단위 : px
          * @example 0
@@ -937,7 +929,7 @@ export interface components {
          * @example PIXEL
          * @enum {string}
          */
-        screenHeightUnit: 'PERCENT: %' | 'PIXEL: pixel';
+        screenHeightUnit: 'PERCENT' | 'PIXEL';
       };
       /**
        * @description 팝업 번호
@@ -959,10 +951,7 @@ export interface components {
        * @example WINDOW
        * @enum {string}
        */
-      type:
-        | 'WINDOW: Window Popup'
-        | 'LAYER: Layer Popup'
-        | 'MOVE: Move Layer Popup';
+      type: 'WINDOW' | 'LAYER' | 'MOVE';
       /**
        * @description 팝업명
        * @example 팝업 라벨
@@ -983,7 +972,7 @@ export interface components {
        * @example NORMAL
        * @enum {string}
        */
-      popupDesignType: 'NORMAL: Normal Popup' | 'MULTI: Multi Popup';
+      popupDesignType: 'NORMAL' | 'MULTI';
       /**
        * @description 전시 시작일
        * @example 2023-12-29 10:46
@@ -1021,12 +1010,7 @@ export interface components {
          * @example FIXED
          * @enum {string}
          */
-        slideDirection:
-          | 'FIXED: Do not move'
-          | 'RIGHT: Move right to left'
-          | 'LEFT: Move left to right'
-          | 'UP: Move from bottom to top'
-          | 'DOWN: Move from top to bottom';
+        slideDirection: 'FIXED' | 'RIGHT' | 'LEFT' | 'UP' | 'DOWN';
         slideImages?: {
           /**
            * @description 팝업 슬라이드 - 마우스 레이오버 썸네일 경로 (마우스 올릴 시, 보이는 이미지)
@@ -1038,7 +1022,7 @@ export interface components {
            * @example SELF
            * @enum {string}
            */
-          openLocationTarget: 'SELF: Current Window' | 'BLANK: New window';
+          openLocationTarget: 'SELF' | 'BLANK';
           /**
            * @description 팝업 슬라이드 - 이미지 등록 여부
            * @example true
@@ -1071,12 +1055,12 @@ export interface components {
          * @enum {string}
          */
         slideCount:
-          | 'TWO_BY_ONE: 2x1'
-          | 'THREE_BY_ONE: 3x1'
-          | 'FOUR_BY_ONE: 4x1'
-          | 'TWO_BY_TWO: 2x2'
-          | 'THREE_BY_TWO: 3x2'
-          | 'FOUR_BY_TWO: 4x2';
+          | 'TWO_BY_ONE'
+          | 'THREE_BY_ONE'
+          | 'FOUR_BY_ONE'
+          | 'TWO_BY_TWO'
+          | 'THREE_BY_TWO'
+          | 'FOUR_BY_TWO';
         /**
          * @description 팝업 슬라이드 - 최대 크기(세로)
          * @example 0
@@ -1093,11 +1077,7 @@ export interface components {
        * @example [PC]
        * @enum {string}
        */
-      displayTypes:
-        | 'PC: PC'
-        | 'MOBILE_WEB: Mobile Web'
-        | 'MOBILE_APP: Mobile App'
-        | 'RESPONSIVE: Responsive';
+      displayTypes: 'PC' | 'MOBILE_WEB' | 'MOBILE_APP' | 'RESPONSIVE';
       /**
        * @description 몰 번호
        * @example 1
@@ -1131,9 +1111,7 @@ export interface components {
        * @example NONE
        * @enum {string}
        */
-      boardImageType:
-        | 'NONE: No Image'
-        | 'PRODUCT_MAIN_IMAGE: Product Main Image';
+      boardImageType: 'NONE' | 'PRODUCT_MAIN_IMAGE';
       /**
        * @description 비밀글 사용 가능 여부 (true: 비밀글 사용가능, false:비밀글 사용불가
        * @example true
@@ -1224,11 +1202,7 @@ export interface components {
          * @example PC
          * @enum {string}
          */
-        platformType:
-          | 'PC: PC'
-          | 'MOBILE_WEB: Mobile Web'
-          | 'MOBILE_APP: Mobile App'
-          | 'RESPONSIVE: Responsive';
+        platformType: 'PC' | 'MOBILE_WEB' | 'MOBILE_APP' | 'RESPONSIVE';
         /**
          * @description 작성자 이름
          * @example 회원1
@@ -1340,9 +1314,7 @@ export interface components {
            * @example NORMAL_OPTION
            * @enum {string}
            */
-          optionType:
-            | 'NORMAL_OPTION: 일반 옵션'
-            | 'ADDITIONAL_PRODUCT: 추가 옵션';
+          optionType: 'NORMAL_OPTION' | 'ADDITIONAL_PRODUCT';
           /**
            * @description 옵션 권장 출력값
            * @example string
@@ -1366,22 +1338,22 @@ export interface components {
            * @enum {string}
            */
           orderStatusType:
-            | 'DEPOSIT_WAIT: Deposit Waiting'
-            | 'PAY_DONE: Payment completed'
-            | 'PRODUCT_PREPARE: Product Preparing'
-            | 'DELIVERY_PREPARE: Preparing to ship'
-            | 'DELIVERY_ING: Delivering'
-            | 'DELIVERY_DONE: Delivery Done'
-            | 'BUY_CONFIRM: Purchase Confirmed'
-            | 'CANCEL_DONE: Canceled'
-            | 'RETURN_DONE: Return Done'
-            | 'EXCHANGE_DONE: Exchange Done'
-            | 'PAY_WAIT: Waiting for payment'
-            | 'PAY_CANCEL: Payment canceled'
-            | 'PAY_FAIL: Payment failed'
-            | 'DELETE: Delete'
-            | 'EXCHANGE_WAIT: waiting for exchange'
-            | 'REFUND_DONE: Refund Done';
+            | 'DEPOSIT_WAIT'
+            | 'PAY_DONE'
+            | 'PRODUCT_PREPARE'
+            | 'DELIVERY_PREPARE'
+            | 'DELIVERY_ING'
+            | 'DELIVERY_DONE'
+            | 'BUY_CONFIRM'
+            | 'CANCEL_DONE'
+            | 'RETURN_DONE'
+            | 'EXCHANGE_DONE'
+            | 'PAY_WAIT'
+            | 'PAY_CANCEL'
+            | 'PAY_FAIL'
+            | 'DELETE'
+            | 'EXCHANGE_WAIT'
+            | 'REFUND_DONE';
           /**
            * @description 옵션값
            * @example 레드
@@ -1563,11 +1535,7 @@ export interface components {
          * @example PC
          * @enum {string}
          */
-        platformType:
-          | 'PC: PC'
-          | 'MOBILE_WEB: Mobile Web'
-          | 'MOBILE_APP: Mobile App'
-          | 'RESPONSIVE: Responsive';
+        platformType: 'PC' | 'MOBILE_WEB' | 'MOBILE_APP' | 'RESPONSIVE';
         /**
          * @description 작성자 이름
          * @example 회원1
@@ -1584,17 +1552,17 @@ export interface components {
          * @enum {string}
          */
         providerType:
-          | '페이코: PAYCO'
-          | '네이버:NAVER'
-          | '카카오:KAKAO'
-          | '페이스북:FACEBOOK'
-          | '아이엠스쿨:IAMSCHOOL'
-          | '리브메이트:LIIVMATE'
-          | '엔에이치엔엔터:NHNENT'
-          | '유니원:UNIONE'
-          | '라인:LINE'
-          | '엔씨피스토어:NCPSTORE'
-          | '카카오싱크:KAKAO_SYNC';
+          | '페이코'
+          | '네이버'
+          | '카카오'
+          | '페이스북'
+          | '아이엠스쿨'
+          | '리브메이트'
+          | '엔에이치엔엔터'
+          | '유니원'
+          | '라인'
+          | '엔씨피스토어'
+          | '카카오싱크';
         /**
          * @description 상품명
          * @example 상품명
@@ -1691,9 +1659,7 @@ export interface components {
            * @example NORMAL_OPTION
            * @enum {string}
            */
-          optionType:
-            | '일반 옵션: NORMAL_OPTION'
-            | '추가 옵션: ADDITIONAL_PRODUCT';
+          optionType: '일반 옵션' | '추가 옵션';
           /**
            * @description 옵션 권장 출력값
            * @example string
@@ -1717,22 +1683,22 @@ export interface components {
            * @enum {string}
            */
           orderStatusType:
-            | 'DEPOSIT_WAIT: Deposit Waiting'
-            | 'PAY_DONE: Payment completed'
-            | 'PRODUCT_PREPARE: Product Preparing'
-            | 'DELIVERY_PREPARE: Preparing to ship'
-            | 'DELIVERY_ING: Delivering'
-            | 'DELIVERY_DONE: Delivery Done'
-            | 'BUY_CONFIRM: Purchase Confirmed'
-            | 'CANCEL_DONE: Canceled'
-            | 'RETURN_DONE: Return Done'
-            | 'EXCHANGE_DONE: Exchange Done'
-            | 'PAY_WAIT: Waiting for payment'
-            | 'PAY_CANCEL: Payment canceled'
-            | 'PAY_FAIL: Payment failed'
-            | 'DELETE: Delete'
-            | 'EXCHANGE_WAIT: waiting for exchange'
-            | 'REFUND_DONE: Refund Done';
+            | 'DEPOSIT_WAIT'
+            | 'PAY_DONE'
+            | 'PRODUCT_PREPARE'
+            | 'DELIVERY_PREPARE'
+            | 'DELIVERY_ING'
+            | 'DELIVERY_DONE'
+            | 'BUY_CONFIRM'
+            | 'CANCEL_DONE'
+            | 'RETURN_DONE'
+            | 'EXCHANGE_DONE'
+            | 'PAY_WAIT'
+            | 'PAY_CANCEL'
+            | 'PAY_FAIL'
+            | 'DELETE'
+            | 'EXCHANGE_WAIT'
+            | 'REFUND_DONE';
           /**
            * @description 옵션값
            * @example 레드
@@ -1823,7 +1789,7 @@ export interface components {
          * @example SEQUENTIAL
          * @enum {string}
          */
-        displayType: 'SEQUENTIAL: Sequential' | 'RANDOM: Random';
+        displayType: 'SEQUENTIAL' | 'RANDOM';
         /**
          * @description 배너 구좌명
          * @example 구좌명
@@ -1860,10 +1826,7 @@ export interface components {
            * @example IMAGE_MAP
            * @enum {string}
            */
-          landingUrlType:
-            | 'GENERAL: General'
-            | 'IMAGE_MAP: Image Map'
-            | 'EVENT: Planned exhibition';
+          landingUrlType: 'GENERAL' | 'IMAGE_MAP' | 'EVENT';
           /**
            * @description 배너 전시 순서
            * @example 3
@@ -1884,7 +1847,7 @@ export interface components {
            * @example REGULAR
            * @enum {string}
            */
-          displayPeriodType: 'REGULAR: Period' | 'PERIOD: Period Period';
+          displayPeriodType: 'REGULAR' | 'PERIOD';
           /**
            * @description 배너 번호
            * @example 4123
@@ -1895,10 +1858,7 @@ export interface components {
            * @example CURRENT
            * @enum {string}
            */
-          browerTargetType:
-            | 'CURRENT: Current Window'
-            | 'NEW: New Window'
-            | 'REF_URL: New Window';
+          browerTargetType: 'CURRENT' | 'NEW' | 'REF_URL';
           /**
            * @description 배너 이미지 - 오른쪽 여백 색상
            * @example #FFFFFF
@@ -1990,11 +1950,7 @@ export interface components {
            * @example SERVICE
            * @enum {string}
            */
-          adminType:
-            | 'PLATFORM: Platform'
-            | 'SERVICE: Service'
-            | 'PARTNER: Partner'
-            | 'SHOPBY: Service';
+          adminType: 'PLATFORM' | 'SERVICE' | 'PARTNER' | 'SHOPBY';
           /**
            * @description 상품문의 답변자 파트너인 경우, 파트너명
            * @example
@@ -2042,13 +1998,13 @@ export interface components {
          * @enum {string}
          */
         type:
-          | 'PRODUCT: Product'
-          | 'DELIVERY: Delivery'
-          | 'CANCEL: Cancel'
-          | 'RETURN: Return'
-          | 'EXCHANGE: Exchange'
-          | 'REFUND: Refund'
-          | 'OTHER: Other';
+          | 'PRODUCT'
+          | 'DELIVERY'
+          | 'CANCEL'
+          | 'RETURN'
+          | 'EXCHANGE'
+          | 'REFUND'
+          | 'OTHER';
         /**
          * @description 문의 제목
          * @example 문의 제목
@@ -2065,17 +2021,17 @@ export interface components {
          * @enum {string}
          */
         providerType:
-          | '페이코: PAYCO'
-          | '네이버:NAVER'
-          | '카카오:KAKAO'
-          | '페이스북:FACEBOOK'
-          | '아이엠스쿨:IAMSCHOOL'
-          | '리브메이트:LIIVMATE'
-          | '엔에이치엔엔터:NHNENT'
-          | '유니원:UNIONE'
-          | '라인:LINE'
-          | '엔씨피스토어:NCPSTORE'
-          | '카카오싱크:KAKAO_SYNC';
+          | '페이코'
+          | '네이버'
+          | '카카오'
+          | '페이스북'
+          | '아이엠스쿨'
+          | '리브메이트'
+          | '엔에이치엔엔터'
+          | '유니원'
+          | '라인'
+          | '엔씨피스토어'
+          | '카카오싱크';
         /**
          * @description 문의 내용
          * @example 문의 내용
@@ -2176,7 +2132,7 @@ export interface components {
          * @example DISPLAY
          * @enum {string}
          */
-        displayStatusType: 'DISPLAY: On display' | 'BLIND: Do not display';
+        displayStatusType: 'DISPLAY' | 'BLIND';
         /**
          * @description 상품문의 번호
          * @example 1
@@ -2386,11 +2342,7 @@ export interface components {
          * @example PC
          * @enum {string}
          */
-        platformType:
-          | 'PC: PC'
-          | 'MOBILE_WEB: Mobile Web'
-          | 'MOBILE_APP: Mobile App'
-          | 'RESPONSIVE: Responsive';
+        platformType: 'PC' | 'MOBILE_WEB' | 'MOBILE_APP' | 'RESPONSIVE';
         /**
          * @description 첨부 파일 url 리스트 (5개까지 가능)
          * @example [http://files.url]
@@ -2407,9 +2359,7 @@ export interface components {
            * @example ADDITIONAL_PRODUCT
            * @enum {string}
            */
-          optionType:
-            | '일반 옵션: NORMAL_OPTION'
-            | '추가 옵션: ADDITIONAL_PRODUCT';
+          optionType: '일반 옵션' | '추가 옵션';
           /**
            * @description 옵션 권장 출력값
            * @example 색상/검정
@@ -2686,13 +2636,13 @@ export interface components {
          * @example WON
          * @enum {string}
          */
-        immediateDiscountUnitType: '원: WON' | '비율: RATE';
+        immediateDiscountUnitType: '원' | '비율';
         /**
          * @description 추가상품할인 타입
          * @example WON
          * @enum {string}
          */
-        additionDiscountUnitType: '원: WON' | '비율: RATE';
+        additionDiscountUnitType: '원' | '비율';
         /** @description 화면 노출 여부 */
         frontDisplayYn: boolean;
         /**
@@ -2781,12 +2731,12 @@ export interface components {
          * @enum {string}
          */
         deliveryConditionType:
-          | 'FREE: Free'
-          | 'CONDITIONAL: conditional free'
-          | 'FIXED_FEE: Paid (Fixed Shipping Fee)'
-          | 'QUANTITY_PROPOSITIONAL_FEE: Quantity Propositional'
-          | 'PRICE_FEE: Differentiation by amount'
-          | 'QUANTITY_FEE: Differential by quantity';
+          | 'FREE'
+          | 'CONDITIONAL'
+          | 'FIXED_FEE'
+          | 'QUANTITY_PROPOSITIONAL_FEE'
+          | 'PRICE_FEE'
+          | 'QUANTITY_FEE';
         /**
          * @description 상품진열에서 설정한 시작일
          * @example 2023-12-29 10:46
@@ -2807,7 +2757,7 @@ export interface components {
          * @example REGULAR
          * @enum {string}
          */
-        productSalePeriodType: 'REGULAR: Period' | 'PERIOD: Period Period';
+        productSalePeriodType: 'REGULAR' | 'PERIOD';
         /**
          * @description 최대 쿠폰 적용 가격(default: 0)
          * @example 0
@@ -2870,7 +2820,7 @@ export interface components {
          * @example REGULAR
          * @enum {string}
          */
-        salePeriodType: 'REGULAR: regular sale' | 'PERIOD: Period Sale';
+        salePeriodType: 'REGULAR' | 'PERIOD';
         /**
          * @description 추가할인 최대 기준금액
          * @example 0
@@ -2893,7 +2843,7 @@ export interface components {
            * @example TEXT
            * @enum {string}
            */
-          type: 'TEXT: Text' | 'IMAGE: Image';
+          type: 'TEXT' | 'IMAGE';
         }[];
         /**
          * @description hsCode
@@ -2941,11 +2891,11 @@ export interface components {
          * @enum {string}
          */
         saleStatusType:
-          | 'READY: ready for sale'
-          | 'ONSALE: on sale'
-          | 'FINISHED: Sales Ended'
-          | 'STOP: Sale Stopped'
-          | 'PROHIBITION: Sales Prohibited';
+          | 'READY'
+          | 'ONSALE'
+          | 'FINISHED'
+          | 'STOP'
+          | 'PROHIBITION';
       }[];
       /** @description 상품목록 */
       products: {
@@ -3061,13 +3011,13 @@ export interface components {
          * @example WON
          * @enum {string}
          */
-        immediateDiscountUnitType: '원: WON' | '비율: RATE';
+        immediateDiscountUnitType: '원' | '비율';
         /**
          * @description 추가상품할인 타입
          * @example WON
          * @enum {string}
          */
-        additionDiscountUnitType: '원: WON' | '비율: RATE';
+        additionDiscountUnitType: '원' | '비율';
         /** @description 화면 노출 여부 */
         frontDisplayYn: boolean;
         /**
@@ -3156,12 +3106,12 @@ export interface components {
          * @enum {string}
          */
         deliveryConditionType:
-          | 'FREE: Free'
-          | 'CONDITIONAL: conditional free'
-          | 'FIXED_FEE: Paid (Fixed Shipping Fee)'
-          | 'QUANTITY_PROPOSITIONAL_FEE: Quantity Propositional'
-          | 'PRICE_FEE: Differentiation by amount'
-          | 'QUANTITY_FEE: Differential by quantity';
+          | 'FREE'
+          | 'CONDITIONAL'
+          | 'FIXED_FEE'
+          | 'QUANTITY_PROPOSITIONAL_FEE'
+          | 'PRICE_FEE'
+          | 'QUANTITY_FEE';
         /**
          * @description 상품진열에서 설정한 시작일
          * @example 2023-12-29 10:46
@@ -3182,7 +3132,7 @@ export interface components {
          * @example REGULAR
          * @enum {string}
          */
-        productSalePeriodType: 'REGULAR: Period' | 'PERIOD: Period Period';
+        productSalePeriodType: 'REGULAR' | 'PERIOD';
         /**
          * @description 최대 쿠폰 적용 가격(default: 0)
          * @example 0
@@ -3245,7 +3195,7 @@ export interface components {
          * @example REGULAR
          * @enum {string}
          */
-        salePeriodType: 'REGULAR: regular sale' | 'PERIOD: Period Sale';
+        salePeriodType: 'REGULAR' | 'PERIOD';
         /**
          * @description 추가할인 최대 기준금액
          * @example 0
@@ -3268,7 +3218,7 @@ export interface components {
            * @example TEXT
            * @enum {string}
            */
-          type: 'TEXT: Text' | 'IMAGE: Image';
+          type: 'TEXT' | 'IMAGE';
         }[];
         /**
          * @description hsCode
@@ -3316,11 +3266,11 @@ export interface components {
          * @enum {string}
          */
         saleStatusType:
-          | 'READY: ready for sale'
-          | 'ONSALE: on sale'
-          | 'FINISHED: Sales Ended'
-          | 'STOP: Sale Stopped'
-          | 'PROHIBITION: Sales Prohibited';
+          | 'READY'
+          | 'ONSALE'
+          | 'FINISHED'
+          | 'STOP'
+          | 'PROHIBITION';
       }[];
       /**
        * @description 홍보문구
@@ -3345,12 +3295,12 @@ export interface components {
          * @enum {string}
          */
         displayType:
-          | 'GALLERY: Gallery type'
-          | 'LIST: List type'
-          | 'CART: Cart Type'
-          | 'SIMPLE_IMAGE: Simple Image Type'
-          | 'PRODUCT_MOVE: Move Product'
-          | 'SWIPE: Swipe Type';
+          | 'GALLERY'
+          | 'LIST'
+          | 'CART'
+          | 'SIMPLE_IMAGE'
+          | 'PRODUCT_MOVE'
+          | 'SWIPE';
         /**
          * @description 상품 노출 개수 - 가로
          * @example 1
@@ -3467,11 +3417,7 @@ export interface components {
        * @example PC
        * @enum {string}
        */
-      platformType:
-        | 'PC: PC'
-        | 'MOBILE_WEB: Mobile Web'
-        | 'MOBILE_APP: Mobile App'
-        | 'RESPONSIVE: Responsive';
+      platformType: 'PC' | 'MOBILE_WEB' | 'MOBILE_APP' | 'RESPONSIVE';
       /**
        * @description 스킨명
        * @example Another Skin
@@ -3489,10 +3435,7 @@ export interface components {
          * @example LOGO
          * @enum {string}
          */
-        groupType:
-          | 'LOGO: Logo Only'
-          | 'SLIDE: Slide Banner'
-          | 'NORMAL: Normal Banner';
+        groupType: 'LOGO' | 'SLIDE' | 'NORMAL';
         /**
          * @description 배너 그룹명
          * @example 상단 로고
@@ -3521,7 +3464,7 @@ export interface components {
        * @example REGULAR
        * @enum {string}
        */
-      displayPeriodType: 'REGULAR: Period' | 'PERIOD: Period Period';
+      displayPeriodType: 'REGULAR' | 'PERIOD';
       /**
        * @description 기획전 url
        * @example http://shop.com/eventpage
@@ -3552,19 +3495,13 @@ export interface components {
        * @example DIRECT
        * @enum {string}
        */
-      urlType:
-        | 'EVENT_NUMBER: Use exhibition number'
-        | 'DIRECT: direct URL input';
+      urlType: 'EVENT_NUMBER' | 'DIRECT';
       /**
        * @description 진행 상태
        * @example ING
        * @enum {string}
        */
-      progressStatus:
-        | 'ALL: All'
-        | 'READY: Waiting for progress'
-        | 'ING: In Progress'
-        | 'END: Progress End';
+      progressStatus: 'ALL' | 'READY' | 'ING' | 'END';
       /**
        * @description 기획전 이미지 URL(MOBILE)
        * @example http://shop.com/eventpage
@@ -3620,7 +3557,7 @@ export interface components {
          * @example REGULAR
          * @enum {string}
          */
-        displayPeriodType: 'REGULAR: Period' | 'PERIOD: Period Period';
+        displayPeriodType: 'REGULAR' | 'PERIOD';
         /**
          * @description 기획전 url
          * @example http://shop.com/eventpage
@@ -3651,19 +3588,13 @@ export interface components {
          * @example DIRECT
          * @enum {string}
          */
-        urlType:
-          | 'EVENT_NUMBER: Use exhibition number'
-          | 'DIRECT: direct URL input';
+        urlType: 'EVENT_NUMBER' | 'DIRECT';
         /**
          * @description 진행 상태
          * @example ING
          * @enum {string}
          */
-        progressStatus:
-          | 'ALL: All'
-          | 'READY: Waiting for progress'
-          | 'ING: In Progress'
-          | 'END: Progress End';
+        progressStatus: 'ALL' | 'READY' | 'ING' | 'END';
         /**
          * @description 기획전 이미지 URL(MOBILE)
          * @example http://shop.com/eventpage
@@ -3851,7 +3782,7 @@ export interface components {
        * @example REGULAR
        * @enum {string}
        */
-      displayPeriodType: 'REGULAR: Period' | 'PERIOD: Period Period';
+      displayPeriodType: 'REGULAR' | 'PERIOD';
       /**
        * @description 기획전 url
        * @example http://shop.com/eventpage
@@ -3882,19 +3813,13 @@ export interface components {
        * @example DIRECT
        * @enum {string}
        */
-      urlType:
-        | 'EVENT_NUMBER: Use exhibition number'
-        | 'DIRECT: direct URL input';
+      urlType: 'EVENT_NUMBER' | 'DIRECT';
       /**
        * @description 진행 상태
        * @example ING
        * @enum {string}
        */
-      progressStatus:
-        | 'ALL: All'
-        | 'READY: Waiting for progress'
-        | 'ING: In Progress'
-        | 'END: Progress End';
+      progressStatus: 'ALL' | 'READY' | 'ING' | 'END';
       /**
        * @description 기획전 이미지 URL(MOBILE)
        * @example http://shop.com/eventpage
@@ -3944,13 +3869,13 @@ export interface components {
          * @enum {string}
          */
         type:
-          | 'PRODUCT: Product'
-          | 'DELIVERY: Delivery'
-          | 'CANCEL: Cancel'
-          | 'RETURN: Return'
-          | 'EXCHANGE: Exchange'
-          | 'REFUND: Refund'
-          | 'OTHER: Other';
+          | 'PRODUCT'
+          | 'DELIVERY'
+          | 'CANCEL'
+          | 'RETURN'
+          | 'EXCHANGE'
+          | 'REFUND'
+          | 'OTHER';
         /**
          * @description 문의 제목
          * @example 문의 제목입니다.
@@ -3967,17 +3892,17 @@ export interface components {
          * @enum {string}
          */
         providerType:
-          | '페이코: PAYCO'
-          | '네이버:NAVER'
-          | '카카오:KAKAO'
-          | '페이스북:FACEBOOK'
-          | '아이엠스쿨:IAMSCHOOL'
-          | '리브메이트:LIIVMATE'
-          | '엔에이치엔엔터:NHNENT'
-          | '유니원:UNIONE'
-          | '라인:LINE'
-          | '엔씨피스토어:NCPSTORE'
-          | '카카오싱크:KAKAO_SYNC';
+          | '페이코'
+          | '네이버'
+          | '카카오'
+          | '페이스북'
+          | '아이엠스쿨'
+          | '리브메이트'
+          | '엔에이치엔엔터'
+          | '유니원'
+          | '라인'
+          | '엔씨피스토어'
+          | '카카오싱크';
         /**
          * @description 상품명
          * @example 상품명 입니다.
@@ -4023,7 +3948,7 @@ export interface components {
          * @example DISPLAY
          * @enum {string}
          */
-        displayStatusType: 'DISPLAY: On display' | 'BLIND: Do not display';
+        displayStatusType: 'DISPLAY' | 'BLIND';
         /**
          * @description 상품번호
          * @example 1
@@ -4057,16 +3982,13 @@ export interface components {
        * @example LIST
        * @enum {string}
        */
-      boardType: 'CARD: Card Type' | 'LIST: List';
+      boardType: 'CARD' | 'LIST';
       /**
        * @description 게시판 이미지 유형
        * @example PRODUCT_IMAGE
        * @enum {string}
        */
-      boardImageType:
-        | 'NONE: None'
-        | 'ATTACH_IMAGE: Attachment Image'
-        | 'PRODUCT_IMAGE: Product Representative Image';
+      boardImageType: 'NONE' | 'ATTACH_IMAGE' | 'PRODUCT_IMAGE';
       /**
        * @description 게시판 설명
        * @example 상품평 게시판 설정 설명
@@ -4119,7 +4041,7 @@ export interface components {
          * @example FIRST_TYPE
          * @enum {string}
          */
-        photoReviewDisplayType: 'FIRST_TYPE: Type1' | 'SECOND_TYPE: Type2';
+        photoReviewDisplayType: 'FIRST_TYPE' | 'SECOND_TYPE';
         /**
          * @description 포토 상품 후기 페이지 당 게시물 수
          * @example 20
@@ -4201,6 +4123,7 @@ export interface components {
          */
         photoReviewsAccumulation?: number;
         /**
+         *
          * @description 포토후기 적립금 글자수 (nullable)
          * @example 20
          */
@@ -4313,10 +4236,10 @@ export interface components {
              * @enum {string}
              */
             issuablePlatformTypes:
-              | 'PC: PC'
-              | 'MOBILE_WEB: Mobile Web'
-              | 'MOBILE_APP: Mobile App'
-              | 'RESPONSIVE: Responsive';
+              | 'PC'
+              | 'MOBILE_WEB'
+              | 'MOBILE_APP'
+              | 'RESPONSIVE';
             /**
              * @description 발급대상 회원 등급
              * @example
@@ -4361,10 +4284,10 @@ export interface components {
              * @enum {string}
              */
             usablePlatformTypes:
-              | 'PC: PC'
-              | 'MOBILE_WEB: Mobile Web'
-              | 'MOBILE_APP: Mobile App'
-              | 'RESPONSIVE: Responsive';
+              | 'PC'
+              | 'MOBILE_WEB'
+              | 'MOBILE_APP'
+              | 'RESPONSIVE';
             /**
              * @description 사용 사용종료 일
              * @example 2023-12-29 10:46
@@ -4386,11 +4309,7 @@ export interface components {
            * @example PRODUCT
            * @enum {string}
            */
-          couponType:
-            | 'PRODUCT: Product price discount'
-            | 'PRODUCT_PLUS: Product Price Discount (Plus)'
-            | 'CART: Discount on cart amount'
-            | 'CART_DELIVERY: Cart Delivery Discount';
+          couponType: 'PRODUCT' | 'PRODUCT_PLUS' | 'CART' | 'CART_DELIVERY';
           /**
            * @description 이미지 URL
            * @example
@@ -4468,20 +4387,18 @@ export interface components {
            * @enum {string}
            */
           couponTargetType?:
-            | 'ALL_PRODUCT: All products'
-            | 'PRODUCT: Individual product'
-            | 'BRAND: Brand'
-            | 'CATEGORY: Category'
-            | 'PARTNER: Partner'
-            | 'EVENT: Chance Event';
+            | 'ALL_PRODUCT'
+            | 'PRODUCT'
+            | 'BRAND'
+            | 'CATEGORY'
+            | 'PARTNER'
+            | 'EVENT';
           /**
            * @description 제휴 방문처 타입
            * @example DIRECT
            * @enum {string}
            */
-          allianceRefererType:
-            | 'DIRECT: Direct Visit'
-            | 'NAVER_KNOWLEDGE_SHOPPING: Naver Knowledge Shopping';
+          allianceRefererType: 'DIRECT' | 'NAVER_KNOWLEDGE_SHOPPING';
         }[];
         /**
          * @description 발급기간 만료 이미지
@@ -4644,13 +4561,13 @@ export interface components {
            * @example WON
            * @enum {string}
            */
-          immediateDiscountUnitType: 'WON: 원화' | 'RATE: 비율';
+          immediateDiscountUnitType: 'WON' | 'RATE';
           /**
            * @description 추가상품할인 타입
            * @example WON
            * @enum {string}
            */
-          additionDiscountUnitType: 'WON: 원화' | 'RATE: 비율';
+          additionDiscountUnitType: 'WON' | 'RATE';
           /** @description 화면 노출 여부 */
           frontDisplayYn: boolean;
           /**
@@ -4739,12 +4656,12 @@ export interface components {
            * @enum {string}
            */
           deliveryConditionType:
-            | 'FREE: Free'
-            | 'CONDITIONAL: conditional free'
-            | 'FIXED_FEE: Paid (Fixed Shipping Fee)'
-            | 'QUANTITY_PROPOSITIONAL_FEE: Quantity Propositional'
-            | 'PRICE_FEE: Differentiation by amount'
-            | 'QUANTITY_FEE: Differential by quantity';
+            | 'FREE'
+            | 'CONDITIONAL'
+            | 'FIXED_FEE'
+            | 'QUANTITY_PROPOSITIONAL_FEE'
+            | 'PRICE_FEE'
+            | 'QUANTITY_FEE';
           /**
            * @description 상품섹션에서 설정한 시작일
            * @example null
@@ -4760,9 +4677,7 @@ export interface components {
            * @example null
            * @enum {string}
            */
-          productSalePeriodType:
-            | 'REGULAR: regular sale'
-            | 'PERIOD: Period Sale';
+          productSalePeriodType: 'REGULAR' | 'PERIOD';
           /**
            * @description 최대 쿠폰 적용 가격(default: 0)
            * @example 0
@@ -4825,7 +4740,7 @@ export interface components {
            * @example REGULAR
            * @enum {string}
            */
-          salePeriodType: 'REGULAR: regular sale' | 'PERIOD: Period Sale';
+          salePeriodType: 'REGULAR' | 'PERIOD';
           /**
            * @description 추가할인 최대 기준금액
            * @example 0
@@ -4848,7 +4763,7 @@ export interface components {
              * @example TEXT
              * @enum {string}
              */
-            type: 'TEXT: Text' | 'IMAGE: Image';
+            type: 'TEXT' | 'IMAGE';
           }[];
           /**
            * @description hsCode
@@ -4914,11 +4829,11 @@ export interface components {
            * @enum {string}
            */
           saleStatusType:
-            | 'READY: ready for sale'
-            | 'ONSALE: on sale'
-            | 'FINISHED: Sales Ended'
-            | 'STOP: Sale Stopped'
-            | 'PROHIBITION: Sales Prohibited';
+            | 'READY'
+            | 'ONSALE'
+            | 'FINISHED'
+            | 'STOP'
+            | 'PROHIBITION';
         }[];
         /**
          * @description 상품 번호
@@ -4941,7 +4856,7 @@ export interface components {
        * @example PERIOD
        * @enum {string}
        */
-      displayPeriodType: 'REGULAR: Period' | 'PERIOD: Period Period';
+      displayPeriodType: 'REGULAR' | 'PERIOD';
       /**
        * @description 기획전 url
        * @example url
@@ -4972,9 +4887,7 @@ export interface components {
        * @example DIRECT
        * @enum {string}
        */
-      urlType:
-        | 'EVENT_NUMBER: Use exhibition number'
-        | 'DIRECT: direct URL input';
+      urlType: 'EVENT_NUMBER' | 'DIRECT';
       top?: {
         pc?: {
           /**
@@ -4982,7 +4895,7 @@ export interface components {
            * @example HTML
            * @enum {string}
            */
-          type: 'HTML: HTML' | 'FILE: File';
+          type: 'HTML' | 'FILE';
           /**
            * @description 상단 이미지 URL
            * @example html string
@@ -4995,7 +4908,7 @@ export interface components {
            * @example HTML
            * @enum {string}
            */
-          type: 'HTML: HTML' | 'FILE: File';
+          type: 'HTML' | 'FILE';
           /**
            * @description 상단 이미지 URL
            * @example html string
@@ -5101,11 +5014,7 @@ export interface components {
            * @example SERVICE
            * @enum {string}
            */
-          adminType:
-            | 'PLATFORM: Platform'
-            | 'SERVICE: Service'
-            | 'PARTNER: Partner'
-            | 'SHOPBY: Service';
+          adminType: 'PLATFORM' | 'SERVICE' | 'PARTNER' | 'SHOPBY';
           /**
            * @description 상품문의 답변자 파트너인 경우, 파트너명
            * @example
@@ -5153,13 +5062,13 @@ export interface components {
          * @enum {string}
          */
         type:
-          | 'PRODUCT: Product'
-          | 'DELIVERY: Delivery'
-          | 'CANCEL: Cancel'
-          | 'RETURN: Return'
-          | 'EXCHANGE: Exchange'
-          | 'REFUND: Refund'
-          | 'OTHER: Other';
+          | 'PRODUCT'
+          | 'DELIVERY'
+          | 'CANCEL'
+          | 'RETURN'
+          | 'EXCHANGE'
+          | 'REFUND'
+          | 'OTHER';
         /**
          * @description 문의 제목
          * @example 문의 제목
@@ -5176,17 +5085,17 @@ export interface components {
          * @enum {string}
          */
         providerType:
-          | '페이코: PAYCO'
-          | '네이버:NAVER'
-          | '카카오:KAKAO'
-          | '페이스북:FACEBOOK'
-          | '아이엠스쿨:IAMSCHOOL'
-          | '리브메이트:LIIVMATE'
-          | '엔에이치엔엔터:NHNENT'
-          | '유니원:UNIONE'
-          | '라인:LINE'
-          | '엔씨피스토어:NCPSTORE'
-          | '카카오싱크:KAKAO_SYNC';
+          | '페이코'
+          | '네이버'
+          | '카카오'
+          | '페이스북'
+          | '아이엠스쿨'
+          | '리브메이트'
+          | '엔에이치엔엔터'
+          | '유니원'
+          | '라인'
+          | '엔씨피스토어'
+          | '카카오싱크';
         /**
          * @description 문의 내용
          * @example 문의 내용
@@ -5287,7 +5196,7 @@ export interface components {
          * @example DISPLAY
          * @enum {string}
          */
-        displayStatusType: 'DISPLAY: On display' | 'BLIND: Do not display';
+        displayStatusType: 'DISPLAY' | 'BLIND';
         /**
          * @description 상품문의 번호
          * @example 1
@@ -5311,10 +5220,7 @@ export interface components {
        * @example NORMAL
        * @enum {string}
        */
-      bannerGroupType:
-        | 'LOGO: Logo Only'
-        | 'SLIDE: Slide Banner'
-        | 'NORMAL: Normal Banner';
+      bannerGroupType: 'LOGO' | 'SLIDE' | 'NORMAL';
       /**
        * @description 스킨 번호
        * @example 0
@@ -5342,7 +5248,7 @@ export interface components {
            * @example NORMAL
            * @enum {string}
            */
-          slideSpeedType: 'FAST: Fast' | 'NORMAL: Normal' | 'SLOW: Slow';
+          slideSpeedType: 'FAST' | 'NORMAL' | 'SLOW';
           /** @description 슬라이드 배너 - 네비게이션 노출 정보 */
           slideNavigationInfo: {
             /**
@@ -5351,12 +5257,12 @@ export interface components {
              * @enum {string}
              */
             buttonSizeType:
-              | 'SIZE_ONE: 1'
-              | 'SIZE_TWO: 2'
-              | 'SIZE_THREE: 3'
-              | 'SIZE_FOUR: 4'
-              | 'SIZE_FIVE: 5'
-              | 'SIZE_SIX: 6';
+              | 'SIZE_ONE'
+              | 'SIZE_TWO'
+              | 'SIZE_THREE'
+              | 'SIZE_FOUR'
+              | 'SIZE_FIVE'
+              | 'SIZE_SIX';
             /**
              * @description 슬라이드 배너 - 네비게이션 노출 버튼 디자인 (비활성화 버튼 배경 색상)
              * @example #FFFFFF
@@ -5372,10 +5278,7 @@ export interface components {
              * @example CIRCLE
              * @enum {string}
              */
-            buttonBorderType:
-              | 'CIRCLE: Circle'
-              | 'ROUND_SQUARE: Round Square'
-              | 'SQUARE: Square';
+            buttonBorderType: 'CIRCLE' | 'ROUND_SQUARE' | 'SQUARE';
           };
           /**
            * @description 슬라이드 배너 - 좌우 버튼 색상
@@ -5392,16 +5295,13 @@ export interface components {
            * @example VISIBLE
            * @enum {string}
            */
-          slideNavigationType:
-            | 'VISIBLE: Exposed'
-            | 'INVISIBLE: Invisible'
-            | 'UPLOAD: Direct Registration';
+          slideNavigationType: 'VISIBLE' | 'INVISIBLE' | 'UPLOAD';
           /**
            * @description 슬라이드 배너 - 효과 종류
            * @example SLIDE
            * @enum {string}
            */
-          slideEffectType: 'SLIDE: Slide' | 'FADE: Fade';
+          slideEffectType: 'SLIDE' | 'FADE';
           /**
            * @description 슬라이드 배너 - 좌우 버튼 사용 여부
            * @example false
@@ -5434,7 +5334,7 @@ export interface components {
            * @example PERIOD
            * @enum {string}
            */
-          displayPeriodType: 'REGULAR: Period' | 'PERIOD: Period Period';
+          displayPeriodType: 'REGULAR' | 'PERIOD';
         };
         /**
          * @description 배너 제목
@@ -5456,7 +5356,7 @@ export interface components {
          * @example PIXEL
          * @enum {string}
          */
-        sizeUnitType: 'PERCENT: %' | 'PIXEL: px';
+        sizeUnitType: 'PERCENT' | 'PIXEL';
         bannerImages?: {
           displayValue?: {
             /**
@@ -5474,14 +5374,14 @@ export interface components {
              * @example PERIOD
              * @enum {string}
              */
-            displayPeriodType: 'REGULAR: Period' | 'PERIOD: Period Period';
+            displayPeriodType: 'REGULAR' | 'PERIOD';
           };
           /**
            * @description 배너 이미지 랜딩 타겟
            * @example SELF
            * @enum {string}
            */
-          openLocationType: 'SELF: Current Window' | 'NEW: new window';
+          openLocationType: 'SELF' | 'NEW';
           /**
            * @description 배너 이미지 - 네비게이션 비활성 버튼 이미지
            * @example http://image.url/aabb/inactive-button.jpg
@@ -5612,12 +5512,7 @@ export interface components {
          * @example FIXED
          * @enum {string}
          */
-        slideDirection:
-          | 'FIXED: Do not move'
-          | 'RIGHT: Move right to left'
-          | 'LEFT: Move left to right'
-          | 'UP: Move from bottom to top'
-          | 'DOWN: Move from top to bottom';
+        slideDirection: 'FIXED' | 'RIGHT' | 'LEFT' | 'UP' | 'DOWN';
         slideImages?: {
           /**
            * @description 팝업 슬라이드 - 마우스 레이오버 썸네일 경로 (마우스 올릴 시, 보이는 이미지)
@@ -5629,7 +5524,7 @@ export interface components {
            * @example SELF
            * @enum {string}
            */
-          openLocationTarget: 'SELF: Current Window' | 'BLANK: New window';
+          openLocationTarget: 'SELF' | 'BLANK';
           /**
            * @description 팝업 슬라이드 - 이미지 등록 여부
            * @example true
@@ -5662,12 +5557,12 @@ export interface components {
          * @enum {string}
          */
         slideCount:
-          | 'TWO_BY_ONE: 2x1'
-          | 'THREE_BY_ONE: 3x1'
-          | 'FOUR_BY_ONE: 4x1'
-          | 'TWO_BY_TWO: 2x2'
-          | 'THREE_BY_TWO: 3x2'
-          | 'FOUR_BY_TWO: 4x2';
+          | 'TWO_BY_ONE'
+          | 'THREE_BY_ONE'
+          | 'FOUR_BY_ONE'
+          | 'TWO_BY_TWO'
+          | 'THREE_BY_TWO'
+          | 'FOUR_BY_TWO';
         /**
          * @description 팝업 슬라이드 - 최대 크기(세로)
          * @example 150
@@ -5680,7 +5575,7 @@ export interface components {
          * @example PIXEL
          * @enum {string}
          */
-        screenWidthUnit: 'PERCENT: %' | 'PIXEL: pixel';
+        screenWidthUnit: 'PERCENT' | 'PIXEL';
         /**
          * @description 팝업 넓이 - 일반 팝업에만 해당
          * @example 100
@@ -5711,11 +5606,7 @@ export interface components {
          * @example FIXED
          * @enum {string}
          */
-        screenType:
-          | 'FIXED: Fixed Layer Window'
-          | 'FIXED_TOP: Fixed Top Layer Pane'
-          | 'LAYER: Move Layer Window'
-          | 'WINDOW: Window Popup Window';
+        screenType: 'FIXED' | 'FIXED_TOP' | 'LAYER' | 'WINDOW';
         /**
          * @description 공통 - 팝업 노출 위치 (좌측 여백) - 단위 : px
          * @example 0
@@ -5726,7 +5617,7 @@ export interface components {
          * @example PIXEL
          * @enum {string}
          */
-        screenHeightUnit: 'PERCENT: %' | 'PIXEL: pixel';
+        screenHeightUnit: 'PERCENT' | 'PIXEL';
       };
       /**
        * @description 팝업 번호
@@ -5758,7 +5649,7 @@ export interface components {
        * @example MULTI
        * @enum {string}
        */
-      popupDesignType: 'NORMAL: Normal Popup' | 'MULTI: Multi Popup';
+      popupDesignType: 'NORMAL' | 'MULTI';
     }[];
     'display-sections-sectionNo-15176017': {
       /**
@@ -5922,13 +5813,13 @@ export interface components {
          * @example WON
          * @enum {string}
          */
-        immediateDiscountUnitType: '원: WON' | '비율: RATE';
+        immediateDiscountUnitType: '원' | '비율';
         /**
          * @description 추가상품할인 타입
          * @example WON
          * @enum {string}
          */
-        additionDiscountUnitType: '원: WON' | '비율: RATE';
+        additionDiscountUnitType: '원' | '비율';
         /** @description 화면 노출 여부 */
         frontDisplayYn: boolean;
         /**
@@ -6017,12 +5908,12 @@ export interface components {
          * @enum {string}
          */
         deliveryConditionType:
-          | 'FREE: Free'
-          | 'CONDITIONAL: conditional free'
-          | 'FIXED_FEE: Paid (Fixed Shipping Fee)'
-          | 'QUANTITY_PROPOSITIONAL_FEE: Quantity Propositional'
-          | 'PRICE_FEE: Differentiation by amount'
-          | 'QUANTITY_FEE: Differential by quantity';
+          | 'FREE'
+          | 'CONDITIONAL'
+          | 'FIXED_FEE'
+          | 'QUANTITY_PROPOSITIONAL_FEE'
+          | 'PRICE_FEE'
+          | 'QUANTITY_FEE';
         /**
          * @description 상품진열에서 설정한 시작일
          * @example 2023-12-29 10:46
@@ -6038,7 +5929,7 @@ export interface components {
          * @example REGULAR
          * @enum {string}
          */
-        productSalePeriodType: 'REGULAR: Period' | 'PERIOD: Period Period';
+        productSalePeriodType: 'REGULAR' | 'PERIOD';
         /**
          * @description 최대 쿠폰 적용 가격(default: 0)
          * @example 0
@@ -6101,7 +5992,7 @@ export interface components {
          * @example REGULAR
          * @enum {string}
          */
-        salePeriodType: 'REGULAR: regular sale' | 'PERIOD: Period Sale';
+        salePeriodType: 'REGULAR' | 'PERIOD';
         /**
          * @description 추가할인 최대 기준금액
          * @example 0
@@ -6124,7 +6015,7 @@ export interface components {
            * @example TEXT
            * @enum {string}
            */
-          type: 'TEXT: Text' | 'IMAGE: Image';
+          type: 'TEXT' | 'IMAGE';
         }[];
         /**
          * @description hsCode
@@ -6190,11 +6081,11 @@ export interface components {
          * @enum {string}
          */
         saleStatusType:
-          | 'READY: ready for sale'
-          | 'ONSALE: on sale'
-          | 'FINISHED: Sales Ended'
-          | 'STOP: Sale Stopped'
-          | 'PROHIBITION: Sales Prohibited';
+          | 'READY'
+          | 'ONSALE'
+          | 'FINISHED'
+          | 'STOP'
+          | 'PROHIBITION';
       }[];
       /**
        * @description 홍보문구
@@ -6219,11 +6110,7 @@ export interface components {
        * @example PC
        * @enum {string}
        */
-      platformType:
-        | 'PC: PC'
-        | 'MOBILE_WEB: Mobile Web'
-        | 'MOBILE_APP: Mobile App'
-        | 'RESPONSIVE: Responsive';
+      platformType: 'PC' | 'MOBILE_WEB' | 'MOBILE_APP' | 'RESPONSIVE';
       /**
        * @description 작성자 이름
        * @example 회원1
@@ -6240,17 +6127,17 @@ export interface components {
        * @enum {string}
        */
       providerType:
-        | '페이코: PAYCO'
-        | '네이버:NAVER'
-        | '카카오:KAKAO'
-        | '페이스북:FACEBOOK'
-        | '아이엠스쿨:IAMSCHOOL'
-        | '리브메이트:LIIVMATE'
-        | '엔에이치엔엔터:NHNENT'
-        | '유니원:UNIONE'
-        | '라인:LINE'
-        | '엔씨피스토어:NCPSTORE'
-        | '카카오싱크:KAKAO_SYNC';
+        | '페이코'
+        | '네이버'
+        | '카카오'
+        | '페이스북'
+        | '아이엠스쿨'
+        | '리브메이트'
+        | '엔에이치엔엔터'
+        | '유니원'
+        | '라인'
+        | '엔씨피스토어'
+        | '카카오싱크';
       /**
        * @description 상품명
        * @example 상품명
@@ -6347,9 +6234,7 @@ export interface components {
          * @example NORMAL_OPTION
          * @enum {string}
          */
-        optionType:
-          | '일반 옵션: NORMAL_OPTION'
-          | '추가 옵션: ADDITIONAL_PRODUCT';
+        optionType: '일반 옵션' | '추가 옵션';
         /**
          * @description 옵션 권장 출력값
          * @example string
@@ -6373,22 +6258,22 @@ export interface components {
          * @enum {string}
          */
         orderStatusType:
-          | 'DEPOSIT_WAIT: Deposit Waiting'
-          | 'PAY_DONE: Payment completed'
-          | 'PRODUCT_PREPARE: Product Preparing'
-          | 'DELIVERY_PREPARE: Preparing to ship'
-          | 'DELIVERY_ING: Delivering'
-          | 'DELIVERY_DONE: Delivery Done'
-          | 'BUY_CONFIRM: Purchase Confirmed'
-          | 'CANCEL_DONE: Canceled'
-          | 'RETURN_DONE: Return Done'
-          | 'EXCHANGE_DONE: Exchange Done'
-          | 'PAY_WAIT: Waiting for payment'
-          | 'PAY_CANCEL: Payment canceled'
-          | 'PAY_FAIL: Payment failed'
-          | 'DELETE: Delete'
-          | 'EXCHANGE_WAIT: waiting for exchange'
-          | 'REFUND_DONE: Refund Done';
+          | 'DEPOSIT_WAIT'
+          | 'PAY_DONE'
+          | 'PRODUCT_PREPARE'
+          | 'DELIVERY_PREPARE'
+          | 'DELIVERY_ING'
+          | 'DELIVERY_DONE'
+          | 'BUY_CONFIRM'
+          | 'CANCEL_DONE'
+          | 'RETURN_DONE'
+          | 'EXCHANGE_DONE'
+          | 'PAY_WAIT'
+          | 'PAY_CANCEL'
+          | 'PAY_FAIL'
+          | 'DELETE'
+          | 'EXCHANGE_WAIT'
+          | 'REFUND_DONE';
         /**
          * @description 옵션값
          * @example 레드
@@ -6525,9 +6410,7 @@ export interface components {
          * @example NORMAL_OPTION
          * @enum {string}
          */
-        optionType:
-          | 'NORMAL_OPTION: 일반 옵션'
-          | 'ADDITIONAL_PRODUCT: 추가 옵션';
+        optionType: 'NORMAL_OPTION' | 'ADDITIONAL_PRODUCT';
         /**
          * @description 해외 배송가능 여부
          * @example false
@@ -6645,112 +6528,112 @@ export interface components {
            * @enum {string}
            */
           deliveryCompanyTypeLabel:
-            | 'CJ: CJ Logistics'
-            | 'POST: Post Office'
-            | 'HANJIN: Hanjin Express'
-            | 'GTX: gtx logis'
-            | 'LOTTE: Lotte Express'
-            | 'KGB: kgb courier'
-            | 'LOGEN: Logen Courier'
-            | 'CJHBL: cj Korea International Express'
-            | 'GSI: gsi Express'
-            | 'KGL: KG Logis'
-            | 'INTRAS: INTRAS'
-            | 'UPS: UPS'
-            | 'CHUNIL: Chunil Express'
-            | 'KDEXP: Kyungdong Courier'
-            | 'HDEXP: Joint Delivery'
-            | 'ILYANG: Ilyang Express'
-            | 'POST_EMS: Post Office EMS'
-            | 'KYOUNGDONG: Kyungdong Courier'
-            | 'DAESIN: Daesin'
-            | 'CVS: CVS Convenience Store Courier'
-            | 'DHL: DHL'
-            | 'FEDEX: FEDEX'
-            | 'GSM: GSM International Courier'
-            | 'WARPEX: WarpEx'
-            | 'WIZWA: WIZWA'
-            | 'ACI: ACI Express'
-            | 'PANTOS: Pantos Korea'
-            | 'CJ_INTERNATIONAL: CJ Korea Express (International Courier Service)'
-            | 'TNT: TNT'
-            | 'CU: CU convenience store courier'
-            | 'KUNYOUNG: Kunyoung Express'
-            | 'LOTTE_INTERNATIONAL: Lotte Courier (International Courier)'
-            | 'HONAM: Honam Courier'
-            | 'HANIPS: Hanui Love'
-            | 'IPARCEL: i-Parcel'
-            | 'SLX: SLX Courier'
-            | 'USPS: USPS'
-            | 'WONDERS: Wondersquick'
-            | 'REGISTPOST: Register Post'
-            | 'DHLDE: DHL (Germany)'
-            | 'EZUSA: EZUSA'
-            | 'SWGEXP: Sungwon Global'
-            | 'DAEWOON: Daewoon Global'
-            | 'DODOFLEX: Dodoflex'
-            | 'NH_LOGIS: Nonghyup Express'
-            | 'UFO: ufo'
-            | "TODAY_PICKUP: Today's Pickup"
-            | 'QEXPRESS: QXPRESS'
-            | 'PINGPONG: PINGPONG'
-            | 'ETC: Other';
+            | 'CJ'
+            | 'POST'
+            | 'HANJIN'
+            | 'GTX'
+            | 'LOTTE'
+            | 'KGB'
+            | 'LOGEN'
+            | 'CJHBL'
+            | 'GSI'
+            | 'KGL'
+            | 'INTRAS'
+            | 'UPS'
+            | 'CHUNIL'
+            | 'KDEXP'
+            | 'HDEXP'
+            | 'ILYANG'
+            | 'POST_EMS'
+            | 'KYOUNGDONG'
+            | 'DAESIN'
+            | 'CVS'
+            | 'DHL'
+            | 'FEDEX'
+            | 'GSM'
+            | 'WARPEX'
+            | 'WIZWA'
+            | 'ACI'
+            | 'PANTOS'
+            | 'CJ_INTERNATIONAL'
+            | 'TNT'
+            | 'CU'
+            | 'KUNYOUNG'
+            | 'LOTTE_INTERNATIONAL'
+            | 'HONAM'
+            | 'HANIPS'
+            | 'IPARCEL'
+            | 'SLX'
+            | 'USPS'
+            | 'WONDERS'
+            | 'REGISTPOST'
+            | 'DHLDE'
+            | 'EZUSA'
+            | 'SWGEXP'
+            | 'DAEWOON'
+            | 'DODOFLEX'
+            | 'NH_LOGIS'
+            | 'UFO'
+            | 'TODAY_PICKUP'
+            | 'QEXPRESS'
+            | 'PINGPONG'
+            | 'ETC';
           /**
            * @description 택배사 타입
            * @example CJ
            * @enum {string}
            */
           deliveryCompanyType:
-            | 'CJ: CJ Logistics'
-            | 'POST: Post Office'
-            | 'HANJIN: Hanjin Express'
-            | 'GTX: gtx logis'
-            | 'LOTTE: Lotte Express'
-            | 'KGB: kgb courier'
-            | 'LOGEN: Logen Courier'
-            | 'CJHBL: cj Korea International Express'
-            | 'GSI: gsi Express'
-            | 'KGL: KG Logis'
-            | 'INTRAS: INTRAS'
-            | 'UPS: UPS'
-            | 'CHUNIL: Chunil Express'
-            | 'KDEXP: Kyungdong Courier'
-            | 'HDEXP: Joint Delivery'
-            | 'ILYANG: Ilyang Express'
-            | 'POST_EMS: Post Office EMS'
-            | 'KYOUNGDONG: Kyungdong Courier'
-            | 'DAESIN: Daesin'
-            | 'CVS: CVS Convenience Store Courier'
-            | 'DHL: DHL'
-            | 'FEDEX: FEDEX'
-            | 'GSM: GSM International Courier'
-            | 'WARPEX: WarpEx'
-            | 'WIZWA: WIZWA'
-            | 'ACI: ACI Express'
-            | 'PANTOS: Pantos Korea'
-            | 'CJ_INTERNATIONAL: CJ Korea Express (International Courier Service)'
-            | 'TNT: TNT'
-            | 'CU: CU convenience store courier'
-            | 'KUNYOUNG: Kunyoung Express'
-            | 'LOTTE_INTERNATIONAL: Lotte Courier (International Courier)'
-            | 'HONAM: Honam Courier'
-            | 'HANIPS: Hanui Love'
-            | 'IPARCEL: i-Parcel'
-            | 'SLX: SLX Courier'
-            | 'USPS: USPS'
-            | 'WONDERS: Wondersquick'
-            | 'REGISTPOST: Register Post'
-            | 'DHLDE: DHL (Germany)'
-            | 'EZUSA: EZUSA'
-            | 'SWGEXP: Sungwon Global'
-            | 'DAEWOON: Daewoon Global'
-            | 'DODOFLEX: Dodoflex'
-            | 'NH_LOGIS: Nonghyup Express'
-            | 'UFO: ufo'
-            | "TODAY_PICKUP: Today's Pickup"
-            | 'QEXPRESS: QXPRESS'
-            | 'PINGPONG: PINGPONG'
-            | 'ETC: Other';
+            | 'CJ'
+            | 'POST'
+            | 'HANJIN'
+            | 'GTX'
+            | 'LOTTE'
+            | 'KGB'
+            | 'LOGEN'
+            | 'CJHBL'
+            | 'GSI'
+            | 'KGL'
+            | 'INTRAS'
+            | 'UPS'
+            | 'CHUNIL'
+            | 'KDEXP'
+            | 'HDEXP'
+            | 'ILYANG'
+            | 'POST_EMS'
+            | 'KYOUNGDONG'
+            | 'DAESIN'
+            | 'CVS'
+            | 'DHL'
+            | 'FEDEX'
+            | 'GSM'
+            | 'WARPEX'
+            | 'WIZWA'
+            | 'ACI'
+            | 'PANTOS'
+            | 'CJ_INTERNATIONAL'
+            | 'TNT'
+            | 'CU'
+            | 'KUNYOUNG'
+            | 'LOTTE_INTERNATIONAL'
+            | 'HONAM'
+            | 'HANIPS'
+            | 'IPARCEL'
+            | 'SLX'
+            | 'USPS'
+            | 'WONDERS'
+            | 'REGISTPOST'
+            | 'DHLDE'
+            | 'EZUSA'
+            | 'SWGEXP'
+            | 'DAEWOON'
+            | 'DODOFLEX'
+            | 'NH_LOGIS'
+            | 'UFO'
+            | 'TODAY_PICKUP'
+            | 'QEXPRESS'
+            | 'PINGPONG'
+            | 'ETC';
           /**
            * @description 송장추적 URL
            * @example https://www.logistics.dhl/de-en/home/tracking.html?tracking-id=12345
@@ -6783,22 +6666,22 @@ export interface components {
          * @enum {string}
          */
         orderStatusType:
-          | 'DEPOSIT_WAIT: Deposit Waiting'
-          | 'PAY_DONE: Payment completed'
-          | 'PRODUCT_PREPARE: Product Preparing'
-          | 'DELIVERY_PREPARE: Preparing to ship'
-          | 'DELIVERY_ING: Delivering'
-          | 'DELIVERY_DONE: Delivery Done'
-          | 'BUY_CONFIRM: Purchase Confirmed'
-          | 'CANCEL_DONE: Canceled'
-          | 'RETURN_DONE: Return Done'
-          | 'EXCHANGE_DONE: Exchange Done'
-          | 'PAY_WAIT: Waiting for payment'
-          | 'PAY_CANCEL: Payment canceled'
-          | 'PAY_FAIL: Payment failed'
-          | 'DELETE: Delete'
-          | 'EXCHANGE_WAIT: waiting for exchange'
-          | 'REFUND_DONE: Refund Done';
+          | 'DEPOSIT_WAIT'
+          | 'PAY_DONE'
+          | 'PRODUCT_PREPARE'
+          | 'DELIVERY_PREPARE'
+          | 'DELIVERY_ING'
+          | 'DELIVERY_DONE'
+          | 'BUY_CONFIRM'
+          | 'CANCEL_DONE'
+          | 'RETURN_DONE'
+          | 'EXCHANGE_DONE'
+          | 'PAY_WAIT'
+          | 'PAY_CANCEL'
+          | 'PAY_FAIL'
+          | 'DELETE'
+          | 'EXCHANGE_WAIT'
+          | 'REFUND_DONE';
         /**
          * @description 옵션 값
          * @example 검정
@@ -6880,7 +6763,7 @@ export interface components {
          * @example REGULAR
          * @enum {string}
          */
-        displayPeriodType: 'REGULAR: Period' | 'PERIOD: Period Period';
+        displayPeriodType: 'REGULAR' | 'PERIOD';
         /**
          * @description 기획전 url
          * @example http://shop.com/eventpage
@@ -6911,9 +6794,7 @@ export interface components {
          * @example DIRECT
          * @enum {string}
          */
-        urlType:
-          | 'EVENT_NUMBER: Use exhibition number'
-          | 'DIRECT: direct URL input';
+        urlType: 'EVENT_NUMBER' | 'DIRECT';
         /**
          * @description 기획전 이미지 URL(MOBILE)
          * @example http://shop.com/eventpage
@@ -7027,10 +6908,10 @@ export interface components {
              * @enum {string}
              */
             issuablePlatformTypes:
-              | 'PC: PC'
-              | 'MOBILE_WEB: Mobile Web'
-              | 'MOBILE_APP: Mobile App'
-              | 'RESPONSIVE: Responsive';
+              | 'PC'
+              | 'MOBILE_WEB'
+              | 'MOBILE_APP'
+              | 'RESPONSIVE';
             /**
              * @description 발급대상 회원 등급
              * @example
@@ -7075,10 +6956,10 @@ export interface components {
              * @enum {string}
              */
             usablePlatformTypes:
-              | 'PC: PC'
-              | 'MOBILE_WEB: Mobile Web'
-              | 'MOBILE_APP: Mobile App'
-              | 'RESPONSIVE: Responsive';
+              | 'PC'
+              | 'MOBILE_WEB'
+              | 'MOBILE_APP'
+              | 'RESPONSIVE';
             /**
              * @description 사용 사용종료 일
              * @example 2023-12-29 10:46
@@ -7100,11 +6981,7 @@ export interface components {
            * @example PRODUCT
            * @enum {string}
            */
-          couponType:
-            | 'PRODUCT: Product price discount'
-            | 'PRODUCT_PLUS: Product Price Discount (Plus)'
-            | 'CART: Discount on cart amount'
-            | 'CART_DELIVERY: Cart Delivery Discount';
+          couponType: 'PRODUCT' | 'PRODUCT_PLUS' | 'CART' | 'CART_DELIVERY';
           /**
            * @description 이미지 URL
            * @example
@@ -7182,20 +7059,18 @@ export interface components {
            * @enum {string}
            */
           couponTargetType?:
-            | 'ALL_PRODUCT: All products'
-            | 'PRODUCT: Individual product'
-            | 'BRAND: Brand'
-            | 'CATEGORY: Category'
-            | 'PARTNER: Partner'
-            | 'EVENT: Chance Event';
+            | 'ALL_PRODUCT'
+            | 'PRODUCT'
+            | 'BRAND'
+            | 'CATEGORY'
+            | 'PARTNER'
+            | 'EVENT';
           /**
            * @description 제휴 방문처 타입
            * @example DIRECT
            * @enum {string}
            */
-          allianceRefererType:
-            | 'DIRECT: Direct Visit'
-            | 'NAVER_KNOWLEDGE_SHOPPING: Naver Knowledge Shopping';
+          allianceRefererType: 'DIRECT' | 'NAVER_KNOWLEDGE_SHOPPING';
         }[];
         /**
          * @description 발급기간 만료 이미지
@@ -7358,13 +7233,13 @@ export interface components {
            * @example WON
            * @enum {string}
            */
-          immediateDiscountUnitType: 'WON: 원화' | 'RATE: 비율';
+          immediateDiscountUnitType: 'WON' | 'RATE';
           /**
            * @description 추가상품할인 타입
            * @example WON
            * @enum {string}
            */
-          additionDiscountUnitType: 'WON: 원화' | 'RATE: 비율';
+          additionDiscountUnitType: 'WON' | 'RATE';
           /** @description 화면 노출 여부 */
           frontDisplayYn: boolean;
           /**
@@ -7453,12 +7328,12 @@ export interface components {
            * @enum {string}
            */
           deliveryConditionType:
-            | 'FREE: Free'
-            | 'CONDITIONAL: conditional free'
-            | 'FIXED_FEE: Paid (Fixed Shipping Fee)'
-            | 'QUANTITY_PROPOSITIONAL_FEE: Quantity Propositional'
-            | 'PRICE_FEE: Differentiation by amount'
-            | 'QUANTITY_FEE: Differential by quantity';
+            | 'FREE'
+            | 'CONDITIONAL'
+            | 'FIXED_FEE'
+            | 'QUANTITY_PROPOSITIONAL_FEE'
+            | 'PRICE_FEE'
+            | 'QUANTITY_FEE';
           /**
            * @description 상품섹션에서 설정한 시작일
            * @example null
@@ -7474,9 +7349,7 @@ export interface components {
            * @example null
            * @enum {string}
            */
-          productSalePeriodType:
-            | 'REGULAR: regular sale'
-            | 'PERIOD: Period Sale';
+          productSalePeriodType: 'REGULAR' | 'PERIOD';
           /**
            * @description 최대 쿠폰 적용 가격(default: 0)
            * @example 0
@@ -7539,7 +7412,7 @@ export interface components {
            * @example REGULAR
            * @enum {string}
            */
-          salePeriodType: 'REGULAR: regular sale' | 'PERIOD: Period Sale';
+          salePeriodType: 'REGULAR' | 'PERIOD';
           /**
            * @description 추가할인 최대 기준금액
            * @example 0
@@ -7562,7 +7435,7 @@ export interface components {
              * @example TEXT
              * @enum {string}
              */
-            type: 'TEXT: Text' | 'IMAGE: Image';
+            type: 'TEXT' | 'IMAGE';
           }[];
           /**
            * @description hsCode
@@ -7628,11 +7501,11 @@ export interface components {
            * @enum {string}
            */
           saleStatusType:
-            | 'READY: ready for sale'
-            | 'ONSALE: on sale'
-            | 'FINISHED: Sales Ended'
-            | 'STOP: Sale Stopped'
-            | 'PROHIBITION: Sales Prohibited';
+            | 'READY'
+            | 'ONSALE'
+            | 'FINISHED'
+            | 'STOP'
+            | 'PROHIBITION';
         }[];
         /**
          * @description 상품 번호
@@ -7655,7 +7528,7 @@ export interface components {
        * @example PERIOD
        * @enum {string}
        */
-      displayPeriodType: 'REGULAR: Period' | 'PERIOD: Period Period';
+      displayPeriodType: 'REGULAR' | 'PERIOD';
       /**
        * @description 기획전 url
        * @example url
@@ -7686,9 +7559,7 @@ export interface components {
        * @example DIRECT
        * @enum {string}
        */
-      urlType:
-        | 'EVENT_NUMBER: Use exhibition number'
-        | 'DIRECT: direct URL input';
+      urlType: 'EVENT_NUMBER' | 'DIRECT';
       top?: {
         pc?: {
           /**
@@ -7696,7 +7567,7 @@ export interface components {
            * @example HTML
            * @enum {string}
            */
-          type: 'HTML: HTML' | 'FILE: File';
+          type: 'HTML' | 'FILE';
           /**
            * @description 상단 이미지 URL
            * @example html string
@@ -7709,7 +7580,7 @@ export interface components {
            * @example HTML
            * @enum {string}
            */
-          type: 'HTML: HTML' | 'FILE: File';
+          type: 'HTML' | 'FILE';
           /**
            * @description 상단 이미지 URL
            * @example html string
@@ -7805,7 +7676,7 @@ export interface components {
          * @example REGULAR
          * @enum {string}
          */
-        displayPeriodType: 'REGULAR: Period' | 'PERIOD: Period Period';
+        displayPeriodType: 'REGULAR' | 'PERIOD';
         /**
          * @description 기획전 url
          * @example http://shop.com/eventpage
@@ -7836,19 +7707,13 @@ export interface components {
          * @example DIRECT
          * @enum {string}
          */
-        urlType:
-          | 'EVENT_NUMBER: Use exhibition number'
-          | 'DIRECT: direct URL input';
+        urlType: 'EVENT_NUMBER' | 'DIRECT';
         /**
          * @description 진행 상태
          * @example ING
          * @enum {string}
          */
-        progressStatus:
-          | 'ALL: All'
-          | 'READY: Waiting for progress'
-          | 'ING: In Progress'
-          | 'END: Progress End';
+        progressStatus: 'ALL' | 'READY' | 'ING' | 'END';
         /**
          * @description 기획전 이미지 URL(MOBILE)
          * @example http://shop.com/eventpage
@@ -7984,13 +7849,13 @@ export interface components {
          * @example WON
          * @enum {string}
          */
-        immediateDiscountUnitType: 'WON: 원화' | 'RATE: 비율';
+        immediateDiscountUnitType: 'WON' | 'RATE';
         /**
          * @description 추가상품할인 타입
          * @example WON
          * @enum {string}
          */
-        additionDiscountUnitType: 'WON: 원화' | 'RATE: 비율';
+        additionDiscountUnitType: 'WON' | 'RATE';
         /** @description 화면 노출 여부 */
         frontDisplayYn: boolean;
         /**
@@ -8079,12 +7944,12 @@ export interface components {
          * @enum {string}
          */
         deliveryConditionType:
-          | 'FREE: Free'
-          | 'CONDITIONAL: conditional free'
-          | 'FIXED_FEE: Paid (Fixed Shipping Fee)'
-          | 'QUANTITY_PROPOSITIONAL_FEE: Quantity Propositional'
-          | 'PRICE_FEE: Differentiation by amount'
-          | 'QUANTITY_FEE: Differential by quantity';
+          | 'FREE'
+          | 'CONDITIONAL'
+          | 'FIXED_FEE'
+          | 'QUANTITY_PROPOSITIONAL_FEE'
+          | 'PRICE_FEE'
+          | 'QUANTITY_FEE';
         /**
          * @description 상품섹션에서 설정한 시작일
          * @example null
@@ -8100,7 +7965,7 @@ export interface components {
          * @example null
          * @enum {string}
          */
-        productSalePeriodType: 'REGULAR: regular sale' | 'PERIOD: Period Sale';
+        productSalePeriodType: 'REGULAR' | 'PERIOD';
         /**
          * @description 최대 쿠폰 적용 가격(default: 0)
          * @example 0
@@ -8163,7 +8028,7 @@ export interface components {
          * @example REGULAR
          * @enum {string}
          */
-        salePeriodType: 'REGULAR: regular sale' | 'PERIOD: Period Sale';
+        salePeriodType: 'REGULAR' | 'PERIOD';
         /**
          * @description 추가할인 최대 기준금액
          * @example 0
@@ -8186,7 +8051,7 @@ export interface components {
            * @example TEXT
            * @enum {string}
            */
-          type: 'TEXT: Text' | 'IMAGE: Image';
+          type: 'TEXT' | 'IMAGE';
         }[];
         /**
          * @description hsCode
@@ -8252,11 +8117,11 @@ export interface components {
          * @enum {string}
          */
         saleStatusType:
-          | 'READY: ready for sale'
-          | 'ONSALE: on sale'
-          | 'FINISHED: Sales Ended'
-          | 'STOP: Sale Stopped'
-          | 'PROHIBITION: Sales Prohibited';
+          | 'READY'
+          | 'ONSALE'
+          | 'FINISHED'
+          | 'STOP'
+          | 'PROHIBITION';
       }[];
     }[];
     'products-productNo-inquiries-inquiryNo-1326952745': {
@@ -8286,11 +8151,7 @@ export interface components {
          * @example SERVICE
          * @enum {string}
          */
-        adminType:
-          | 'PLATFORM: Platform'
-          | 'SERVICE: Service'
-          | 'PARTNER: Partner'
-          | 'SHOPBY: Service';
+        adminType: 'PLATFORM' | 'SERVICE' | 'PARTNER' | 'SHOPBY';
         /**
          * @description 상품문의 답변자 파트너인 경우, 파트너명
          * @example
@@ -8338,13 +8199,13 @@ export interface components {
        * @enum {string}
        */
       type:
-        | 'PRODUCT: Product'
-        | 'DELIVERY: Delivery'
-        | 'CANCEL: Cancel'
-        | 'RETURN: Return'
-        | 'EXCHANGE: Exchange'
-        | 'REFUND: Refund'
-        | 'OTHER: Other';
+        | 'PRODUCT'
+        | 'DELIVERY'
+        | 'CANCEL'
+        | 'RETURN'
+        | 'EXCHANGE'
+        | 'REFUND'
+        | 'OTHER';
       /**
        * @description 문의 제목
        * @example 문의 제목
@@ -8460,7 +8321,7 @@ export interface components {
        * @example DISPLAY
        * @enum {string}
        */
-      displayStatusType: 'DISPLAY: On display' | 'BLIND: Do not display';
+      displayStatusType: 'DISPLAY' | 'BLIND';
       /**
        * @description 상품문의 번호
        * @example 1
