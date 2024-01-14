@@ -3,9 +3,8 @@
  * Do not make direct changes to the file.
  */
 
-
 export interface paths {
-  "/cart": {
+  '/cart': {
     /**
      * 장바구니 가져오기
      * @description
@@ -15,7 +14,7 @@ export interface paths {
      * ## 화면예시
      * [![](http://image.toast.com/aaaaahb/api-description/order/cart/[GET]%20cart%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EB%AA%A9%EB%A1%9D%20%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0%201-2.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/cart/[GET]%20cart%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EB%AA%A9%EB%A1%9D%20%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0%201-2.png)
      */
-    get: operations["get-cart"];
+    get: operations['get-cart'];
     /**
      * 장바구니 수정하기
      * @description
@@ -26,14 +25,14 @@ export interface paths {
      *
      * 옵션변경은 변경할 옵션을 삭제한 후 신규등록하는 방법으로 수정합니다.
      */
-    put: operations["put-cart"];
+    put: operations['put-cart'];
     /**
      * 장바구니 등록하기
      * @description
      * ## 부가설명 및 특이사항
      * 로그인된 유저의 장바구니에 상품(옵션)을 추가하는 API 입니다.
      */
-    post: operations["post-cart"];
+    post: operations['post-cart'];
     /**
      * 장바구니 삭제하기
      * @description
@@ -42,9 +41,9 @@ export interface paths {
      *
      * cartNo를 List형으로 전달해야 합니다.
      */
-    delete: operations["delete-cart"];
+    delete: operations['delete-cart'];
   };
-  "/cart/calculate": {
+  '/cart/calculate': {
     /**
      * 장바구니에서 선택된 상품금액 계산하기
      * @description
@@ -60,18 +59,18 @@ export interface paths {
      * ## 화면예시
      * [![](http://image.toast.com/aaaaahb/api-description/order/cart/[GET]%20cart_calculate%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EC%84%A0%ED%83%9D%20%EA%B3%84%EC%82%B0.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/cart/[GET]%20cart_calculate%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EC%84%A0%ED%83%9D%20%EA%B3%84%EC%82%B0.png)
      */
-    get: operations["get-cart-calculate"];
+    get: operations['get-cart-calculate'];
   };
-  "/cart/count": {
+  '/cart/count': {
     /**
      * 장바구니에 담긴 상품 개수 가져오기
      * @description
      * ## 부가설명 및 특이사항
      * 로그인된 유저의 장바구니에 담긴 상품 개수를 조회하기 위한 API 입니다.
      */
-    get: operations["get-cart-count"];
+    get: operations['get-cart-count'];
   };
-  "/cart/subset": {
+  '/cart/subset': {
     /**
      * 장바구니에서 선택된 항목만 장바구니 그룹별로 재계산하기
      * @description
@@ -87,27 +86,27 @@ export interface paths {
      * ## 화면예시
      * [![](http://image.toast.com/aaaaahb/api-description/order/cart/[GET]%20cart_subset%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%EC%97%90%EC%84%9C%20%EC%84%A0%ED%83%9D%EB%90%9C%20%ED%95%AD%EB%AA%A9%EB%A7%8C%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EA%B7%B8%EB%A3%B9%EB%B3%84%EB%A1%9C%20%EC%9E%AC%20%EA%B3%84%EC%82%B0.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/cart/[GET]%20cart_subset%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%EC%97%90%EC%84%9C%20%EC%84%A0%ED%83%9D%EB%90%9C%20%ED%95%AD%EB%AA%A9%EB%A7%8C%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EA%B7%B8%EB%A3%B9%EB%B3%84%EB%A1%9C%20%EC%9E%AC%20%EA%B3%84%EC%82%B0.png)
      */
-    get: operations["get-cart-subset"];
+    get: operations['get-cart-subset'];
   };
-  "/cart/validate": {
+  '/cart/validate': {
     /**
      * 장바구니에 저장된 모든 상품 구매 가능 여부 확인하기
      * @description
      * ## 부가설명 및 특이사항
      * 장바구니에 저장된 모든 상품의 구매 가능 여부를 확인하는 API 입니다.
      */
-    get: operations["get-cart-validate"];
+    get: operations['get-cart-validate'];
   };
-  "/cart/coupons/maximum": {
+  '/cart/coupons/maximum': {
     /**
      * 장바구니 기준 최대 쿠폰 할인 금액 가져오기
      * @description
      * ## 부가설명 및 특이사항
      * 장바구니 기준으로 최대 할인이 가능한 쿠폰 정보를 조회합니다.
      */
-    get: operations["get-cart-coupons-maximum"];
+    get: operations['get-cart-coupons-maximum'];
   };
-  "/guest/cart": {
+  '/guest/cart': {
     /**
      * 비회원 장바구니 계산하기
      * @description
@@ -120,9 +119,9 @@ export interface paths {
      * [![](http://image.toast.com/aaaaahb/api-description/order/guest/[POST]%20guest_cart%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EA%B3%84%EC%82%B0%201-1.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/guest/[POST]%20guest_cart%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EA%B3%84%EC%82%B0%201-1.png)
      * [![](http://image.toast.com/aaaaahb/api-description/order/guest/[POST]%20guest_cart%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EA%B3%84%EC%82%B0%201-2.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/guest/[POST]%20guest_cart%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EA%B3%84%EC%82%B0%201-2.png)
      */
-    post: operations["post-guest-cart"];
+    post: operations['post-guest-cart'];
   };
-  "/guest/orders/{orderNo}": {
+  '/guest/orders/{orderNo}': {
     /**
      * 비회원 주문 상세 조회하기
      * @description
@@ -133,7 +132,7 @@ export interface paths {
      * [![](http://image.toast.com/aaaaahb/api-description/order/guest/[GET]%20guest_orders%20%EB%B9%84%ED%9A%8C%EC%9B%90%20%EC%A3%BC%EB%AC%B8%20%EC%83%81%EC%84%B8%EC%A1%B0%ED%9A%8C%201-1.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/guest/[GET]%20guest_orders%20%EB%B9%84%ED%9A%8C%EC%9B%90%20%EC%A3%BC%EB%AC%B8%20%EC%83%81%EC%84%B8%EC%A1%B0%ED%9A%8C%201-1.png)
      * [![](http://image.toast.com/aaaaahb/api-description/order/guest/[GET]%20guest_orders%20%EB%B9%84%ED%9A%8C%EC%9B%90%20%EC%A3%BC%EB%AC%B8%20%EC%83%81%EC%84%B8%EC%A1%B0%ED%9A%8C%201-2.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/guest/[GET]%20guest_orders%20%EB%B9%84%ED%9A%8C%EC%9B%90%20%EC%A3%BC%EB%AC%B8%20%EC%83%81%EC%84%B8%EC%A1%B0%ED%9A%8C%201-2.png)
      */
-    get: operations["get-guest-orders-order-no"];
+    get: operations['get-guest-orders-order-no'];
     /**
      * 비회원 주문 토큰 발급하기
      * @description
@@ -143,9 +142,9 @@ export interface paths {
      * ## 화면예시
      * [![](http://image.toast.com/aaaaahb/api-description/order/guest/[POST]%20guest_orders%20%EB%B9%84%ED%9A%8C%EC%9B%90%20%EC%A3%BC%EB%AC%B8%20%ED%86%A0%ED%81%B0%20%EB%B0%9C%EA%B8%89.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/guest/[POST]%20guest_orders%20%EB%B9%84%ED%9A%8C%EC%9B%90%20%EC%A3%BC%EB%AC%B8%20%ED%86%A0%ED%81%B0%20%EB%B0%9C%EA%B8%89.png)
      */
-    post: operations["post-guest-orders-order-no"];
+    post: operations['post-guest-orders-order-no'];
   };
-  "/guest/order-options/{orderOptionNo}/confirm": {
+  '/guest/order-options/{orderOptionNo}/confirm': {
     /**
      * 비회원 상품 주문 구매확정 처리하기
      * @description
@@ -155,9 +154,9 @@ export interface paths {
      * ## 화면예시
      * [![](http://image.toast.com/aaaaahb/api-description/order/guest/[PUT]%20guest_order-options_confirm%20%EC%83%81%ED%92%88%20%EC%A3%BC%EB%AC%B8%20%EA%B5%AC%EB%A7%A4%ED%99%95%EC%A0%95.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/guest/[PUT]%20guest_order-options_confirm%20%EC%83%81%ED%92%88%20%EC%A3%BC%EB%AC%B8%20%EA%B5%AC%EB%A7%A4%ED%99%95%EC%A0%95.png)
      */
-    put: operations["put-guest-order-options-order-option-no-confirm"];
+    put: operations['put-guest-order-options-order-option-no-confirm'];
   };
-  "/guest/order-options/{orderOptionNo}/delivery-done": {
+  '/guest/order-options/{orderOptionNo}/delivery-done': {
     /**
      * 비회원 상품 주문 배송완료 처리하기
      * @description
@@ -167,9 +166,9 @@ export interface paths {
      * ## 화면예시
      * [![](http://image.toast.com/aaaaahb/api-description/order/guest/[PUT]%20guest_order-options_delivery-done%20%EC%83%81%ED%92%88%20%EC%A3%BC%EB%AC%B8%20%EB%B0%B0%EC%86%A1%EC%99%84%EB%A3%8C.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/guest/[PUT]%20guest_order-options_delivery-done%20%EC%83%81%ED%92%88%20%EC%A3%BC%EB%AC%B8%20%EB%B0%B0%EC%86%A1%EC%99%84%EB%A3%8C.png)
      */
-    put: operations["put-guest-order-options-order-option-no-delivery-done"];
+    put: operations['put-guest-order-options-order-option-no-delivery-done'];
   };
-  "/guest/orders/{orderNo}/cashReceipt": {
+  '/guest/orders/{orderNo}/cashReceipt': {
     /**
      * [샵바이 프리미엄 사용 불가] 비회원 현금영수증 신청하기
      * @description
@@ -179,9 +178,9 @@ export interface paths {
      * ## 화면예시
      * [![](http://image.toast.com/aaaaahb/api-description/order/guest/[POST]%20guest_orders_cashReceipt%20%EB%B9%84%ED%9A%8C%EC%9B%90%20%ED%98%84%EA%B8%88%EC%98%81%EC%88%98%EC%A6%9D%20%EC%8B%A0%EC%B2%AD.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/guest/[POST]%20guest_orders_cashReceipt%20%EB%B9%84%ED%9A%8C%EC%9B%90%20%ED%98%84%EA%B8%88%EC%98%81%EC%88%98%EC%A6%9D%20%EC%8B%A0%EC%B2%AD.png)
      */
-    post: operations["post-guest-orders-order-no-cash-receipt"];
+    post: operations['post-guest-orders-order-no-cash-receipt'];
   };
-  "/guest/orders/{orderNo}/claim": {
+  '/guest/orders/{orderNo}/claim': {
     /**
      * 비회원 주문 상세 조회하기 (클레임 상세사유 포함)
      * @description
@@ -194,9 +193,9 @@ export interface paths {
      * [![](http://image.toast.com/aaaaahb/api-description/order/guest/[GET]%20guest_orders_claim%20%EC%A0%84%EC%B2%B4%20%EC%A3%BC%EB%AC%B8%EC%B7%A8%EC%86%8C%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EC%A3%BC%EB%AC%B8%20%EC%83%81%EC%84%B8%EC%A1%B0%ED%9A%8C(%ED%81%B4%EB%A0%88%EC%9E%84%20%EC%83%81%EC%84%B8%EC%82%AC%EC%9C%A0%20%ED%8F%AC%ED%95%A8)%201-1.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/guest/[GET]%20guest_orders_claim%20%EC%A0%84%EC%B2%B4%20%EC%A3%BC%EB%AC%B8%EC%B7%A8%EC%86%8C%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EC%A3%BC%EB%AC%B8%20%EC%83%81%EC%84%B8%EC%A1%B0%ED%9A%8C(%ED%81%B4%EB%A0%88%EC%9E%84%20%EC%83%81%EC%84%B8%EC%82%AC%EC%9C%A0%20%ED%8F%AC%ED%95%A8)%201-1.png)
      * [![](http://image.toast.com/aaaaahb/api-description/order/guest/[GET]%20guest_orders_claim%20%EC%A0%84%EC%B2%B4%20%EC%A3%BC%EB%AC%B8%EC%B7%A8%EC%86%8C%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EC%A3%BC%EB%AC%B8%20%EC%83%81%EC%84%B8%EC%A1%B0%ED%9A%8C(%ED%81%B4%EB%A0%88%EC%9E%84%20%EC%83%81%EC%84%B8%EC%82%AC%EC%9C%A0%20%ED%8F%AC%ED%95%A8)%201-2.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/guest/[GET]%20guest_orders_claim%20%EC%A0%84%EC%B2%B4%20%EC%A3%BC%EB%AC%B8%EC%B7%A8%EC%86%8C%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EC%A3%BC%EB%AC%B8%20%EC%83%81%EC%84%B8%EC%A1%B0%ED%9A%8C(%ED%81%B4%EB%A0%88%EC%9E%84%20%EC%83%81%EC%84%B8%EC%82%AC%EC%9C%A0%20%ED%8F%AC%ED%95%A8)%201-2.png)
      */
-    get: operations["get-guest-orders-order-no-claim"];
+    get: operations['get-guest-orders-order-no-claim'];
   };
-  "/guest/orders/{orderNo}/deliveries": {
+  '/guest/orders/{orderNo}/deliveries': {
     /**
      * 비회원 주문단위 배송정보 수정하기
      * @description
@@ -207,9 +206,9 @@ export interface paths {
      * [![](http://image.toast.com/aaaaahb/api-description/order/guest/[PUT]%20guest_orders_deliveries%20%EC%A3%BC%EB%AC%B8%EB%8B%A8%EC%9C%84%20%EB%B0%B0%EC%86%A1%EC%A0%95%EB%B3%B4%20%EC%88%98%EC%A0%95%201-1.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/guest/[PUT]%20guest_orders_deliveries%20%EC%A3%BC%EB%AC%B8%EB%8B%A8%EC%9C%84%20%EB%B0%B0%EC%86%A1%EC%A0%95%EB%B3%B4%20%EC%88%98%EC%A0%95%201-1.png)
      * [![](http://image.toast.com/aaaaahb/api-description/order/guest/[PUT]%20guest_orders_deliveries%20%EC%A3%BC%EB%AC%B8%EB%8B%A8%EC%9C%84%20%EB%B0%B0%EC%86%A1%EC%A0%95%EB%B3%B4%20%EC%88%98%EC%A0%95%201-2.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/guest/[PUT]%20guest_orders_deliveries%20%EC%A3%BC%EB%AC%B8%EB%8B%A8%EC%9C%84%20%EB%B0%B0%EC%86%A1%EC%A0%95%EB%B3%B4%20%EC%88%98%EC%A0%95%201-2.png)
      */
-    put: operations["put-guest-orders-order-no-deliveries"];
+    put: operations['put-guest-orders-order-no-deliveries'];
   };
-  "/guest/orders/{orderNo}/forgot-password": {
+  '/guest/orders/{orderNo}/forgot-password': {
     /**
      * 비회원 초기화된 주문 패스워드 전송하기
      * @description
@@ -220,9 +219,9 @@ export interface paths {
      * ## 화면예시
      * [![](http://image.toast.com/aaaaahb/api-description/order/guest/[GET]%20guest_orders_forgot-password%20%EB%B9%84%ED%9A%8C%EC%9B%90%20%EC%A3%BC%EB%AC%B8%20%ED%8C%A8%EC%8A%A4%EC%9B%8C%EB%93%9C%20%EC%9E%AC%EC%A0%84%EC%86%A1.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/guest/[GET]%20guest_orders_forgot-password%20%EB%B9%84%ED%9A%8C%EC%9B%90%20%EC%A3%BC%EB%AC%B8%20%ED%8C%A8%EC%8A%A4%EC%9B%8C%EB%93%9C%20%EC%9E%AC%EC%A0%84%EC%86%A1.png)
      */
-    get: operations["get-guest-orders-order-no-forgot-password"];
+    get: operations['get-guest-orders-order-no-forgot-password'];
   };
-  "/later-input/areafees": {
+  '/later-input/areafees': {
     /**
      * [샵바이프리미엄 전용] 지역별 추가 배송비 목록 조회하기 (배송비템플릿 번호 또는 암호화된 배송 번호 사용)
      * @description
@@ -230,34 +229,34 @@ export interface paths {
      * 배송비템플릿 번호 또는 암호화된 배송번호로 지역별 추가 배송비 목록을 조회하는 API 입니다.
      * (두 필드 중 하나만 입력해야 합니다.)
      */
-    get: operations["get-later-input-areafees"];
+    get: operations['get-later-input-areafees'];
   };
-  "/later-input/order": {
+  '/later-input/order': {
     /**
      * [샵바이프리미엄 전용] 나중배송입력 주문 상세 조회하기
      * @description
      * ## 부가명 및 특이사항
      * 암호화된 배송 번호로 주문 상세정보를 조회하는 API 입니다.
      */
-    get: operations["get-order-encrypted-shipping-no-later-input"];
+    get: operations['get-order-encrypted-shipping-no-later-input'];
   };
-  "/later-input/shippings": {
+  '/later-input/shippings': {
     /**
      * [샵바이프리미엄 전용] 나중 입력 배송지 조회하기
      * @description
      * ## 부가설명 및 특이사항
      * 나중에 입력된 배송지를 조회하는 API 입니다.
      */
-    get: operations["get-later-input-shippings"];
+    get: operations['get-later-input-shippings'];
     /**
      * [샵바이프리미엄 전용] 나중 입력 배송지 정보 수정하기
      * @description
      * ## 부가설명 및 특이사항
      * 나중에 입력된 배송지 정보를 수정하는 API 입니다.
      */
-    put: operations["put-later-input-shippings"];
+    put: operations['put-later-input-shippings'];
   };
-  "/my-pay/modify-main-payment": {
+  '/my-pay/modify-main-payment': {
     /**
      * 주 결제수단 설정하기
      * @description
@@ -266,34 +265,34 @@ export interface paths {
      *
      * 신용카드와 계좌는 주 결제수단을 각각 관리합니다.
      */
-    post: operations["post-modify-main-payment"];
+    post: operations['post-modify-main-payment'];
   };
-  "/my-pay/modify-password": {
+  '/my-pay/modify-password': {
     /**
      * 비밀번호 변경 파라미터 조회하기
      * @description
      * ## 부가설명 및 특이사항
      * 비밀번호 변경 webUI를 띄우기 위한 파라미터를 조회합니다.
      */
-    get: operations["post-modify-password"];
+    get: operations['post-modify-password'];
   };
-  "/my-pay/payment-infos": {
+  '/my-pay/payment-infos': {
     /**
      * 등록된 결제수단 조회하기
      * @description
      * ## 부가설명 및 특이사항
      * 등록된 결제수단 리스트를 조회합니다.
      */
-    get: operations["get-payment-infos"];
+    get: operations['get-payment-infos'];
     /**
      * 등록된 결제수단 삭제하기
      * @description
      * ## 부가설명 및 특이사항
      * 등록된 결제수단을 삭제합니다.
      */
-    delete: operations["delete-payment-infos-pay-token"];
+    delete: operations['delete-payment-infos-pay-token'];
   };
-  "/my-pay/register-payment": {
+  '/my-pay/register-payment': {
     /**
      * 결제수단 등록 webUrl를 위한 정보 조회하기
      * @description
@@ -302,18 +301,18 @@ export interface paths {
      *
      * payMethod에 입력한 값에 따라 다른 webUI를 응답합니다.
      */
-    get: operations["get-register-payment"];
+    get: operations['get-register-payment'];
   };
-  "/my-pay/register-user": {
+  '/my-pay/register-user': {
     /**
      * 회원등록 webUrl를 위한 정보 조회하기
      * @description
      * ## 부가설명 및 특이사항
      * 회원등록 webUI를 띄우기 위한 파라미터를 조회합니다.
      */
-    get: operations["get-register-user"];
+    get: operations['get-register-user'];
   };
-  "/my-pay/register-user-with-payment": {
+  '/my-pay/register-user-with-payment': {
     /**
      * 회원등록후 결제수단 등록으로 바로 넘어갈 수 있도록 필요한 값 조회하기
      * @description
@@ -322,27 +321,27 @@ export interface paths {
      *
      * 회원등록이 성공적으로 끝나면 clientBridgeUrl 로 결제수단등록에 필요한 파라미터들이 urlEncoding이 된 상태로 함께 redirect 됩니다.
      */
-    get: operations["get-register-user-with-payment"];
+    get: operations['get-register-user-with-payment'];
   };
-  "/my-pay/user": {
+  '/my-pay/user': {
     /**
      * 회원서비스 해제하기
      * @description
      * ## 부가설명 및 특이사항
      * 회원서비스를 해제합니다.
      */
-    delete: operations["delete-user"];
+    delete: operations['delete-user'];
   };
-  "/order-configs": {
+  '/order-configs': {
     /**
      * 주문 설정 값 가져오기
      * @description
      * ## 부가설명 및 특이사항
      * 주문 설정값을 조회하는 API 입니다.
      */
-    get: operations["get-order-configuration"];
+    get: operations['get-order-configuration'];
   };
-  "/order-sheets": {
+  '/order-sheets': {
     /**
      * 주문서 작성하기
      * @description
@@ -356,9 +355,9 @@ export interface paths {
      * ## 화면예시
      * [![](http://image.toast.com/aaaaahb/api-description/order/ordersheet/[POST]%20order-sheets%20%EC%A3%BC%EB%AC%B8%EC%84%9C%20%EC%83%9D%EC%84%B1.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/ordersheet/[POST]%20order-sheets%20%EC%A3%BC%EB%AC%B8%EC%84%9C%20%EC%83%9D%EC%84%B1.png)
      */
-    post: operations["post-order-sheet"];
+    post: operations['post-order-sheet'];
   };
-  "/order-sheets/{orderSheetNo}": {
+  '/order-sheets/{orderSheetNo}': {
     /**
      * 주문서 조회하기
      * @description
@@ -371,9 +370,9 @@ export interface paths {
      * [![](http://image.toast.com/aaaaahb/api-description/order/ordersheet/[GET]%20order-sheets%20%EC%A3%BC%EB%AC%B8%EC%84%9C%20%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0%201-1.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/ordersheet/[GET]%20order-sheets%20%EC%A3%BC%EB%AC%B8%EC%84%9C%20%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0%201-1.png)
      * [![](http://image.toast.com/aaaaahb/api-description/order/ordersheet/[GET]%20order-sheets%20%EC%A3%BC%EB%AC%B8%EC%84%9C%20%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0%201-2.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/ordersheet/[GET]%20order-sheets%20%EC%A3%BC%EB%AC%B8%EC%84%9C%20%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0%201-2.png)
      */
-    get: operations["get-order-sheet"];
+    get: operations['get-order-sheet'];
   };
-  "/order-sheets/{orderSheetNo}/calculate": {
+  '/order-sheets/{orderSheetNo}/calculate': {
     /**
      * 쿠폰 및 배송지 정보가 적용된 금액 조회하기
      * @description
@@ -387,9 +386,9 @@ export interface paths {
      * ## 화면예시
      * [![](http://image.toast.com/aaaaahb/api-description/order/ordersheet/[POST]%20order-sheets_calculate%20%EC%BF%A0%ED%8F%B0%20%EB%B0%8F%20%EB%B0%B0%EC%86%A1%EC%A7%80%20%EC%A0%95%EB%B3%B4%EA%B0%80%20%EC%A0%81%EC%9A%A9%EB%90%9C%20%EA%B8%88%EC%95%A1%EC%9D%84%20%EB%85%B8%EC%B6%9C.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/ordersheet/[POST]%20order-sheets_calculate%20%EC%BF%A0%ED%8F%B0%20%EB%B0%8F%20%EB%B0%B0%EC%86%A1%EC%A7%80%20%EC%A0%95%EB%B3%B4%EA%B0%80%20%EC%A0%81%EC%9A%A9%EB%90%9C%20%EA%B8%88%EC%95%A1%EC%9D%84%20%EB%85%B8%EC%B6%9C.png)
      */
-    post: operations["post-order-sheets-order-sheet-no-calculate"];
+    post: operations['post-order-sheets-order-sheet-no-calculate'];
   };
-  "/order-sheets/{orderSheetNo}/coupons": {
+  '/order-sheets/{orderSheetNo}/coupons': {
     /**
      * 적용할 수 있는 쿠폰 정보 조회하기
      * @description
@@ -399,9 +398,9 @@ export interface paths {
      * ## 화면예시
      * [![](http://image.toast.com/aaaaahb/api-description/order/ordersheet/[GET]%20order-sheets_coupons%20%EC%A0%81%EC%9A%A9%ED%95%A0%20%EC%88%98%20%EC%9E%88%EB%8A%94%20%EC%BF%A0%ED%8F%B0%20%EC%A0%95%EB%B3%B4%20%EC%A1%B0%ED%9A%8C.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/ordersheet/[GET]%20order-sheets_coupons%20%EC%A0%81%EC%9A%A9%ED%95%A0%20%EC%88%98%20%EC%9E%88%EB%8A%94%20%EC%BF%A0%ED%8F%B0%20%EC%A0%95%EB%B3%B4%20%EC%A1%B0%ED%9A%8C.png)
      */
-    get: operations["get-order-sheets-order-sheet-no-coupons"];
+    get: operations['get-order-sheets-order-sheet-no-coupons'];
   };
-  "/order-sheets/{orderSheetNo}/coupons/apply": {
+  '/order-sheets/{orderSheetNo}/coupons/apply': {
     /**
      * 쿠폰 적용하기
      * @description
@@ -411,9 +410,9 @@ export interface paths {
      * ## 화면예시
      * [![](http://image.toast.com/aaaaahb/api-description/order/ordersheet/[POST]%20order-sheets_coupons_apply%20%EC%BF%A0%ED%8F%B0%EC%A0%81%EC%9A%A9.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/ordersheet/[POST]%20order-sheets_coupons_apply%20%EC%BF%A0%ED%8F%B0%EC%A0%81%EC%9A%A9.png)
      */
-    post: operations["post-order-sheets-order-sheet-no-coupons-apply"];
+    post: operations['post-order-sheets-order-sheet-no-coupons-apply'];
   };
-  "/order-sheets/{orderSheetNo}/coupons/calculate": {
+  '/order-sheets/{orderSheetNo}/coupons/calculate': {
     /**
      * 쿠폰적용금액 계산하기
      * @description
@@ -423,9 +422,9 @@ export interface paths {
      * ## 화면예시
      * [![](http://image.toast.com/aaaaahb/api-description/order/ordersheet/[POST]%20order-sheets_coupons_calculate%20%EC%BF%A0%ED%8F%B0%EC%A0%81%EC%9A%A9%20%EA%B8%88%EC%95%A1%20%EA%B3%84%EC%82%B0.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/ordersheet/[POST]%20order-sheets_coupons_calculate%20%EC%BF%A0%ED%8F%B0%EC%A0%81%EC%9A%A9%20%EA%B8%88%EC%95%A1%20%EA%B3%84%EC%82%B0.png)
      */
-    post: operations["post-order-sheets-order-sheet-no-coupons-calculate"];
+    post: operations['post-order-sheets-order-sheet-no-coupons-calculate'];
   };
-  "/order-sheets/{orderSheetNo}/coupons/maximum": {
+  '/order-sheets/{orderSheetNo}/coupons/maximum': {
     /**
      * 최대쿠폰적용금액 계산하기
      * @description
@@ -437,9 +436,9 @@ export interface paths {
      * ## 화면예시
      * [![](http://image.toast.com/aaaaahb/api-description/order/ordersheet/[POST]%20order-sheets_coupons_maximum%20%EC%B5%9C%EB%8C%80%EC%BF%A0%ED%8F%B0%EC%A0%81%EC%9A%A9%EA%B8%88%EC%95%A1%20%EA%B3%84%EC%82%B0.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/ordersheet/[POST]%20order-sheets_coupons_maximum%20%EC%B5%9C%EB%8C%80%EC%BF%A0%ED%8F%B0%EC%A0%81%EC%9A%A9%EA%B8%88%EC%95%A1%20%EA%B3%84%EC%82%B0.png)
      */
-    post: operations["post-order-sheets-order-sheet-no-coupons-maximum"];
+    post: operations['post-order-sheets-order-sheet-no-coupons-maximum'];
   };
-  "/payments/reserve": {
+  '/payments/reserve': {
     /**
      * 주문 예약하기
      * @description
@@ -452,62 +451,62 @@ export interface paths {
      *
      * 앱(iOS/AOS) 결제 개발 가이드: [https://workspace.shopby.co.kr/guide/skin/dev-cover/app-payment-module?lv=11](https://workspace.shopby.co.kr/guide/skin/dev-cover/app-payment-module?lv=11)
      */
-    post: operations["post-payments-reserve"];
+    post: operations['post-payments-reserve'];
   };
-  "/payments/naver/ordersheet": {
+  '/payments/naver/ordersheet': {
     /**
      * 네이버페이 주문서 생성하기
      * @description
      * ## 부가설명 및 특이사항
      * 네이버페이 주문서를 생성하는 API 입니다.
      */
-    post: operations["post-payments-naver-ordersheet"];
+    post: operations['post-payments-naver-ordersheet'];
   };
-  "/payments/naver/validate": {
+  '/payments/naver/validate': {
     /**
      * 네이버페이 상품구매 검증하기
      * @description
      * ## 부가설명 및 특이사항
      * 네이버페이 상품구매 가능 여부를 검증하는 API 입니다.
      */
-    put: operations["put-payments-naver-validate"];
+    put: operations['put-payments-naver-validate'];
   };
-  "/payments/naver/wish-list": {
+  '/payments/naver/wish-list': {
     /**
      * 네이버페이 찜 등록하기
      * @description
      * ## 부가설명 및 특이사항
      * 네이버페이 찜을 등록하는 API 입니다.
      */
-    post: operations["post-payments-naver-wish-list"];
+    post: operations['post-payments-naver-wish-list'];
   };
-  "/previous-orders": {
+  '/previous-orders': {
     /**
      * 이전주문 검색
      * @description 이전주문 검색
      */
-    get: operations["get-previous-orders"];
+    get: operations['get-previous-orders'];
   };
-  "/previous-orders/{orderNo}": {
+  '/previous-orders/{orderNo}': {
     /**
      * 이전주문 상세조회
      * @description 이전주문 상세조회
      */
-    get: operations["get-previous-order-details"];
+    get: operations['get-previous-order-details'];
   };
-  "/previous-orders/guest/{orderNo}": {
+  '/previous-orders/guest/{orderNo}': {
     /**
      * 비회원 이전주문 상세조회
      * @description 비회원 이전주문 상세조회
      */
-    get: operations["get-guest-previous-order-details"];
+    get: operations['get-guest-previous-order-details'];
     /**
      * 이전주문 비회원 토큰 발급
      * @description 이전주문 비회원 토큰 발급
      */
-    post: operations["get-previous-order-guest-token"];
+    post: operations['get-previous-order-guest-token'];
   };
-  "/profile/orders": {
+  '/profile/orders': {
     /**
      * 주문 리스트 조회하기
      * @description
@@ -518,9 +517,9 @@ export interface paths {
      * [![](http://image.toast.com/aaaaahb/api-description/order/myorder/[GET]%20profile_orders%20%EC%A3%BC%EB%AC%B8%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%20%EC%A1%B0%ED%9A%8C%201-1.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/myorder/[GET]%20profile_orders%20%EC%A3%BC%EB%AC%B8%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%20%EC%A1%B0%ED%9A%8C%201-1.png)
      * [![](http://image.toast.com/aaaaahb/api-description/order/myorder/[GET]%20profile_orders%20%EC%A3%BC%EB%AC%B8%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%20%EC%A1%B0%ED%9A%8C%201-2.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/myorder/[GET]%20profile_orders%20%EC%A3%BC%EB%AC%B8%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%20%EC%A1%B0%ED%9A%8C%201-2.png)
      */
-    get: operations["get-profile-orders"];
+    get: operations['get-profile-orders'];
   };
-  "/profile/shipping-addresses": {
+  '/profile/shipping-addresses': {
     /**
      * 배송지 목록 가져오기
      * @description
@@ -532,7 +531,7 @@ export interface paths {
      * ## 화면예시
      * [![](http://image.toast.com/aaaaahb/api-description/order/shipping-address/[GET]%20profile_shipping-addresses%20%EB%B0%B0%EC%86%A1%EC%A7%80%20%EB%AA%A9%EB%A1%9D%20%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/shipping-address/[GET]%20profile_shipping-addresses%20%EB%B0%B0%EC%86%A1%EC%A7%80%20%EB%AA%A9%EB%A1%9D%20%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0.png)
      */
-    get: operations["get-profile-shipping-addresses"];
+    get: operations['get-profile-shipping-addresses'];
     /**
      * 배송지 등록하기
      * @description
@@ -546,9 +545,9 @@ export interface paths {
      * ## 화면예시
      * [![](http://image.toast.com/aaaaahb/api-description/order/shipping-address/[GET]%20profile_shipping-addresses%20%EB%B0%B0%EC%86%A1%EC%A7%80%20%EB%AA%A9%EB%A1%9D%20%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/shipping-address/[GET]%20profile_shipping-addresses%20%EB%B0%B0%EC%86%A1%EC%A7%80%20%EB%AA%A9%EB%A1%9D%20%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0.png)
      */
-    post: operations["post-profile-shipping-addresses"];
+    post: operations['post-profile-shipping-addresses'];
   };
-  "/profile/orders/{orderNo}": {
+  '/profile/orders/{orderNo}': {
     /**
      * 주문 상세 조회하기
      * @description
@@ -560,9 +559,9 @@ export interface paths {
      * [![](http://image.toast.com/aaaaahb/api-description/order/myorder/[GET]%20profile_orders%20%EC%A3%BC%EB%AC%B8%20%EC%83%81%EC%84%B8%EC%A1%B0%ED%9A%8C%201-2.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/myorder/[GET]%20profile_orders%20%EC%A3%BC%EB%AC%B8%20%EC%83%81%EC%84%B8%EC%A1%B0%ED%9A%8C%201-2.png)
      * [![](http://image.toast.com/aaaaahb/api-description/order/myorder/[GET]%20profile_orders%20%EC%A3%BC%EB%AC%B8%20%EC%83%81%EC%84%B8%EC%A1%B0%ED%9A%8C%201-3.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/myorder/[GET]%20profile_orders%20%EC%A3%BC%EB%AC%B8%20%EC%83%81%EC%84%B8%EC%A1%B0%ED%9A%8C%201-3.png)
      */
-    get: operations["get-profile-orders-order-no"];
+    get: operations['get-profile-orders-order-no'];
   };
-  "/profile/shipping-addresses/recent": {
+  '/profile/shipping-addresses/recent': {
     /**
      * 최근 배송지 가져오기
      * @description
@@ -572,9 +571,9 @@ export interface paths {
      * ## 화면예시
      * [![](http://image.toast.com/aaaaahb/api-description/order/shipping-address/[GET]%20profile_shipping-addresses_recent%20%EC%B5%9C%EA%B7%BC%20%EB%B0%B0%EC%86%A1%EC%A7%80%20%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/shipping-address/[GET]%20profile_shipping-addresses_recent%20%EC%B5%9C%EA%B7%BC%20%EB%B0%B0%EC%86%A1%EC%A7%80%20%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0.png)
      */
-    get: operations["get-profile-shipping-address-recent"];
+    get: operations['get-profile-shipping-address-recent'];
   };
-  "/profile/shipping-addresses/{addressNo}": {
+  '/profile/shipping-addresses/{addressNo}': {
     /**
      * 배송지 가져오기
      * @description
@@ -584,7 +583,7 @@ export interface paths {
      * ## 화면예시
      * [![](http://image.toast.com/aaaaahb/api-description/order/shipping-address/[GET]%20profile_shipping-addresses%20%EB%B0%B0%EC%86%A1%EC%A7%80%20%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/shipping-address/[GET]%20profile_shipping-addresses%20%EB%B0%B0%EC%86%A1%EC%A7%80%20%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0.png)
      */
-    get: operations["get-profile-shipping-addresses-address-no"];
+    get: operations['get-profile-shipping-addresses-address-no'];
     /**
      * 배송지 수정하기
      * @description
@@ -594,7 +593,7 @@ export interface paths {
      * ## 화면예시
      * [![](http://image.toast.com/aaaaahb/api-description/order/shipping-address/[PUT]%20profile_shipping-addresses%20%EB%B0%B0%EC%86%A1%EC%A7%80%20%EC%88%98%EC%A0%95.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/shipping-address/[PUT]%20profile_shipping-addresses%20%EB%B0%B0%EC%86%A1%EC%A7%80%20%EC%88%98%EC%A0%95.png)
      */
-    put: operations["put-profile-shipping-addresses-address-no"];
+    put: operations['put-profile-shipping-addresses-address-no'];
     /**
      * 배송지 삭제하기
      * @description
@@ -604,9 +603,9 @@ export interface paths {
      * ## 화면예시
      * [![](http://image.toast.com/aaaaahb/api-description/order/shipping-address/[DELETE]%20profile_shipping-addresses%20%EB%B0%B0%EC%86%A1%EC%A7%80%20%EC%82%AD%EC%A0%9C.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/shipping-address/[DELETE]%20profile_shipping-addresses%20%EB%B0%B0%EC%86%A1%EC%A7%80%20%EC%82%AD%EC%A0%9C.png)
      */
-    delete: operations["delete-profile-shipping-addresses-address-no"];
+    delete: operations['delete-profile-shipping-addresses-address-no'];
   };
-  "/profile/order-options/summary/status": {
+  '/profile/order-options/summary/status': {
     /**
      * 주문 상태별 주문 옵션별 수량 조회하기
      * @description
@@ -618,9 +617,9 @@ export interface paths {
      * ## 화면예시
      * [![](http://image.toast.com/aaaaahb/api-description/order/myorder/[GET]%20profile_order-options_summary_status%20%EC%83%81%ED%83%9C%EB%B3%84%20%EC%A3%BC%EB%AC%B8%20%EC%98%B5%EC%85%98%EB%B3%84%20%EC%88%98%EB%9F%89.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/myorder/[GET]%20profile_order-options_summary_status%20%EC%83%81%ED%83%9C%EB%B3%84%20%EC%A3%BC%EB%AC%B8%20%EC%98%B5%EC%85%98%EB%B3%84%20%EC%88%98%EB%9F%89.png)
      */
-    get: operations["get-profile-order-options-summary-status"];
+    get: operations['get-profile-order-options-summary-status'];
   };
-  "/profile/order-options/{orderOptionNo}/confirm": {
+  '/profile/order-options/{orderOptionNo}/confirm': {
     /**
      * 상품 주문 구매 확정하기
      * @description
@@ -630,9 +629,9 @@ export interface paths {
      * ## 화면예시
      * [![](http://image.toast.com/aaaaahb/api-description/order/myorder/[PUT]%20profile_order-options_confirm%20%EC%83%81%ED%92%88%20%EC%A3%BC%EB%AC%B8%20%EA%B5%AC%EB%A7%A4%ED%99%95%EC%A0%95.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/myorder/[PUT]%20profile_order-options_confirm%20%EC%83%81%ED%92%88%20%EC%A3%BC%EB%AC%B8%20%EA%B5%AC%EB%A7%A4%ED%99%95%EC%A0%95.png)
      */
-    put: operations["put-profile-order-options-order-option-no-confirm"];
+    put: operations['put-profile-order-options-order-option-no-confirm'];
   };
-  "/profile/order-options/{orderOptionNo}/delivery-done": {
+  '/profile/order-options/{orderOptionNo}/delivery-done': {
     /**
      * 상품 주문 배송완료 처리하기
      * @description
@@ -642,18 +641,18 @@ export interface paths {
      * ## 화면예시
      * [![](http://image.toast.com/aaaaahb/api-description/order/myorder/[PUT]%20profile_order-options_delivery-done%20%EC%83%81%ED%92%88%20%EC%A3%BC%EB%AC%B8%20%EB%B0%B0%EC%86%A1%EC%99%84%EB%A3%8C.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/myorder/[PUT]%20profile_order-options_delivery-done%20%EC%83%81%ED%92%88%20%EC%A3%BC%EB%AC%B8%20%EB%B0%B0%EC%86%A1%EC%99%84%EB%A3%8C.png)
      */
-    put: operations["put-profile-order-options-order-option-no-delivery-done"];
+    put: operations['put-profile-order-options-order-option-no-delivery-done'];
   };
-  "/profile/orders/summary/amount": {
+  '/profile/orders/summary/amount': {
     /**
      * 주문 상태별 주문 수량 및 금액 조회하기
      * @description
      * ## 부가설명 및 특이사항
      * 시작일과 종료일 사이의 주문 상태별 주문 수량과 결제 금액 조회하는 API 입니다.
      */
-    get: operations["get-profile-orders-summary-amount"];
+    get: operations['get-profile-orders-summary-amount'];
   };
-  "/profile/orders/summary/status": {
+  '/profile/orders/summary/status': {
     /**
      * 주문 상태별 주문 수량 조회하기
      * @description
@@ -665,9 +664,9 @@ export interface paths {
      * ## 화면예시
      * [![](http://image.toast.com/aaaaahb/api-description/order/myorder/[GET]%20profile_order-options_summary_status%20%EC%83%81%ED%83%9C%EB%B3%84%20%EC%A3%BC%EB%AC%B8%20%EC%98%B5%EC%85%98%EB%B3%84%20%EC%88%98%EB%9F%89.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/myorder/[GET]%20profile_order-options_summary_status%20%EC%83%81%ED%83%9C%EB%B3%84%20%EC%A3%BC%EB%AC%B8%20%EC%98%B5%EC%85%98%EB%B3%84%20%EC%88%98%EB%9F%89.png)
      */
-    get: operations["get-profile-orders-summary-status"];
+    get: operations['get-profile-orders-summary-status'];
   };
-  "/profile/orders/{orderNo}/cashReceipt": {
+  '/profile/orders/{orderNo}/cashReceipt': {
     /**
      * [샵바이 프리미엄 사용 불가] 현금영수증 신청하기
      * @description
@@ -677,9 +676,9 @@ export interface paths {
      * ## 화면예시
      * [![](http://image.toast.com/aaaaahb/api-description/order/myorder/[POST]%20profile_orders_cashReceipt%20%ED%98%84%EA%B8%88%EC%98%81%EC%88%98%EC%A6%9D%20%EC%8B%A0%EC%B2%AD.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/myorder/[POST]%20profile_orders_cashReceipt%20%ED%98%84%EA%B8%88%EC%98%81%EC%88%98%EC%A6%9D%20%EC%8B%A0%EC%B2%AD.png)
      */
-    post: operations["post-profile-orders-order-no-cash-receipts"];
+    post: operations['post-profile-orders-order-no-cash-receipts'];
   };
-  "/profile/orders/{orderNo}/claim": {
+  '/profile/orders/{orderNo}/claim': {
     /**
      * 전체 주문취소를 위한 주문 상세 조회하기 (클레임 상세사유 포함)
      * @description
@@ -692,9 +691,9 @@ export interface paths {
      * [![](http://image.toast.com/aaaaahb/api-description/order/myorder/[GET]%20profile_orders_claim%20%EC%A0%84%EC%B2%B4%20%EC%A3%BC%EB%AC%B8%EC%B7%A8%EC%86%8C%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EC%A3%BC%EB%AC%B8%20%EC%83%81%EC%84%B8%EC%A1%B0%ED%9A%8C(%ED%81%B4%EB%A0%88%EC%9E%84%20%EC%83%81%EC%84%B8%EC%82%AC%EC%9C%A0%20%ED%8F%AC%ED%95%A8)%201-1.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/myorder/[GET]%20profile_orders_claim%20%EC%A0%84%EC%B2%B4%20%EC%A3%BC%EB%AC%B8%EC%B7%A8%EC%86%8C%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EC%A3%BC%EB%AC%B8%20%EC%83%81%EC%84%B8%EC%A1%B0%ED%9A%8C(%ED%81%B4%EB%A0%88%EC%9E%84%20%EC%83%81%EC%84%B8%EC%82%AC%EC%9C%A0%20%ED%8F%AC%ED%95%A8)%201-1.png)
      * [![](http://image.toast.com/aaaaahb/api-description/order/myorder/[GET]%20profile_orders_claim%20%EC%A0%84%EC%B2%B4%20%EC%A3%BC%EB%AC%B8%EC%B7%A8%EC%86%8C%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EC%A3%BC%EB%AC%B8%20%EC%83%81%EC%84%B8%EC%A1%B0%ED%9A%8C(%ED%81%B4%EB%A0%88%EC%9E%84%20%EC%83%81%EC%84%B8%EC%82%AC%EC%9C%A0%20%ED%8F%AC%ED%95%A8)%201-2.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/myorder/[GET]%20profile_orders_claim%20%EC%A0%84%EC%B2%B4%20%EC%A3%BC%EB%AC%B8%EC%B7%A8%EC%86%8C%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EC%A3%BC%EB%AC%B8%20%EC%83%81%EC%84%B8%EC%A1%B0%ED%9A%8C(%ED%81%B4%EB%A0%88%EC%9E%84%20%EC%83%81%EC%84%B8%EC%82%AC%EC%9C%A0%20%ED%8F%AC%ED%95%A8)%201-2.png)
      */
-    get: operations["get-profile-orders-order-no-claim"];
+    get: operations['get-profile-orders-order-no-claim'];
   };
-  "/profile/orders/{orderNo}/deliveries": {
+  '/profile/orders/{orderNo}/deliveries': {
     /**
      * 주문단위 배송정보 수정하기
      * @description
@@ -707,9 +706,9 @@ export interface paths {
      * ## 화면예시
      * [![](http://image.toast.com/aaaaahb/api-description/order/myorder/[PUT]%20profile_orders_deliveries%20%EC%A3%BC%EB%AC%B8%EB%8B%A8%EC%9C%84%20%EB%B0%B0%EC%86%A1%EC%A0%95%EB%B3%B4%20%EC%88%98%EC%A0%95.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/myorder/[PUT]%20profile_orders_deliveries%20%EC%A3%BC%EB%AC%B8%EB%8B%A8%EC%9C%84%20%EB%B0%B0%EC%86%A1%EC%A0%95%EB%B3%B4%20%EC%88%98%EC%A0%95.png)
      */
-    put: operations["put-profile-orders-order-no-deliveries"];
+    put: operations['put-profile-orders-order-no-deliveries'];
   };
-  "/profile/shipping-addresses/{addressNo}/default": {
+  '/profile/shipping-addresses/{addressNo}/default': {
     /**
      * 기본 배송지 수정하기
      * @description
@@ -719,16 +718,16 @@ export interface paths {
      * ## 화면예시
      * [![](http://image.toast.com/aaaaahb/api-description/order/shipping-address/[PUT]%20profile_shipping-addresses_default%20%EA%B8%B0%EB%B3%B8%20%EB%B0%B0%EC%86%A1%EC%A7%80%20%EC%88%98%EC%A0%95.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/shipping-address/[PUT]%20profile_shipping-addresses_default%20%EA%B8%B0%EB%B3%B8%20%EB%B0%B0%EC%86%A1%EC%A7%80%20%EC%88%98%EC%A0%95.png)
      */
-    put: operations["put-profile-shipping-addresses-address-no-default"];
+    put: operations['put-profile-shipping-addresses-address-no-default'];
   };
-  "/recurring-payments": {
+  '/recurring-payments': {
     /**
      * [샵바이프리미엄 전용] 정기결제 조회하기
      * @description
      * ## 부가설명 및 특이사항
      * 정기결제를 조회하는 API 입니다.
      */
-    get: operations["get-recurring-payments"];
+    get: operations['get-recurring-payments'];
     /**
      * [샵바이프리미엄 전용] 정기결제 신청하기
      * @description
@@ -737,9 +736,9 @@ export interface paths {
      *
      * 참고 : 정기결제 신청 시점에 가격이 500원 미만인 상품이 존재하면 400 에러를 응답합니다.
      */
-    post: operations["post-recurring-payments"];
+    post: operations['post-recurring-payments'];
   };
-  "/recurring-payments/card": {
+  '/recurring-payments/card': {
     /**
      * [샵바이프리미엄 전용] 정기결제 카드 조회하기
      * @description
@@ -748,16 +747,16 @@ export interface paths {
      *
      * 회원에게 등록된 정기결제 카드가 없을 시 400 에러로 응답합니다.
      */
-    get: operations["get-recurring-payments-card"];
+    get: operations['get-recurring-payments-card'];
     /**
      * [샵바이프리미엄 전용] 정기결제 카드 삭제하기
      * @description
      * ## 부가설명 및 특이사항
      * 정기결제 카드를 삭제하는 API 입니다.
      */
-    delete: operations["delete-recurring-payments-card"];
+    delete: operations['delete-recurring-payments-card'];
   };
-  "/recurring-payments/cart": {
+  '/recurring-payments/cart': {
     /**
      * [샵바이프리미엄 전용] 정기결제 장바구니 조회하기
      * @description
@@ -769,7 +768,7 @@ export interface paths {
      * ## 화면예시
      * [![](http://image.toast.com/aaaaahb/api-description/order/cart/[GET]%20cart%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EB%AA%A9%EB%A1%9D%20%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0%201-2.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/cart/[GET]%20cart%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EB%AA%A9%EB%A1%9D%20%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0%201-2.png)
      */
-    get: operations["get-recurring-payments-cart"];
+    get: operations['get-recurring-payments-cart'];
     /**
      * [샵바이프리미엄 전용] 정기결제 장바구니 수정하기
      * @description
@@ -780,7 +779,7 @@ export interface paths {
      *
      * 옵션변경은 변경할 옵션을 삭제한 후 신규등록하는 방법으로 수정합니다.
      */
-    put: operations["put-recurring-payments-cart"];
+    put: operations['put-recurring-payments-cart'];
     /**
      * [샵바이프리미엄 전용] 정기결제 장바구니에 추가하기
      * @description
@@ -791,7 +790,7 @@ export interface paths {
      *
      * 참고:정기결제(배송) API화면가이드 https://shopby.works/support/forum/30659
      */
-    post: operations["post-recurring-payments-cart"];
+    post: operations['post-recurring-payments-cart'];
     /**
      * [샵바이프리미엄 전용] 정기결제 장바구니 삭제하기
      * @description
@@ -800,18 +799,18 @@ export interface paths {
      *
      * cartNo를 List형으로 전달해야 합니다.
      */
-    delete: operations["delete-recurring-payments-cart"];
+    delete: operations['delete-recurring-payments-cart'];
   };
-  "/recurring-payments/delivery-cycle": {
+  '/recurring-payments/delivery-cycle': {
     /**
      * [샵바이프리미엄 전용] 정기결제 배송주기 변경하기
      * @description
      * ## 부가설명 및 특이사항
      * 정기결제 배송일을 변경하는 API 입니다.
      */
-    put: operations["put-recurring-payments-delivery-cycle"];
+    put: operations['put-recurring-payments-delivery-cycle'];
   };
-  "/recurring-payments/next-recurring-date": {
+  '/recurring-payments/next-recurring-date': {
     /**
      * [샵바이프리미엄 전용] 정기결제 다음배송일자 조회하기
      * @description
@@ -820,9 +819,9 @@ export interface paths {
      *
      * 정기결제 신청번호가 없으면 현재 날짜 기준으로 조회합니다.
      */
-    get: operations["get-recurring-payments-next-recurring-date"];
+    get: operations['get-recurring-payments-next-recurring-date'];
   };
-  "/recurring-payments/order-sheets": {
+  '/recurring-payments/order-sheets': {
     /**
      * [샵바이프리미엄 전용] 정기결제 주문서 작성하기
      * @description
@@ -833,9 +832,9 @@ export interface paths {
      *
      * 참고 : 주문서 생성시점에 가격이 500원 미만인 상품이 존재하면 400 에러를 응답합니다.
      */
-    post: operations["post-recurring-payments-order-sheets"];
+    post: operations['post-recurring-payments-order-sheets'];
   };
-  "/recurring-payments/cart/calculate": {
+  '/recurring-payments/cart/calculate': {
     /**
      * [샵바이프리미엄 전용] 정기결제 장바구니에서 선택된 상품금액 계산하기
      * @description
@@ -851,9 +850,9 @@ export interface paths {
      * ## 화면예시
      * [![](http://image.toast.com/aaaaahb/api-description/order/cart/[GET]%20cart_calculate%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EC%84%A0%ED%83%9D%20%EA%B3%84%EC%82%B0.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/cart/[GET]%20cart_calculate%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EC%84%A0%ED%83%9D%20%EA%B3%84%EC%82%B0.png)
      */
-    get: operations["get-recurring-payments-cart-calculate"];
+    get: operations['get-recurring-payments-cart-calculate'];
   };
-  "/recurring-payments/cart/subset": {
+  '/recurring-payments/cart/subset': {
     /**
      * [샵바이프리미엄 전용] 정기결제 장바구니에서 선택된 항목만 장바구니 그룹별로 재계산하기
      * @description
@@ -869,9 +868,9 @@ export interface paths {
      * ## 화면예시
      * [![](http://image.toast.com/aaaaahb/api-description/order/cart/[GET]%20cart_subset%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%EC%97%90%EC%84%9C%20%EC%84%A0%ED%83%9D%EB%90%9C%20%ED%95%AD%EB%AA%A9%EB%A7%8C%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EA%B7%B8%EB%A3%B9%EB%B3%84%EB%A1%9C%20%EC%9E%AC%20%EA%B3%84%EC%82%B0.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/cart/[GET]%20cart_subset%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%EC%97%90%EC%84%9C%20%EC%84%A0%ED%83%9D%EB%90%9C%20%ED%95%AD%EB%AA%A9%EB%A7%8C%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EA%B7%B8%EB%A3%B9%EB%B3%84%EB%A1%9C%20%EC%9E%AC%20%EA%B3%84%EC%82%B0.png)
      */
-    get: operations["get-recurring-payments-cart-subset"];
+    get: operations['get-recurring-payments-cart-subset'];
   };
-  "/recurring-payments/close/{recurring-payment-no}": {
+  '/recurring-payments/close/{recurring-payment-no}': {
     /**
      * [샵바이프리미엄 전용] 정기결제 해지하기
      * @description
@@ -880,9 +879,9 @@ export interface paths {
      *
      * 성공적으로 해지 완료 시 204(noContent) 응답을 반환합니다.
      */
-    put: operations["put-recurring-payments-close-recurring-payment-no"];
+    put: operations['put-recurring-payments-close-recurring-payment-no'];
   };
-  "/recurring-payments/guest/cart": {
+  '/recurring-payments/guest/cart': {
     /**
      * [샵바이프리미엄 전용] 정기결제 비회원 장바구니 계산하기
      * @description
@@ -895,9 +894,9 @@ export interface paths {
      * [![](http://image.toast.com/aaaaahb/api-description/order/guest/[POST]%20guest_cart%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EA%B3%84%EC%82%B0%201-1.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/guest/[POST]%20guest_cart%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EA%B3%84%EC%82%B0%201-1.png)
      * [![](http://image.toast.com/aaaaahb/api-description/order/guest/[POST]%20guest_cart%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EA%B3%84%EC%82%B0%201-2.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/guest/[POST]%20guest_cart%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EA%B3%84%EC%82%B0%201-2.png)
      */
-    post: operations["post-recurring-payments-guest-cart"];
+    post: operations['post-recurring-payments-guest-cart'];
   };
-  "/recurring-payments/order-sheets/{orderSheetNo}": {
+  '/recurring-payments/order-sheets/{orderSheetNo}': {
     /**
      * [샵바이프리미엄 전용] 정기결제 주문서 가져오기
      * @description
@@ -906,16 +905,16 @@ export interface paths {
      *
      * 참고 : 주문서 내에 가격이 500원 미만인 상품이 존재하면 400 에러를 응답합니다.
      */
-    get: operations["get-recurring-payments-order-sheets-order-sheets-no"];
+    get: operations['get-recurring-payments-order-sheets-order-sheets-no'];
   };
-  "/shippings/enums": {
+  '/shippings/enums': {
     /**
      * 배송 enum 정보 조회
      * @description 배송 enum 정보 조회
      */
-    get: operations["get-shippings-enums"];
+    get: operations['get-shippings-enums'];
   };
-  "/shippings/{encryptedShippingNo}/later-input": {
+  '/shippings/{encryptedShippingNo}/later-input': {
     /**
      * [샵바이프리미엄 전용] 나중 입력 배송지 조회하기
      * @deprecated
@@ -923,7 +922,7 @@ export interface paths {
      * ## 부가설명 및 특이사항
      * 나중에 입력된 배송지를 조회하는 API 입니다.
      */
-    get: operations["get-shippings-encrypted-shipping-no-later-input"];
+    get: operations['get-shippings-encrypted-shipping-no-later-input'];
     /**
      * [샵바이프리미엄 전용] 나중 입력 배송지 정보 수정하기
      * @deprecated
@@ -931,64 +930,64 @@ export interface paths {
      * ## 부가설명 및 특이사항
      * 나중에 입력된 배송지 정보를 수정하는 API 입니다.
      */
-    put: operations["put-shippings-encrypted-shipping-no-later-input"];
+    put: operations['put-shippings-encrypted-shipping-no-later-input'];
   };
-  "/unidentifiedDepositors": {
+  '/unidentifiedDepositors': {
     /**
      * [샵바이프로 전용] 미확인 입급자 조회하기
      * @description
      * ## 부가설명 및 특이사항
      * 미확인 입금자를 조회하는 API 입니다.
      */
-    get: operations["get-unidentified-depositors"];
+    get: operations['get-unidentified-depositors'];
   };
-  "/unidentifiedDepositors/config": {
+  '/unidentifiedDepositors/config': {
     /**
      * [샵바이프로 전용] 미확인 입금자 설정 조회하기
      * @description
      * ## 부가설명 및 특이사항
      * 미확인 입금자 설정을 조회하는 API 입니다.
      */
-    get: operations["get-unidentified-depositors-config"];
+    get: operations['get-unidentified-depositors-config'];
   };
-  "/wish": {
+  '/wish': {
     /**
      * 위시리스트 리스트 가져오기
      * @description
      * ## 부가설명 및 특이사항
      * 위시리스트를 조회하는 API 입니다.
      */
-    get: operations["get-wish"];
+    get: operations['get-wish'];
     /**
      * 위시리스트 수정하기
      * @description
      * ## 부가설명 및 특이사항
      * 위시리스트를 수정하는 API 입니다.
      */
-    put: operations["put-wish"];
+    put: operations['put-wish'];
     /**
      * 위시리스트 등록하기
      * @description
      * ## 부가설명 및 특이사항
      * 위시리스트를 등록하는 API 입니다.
      */
-    post: operations["post-wish"];
+    post: operations['post-wish'];
     /**
      * 위시리스트 삭제하기
      * @description
      * ## 부가설명 및 특이사항
      * 위시리스트를 삭제하는 API 입니다.
      */
-    delete: operations["delete-wish"];
+    delete: operations['delete-wish'];
   };
-  "/wish/count": {
+  '/wish/count': {
     /**
      * 위시리스트 개수 가져오기
      * @description
      * ## 부가설명 및 특이사항
      * 위시리스트 개수를 조회하는 API 입니다.
      */
-    get: operations["get-wish-count"];
+    get: operations['get-wish-count'];
   };
 }
 
@@ -998,520 +997,107 @@ export interface components {
   schemas: {
     /** @description 위시 수정 리스트 */
     wish929069921: {
+      /**
+       * @description 위시번호
+       * @example 1
+       */
+      wishNo: number;
+      /**
+       * @description 구매개수
+       * @example 1
+       */
+      orderCnt: number;
+      /** @description 구매자 입력형 옵션 */
+      optionInputs: {
         /**
-         * @description 위시번호
-         * @example 1
+         * @description 구매자 작성형 입력 값
+         * @example 14호
          */
-        wishNo: number;
+        inputValue: string;
         /**
-         * @description 구매개수
-         * @example 1
+         * @description 구매자 작성형 입력 이름
+         * @example 사이즈
          */
-        orderCnt: number;
-        /** @description 구매자 입력형 옵션 */
-        optionInputs: {
-            /**
-             * @description 구매자 작성형 입력 값
-             * @example 14호
-             */
-            inputValue: string;
-            /**
-             * @description 구매자 작성형 입력 이름
-             * @example 사이즈
-             */
-            inputLabel: string;
-          }[];
+        inputLabel: string;
       }[];
-    "recurring-payments-guest-cart816762413": {
+    }[];
+    'recurring-payments-guest-cart816762413': {
       /** @description 배송 그룹 */
-      deliveryGroups: ({
+      deliveryGroups: {
+        /**
+         * @description 파트너번호 (nullable)
+         * @example 2500
+         */
+        partnerNo?: number;
+        /**
+         * @description 배송비착불여부
+         * @example PREPAID_DELIVERY
+         * @enum {string}
+         */
+        deliveryPayType: 'PREPAID_DELIVERY' | 'PAY_ON_DELIVERY';
+        /** @description 배송 조건 */
+        deliveryCondition: {
           /**
-           * @description 파트너번호 (nullable)
-           * @example 2500
-           */
-          partnerNo?: number;
-          /**
-           * @description 배송비착불여부
-           * @example PREPAID_DELIVERY
+           * @description 배송조건 (nullable)
+           * @example FREE
            * @enum {string}
            */
-          deliveryPayType: "PREPAID_DELIVERY: 배송비 선불" | "PAY_ON_DELIVERY: 배송비 착불";
-          /** @description 배송 조건 */
-          deliveryCondition: {
-            /**
-             * @description 배송조건 (nullable)
-             * @example FREE
-             * @enum {string}
-             */
-            deliveryConditionType?: "FREE: 무료" | "CONDITIONAL: 조건별무료" | "FIXED_FEE: 유료(고정 배송비)" | "QUANTITY_PROPOSITIONAL_FEE: 수량 비례" | "PRICE_FEE: 금액별 차등" | "QUANTITY_FEE: 수량별 차등";
-            /**
-             * @description 조건부 배송비의 기준값(9,800원 미만 배송비 2,500원일때 aboveDeliveryAmt는 9800)
-             * @example 9800
-             */
-            aboveDeliveryAmt: number;
-            /**
-             * @description 배송비(조건에 의해 계산되어진)
-             * @example 2500
-             */
-            deliveryAmt: number;
-            /**
-             * @description 묶음배송조건 (nullable)
-             * @example MAXIMUM_SELECTED
-             * @enum {string}
-             */
-            groupDeliveryAmtType?: "MAXIMUM_SELECTED: 최대부과" | "MINIMUM_SELECTED: 최소부과";
-            /**
-             * @description 반품배송비
-             * @example 2500
-             */
-            returnDeliveryAmt: number;
-            /**
-             * @description 조건부 배송비 미달 시 배송비(9,800원 미만 배송비 2,500원일때 baseDeliveryAmt는 2,500)
-             * @example 2500
-             */
-            baseDeliveryAmt: number;
-            /**
-             * @description 추가배송비(조건에 의해 계산되어진)
-             * @example 2500
-             */
-            remoteDeliveryAmt: number;
-            /**
-             * @description 지역별추가배송비사용여부 (nullable)
-             * @example false
-             */
-            chargesRemoteDeliveryAmt?: boolean;
-          };
+          deliveryConditionType?:
+            | 'FREE'
+            | 'CONDITIONAL'
+            | 'FIXED_FEE'
+            | 'QUANTITY_PROPOSITIONAL_FEE'
+            | 'PRICE_FEE'
+            | 'QUANTITY_FEE';
           /**
-           * @description 배송비
+           * @description 조건부 배송비의 기준값(9,800원 미만 배송비 2,500원일때 aboveDeliveryAmt는 9800)
+           * @example 9800
+           */
+          aboveDeliveryAmt: number;
+          /**
+           * @description 배송비(조건에 의해 계산되어진)
            * @example 2500
            */
           deliveryAmt: number;
           /**
-           * @description 파트너명
-           * @example NCP
+           * @description 묶음배송조건 (nullable)
+           * @example MAXIMUM_SELECTED
+           * @enum {string}
            */
-          partnerName: string;
-          /** @description 주문 상품 */
-          orderProducts: ({
-              /**
-               * @description 교환가능여부
-               * @example false
-               */
-              exchangeable: boolean;
-              /**
-               * @description 구매금액 합
-               * @example 0
-               */
-              buyAmt: number;
-              /**
-               * @description 취소가능여부
-               * @example false
-               */
-              cancelable: boolean;
-              /**
-               * @description 쿠폰 사용 가능 여부
-               * @example true
-               */
-              couponUsable: boolean;
-              /**
-               * @description 배송가능여부
-               * @example false
-               */
-              deliverable: boolean;
-              /**
-               * @description 옵션사용여부
-               * @example false
-               */
-              optionUsed: boolean;
-              /**
-               * @description 찜상풍 여부
-               * @example false
-               */
-              liked: boolean;
-              /**
-               * @description 상품 명
-               * @example string
-               */
-              productName: string;
-              /** @description 최대 구매수량 정보 */
-              maxBuyCountInfo: {
-                /** @description 1인당 최대 구매 수량 */
-                maxBuyPersonCount: number;
-                /** @description 최대 구매 수량 기간 제한 : 7일 동안 최대 2개 구매가능 (2개 항목) */
-                maxBuyPeriodCount: number;
-                /**
-                 * @description 최대 구매 수량 기간 제한 : 7일 동안 최대 2개 구매가능 (7일 항목)
-                 * @example 0
-                 */
-                maxBuyDays: number;
-                /**
-                 * @description 1회당 최대 구매 수량
-                 * @example 0
-                 */
-                maxBuyTimeCount: number;
-              };
-              /**
-               * @description 적립금 사용 가능 여부
-               * @example true
-               */
-              accumulationUsable: boolean;
-              /** @description 최소 구매 수량 */
-              minBuyCount: number;
-              /**
-               * @description 상품 url
-               * @example http://image.url
-               */
-              imageUrl: string;
-              /**
-               * @description 옵션 선택 방식 (nullable)
-               * @example FLAT
-               * @enum {string}
-               */
-              selectType?: "FLAT: 일체형" | "MULTI: 분리형";
-              /** @description 주문 상품 옵션 */
-              orderProductOptions: ({
-                  /**
-                   * @description 예약주문 상품 배송시작예정일
-                   * @example String
-                   */
-                  reservationDeliveryYmdt: string;
-                  /**
-                   * @description 옵션권장출력값
-                   * @example string
-                   */
-                  optionTitle: string;
-                  /**
-                   * @description 구매확정 시 적립금 합
-                   * @example 0
-                   */
-                  accumulationAmtWhenBuyConfirm: number;
-                  /** @description 유효성 정보 */
-                  validInfo: {
-                    /**
-                     * @description 유효 여부(true: 유효, false: 유효하지 않음)
-                     * @example false
-                     */
-                    valid: boolean;
-                    /** @description deprecated(더 이상 제공하지 않는 개체항목입니다) */
-                    validYn: string;
-                    /**
-                     * @description 유효성 실패 코드 (nullable)
-                     * @example string
-                     */
-                    errorCode?: string;
-                    /**
-                     * @description 유효성 실패 사유 메세지 (nullable)
-                     * @example string
-                     */
-                    message?: string;
-                    /**
-                     * @description 주문수량변경 가능 여부(true:변경가능, false:변경불가능)
-                     * @example false
-                     */
-                    orderCntChangeable: boolean;
-                  };
-                  /**
-                   * @description 옵션값
-                   * @example string
-                   */
-                  optionValue: string;
-                  /**
-                   * @description 주문수량
-                   * @example 0
-                   */
-                  orderCnt: number;
-                  /** @description 소비자 입력형 옵션 */
-                  optionInputs: {
-                      /**
-                       * @description 구매자 작성형 입력 깂
-                       * @example 14호
-                       */
-                      inputValue: string;
-                      /**
-                       * @description 구매자 작성형 입력 이름
-                       * @example 사이즈
-                       */
-                      inputLabel: string;
-                      /**
-                       * @description 구매자 작성형 입력 필수여부 (nullable)
-                       * @example true
-                       */
-                      required?: string;
-                    }[];
-                  /**
-                   * @description 품절여부 (true:품절 false:구매가능)
-                   * @example false
-                   */
-                  soldOut: boolean;
-                  /**
-                   * @description 옵션형태
-                   * @example PRODUCT_ONLY
-                   * @enum {string}
-                   */
-                  optionType: "STANDARD: 단독형" | "COMBINATION: 조합형" | "DEFAULT: 기본생성" | "MAPPING: 멥핑";
-                  /** @description 가격 정보 */
-                  price: {
-                    /**
-                     * @description 구매금액(구매가 * 주문수량)
-                     * @example 0
-                     */
-                    buyAmt: number;
-                    /**
-                     * @description 추가할인금액
-                     * @example 0
-                     */
-                    additionalDiscountAmt: number;
-                    /**
-                     * @description 즉시할인금액
-                     * @example 0
-                     */
-                    immediateDiscountAmt: number;
-                    /**
-                     * @description 상품판매가
-                     * @example 0
-                     */
-                    salePrice: number;
-                    /**
-                     * @description 정상금액(상품판매가 + 옵션추가금액) * 주문수량
-                     * @example 0
-                     */
-                    standardAmt: number;
-                    /**
-                     * @description 옵션가격(추가금액)
-                     * @example 0
-                     */
-                    addPrice: number;
-                  };
-                  /**
-                   * @description 옵션 이미지 URL
-                   * @example http://image.url
-                   */
-                  imageUrl: string;
-                  /**
-                   * @description 정기 결제 배송 주기 (nullable)
-                   * @example 1,2,3
-                   */
-                  recurringDeliveryCycles?: number[];
-                  /** @description 세트옵션 */
-                  setOptions: {
-                      /**
-                       * @description 세트옵션옵션사용여부
-                       * @example true
-                       */
-                      usesOption: boolean;
-                      /**
-                       * @description 세트옵션옵션번호
-                       * @example 1
-                       */
-                      mallOptionNo: number;
-                      /**
-                       * @description 세트옵션상품관리코드 (nullable)
-                       * @example 1231
-                       */
-                      productManagementCd?: string;
-                      /**
-                       * @description 세트옵션옵션
-                       * @example 100
-                       */
-                      optionValue: string;
-                      /**
-                       * @description 세트옵션구매수
-                       * @example 1
-                       */
-                      count: number;
-                      /**
-                       * @description 세트옵션옵션가격
-                       * @example 1000
-                       */
-                      optionPrice: number;
-                      /**
-                       * @description 세트옵션sku (nullable)
-                       * @example 1231
-                       */
-                      sku?: string;
-                      /**
-                       * @description 세트옵션옵션명
-                       * @example 사이즈
-                       */
-                      optionName: string;
-                      /**
-                       * @description 세트옵션옵션관리코드 (nullable)
-                       * @example 1231
-                       */
-                      optionManagementCd?: string;
-                      /**
-                       * @description 세트옵션상품번호
-                       * @example 1
-                       */
-                      mallProductNo: number;
-                      /**
-                       * @description 세트옵션재고번호
-                       * @example 1
-                       */
-                      stockNo: number;
-                      /**
-                       * @description 세트옵션상품명
-                       * @example TEST_PRODUCT
-                       */
-                      productName: string;
-                    }[];
-                  /**
-                   * @description 예약주문여부 (true: 예약주문상품, false: 일반상품)
-                   * @example false
-                   */
-                  reservation: boolean;
-                  /**
-                   * @description 재고 개수
-                   * @example 0
-                   */
-                  stockCnt: number;
-                  /**
-                   * @description 옵션번호
-                   * @example 0
-                   */
-                  optionNo: number;
-                  /**
-                   * @description 옵션명
-                   * @example string
-                   */
-                  optionName: string;
-                  /**
-                   * @description 판매자 관리코드
-                   * @example string
-                   */
-                  optionManagementCd: string;
-                  /**
-                   * @description 장바구니 번호
-                   * @example 0
-                   */
-                  cartNo: number;
-                  /**
-                   * @description 상품번호
-                   * @example 0
-                   */
-                  productNo: number;
-                })[];
-              /**
-               * @description 환불가능여부
-               * @example false
-               */
-              refundable: boolean;
-              /** @description 배송일 지정 정보 */
-              deliveryDate: {
-                /** @description 기간 */
-                period: {
-                  /**
-                   * @description 배송일지정 가능한 시작일
-                   * @example YYYY-MM-DD hh:mm:ss
-                   */
-                  startYmdt: string;
-                  /**
-                   * @description 배송일지정 가능한 종료일
-                   * @example YYYY-MM-DD hh:mm:ss
-                   */
-                  endYmdt: string;
-                };
-                /**
-                 * @description 요일
-                 * @example [MON]
-                 */
-                daysOfWeek: ("SUN: 일" | "MON: 월" | "TUE: 화" | "WED: 수" | "THU: 목" | "FRI: 금" | "SAT: 토")[];
-                /**
-                 * @description 주문일 기준
-                 * @example 0
-                 */
-                daysAfterPurchase: number;
-              };
-              /**
-               * @description 브랜드 번호
-               * @example 12
-               */
-              brandNo: number;
-              /**
-               * @description 해외직배송여부
-               * @example false
-               */
-              deliveryInternational: boolean;
-              /**
-               * @description 상품번호
-               * @example 0
-               */
-              productNo: number;
-              /**
-               * @description 브랜드 명
-               * @example string
-               */
-              brandName: string;
-              /** @description 네이버페이 주문형 결제 가능 여부 */
-              allowsNaverPay: boolean;
-              /**
-               * @description 배송구분
-               * @example PARTNER_SHIPPING_AREA
-               * @enum {string}
-               */
-              shippingAreaType: "PARTNER_SHIPPING_AREA: Partner Delivery" | "MALL_SHIPPING_AREA: Shipping Mall Delivery";
-              /**
-               * @description 반품가능여부
-               * @example false
-               */
-              returnable: boolean;
-              /**
-               * @description 브랜드 영문명
-               * @example string
-               */
-              brandNameEn: string;
-              /**
-               * @description 상품 영문명
-               * @example string
-               */
-              productNameEn: string;
-            })[];
-        })[];
-      /** @description 가격 정보 */
-      price: {
+          groupDeliveryAmtType?: 'MAXIMUM_SELECTED' | 'MINIMUM_SELECTED';
+          /**
+           * @description 반품배송비
+           * @example 2500
+           */
+          returnDeliveryAmt: number;
+          /**
+           * @description 조건부 배송비 미달 시 배송비(9,800원 미만 배송비 2,500원일때 baseDeliveryAmt는 2,500)
+           * @example 2500
+           */
+          baseDeliveryAmt: number;
+          /**
+           * @description 추가배송비(조건에 의해 계산되어진)
+           * @example 2500
+           */
+          remoteDeliveryAmt: number;
+          /**
+           * @description 지역별추가배송비사용여부 (nullable)
+           * @example false
+           */
+          chargesRemoteDeliveryAmt?: boolean;
+        };
         /**
-         * @description 구매금액 합
-         * @example 0
+         * @description 배송비
+         * @example 2500
          */
-        buyAmt: number;
+        deliveryAmt: number;
         /**
-         * @description 할인금액
-         * @example 0
+         * @description 파트너명
+         * @example NCP
          */
-        discountAmt: number;
-        /**
-         * @description 총 구매금액 합
-         * @example 0
-         */
-        totalAmt: number;
-        /**
-         * @description 구매확정 시 적립금 합
-         * @example 0
-         */
-        accumulationAmtWhenBuyConfirm: number;
-        /**
-         * @description 정상금액(상품판매가 + 옵션추가금액) * 주문수량
-         * @example 0
-         */
-        standardAmt: number;
-        /**
-         * @description 총 착불배송비 합
-         * @example 0
-         */
-        totalPayOnDeliveryAmt: number;
-        /**
-         * @description 총 배송비 합
-         * @example 0
-         */
-        totalDeliveryAmt: number;
-        /**
-         * @description 총 선불배송비 합
-         * @example 0
-         */
-        totalPrePaidDeliveryAmt: number;
-      };
-      /** @description 유효하지 앟은 상품 */
-      invalidProducts: ({
+        partnerName: string;
+        /** @description 주문 상품 */
+        orderProducts: {
           /**
            * @description 교환가능여부
            * @example false
@@ -1586,230 +1172,230 @@ export interface components {
            * @example FLAT
            * @enum {string}
            */
-          selectType?: "FLAT: 일체형" | "MULTI: 분리형";
+          selectType?: 'FLAT' | 'MULTI';
           /** @description 주문 상품 옵션 */
-          orderProductOptions: ({
+          orderProductOptions: {
+            /**
+             * @description 예약주문 상품 배송시작예정일
+             * @example String
+             */
+            reservationDeliveryYmdt: string;
+            /**
+             * @description 옵션권장출력값
+             * @example string
+             */
+            optionTitle: string;
+            /**
+             * @description 구매확정 시 적립금 합
+             * @example 0
+             */
+            accumulationAmtWhenBuyConfirm: number;
+            /** @description 유효성 정보 */
+            validInfo: {
               /**
-               * @description 예약주문 상품 배송시작예정일
-               * @example String
+               * @description 유효 여부(true: 유효, false: 유효하지 않음)
+               * @example false
                */
-              reservationDeliveryYmdt: string;
+              valid: boolean;
+              /** @description deprecated(더 이상 제공하지 않는 개체항목입니다) */
+              validYn: string;
               /**
-               * @description 옵션권장출력값
+               * @description 유효성 실패 코드 (nullable)
                * @example string
                */
-              optionTitle: string;
+              errorCode?: string;
               /**
-               * @description 구매확정 시 적립금 합
+               * @description 유효성 실패 사유 메세지 (nullable)
+               * @example string
+               */
+              message?: string;
+              /**
+               * @description 주문수량변경 가능 여부(true:변경가능, false:변경불가능)
+               * @example false
+               */
+              orderCntChangeable: boolean;
+            };
+            /**
+             * @description 옵션값
+             * @example string
+             */
+            optionValue: string;
+            /**
+             * @description 주문수량
+             * @example 0
+             */
+            orderCnt: number;
+            /** @description 소비자 입력형 옵션 */
+            optionInputs: {
+              /**
+               * @description 구매자 작성형 입력 깂
+               * @example 14호
+               */
+              inputValue: string;
+              /**
+               * @description 구매자 작성형 입력 이름
+               * @example 사이즈
+               */
+              inputLabel: string;
+              /**
+               * @description 구매자 작성형 입력 필수여부 (nullable)
+               * @example true
+               */
+              required?: string;
+            }[];
+            /**
+             * @description 품절여부 (true:품절 false:구매가능)
+             * @example false
+             */
+            soldOut: boolean;
+            /**
+             * @description 옵션형태
+             * @example PRODUCT_ONLY
+             * @enum {string}
+             */
+            optionType: 'STANDARD' | 'COMBINATION' | 'DEFAULT' | 'MAPPING';
+            /** @description 가격 정보 */
+            price: {
+              /**
+               * @description 구매금액(구매가 * 주문수량)
                * @example 0
                */
-              accumulationAmtWhenBuyConfirm: number;
-              /** @description 유효성 정보 */
-              validInfo: {
-                /**
-                 * @description 유효 여부(true: 유효, false: 유효하지 않음)
-                 * @example false
-                 */
-                valid: boolean;
-                /** @description deprecated(더 이상 제공하지 않는 개체항목입니다) */
-                validYn: string;
-                /**
-                 * @description 유효성 실패 코드 (nullable)
-                 * @example string
-                 */
-                errorCode?: string;
-                /**
-                 * @description 유효성 실패 사유 메세지 (nullable)
-                 * @example string
-                 */
-                message?: string;
-                /**
-                 * @description 주문수량변경 가능 여부(true:변경가능, false:변경불가능)
-                 * @example false
-                 */
-                orderCntChangeable: boolean;
-              };
+              buyAmt: number;
               /**
-               * @description 옵션값
-               * @example string
+               * @description 추가할인금액
+               * @example 0
+               */
+              additionalDiscountAmt: number;
+              /**
+               * @description 즉시할인금액
+               * @example 0
+               */
+              immediateDiscountAmt: number;
+              /**
+               * @description 상품판매가
+               * @example 0
+               */
+              salePrice: number;
+              /**
+               * @description 정상금액(상품판매가 + 옵션추가금액) * 주문수량
+               * @example 0
+               */
+              standardAmt: number;
+              /**
+               * @description 옵션가격(추가금액)
+               * @example 0
+               */
+              addPrice: number;
+            };
+            /**
+             * @description 옵션 이미지 URL
+             * @example http://image.url
+             */
+            imageUrl: string;
+            /**
+             * @description 정기 결제 배송 주기 (nullable)
+             * @example 1,2,3
+             */
+            recurringDeliveryCycles?: number[];
+            /** @description 세트옵션 */
+            setOptions: {
+              /**
+               * @description 세트옵션옵션사용여부
+               * @example true
+               */
+              usesOption: boolean;
+              /**
+               * @description 세트옵션옵션번호
+               * @example 1
+               */
+              mallOptionNo: number;
+              /**
+               * @description 세트옵션상품관리코드 (nullable)
+               * @example 1231
+               */
+              productManagementCd?: string;
+              /**
+               * @description 세트옵션옵션
+               * @example 100
                */
               optionValue: string;
               /**
-               * @description 주문수량
-               * @example 0
+               * @description 세트옵션구매수
+               * @example 1
                */
-              orderCnt: number;
-              /** @description 소비자 입력형 옵션 */
-              optionInputs: {
-                  /**
-                   * @description 구매자 작성형 입력 깂
-                   * @example 14호
-                   */
-                  inputValue: string;
-                  /**
-                   * @description 구매자 작성형 입력 이름
-                   * @example 사이즈
-                   */
-                  inputLabel: string;
-                  /**
-                   * @description 구매자 작성형 입력 필수여부 (nullable)
-                   * @example true
-                   */
-                  required?: string;
-                }[];
+              count: number;
               /**
-               * @description 품절여부 (true:품절 false:구매가능)
-               * @example false
+               * @description 세트옵션옵션가격
+               * @example 1000
                */
-              soldOut: boolean;
+              optionPrice: number;
               /**
-               * @description 옵션형태
-               * @example PRODUCT_ONLY
-               * @enum {string}
+               * @description 세트옵션sku (nullable)
+               * @example 1231
                */
-              optionType: "STANDARD: 단독형" | "COMBINATION: 조합형" | "DEFAULT: 기본생성" | "MAPPING: 멥핑";
-              /** @description 가격 정보 */
-              price: {
-                /**
-                 * @description 구매금액(구매가 * 주문수량)
-                 * @example 0
-                 */
-                buyAmt: number;
-                /**
-                 * @description 추가할인금액
-                 * @example 0
-                 */
-                additionalDiscountAmt: number;
-                /**
-                 * @description 즉시할인금액
-                 * @example 0
-                 */
-                immediateDiscountAmt: number;
-                /**
-                 * @description 상품판매가
-                 * @example 0
-                 */
-                salePrice: number;
-                /**
-                 * @description 정상금액(상품판매가 + 옵션추가금액) * 주문수량
-                 * @example 0
-                 */
-                standardAmt: number;
-                /**
-                 * @description 옵션가격(추가금액)
-                 * @example 0
-                 */
-                addPrice: number;
-              };
+              sku?: string;
               /**
-               * @description 옵션 이미지 URL
-               * @example http://image.url
-               */
-              imageUrl: string;
-              /**
-               * @description 정기 결제 배송 주기 (nullable)
-               * @example 1,2,3
-               */
-              recurringDeliveryCycles?: number[];
-              /** @description 세트옵션 */
-              setOptions: {
-                  /**
-                   * @description 세트옵션옵션사용여부
-                   * @example true
-                   */
-                  usesOption: boolean;
-                  /**
-                   * @description 세트옵션옵션번호
-                   * @example 1
-                   */
-                  mallOptionNo: number;
-                  /**
-                   * @description 세트옵션상품관리코드 (nullable)
-                   * @example 1231
-                   */
-                  productManagementCd?: string;
-                  /**
-                   * @description 세트옵션옵션
-                   * @example 100
-                   */
-                  optionValue: string;
-                  /**
-                   * @description 세트옵션구매수
-                   * @example 1
-                   */
-                  count: number;
-                  /**
-                   * @description 세트옵션옵션가격
-                   * @example 1000
-                   */
-                  optionPrice: number;
-                  /**
-                   * @description 세트옵션sku (nullable)
-                   * @example 1231
-                   */
-                  sku?: string;
-                  /**
-                   * @description 세트옵션옵션명
-                   * @example 사이즈
-                   */
-                  optionName: string;
-                  /**
-                   * @description 세트옵션옵션관리코드 (nullable)
-                   * @example 1231
-                   */
-                  optionManagementCd?: string;
-                  /**
-                   * @description 세트옵션상품번호
-                   * @example 1
-                   */
-                  mallProductNo: number;
-                  /**
-                   * @description 세트옵션재고번호
-                   * @example 1
-                   */
-                  stockNo: number;
-                  /**
-                   * @description 세트옵션상품명
-                   * @example TEST_PRODUCT
-                   */
-                  productName: string;
-                }[];
-              /**
-               * @description 예약주문여부 (true: 예약주문상품, false: 일반상품)
-               * @example false
-               */
-              reservation: boolean;
-              /**
-               * @description 재고 개수
-               * @example 0
-               */
-              stockCnt: number;
-              /**
-               * @description 옵션번호
-               * @example 0
-               */
-              optionNo: number;
-              /**
-               * @description 옵션명
-               * @example string
+               * @description 세트옵션옵션명
+               * @example 사이즈
                */
               optionName: string;
               /**
-               * @description 판매자 관리코드
-               * @example string
+               * @description 세트옵션옵션관리코드 (nullable)
+               * @example 1231
                */
-              optionManagementCd: string;
+              optionManagementCd?: string;
               /**
-               * @description 장바구니 번호
-               * @example 0
+               * @description 세트옵션상품번호
+               * @example 1
                */
-              cartNo: number;
+              mallProductNo: number;
               /**
-               * @description 상품번호
-               * @example 0
+               * @description 세트옵션재고번호
+               * @example 1
                */
-              productNo: number;
-            })[];
+              stockNo: number;
+              /**
+               * @description 세트옵션상품명
+               * @example TEST_PRODUCT
+               */
+              productName: string;
+            }[];
+            /**
+             * @description 예약주문여부 (true: 예약주문상품, false: 일반상품)
+             * @example false
+             */
+            reservation: boolean;
+            /**
+             * @description 재고 개수
+             * @example 0
+             */
+            stockCnt: number;
+            /**
+             * @description 옵션번호
+             * @example 0
+             */
+            optionNo: number;
+            /**
+             * @description 옵션명
+             * @example string
+             */
+            optionName: string;
+            /**
+             * @description 판매자 관리코드
+             * @example string
+             */
+            optionManagementCd: string;
+            /**
+             * @description 장바구니 번호
+             * @example 0
+             */
+            cartNo: number;
+            /**
+             * @description 상품번호
+             * @example 0
+             */
+            productNo: number;
+          }[];
           /**
            * @description 환불가능여부
            * @example false
@@ -1834,7 +1420,15 @@ export interface components {
              * @description 요일
              * @example [MON]
              */
-            daysOfWeek: ("SUN: 일" | "MON: 월" | "TUE: 화" | "WED: 수" | "THU: 목" | "FRI: 금" | "SAT: 토")[];
+            daysOfWeek: (
+              | 'SUN'
+              | 'MON'
+              | 'TUE'
+              | 'WED'
+              | 'THU'
+              | 'FRI'
+              | 'SAT'
+            )[];
             /**
              * @description 주문일 기준
              * @example 0
@@ -1868,7 +1462,7 @@ export interface components {
            * @example PARTNER_SHIPPING_AREA
            * @enum {string}
            */
-          shippingAreaType: "PARTNER_SHIPPING_AREA: Partner Delivery" | "MALL_SHIPPING_AREA: Shipping Mall Delivery";
+          shippingAreaType: 'PARTNER_SHIPPING_AREA' | 'MALL_SHIPPING_AREA';
           /**
            * @description 반품가능여부
            * @example false
@@ -1884,40 +1478,459 @@ export interface components {
            * @example string
            */
           productNameEn: string;
-        })[];
+        }[];
+      }[];
+      /** @description 가격 정보 */
+      price: {
+        /**
+         * @description 구매금액 합
+         * @example 0
+         */
+        buyAmt: number;
+        /**
+         * @description 할인금액
+         * @example 0
+         */
+        discountAmt: number;
+        /**
+         * @description 총 구매금액 합
+         * @example 0
+         */
+        totalAmt: number;
+        /**
+         * @description 구매확정 시 적립금 합
+         * @example 0
+         */
+        accumulationAmtWhenBuyConfirm: number;
+        /**
+         * @description 정상금액(상품판매가 + 옵션추가금액) * 주문수량
+         * @example 0
+         */
+        standardAmt: number;
+        /**
+         * @description 총 착불배송비 합
+         * @example 0
+         */
+        totalPayOnDeliveryAmt: number;
+        /**
+         * @description 총 배송비 합
+         * @example 0
+         */
+        totalDeliveryAmt: number;
+        /**
+         * @description 총 선불배송비 합
+         * @example 0
+         */
+        totalPrePaidDeliveryAmt: number;
+      };
+      /** @description 유효하지 앟은 상품 */
+      invalidProducts: {
+        /**
+         * @description 교환가능여부
+         * @example false
+         */
+        exchangeable: boolean;
+        /**
+         * @description 구매금액 합
+         * @example 0
+         */
+        buyAmt: number;
+        /**
+         * @description 취소가능여부
+         * @example false
+         */
+        cancelable: boolean;
+        /**
+         * @description 쿠폰 사용 가능 여부
+         * @example true
+         */
+        couponUsable: boolean;
+        /**
+         * @description 배송가능여부
+         * @example false
+         */
+        deliverable: boolean;
+        /**
+         * @description 옵션사용여부
+         * @example false
+         */
+        optionUsed: boolean;
+        /**
+         * @description 찜상풍 여부
+         * @example false
+         */
+        liked: boolean;
+        /**
+         * @description 상품 명
+         * @example string
+         */
+        productName: string;
+        /** @description 최대 구매수량 정보 */
+        maxBuyCountInfo: {
+          /** @description 1인당 최대 구매 수량 */
+          maxBuyPersonCount: number;
+          /** @description 최대 구매 수량 기간 제한 : 7일 동안 최대 2개 구매가능 (2개 항목) */
+          maxBuyPeriodCount: number;
+          /**
+           * @description 최대 구매 수량 기간 제한 : 7일 동안 최대 2개 구매가능 (7일 항목)
+           * @example 0
+           */
+          maxBuyDays: number;
+          /**
+           * @description 1회당 최대 구매 수량
+           * @example 0
+           */
+          maxBuyTimeCount: number;
+        };
+        /**
+         * @description 적립금 사용 가능 여부
+         * @example true
+         */
+        accumulationUsable: boolean;
+        /** @description 최소 구매 수량 */
+        minBuyCount: number;
+        /**
+         * @description 상품 url
+         * @example http://image.url
+         */
+        imageUrl: string;
+        /**
+         * @description 옵션 선택 방식 (nullable)
+         * @example FLAT
+         * @enum {string}
+         */
+        selectType?: 'FLAT' | 'MULTI';
+        /** @description 주문 상품 옵션 */
+        orderProductOptions: {
+          /**
+           * @description 예약주문 상품 배송시작예정일
+           * @example String
+           */
+          reservationDeliveryYmdt: string;
+          /**
+           * @description 옵션권장출력값
+           * @example string
+           */
+          optionTitle: string;
+          /**
+           * @description 구매확정 시 적립금 합
+           * @example 0
+           */
+          accumulationAmtWhenBuyConfirm: number;
+          /** @description 유효성 정보 */
+          validInfo: {
+            /**
+             * @description 유효 여부(true: 유효, false: 유효하지 않음)
+             * @example false
+             */
+            valid: boolean;
+            /** @description deprecated(더 이상 제공하지 않는 개체항목입니다) */
+            validYn: string;
+            /**
+             * @description 유효성 실패 코드 (nullable)
+             * @example string
+             */
+            errorCode?: string;
+            /**
+             * @description 유효성 실패 사유 메세지 (nullable)
+             * @example string
+             */
+            message?: string;
+            /**
+             * @description 주문수량변경 가능 여부(true:변경가능, false:변경불가능)
+             * @example false
+             */
+            orderCntChangeable: boolean;
+          };
+          /**
+           * @description 옵션값
+           * @example string
+           */
+          optionValue: string;
+          /**
+           * @description 주문수량
+           * @example 0
+           */
+          orderCnt: number;
+          /** @description 소비자 입력형 옵션 */
+          optionInputs: {
+            /**
+             * @description 구매자 작성형 입력 깂
+             * @example 14호
+             */
+            inputValue: string;
+            /**
+             * @description 구매자 작성형 입력 이름
+             * @example 사이즈
+             */
+            inputLabel: string;
+            /**
+             * @description 구매자 작성형 입력 필수여부 (nullable)
+             * @example true
+             */
+            required?: string;
+          }[];
+          /**
+           * @description 품절여부 (true:품절 false:구매가능)
+           * @example false
+           */
+          soldOut: boolean;
+          /**
+           * @description 옵션형태
+           * @example PRODUCT_ONLY
+           * @enum {string}
+           */
+          optionType: 'STANDARD' | 'COMBINATION' | 'DEFAULT' | 'MAPPING';
+          /** @description 가격 정보 */
+          price: {
+            /**
+             * @description 구매금액(구매가 * 주문수량)
+             * @example 0
+             */
+            buyAmt: number;
+            /**
+             * @description 추가할인금액
+             * @example 0
+             */
+            additionalDiscountAmt: number;
+            /**
+             * @description 즉시할인금액
+             * @example 0
+             */
+            immediateDiscountAmt: number;
+            /**
+             * @description 상품판매가
+             * @example 0
+             */
+            salePrice: number;
+            /**
+             * @description 정상금액(상품판매가 + 옵션추가금액) * 주문수량
+             * @example 0
+             */
+            standardAmt: number;
+            /**
+             * @description 옵션가격(추가금액)
+             * @example 0
+             */
+            addPrice: number;
+          };
+          /**
+           * @description 옵션 이미지 URL
+           * @example http://image.url
+           */
+          imageUrl: string;
+          /**
+           * @description 정기 결제 배송 주기 (nullable)
+           * @example 1,2,3
+           */
+          recurringDeliveryCycles?: number[];
+          /** @description 세트옵션 */
+          setOptions: {
+            /**
+             * @description 세트옵션옵션사용여부
+             * @example true
+             */
+            usesOption: boolean;
+            /**
+             * @description 세트옵션옵션번호
+             * @example 1
+             */
+            mallOptionNo: number;
+            /**
+             * @description 세트옵션상품관리코드 (nullable)
+             * @example 1231
+             */
+            productManagementCd?: string;
+            /**
+             * @description 세트옵션옵션
+             * @example 100
+             */
+            optionValue: string;
+            /**
+             * @description 세트옵션구매수
+             * @example 1
+             */
+            count: number;
+            /**
+             * @description 세트옵션옵션가격
+             * @example 1000
+             */
+            optionPrice: number;
+            /**
+             * @description 세트옵션sku (nullable)
+             * @example 1231
+             */
+            sku?: string;
+            /**
+             * @description 세트옵션옵션명
+             * @example 사이즈
+             */
+            optionName: string;
+            /**
+             * @description 세트옵션옵션관리코드 (nullable)
+             * @example 1231
+             */
+            optionManagementCd?: string;
+            /**
+             * @description 세트옵션상품번호
+             * @example 1
+             */
+            mallProductNo: number;
+            /**
+             * @description 세트옵션재고번호
+             * @example 1
+             */
+            stockNo: number;
+            /**
+             * @description 세트옵션상품명
+             * @example TEST_PRODUCT
+             */
+            productName: string;
+          }[];
+          /**
+           * @description 예약주문여부 (true: 예약주문상품, false: 일반상품)
+           * @example false
+           */
+          reservation: boolean;
+          /**
+           * @description 재고 개수
+           * @example 0
+           */
+          stockCnt: number;
+          /**
+           * @description 옵션번호
+           * @example 0
+           */
+          optionNo: number;
+          /**
+           * @description 옵션명
+           * @example string
+           */
+          optionName: string;
+          /**
+           * @description 판매자 관리코드
+           * @example string
+           */
+          optionManagementCd: string;
+          /**
+           * @description 장바구니 번호
+           * @example 0
+           */
+          cartNo: number;
+          /**
+           * @description 상품번호
+           * @example 0
+           */
+          productNo: number;
+        }[];
+        /**
+         * @description 환불가능여부
+         * @example false
+         */
+        refundable: boolean;
+        /** @description 배송일 지정 정보 */
+        deliveryDate: {
+          /** @description 기간 */
+          period: {
+            /**
+             * @description 배송일지정 가능한 시작일
+             * @example YYYY-MM-DD hh:mm:ss
+             */
+            startYmdt: string;
+            /**
+             * @description 배송일지정 가능한 종료일
+             * @example YYYY-MM-DD hh:mm:ss
+             */
+            endYmdt: string;
+          };
+          /**
+           * @description 요일
+           * @example [MON]
+           */
+          daysOfWeek: ('SUN' | 'MON' | 'TUE' | 'WED' | 'THU' | 'FRI' | 'SAT')[];
+          /**
+           * @description 주문일 기준
+           * @example 0
+           */
+          daysAfterPurchase: number;
+        };
+        /**
+         * @description 브랜드 번호
+         * @example 12
+         */
+        brandNo: number;
+        /**
+         * @description 해외직배송여부
+         * @example false
+         */
+        deliveryInternational: boolean;
+        /**
+         * @description 상품번호
+         * @example 0
+         */
+        productNo: number;
+        /**
+         * @description 브랜드 명
+         * @example string
+         */
+        brandName: string;
+        /** @description 네이버페이 주문형 결제 가능 여부 */
+        allowsNaverPay: boolean;
+        /**
+         * @description 배송구분
+         * @example PARTNER_SHIPPING_AREA
+         * @enum {string}
+         */
+        shippingAreaType: 'PARTNER_SHIPPING_AREA' | 'MALL_SHIPPING_AREA';
+        /**
+         * @description 반품가능여부
+         * @example false
+         */
+        returnable: boolean;
+        /**
+         * @description 브랜드 영문명
+         * @example string
+         */
+        brandNameEn: string;
+        /**
+         * @description 상품 영문명
+         * @example string
+         */
+        productNameEn: string;
+      }[];
     };
     /** @description 장바구니 등록리스트 */
     cart977837260: {
+      /**
+       * @description 구매개수
+       * @example 1
+       */
+      orderCnt: number;
+      /** @description 구매자 입력형 옵션 */
+      optionInputs: {
         /**
-         * @description 구매개수
-         * @example 1
+         * @description 구매자 작성형 입력 값 (nullable)
+         * @example 14호
          */
-        orderCnt: number;
-        /** @description 구매자 입력형 옵션 */
-        optionInputs: {
-            /**
-             * @description 구매자 작성형 입력 값 (nullable)
-             * @example 14호
-             */
-            inputValue?: string;
-            /**
-             * @description 구매자 작성형 입력 이름 (nullable)
-             * @example 사이즈
-             */
-            inputLabel?: string;
-          }[];
+        inputValue?: string;
         /**
-         * @description 옵션번호
-         * @example 1258932
+         * @description 구매자 작성형 입력 이름 (nullable)
+         * @example 사이즈
          */
-        optionNo: number;
-        /**
-         * @description 상품번호
-         * @example 100398947
-         */
-        productNo: number;
+        inputLabel?: string;
       }[];
-    "profile-shipping-addresses-addressNo-635015904": {
+      /**
+       * @description 옵션번호
+       * @example 1258932
+       */
+      optionNo: number;
+      /**
+       * @description 상품번호
+       * @example 100398947
+       */
+      productNo: number;
+    }[];
+    'profile-shipping-addresses-addressNo-635015904': {
       /**
        * @description (해외배송 / 글로벌결제 시 필수)  수령인 LastName (nullable)
        * @example null
@@ -1943,7 +1956,7 @@ export interface components {
        * @example RECENT
        * @enum {string}
        */
-      addressType: "BOOK: 기본주소" | "RECENT: 최근주소" | "RECURRING_PAYMENT: 정기결제 배송주소";
+      addressType: 'BOOK' | 'RECENT' | 'RECURRING_PAYMENT';
       /**
        * @description 개인고유통관부호 (nullable)
        * @example P12341234
@@ -1954,7 +1967,92 @@ export interface components {
        * @example KR
        * @enum {string}
        */
-      countryCd?: "AX: Åland Islands" | "AD: Andorra" | "AU: Australia" | "AT: Austria" | "BH: Bahrain" | "BE: Belgium" | "BZ: Belize" | "BR: Brazil" | "BN: Brunei" | "BG: Bulgaria" | "CA: Canada" | "ES_CANARY: Spain" | "CL: Chile" | "CN: China" | "CO: Colombia" | "CR: Costa Rica" | "CY: Cyprus" | "CZ: Czech Republic" | "DK: Denmark" | "EC: Ecuador" | "EG: Egypt" | "SV: El Salvador" | "EE: Estonia" | "FR: France" | "GF: French Guiana" | "DE: Germany" | "GR: Greece" | "GL: Denmark" | "GU: Guam" | "GT: Guatemala" | "GG: Guernsey" | "GY: Guyana" | "HK: Hong Kong" | "HU: Hungary" | "IS: Iceland" | "ID: Indonesia" | "IE: Ireland" | "IL: Israel" | "IT: Italy" | "JP: Japan" | "JE: Jersey" | "JO: Jordan" | "KR: South Korea" | "KW: Kuwait" | "LV: Latvia" | "LB: Lebanon" | "LI: Liechtenstein" | "LT: Lithuania" | "LU: Luxembourg" | "MO: Macau" | "PT_MADEIRA: Portugal" | "MY: Malaysia" | "NL: Netherlands" | "NZ: New Zealand" | "GB_NORTHERN_ISLAND: United Kingdom" | "NO: Norway" | "PY: Paraguay" | "PE: Peru" | "PL: Poland" | "PT: Portugal" | "RO: Romania" | "RU: Russia" | "SM: San Marino" | "SA: Saudi Arabia" | "GB_SCOTLAND: United Kingdom" | "SG: Singapore" | "SK: Slovakia" | "SI: Slovenia" | "ES: Spain" | "CH: Switzerland" | "TW: Taiwan" | "TH: Thailand" | "TR: Turkey" | "AE: United Arab Emirates" | "GB: United Kingdom" | "US: United States (Mainland)" | "U2: United States (Mainland)" | "UY: Uruguay" | "VN: Vietnam" | "GB_WALES: United Kingdom" | "YE: Yemen" | "HR: Croatia" | "MT: Malta" | "FI: Finland" | "SE: Sweden";
+      countryCd?:
+        | 'AX'
+        | 'AD'
+        | 'AU'
+        | 'AT'
+        | 'BH'
+        | 'BE'
+        | 'BZ'
+        | 'BR'
+        | 'BN'
+        | 'BG'
+        | 'CA'
+        | 'ES_CANARY'
+        | 'CL'
+        | 'CN'
+        | 'CO'
+        | 'CR'
+        | 'CY'
+        | 'CZ'
+        | 'DK'
+        | 'EC'
+        | 'EG'
+        | 'SV'
+        | 'EE'
+        | 'FR'
+        | 'GF'
+        | 'DE'
+        | 'GR'
+        | 'GL'
+        | 'GU'
+        | 'GT'
+        | 'GG'
+        | 'GY'
+        | 'HK'
+        | 'HU'
+        | 'IS'
+        | 'ID'
+        | 'IE'
+        | 'IL'
+        | 'IT'
+        | 'JP'
+        | 'JE'
+        | 'JO'
+        | 'KR'
+        | 'KW'
+        | 'LV'
+        | 'LB'
+        | 'LI'
+        | 'LT'
+        | 'LU'
+        | 'MO'
+        | 'PT_MADEIRA'
+        | 'MY'
+        | 'NL'
+        | 'NZ'
+        | 'GB_NORTHERN_ISLAND'
+        | 'NO'
+        | 'PY'
+        | 'PE'
+        | 'PL'
+        | 'PT'
+        | 'RO'
+        | 'RU'
+        | 'SM'
+        | 'SA'
+        | 'GB_SCOTLAND'
+        | 'SG'
+        | 'SK'
+        | 'SI'
+        | 'ES'
+        | 'CH'
+        | 'TW'
+        | 'TH'
+        | 'TR'
+        | 'AE'
+        | 'GB'
+        | 'US'
+        | 'U2'
+        | 'UY'
+        | 'VN'
+        | 'GB_WALES'
+        | 'YE'
+        | 'HR'
+        | 'MT'
+        | 'FI'
+        | 'SE';
       /**
        * @description 배송지 우편 번호
        * @example 13487
@@ -2001,7 +2099,7 @@ export interface components {
        */
       receiverContact2?: string;
     };
-    "recurring-payments1350971406": {
+    'recurring-payments1350971406': {
       /**
        * @description 주문자 이메일
        * @example gildong.hong@nhn.com
@@ -2033,48 +2131,48 @@ export interface components {
        */
       ordererName: string;
     };
-    "shippings-enums-1215321466": {
+    'shippings-enums-1215321466': {
       /** @description 미국 주(state) 코드 */
       usStateCd: {
-          /**
-           * @description usStateCd Enum Name
-           * @example AL
-           */
-          name: string;
-          /**
-           * @description usStateCd Enum Label
-           * @example Alabama
-           */
-          label: string;
-        }[];
+        /**
+         * @description usStateCd Enum Name
+         * @example AL
+         */
+        name: string;
+        /**
+         * @description usStateCd Enum Label
+         * @example Alabama
+         */
+        label: string;
+      }[];
       /** @description 국가 코드 */
       countryCd: {
-          /**
-           * @description countryCd Enum Name
-           * @example KR
-           */
-          name: string;
-          /**
-           * @description countryCd Enum Label
-           * @example 대한민국
-           */
-          label: string;
-        }[];
+        /**
+         * @description countryCd Enum Name
+         * @example KR
+         */
+        name: string;
+        /**
+         * @description countryCd Enum Label
+         * @example 대한민국
+         */
+        label: string;
+      }[];
       /** @description 캐나다 주(state) 코드 */
       caStateCd: {
-          /**
-           * @description caStateCd Enum Name
-           * @example AB
-           */
-          name: string;
-          /**
-           * @description caStateCd Enum Label
-           * @example Alberta
-           */
-          label: string;
-        }[];
+        /**
+         * @description caStateCd Enum Name
+         * @example AB
+         */
+        name: string;
+        /**
+         * @description caStateCd Enum Label
+         * @example Alberta
+         */
+        label: string;
+      }[];
     };
-    "guest-orders-orderNo-236010523": {
+    'guest-orders-orderNo-236010523': {
       /** @description deprecated(더 이상 제공하지 않는 개체항목입니다) */
       insurance: {
         /** @description deprecated(더 이상 제공하지 않는 개체항목입니다) */
@@ -2096,7 +2194,23 @@ export interface components {
        * @example DEPOSIT_WAIT
        * @enum {string}
        */
-      defaultOrderStatusType: "DEPOSIT_WAIT: Deposit Wait" | "PAY_DONE: Pay Done" | "PRODUCT_PREPARE: Product Prepare" | "DELIVERY_PREPARE: Delivery Prepare" | "DELIVERY_ING: Delivering" | "DELIVERY_DONE: Delivery Done" | "BUY_CONFIRM: Buy Confirm" | "CANCEL_DONE: Cancel Done" | "RETURN_DONE: Return Done" | "EXCHANGE_DONE: Exchange Done" | "PAY_WAIT: Pay Wait" | "PAY_CANCEL: Pay Cancel" | "PAY_FAIL: Pay Fail" | "DELETE: Delete" | "EXCHANGE_WAIT: Exchange Wait" | "REFUND_DONE: Refund Done";
+      defaultOrderStatusType:
+        | 'DEPOSIT_WAIT'
+        | 'PAY_DONE'
+        | 'PRODUCT_PREPARE'
+        | 'DELIVERY_PREPARE'
+        | 'DELIVERY_ING'
+        | 'DELIVERY_DONE'
+        | 'BUY_CONFIRM'
+        | 'CANCEL_DONE'
+        | 'RETURN_DONE'
+        | 'EXCHANGE_DONE'
+        | 'PAY_WAIT'
+        | 'PAY_CANCEL'
+        | 'PAY_FAIL'
+        | 'DELETE'
+        | 'EXCHANGE_WAIT'
+        | 'REFUND_DONE';
       /**
        * @description PG사 결제키
        * @example testtest
@@ -2180,93 +2294,232 @@ export interface components {
        * @example PG
        * @enum {string}
        */
-      refundType: "PG: PG" | "CANCEL_DEPOSIT: Cancellation of Unpaid Order" | "ACCOUNT: Account" | "ACCUMULATION: Accumulation" | "ZERO_REFUND: Zero Amounts" | "CASH: CASH" | "PAYCO: Payco" | "PAYPAL: PAYPAL" | "STRIPE: STRIPE" | "KCP: KCP" | "CREDIT_CARD: CREDIT CARD" | "LIIVMATE: LIIVMATE" | "INICIS: INICIS" | "NAVER_EASY_PAY: Naver Pay" | "KAKAO_PAY: Kakao Pay" | "NAVER_PAY: Naver Pay" | "LG_U_PLUS: Toss Payments" | "TOSS_PAYMENTS: Toss Payments" | "FORCE_REFUND: Force Refund" | "DUMMY: None";
+      refundType:
+        | 'PG'
+        | 'CANCEL_DEPOSIT'
+        | 'ACCOUNT'
+        | 'ACCUMULATION'
+        | 'ZERO_REFUND'
+        | 'CASH'
+        | 'PAYCO'
+        | 'PAYPAL'
+        | 'STRIPE'
+        | 'KCP'
+        | 'CREDIT_CARD'
+        | 'LIIVMATE'
+        | 'INICIS'
+        | 'NAVER_EASY_PAY'
+        | 'KAKAO_PAY'
+        | 'NAVER_PAY'
+        | 'LG_U_PLUS'
+        | 'TOSS_PAYMENTS'
+        | 'FORCE_REFUND'
+        | 'DUMMY';
       /** @description 결제 영수증 정보 */
       receiptInfos: {
-          /**
-           * @description 영수증 타입
-           * @example SALE_STATEMENT
-           */
-          receiptType: string;
-          /**
-           * @description 영수증 url
-           * @example http://receipt.info.url
-           */
-          url: string;
-        }[];
+        /**
+         * @description 영수증 타입
+         * @example SALE_STATEMENT
+         */
+        receiptType: string;
+        /**
+         * @description 영수증 url
+         * @example http://receipt.info.url
+         */
+        url: string;
+      }[];
       /** @description 교환추가결제 정보 (nullable) */
-      exchangePayInfos?: ({
-          /** @description 입금계좌정보 */
-          bankAccount: {
-            /**
-             * @description 계좌번호 (nullable)
-             * @example 1234123
-             */
-            bankAccount?: string;
-            /**
-             * @description 예금주명 (nullable)
-             * @example 홍길동
-             */
-            bankDepositorName?: string;
-            /**
-             * @description 은행
-             * @example KDB
-             * @enum {string}
-             */
-            bank: "ANONYMOUS: Unverified Bank" | "KDB: Korea Development Bank" | "IBK: Industrial Bank of Korea" | "KB: KOOKMIN BANK" | "KEB: Korea Exchange Bank" | "SUHYUP: National Federation of Fisheries Cooperatives" | "KEXIM: The Export-Import Bank of Korea" | "NH: NONGHYUP BANK" | "NHLOCAL: National Agricultural Cooperative Federation" | "WOORI: Woori Bank" | "SC: Standard Chartered Bank Korea Limited" | "CITY: Citibank Korea" | "DAEGU: Daegu Gyeongbuk Bank" | "PUSAN: BUSAN BANK" | "GWANGJU: The Kwangju Bank" | "JEJU: Jeju Bank" | "JEONBUK: Jeonbuk Bank" | "GYEONGNAM: BNK KYONGNAM BANK" | "KFCC: The Saemaeul finance firm." | "CU: National Credit Union Federation" | "SANGHO: Mutual Savings Bank / Thrift Institution" | "HSBC: Hongkong and Shanghai Banking Corporation" | "DEUTSCHE: Deutsche Bank AG" | "ABN: ABN" | "JP_MORGAN: JPMorgan" | "MIZUHO: Mizuho Bank" | "UFJ: MUFJ" | "BOA: Bank of America" | "NFCF: National Forestry Cooperative Federation" | "EPOST: Post Office" | "KEBHANA: KEB Hana Bank" | "SHINHAN: SHINHAN BANK" | "KBANK: Kbank" | "KAKAO: Kakao Bank" | "TOSS: Toss Bank" | "YUANTA: Yuanta Securities" | "KBSEC: KB Securities" | "MIRAE: Mirae Asset Securities" | "MIRAEDAEWOO: Miraeassetdaewoo Securities" | "SAMSUNG: Samsung Securities" | "HANKOOK: Korea Investment ＆ Securities" | ("NH_INVEST: NH Investment & Securities") | "KYOBO: Kyobo Securities" | ("HI_INVEST: Hi Investment & Securities") | "HMC_INVEST: HYUNDAI MOTOR SECURITIES" | "KIWOOM: Kiwoom Securities" | ("EBEST: EBEST INVESTMENT & SECURITIES") | "SK: SK Securities" | "DAISHIN: Daishin Securities" | ("SOLOMON_INVEST: SOLOMON INVESTMENT & SECURITIES") | "HANHWA: Hanwha Investment ＆ Securities" | "HANA_INVEST: Hana Financial Investment" | "SHINHAN_INVEST: Shinhan Investment" | "DONGBU: DB Financial Investment" | "EUGENE_INVEST: Eugene Investment ＆ Securities" | "MERITZ_COMPREHENSIVE: Meritz Securities" | "BOOKOOK: Bookook Securities" | "SHINYOUNG: Shinyoung Securities" | ("CAPE: CAPE Investment & Securities") | "SMBC: Sumitomo Mitsui Banking Corporation" | "RESONA: Resona Bank" | "NAVER_POINT: Naver Points" | "TOSS_MONEY: Toss Money" | "SSG_MONEY: Shinsegae Points" | "L_POINT: L Point" | "KAKAO_MONEY: Kakao Money" | "PAYCO: Payco Points" | "BW: Bank Wallet";
-            /**
-             * @description 은행명
-             * @example 산업은행
-             */
-            bankName: string;
-          };
+      exchangePayInfos?: {
+        /** @description 입금계좌정보 */
+        bankAccount: {
           /**
-           * @description 교환처리금액
-           * @example 0
+           * @description 계좌번호 (nullable)
+           * @example 1234123
            */
-          exchangePayAmt: number;
+          bankAccount?: string;
           /**
-           * @description 교환처리금 결제방법
-           * @example CREDIT_CARD
-           * @enum {string}
-           */
-          payType: "CASH" | "ACCUMULATION" | "NAVER_PAY";
-          /**
-           * @description 송금인
+           * @description 예금주명 (nullable)
            * @example 홍길동
            */
-          remitter: string;
-        })[];
+          bankDepositorName?: string;
+          /**
+           * @description 은행
+           * @example KDB
+           * @enum {string}
+           */
+          bank:
+            | 'ANONYMOUS'
+            | 'KDB'
+            | 'IBK'
+            | 'KB'
+            | 'KEB'
+            | 'SUHYUP'
+            | 'KEXIM'
+            | 'NH'
+            | 'NHLOCAL'
+            | 'WOORI'
+            | 'SC'
+            | 'CITY'
+            | 'DAEGU'
+            | 'PUSAN'
+            | 'GWANGJU'
+            | 'JEJU'
+            | 'JEONBUK'
+            | 'GYEONGNAM'
+            | 'KFCC'
+            | 'CU'
+            | 'SANGHO'
+            | 'HSBC'
+            | 'DEUTSCHE'
+            | 'ABN'
+            | 'JP_MORGAN'
+            | 'MIZUHO'
+            | 'UFJ'
+            | 'BOA'
+            | 'NFCF'
+            | 'EPOST'
+            | 'KEBHANA'
+            | 'SHINHAN'
+            | 'KBANK'
+            | 'KAKAO'
+            | 'TOSS'
+            | 'YUANTA'
+            | 'KBSEC'
+            | 'MIRAE'
+            | 'MIRAEDAEWOO'
+            | 'SAMSUNG'
+            | 'HANKOOK'
+            | 'NH_INVEST'
+            | 'KYOBO'
+            | 'HI_INVEST'
+            | 'HMC_INVEST'
+            | 'KIWOOM'
+            | 'EBEST'
+            | 'SK'
+            | 'DAISHIN'
+            | 'SOLOMON_INVEST'
+            | 'HANHWA'
+            | 'HANA_INVEST'
+            | 'SHINHAN_INVEST'
+            | 'DONGBU'
+            | 'EUGENE_INVEST'
+            | 'MERITZ_COMPREHENSIVE'
+            | 'BOOKOOK'
+            | 'SHINYOUNG'
+            | 'CAPE'
+            | 'SMBC'
+            | 'RESONA'
+            | 'NAVER_POINT'
+            | 'TOSS_MONEY'
+            | 'SSG_MONEY'
+            | 'L_POINT'
+            | 'KAKAO_MONEY'
+            | 'PAYCO'
+            | 'BW';
+          /**
+           * @description 은행명
+           * @example 산업은행
+           */
+          bankName: string;
+        };
+        /**
+         * @description 교환처리금액
+         * @example 0
+         */
+        exchangePayAmt: number;
+        /**
+         * @description 교환처리금 결제방법
+         * @example CREDIT_CARD
+         * @enum {string}
+         */
+        payType: 'CASH' | 'ACCUMULATION' | 'NAVER_PAY';
+        /**
+         * @description 송금인
+         * @example 홍길동
+         */
+        remitter: string;
+      }[];
       /**
        * @description 결제수단 (nullable)
        * @example CREDIT_CARD
        * @enum {string}
        */
-      payType?: "CREDIT_CARD: Credit Card" | "ACCOUNT: Deposit without bankbook" | "MOBILE: Mobile payment" | "REALTIME_ACCOUNT_TRANSFER: Real-time bank transfer" | "VIRTUAL_ACCOUNT: Virtual account" | "GIFT: Gift card" | "ATM: ATM" | "PAYCO: PAYCO" | "ZERO_PAY: Zero payment" | "ACCUMULATION: Accumulation" | "PHONE_BILL: Phone payment" | "POINT: Point payment" | "YPAY: Yello Pay" | "KPAY: K Pay" | "PAYPIN: Paypin" | "INIPAY: INIPay" | "PAYPAL: PAYPAL" | "STRIPE: STRIPE" | "NAVER_PAY: Naver Pay" | "KAKAO_PAY: Kakao Pay" | "NAVER_EASY_PAY: Naver Pay" | "SAMSUNG_PAY: Samsung Pay" | "CHAI: Chai" | "TOSS_PAY: Toss Pay" | "SK_PAY: SK Pay" | "APPLE_PAY: Apple Pay" | "LPAY: L Pay" | "ESCROW_REALTIME_ACCOUNT_TRANSFER: Real-time bank transfer - Escrow" | "ESCROW_VIRTUAL_ACCOUNT: Virtual account - Escrow" | "RENTAL: Rental payment" | "VERITRANS_CARD: Veritrans CreditCard" | "TOASTCAM: ToastCam" | "UNION_PAY: UnionPay" | "ALIPAY: AliPay Plus" | "WECHAT_PAY: WeChat Pay" | "ETC: Other payment methods";
+      payType?:
+        | 'CREDIT_CARD'
+        | 'ACCOUNT'
+        | 'MOBILE'
+        | 'REALTIME_ACCOUNT_TRANSFER'
+        | 'VIRTUAL_ACCOUNT'
+        | 'GIFT'
+        | 'ATM'
+        | 'PAYCO'
+        | 'ZERO_PAY'
+        | 'ACCUMULATION'
+        | 'PHONE_BILL'
+        | 'POINT'
+        | 'YPAY'
+        | 'KPAY'
+        | 'PAYPIN'
+        | 'INIPAY'
+        | 'PAYPAL'
+        | 'STRIPE'
+        | 'NAVER_PAY'
+        | 'KAKAO_PAY'
+        | 'NAVER_EASY_PAY'
+        | 'SAMSUNG_PAY'
+        | 'CHAI'
+        | 'TOSS_PAY'
+        | 'SK_PAY'
+        | 'APPLE_PAY'
+        | 'LPAY'
+        | 'ESCROW_REALTIME_ACCOUNT_TRANSFER'
+        | 'ESCROW_VIRTUAL_ACCOUNT'
+        | 'RENTAL'
+        | 'VERITRANS_CARD'
+        | 'TOASTCAM'
+        | 'UNION_PAY'
+        | 'ALIPAY'
+        | 'WECHAT_PAY'
+        | 'ETC';
       /**
        * @description 회원여부(true: 회원, false: 비회원)
        * @example true
        */
       member: boolean;
       /** @description 다음에 할 수 있는 작업 */
-      nextActions: ({
-          /**
-           * @description 다음에 할 수 있는 작업 그룹
-           * @example NORMAL
-           */
-          actionGroupType: string;
-          /**
-           * @description 작업타입
-           * @example CANCEL_ALL
-           * @enum {string}
-           */
-          nextActionType: "CANCEL_ALL: 주문취소" | "CANCEL: 취소" | "EXCHANGE: 교환" | "RETURN: 반품" | "WITHDRAW_CANCEL: 취소신청 취소" | "WITHDRAW_EXCHANGE: 교환신청 취소" | "WITHDRAW_RETURN: 반품신청 취소" | "VIEW_CLAIM: 클레임 조회" | "VIEW_DELIVERY: 배송조회" | "DELIVERY_DONE: 수취확인" | "CONFIRM_ORDER: 구매확정" | "CHANGE_ADDRESS: 배송지변경" | "WRITE_REVIEW: 상품평작성" | "ISSUE_CASH_RECEIPT: 현금영수증 발행" | "VIEW_RECEIPT: 현금영수증 조회";
-          /**
-           * @description uri
-           * @example /profile/orders/12121212/claim
-           */
-          uri: string;
-        })[];
+      nextActions: {
+        /**
+         * @description 다음에 할 수 있는 작업 그룹
+         * @example NORMAL
+         */
+        actionGroupType: string;
+        /**
+         * @description 작업타입
+         * @example CANCEL_ALL
+         * @enum {string}
+         */
+        nextActionType:
+          | 'CANCEL_ALL'
+          | 'CANCEL'
+          | 'EXCHANGE'
+          | 'RETURN'
+          | 'WITHDRAW_CANCEL'
+          | 'WITHDRAW_EXCHANGE'
+          | 'WITHDRAW_RETURN'
+          | 'VIEW_CLAIM'
+          | 'VIEW_DELIVERY'
+          | 'DELIVERY_DONE'
+          | 'CONFIRM_ORDER'
+          | 'CHANGE_ADDRESS'
+          | 'WRITE_REVIEW'
+          | 'ISSUE_CASH_RECEIPT'
+          | 'VIEW_RECEIPT';
+        /**
+         * @description uri
+         * @example /profile/orders/12121212/claim
+         */
+        uri: string;
+      }[];
       /**
        * @description 에스크로 여부(true: 에스크로, false: 비에스크로)
        * @example false
@@ -2274,17 +2527,17 @@ export interface components {
       escrow: boolean;
       /** @description 선택가능한 은행 */
       availableBanks: {
-          /**
-           * @description 은행코드
-           * @example KDB
-           */
-          bank: string;
-          /**
-           * @description 은행명
-           * @example 산업은행
-           */
-          label: string;
-        }[];
+        /**
+         * @description 은행코드
+         * @example KDB
+         */
+        bank: string;
+        /**
+         * @description 은행명
+         * @example 산업은행
+         */
+        label: string;
+      }[];
       /**
        * @description 비회원-인증토큰 (nullable)
        * @example 121212
@@ -2361,723 +2614,889 @@ export interface components {
         payAmt: number;
       };
       /** @description 환불정보 (nullable) */
-      refundInfos?: ({
+      refundInfos?: {
+        /**
+         * @description 환불금액(적립금제외)
+         * @example 0
+         */
+        refundMainPayAmt: number;
+        /**
+         * @description 환불방법(노출용)
+         * @example 미입금 취소처리
+         */
+        refundTypeLabel: string;
+        /**
+         * @description 클레임번호
+         * @example 12121212
+         */
+        claimNo: number;
+        /** @description 배송비금액 */
+        deliveryAmtInfo: {
           /**
-           * @description 환불금액(적립금제외)
+           * @description 변경 후 배송비(지역별배송비포함)
            * @example 0
            */
-          refundMainPayAmt: number;
+          afterDeliveryAmt: number;
           /**
-           * @description 환불방법(노출용)
-           * @example 미입금 취소처리
-           */
-          refundTypeLabel: string;
-          /**
-           * @description 클레임번호
-           * @example 12121212
-           */
-          claimNo: number;
-          /** @description 배송비금액 */
-          deliveryAmtInfo: {
-            /**
-             * @description 변경 후 배송비(지역별배송비포함)
-             * @example 0
-             */
-            afterDeliveryAmt: number;
-            /**
-             * @description 변경 전 배송비(지역별배송비포함)
-             * @example 0
-             */
-            beforeDeliveryAmt: number;
-            /**
-             * @description 총배송비
-             * @example 0
-             */
-            totalAmt: number;
-            /**
-             * @description 교환재발송배송비(지역별배송비포함)
-             * @example 0
-             */
-            exchangeDeliveryAmt: number;
-            /**
-             * @description 구매자직접배송여부(true: 구매자직접반품, false: 판매자수거요청
-             * @example true
-             */
-            buyerReturn: boolean;
-            /**
-             * @description 반품배송비(지역별배송비포함)
-             * @example 0
-             */
-            returnDeliveryAmt: number;
-            /**
-             * @description 착불여부(true: 착불, false: 선불) * true일 경우 refundDeliveryAmt 0
-             * @example true
-             */
-            payOnDelivery: boolean;
-            /**
-             * @description 교환재발송배송비 조정금액
-             * @example 0
-             */
-            exchangeAdjustAmt: number;
-            /**
-             * @description 판매자부담여부(true: 판매자부담, false: 구매자부담) * true일 경우 refundDeliveryAmt 0
-             * @example true
-             */
-            sellerFault: boolean;
-            /**
-             * @description 환불배송비(마이너스 시 고객에게 배송비 부과)
-             * @example 0
-             */
-            refundDeliveryAmt: number;
-            /**
-             * @description 반품배송비 조정금액
-             * @example 0
-             */
-            returnAdjustAmt: number;
-          };
-          /**
-           * @description 반품수거 타입 (nullable)
-           * @example SELLER_COLLECT
-           * @enum {string}
-           */
-          returnWayType?: "SELLER_COLLECT: Seller's collection request" | "BUYER_DIRECT_RETURN: Buyer's direct return";
-          /** @description 반품 이미지 리스트 */
-          claimImageUrls: (Record<string, never> | boolean | string | number)[];
-          /**
-           * @description 환불결제방법
-           * @example CREDIT_CARD
-           */
-          refundPayType: string;
-          /** @description 반품수거 주소지 (nullable) */
-          returnAddress?: {
-            /**
-             * @description 배송메모 (nullable)
-             * @example 조심해주시면 감사하겠습니다.
-             */
-            note?: string;
-            /** @description 주소 요약^|(46769) 경기도 성남시 분당구 삼평동 629번지 NHN 플레이뮤지엄... */
-            addressStr: string;
-            /**
-             * @description 주소
-             * @example 경기도 성남시 분당구 대왕판교로645번길 12
-             */
-            address: string;
-            /**
-             * @description 개인고유통관부호 (nullable)
-             * @example P12341234
-             */
-            customsIdNumber?: string;
-            /**
-             * @description 이름
-             * @example 홍길동
-             */
-            name: string;
-            /**
-             * @description 상세주소 (nullable)
-             * @example 16 NHN 플레이뮤지엄
-             */
-            detailAddress?: string;
-            /**
-             * @description 지번주소 (nullable)
-             * @example 경기도 성남시 분당구 삼평동 629번지 NHN 플레이뮤지엄
-             */
-            jibunAddress?: string;
-            /**
-             * @description 우편번호
-             * @example 46769
-             */
-            zipCd: string;
-            /**
-             * @description 연락처1
-             * @example 010-1111-1111
-             */
-            contact1: string;
-            /**
-             * @description 연락처2 (nullable)
-             * @example 010-1111-1111
-             */
-            contact2?: string;
-          };
-          /** @description 환불상품금액 */
-          productAmtInfo: {
-            /**
-             * @description 할인금액
-             * @example 0
-             */
-            discountAmt: number;
-            /**
-             * @description 총환불상품금액
-             * @example 0
-             */
-            totalAmt: number;
-            /**
-             * @description 교환상품금액
-             * @example 100
-             */
-            exchangeImmediateDiscountedPrice: number;
-            /**
-             * @description 추가할인가
-             * @example 0
-             */
-            additionalDiscountAmt: number;
-            /**
-             * @description 즉시할인가
-             * @example 100
-             */
-            immediateDiscountAmt: number;
-            /**
-             * @description 상품금액(즉시할인적용된)
-             * @example 100
-             */
-            immediateDiscountedPrice: number;
-            /**
-             * @description 교환조정금액
-             * @example 100
-             */
-            exchangeAdjustAmt: number;
-            /**
-             * @description 상품금액(즉시할인적용 전)
-             * @example 100
-             */
-            standardPrice: number;
-            /** @description 반품상품금액 */
-            returnImmediateDiscountedPrice: number;
-            /**
-             * @description 상품쿠폰할인가
-             * @example 0
-             */
-            productCouponDiscountAmt: number;
-            /**
-             * @description 교환할인금액
-             * @example 0
-             */
-            exchangeDiscountAmt: number;
-          };
-          /** @description 환불차감금액 */
-          subtractionAmtInfo: {
-            /** @description 총주문차감금액 */
-            totalAmt: number;
-            /** @description 환불금액조정사유 */
-            refundAdjustReason: string;
-            /**
-             * @description 환불금액조정
-             * @example 0
-             */
-            refundAdjustAmt: number;
-            /**
-             * @description 장바구니쿠폰 변경금액
-             * @example 0
-             */
-            cartCouponAmt: number;
-          };
-          /**
-           * @description 반품 송장번호 (nullable)
-           * @example 1234555
-           */
-          returnInvoiceNo?: string;
-          /**
-           * @description 환불(예상)방법(PG)
-           * @example CANCEL_DEPOSIT
-           * @enum {string}
-           */
-          refundType: "CANCEL_DEPOSIT: 미입금 취소처리" | "PAYCO: PAYCO" | "CASH: PG없음" | "PAYPAL: PAYPAL" | "STRIPE: STRIPE" | "ZERO_REFUND: 0원결제" | "KCP: KCP" | "CREDIT_CARD: 신용카드" | "LIIVMATE: 리브메이트" | "ACCUMULATION: 적립금 전액 사용" | "INICIS: 이니시스" | "NAVER_EASY_PAY: 네이버페이(간편결제)" | "KAKAO_PAY: 카카오페이" | "NAVER_PAY: 네이버페이(주문형)" | "LG_U_PLUS: LG유플러스" | "TOSS_PAYMENTS: 토스페이먼츠" | "ACCOUNT: 무통장입금" | "DUMMY: PG없음";
-          /** @description 환불상품정보 (nullable) */
-          refundOrderOptions?: {
-            /**
-             * @description 텍스트옵션 (nullable)
-             * @example 텍스트옵션
-             */
-            userInputText?: string;
-            /**
-             * @description 상품 이미지 (nullable)
-             * @example http://image.url
-             */
-            imageUrl?: string;
-            /**
-             * @description 옵션 값 (nullable)
-             * @example 105
-             */
-            optionValue?: string;
-            /**
-             * @description 교환 상품 수량 (nullable)
-             * @example 1
-             */
-            orderCnt?: number;
-            /**
-             * @description 옵션 명 (nullable)
-             * @example 사이즈
-             */
-            optionName?: string;
-            /**
-             * @description 상품 명 (nullable)
-             * @example 테스트 상품
-             */
-            productName?: string;
-          };
-          /** @description 교환출고 주소지 (nullable) */
-          exchangeAddress?: {
-            /**
-             * @description 배송메모 (nullable)
-             * @example 조심해주시면 감사하겠습니다.
-             */
-            note?: string;
-            /** @description 주소 요약^|(46769) 경기도 성남시 분당구 삼평동 629번지 NHN 플레이뮤지엄... */
-            addressStr: string;
-            /**
-             * @description 주소
-             * @example 경기도 성남시 분당구 대왕판교로645번길 12
-             */
-            address: string;
-            /**
-             * @description 개인고유통관부호 (nullable)
-             * @example P12341234
-             */
-            customsIdNumber?: string;
-            /**
-             * @description 이름
-             * @example 홍길동
-             */
-            name: string;
-            /**
-             * @description 상세주소 (nullable)
-             * @example 16 NHN 플레이뮤지엄
-             */
-            detailAddress?: string;
-            /**
-             * @description 지번주소 (nullable)
-             * @example 경기도 성남시 분당구 삼평동 629번지 NHN 플레이뮤지엄
-             */
-            jibunAddress?: string;
-            /**
-             * @description 우편번호
-             * @example 46769
-             */
-            zipCd: string;
-            /**
-             * @description 연락처1
-             * @example 010-1111-1111
-             */
-            contact1: string;
-            /**
-             * @description 연락처2 (nullable)
-             * @example 010-1111-1111
-             */
-            contact2?: string;
-          };
-          /**
-           * @description 적립금환불금액
+           * @description 변경 전 배송비(지역별배송비포함)
            * @example 0
            */
-          refundSubPayAmt: number;
+          beforeDeliveryAmt: number;
           /**
-           * @description 반품 택배사명 (nullable)
-           * @example CJ대한통운
-           */
-          returnDeliveryCompanyTypeLabel?: string;
-          /**
-           * @description 클레임 타입 (nullable)
-           * @example ORDER_CANCEL
-           * @enum {string}
-           */
-          claimClassType?: "LEGACY: 레거시" | "ORDER_CANCEL: 전체취소" | "OPTION_CANCEL: 부분취소" | "RETURN_EXCHANGE: 출고 후 교환" | "CANCEL_EXCHANGE: 출고 전 교환" | "RETURN: 반품";
-          /** @description 교환상품정보 (nullable) */
-          exchangeOrderOption?: {
-            /**
-             * @description 텍스트옵션 (nullable)
-             * @example 텍스트옵션
-             */
-            userInputText?: string;
-            /**
-             * @description 상품 이미지 (nullable)
-             * @example http://image.url
-             */
-            imageUrl?: string;
-            /**
-             * @description 옵션 값 (nullable)
-             * @example 105
-             */
-            optionValue?: string;
-            /**
-             * @description 교환 상품 수량 (nullable)
-             * @example 1
-             */
-            orderCnt?: number;
-            /**
-             * @description 옵션 명 (nullable)
-             * @example 사이즈
-             */
-            optionName?: string;
-            /**
-             * @description 상품 명 (nullable)
-             * @example 테스트 상품
-             */
-            productName?: string;
-          };
-          /**
-           * @description 환불금액(적립금포함
+           * @description 총배송비
            * @example 0
            */
-          refundPayAmt: number;
-          /** @description 환불계좌 정보(무통장 및 가상계좌) */
-          refundBankAccount: {
-            /**
-             * @description 계좌번호 (nullable)
-             * @example 1234123
-             */
-            bankAccount?: string;
-            /**
-             * @description 예금주명 (nullable)
-             * @example 홍길동
-             */
-            bankDepositorName?: string;
-            /**
-             * @description 은행
-             * @example KDB
-             * @enum {string}
-             */
-            bank: "ANONYMOUS: Unverified Bank" | "KDB: Korea Development Bank" | "IBK: Industrial Bank of Korea" | "KB: KOOKMIN BANK" | "KEB: Korea Exchange Bank" | "SUHYUP: National Federation of Fisheries Cooperatives" | "KEXIM: The Export-Import Bank of Korea" | "NH: NONGHYUP BANK" | "NHLOCAL: National Agricultural Cooperative Federation" | "WOORI: Woori Bank" | "SC: Standard Chartered Bank Korea Limited" | "CITY: Citibank Korea" | "DAEGU: Daegu Gyeongbuk Bank" | "PUSAN: BUSAN BANK" | "GWANGJU: The Kwangju Bank" | "JEJU: Jeju Bank" | "JEONBUK: Jeonbuk Bank" | "GYEONGNAM: BNK KYONGNAM BANK" | "KFCC: The Saemaeul finance firm." | "CU: National Credit Union Federation" | "SANGHO: Mutual Savings Bank / Thrift Institution" | "HSBC: Hongkong and Shanghai Banking Corporation" | "DEUTSCHE: Deutsche Bank AG" | "ABN: ABN" | "JP_MORGAN: JPMorgan" | "MIZUHO: Mizuho Bank" | "UFJ: MUFJ" | "BOA: Bank of America" | "NFCF: National Forestry Cooperative Federation" | "EPOST: Post Office" | "KEBHANA: KEB Hana Bank" | "SHINHAN: SHINHAN BANK" | "KBANK: Kbank" | "KAKAO: Kakao Bank" | "TOSS: Toss Bank" | "YUANTA: Yuanta Securities" | "KBSEC: KB Securities" | "MIRAE: Mirae Asset Securities" | "MIRAEDAEWOO: Miraeassetdaewoo Securities" | "SAMSUNG: Samsung Securities" | "HANKOOK: Korea Investment ＆ Securities" | ("NH_INVEST: NH Investment & Securities") | "KYOBO: Kyobo Securities" | ("HI_INVEST: Hi Investment & Securities") | "HMC_INVEST: HYUNDAI MOTOR SECURITIES" | "KIWOOM: Kiwoom Securities" | ("EBEST: EBEST INVESTMENT & SECURITIES") | "SK: SK Securities" | "DAISHIN: Daishin Securities" | ("SOLOMON_INVEST: SOLOMON INVESTMENT & SECURITIES") | "HANHWA: Hanwha Investment ＆ Securities" | "HANA_INVEST: Hana Financial Investment" | "SHINHAN_INVEST: Shinhan Investment" | "DONGBU: DB Financial Investment" | "EUGENE_INVEST: Eugene Investment ＆ Securities" | "MERITZ_COMPREHENSIVE: Meritz Securities" | "BOOKOOK: Bookook Securities" | "SHINYOUNG: Shinyoung Securities" | ("CAPE: CAPE Investment & Securities") | "SMBC: Sumitomo Mitsui Banking Corporation" | "RESONA: Resona Bank" | "NAVER_POINT: Naver Points" | "TOSS_MONEY: Toss Money" | "SSG_MONEY: Shinsegae Points" | "L_POINT: L Point" | "KAKAO_MONEY: Kakao Money" | "PAYCO: Payco Points" | "BW: Bank Wallet";
-            /**
-             * @description 은행명
-             * @example 산업은행
-             */
-            bankName: string;
-          };
-        })[];
-      /** @description 추가결제정보 (nullable) */
-      additionalPayInfos?: ({
-          /** @description 입금계좌정보 */
-          bankAccount: {
-            /**
-             * @description 계좌번호 (nullable)
-             * @example 1234123
-             */
-            bankAccount?: string;
-            /**
-             * @description 예금주명 (nullable)
-             * @example 홍길동
-             */
-            bankDepositorName?: string;
-            /**
-             * @description 은행
-             * @example KDB
-             * @enum {string}
-             */
-            bank: "ANONYMOUS: Unverified Bank" | "KDB: Korea Development Bank" | "IBK: Industrial Bank of Korea" | "KB: KOOKMIN BANK" | "KEB: Korea Exchange Bank" | "SUHYUP: National Federation of Fisheries Cooperatives" | "KEXIM: The Export-Import Bank of Korea" | "NH: NONGHYUP BANK" | "NHLOCAL: National Agricultural Cooperative Federation" | "WOORI: Woori Bank" | "SC: Standard Chartered Bank Korea Limited" | "CITY: Citibank Korea" | "DAEGU: Daegu Gyeongbuk Bank" | "PUSAN: BUSAN BANK" | "GWANGJU: The Kwangju Bank" | "JEJU: Jeju Bank" | "JEONBUK: Jeonbuk Bank" | "GYEONGNAM: BNK KYONGNAM BANK" | "KFCC: The Saemaeul finance firm." | "CU: National Credit Union Federation" | "SANGHO: Mutual Savings Bank / Thrift Institution" | "HSBC: Hongkong and Shanghai Banking Corporation" | "DEUTSCHE: Deutsche Bank AG" | "ABN: ABN" | "JP_MORGAN: JPMorgan" | "MIZUHO: Mizuho Bank" | "UFJ: MUFJ" | "BOA: Bank of America" | "NFCF: National Forestry Cooperative Federation" | "EPOST: Post Office" | "KEBHANA: KEB Hana Bank" | "SHINHAN: SHINHAN BANK" | "KBANK: Kbank" | "KAKAO: Kakao Bank" | "TOSS: Toss Bank" | "YUANTA: Yuanta Securities" | "KBSEC: KB Securities" | "MIRAE: Mirae Asset Securities" | "MIRAEDAEWOO: Miraeassetdaewoo Securities" | "SAMSUNG: Samsung Securities" | "HANKOOK: Korea Investment ＆ Securities" | ("NH_INVEST: NH Investment & Securities") | "KYOBO: Kyobo Securities" | ("HI_INVEST: Hi Investment & Securities") | "HMC_INVEST: HYUNDAI MOTOR SECURITIES" | "KIWOOM: Kiwoom Securities" | ("EBEST: EBEST INVESTMENT & SECURITIES") | "SK: SK Securities" | "DAISHIN: Daishin Securities" | ("SOLOMON_INVEST: SOLOMON INVESTMENT & SECURITIES") | "HANHWA: Hanwha Investment ＆ Securities" | "HANA_INVEST: Hana Financial Investment" | "SHINHAN_INVEST: Shinhan Investment" | "DONGBU: DB Financial Investment" | "EUGENE_INVEST: Eugene Investment ＆ Securities" | "MERITZ_COMPREHENSIVE: Meritz Securities" | "BOOKOOK: Bookook Securities" | "SHINYOUNG: Shinyoung Securities" | ("CAPE: CAPE Investment & Securities") | "SMBC: Sumitomo Mitsui Banking Corporation" | "RESONA: Resona Bank" | "NAVER_POINT: Naver Points" | "TOSS_MONEY: Toss Money" | "SSG_MONEY: Shinsegae Points" | "L_POINT: L Point" | "KAKAO_MONEY: Kakao Money" | "PAYCO: Payco Points" | "BW: Bank Wallet";
-            /**
-             * @description 은행명
-             * @example 산업은행
-             */
-            bankName: string;
-          };
+          totalAmt: number;
           /**
-           * @description 교환처리금액
+           * @description 교환재발송배송비(지역별배송비포함)
            * @example 0
            */
-          exchangePayAmt: number;
+          exchangeDeliveryAmt: number;
           /**
-           * @description 클레임번호
-           * @example 12121212
+           * @description 구매자직접배송여부(true: 구매자직접반품, false: 판매자수거요청
+           * @example true
            */
-          claimNo: number;
-          /** @description 배송비금액 */
-          deliveryAmtInfo: {
-            /**
-             * @description 변경 후 배송비(지역별배송비포함)
-             * @example 0
-             */
-            afterDeliveryAmt: number;
-            /**
-             * @description 변경 전 배송비(지역별배송비포함)
-             * @example 0
-             */
-            beforeDeliveryAmt: number;
-            /**
-             * @description 총배송비
-             * @example 0
-             */
-            totalAmt: number;
-            /**
-             * @description 교환재발송배송비(지역별배송비포함)
-             * @example 0
-             */
-            exchangeDeliveryAmt: number;
-            /**
-             * @description 구매자직접배송여부(true: 구매자직접반품, false: 판매자수거요청
-             * @example true
-             */
-            buyerReturn: boolean;
-            /**
-             * @description 반품배송비(지역별배송비포함)
-             * @example 0
-             */
-            returnDeliveryAmt: number;
-            /**
-             * @description 착불여부(true: 착불, false: 선불) * true일 경우 refundDeliveryAmt 0
-             * @example true
-             */
-            payOnDelivery: boolean;
-            /**
-             * @description 교환재발송배송비 조정금액
-             * @example 0
-             */
-            exchangeAdjustAmt: number;
-            /**
-             * @description 판매자부담여부(true: 판매자부담, false: 구매자부담) * true일 경우 refundDeliveryAmt 0
-             * @example true
-             */
-            sellerFault: boolean;
-            /**
-             * @description 환불배송비(마이너스 시 고객에게 배송비 부과)
-             * @example 0
-             */
-            refundDeliveryAmt: number;
-            /**
-             * @description 반품배송비 조정금액
-             * @example 0
-             */
-            returnAdjustAmt: number;
-          };
+          buyerReturn: boolean;
           /**
-           * @description 송금인
+           * @description 반품배송비(지역별배송비포함)
+           * @example 0
+           */
+          returnDeliveryAmt: number;
+          /**
+           * @description 착불여부(true: 착불, false: 선불) * true일 경우 refundDeliveryAmt 0
+           * @example true
+           */
+          payOnDelivery: boolean;
+          /**
+           * @description 교환재발송배송비 조정금액
+           * @example 0
+           */
+          exchangeAdjustAmt: number;
+          /**
+           * @description 판매자부담여부(true: 판매자부담, false: 구매자부담) * true일 경우 refundDeliveryAmt 0
+           * @example true
+           */
+          sellerFault: boolean;
+          /**
+           * @description 환불배송비(마이너스 시 고객에게 배송비 부과)
+           * @example 0
+           */
+          refundDeliveryAmt: number;
+          /**
+           * @description 반품배송비 조정금액
+           * @example 0
+           */
+          returnAdjustAmt: number;
+        };
+        /**
+         * @description 반품수거 타입 (nullable)
+         * @example SELLER_COLLECT
+         * @enum {string}
+         */
+        returnWayType?: 'SELLER_COLLECT' | 'BUYER_DIRECT_RETURN';
+        /** @description 반품 이미지 리스트 */
+        claimImageUrls: (Record<string, never> | boolean | string | number)[];
+        /**
+         * @description 환불결제방법
+         * @example CREDIT_CARD
+         */
+        refundPayType: string;
+        /** @description 반품수거 주소지 (nullable) */
+        returnAddress?: {
+          /**
+           * @description 배송메모 (nullable)
+           * @example 조심해주시면 감사하겠습니다.
+           */
+          note?: string;
+          /** @description 주소 요약^|(46769) 경기도 성남시 분당구 삼평동 629번지 NHN 플레이뮤지엄... */
+          addressStr: string;
+          /**
+           * @description 주소
+           * @example 경기도 성남시 분당구 대왕판교로645번길 12
+           */
+          address: string;
+          /**
+           * @description 개인고유통관부호 (nullable)
+           * @example P12341234
+           */
+          customsIdNumber?: string;
+          /**
+           * @description 이름
            * @example 홍길동
            */
-          remitter: string;
+          name: string;
           /**
-           * @description 반품수거 타입 (nullable)
-           * @example SELLER_COLLECT
+           * @description 상세주소 (nullable)
+           * @example 16 NHN 플레이뮤지엄
+           */
+          detailAddress?: string;
+          /**
+           * @description 지번주소 (nullable)
+           * @example 경기도 성남시 분당구 삼평동 629번지 NHN 플레이뮤지엄
+           */
+          jibunAddress?: string;
+          /**
+           * @description 우편번호
+           * @example 46769
+           */
+          zipCd: string;
+          /**
+           * @description 연락처1
+           * @example 010-1111-1111
+           */
+          contact1: string;
+          /**
+           * @description 연락처2 (nullable)
+           * @example 010-1111-1111
+           */
+          contact2?: string;
+        };
+        /** @description 환불상품금액 */
+        productAmtInfo: {
+          /**
+           * @description 할인금액
+           * @example 0
+           */
+          discountAmt: number;
+          /**
+           * @description 총환불상품금액
+           * @example 0
+           */
+          totalAmt: number;
+          /**
+           * @description 교환상품금액
+           * @example 100
+           */
+          exchangeImmediateDiscountedPrice: number;
+          /**
+           * @description 추가할인가
+           * @example 0
+           */
+          additionalDiscountAmt: number;
+          /**
+           * @description 즉시할인가
+           * @example 100
+           */
+          immediateDiscountAmt: number;
+          /**
+           * @description 상품금액(즉시할인적용된)
+           * @example 100
+           */
+          immediateDiscountedPrice: number;
+          /**
+           * @description 교환조정금액
+           * @example 100
+           */
+          exchangeAdjustAmt: number;
+          /**
+           * @description 상품금액(즉시할인적용 전)
+           * @example 100
+           */
+          standardPrice: number;
+          /** @description 반품상품금액 */
+          returnImmediateDiscountedPrice: number;
+          /**
+           * @description 상품쿠폰할인가
+           * @example 0
+           */
+          productCouponDiscountAmt: number;
+          /**
+           * @description 교환할인금액
+           * @example 0
+           */
+          exchangeDiscountAmt: number;
+        };
+        /** @description 환불차감금액 */
+        subtractionAmtInfo: {
+          /** @description 총주문차감금액 */
+          totalAmt: number;
+          /** @description 환불금액조정사유 */
+          refundAdjustReason: string;
+          /**
+           * @description 환불금액조정
+           * @example 0
+           */
+          refundAdjustAmt: number;
+          /**
+           * @description 장바구니쿠폰 변경금액
+           * @example 0
+           */
+          cartCouponAmt: number;
+        };
+        /**
+         * @description 반품 송장번호 (nullable)
+         * @example 1234555
+         */
+        returnInvoiceNo?: string;
+        /**
+         * @description 환불(예상)방법(PG)
+         * @example CANCEL_DEPOSIT
+         * @enum {string}
+         */
+        refundType:
+          | 'CANCEL_DEPOSIT'
+          | 'PAYCO'
+          | 'CASH'
+          | 'PAYPAL'
+          | 'STRIPE'
+          | 'ZERO_REFUND'
+          | 'KCP'
+          | 'CREDIT_CARD'
+          | 'LIIVMATE'
+          | 'ACCUMULATION'
+          | 'INICIS'
+          | 'NAVER_EASY_PAY'
+          | 'KAKAO_PAY'
+          | 'NAVER_PAY'
+          | 'LG_U_PLUS'
+          | 'TOSS_PAYMENTS'
+          | 'ACCOUNT'
+          | 'DUMMY';
+        /** @description 환불상품정보 (nullable) */
+        refundOrderOptions?: {
+          /**
+           * @description 텍스트옵션 (nullable)
+           * @example 텍스트옵션
+           */
+          userInputText?: string;
+          /**
+           * @description 상품 이미지 (nullable)
+           * @example http://image.url
+           */
+          imageUrl?: string;
+          /**
+           * @description 옵션 값 (nullable)
+           * @example 105
+           */
+          optionValue?: string;
+          /**
+           * @description 교환 상품 수량 (nullable)
+           * @example 1
+           */
+          orderCnt?: number;
+          /**
+           * @description 옵션 명 (nullable)
+           * @example 사이즈
+           */
+          optionName?: string;
+          /**
+           * @description 상품 명 (nullable)
+           * @example 테스트 상품
+           */
+          productName?: string;
+        };
+        /** @description 교환출고 주소지 (nullable) */
+        exchangeAddress?: {
+          /**
+           * @description 배송메모 (nullable)
+           * @example 조심해주시면 감사하겠습니다.
+           */
+          note?: string;
+          /** @description 주소 요약^|(46769) 경기도 성남시 분당구 삼평동 629번지 NHN 플레이뮤지엄... */
+          addressStr: string;
+          /**
+           * @description 주소
+           * @example 경기도 성남시 분당구 대왕판교로645번길 12
+           */
+          address: string;
+          /**
+           * @description 개인고유통관부호 (nullable)
+           * @example P12341234
+           */
+          customsIdNumber?: string;
+          /**
+           * @description 이름
+           * @example 홍길동
+           */
+          name: string;
+          /**
+           * @description 상세주소 (nullable)
+           * @example 16 NHN 플레이뮤지엄
+           */
+          detailAddress?: string;
+          /**
+           * @description 지번주소 (nullable)
+           * @example 경기도 성남시 분당구 삼평동 629번지 NHN 플레이뮤지엄
+           */
+          jibunAddress?: string;
+          /**
+           * @description 우편번호
+           * @example 46769
+           */
+          zipCd: string;
+          /**
+           * @description 연락처1
+           * @example 010-1111-1111
+           */
+          contact1: string;
+          /**
+           * @description 연락처2 (nullable)
+           * @example 010-1111-1111
+           */
+          contact2?: string;
+        };
+        /**
+         * @description 적립금환불금액
+         * @example 0
+         */
+        refundSubPayAmt: number;
+        /**
+         * @description 반품 택배사명 (nullable)
+         * @example CJ대한통운
+         */
+        returnDeliveryCompanyTypeLabel?: string;
+        /**
+         * @description 클레임 타입 (nullable)
+         * @example ORDER_CANCEL
+         * @enum {string}
+         */
+        claimClassType?:
+          | 'LEGACY'
+          | 'ORDER_CANCEL'
+          | 'OPTION_CANCEL'
+          | 'RETURN_EXCHANGE'
+          | 'CANCEL_EXCHANGE'
+          | 'RETURN';
+        /** @description 교환상품정보 (nullable) */
+        exchangeOrderOption?: {
+          /**
+           * @description 텍스트옵션 (nullable)
+           * @example 텍스트옵션
+           */
+          userInputText?: string;
+          /**
+           * @description 상품 이미지 (nullable)
+           * @example http://image.url
+           */
+          imageUrl?: string;
+          /**
+           * @description 옵션 값 (nullable)
+           * @example 105
+           */
+          optionValue?: string;
+          /**
+           * @description 교환 상품 수량 (nullable)
+           * @example 1
+           */
+          orderCnt?: number;
+          /**
+           * @description 옵션 명 (nullable)
+           * @example 사이즈
+           */
+          optionName?: string;
+          /**
+           * @description 상품 명 (nullable)
+           * @example 테스트 상품
+           */
+          productName?: string;
+        };
+        /**
+         * @description 환불금액(적립금포함
+         * @example 0
+         */
+        refundPayAmt: number;
+        /** @description 환불계좌 정보(무통장 및 가상계좌) */
+        refundBankAccount: {
+          /**
+           * @description 계좌번호 (nullable)
+           * @example 1234123
+           */
+          bankAccount?: string;
+          /**
+           * @description 예금주명 (nullable)
+           * @example 홍길동
+           */
+          bankDepositorName?: string;
+          /**
+           * @description 은행
+           * @example KDB
            * @enum {string}
            */
-          returnWayType?: "SELLER_COLLECT: Seller's collection request" | "BUYER_DIRECT_RETURN: Buyer's direct return";
-          /** @description 반품 이미지 리스트 */
-          claimImageUrls: (Record<string, never> | boolean | string | number)[];
-          /** @description 반품수거 주소지 (nullable) */
-          returnAddress?: {
-            /**
-             * @description 배송메모 (nullable)
-             * @example 조심해주시면 감사하겠습니다.
-             */
-            note?: string;
-            /** @description 주소 요약^|(46769) 경기도 성남시 분당구 삼평동 629번지 NHN 플레이뮤지엄... */
-            addressStr: string;
-            /**
-             * @description 주소
-             * @example 경기도 성남시 분당구 대왕판교로645번길 12
-             */
-            address: string;
-            /**
-             * @description 개인고유통관부호 (nullable)
-             * @example P12341234
-             */
-            customsIdNumber?: string;
-            /**
-             * @description 이름
-             * @example 홍길동
-             */
-            name: string;
-            /**
-             * @description 상세주소 (nullable)
-             * @example 16 NHN 플레이뮤지엄
-             */
-            detailAddress?: string;
-            /**
-             * @description 지번주소 (nullable)
-             * @example 경기도 성남시 분당구 삼평동 629번지 NHN 플레이뮤지엄
-             */
-            jibunAddress?: string;
-            /**
-             * @description 우편번호
-             * @example 46769
-             */
-            zipCd: string;
-            /**
-             * @description 연락처1
-             * @example 010-1111-1111
-             */
-            contact1: string;
-            /**
-             * @description 연락처2 (nullable)
-             * @example 010-1111-1111
-             */
-            contact2?: string;
-          };
-          /** @description 환불상품금액 */
-          productAmtInfo: {
-            /**
-             * @description 할인금액
-             * @example 0
-             */
-            discountAmt: number;
-            /**
-             * @description 총환불상품금액
-             * @example 0
-             */
-            totalAmt: number;
-            /**
-             * @description 교환상품금액
-             * @example 100
-             */
-            exchangeImmediateDiscountedPrice: number;
-            /**
-             * @description 추가할인가
-             * @example 0
-             */
-            additionalDiscountAmt: number;
-            /**
-             * @description 즉시할인가
-             * @example 100
-             */
-            immediateDiscountAmt: number;
-            /**
-             * @description 상품금액(즉시할인적용된)
-             * @example 100
-             */
-            immediateDiscountedPrice: number;
-            /**
-             * @description 교환조정금액
-             * @example 100
-             */
-            exchangeAdjustAmt: number;
-            /**
-             * @description 상품금액(즉시할인적용 전)
-             * @example 100
-             */
-            standardPrice: number;
-            /** @description 반품상품금액 */
-            returnImmediateDiscountedPrice: number;
-            /**
-             * @description 상품쿠폰할인가
-             * @example 0
-             */
-            productCouponDiscountAmt: number;
-            /**
-             * @description 교환할인금액
-             * @example 0
-             */
-            exchangeDiscountAmt: number;
-          };
-          /** @description 환불차감금액 */
-          subtractionAmtInfo: {
-            /** @description 총주문차감금액 */
-            totalAmt: number;
-            /** @description 환불금액조정사유 */
-            refundAdjustReason: string;
-            /**
-             * @description 환불금액조정
-             * @example 0
-             */
-            refundAdjustAmt: number;
-            /**
-             * @description 장바구니쿠폰 변경금액
-             * @example 0
-             */
-            cartCouponAmt: number;
-          };
+          bank:
+            | 'ANONYMOUS'
+            | 'KDB'
+            | 'IBK'
+            | 'KB'
+            | 'KEB'
+            | 'SUHYUP'
+            | 'KEXIM'
+            | 'NH'
+            | 'NHLOCAL'
+            | 'WOORI'
+            | 'SC'
+            | 'CITY'
+            | 'DAEGU'
+            | 'PUSAN'
+            | 'GWANGJU'
+            | 'JEJU'
+            | 'JEONBUK'
+            | 'GYEONGNAM'
+            | 'KFCC'
+            | 'CU'
+            | 'SANGHO'
+            | 'HSBC'
+            | 'DEUTSCHE'
+            | 'ABN'
+            | 'JP_MORGAN'
+            | 'MIZUHO'
+            | 'UFJ'
+            | 'BOA'
+            | 'NFCF'
+            | 'EPOST'
+            | 'KEBHANA'
+            | 'SHINHAN'
+            | 'KBANK'
+            | 'KAKAO'
+            | 'TOSS'
+            | 'YUANTA'
+            | 'KBSEC'
+            | 'MIRAE'
+            | 'MIRAEDAEWOO'
+            | 'SAMSUNG'
+            | 'HANKOOK'
+            | 'NH_INVEST'
+            | 'KYOBO'
+            | 'HI_INVEST'
+            | 'HMC_INVEST'
+            | 'KIWOOM'
+            | 'EBEST'
+            | 'SK'
+            | 'DAISHIN'
+            | 'SOLOMON_INVEST'
+            | 'HANHWA'
+            | 'HANA_INVEST'
+            | 'SHINHAN_INVEST'
+            | 'DONGBU'
+            | 'EUGENE_INVEST'
+            | 'MERITZ_COMPREHENSIVE'
+            | 'BOOKOOK'
+            | 'SHINYOUNG'
+            | 'CAPE'
+            | 'SMBC'
+            | 'RESONA'
+            | 'NAVER_POINT'
+            | 'TOSS_MONEY'
+            | 'SSG_MONEY'
+            | 'L_POINT'
+            | 'KAKAO_MONEY'
+            | 'PAYCO'
+            | 'BW';
           /**
-           * @description 반품 송장번호 (nullable)
-           * @example 1234555
+           * @description 은행명
+           * @example 산업은행
            */
-          returnInvoiceNo?: string;
+          bankName: string;
+        };
+      }[];
+      /** @description 추가결제정보 (nullable) */
+      additionalPayInfos?: {
+        /** @description 입금계좌정보 */
+        bankAccount: {
           /**
-           * @description 교환처리금 결제방법
-           * @example CREDIT_CARD
+           * @description 계좌번호 (nullable)
+           * @example 1234123
+           */
+          bankAccount?: string;
+          /**
+           * @description 예금주명 (nullable)
+           * @example 홍길동
+           */
+          bankDepositorName?: string;
+          /**
+           * @description 은행
+           * @example KDB
            * @enum {string}
            */
-          payType: "CASH" | "ACCUMULATION" | "NAVER_PAY";
-          /** @description 교환출고 주소지 (nullable) */
-          exchangeAddress?: {
-            /**
-             * @description 배송메모 (nullable)
-             * @example 조심해주시면 감사하겠습니다.
-             */
-            note?: string;
-            /** @description 주소 요약^|(46769) 경기도 성남시 분당구 삼평동 629번지 NHN 플레이뮤지엄... */
-            addressStr: string;
-            /**
-             * @description 주소
-             * @example 경기도 성남시 분당구 대왕판교로645번길 12
-             */
-            address: string;
-            /**
-             * @description 개인고유통관부호 (nullable)
-             * @example P12341234
-             */
-            customsIdNumber?: string;
-            /**
-             * @description 이름
-             * @example 홍길동
-             */
-            name: string;
-            /**
-             * @description 상세주소 (nullable)
-             * @example 16 NHN 플레이뮤지엄
-             */
-            detailAddress?: string;
-            /**
-             * @description 지번주소 (nullable)
-             * @example 경기도 성남시 분당구 삼평동 629번지 NHN 플레이뮤지엄
-             */
-            jibunAddress?: string;
-            /**
-             * @description 우편번호
-             * @example 46769
-             */
-            zipCd: string;
-            /**
-             * @description 연락처1
-             * @example 010-1111-1111
-             */
-            contact1: string;
-            /**
-             * @description 연락처2 (nullable)
-             * @example 010-1111-1111
-             */
-            contact2?: string;
-          };
+          bank:
+            | 'ANONYMOUS'
+            | 'KDB'
+            | 'IBK'
+            | 'KB'
+            | 'KEB'
+            | 'SUHYUP'
+            | 'KEXIM'
+            | 'NH'
+            | 'NHLOCAL'
+            | 'WOORI'
+            | 'SC'
+            | 'CITY'
+            | 'DAEGU'
+            | 'PUSAN'
+            | 'GWANGJU'
+            | 'JEJU'
+            | 'JEONBUK'
+            | 'GYEONGNAM'
+            | 'KFCC'
+            | 'CU'
+            | 'SANGHO'
+            | 'HSBC'
+            | 'DEUTSCHE'
+            | 'ABN'
+            | 'JP_MORGAN'
+            | 'MIZUHO'
+            | 'UFJ'
+            | 'BOA'
+            | 'NFCF'
+            | 'EPOST'
+            | 'KEBHANA'
+            | 'SHINHAN'
+            | 'KBANK'
+            | 'KAKAO'
+            | 'TOSS'
+            | 'YUANTA'
+            | 'KBSEC'
+            | 'MIRAE'
+            | 'MIRAEDAEWOO'
+            | 'SAMSUNG'
+            | 'HANKOOK'
+            | 'NH_INVEST'
+            | 'KYOBO'
+            | 'HI_INVEST'
+            | 'HMC_INVEST'
+            | 'KIWOOM'
+            | 'EBEST'
+            | 'SK'
+            | 'DAISHIN'
+            | 'SOLOMON_INVEST'
+            | 'HANHWA'
+            | 'HANA_INVEST'
+            | 'SHINHAN_INVEST'
+            | 'DONGBU'
+            | 'EUGENE_INVEST'
+            | 'MERITZ_COMPREHENSIVE'
+            | 'BOOKOOK'
+            | 'SHINYOUNG'
+            | 'CAPE'
+            | 'SMBC'
+            | 'RESONA'
+            | 'NAVER_POINT'
+            | 'TOSS_MONEY'
+            | 'SSG_MONEY'
+            | 'L_POINT'
+            | 'KAKAO_MONEY'
+            | 'PAYCO'
+            | 'BW';
           /**
-           * @description 반품 택배사명 (nullable)
-           * @example CJ대한통운
+           * @description 은행명
+           * @example 산업은행
            */
-          returnDeliveryCompanyTypeLabel?: string;
+          bankName: string;
+        };
+        /**
+         * @description 교환처리금액
+         * @example 0
+         */
+        exchangePayAmt: number;
+        /**
+         * @description 클레임번호
+         * @example 12121212
+         */
+        claimNo: number;
+        /** @description 배송비금액 */
+        deliveryAmtInfo: {
           /**
-           * @description 클레임 타입 (nullable)
-           * @example ORDER_CANCEL
-           * @enum {string}
+           * @description 변경 후 배송비(지역별배송비포함)
+           * @example 0
            */
-          claimClassType?: "LEGACY: 레거시" | "ORDER_CANCEL: 전체취소" | "OPTION_CANCEL: 부분취소" | "RETURN_EXCHANGE: 출고 후 교환" | "CANCEL_EXCHANGE: 출고 전 교환" | "RETURN: 반품";
-          /** @description 교환상품정보 (nullable) */
-          exchangeOrderOption?: {
-            /**
-             * @description 텍스트옵션 (nullable)
-             * @example 텍스트옵션
-             */
-            userInputText?: string;
-            /**
-             * @description 상품 이미지 (nullable)
-             * @example http://image.url
-             */
-            imageUrl?: string;
-            /**
-             * @description 옵션 값 (nullable)
-             * @example 105
-             */
-            optionValue?: string;
-            /**
-             * @description 교환 상품 수량 (nullable)
-             * @example 1
-             */
-            orderCnt?: number;
-            /**
-             * @description 옵션 명 (nullable)
-             * @example 사이즈
-             */
-            optionName?: string;
-            /**
-             * @description 상품 명 (nullable)
-             * @example 테스트 상품
-             */
-            productName?: string;
-          };
-        })[];
+          afterDeliveryAmt: number;
+          /**
+           * @description 변경 전 배송비(지역별배송비포함)
+           * @example 0
+           */
+          beforeDeliveryAmt: number;
+          /**
+           * @description 총배송비
+           * @example 0
+           */
+          totalAmt: number;
+          /**
+           * @description 교환재발송배송비(지역별배송비포함)
+           * @example 0
+           */
+          exchangeDeliveryAmt: number;
+          /**
+           * @description 구매자직접배송여부(true: 구매자직접반품, false: 판매자수거요청
+           * @example true
+           */
+          buyerReturn: boolean;
+          /**
+           * @description 반품배송비(지역별배송비포함)
+           * @example 0
+           */
+          returnDeliveryAmt: number;
+          /**
+           * @description 착불여부(true: 착불, false: 선불) * true일 경우 refundDeliveryAmt 0
+           * @example true
+           */
+          payOnDelivery: boolean;
+          /**
+           * @description 교환재발송배송비 조정금액
+           * @example 0
+           */
+          exchangeAdjustAmt: number;
+          /**
+           * @description 판매자부담여부(true: 판매자부담, false: 구매자부담) * true일 경우 refundDeliveryAmt 0
+           * @example true
+           */
+          sellerFault: boolean;
+          /**
+           * @description 환불배송비(마이너스 시 고객에게 배송비 부과)
+           * @example 0
+           */
+          refundDeliveryAmt: number;
+          /**
+           * @description 반품배송비 조정금액
+           * @example 0
+           */
+          returnAdjustAmt: number;
+        };
+        /**
+         * @description 송금인
+         * @example 홍길동
+         */
+        remitter: string;
+        /**
+         * @description 반품수거 타입 (nullable)
+         * @example SELLER_COLLECT
+         * @enum {string}
+         */
+        returnWayType?: 'SELLER_COLLECT' | 'BUYER_DIRECT_RETURN';
+        /** @description 반품 이미지 리스트 */
+        claimImageUrls: (Record<string, never> | boolean | string | number)[];
+        /** @description 반품수거 주소지 (nullable) */
+        returnAddress?: {
+          /**
+           * @description 배송메모 (nullable)
+           * @example 조심해주시면 감사하겠습니다.
+           */
+          note?: string;
+          /** @description 주소 요약^|(46769) 경기도 성남시 분당구 삼평동 629번지 NHN 플레이뮤지엄... */
+          addressStr: string;
+          /**
+           * @description 주소
+           * @example 경기도 성남시 분당구 대왕판교로645번길 12
+           */
+          address: string;
+          /**
+           * @description 개인고유통관부호 (nullable)
+           * @example P12341234
+           */
+          customsIdNumber?: string;
+          /**
+           * @description 이름
+           * @example 홍길동
+           */
+          name: string;
+          /**
+           * @description 상세주소 (nullable)
+           * @example 16 NHN 플레이뮤지엄
+           */
+          detailAddress?: string;
+          /**
+           * @description 지번주소 (nullable)
+           * @example 경기도 성남시 분당구 삼평동 629번지 NHN 플레이뮤지엄
+           */
+          jibunAddress?: string;
+          /**
+           * @description 우편번호
+           * @example 46769
+           */
+          zipCd: string;
+          /**
+           * @description 연락처1
+           * @example 010-1111-1111
+           */
+          contact1: string;
+          /**
+           * @description 연락처2 (nullable)
+           * @example 010-1111-1111
+           */
+          contact2?: string;
+        };
+        /** @description 환불상품금액 */
+        productAmtInfo: {
+          /**
+           * @description 할인금액
+           * @example 0
+           */
+          discountAmt: number;
+          /**
+           * @description 총환불상품금액
+           * @example 0
+           */
+          totalAmt: number;
+          /**
+           * @description 교환상품금액
+           * @example 100
+           */
+          exchangeImmediateDiscountedPrice: number;
+          /**
+           * @description 추가할인가
+           * @example 0
+           */
+          additionalDiscountAmt: number;
+          /**
+           * @description 즉시할인가
+           * @example 100
+           */
+          immediateDiscountAmt: number;
+          /**
+           * @description 상품금액(즉시할인적용된)
+           * @example 100
+           */
+          immediateDiscountedPrice: number;
+          /**
+           * @description 교환조정금액
+           * @example 100
+           */
+          exchangeAdjustAmt: number;
+          /**
+           * @description 상품금액(즉시할인적용 전)
+           * @example 100
+           */
+          standardPrice: number;
+          /** @description 반품상품금액 */
+          returnImmediateDiscountedPrice: number;
+          /**
+           * @description 상품쿠폰할인가
+           * @example 0
+           */
+          productCouponDiscountAmt: number;
+          /**
+           * @description 교환할인금액
+           * @example 0
+           */
+          exchangeDiscountAmt: number;
+        };
+        /** @description 환불차감금액 */
+        subtractionAmtInfo: {
+          /** @description 총주문차감금액 */
+          totalAmt: number;
+          /** @description 환불금액조정사유 */
+          refundAdjustReason: string;
+          /**
+           * @description 환불금액조정
+           * @example 0
+           */
+          refundAdjustAmt: number;
+          /**
+           * @description 장바구니쿠폰 변경금액
+           * @example 0
+           */
+          cartCouponAmt: number;
+        };
+        /**
+         * @description 반품 송장번호 (nullable)
+         * @example 1234555
+         */
+        returnInvoiceNo?: string;
+        /**
+         * @description 교환처리금 결제방법
+         * @example CREDIT_CARD
+         * @enum {string}
+         */
+        payType: 'CASH' | 'ACCUMULATION' | 'NAVER_PAY';
+        /** @description 교환출고 주소지 (nullable) */
+        exchangeAddress?: {
+          /**
+           * @description 배송메모 (nullable)
+           * @example 조심해주시면 감사하겠습니다.
+           */
+          note?: string;
+          /** @description 주소 요약^|(46769) 경기도 성남시 분당구 삼평동 629번지 NHN 플레이뮤지엄... */
+          addressStr: string;
+          /**
+           * @description 주소
+           * @example 경기도 성남시 분당구 대왕판교로645번길 12
+           */
+          address: string;
+          /**
+           * @description 개인고유통관부호 (nullable)
+           * @example P12341234
+           */
+          customsIdNumber?: string;
+          /**
+           * @description 이름
+           * @example 홍길동
+           */
+          name: string;
+          /**
+           * @description 상세주소 (nullable)
+           * @example 16 NHN 플레이뮤지엄
+           */
+          detailAddress?: string;
+          /**
+           * @description 지번주소 (nullable)
+           * @example 경기도 성남시 분당구 삼평동 629번지 NHN 플레이뮤지엄
+           */
+          jibunAddress?: string;
+          /**
+           * @description 우편번호
+           * @example 46769
+           */
+          zipCd: string;
+          /**
+           * @description 연락처1
+           * @example 010-1111-1111
+           */
+          contact1: string;
+          /**
+           * @description 연락처2 (nullable)
+           * @example 010-1111-1111
+           */
+          contact2?: string;
+        };
+        /**
+         * @description 반품 택배사명 (nullable)
+         * @example CJ대한통운
+         */
+        returnDeliveryCompanyTypeLabel?: string;
+        /**
+         * @description 클레임 타입 (nullable)
+         * @example ORDER_CANCEL
+         * @enum {string}
+         */
+        claimClassType?:
+          | 'LEGACY'
+          | 'ORDER_CANCEL'
+          | 'OPTION_CANCEL'
+          | 'RETURN_EXCHANGE'
+          | 'CANCEL_EXCHANGE'
+          | 'RETURN';
+        /** @description 교환상품정보 (nullable) */
+        exchangeOrderOption?: {
+          /**
+           * @description 텍스트옵션 (nullable)
+           * @example 텍스트옵션
+           */
+          userInputText?: string;
+          /**
+           * @description 상품 이미지 (nullable)
+           * @example http://image.url
+           */
+          imageUrl?: string;
+          /**
+           * @description 옵션 값 (nullable)
+           * @example 105
+           */
+          optionValue?: string;
+          /**
+           * @description 교환 상품 수량 (nullable)
+           * @example 1
+           */
+          orderCnt?: number;
+          /**
+           * @description 옵션 명 (nullable)
+           * @example 사이즈
+           */
+          optionName?: string;
+          /**
+           * @description 상품 명 (nullable)
+           * @example 테스트 상품
+           */
+          productName?: string;
+        };
+      }[];
       /** @description 해외결제정보 */
       internationalPayInfo: {
         /**
@@ -3106,24 +3525,54 @@ export interface components {
        * @example CANCEL_DEPOSIT
        * @enum {string}
        */
-      refundPayType: "CANCEL_DEPOSIT: 미입금 취소처리" | "PAYCO: PAYCO" | "CASH: PG없음" | "PAYPAL: PAYPAL" | "STRIPE: STRIPE" | "ZERO_REFUND: 0원결제" | "KCP: KCP" | "CREDIT_CARD: 신용카드" | "LIIVMATE: 리브메이트" | "ACCUMULATION: 적립금 전액 사용" | "INICIS: 이니시스" | "NAVER_EASY_PAY: 네이버페이(간편결제)" | "KAKAO_PAY: 카카오페이" | "NAVER_PAY: 네이버페이(주문형)" | "LG_U_PLUS: LG유플러스" | "TOSS_PAYMENTS: 토스페이먼츠" | "ACCOUNT: 무통장입금" | "DUMMY: PG없음";
+      refundPayType:
+        | 'CANCEL_DEPOSIT'
+        | 'PAYCO'
+        | 'CASH'
+        | 'PAYPAL'
+        | 'STRIPE'
+        | 'ZERO_REFUND'
+        | 'KCP'
+        | 'CREDIT_CARD'
+        | 'LIIVMATE'
+        | 'ACCUMULATION'
+        | 'INICIS'
+        | 'NAVER_EASY_PAY'
+        | 'KAKAO_PAY'
+        | 'NAVER_PAY'
+        | 'LG_U_PLUS'
+        | 'TOSS_PAYMENTS'
+        | 'ACCOUNT'
+        | 'DUMMY';
       /** @description 선택가능한 사유 목록 */
-      claimReasonTypes: ({
-          /**
-           * @description 귀책타입
-           * @example SELLER
-           * @enum {string}
-           */
-          responsibleObjectType: "BUYER: Buyer's fault" | "SELLER: Seller's fault";
-          /**
-           * @description 클레임 사유타입
-           * @example CHANGE_MIND
-           * @enum {string}
-           */
-          claimReasonType: "CHANGE_MIND: Simple change of mind (color, size, etc.)" | "DEFECTIVE_PRODUCT: Product defect/damage" | "WRONG_DELIVERY: Missing/Wrong delivery" | "OUT_OF_STOCK_SYSTEM: Out of stock (cancellation due to stock shortage)" | "CANCEL_BEFORE_PAY: Cancellation before payment" | "WRONG_PRODUCT_DETAIL: Different from product details" | "DELAY_DELIVERY: Seller's shipping delay" | "OUT_OF_STOCK: Product sold out/out of stock" | "OTHERS_SELLER: Other (seller's fault)" | "OTHERS_BUYER: Other (buyer's fault)" | "LATER_INPUT_ORDER: Receiver address not submitted" | "LATER_INPUT_ORDER_RECEIVER_CANCEL: Not accept gift ";
-          /** @description 클레임 사유 라벨^|단순변심(색상,사이즈 등) */
-          label: string;
-        })[];
+      claimReasonTypes: {
+        /**
+         * @description 귀책타입
+         * @example SELLER
+         * @enum {string}
+         */
+        responsibleObjectType: 'BUYER' | 'SELLER';
+        /**
+         * @description 클레임 사유타입
+         * @example CHANGE_MIND
+         * @enum {string}
+         */
+        claimReasonType:
+          | 'CHANGE_MIND'
+          | 'DEFECTIVE_PRODUCT'
+          | 'WRONG_DELIVERY'
+          | 'OUT_OF_STOCK_SYSTEM'
+          | 'CANCEL_BEFORE_PAY'
+          | 'WRONG_PRODUCT_DETAIL'
+          | 'DELAY_DELIVERY'
+          | 'OUT_OF_STOCK'
+          | 'OTHERS_SELLER'
+          | 'OTHERS_BUYER'
+          | 'LATER_INPUT_ORDER'
+          | 'LATER_INPUT_ORDER_RECEIVER_CANCEL';
+        /** @description 클레임 사유 라벨^|단순변심(색상,사이즈 등) */
+        label: string;
+      }[];
       /**
        * @description 주문만료 일자 - (가상계좌 전용) (nullable)
        * @example YYYY-MM-DD hh:mm:ss
@@ -3158,575 +3607,679 @@ export interface components {
        */
       pgOrderNo?: string;
       /** @description 파트너별주문리스트 */
-      orderOptionsGroupByPartner: ({
+      orderOptionsGroupByPartner: {
+        /**
+         * @description 파트너번호
+         * @example 123
+         */
+        partnerNo: number;
+        /** @description 배송그룹별 옵션 */
+        orderOptionsGroupByDelivery: {
           /**
-           * @description 파트너번호
-           * @example 123
+           * @description 선/착불타입
+           * @example PREPAID_DELIVERY
+           * @enum {string}
+           */
+          deliveryPayType: 'PREPAID_DELIVERY' | 'PAY_ON_DELIVERY';
+          /**
+           * @description 배송지정일 (nullable)
+           * @example YYYY-MM-DD
+           */
+          requestShippingDate?: string;
+          /**
+           * @description 배송조건노출문구(for US) (nullable)
+           * @example US
+           */
+          frontDisplayText?: string;
+          /**
+           * @description 배송지 나중입력 여부 (true: 나중입력, false: 바로입력) (nullable)
+           * @example false
+           */
+          usesShippingInfoLaterInput?: boolean;
+          /**
+           * @description 배송지 우편 번호
+           * @example 13487
+           */
+          receiverZipCd: string;
+          /**
+           * @description 송장추적 URL (nullable)
+           * @example www.cj.com/121211
+           */
+          retrieveInvoiceUrl?: string;
+          /**
+           * @description 파트너번호 - 쇼핑몰 배송일 경우 0
+           * @example 121212
            */
           partnerNo: number;
-          /** @description 배송그룹별 옵션 */
-          orderOptionsGroupByDelivery: ({
+          /**
+           * @description 배송서비스타입라벨(for US) (nullable)
+           * @example UPS Ground
+           */
+          shippingMethodLabel?: string;
+          /**
+           * @description 송장번호
+           * @example 12121212
+           */
+          invoiceNo: string;
+          /**
+           * @description 연락처1
+           * @example 010-1111-1111
+           */
+          receiverContact1: string;
+          /**
+           * @description 연락처2
+           * @example 010-1111-1111
+           */
+          receiverContact2: string;
+          /**
+           * @description 배송지 지번 (nullable)
+           * @example 경기도 성남시 분당구 삼평동 629번지 NHN 플레이뮤지엄
+           */
+          receiverJibunAddress?: string;
+          /** @description 주문상품옵션 */
+          orderOptions: {
+            /**
+             * @description 교환가능여부
+             * @example true
+             */
+            exchangeable: boolean;
+            /**
+             * @description 예약배송시작일 (nullable)
+             * @example YYYY-MM-DD hh:mm:ss
+             */
+            reservationDeliveryYmdt?: string;
+            /**
+             * @description 클레임 번호 (nullable)
+             * @example 1
+             */
+            claimNo?: number;
+            /**
+             * @description 취소가능여부
+             * @example true
+             */
+            cancelable: boolean;
+            /**
+             * @description 주문상태 (nullable)
+             * @example 결제완료
+             */
+            orderStatusTypeLabel?: string;
+            /**
+             * @description 사은품 여부
+             * @example true
+             */
+            isFreeGift: boolean;
+            /** @description 구매자 작성형 옵션 */
+            inputs: {
               /**
-               * @description 선/착불타입
-               * @example PREPAID_DELIVERY
+               * @description 구매자 작성형 입력 값 (nullable)
+               * @example 14호
+               */
+              inputValue?: string;
+              /**
+               * @description 구매자 작성형 입력 이름 (nullable)
+               * @example 사이즈
+               */
+              inputLabel?: string;
+            }[];
+            /**
+             * @description 배송여부
+             * @example true
+             */
+            deliverable: boolean;
+            /**
+             * @description 배송보류 해제 일시 (nullable)
+             * @example "2023-09-01T18:00:00.000Z"
+             */
+            releaseHoldDeliveryYmdt?: string;
+            /**
+             * @description 옵션사용여부
+             * @example true
+             */
+            optionUsed: boolean;
+            /**
+             * @description 정기배송 상품여부 (nullable)
+             * @example false
+             */
+            isRecurringPayment?: boolean;
+            /**
+             * @description 클레임상태 (nullable)
+             * @example 취소신청
+             */
+            claimStatusTypeLabel?: string;
+            /**
+             * @description 상품명
+             * @example 상품1
+             */
+            productName: string;
+            /**
+             * @description 클레임상태 (nullable)
+             * @example CANCEL_NO_REFUND
+             * @enum {string}
+             */
+            claimStatusType?:
+              | 'CANCEL_NO_REFUND'
+              | 'CANCEL_REQUEST'
+              | 'CANCEL_PROC_REQUEST_REFUND'
+              | 'CANCEL_PROC_WAITING_REFUND'
+              | 'CANCEL_DONE'
+              | 'RETURN_REQUEST'
+              | 'RETURN_REJECT_REQUEST'
+              | 'RETURN_PROC_BEFORE_RECEIVE'
+              | 'RETURN_PROC_REQUEST_REFUND'
+              | 'RETURN_PROC_WAITING_REFUND'
+              | 'RETURN_DONE'
+              | 'RETURN_REFUND_AMT_ADJUST_REQUESTED'
+              | 'RETURN_NO_REFUND'
+              | 'EXCHANGE_REQUEST'
+              | 'EXCHANGE_REJECT_REQUEST'
+              | 'EXCHANGE_PROC_BEFORE_RECEIVE'
+              | 'EXCHANGE_PROC_REQUEST_PAY'
+              | 'EXCHANGE_PROC_REQUEST_REFUND'
+              | 'EXCHANGE_PROC_WAITING'
+              | 'EXCHANGE_DONE'
+              | 'EXCHANGE_PROC_WAITING_PAY'
+              | 'EXCHANGE_PROC_WAITING_REFUND'
+              | 'EXCHANGE_DONE_PAY_DONE'
+              | 'EXCHANGE_DONE_REFUND_DONE';
+            /**
+             * @description 추가상품번호
+             * @example 1234
+             */
+            additionalProductNo: number;
+            /**
+             * @description 옵션형태
+             * @example PRODUCT_ONLY
+             * @enum {string}
+             */
+            optionType: 'PRODUCT_ONLY' | 'NORMAL_OPTION' | 'ADDITIONAL_PRODUCT';
+            /**
+             * @description 해외배송여부
+             * @example false
+             */
+            deliveryInternationalYn: boolean;
+            /** @description 가격정보 */
+            price: {
+              /**
+               * @description 구매가(즉시할인 + 추가할인 적용)
+               * @example 10000
+               */
+              buyPrice: number;
+              /**
+               * @description 구매금액(구매가 * 주문수량)
+               * @example 10000
+               */
+              buyAmt: number;
+              /**
+               * @description 즉시할인적용가 * 주문수량
+               * @example 10000
+               */
+              immediateDiscountedAmt: number;
+              /**
+               * @description 추가할인금액
+               * @example 10000
+               */
+              additionalDiscountAmt: number;
+              /**
+               * @description 즉시할인금액
+               * @example 10000
+               */
+              immediateDiscountAmt: number;
+              /**
+               * @description 상품판매가
+               * @example 10000
+               */
+              salePrice: number;
+              /**
+               * @description 정상금액(상품판매가 + 옵션추가금액) * 주문수량
+               * @example 10000
+               */
+              standardAmt: number;
+              /**
+               * @description 즉시할인적용가
+               * @example 10000
+               */
+              immediateDiscountedPrice: number;
+              /**
+               * @description 옵션추가금액
+               * @example 10000
+               */
+              addPrice: number;
+              /**
+               * @description 정상가(상품판매가 + 옵션추가금액)
+               * @example 10000
+               */
+              standardPrice: number;
+              /**
+               * @description 적립율
+               * @example 10
+               */
+              accumulationRate: number;
+            };
+            /** @description 배송지연사유 (nullable) */
+            holdDeliveryReason?: string;
+            /**
+             * @description 상품 이미지 URL
+             * @example http://image.url
+             */
+            imageUrl: string;
+            /**
+             * @description 회원여부
+             * @example true
+             */
+            member: boolean;
+            /** @description 세트옵션 */
+            setOptions: {
+              /**
+               * @description 세트옵션옵션사용여부
+               * @example true
+               */
+              usesOption: boolean;
+              /**
+               * @description 세트옵션옵션번호
+               * @example 1
+               */
+              mallOptionNo: number;
+              /**
+               * @description 세트옵션상품관리코드 (nullable)
+               * @example 1231
+               */
+              productManagementCd?: string;
+              /**
+               * @description 세트옵션옵션
+               * @example 100
+               */
+              optionValue: string;
+              /**
+               * @description 세트옵션구매수
+               * @example 1
+               */
+              count: number;
+              /**
+               * @description 세트옵션옵션가격
+               * @example 1000
+               */
+              optionPrice: number;
+              /**
+               * @description 세트옵션sku (nullable)
+               * @example 1231
+               */
+              sku?: string;
+              /**
+               * @description 세트옵션옵션명
+               * @example 사이즈
+               */
+              optionName: string;
+              /**
+               * @description 세트옵션옵션관리코드 (nullable)
+               * @example 1231
+               */
+              optionManagementCd?: string;
+              /**
+               * @description 세트옵션상품번호
+               * @example 1
+               */
+              mallProductNo: number;
+              /**
+               * @description 세트옵션재고번호
+               * @example 1
+               */
+              stockNo: number;
+              /**
+               * @description 세트옵션상품명
+               * @example TEST_PRODUCT
+               */
+              productName: string;
+            }[];
+            /** @description 배송예상일자 (nullable) */
+            deliveryExpectedYmdt?: string;
+            /**
+             * @description 예약여부
+             * @example true
+             */
+            reservation: boolean;
+            /** @description 다음에 할 수 있는 작업 */
+            nextActions: {
+              /**
+               * @description 다음에 할 수 있는 작업 그룹
+               * @example NORMAL
+               */
+              actionGroupType: string;
+              /**
+               * @description 작업타입
+               * @example CANCEL_ALL
                * @enum {string}
                */
-              deliveryPayType: "PREPAID_DELIVERY: 배송비 선불" | "PAY_ON_DELIVERY: 배송비 착불";
+              nextActionType:
+                | 'CANCEL_ALL'
+                | 'CANCEL'
+                | 'EXCHANGE'
+                | 'RETURN'
+                | 'WITHDRAW_CANCEL'
+                | 'WITHDRAW_EXCHANGE'
+                | 'WITHDRAW_RETURN'
+                | 'VIEW_CLAIM'
+                | 'VIEW_DELIVERY'
+                | 'DELIVERY_DONE'
+                | 'CONFIRM_ORDER'
+                | 'CHANGE_ADDRESS'
+                | 'WRITE_REVIEW'
+                | 'ISSUE_CASH_RECEIPT'
+                | 'VIEW_RECEIPT';
               /**
-               * @description 배송지정일 (nullable)
-               * @example YYYY-MM-DD
+               * @description uri
+               * @example /profile/orders/{orderNo}/claim
                */
-              requestShippingDate?: string;
+              uri: string;
+            }[];
+            /**
+             * @description 환불가능여부
+             * @example true
+             */
+            refundable: boolean;
+            /**
+             * @description 옵션번호
+             * @example 123
+             */
+            optionNo: number;
+            /**
+             * @description 브랜드 번호 (nullable)
+             * @example 1234
+             */
+            brandNo?: number;
+            /**
+             * @description 주문옵션번호
+             * @example 123
+             */
+            orderOptionNo: number;
+            /**
+             * @description 상품번호
+             * @example 123
+             */
+            productNo: number;
+            /** @description 배송정보 */
+            delivery: {
               /**
-               * @description 배송조건노출문구(for US) (nullable)
-               * @example US
-               */
-              frontDisplayText?: string;
-              /**
-               * @description 배송지 나중입력 여부 (true: 나중입력, false: 바로입력) (nullable)
+               * @description 배송지 나중입력 여부 (nullable)
                * @example false
                */
               usesShippingInfoLaterInput?: boolean;
               /**
-               * @description 배송지 우편 번호
-               * @example 13487
-               */
-              receiverZipCd: string;
-              /**
-               * @description 송장추적 URL (nullable)
-               * @example www.cj.com/121211
-               */
-              retrieveInvoiceUrl?: string;
-              /**
-               * @description 파트너번호 - 쇼핑몰 배송일 경우 0
-               * @example 121212
-               */
-              partnerNo: number;
-              /**
-               * @description 배송서비스타입라벨(for US) (nullable)
-               * @example UPS Ground
-               */
-              shippingMethodLabel?: string;
-              /**
-               * @description 송장번호
-               * @example 12121212
-               */
-              invoiceNo: string;
-              /**
-               * @description 연락처1
-               * @example 010-1111-1111
-               */
-              receiverContact1: string;
-              /**
-               * @description 연락처2
-               * @example 010-1111-1111
-               */
-              receiverContact2: string;
-              /**
-               * @description 배송지 지번 (nullable)
-               * @example 경기도 성남시 분당구 삼평동 629번지 NHN 플레이뮤지엄
-               */
-              receiverJibunAddress?: string;
-              /** @description 주문상품옵션 */
-              orderOptions: ({
-                  /**
-                   * @description 교환가능여부
-                   * @example true
-                   */
-                  exchangeable: boolean;
-                  /**
-                   * @description 예약배송시작일 (nullable)
-                   * @example YYYY-MM-DD hh:mm:ss
-                   */
-                  reservationDeliveryYmdt?: string;
-                  /**
-                   * @description 클레임 번호 (nullable)
-                   * @example 1
-                   */
-                  claimNo?: number;
-                  /**
-                   * @description 취소가능여부
-                   * @example true
-                   */
-                  cancelable: boolean;
-                  /**
-                   * @description 주문상태 (nullable)
-                   * @example 결제완료
-                   */
-                  orderStatusTypeLabel?: string;
-                  /**
-                   * @description 사은품 여부
-                   * @example true
-                   */
-                  isFreeGift: boolean;
-                  /** @description 구매자 작성형 옵션 */
-                  inputs: {
-                      /**
-                       * @description 구매자 작성형 입력 값 (nullable)
-                       * @example 14호
-                       */
-                      inputValue?: string;
-                      /**
-                       * @description 구매자 작성형 입력 이름 (nullable)
-                       * @example 사이즈
-                       */
-                      inputLabel?: string;
-                    }[];
-                  /**
-                   * @description 배송여부
-                   * @example true
-                   */
-                  deliverable: boolean;
-                  /**
-                   * @description 배송보류 해제 일시 (nullable)
-                   * @example "2023-09-01T18:00:00.000Z"
-                   */
-                  releaseHoldDeliveryYmdt?: string;
-                  /**
-                   * @description 옵션사용여부
-                   * @example true
-                   */
-                  optionUsed: boolean;
-                  /**
-                   * @description 정기배송 상품여부 (nullable)
-                   * @example false
-                   */
-                  isRecurringPayment?: boolean;
-                  /**
-                   * @description 클레임상태 (nullable)
-                   * @example 취소신청
-                   */
-                  claimStatusTypeLabel?: string;
-                  /**
-                   * @description 상품명
-                   * @example 상품1
-                   */
-                  productName: string;
-                  /**
-                   * @description 클레임상태 (nullable)
-                   * @example CANCEL_NO_REFUND
-                   * @enum {string}
-                   */
-                  claimStatusType?: "CANCEL_NO_REFUND: 취소완료[환불없음]" | "CANCEL_REQUEST: 취소신청[승인대기]" | "CANCEL_PROC_REQUEST_REFUND: 취소처리[환불보류]" | "CANCEL_PROC_WAITING_REFUND: 취소처리[환불대기]" | "CANCEL_DONE: 취소완료[환불완료]" | "RETURN_REQUEST: 반품신청[승인대기]" | "RETURN_REJECT_REQUEST: 반품신청[철회대기]" | "RETURN_PROC_BEFORE_RECEIVE: 반품처리[수거진행]" | "RETURN_PROC_REQUEST_REFUND: 반품처리[환불보류]" | "RETURN_PROC_WAITING_REFUND: 반품처리[환불대기]" | "RETURN_DONE: 반품완료[환불완료]" | "RETURN_REFUND_AMT_ADJUST_REQUESTED: 반품처리[조정요청]" | "RETURN_NO_REFUND: 반품완료[환불없음]" | "EXCHANGE_REQUEST: 교환신청[승인대기]" | "EXCHANGE_REJECT_REQUEST: 교환처리[철회대기]" | "EXCHANGE_PROC_BEFORE_RECEIVE: 교환처리[수거진행]" | "EXCHANGE_PROC_REQUEST_PAY: 교환처리[결제대기]" | "EXCHANGE_PROC_REQUEST_REFUND: 교환처리[환불보류]" | "EXCHANGE_PROC_WAITING: 교환처리[처리대기]" | "EXCHANGE_DONE: 교환완료[차액없음]" | "EXCHANGE_PROC_WAITING_PAY: 교환처리[입금처리대기]" | "EXCHANGE_PROC_WAITING_REFUND: 교환처리[환불대기]" | "EXCHANGE_DONE_PAY_DONE: 교환완료[결제완료]" | "EXCHANGE_DONE_REFUND_DONE: 교환완료[환불완료]";
-                  /**
-                   * @description 추가상품번호
-                   * @example 1234
-                   */
-                  additionalProductNo: number;
-                  /**
-                   * @description 옵션형태
-                   * @example PRODUCT_ONLY
-                   * @enum {string}
-                   */
-                  optionType: "PRODUCT_ONLY: 옵션없음" | "NORMAL_OPTION: 일반옵션" | "ADDITIONAL_PRODUCT: 추가옵션";
-                  /**
-                   * @description 해외배송여부
-                   * @example false
-                   */
-                  deliveryInternationalYn: boolean;
-                  /** @description 가격정보 */
-                  price: {
-                    /**
-                     * @description 구매가(즉시할인 + 추가할인 적용)
-                     * @example 10000
-                     */
-                    buyPrice: number;
-                    /**
-                     * @description 구매금액(구매가 * 주문수량)
-                     * @example 10000
-                     */
-                    buyAmt: number;
-                    /**
-                     * @description 즉시할인적용가 * 주문수량
-                     * @example 10000
-                     */
-                    immediateDiscountedAmt: number;
-                    /**
-                     * @description 추가할인금액
-                     * @example 10000
-                     */
-                    additionalDiscountAmt: number;
-                    /**
-                     * @description 즉시할인금액
-                     * @example 10000
-                     */
-                    immediateDiscountAmt: number;
-                    /**
-                     * @description 상품판매가
-                     * @example 10000
-                     */
-                    salePrice: number;
-                    /**
-                     * @description 정상금액(상품판매가 + 옵션추가금액) * 주문수량
-                     * @example 10000
-                     */
-                    standardAmt: number;
-                    /**
-                     * @description 즉시할인적용가
-                     * @example 10000
-                     */
-                    immediateDiscountedPrice: number;
-                    /**
-                     * @description 옵션추가금액
-                     * @example 10000
-                     */
-                    addPrice: number;
-                    /**
-                     * @description 정상가(상품판매가 + 옵션추가금액)
-                     * @example 10000
-                     */
-                    standardPrice: number;
-                    /**
-                     * @description 적립율
-                     * @example 10
-                     */
-                    accumulationRate: number;
-                  };
-                  /** @description 배송지연사유 (nullable) */
-                  holdDeliveryReason?: string;
-                  /**
-                   * @description 상품 이미지 URL
-                   * @example http://image.url
-                   */
-                  imageUrl: string;
-                  /**
-                   * @description 회원여부
-                   * @example true
-                   */
-                  member: boolean;
-                  /** @description 세트옵션 */
-                  setOptions: {
-                      /**
-                       * @description 세트옵션옵션사용여부
-                       * @example true
-                       */
-                      usesOption: boolean;
-                      /**
-                       * @description 세트옵션옵션번호
-                       * @example 1
-                       */
-                      mallOptionNo: number;
-                      /**
-                       * @description 세트옵션상품관리코드 (nullable)
-                       * @example 1231
-                       */
-                      productManagementCd?: string;
-                      /**
-                       * @description 세트옵션옵션
-                       * @example 100
-                       */
-                      optionValue: string;
-                      /**
-                       * @description 세트옵션구매수
-                       * @example 1
-                       */
-                      count: number;
-                      /**
-                       * @description 세트옵션옵션가격
-                       * @example 1000
-                       */
-                      optionPrice: number;
-                      /**
-                       * @description 세트옵션sku (nullable)
-                       * @example 1231
-                       */
-                      sku?: string;
-                      /**
-                       * @description 세트옵션옵션명
-                       * @example 사이즈
-                       */
-                      optionName: string;
-                      /**
-                       * @description 세트옵션옵션관리코드 (nullable)
-                       * @example 1231
-                       */
-                      optionManagementCd?: string;
-                      /**
-                       * @description 세트옵션상품번호
-                       * @example 1
-                       */
-                      mallProductNo: number;
-                      /**
-                       * @description 세트옵션재고번호
-                       * @example 1
-                       */
-                      stockNo: number;
-                      /**
-                       * @description 세트옵션상품명
-                       * @example TEST_PRODUCT
-                       */
-                      productName: string;
-                    }[];
-                  /** @description 배송예상일자 (nullable) */
-                  deliveryExpectedYmdt?: string;
-                  /**
-                   * @description 예약여부
-                   * @example true
-                   */
-                  reservation: boolean;
-                  /** @description 다음에 할 수 있는 작업 */
-                  nextActions: ({
-                      /**
-                       * @description 다음에 할 수 있는 작업 그룹
-                       * @example NORMAL
-                       */
-                      actionGroupType: string;
-                      /**
-                       * @description 작업타입
-                       * @example CANCEL_ALL
-                       * @enum {string}
-                       */
-                      nextActionType: "CANCEL_ALL: 주문취소" | "CANCEL: 취소" | "EXCHANGE: 교환" | "RETURN: 반품" | "WITHDRAW_CANCEL: 취소신청 취소" | "WITHDRAW_EXCHANGE: 교환신청 취소" | "WITHDRAW_RETURN: 반품신청 취소" | "VIEW_CLAIM: 클레임 조회" | "VIEW_DELIVERY: 배송조회" | "DELIVERY_DONE: 수취확인" | "CONFIRM_ORDER: 구매확정" | "CHANGE_ADDRESS: 배송지변경" | "WRITE_REVIEW: 상품평작성" | "ISSUE_CASH_RECEIPT: 현금영수증 발행" | "VIEW_RECEIPT: 현금영수증 조회";
-                      /**
-                       * @description uri
-                       * @example /profile/orders/{orderNo}/claim
-                       */
-                      uri: string;
-                    })[];
-                  /**
-                   * @description 환불가능여부
-                   * @example true
-                   */
-                  refundable: boolean;
-                  /**
-                   * @description 옵션번호
-                   * @example 123
-                   */
-                  optionNo: number;
-                  /**
-                   * @description 브랜드 번호 (nullable)
-                   * @example 1234
-                   */
-                  brandNo?: number;
-                  /**
-                   * @description 주문옵션번호
-                   * @example 123
-                   */
-                  orderOptionNo: number;
-                  /**
-                   * @description 상품번호
-                   * @example 123
-                   */
-                  productNo: number;
-                  /** @description 배송정보 */
-                  delivery: {
-                    /**
-                     * @description 배송지 나중입력 여부 (nullable)
-                     * @example false
-                     */
-                    usesShippingInfoLaterInput?: boolean;
-                    /**
-                     * @description 택배사 (nullable)
-                     * @example CJ대한통운
-                     */
-                    deliveryCompanyTypeLabel?: string;
-                    /**
-                     * @description 배송타입 (nullable)
-                     * @example PARCEL_DELIVERY
-                     * @enum {string}
-                     */
-                    deliveryType?: "PARCEL_DELIVERY: Parcel/Registered Mail/Parcel Post" | "DIRECT_DELIVERY: Direct Delivery(Freight Delivery)" | "NONE: None";
-                    /**
-                     * @description 택배사타입 (nullable)
-                     * @example CJ
-                     */
-                    deliveryCompanyType?: string;
-                    /**
-                     * @description 송장추적 URL (nullable)
-                     * @example https://www.logistics.dhl/de-en/home/tracking.html?tracking-id=12345
-                     */
-                    retrieveInvoiceUrl?: string;
-                    /**
-                     * @description 송장번호 (nullable)
-                     * @example 123456789
-                     */
-                    invoiceNo?: string;
-                  };
-                  /**
-                   * @description 옵션권장출력값
-                   * @example 색상/레드
-                   */
-                  optionTitle: string;
-                  /**
-                   * @description 브랜드명 (nullable)
-                   * @example 나이키
-                   */
-                  brandName?: string;
-                  /**
-                   * @description 주문번호
-                   * @example 20201011231211
-                   */
-                  orderNo: string;
-                  /**
-                   * @description 파트너명 (nullable)
-                   * @example 파트너 이름
-                   */
-                  partnerName?: string;
-                  /**
-                   * @description 주문상태
-                   * @example DEPOSIT_WAIT
-                   * @enum {string}
-                   */
-                  orderStatusType: "DEPOSIT_WAIT: Deposit Wait" | "PAY_DONE: Pay Done" | "PRODUCT_PREPARE: Product Prepare" | "DELIVERY_PREPARE: Delivery Prepare" | "DELIVERY_ING: Delivering" | "DELIVERY_DONE: Delivery Done" | "BUY_CONFIRM: Buy Confirm" | "CANCEL_DONE: Cancel Done" | "RETURN_DONE: Return Done" | "EXCHANGE_DONE: Exchange Done" | "PAY_WAIT: Pay Wait" | "PAY_CANCEL: Pay Cancel" | "PAY_FAIL: Pay Fail" | "DELETE: Delete" | "EXCHANGE_WAIT: Exchange Wait" | "REFUND_DONE: Refund Done";
-                  /**
-                   * @description 옵션값
-                   * @example 레드
-                   */
-                  optionValue: string;
-                  /**
-                   * @description 배송보류 여부 (nullable)
-                   * @example false
-                   */
-                  holdDelivery?: boolean;
-                  /**
-                   * @description 주문수량
-                   * @example 1
-                   */
-                  orderCnt: number;
-                  /**
-                   * @description 반품가능여부
-                   * @example true
-                   */
-                  returnable: boolean;
-                  /**
-                   * @description 교환여부
-                   * @example N
-                   */
-                  exchangeYn: string;
-                  /**
-                   * @description 적립금
-                   * @example 1000
-                   */
-                  accumulationAmt: number;
-                  /** @description 주문 상태 일자 */
-                  orderStatusDate: {
-                    /**
-                     * @description 상품평작성기한 (nullable)
-                     * @example YYYY-MM-DD hh:mm:ss
-                     */
-                    reviewableYmdt?: string;
-                    /**
-                     * @description 배송완료일시 (nullable)
-                     * @example YYYY-MM-DD hh:mm:ss
-                     */
-                    deliveryCompleteYmdt?: string;
-                    /**
-                     * @description 구매확정일자 (nullable)
-                     * @example YYYY-MM-DD hh:mm:ss
-                     */
-                    buyConfirmYmdt?: string;
-                    /**
-                     * @description 결제일시 (nullable)
-                     * @example YYYY-MM-DD hh:mm:ss
-                     */
-                    payYmdt?: string;
-                    /**
-                     * @description 등록일자
-                     * @example YYYY-MM-DD hh:mm:ss
-                     */
-                    registerYmdt: string;
-                  };
-                  /**
-                   * @description 브랜드영문명 (nullable)
-                   * @example nike
-                   */
-                  brandNameEn?: string;
-                  /**
-                   * @description 영어상품명 (nullable)
-                   * @example sangpum
-                   */
-                  productNameEn?: string;
-                  /**
-                   * @description 옵션관리코드 (nullable)
-                   * @example OPTI123123
-                   */
-                  optionManagementCd?: string;
-                  /**
-                   * @description 옵션명
-                   * @example 색상
-                   */
-                  optionName: string;
-                })[];
-              /**
-               * @description 파트너명 - 쇼핑몰 배송일 경우 '쇼핑몰 배송'
-               * @example 파트너명
-               */
-              partnerName: string;
-              /**
-               * @description 수령자 명
-               * @example 홍길동
-               */
-              receiverName: string;
-              /**
-               * @description 택배사명 (nullable)
+               * @description 택배사 (nullable)
                * @example CJ대한통운
                */
               deliveryCompanyTypeLabel?: string;
               /**
-               * @description 배송구분 (nullable)
+               * @description 배송타입 (nullable)
                * @example PARCEL_DELIVERY
                * @enum {string}
                */
-              deliveryType?: "PARCEL_DELIVERY: Parcel/Registered Mail/Parcel Post" | "DIRECT_DELIVERY: Direct Delivery(Freight Delivery)" | "NONE: None";
-              /**
-               * @description 배송번호
-               * @example 12121212
-               */
-              deliveryNo: number;
-              /**
-               * @description 배송구분
-               * @example PARTNER_SHIPPING_AREA
-               * @enum {string}
-               */
-              shippingAreaType: "PARTNER_SHIPPING_AREA: Partner Delivery" | "MALL_SHIPPING_AREA: Shipping Mall Delivery";
+              deliveryType?: 'PARCEL_DELIVERY' | 'DIRECT_DELIVERY' | 'NONE';
               /**
                * @description 택배사타입 (nullable)
                * @example CJ
-               * @enum {string}
                */
-              deliveryCompanyType?: "CJ: CJ Logistics" | "POST: Post Office" | "HANJIN: Hanjin Transportation" | "GTX: GTX LOGIS" | "LOTTE: Lotte Global Logistics Corporation" | "KGB: KGB LOGIS" | "LOGEN: Logen" | "GSI: gsi Express" | "KGL: KG LOGIS" | "INTRAS: INTRAS" | "UPS: UPS" | "CHUNIL: Chunil Express" | "KDEXP: Kyungdong Express" | "HDEXP: Hapdong Express" | "ILYANG: Ilyang Logis" | "POST_EMS: Post Office EMS" | "KYOUNGDONG: Kyungdong Express" | "DAESIN: daesin" | "CVS: CVS Convenience Shop Delivery Service" | "DHL: DHL" | "FEDEX: FEDEX" | "GSM: GSM International Courier" | "WARPEX: WarpEx" | "WIZWA: WIZWA" | "ACI: ACI Express" | "PANTOS: LX Pantos" | "CJ_INTERNATIONAL: CJ Logistics(international courier)" | "TNT: TNT" | "CU: CU Convenience Shop Delivery Service" | "KUNYOUNG: Geonyoung Express" | "LOTTE_INTERNATIONAL: Lotte Global Logistics Corporation(international courier)" | "HONAM: Honam Express" | "HANIPS: Hanui Sarang Express" | "IPARCEL: i-Parcel" | "SLX: SLX Express" | "USPS: USPS" | "WONDERS: wonders quick" | "REGISTPOST: Regist Post" | "DHLDE: DHL(germany)" | "EZUSA: EZUSA" | "SWGEXP: Sungwon Global" | "DAEWOON: Daewoon Global" | "DODOFLEX: dodoFlex" | "NH_LOGIS: NongHyup Logis" | "UFO: UFO" | "TODAY_PICKUP: Today Pickup" | "QEXPRESS: 큐익스프레스" | "PINGPONG: 핑퐁" | "ETC: ETC";
+              deliveryCompanyType?: string;
               /**
-               * @description 지역별 추가 배송비
-               * @example 0
+               * @description 송장추적 URL (nullable)
+               * @example https://www.logistics.dhl/de-en/home/tracking.html?tracking-id=12345
                */
-              remoteDeliveryAmt: number;
+              retrieveInvoiceUrl?: string;
               /**
-               * @description 배송지 상세 주소
-               * @example 529 NHN 플레이 뮤지엄
+               * @description 송장번호 (nullable)
+               * @example 123456789
                */
-              receiverDetailAddress: string;
+              invoiceNo?: string;
+            };
+            /**
+             * @description 옵션권장출력값
+             * @example 색상/레드
+             */
+            optionTitle: string;
+            /**
+             * @description 브랜드명 (nullable)
+             * @example 나이키
+             */
+            brandName?: string;
+            /**
+             * @description 주문번호
+             * @example 20201011231211
+             */
+            orderNo: string;
+            /**
+             * @description 파트너명 (nullable)
+             * @example 파트너 이름
+             */
+            partnerName?: string;
+            /**
+             * @description 주문상태
+             * @example DEPOSIT_WAIT
+             * @enum {string}
+             */
+            orderStatusType:
+              | 'DEPOSIT_WAIT'
+              | 'PAY_DONE'
+              | 'PRODUCT_PREPARE'
+              | 'DELIVERY_PREPARE'
+              | 'DELIVERY_ING'
+              | 'DELIVERY_DONE'
+              | 'BUY_CONFIRM'
+              | 'CANCEL_DONE'
+              | 'RETURN_DONE'
+              | 'EXCHANGE_DONE'
+              | 'PAY_WAIT'
+              | 'PAY_CANCEL'
+              | 'PAY_FAIL'
+              | 'DELETE'
+              | 'EXCHANGE_WAIT'
+              | 'REFUND_DONE';
+            /**
+             * @description 옵션값
+             * @example 레드
+             */
+            optionValue: string;
+            /**
+             * @description 배송보류 여부 (nullable)
+             * @example false
+             */
+            holdDelivery?: boolean;
+            /**
+             * @description 주문수량
+             * @example 1
+             */
+            orderCnt: number;
+            /**
+             * @description 반품가능여부
+             * @example true
+             */
+            returnable: boolean;
+            /**
+             * @description 교환여부
+             * @example N
+             */
+            exchangeYn: string;
+            /**
+             * @description 적립금
+             * @example 1000
+             */
+            accumulationAmt: number;
+            /** @description 주문 상태 일자 */
+            orderStatusDate: {
               /**
-               * @description 배송지 메모 (nullable)
-               * @example 빠른 배송 부탁합니다.
+               * @description 상품평작성기한 (nullable)
+               * @example YYYY-MM-DD hh:mm:ss
                */
-              deliveryMemo?: string;
+              reviewableYmdt?: string;
               /**
-               * @description 배송지 주소
-               * @example 경기도 성남시 분당구 대왕판교로645번길 12
+               * @description 배송완료일시 (nullable)
+               * @example YYYY-MM-DD hh:mm:ss
                */
-              receiverAddress: string;
+              deliveryCompleteYmdt?: string;
               /**
-               * @description 배송비
-               * @example 0
+               * @description 구매확정일자 (nullable)
+               * @example YYYY-MM-DD hh:mm:ss
                */
-              deliveryAmt: number;
+              buyConfirmYmdt?: string;
               /**
-               * @description 반품 배송비
-               * @example 2000
+               * @description 결제일시 (nullable)
+               * @example YYYY-MM-DD hh:mm:ss
                */
-              returnDeliveryAmt: number;
+              payYmdt?: string;
               /**
-               * @description 배송서비스타입(for US) (nullable)
-               * @example SUREPOST
+               * @description 등록일자
+               * @example YYYY-MM-DD hh:mm:ss
                */
-              shippingMethodType?: string;
-            })[];
+              registerYmdt: string;
+            };
+            /**
+             * @description 브랜드영문명 (nullable)
+             * @example nike
+             */
+            brandNameEn?: string;
+            /**
+             * @description 영어상품명 (nullable)
+             * @example sangpum
+             */
+            productNameEn?: string;
+            /**
+             * @description 옵션관리코드 (nullable)
+             * @example OPTI123123
+             */
+            optionManagementCd?: string;
+            /**
+             * @description 옵션명
+             * @example 색상
+             */
+            optionName: string;
+          }[];
           /**
-           * @description 파트너명
-           * @example 파트너이름
+           * @description 파트너명 - 쇼핑몰 배송일 경우 '쇼핑몰 배송'
+           * @example 파트너명
            */
           partnerName: string;
-        })[];
+          /**
+           * @description 수령자 명
+           * @example 홍길동
+           */
+          receiverName: string;
+          /**
+           * @description 택배사명 (nullable)
+           * @example CJ대한통운
+           */
+          deliveryCompanyTypeLabel?: string;
+          /**
+           * @description 배송구분 (nullable)
+           * @example PARCEL_DELIVERY
+           * @enum {string}
+           */
+          deliveryType?: 'PARCEL_DELIVERY' | 'DIRECT_DELIVERY' | 'NONE';
+          /**
+           * @description 배송번호
+           * @example 12121212
+           */
+          deliveryNo: number;
+          /**
+           * @description 배송구분
+           * @example PARTNER_SHIPPING_AREA
+           * @enum {string}
+           */
+          shippingAreaType: 'PARTNER_SHIPPING_AREA' | 'MALL_SHIPPING_AREA';
+          /**
+           * @description 택배사타입 (nullable)
+           * @example CJ
+           * @enum {string}
+           */
+          deliveryCompanyType?:
+            | 'CJ'
+            | 'POST'
+            | 'HANJIN'
+            | 'GTX'
+            | 'LOTTE'
+            | 'KGB'
+            | 'LOGEN'
+            | 'GSI'
+            | 'KGL'
+            | 'INTRAS'
+            | 'UPS'
+            | 'CHUNIL'
+            | 'KDEXP'
+            | 'HDEXP'
+            | 'ILYANG'
+            | 'POST_EMS'
+            | 'KYOUNGDONG'
+            | 'DAESIN'
+            | 'CVS'
+            | 'DHL'
+            | 'FEDEX'
+            | 'GSM'
+            | 'WARPEX'
+            | 'WIZWA'
+            | 'ACI'
+            | 'PANTOS'
+            | 'CJ_INTERNATIONAL'
+            | 'TNT'
+            | 'CU'
+            | 'KUNYOUNG'
+            | 'LOTTE_INTERNATIONAL'
+            | 'HONAM'
+            | 'HANIPS'
+            | 'IPARCEL'
+            | 'SLX'
+            | 'USPS'
+            | 'WONDERS'
+            | 'REGISTPOST'
+            | 'DHLDE'
+            | 'EZUSA'
+            | 'SWGEXP'
+            | 'DAEWOON'
+            | 'DODOFLEX'
+            | 'NH_LOGIS'
+            | 'UFO'
+            | 'TODAY_PICKUP'
+            | 'QEXPRESS'
+            | 'PINGPONG'
+            | 'ETC';
+          /**
+           * @description 지역별 추가 배송비
+           * @example 0
+           */
+          remoteDeliveryAmt: number;
+          /**
+           * @description 배송지 상세 주소
+           * @example 529 NHN 플레이 뮤지엄
+           */
+          receiverDetailAddress: string;
+          /**
+           * @description 배송지 메모 (nullable)
+           * @example 빠른 배송 부탁합니다.
+           */
+          deliveryMemo?: string;
+          /**
+           * @description 배송지 주소
+           * @example 경기도 성남시 분당구 대왕판교로645번길 12
+           */
+          receiverAddress: string;
+          /**
+           * @description 배송비
+           * @example 0
+           */
+          deliveryAmt: number;
+          /**
+           * @description 반품 배송비
+           * @example 2000
+           */
+          returnDeliveryAmt: number;
+          /**
+           * @description 배송서비스타입(for US) (nullable)
+           * @example SUREPOST
+           */
+          shippingMethodType?: string;
+        }[];
+        /**
+         * @description 파트너명
+         * @example 파트너이름
+         */
+        partnerName: string;
+      }[];
       /** @description 배송지정보 */
       shippingAddress: {
         /** @description 배송지 주소 */
@@ -3750,7 +4303,92 @@ export interface components {
          * @example KR
          * @enum {string}
          */
-        countryCd?: "AX: Åland Islands" | "AD: Andorra" | "AU: Australia" | "AT: Austria" | "BH: Bahrain" | "BE: Belgium" | "BZ: Belize" | "BR: Brazil" | "BN: Brunei" | "BG: Bulgaria" | "CA: Canada" | "ES_CANARY: Spain" | "CL: Chile" | "CN: China" | "CO: Colombia" | "CR: Costa Rica" | "CY: Cyprus" | "CZ: Czech Republic" | "DK: Denmark" | "EC: Ecuador" | "EG: Egypt" | "SV: El Salvador" | "EE: Estonia" | "FR: France" | "GF: French Guiana" | "DE: Germany" | "GR: Greece" | "GL: Denmark" | "GU: Guam" | "GT: Guatemala" | "GG: Guernsey" | "GY: Guyana" | "HK: Hong Kong" | "HU: Hungary" | "IS: Iceland" | "ID: Indonesia" | "IE: Ireland" | "IL: Israel" | "IT: Italy" | "JP: Japan" | "JE: Jersey" | "JO: Jordan" | "KR: South Korea" | "KW: Kuwait" | "LV: Latvia" | "LB: Lebanon" | "LI: Liechtenstein" | "LT: Lithuania" | "LU: Luxembourg" | "MO: Macau" | "PT_MADEIRA: Portugal" | "MY: Malaysia" | "NL: Netherlands" | "NZ: New Zealand" | "GB_NORTHERN_ISLAND: United Kingdom" | "NO: Norway" | "PY: Paraguay" | "PE: Peru" | "PL: Poland" | "PT: Portugal" | "RO: Romania" | "RU: Russia" | "SM: San Marino" | "SA: Saudi Arabia" | "GB_SCOTLAND: United Kingdom" | "SG: Singapore" | "SK: Slovakia" | "SI: Slovenia" | "ES: Spain" | "CH: Switzerland" | "TW: Taiwan" | "TH: Thailand" | "TR: Turkey" | "AE: United Arab Emirates" | "GB: United Kingdom" | "US: United States (Mainland)" | "U2: United States (Mainland)" | "UY: Uruguay" | "VN: Vietnam" | "GB_WALES: United Kingdom" | "YE: Yemen" | "HR: Croatia" | "MT: Malta" | "FI: Finland" | "SE: Sweden";
+        countryCd?:
+          | 'AX'
+          | 'AD'
+          | 'AU'
+          | 'AT'
+          | 'BH'
+          | 'BE'
+          | 'BZ'
+          | 'BR'
+          | 'BN'
+          | 'BG'
+          | 'CA'
+          | 'ES_CANARY'
+          | 'CL'
+          | 'CN'
+          | 'CO'
+          | 'CR'
+          | 'CY'
+          | 'CZ'
+          | 'DK'
+          | 'EC'
+          | 'EG'
+          | 'SV'
+          | 'EE'
+          | 'FR'
+          | 'GF'
+          | 'DE'
+          | 'GR'
+          | 'GL'
+          | 'GU'
+          | 'GT'
+          | 'GG'
+          | 'GY'
+          | 'HK'
+          | 'HU'
+          | 'IS'
+          | 'ID'
+          | 'IE'
+          | 'IL'
+          | 'IT'
+          | 'JP'
+          | 'JE'
+          | 'JO'
+          | 'KR'
+          | 'KW'
+          | 'LV'
+          | 'LB'
+          | 'LI'
+          | 'LT'
+          | 'LU'
+          | 'MO'
+          | 'PT_MADEIRA'
+          | 'MY'
+          | 'NL'
+          | 'NZ'
+          | 'GB_NORTHERN_ISLAND'
+          | 'NO'
+          | 'PY'
+          | 'PE'
+          | 'PL'
+          | 'PT'
+          | 'RO'
+          | 'RU'
+          | 'SM'
+          | 'SA'
+          | 'GB_SCOTLAND'
+          | 'SG'
+          | 'SK'
+          | 'SI'
+          | 'ES'
+          | 'CH'
+          | 'TW'
+          | 'TH'
+          | 'TR'
+          | 'AE'
+          | 'GB'
+          | 'US'
+          | 'U2'
+          | 'UY'
+          | 'VN'
+          | 'GB_WALES'
+          | 'YE'
+          | 'HR'
+          | 'MT'
+          | 'FI'
+          | 'SE';
         /** @description 배송지 우편 번호 */
         receiverZipCd: string;
         /**
@@ -3797,7 +4435,92 @@ export interface components {
          * @example KR
          * @enum {string}
          */
-        countryCd?: "AX: Åland Islands" | "AD: Andorra" | "AU: Australia" | "AT: Austria" | "BH: Bahrain" | "BE: Belgium" | "BZ: Belize" | "BR: Brazil" | "BN: Brunei" | "BG: Bulgaria" | "CA: Canada" | "ES_CANARY: Spain" | "CL: Chile" | "CN: China" | "CO: Colombia" | "CR: Costa Rica" | "CY: Cyprus" | "CZ: Czech Republic" | "DK: Denmark" | "EC: Ecuador" | "EG: Egypt" | "SV: El Salvador" | "EE: Estonia" | "FR: France" | "GF: French Guiana" | "DE: Germany" | "GR: Greece" | "GL: Denmark" | "GU: Guam" | "GT: Guatemala" | "GG: Guernsey" | "GY: Guyana" | "HK: Hong Kong" | "HU: Hungary" | "IS: Iceland" | "ID: Indonesia" | "IE: Ireland" | "IL: Israel" | "IT: Italy" | "JP: Japan" | "JE: Jersey" | "JO: Jordan" | "KR: South Korea" | "KW: Kuwait" | "LV: Latvia" | "LB: Lebanon" | "LI: Liechtenstein" | "LT: Lithuania" | "LU: Luxembourg" | "MO: Macau" | "PT_MADEIRA: Portugal" | "MY: Malaysia" | "NL: Netherlands" | "NZ: New Zealand" | "GB_NORTHERN_ISLAND: United Kingdom" | "NO: Norway" | "PY: Paraguay" | "PE: Peru" | "PL: Poland" | "PT: Portugal" | "RO: Romania" | "RU: Russia" | "SM: San Marino" | "SA: Saudi Arabia" | "GB_SCOTLAND: United Kingdom" | "SG: Singapore" | "SK: Slovakia" | "SI: Slovenia" | "ES: Spain" | "CH: Switzerland" | "TW: Taiwan" | "TH: Thailand" | "TR: Turkey" | "AE: United Arab Emirates" | "GB: United Kingdom" | "US: United States (Mainland)" | "U2: United States (Mainland)" | "UY: Uruguay" | "VN: Vietnam" | "GB_WALES: United Kingdom" | "YE: Yemen" | "HR: Croatia" | "MT: Malta" | "FI: Finland" | "SE: Sweden";
+        countryCd?:
+          | 'AX'
+          | 'AD'
+          | 'AU'
+          | 'AT'
+          | 'BH'
+          | 'BE'
+          | 'BZ'
+          | 'BR'
+          | 'BN'
+          | 'BG'
+          | 'CA'
+          | 'ES_CANARY'
+          | 'CL'
+          | 'CN'
+          | 'CO'
+          | 'CR'
+          | 'CY'
+          | 'CZ'
+          | 'DK'
+          | 'EC'
+          | 'EG'
+          | 'SV'
+          | 'EE'
+          | 'FR'
+          | 'GF'
+          | 'DE'
+          | 'GR'
+          | 'GL'
+          | 'GU'
+          | 'GT'
+          | 'GG'
+          | 'GY'
+          | 'HK'
+          | 'HU'
+          | 'IS'
+          | 'ID'
+          | 'IE'
+          | 'IL'
+          | 'IT'
+          | 'JP'
+          | 'JE'
+          | 'JO'
+          | 'KR'
+          | 'KW'
+          | 'LV'
+          | 'LB'
+          | 'LI'
+          | 'LT'
+          | 'LU'
+          | 'MO'
+          | 'PT_MADEIRA'
+          | 'MY'
+          | 'NL'
+          | 'NZ'
+          | 'GB_NORTHERN_ISLAND'
+          | 'NO'
+          | 'PY'
+          | 'PE'
+          | 'PL'
+          | 'PT'
+          | 'RO'
+          | 'RU'
+          | 'SM'
+          | 'SA'
+          | 'GB_SCOTLAND'
+          | 'SG'
+          | 'SK'
+          | 'SI'
+          | 'ES'
+          | 'CH'
+          | 'TW'
+          | 'TH'
+          | 'TR'
+          | 'AE'
+          | 'GB'
+          | 'US'
+          | 'U2'
+          | 'UY'
+          | 'VN'
+          | 'GB_WALES'
+          | 'YE'
+          | 'HR'
+          | 'MT'
+          | 'FI'
+          | 'SE';
         /** @description 배송지 우편 번호 */
         receiverZipCd: string;
         /**
@@ -3853,7 +4576,75 @@ export interface components {
            * @example KDB
            * @enum {string}
            */
-          bank: "ANONYMOUS: Unverified Bank" | "KDB: Korea Development Bank" | "IBK: Industrial Bank of Korea" | "KB: KOOKMIN BANK" | "KEB: Korea Exchange Bank" | "SUHYUP: National Federation of Fisheries Cooperatives" | "KEXIM: The Export-Import Bank of Korea" | "NH: NONGHYUP BANK" | "NHLOCAL: National Agricultural Cooperative Federation" | "WOORI: Woori Bank" | "SC: Standard Chartered Bank Korea Limited" | "CITY: Citibank Korea" | "DAEGU: Daegu Gyeongbuk Bank" | "PUSAN: BUSAN BANK" | "GWANGJU: The Kwangju Bank" | "JEJU: Jeju Bank" | "JEONBUK: Jeonbuk Bank" | "GYEONGNAM: BNK KYONGNAM BANK" | "KFCC: The Saemaeul finance firm." | "CU: National Credit Union Federation" | "SANGHO: Mutual Savings Bank / Thrift Institution" | "HSBC: Hongkong and Shanghai Banking Corporation" | "DEUTSCHE: Deutsche Bank AG" | "ABN: ABN" | "JP_MORGAN: JPMorgan" | "MIZUHO: Mizuho Bank" | "UFJ: MUFJ" | "BOA: Bank of America" | "NFCF: National Forestry Cooperative Federation" | "EPOST: Post Office" | "KEBHANA: KEB Hana Bank" | "SHINHAN: SHINHAN BANK" | "KBANK: Kbank" | "KAKAO: Kakao Bank" | "TOSS: Toss Bank" | "YUANTA: Yuanta Securities" | "KBSEC: KB Securities" | "MIRAE: Mirae Asset Securities" | "MIRAEDAEWOO: Miraeassetdaewoo Securities" | "SAMSUNG: Samsung Securities" | "HANKOOK: Korea Investment ＆ Securities" | ("NH_INVEST: NH Investment & Securities") | "KYOBO: Kyobo Securities" | ("HI_INVEST: Hi Investment & Securities") | "HMC_INVEST: HYUNDAI MOTOR SECURITIES" | "KIWOOM: Kiwoom Securities" | ("EBEST: EBEST INVESTMENT & SECURITIES") | "SK: SK Securities" | "DAISHIN: Daishin Securities" | ("SOLOMON_INVEST: SOLOMON INVESTMENT & SECURITIES") | "HANHWA: Hanwha Investment ＆ Securities" | "HANA_INVEST: Hana Financial Investment" | "SHINHAN_INVEST: Shinhan Investment" | "DONGBU: DB Financial Investment" | "EUGENE_INVEST: Eugene Investment ＆ Securities" | "MERITZ_COMPREHENSIVE: Meritz Securities" | "BOOKOOK: Bookook Securities" | "SHINYOUNG: Shinyoung Securities" | ("CAPE: CAPE Investment & Securities") | "SMBC: Sumitomo Mitsui Banking Corporation" | "RESONA: Resona Bank" | "NAVER_POINT: Naver Points" | "TOSS_MONEY: Toss Money" | "SSG_MONEY: Shinsegae Points" | "L_POINT: L Point" | "KAKAO_MONEY: Kakao Money" | "PAYCO: Payco Points" | "BW: Bank Wallet";
+          bank:
+            | 'ANONYMOUS'
+            | 'KDB'
+            | 'IBK'
+            | 'KB'
+            | 'KEB'
+            | 'SUHYUP'
+            | 'KEXIM'
+            | 'NH'
+            | 'NHLOCAL'
+            | 'WOORI'
+            | 'SC'
+            | 'CITY'
+            | 'DAEGU'
+            | 'PUSAN'
+            | 'GWANGJU'
+            | 'JEJU'
+            | 'JEONBUK'
+            | 'GYEONGNAM'
+            | 'KFCC'
+            | 'CU'
+            | 'SANGHO'
+            | 'HSBC'
+            | 'DEUTSCHE'
+            | 'ABN'
+            | 'JP_MORGAN'
+            | 'MIZUHO'
+            | 'UFJ'
+            | 'BOA'
+            | 'NFCF'
+            | 'EPOST'
+            | 'KEBHANA'
+            | 'SHINHAN'
+            | 'KBANK'
+            | 'KAKAO'
+            | 'TOSS'
+            | 'YUANTA'
+            | 'KBSEC'
+            | 'MIRAE'
+            | 'MIRAEDAEWOO'
+            | 'SAMSUNG'
+            | 'HANKOOK'
+            | 'NH_INVEST'
+            | 'KYOBO'
+            | 'HI_INVEST'
+            | 'HMC_INVEST'
+            | 'KIWOOM'
+            | 'EBEST'
+            | 'SK'
+            | 'DAISHIN'
+            | 'SOLOMON_INVEST'
+            | 'HANHWA'
+            | 'HANA_INVEST'
+            | 'SHINHAN_INVEST'
+            | 'DONGBU'
+            | 'EUGENE_INVEST'
+            | 'MERITZ_COMPREHENSIVE'
+            | 'BOOKOOK'
+            | 'SHINYOUNG'
+            | 'CAPE'
+            | 'SMBC'
+            | 'RESONA'
+            | 'NAVER_POINT'
+            | 'TOSS_MONEY'
+            | 'SSG_MONEY'
+            | 'L_POINT'
+            | 'KAKAO_MONEY'
+            | 'PAYCO'
+            | 'BW';
           /**
            * @description 입금해야할 금액
            * @example 10000
@@ -3932,7 +4723,62 @@ export interface components {
            * @example BC
            * @enum {string}
            */
-          cardCompany: "ANONYMOUS: 미분류카드" | "BC: BC카드" | "KB: KB국민카드" | "NH: NH농협카드" | "KWANGJU: 광주카드" | "LOTTE_AMEX: 롯데아멕스카드" | "LOTTE: 롯데카드" | "KDB: 산업카드" | "SAMSUNG: 삼성카드" | "SUHYUP: 수협카드" | "SHINSEGAE: 신세계카드" | "SHINHAN: 신한카드" | "SHINHYUP: 신협카드" | "CITY: 씨티카드" | "WOORI: 우리카드" | "UNIONPAY: 은련카드" | "JEOCHOOK: 저축카드" | "JEONBUK: 전북카드" | "JEJU: 제주카드" | "HANA_KEB: 하나(외환)카드" | "HANA: 하나카드" | "HANMI: 한미카드" | "JCB: JCB카드" | "MASTER: MASTER카드" | "VISA: VISA카드" | "HYUNDAI: 현대카드" | "AMEX: AMEX카드" | "DINERS: 다이너스카드" | "GWANGJU: 광주카드" | "KAKAO: 카카오뱅크카드" | "KBANK: 케이뱅크카드" | "IBK: 기업은행카드" | "HCB: 국민은행(구주택)" | "NHLOCAL: 단위농협" | "NHLIVESTOCK: 축협중앙회" | "JH: 신한은행(조흥은행)" | "SC: 제일은행" | "DAEGU: 대구은행" | "PUSAN: 부산은행" | "KANGWON: 강원은행" | "GYEONGNAM: 경남은행" | "HSB: 홍콩상하이은행" | "EPOST: 우체국" | "HANA_SEOUL: 하나은행(서울은행)" | "PB: 평화은행" | "SHINHAN_JH: 신한은행(조흥 통합)" | "PAYCO: PAYCO" | "KFCC: 새마을금고" | "DISCOVER: DISCOVER카드" | "HYUNDAI_STOCK: 현대증권카드" | "NAVER_POINT: 네이버포인트" | "TOSS_MONEY: 토스머니" | "SSG_MONEY: SSG머니" | "L_POINT: 엘포인트" | "KAKAO_MONEY: 카카오머니";
+          cardCompany:
+            | 'ANONYMOUS'
+            | 'BC'
+            | 'KB'
+            | 'NH'
+            | 'KWANGJU'
+            | 'LOTTE_AMEX'
+            | 'LOTTE'
+            | 'KDB'
+            | 'SAMSUNG'
+            | 'SUHYUP'
+            | 'SHINSEGAE'
+            | 'SHINHAN'
+            | 'SHINHYUP'
+            | 'CITY'
+            | 'WOORI'
+            | 'UNIONPAY'
+            | 'JEOCHOOK'
+            | 'JEONBUK'
+            | 'JEJU'
+            | 'HANA_KEB'
+            | 'HANA'
+            | 'HANMI'
+            | 'JCB'
+            | 'MASTER'
+            | 'VISA'
+            | 'HYUNDAI'
+            | 'AMEX'
+            | 'DINERS'
+            | 'GWANGJU'
+            | 'KAKAO'
+            | 'KBANK'
+            | 'IBK'
+            | 'HCB'
+            | 'NHLOCAL'
+            | 'NHLIVESTOCK'
+            | 'JH'
+            | 'SC'
+            | 'DAEGU'
+            | 'PUSAN'
+            | 'KANGWON'
+            | 'GYEONGNAM'
+            | 'HSB'
+            | 'EPOST'
+            | 'HANA_SEOUL'
+            | 'PB'
+            | 'SHINHAN_JH'
+            | 'PAYCO'
+            | 'KFCC'
+            | 'DISCOVER'
+            | 'HYUNDAI_STOCK'
+            | 'NAVER_POINT'
+            | 'TOSS_MONEY'
+            | 'SSG_MONEY'
+            | 'L_POINT'
+            | 'KAKAO_MONEY';
           /**
            * @description 무이자여부(true: 무이자, false: 이자)
            * @example false
@@ -4055,7 +4901,43 @@ export interface components {
          * @example CREDIT_CARD
          * @enum {string}
          */
-        payType: "CREDIT_CARD: Credit Card" | "ACCOUNT: Deposit without bankbook" | "MOBILE: Mobile payment" | "REALTIME_ACCOUNT_TRANSFER: Real-time bank transfer" | "VIRTUAL_ACCOUNT: Virtual account" | "GIFT: Gift card" | "ATM: ATM" | "PAYCO: PAYCO" | "ZERO_PAY: Zero payment" | "ACCUMULATION: Accumulation" | "PHONE_BILL: Phone payment" | "POINT: Point payment" | "YPAY: Yello Pay" | "KPAY: K Pay" | "PAYPIN: Paypin" | "INIPAY: INIPay" | "PAYPAL: PAYPAL" | "STRIPE: STRIPE" | "NAVER_PAY: Naver Pay" | "KAKAO_PAY: Kakao Pay" | "NAVER_EASY_PAY: Naver Pay" | "SAMSUNG_PAY: Samsung Pay" | "CHAI: Chai" | "TOSS_PAY: Toss Pay" | "SK_PAY: SK Pay" | "APPLE_PAY: Apple Pay" | "LPAY: L Pay" | "ESCROW_REALTIME_ACCOUNT_TRANSFER: Real-time bank transfer - Escrow" | "ESCROW_VIRTUAL_ACCOUNT: Virtual account - Escrow" | "RENTAL: Rental payment" | "VERITRANS_CARD: Veritrans CreditCard" | "TOASTCAM: ToastCam" | "UNION_PAY: UnionPay" | "ALIPAY: AliPay Plus" | "WECHAT_PAY: WeChat Pay" | "ETC: Other payment methods";
+        payType:
+          | 'CREDIT_CARD'
+          | 'ACCOUNT'
+          | 'MOBILE'
+          | 'REALTIME_ACCOUNT_TRANSFER'
+          | 'VIRTUAL_ACCOUNT'
+          | 'GIFT'
+          | 'ATM'
+          | 'PAYCO'
+          | 'ZERO_PAY'
+          | 'ACCUMULATION'
+          | 'PHONE_BILL'
+          | 'POINT'
+          | 'YPAY'
+          | 'KPAY'
+          | 'PAYPIN'
+          | 'INIPAY'
+          | 'PAYPAL'
+          | 'STRIPE'
+          | 'NAVER_PAY'
+          | 'KAKAO_PAY'
+          | 'NAVER_EASY_PAY'
+          | 'SAMSUNG_PAY'
+          | 'CHAI'
+          | 'TOSS_PAY'
+          | 'SK_PAY'
+          | 'APPLE_PAY'
+          | 'LPAY'
+          | 'ESCROW_REALTIME_ACCOUNT_TRANSFER'
+          | 'ESCROW_VIRTUAL_ACCOUNT'
+          | 'RENTAL'
+          | 'VERITRANS_CARD'
+          | 'TOASTCAM'
+          | 'UNION_PAY'
+          | 'ALIPAY'
+          | 'WECHAT_PAY'
+          | 'ETC';
         /**
          * @description 에스크로 결제 여부
          * @example Y
@@ -4066,17 +4948,17 @@ export interface components {
          * @example DUTY
          * @enum {string}
          */
-        taxType?: "DUTY: 과세" | "DUTYFREE: 면세" | "SMALL: 영세";
+        taxType?: 'DUTY' | 'DUTYFREE' | 'SMALL';
       };
     };
-    "recurring-payments-cart830330865": {
+    'recurring-payments-cart830330865': {
       /**
        * @description 회원의 총 Cart 상품수
        * @example 2
        */
       count: number;
     };
-    "order-sheets-orderSheetNo-calculate-1073273719": {
+    'order-sheets-orderSheetNo-calculate-1073273719': {
       /** @description 주소 */
       addressRequest: {
         /**
@@ -4099,7 +4981,7 @@ export interface components {
          * @example BOOK
          * @enum {string}
          */
-        addressType: "BOOK: 기본주소" | "RECENT: 최근주소" | "RECURRING_PAYMENT: 정기결제 배송주소";
+        addressType: 'BOOK' | 'RECENT' | 'RECURRING_PAYMENT';
         /**
          * @description 수령자 명 (nullable)
          * @example 홍길동
@@ -4115,7 +4997,92 @@ export interface components {
          * @example KR
          * @enum {string}
          */
-        countryCd: "AX: Åland Islands" | "AD: Andorra" | "AU: Australia" | "AT: Austria" | "BH: Bahrain" | "BE: Belgium" | "BZ: Belize" | "BR: Brazil" | "BN: Brunei" | "BG: Bulgaria" | "CA: Canada" | "ES_CANARY: Spain" | "CL: Chile" | "CN: China" | "CO: Colombia" | "CR: Costa Rica" | "CY: Cyprus" | "CZ: Czech Republic" | "DK: Denmark" | "EC: Ecuador" | "EG: Egypt" | "SV: El Salvador" | "EE: Estonia" | "FR: France" | "GF: French Guiana" | "DE: Germany" | "GR: Greece" | "GL: Denmark" | "GU: Guam" | "GT: Guatemala" | "GG: Guernsey" | "GY: Guyana" | "HK: Hong Kong" | "HU: Hungary" | "IS: Iceland" | "ID: Indonesia" | "IE: Ireland" | "IL: Israel" | "IT: Italy" | "JP: Japan" | "JE: Jersey" | "JO: Jordan" | "KR: South Korea" | "KW: Kuwait" | "LV: Latvia" | "LB: Lebanon" | "LI: Liechtenstein" | "LT: Lithuania" | "LU: Luxembourg" | "MO: Macau" | "PT_MADEIRA: Portugal" | "MY: Malaysia" | "NL: Netherlands" | "NZ: New Zealand" | "GB_NORTHERN_ISLAND: United Kingdom" | "NO: Norway" | "PY: Paraguay" | "PE: Peru" | "PL: Poland" | "PT: Portugal" | "RO: Romania" | "RU: Russia" | "SM: San Marino" | "SA: Saudi Arabia" | "GB_SCOTLAND: United Kingdom" | "SG: Singapore" | "SK: Slovakia" | "SI: Slovenia" | "ES: Spain" | "CH: Switzerland" | "TW: Taiwan" | "TH: Thailand" | "TR: Turkey" | "AE: United Arab Emirates" | "GB: United Kingdom" | "US: United States (Mainland)" | "U2: United States (Mainland)" | "UY: Uruguay" | "VN: Vietnam" | "GB_WALES: United Kingdom" | "YE: Yemen" | "HR: Croatia" | "MT: Malta" | "FI: Finland" | "SE: Sweden";
+        countryCd:
+          | 'AX'
+          | 'AD'
+          | 'AU'
+          | 'AT'
+          | 'BH'
+          | 'BE'
+          | 'BZ'
+          | 'BR'
+          | 'BN'
+          | 'BG'
+          | 'CA'
+          | 'ES_CANARY'
+          | 'CL'
+          | 'CN'
+          | 'CO'
+          | 'CR'
+          | 'CY'
+          | 'CZ'
+          | 'DK'
+          | 'EC'
+          | 'EG'
+          | 'SV'
+          | 'EE'
+          | 'FR'
+          | 'GF'
+          | 'DE'
+          | 'GR'
+          | 'GL'
+          | 'GU'
+          | 'GT'
+          | 'GG'
+          | 'GY'
+          | 'HK'
+          | 'HU'
+          | 'IS'
+          | 'ID'
+          | 'IE'
+          | 'IL'
+          | 'IT'
+          | 'JP'
+          | 'JE'
+          | 'JO'
+          | 'KR'
+          | 'KW'
+          | 'LV'
+          | 'LB'
+          | 'LI'
+          | 'LT'
+          | 'LU'
+          | 'MO'
+          | 'PT_MADEIRA'
+          | 'MY'
+          | 'NL'
+          | 'NZ'
+          | 'GB_NORTHERN_ISLAND'
+          | 'NO'
+          | 'PY'
+          | 'PE'
+          | 'PL'
+          | 'PT'
+          | 'RO'
+          | 'RU'
+          | 'SM'
+          | 'SA'
+          | 'GB_SCOTLAND'
+          | 'SG'
+          | 'SK'
+          | 'SI'
+          | 'ES'
+          | 'CH'
+          | 'TW'
+          | 'TH'
+          | 'TR'
+          | 'AE'
+          | 'GB'
+          | 'US'
+          | 'U2'
+          | 'UY'
+          | 'VN'
+          | 'GB_WALES'
+          | 'YE'
+          | 'HR'
+          | 'MT'
+          | 'FI'
+          | 'SE';
         /**
          * @description 배송지 우편 번호
          * @example 13487
@@ -4166,17 +5133,17 @@ export interface components {
       couponRequest: {
         /** @description 상품 쿠폰 (nullable) */
         productCoupons?: {
-            /**
-             * @description 쿠폰 발급 번호
-             * @example 1415130
-             */
-            couponIssueNo: number;
-            /**
-             * @description 상품번호
-             * @example 100398947
-             */
-            productNo: number;
-          }[];
+          /**
+           * @description 쿠폰 발급 번호
+           * @example 1415130
+           */
+          couponIssueNo: number;
+          /**
+           * @description 상품번호
+           * @example 100398947
+           */
+          productNo: number;
+        }[];
         /**
          * @description 장바구니 쿠폰 발행 번호
          * @example 12121212
@@ -4199,433 +5166,518 @@ export interface components {
        */
       accumulationUseAmt: number;
       /** @description 복수 배송지 정보 */
-      shippingAddresses: ({
-          /** @description 상품결제 파라미터 */
-          payProductParams: ({
-              /** @description 렌탈 정보 (nullable) */
-              rentalInfos?: {
-                  /**
-                   * @description 월 렌탈료
-                   * @example 10000
-                   */
-                  monthlyRentalAmount: number;
-                  /**
-                   * @description 렌탈 기간
-                   * @example 1
-                   */
-                  rentalPeriod: number;
-                }[];
-              /** @description 정기결제 배송 정보 */
-              recurringPaymentDelivery: {
-                /**
-                 * @description 정기결제 배송주기 일자 (nullable)
-                 * @example 20
-                 */
-                date?: number;
-                /**
-                 * @description 정기결제 배송주기 타입 (nullable)
-                 * @example MONTH
-                 * @enum {string}
-                 */
-                cycleType?: "MONTH: Month" | "WEEK: Week";
-                /**
-                 * @description 정기결제 첫 배송 예정일 (nullable)
-                 * @example YYYY-MM-DD
-                 */
-                firstRecurringDate?: string;
-                /**
-                 * @description 정기결제 배송주기 (nullable)
-                 * @example 1
-                 */
-                cycle?: number;
-              };
-              /**
-               * @description 주문수량
-               * @example 1
-               */
-              orderCnt: number;
-              /** @description 소비자 입력형 옵션 (nullable) */
-              optionInputs?: {
-                  /**
-                   * @description 구매자 입력형 옵션 - 값
-                   * @example 14호
-                   */
-                  inputValue: string;
-                  /**
-                   * @description 구매자 입력형 옵션 - 이름
-                   * @example 사이즈
-                   */
-                  inputLabel: string;
-                  /**
-                   * @description 구매자 입력형 옵션 - 필수여부 (true: 필수, false: 선택) (nullable)
-                   * @example true
-                   */
-                  required?: boolean;
-                }[];
-              /**
-               * @description 옵션번호
-               * @example 1258932
-               */
-              optionNo: number;
-              /**
-               * @description 상품번호
-               * @example 100398947
-               */
-              productNo: number;
-            })[];
-          /**
-           * @description 배송지정일
-           * @example YYYY-MM-DD
-           */
-          requestShippingDate: string;
-          /**
-           * @description 배송지 번호(0:신규, 0이상:이전배송지)
-           * @example 1
-           */
-          addressNo: number;
-          /**
-           * @description 배송지 나중입력 여부 (true: 나중입력, false: 바로입력)
-           * @example false
-           */
-          usesShippingInfoLaterInput: boolean;
-          /**
-           * @description 기본 주소지 설정 여부
-           * (true 이면 선택한 배송지 정보가 기본주소지로 설정되어 저장된다) (true: 설정, false: 미설정)
-           * @example false
-           */
-          useDefaultAddress: boolean;
-          /** @description 배송지 정보 */
-          shippingAddress: {
+      shippingAddresses: {
+        /** @description 상품결제 파라미터 */
+        payProductParams: {
+          /** @description 렌탈 정보 (nullable) */
+          rentalInfos?: {
             /**
-             * @description 수령인 LastName (nullable)
-             * @example null
+             * @description 월 렌탈료
+             * @example 10000
              */
-            receiverLastName?: string;
+            monthlyRentalAmount: number;
             /**
-             * @description 배송지 지번(지역추가배송비계산 시 사용)
-             * @example 경기도 성남시 분당구 삼평동 629번지 NHN 플레이뮤지엄
+             * @description 렌탈 기간
+             * @example 1
              */
-            receiverJibunAddress: string;
+            rentalPeriod: number;
+          }[];
+          /** @description 정기결제 배송 정보 */
+          recurringPaymentDelivery: {
             /**
-             * @description 기본배송지 여부
-             * @example false
+             * @description 정기결제 배송주기 일자 (nullable)
+             * @example 20
              */
-            defaultYn: string;
+            date?: number;
             /**
-             * @description 주문 추가 정보 (nullable)
-             * @example 여권번호 : M0123456789
-             */
-            orderAdditionalInfo?: string;
-            /**
-             * @description 수령자 명 (nullable)
-             * @example 홍길동
-             */
-            receiverName?: string;
-            /**
-             * @description 개인고유통관부호 (nullable)
-             * @example P12341234
-             */
-            customsIdNumber?: string;
-            /**
-             * @description 국가코드
-             * @example KR
+             * @description 정기결제 배송주기 타입 (nullable)
+             * @example MONTH
              * @enum {string}
              */
-            countryCd: "AX: Åland Islands" | "AD: Andorra" | "AU: Australia" | "AT: Austria" | "BH: Bahrain" | "BE: Belgium" | "BZ: Belize" | "BR: Brazil" | "BN: Brunei" | "BG: Bulgaria" | "CA: Canada" | "ES_CANARY: Spain" | "CL: Chile" | "CN: China" | "CO: Colombia" | "CR: Costa Rica" | "CY: Cyprus" | "CZ: Czech Republic" | "DK: Denmark" | "EC: Ecuador" | "EG: Egypt" | "SV: El Salvador" | "EE: Estonia" | "FR: France" | "GF: French Guiana" | "DE: Germany" | "GR: Greece" | "GL: Denmark" | "GU: Guam" | "GT: Guatemala" | "GG: Guernsey" | "GY: Guyana" | "HK: Hong Kong" | "HU: Hungary" | "IS: Iceland" | "ID: Indonesia" | "IE: Ireland" | "IL: Israel" | "IT: Italy" | "JP: Japan" | "JE: Jersey" | "JO: Jordan" | "KR: South Korea" | "KW: Kuwait" | "LV: Latvia" | "LB: Lebanon" | "LI: Liechtenstein" | "LT: Lithuania" | "LU: Luxembourg" | "MO: Macau" | "PT_MADEIRA: Portugal" | "MY: Malaysia" | "NL: Netherlands" | "NZ: New Zealand" | "GB_NORTHERN_ISLAND: United Kingdom" | "NO: Norway" | "PY: Paraguay" | "PE: Peru" | "PL: Poland" | "PT: Portugal" | "RO: Romania" | "RU: Russia" | "SM: San Marino" | "SA: Saudi Arabia" | "GB_SCOTLAND: United Kingdom" | "SG: Singapore" | "SK: Slovakia" | "SI: Slovenia" | "ES: Spain" | "CH: Switzerland" | "TW: Taiwan" | "TH: Thailand" | "TR: Turkey" | "AE: United Arab Emirates" | "GB: United Kingdom" | "US: United States (Mainland)" | "U2: United States (Mainland)" | "UY: Uruguay" | "VN: Vietnam" | "GB_WALES: United Kingdom" | "YE: Yemen" | "HR: Croatia" | "MT: Malta" | "FI: Finland" | "SE: Sweden";
+            cycleType?: 'MONTH' | 'WEEK';
             /**
-             * @description 배송지 우편 번호
-             * @example 13487
+             * @description 정기결제 첫 배송 예정일 (nullable)
+             * @example YYYY-MM-DD
              */
-            receiverZipCd: string;
+            firstRecurringDate?: string;
             /**
-             * @description 배송지 상세 주소
-             * @example 16 NHN 플레이뮤지엄
+             * @description 정기결제 배송주기 (nullable)
+             * @example 1
              */
-            receiverDetailAddress: string;
-            /**
-             * @description 배송메모
-             * @example 부재시 경비실에 맡겨주세요.
-             */
-            deliveryMemo: string;
-            /**
-             * @description (해외) 도시 (nullable)
-             * @example null
-             */
-            receiverCity?: string;
-            /**
-             * @description 배송지 주소
-             * @example 경기도 성남시 분당구 대왕판교로645번길 12
-             */
-            receiverAddress: string;
-            /**
-             * @description (해외) 주 (nullable)
-             * @example null
-             */
-            receiverState?: string;
-            /**
-             * @description (해외배송 / 글로벌결제 시 필수) 수령인 FirstName (nullable)
-             * @example null
-             */
-            receiverFirstName?: string;
-            /**
-             * @description 연락처1
-             * @example 010-0000-0000
-             */
-            receiverContact1: string;
-            /**
-             * @description 연락처2
-             * @example 010-0000-0000
-             */
-            receiverContact2: string;
+            cycle?: number;
           };
           /**
-           * @description 주소록명 (nullable)
-           * @example 홍길동집
+           * @description 주문수량
+           * @example 1
            */
-          addressName?: string;
+          orderCnt: number;
+          /** @description 소비자 입력형 옵션 (nullable) */
+          optionInputs?: {
+            /**
+             * @description 구매자 입력형 옵션 - 값
+             * @example 14호
+             */
+            inputValue: string;
+            /**
+             * @description 구매자 입력형 옵션 - 이름
+             * @example 사이즈
+             */
+            inputLabel: string;
+            /**
+             * @description 구매자 입력형 옵션 - 필수여부 (true: 필수, false: 선택) (nullable)
+             * @example true
+             */
+            required?: boolean;
+          }[];
           /**
-           * @description 배송지 나중입력 연락처
-           * @example 010-7770-7777
+           * @description 옵션번호
+           * @example 1258932
            */
-          shippingInfoLaterInputContact: string;
-        })[];
-    };
-    "previous-orders-1111310132": {
-      contents?: ({
-          /** @description 주문 옵션 리스트 */
-          orderOptions: {
-              /**
-               * @description 옵션값
-               * @example 초코
-               */
-              optionValue: string;
-              /**
-               * @description 주문 상태
-               * @example DELIVERY_DONE
-               */
-              orderStatusType: string;
-              /** @description 사용자 입력형 옵션 */
-              purchaserInputs: {
-                  /** @description 값 */
-                  inputValue: string;
-                  /** @description 이름 */
-                  inputLabel: string;
-                  /** @description 필수 여부 */
-                  required: boolean;
-                }[];
-              /**
-               * @description 주문일시
-               * @example "2024-01-05T00:00:00.000Z"
-               */
-              orderYmdt: string;
-              /**
-               * @description 주문 수량
-               * @example 1
-               */
-              orderCnt: number;
-              /**
-               * @description 옵션명
-               * @example 맛
-               */
-              optionName: string;
-              /**
-               * @description 옵션 번호
-               * @example 1
-               */
-              optionNo: number;
-              /**
-               * @description 주문 메모
-               * @example 선물 포장 부탁합니다.
-               */
-              orderMemo: string;
-              /**
-               * @description 상품명
-               * @example 상품명
-               */
-              productName: string;
-              /**
-               * @description 결제일시
-               * @example "2024-01-05T00:00:00.000Z"
-               */
-              payYmdt: string;
-            }[];
+          optionNo: number;
           /**
-           * @description 주문 번호
-           * @example 202206151234567890
+           * @description 상품번호
+           * @example 100398947
            */
-          orderNo: string;
+          productNo: number;
+        }[];
+        /**
+         * @description 배송지정일
+         * @example YYYY-MM-DD
+         */
+        requestShippingDate: string;
+        /**
+         * @description 배송지 번호(0:신규, 0이상:이전배송지)
+         * @example 1
+         */
+        addressNo: number;
+        /**
+         * @description 배송지 나중입력 여부 (true: 나중입력, false: 바로입력)
+         * @example false
+         */
+        usesShippingInfoLaterInput: boolean;
+        /**
+         * @description 기본 주소지 설정 여부
+         * (true 이면 선택한 배송지 정보가 기본주소지로 설정되어 저장된다) (true: 설정, false: 미설정)
+         * @example false
+         */
+        useDefaultAddress: boolean;
+        /** @description 배송지 정보 */
+        shippingAddress: {
           /**
-           * @description 수령자 전화번호
-           * @example 01012345678
+           * @description 수령인 LastName (nullable)
+           * @example null
            */
-          receiverContact: string;
+          receiverLastName?: string;
           /**
-           * @description 상품 금액
-           * @example 1000
+           * @description 배송지 지번(지역추가배송비계산 시 사용)
+           * @example 경기도 성남시 분당구 삼평동 629번지 NHN 플레이뮤지엄
            */
-          salePrice: number;
+          receiverJibunAddress: string;
           /**
-           * @description 수령자명
+           * @description 기본배송지 여부
+           * @example false
+           */
+          defaultYn: string;
+          /**
+           * @description 주문 추가 정보 (nullable)
+           * @example 여권번호 : M0123456789
+           */
+          orderAdditionalInfo?: string;
+          /**
+           * @description 수령자 명 (nullable)
            * @example 홍길동
            */
-          receiverName: string;
+          receiverName?: string;
           /**
-           * @description 개인통관고유번호
-           * @example P123412341234
+           * @description 개인고유통관부호 (nullable)
+           * @example P12341234
            */
-          customsIdNumber: string;
+          customsIdNumber?: string;
           /**
-           * @description 플랫폼 구분
-           * @example PC
+           * @description 국가코드
+           * @example KR
+           * @enum {string}
            */
-          platformType: string;
+          countryCd:
+            | 'AX'
+            | 'AD'
+            | 'AU'
+            | 'AT'
+            | 'BH'
+            | 'BE'
+            | 'BZ'
+            | 'BR'
+            | 'BN'
+            | 'BG'
+            | 'CA'
+            | 'ES_CANARY'
+            | 'CL'
+            | 'CN'
+            | 'CO'
+            | 'CR'
+            | 'CY'
+            | 'CZ'
+            | 'DK'
+            | 'EC'
+            | 'EG'
+            | 'SV'
+            | 'EE'
+            | 'FR'
+            | 'GF'
+            | 'DE'
+            | 'GR'
+            | 'GL'
+            | 'GU'
+            | 'GT'
+            | 'GG'
+            | 'GY'
+            | 'HK'
+            | 'HU'
+            | 'IS'
+            | 'ID'
+            | 'IE'
+            | 'IL'
+            | 'IT'
+            | 'JP'
+            | 'JE'
+            | 'JO'
+            | 'KR'
+            | 'KW'
+            | 'LV'
+            | 'LB'
+            | 'LI'
+            | 'LT'
+            | 'LU'
+            | 'MO'
+            | 'PT_MADEIRA'
+            | 'MY'
+            | 'NL'
+            | 'NZ'
+            | 'GB_NORTHERN_ISLAND'
+            | 'NO'
+            | 'PY'
+            | 'PE'
+            | 'PL'
+            | 'PT'
+            | 'RO'
+            | 'RU'
+            | 'SM'
+            | 'SA'
+            | 'GB_SCOTLAND'
+            | 'SG'
+            | 'SK'
+            | 'SI'
+            | 'ES'
+            | 'CH'
+            | 'TW'
+            | 'TH'
+            | 'TR'
+            | 'AE'
+            | 'GB'
+            | 'US'
+            | 'U2'
+            | 'UY'
+            | 'VN'
+            | 'GB_WALES'
+            | 'YE'
+            | 'HR'
+            | 'MT'
+            | 'FI'
+            | 'SE';
           /**
-           * @description 주문자 전화번호
-           * @example 01012345678
-           */
-          ordererContact: string;
-          /**
-           * @description 우편번호
-           * @example 12345
+           * @description 배송지 우편 번호
+           * @example 13487
            */
           receiverZipCd: string;
           /**
-           * @description 주문 금액
-           * @example 1000
+           * @description 배송지 상세 주소
+           * @example 16 NHN 플레이뮤지엄
            */
-          purchasePrice: number;
+          receiverDetailAddress: string;
           /**
-           * @description 배송 메모
-           * @example 부재시 경비실에 맞겨주세요.
+           * @description 배송메모
+           * @example 부재시 경비실에 맡겨주세요.
            */
           deliveryMemo: string;
           /**
-           * @description 주소
+           * @description (해외) 도시 (nullable)
+           * @example null
+           */
+          receiverCity?: string;
+          /**
+           * @description 배송지 주소
            * @example 경기도 성남시 분당구 대왕판교로645번길 12
            */
           receiverAddress: string;
           /**
-           * @description 회원 번호
-           * @example 2
+           * @description (해외) 주 (nullable)
+           * @example null
            */
-          memberNo: number;
+          receiverState?: string;
           /**
-           * @description 주문 유형
-           * @example CREDIT_CARD
+           * @description (해외배송 / 글로벌결제 시 필수) 수령인 FirstName (nullable)
+           * @example null
            */
-          payType: string;
+          receiverFirstName?: string;
           /**
-           * @description 배송비
-           * @example 2000
+           * @description 연락처1
+           * @example 010-0000-0000
            */
-          deliveryAmt: number;
+          receiverContact1: string;
           /**
-           * @description 실 결제금액
-           * @example 3000
+           * @description 연락처2
+           * @example 010-0000-0000
            */
-          mainPayAmt: number;
+          receiverContact2: string;
+        };
+        /**
+         * @description 주소록명 (nullable)
+         * @example 홍길동집
+         */
+        addressName?: string;
+        /**
+         * @description 배송지 나중입력 연락처
+         * @example 010-7770-7777
+         */
+        shippingInfoLaterInputContact: string;
+      }[];
+    };
+    'previous-orders-1111310132': {
+      contents?: {
+        /** @description 주문 옵션 리스트 */
+        orderOptions: {
           /**
-           * @description 회원 등급명
-           * @example 임직원
+           * @description 옵션값
+           * @example 초코
            */
-          memberGradeNames: (Record<string, never> | boolean | string | number)[];
+          optionValue: string;
           /**
-           * @description 주문 유형 라벨
-           * @example 신용카드
+           * @description 주문 상태
+           * @example DELIVERY_DONE
            */
-          payTypeLabel: string;
+          orderStatusType: string;
+          /** @description 사용자 입력형 옵션 */
+          purchaserInputs: {
+            /** @description 값 */
+            inputValue: string;
+            /** @description 이름 */
+            inputLabel: string;
+            /** @description 필수 여부 */
+            required: boolean;
+          }[];
           /**
-           * @description 주문자명
-           * @example 홍길동
+           * @description 주문일시
+           * @example "2024-01-05T00:00:00.000Z"
            */
-          ordererName: string;
-        })[];
+          orderYmdt: string;
+          /**
+           * @description 주문 수량
+           * @example 1
+           */
+          orderCnt: number;
+          /**
+           * @description 옵션명
+           * @example 맛
+           */
+          optionName: string;
+          /**
+           * @description 옵션 번호
+           * @example 1
+           */
+          optionNo: number;
+          /**
+           * @description 주문 메모
+           * @example 선물 포장 부탁합니다.
+           */
+          orderMemo: string;
+          /**
+           * @description 상품명
+           * @example 상품명
+           */
+          productName: string;
+          /**
+           * @description 결제일시
+           * @example "2024-01-05T00:00:00.000Z"
+           */
+          payYmdt: string;
+        }[];
+        /**
+         * @description 주문 번호
+         * @example 202206151234567890
+         */
+        orderNo: string;
+        /**
+         * @description 수령자 전화번호
+         * @example 01012345678
+         */
+        receiverContact: string;
+        /**
+         * @description 상품 금액
+         * @example 1000
+         */
+        salePrice: number;
+        /**
+         * @description 수령자명
+         * @example 홍길동
+         */
+        receiverName: string;
+        /**
+         * @description 개인통관고유번호
+         * @example P123412341234
+         */
+        customsIdNumber: string;
+        /**
+         * @description 플랫폼 구분
+         * @example PC
+         */
+        platformType: string;
+        /**
+         * @description 주문자 전화번호
+         * @example 01012345678
+         */
+        ordererContact: string;
+        /**
+         * @description 우편번호
+         * @example 12345
+         */
+        receiverZipCd: string;
+        /**
+         * @description 주문 금액
+         * @example 1000
+         */
+        purchasePrice: number;
+        /**
+         * @description 배송 메모
+         * @example 부재시 경비실에 맞겨주세요.
+         */
+        deliveryMemo: string;
+        /**
+         * @description 주소
+         * @example 경기도 성남시 분당구 대왕판교로645번길 12
+         */
+        receiverAddress: string;
+        /**
+         * @description 회원 번호
+         * @example 2
+         */
+        memberNo: number;
+        /**
+         * @description 주문 유형
+         * @example CREDIT_CARD
+         */
+        payType: string;
+        /**
+         * @description 배송비
+         * @example 2000
+         */
+        deliveryAmt: number;
+        /**
+         * @description 실 결제금액
+         * @example 3000
+         */
+        mainPayAmt: number;
+        /**
+         * @description 회원 등급명
+         * @example 임직원
+         */
+        memberGradeNames: (Record<string, never> | boolean | string | number)[];
+        /**
+         * @description 주문 유형 라벨
+         * @example 신용카드
+         */
+        payTypeLabel: string;
+        /**
+         * @description 주문자명
+         * @example 홍길동
+         */
+        ordererName: string;
+      }[];
       /**
        * @description 전체 주문수
        * @example 10
        */
       totalCount: number;
     };
-    "my-pay-payment-infos1122892899": {
+    'my-pay-payment-infos1122892899': {
       /** @description 결제정보 리스트(아래필드) */
       paymentInfos: {
+        /**
+         * @description 카드 유효기간만료로 인한 사용가능 여부 (가능: Y, 불가: N, 확인불가: M)
+         * @example Y
+         */
+        cardExpiredFlag: string;
+        /**
+         * @description 카드상품번호
+         * @example 123456789
+         */
+        cardProductNo: string;
+        /**
+         * @description 신용카드 : 카드 브랜드 명, 계좌 : 계좌 은행 명
+         * @example %EC%8B%A0%ED%95%9C%EC%B9%B4%EB%93%9C
+         */
+        cardName: string;
+        /**
+         * @description 카드유형 (신용: 0, 체크: 1, 선불: 2)
+         * @example 0
+         */
+        cardCheckType: string;
+        /**
+         * @description (마스킹 처리) 신용카드 : 카드번호, 계좌 : 계좌번호
+         * @example 1234-****-****-7890
+         */
+        bankCardNo: string;
+        /** @description 무이자 최대 할부 개월 (nullable) */
+        noIntMaxQuota?: number;
+        /**
+         * @description 개인/법인 구분 (일반-개인: 0, 일반-가족: 1, 법인-지정: 2, 법인-공용: 3)
+         * @example 0
+         */
+        cardType: string;
+        /**
+         * @description 주 결제수단 여부
+         * @example false
+         */
+        main: boolean;
+        /** @description BC 카드발급사 코드 BC 카드(11)인 경우만 응답 값 세팅 */
+        cardIsscoCode: string;
+        /**
+         * @description 결제수단 코드 (신용카드: 01, 계좌: 16)
+         * @example 01
+         */
+        payMethod: string;
+        /**
+         * @description 카드 이미지 URL
+         * @example %ED%85%8C%EC%8A%A4%ED%8A%B8%EC%B9%B4%EB%93%9C%EC%9D%B4%EB%AF%B8%EC %A7%80URL
+         */
+        cardImgUrl: string;
+        /**
+         * @description 결제정보 별칭
+         * @example %ED%85%8C%EC%8A%A4%ED%8A%B8%EB%B3%84%EC%B9%AD
+         */
+        paymentInfoAlias: string;
+        /** @description 유이자 최대 할부 개월 (nullable) */
+        geIntMaxQuota?: number;
+        /**
+         * @description 신용카드 : 카드사 코드, 계좌 : 은행 코드
+         * @example 16
+         */
+        bankCardCode: string;
+        /**
+         * @description 암호화된 이니시스에서 발행한 wpaytoken
+         * @example LL3E994QcmzSFH0JCiZOFw==
+         */
+        payToken: string;
+        /** @description 무이자 정보 (nullable) */
+        noIntInfos?: {
           /**
-           * @description 카드 유효기간만료로 인한 사용가능 여부 (가능: Y, 불가: N, 확인불가: M)
-           * @example Y
+           * @description 무이자 할부 적용 가능 금액 (만원단위) (nullable)
+           * @example 20
            */
-          cardExpiredFlag: string;
-          /**
-           * @description 카드상품번호
-           * @example 123456789
-           */
-          cardProductNo: string;
-          /**
-           * @description 신용카드 : 카드 브랜드 명, 계좌 : 계좌 은행 명
-           * @example %EC%8B%A0%ED%95%9C%EC%B9%B4%EB%93%9C
-           */
-          cardName: string;
-          /**
-           * @description 카드유형 (신용: 0, 체크: 1, 선불: 2)
-           * @example 0
-           */
-          cardCheckType: string;
-          /**
-           * @description (마스킹 처리) 신용카드 : 카드번호, 계좌 : 계좌번호
-           * @example 1234-****-****-7890
-           */
-          bankCardNo: string;
-          /** @description 무이자 최대 할부 개월 (nullable) */
-          noIntMaxQuota?: number;
-          /**
-           * @description 개인/법인 구분 (일반-개인: 0, 일반-가족: 1, 법인-지정: 2, 법인-공용: 3)
-           * @example 0
-           */
-          cardType: string;
-          /**
-           * @description 주 결제수단 여부
-           * @example false
-           */
-          main: boolean;
-          /** @description BC 카드발급사 코드 BC 카드(11)인 경우만 응답 값 세팅 */
-          cardIsscoCode: string;
-          /**
-           * @description 결제수단 코드 (신용카드: 01, 계좌: 16)
-           * @example 01
-           */
-          payMethod: string;
-          /**
-           * @description 카드 이미지 URL
-           * @example %ED%85%8C%EC%8A%A4%ED%8A%B8%EC%B9%B4%EB%93%9C%EC%9D%B4%EB%AF%B8%EC %A7%80URL
-           */
-          cardImgUrl: string;
-          /**
-           * @description 결제정보 별칭
-           * @example %ED%85%8C%EC%8A%A4%ED%8A%B8%EB%B3%84%EC%B9%AD
-           */
-          paymentInfoAlias: string;
-          /** @description 유이자 최대 할부 개월 (nullable) */
-          geIntMaxQuota?: number;
-          /**
-           * @description 신용카드 : 카드사 코드, 계좌 : 은행 코드
-           * @example 16
-           */
-          bankCardCode: string;
-          /**
-           * @description 암호화된 이니시스에서 발행한 wpaytoken
-           * @example LL3E994QcmzSFH0JCiZOFw==
-           */
-          payToken: string;
-          /** @description 무이자 정보 (nullable) */
-          noIntInfos?: {
-              /**
-               * @description 무이자 할부 적용 가능 금액 (만원단위) (nullable)
-               * @example 20
-               */
-              amount?: number;
-              /** @description 무이자할부 개월 리스트 (nullable) */
-              monthList?: number[];
-            }[];
+          amount?: number;
+          /** @description 무이자할부 개월 리스트 (nullable) */
+          monthList?: number[];
         }[];
+      }[];
       /**
        * @description 결과코드
        * @example 0000
@@ -4634,486 +5686,505 @@ export interface components {
       /** @description 결과메시지^|URLEncoding(정상 처리되었습니다.) */
       resultMsg: string;
     };
-    "order-sheets-orderSheetNo515085756": {
+    'order-sheets-orderSheetNo515085756': {
       rentalInfos?: {
-          /**
-           * @description 월 렌탈료
-           * @example 10000
-           */
-          monthlyRentalAmount: number;
-          /**
-           * @description 렌탈 기간
-           * @example 1
-           */
-          rentalPeriod: number;
-        }[];
+        /**
+         * @description 월 렌탈료
+         * @example 10000
+         */
+        monthlyRentalAmount: number;
+        /**
+         * @description 렌탈 기간
+         * @example 1
+         */
+        rentalPeriod: number;
+      }[];
       /** @description 합배송 그룹별 상품 목록 */
-      deliveryGroups: ({
+      deliveryGroups: {
+        /**
+         * @description 파트너번호
+         * @example 1
+         */
+        partnerNo: number;
+        /**
+         * @description 배송비착불여부
+         * @example PREPAID_DELIVERY
+         * @enum {string}
+         */
+        deliveryPayType: 'PREPAID_DELIVERY' | 'PAY_ON_DELIVERY';
+        /** @description 배송 조건 */
+        deliveryCondition: {
           /**
-           * @description 파트너번호
-           * @example 1
-           */
-          partnerNo: number;
-          /**
-           * @description 배송비착불여부
-           * @example PREPAID_DELIVERY
+           * @description 배송조건
+           * @example CONDITIONAL
            * @enum {string}
            */
-          deliveryPayType: "PREPAID_DELIVERY: 배송비 선불" | "PAY_ON_DELIVERY: 배송비 착불";
-          /** @description 배송 조건 */
-          deliveryCondition: {
-            /**
-             * @description 배송조건
-             * @example CONDITIONAL
-             * @enum {string}
-             */
-            deliveryConditionType: "FREE: 무료" | "CONDITIONAL: 조건별무료" | "FIXED_FEE: 유료(고정 배송비)" | "QUANTITY_PROPOSITIONAL_FEE: 수량 비례" | "PRICE_FEE: 금액별 차등" | "QUANTITY_FEE: 수량별 차등";
-            /**
-             * @description 조건부 배송비의 기준값(9,800원 미만 배송비 2,500원일때 aboveDeliveryAmt는 9800)
-             * @example 2500
-             */
-            aboveDeliveryAmt: number;
-            /**
-             * @description 배송비
-             * @example 2500
-             */
-            deliveryAmt: number;
-            /**
-             * @description 묶음배송조건
-             * @example MAXIMUM_SELECTED
-             * @enum {string}
-             */
-            groupDeliveryAmtType: "MAXIMUM_SELECTED: 최대부과" | "MINIMUM_SELECTED: 최소부과";
-            /**
-             * @description 반품배송비
-             * @example 2500
-             */
-            returnDeliveryAmt: number;
-            /**
-             * @description 조건부 배송비 미달 시 배송비(9,800원 미만 배송비 2,500원일때 baseDeliveryAmt는 2,500)
-             * @example 2500
-             */
-            baseDeliveryAmt: number;
-            /**
-             * @description 추가배송비(조건에 의해 계산되어진)
-             * @example 2500
-             */
-            remoteDeliveryAmt: number;
-            /**
-             * @description 지역별추가배송비사용여부 (true: 사용, false: 미사용)
-             * @example false
-             */
-            chargesRemoteDeliveryAmt: boolean;
-          };
+          deliveryConditionType:
+            | 'FREE'
+            | 'CONDITIONAL'
+            | 'FIXED_FEE'
+            | 'QUANTITY_PROPOSITIONAL_FEE'
+            | 'PRICE_FEE'
+            | 'QUANTITY_FEE';
+          /**
+           * @description 조건부 배송비의 기준값(9,800원 미만 배송비 2,500원일때 aboveDeliveryAmt는 9800)
+           * @example 2500
+           */
+          aboveDeliveryAmt: number;
           /**
            * @description 배송비
            * @example 2500
            */
           deliveryAmt: number;
           /**
-           * @description 파트너명
-           * @example NCP
+           * @description 묶음배송조건
+           * @example MAXIMUM_SELECTED
+           * @enum {string}
            */
-          partnerName: string;
-          /** @description 주문상품 */
-          orderProducts: ({
+          groupDeliveryAmtType: 'MAXIMUM_SELECTED' | 'MINIMUM_SELECTED';
+          /**
+           * @description 반품배송비
+           * @example 2500
+           */
+          returnDeliveryAmt: number;
+          /**
+           * @description 조건부 배송비 미달 시 배송비(9,800원 미만 배송비 2,500원일때 baseDeliveryAmt는 2,500)
+           * @example 2500
+           */
+          baseDeliveryAmt: number;
+          /**
+           * @description 추가배송비(조건에 의해 계산되어진)
+           * @example 2500
+           */
+          remoteDeliveryAmt: number;
+          /**
+           * @description 지역별추가배송비사용여부 (true: 사용, false: 미사용)
+           * @example false
+           */
+          chargesRemoteDeliveryAmt: boolean;
+        };
+        /**
+         * @description 배송비
+         * @example 2500
+         */
+        deliveryAmt: number;
+        /**
+         * @description 파트너명
+         * @example NCP
+         */
+        partnerName: string;
+        /** @description 주문상품 */
+        orderProducts: {
+          /** @description 구매금액(구매가 * 주문수량) */
+          buyAmt: number;
+          /**
+           * @description 브랜드명
+           * @example 나이키
+           */
+          brandName: string;
+          /**
+           * @description 쿠폰 사용 가능 여부
+           * @example true
+           */
+          couponUsable: boolean;
+          /**
+           * @description 배송구분
+           * @example PARTNER_SHIPPING_AREA
+           * @enum {string}
+           */
+          shippingAreaType: 'PARTNER_SHIPPING_AREA' | 'MALL_SHIPPING_AREA';
+          /**
+           * @description 배송가능여부
+           * @example true
+           */
+          deliverable: boolean;
+          /**
+           * @description 옵션사용여부
+           * @example true
+           */
+          optionUsed: boolean;
+          /**
+           * @description 찜상품 여부 (true: 찜상품, false: 일반상품)
+           * @example false
+           */
+          liked: boolean;
+          /**
+           * @description 상품명
+           * @example 상품1
+           */
+          productName: string;
+          /**
+           * @description 적립금 사용 가능 여부
+           * @example true
+           */
+          accumulationUsable: boolean;
+          /** @description 추가상품 */
+          additionalProducts: (
+            | Record<string, never>
+            | boolean
+            | string
+            | number
+          )[];
+          /**
+           * @description 상품 이미지 URL
+           * @example http://image.url
+           */
+          imageUrl: string;
+          /**
+           * @description 브랜드 영문명
+           * @example nike
+           */
+          brandNameEn: string;
+          /**
+           * @description (알파 개발중) 표준 카테고리 번호
+           * @example 1
+           */
+          categoryNo: number;
+          /**
+           * @description 상품 영문명
+           * @example product1
+           */
+          productNameEn: string;
+          /** @description 옵션 */
+          orderProductOptions: {
+            /** @description 정기결제 배송 정보 */
+            recurringPaymentDelivery: {
+              /**
+               * @description 정기결제 배송주기 일자 (nullable)
+               * @example 20
+               */
+              date?: number;
+              /**
+               * @description 정기결제 첫 배송 예정일 (nullable)
+               * @example YYYY-MM-DD
+               */
+              firstRecurringDate?: string;
+              /**
+               * @description 정기결제 배송주기 (nullable)
+               * @example 1
+               */
+              cycle?: number;
+            };
+            /**
+             * @description 예약주문 상품 배송시작예정일
+             * @example YYYY-MM-DD hh:mm:ss
+             */
+            reservationDeliveryYmdt: string;
+            /**
+             * @description 옵션권장출력값
+             * @example 사이즈/FREE
+             */
+            optionTitle: string;
+            /**
+             * @description 구매확정시 예상 적립금
+             * @example 0
+             */
+            accumulationAmtWhenBuyConfirm: number;
+            /** @description 유효성 정보 */
+            validInfo: {
+              /**
+               * @description 유효 여부(true: 유효, false: 유효하지 않음)
+               * @example true
+               */
+              valid: boolean;
+              /** @description deprecated(더 이상 제공하지 않는 개체항목입니다) */
+              validYn: string;
+              /** @description 에러코드 */
+              errorCode: {
+                /**
+                 * @description code
+                 * @example PPVE0001
+                 */
+                code: string;
+                /**
+                 * @description simpleCode
+                 * @example PPVE0001
+                 */
+                simpleCode: string;
+              };
+              /**
+               * @description 유효성 실패 사유 메세지
+               * @example 재고없음
+               */
+              message: string;
+              /**
+               * @description 주문수량변경 가능 여부 (true:변경가능 false:변경불가능)
+               * @example false
+               */
+              orderCntChangeable: boolean;
+            };
+            /**
+             * @description 옵션값
+             * @example 105
+             */
+            optionValue: string;
+            /**
+             * @description 주문수량
+             * @example 1
+             */
+            orderCnt: number;
+            /** @description 소비자 입력형 옵션 (nullable) */
+            optionInputs?: {
+              /**
+               * @description 구매자 입력형 옵션 - 값
+               * @example 14호
+               */
+              inputValue: string;
+              /**
+               * @description 구매자 입력형 옵션 - 이름
+               * @example 사이즈
+               */
+              inputLabel: string;
+              /**
+               * @description 구매자 입력형 옵션 - 필수여부 (true: 필수, false: 선택) (nullable)
+               * @example true
+               */
+              required?: boolean;
+            }[];
+            /**
+             * @description 품절여부(true:품절 false:구매가능)
+             * @example false
+             */
+            soldOut: boolean;
+            /**
+             * @description 옵션형태
+             * @example PRODUCT_ONLY
+             * @enum {string}
+             */
+            optionType: 'PRODUCT_ONLY' | 'NORMAL_OPTION' | 'ADDITIONAL_PRODUCT';
+            /**
+             * @description 구매확정 시 회원에 대한 적립률(회원등급/그룹 중 큰 값)
+             * @example 0
+             */
+            accumulationRateForMemberWhenBuyConfirm: number;
+            /**
+             * @description 구매확정 시 상품에 대한 적립률
+             * @example 0
+             */
+            accumulationRateForProductWhenBuyConfirm: number;
+            /**
+             * @description 구매확정 시 상품에 대한 적립금
+             * @example 0
+             */
+            accumulationAmtForProductWhenBuyConfirm: number;
+            /** @description 가격 정보 */
+            price: {
               /** @description 구매금액(구매가 * 주문수량) */
               buyAmt: number;
               /**
-               * @description 브랜드명
-               * @example 나이키
+               * @description 추가할인 금액
+               * @example 0
                */
-              brandName: string;
+              additionalDiscountAmt: number;
               /**
-               * @description 쿠폰 사용 가능 여부
+               * @description 즉시할인 금액
+               * @example 0
+               */
+              immediateDiscountAmt: number;
+              /**
+               * @description 상품판매가
+               * @example 100
+               */
+              salePrice: number;
+              /**
+               * @description 정상금액(상품판매가 + 옵션추가금액) * 주문수량
+               * @example 1000
+               */
+              standardAmt: number;
+              /**
+               * @description 옵션가격(추가금액)
+               * @example 0
+               */
+              addPrice: number;
+            };
+            /**
+             * @description 상품 이미지 URL
+             * @example http://image.url
+             */
+            imageUrl: string;
+            /** @description 세트옵션 */
+            setOptions: {
+              /**
+               * @description 옵션사용여부 (true: 사용, false: 미사용)
                * @example true
                */
-              couponUsable: boolean;
+              usesOption: boolean;
               /**
-               * @description 배송구분
-               * @example PARTNER_SHIPPING_AREA
-               * @enum {string}
+               * @description 옵션번호
+               * @example 1258932
                */
-              shippingAreaType: "PARTNER_SHIPPING_AREA: Partner Delivery" | "MALL_SHIPPING_AREA: Shipping Mall Delivery";
+              mallOptionNo: number;
               /**
-               * @description 배송가능여부
-               * @example true
+               * @description 상품관리코드 (nullable)
+               * @example 1231
                */
-              deliverable: boolean;
+              productManagementCd?: string;
               /**
-               * @description 옵션사용여부
-               * @example true
+               * @description 옵션값
+               * @example 105
                */
-              optionUsed: boolean;
+              optionValue: string;
               /**
-               * @description 찜상품 여부 (true: 찜상품, false: 일반상품)
-               * @example false
+               * @description 구매수
+               * @example 1
                */
-              liked: boolean;
+              count: number;
+              /**
+               * @description 옵션가격
+               * @example 1000
+               */
+              optionPrice: number;
+              /**
+               * @description sku (nullable)
+               * @example 1231
+               */
+              sku?: string;
+              /**
+               * @description 옵션명
+               * @example 사이즈
+               */
+              optionName: string;
+              /**
+               * @description 판매자 관리코드 (nullable)
+               * @example option cd
+               */
+              optionManagementCd?: string;
+              /**
+               * @description 상품번호
+               * @example 100398947
+               */
+              mallProductNo: number;
+              /**
+               * @description 재고번호
+               * @example 1
+               */
+              stockNo: number;
               /**
                * @description 상품명
                * @example 상품1
                */
               productName: string;
-              /**
-               * @description 적립금 사용 가능 여부
-               * @example true
-               */
-              accumulationUsable: boolean;
-              /** @description 추가상품 */
-              additionalProducts: (Record<string, never> | boolean | string | number)[];
-              /**
-               * @description 상품 이미지 URL
-               * @example http://image.url
-               */
-              imageUrl: string;
-              /**
-               * @description 브랜드 영문명
-               * @example nike
-               */
-              brandNameEn: string;
-              /**
-               * @description (알파 개발중) 표준 카테고리 번호
-               * @example 1
-               */
-              categoryNo: number;
-              /**
-               * @description 상품 영문명
-               * @example product1
-               */
-              productNameEn: string;
-              /** @description 옵션 */
-              orderProductOptions: ({
-                  /** @description 정기결제 배송 정보 */
-                  recurringPaymentDelivery: {
-                    /**
-                     * @description 정기결제 배송주기 일자 (nullable)
-                     * @example 20
-                     */
-                    date?: number;
-                    /**
-                     * @description 정기결제 첫 배송 예정일 (nullable)
-                     * @example YYYY-MM-DD
-                     */
-                    firstRecurringDate?: string;
-                    /**
-                     * @description 정기결제 배송주기 (nullable)
-                     * @example 1
-                     */
-                    cycle?: number;
-                  };
-                  /**
-                   * @description 예약주문 상품 배송시작예정일
-                   * @example YYYY-MM-DD hh:mm:ss
-                   */
-                  reservationDeliveryYmdt: string;
-                  /**
-                   * @description 옵션권장출력값
-                   * @example 사이즈/FREE
-                   */
-                  optionTitle: string;
-                  /**
-                   * @description 구매확정시 예상 적립금
-                   * @example 0
-                   */
-                  accumulationAmtWhenBuyConfirm: number;
-                  /** @description 유효성 정보 */
-                  validInfo: {
-                    /**
-                     * @description 유효 여부(true: 유효, false: 유효하지 않음)
-                     * @example true
-                     */
-                    valid: boolean;
-                    /** @description deprecated(더 이상 제공하지 않는 개체항목입니다) */
-                    validYn: string;
-                    /** @description 에러코드 */
-                    errorCode: {
-                      /**
-                       * @description code
-                       * @example PPVE0001
-                       */
-                      code: string;
-                      /**
-                       * @description simpleCode
-                       * @example PPVE0001
-                       */
-                      simpleCode: string;
-                    };
-                    /**
-                     * @description 유효성 실패 사유 메세지
-                     * @example 재고없음
-                     */
-                    message: string;
-                    /**
-                     * @description 주문수량변경 가능 여부 (true:변경가능 false:변경불가능)
-                     * @example false
-                     */
-                    orderCntChangeable: boolean;
-                  };
-                  /**
-                   * @description 옵션값
-                   * @example 105
-                   */
-                  optionValue: string;
-                  /**
-                   * @description 주문수량
-                   * @example 1
-                   */
-                  orderCnt: number;
-                  /** @description 소비자 입력형 옵션 (nullable) */
-                  optionInputs?: {
-                      /**
-                       * @description 구매자 입력형 옵션 - 값
-                       * @example 14호
-                       */
-                      inputValue: string;
-                      /**
-                       * @description 구매자 입력형 옵션 - 이름
-                       * @example 사이즈
-                       */
-                      inputLabel: string;
-                      /**
-                       * @description 구매자 입력형 옵션 - 필수여부 (true: 필수, false: 선택) (nullable)
-                       * @example true
-                       */
-                      required?: boolean;
-                    }[];
-                  /**
-                   * @description 품절여부(true:품절 false:구매가능)
-                   * @example false
-                   */
-                  soldOut: boolean;
-                  /**
-                   * @description 옵션형태
-                   * @example PRODUCT_ONLY
-                   * @enum {string}
-                   */
-                  optionType: "PRODUCT_ONLY: 옵션없음" | "NORMAL_OPTION: 일반옵션" | "ADDITIONAL_PRODUCT: 추가옵션";
-                  /**
-                   * @description 구매확정 시 회원에 대한 적립률(회원등급/그룹 중 큰 값)
-                   * @example 0
-                   */
-                  accumulationRateForMemberWhenBuyConfirm: number;
-                  /**
-                   * @description 구매확정 시 상품에 대한 적립률
-                   * @example 0
-                   */
-                  accumulationRateForProductWhenBuyConfirm: number;
-                  /**
-                   * @description 구매확정 시 상품에 대한 적립금
-                   * @example 0
-                   */
-                  accumulationAmtForProductWhenBuyConfirm: number;
-                  /** @description 가격 정보 */
-                  price: {
-                    /** @description 구매금액(구매가 * 주문수량) */
-                    buyAmt: number;
-                    /**
-                     * @description 추가할인 금액
-                     * @example 0
-                     */
-                    additionalDiscountAmt: number;
-                    /**
-                     * @description 즉시할인 금액
-                     * @example 0
-                     */
-                    immediateDiscountAmt: number;
-                    /**
-                     * @description 상품판매가
-                     * @example 100
-                     */
-                    salePrice: number;
-                    /**
-                     * @description 정상금액(상품판매가 + 옵션추가금액) * 주문수량
-                     * @example 1000
-                     */
-                    standardAmt: number;
-                    /**
-                     * @description 옵션가격(추가금액)
-                     * @example 0
-                     */
-                    addPrice: number;
-                  };
-                  /**
-                   * @description 상품 이미지 URL
-                   * @example http://image.url
-                   */
-                  imageUrl: string;
-                  /** @description 세트옵션 */
-                  setOptions: {
-                      /**
-                       * @description 옵션사용여부 (true: 사용, false: 미사용)
-                       * @example true
-                       */
-                      usesOption: boolean;
-                      /**
-                       * @description 옵션번호
-                       * @example 1258932
-                       */
-                      mallOptionNo: number;
-                      /**
-                       * @description 상품관리코드 (nullable)
-                       * @example 1231
-                       */
-                      productManagementCd?: string;
-                      /**
-                       * @description 옵션값
-                       * @example 105
-                       */
-                      optionValue: string;
-                      /**
-                       * @description 구매수
-                       * @example 1
-                       */
-                      count: number;
-                      /**
-                       * @description 옵션가격
-                       * @example 1000
-                       */
-                      optionPrice: number;
-                      /**
-                       * @description sku (nullable)
-                       * @example 1231
-                       */
-                      sku?: string;
-                      /**
-                       * @description 옵션명
-                       * @example 사이즈
-                       */
-                      optionName: string;
-                      /**
-                       * @description 판매자 관리코드 (nullable)
-                       * @example option cd
-                       */
-                      optionManagementCd?: string;
-                      /**
-                       * @description 상품번호
-                       * @example 100398947
-                       */
-                      mallProductNo: number;
-                      /**
-                       * @description 재고번호
-                       * @example 1
-                       */
-                      stockNo: number;
-                      /**
-                       * @description 상품명
-                       * @example 상품1
-                       */
-                      productName: string;
-                    }[];
-                  /**
-                   * @description 예약주문여부 (true: 예약주문상품, false: 일반상품)
-                   * @example false
-                   */
-                  reservation: boolean;
-                  /**
-                   * @description 재고 개수
-                   * @example 100
-                   */
-                  stockCnt: number;
-                  /**
-                   * @description 옵션번호
-                   * @example 1258932
-                   */
-                  optionNo: number;
-                  /**
-                   * @description 옵션명
-                   * @example 사이즈
-                   */
-                  optionName: string;
-                  /**
-                   * @description 판매자 관리코드 (nullable)
-                   * @example option cd
-                   */
-                  optionManagementCd?: string;
-                  /**
-                   * @description 장바구니 번호
-                   * @example 12121212
-                   */
-                  cartNo: number;
-                  /**
-                   * @description 상품번호
-                   * @example 100398947
-                   */
-                  productNo: number;
-                  /**
-                   * @description 구매확정 시 회원에 대한 적립금(회원등급/그룹 중 큰 값)
-                   * @example 0
-                   */
-                  accumulationAmtForMemberWhenBuyConfirm: number;
-                })[];
-              /** @description 배송 예정일 */
-              deliveryDate: {
-                /** @description 기간 */
-                period: {
-                  /**
-                   * @description 배송일지정 가능한 시작일
-                   * @example YYYY-MM-DD hh:mm:ss
-                   */
-                  startYmdt: string;
-                  /**
-                   * @description 배송일지정 가능한 종료일
-                   * @example YYYY-MM-DD hh:mm:ss
-                   */
-                  endYmdt: string;
-                };
-                /**
-                 * @description 요일
-                 * @example [MON]
-                 */
-                daysOfWeek: ("SUN: 일" | "MON: 월" | "TUE: 화" | "WED: 수" | "THU: 목" | "FRI: 금" | "SAT: 토")[];
-                /**
-                 * @description 주문일 기준
-                 * @example 5
-                 */
-                daysAfterPurchase: number;
-              };
-              /**
-               * @description 전시 카테고리 번호 목록
-               * @example [1, 2, 3]
-               */
-              categoryNos: (Record<string, never> | boolean | string | number)[];
-              /**
-               * @description 브랜드 번호
-               * @example 12
-               */
-              brandNo: number;
-              /**
-               * @description 해외배송여부
-               * @example false
-               */
-              deliveryInternational: boolean;
-              /**
-               * @description 상품번호
-               * @example 100398947
-               */
-              productNo: number;
-            })[];
-        })[];
-      /** @description 개인정보 사용 파트너 */
-      sellerPrivacyUsagePartners: {
-          /**
-           * @description 파트너명
-           * @example NCP
-           */
-          partnerName: string;
-        }[];
-      /** @description 적용된 쿠폰 (nullable) */
-      appliedCoupons?: {
-        /** @description 상품 쿠폰 (nullable) */
-        productCoupons?: {
+            }[];
             /**
-             * @description 쿠폰 발급 번호
-             * @example 1415130
+             * @description 예약주문여부 (true: 예약주문상품, false: 일반상품)
+             * @example false
              */
-            couponIssueNo: number;
+            reservation: boolean;
+            /**
+             * @description 재고 개수
+             * @example 100
+             */
+            stockCnt: number;
+            /**
+             * @description 옵션번호
+             * @example 1258932
+             */
+            optionNo: number;
+            /**
+             * @description 옵션명
+             * @example 사이즈
+             */
+            optionName: string;
+            /**
+             * @description 판매자 관리코드 (nullable)
+             * @example option cd
+             */
+            optionManagementCd?: string;
+            /**
+             * @description 장바구니 번호
+             * @example 12121212
+             */
+            cartNo: number;
             /**
              * @description 상품번호
              * @example 100398947
              */
             productNo: number;
+            /**
+             * @description 구매확정 시 회원에 대한 적립금(회원등급/그룹 중 큰 값)
+             * @example 0
+             */
+            accumulationAmtForMemberWhenBuyConfirm: number;
           }[];
+          /** @description 배송 예정일 */
+          deliveryDate: {
+            /** @description 기간 */
+            period: {
+              /**
+               * @description 배송일지정 가능한 시작일
+               * @example YYYY-MM-DD hh:mm:ss
+               */
+              startYmdt: string;
+              /**
+               * @description 배송일지정 가능한 종료일
+               * @example YYYY-MM-DD hh:mm:ss
+               */
+              endYmdt: string;
+            };
+            /**
+             * @description 요일
+             * @example [MON]
+             */
+            daysOfWeek: (
+              | 'SUN'
+              | 'MON'
+              | 'TUE'
+              | 'WED'
+              | 'THU'
+              | 'FRI'
+              | 'SAT'
+            )[];
+            /**
+             * @description 주문일 기준
+             * @example 5
+             */
+            daysAfterPurchase: number;
+          };
+          /**
+           * @description 전시 카테고리 번호 목록
+           * @example [1, 2, 3]
+           */
+          categoryNos: (Record<string, never> | boolean | string | number)[];
+          /**
+           * @description 브랜드 번호
+           * @example 12
+           */
+          brandNo: number;
+          /**
+           * @description 해외배송여부
+           * @example false
+           */
+          deliveryInternational: boolean;
+          /**
+           * @description 상품번호
+           * @example 100398947
+           */
+          productNo: number;
+        }[];
+      }[];
+      /** @description 개인정보 사용 파트너 */
+      sellerPrivacyUsagePartners: {
+        /**
+         * @description 파트너명
+         * @example NCP
+         */
+        partnerName: string;
+      }[];
+      /** @description 적용된 쿠폰 (nullable) */
+      appliedCoupons?: {
+        /** @description 상품 쿠폰 (nullable) */
+        productCoupons?: {
+          /**
+           * @description 쿠폰 발급 번호
+           * @example 1415130
+           */
+          couponIssueNo: number;
+          /**
+           * @description 상품번호
+           * @example 100398947
+           */
+          productNo: number;
+        }[];
         /**
          * @description 장바구니 쿠폰 발행 번호
          * @example 12121212
@@ -5126,98 +6197,160 @@ export interface components {
         promotionCode: string;
       };
       /** @description 사용가능한 결제정보 <br> 쇼핑몰에서 다양한 PG사와 계약해서 결제수단을 제공할 수 있기 때문에, payType을 기준으로 pgTypes를 내려주고 있으니 프론트에서 구현 시 내려온 pgTypes에 따라 결제모듈을 제공할 수 있습니다. */
-      availablePayTypes: ({
-          /**
-           * @description 사용 가능한 결제수단
-           * @example CREDIT_CARD
-           * @enum {string}
-           */
-          payType: "CREDIT_CARD: Credit Card" | "ACCOUNT: Deposit without bankbook" | "MOBILE: Mobile payment" | "REALTIME_ACCOUNT_TRANSFER: Real-time bank transfer" | "VIRTUAL_ACCOUNT: Virtual account" | "GIFT: Gift card" | "ATM: ATM" | "PAYCO: PAYCO" | "ZERO_PAY: Zero payment" | "ACCUMULATION: Accumulation" | "PHONE_BILL: Phone payment" | "POINT: Point payment" | "YPAY: Yello Pay" | "KPAY: K Pay" | "PAYPIN: Paypin" | "INIPAY: INIPay" | "PAYPAL: PAYPAL" | "STRIPE: STRIPE" | "NAVER_PAY: Naver Pay" | "KAKAO_PAY: Kakao Pay" | "NAVER_EASY_PAY: Naver Pay" | "SAMSUNG_PAY: Samsung Pay" | "CHAI: Chai" | "TOSS_PAY: Toss Pay" | "SK_PAY: SK Pay" | "APPLE_PAY: Apple Pay" | "LPAY: L Pay" | "ESCROW_REALTIME_ACCOUNT_TRANSFER: Real-time bank transfer - Escrow" | "ESCROW_VIRTUAL_ACCOUNT: Virtual account - Escrow" | "RENTAL: Rental payment" | "VERITRANS_CARD: Veritrans CreditCard" | "TOASTCAM: ToastCam" | "UNION_PAY: UnionPay" | "ALIPAY: AliPay Plus" | "WECHAT_PAY: WeChat Pay" | "ETC: Other payment methods";
-          /**
-           * @description 외부 PG사
-           * @example KCP,PAYCO
-           */
-          pgTypes: ("DUMMY: None" | "PAYCO: Payco" | "PAYPAL: PayPal" | "STRIPE: STRIPE" | "KCP: KCP" | "INICIS: INICIS" | "NONE: None" | "KCP_MOBILE: KCP(Mobile)" | "KCP_APP: KCP(App)" | "NAVER_PAY: Naver Pay" | "LIIVMATE: Liivmate" | "PAYPALPRO: PAYPAL PRO" | "ATHOR_NET: AthorizeNet" | "KAKAO_PAY: Kakao Pay" | "NAVER_EASY_PAY: Naver Pay" | "LG_U_PLUS: Toss Payments" | "TOSS_PAYMENTS: Toss Payments" | "CHAI: Chai" | "SMARTRO_PAY: Smartro Pay" | "NICEPAY: Nice Pay" | "MY_PAY: MyPay" | "EXIMBAY_GLOBAL: Eximbay(Global)" | "EASY_PAY: Easy Pay" | "GALAXIA_MONEY_TREE: Galaxia Money Tree" | "VERITRANS: Veritrans")[];
-          /**
-           * @description payType 이름
-           * @example 신용카드
-           */
-          payTypeLabel: string;
-        })[];
+      availablePayTypes: {
+        /**
+         * @description 사용 가능한 결제수단
+         * @example CREDIT_CARD
+         * @enum {string}
+         */
+        payType:
+          | 'CREDIT_CARD'
+          | 'ACCOUNT'
+          | 'MOBILE'
+          | 'REALTIME_ACCOUNT_TRANSFER'
+          | 'VIRTUAL_ACCOUNT'
+          | 'GIFT'
+          | 'ATM'
+          | 'PAYCO'
+          | 'ZERO_PAY'
+          | 'ACCUMULATION'
+          | 'PHONE_BILL'
+          | 'POINT'
+          | 'YPAY'
+          | 'KPAY'
+          | 'PAYPIN'
+          | 'INIPAY'
+          | 'PAYPAL'
+          | 'STRIPE'
+          | 'NAVER_PAY'
+          | 'KAKAO_PAY'
+          | 'NAVER_EASY_PAY'
+          | 'SAMSUNG_PAY'
+          | 'CHAI'
+          | 'TOSS_PAY'
+          | 'SK_PAY'
+          | 'APPLE_PAY'
+          | 'LPAY'
+          | 'ESCROW_REALTIME_ACCOUNT_TRANSFER'
+          | 'ESCROW_VIRTUAL_ACCOUNT'
+          | 'RENTAL'
+          | 'VERITRANS_CARD'
+          | 'TOASTCAM'
+          | 'UNION_PAY'
+          | 'ALIPAY'
+          | 'WECHAT_PAY'
+          | 'ETC';
+        /**
+         * @description 외부 PG사
+         * @example KCP,PAYCO
+         */
+        pgTypes: (
+          | 'DUMMY'
+          | 'PAYCO'
+          | 'PAYPAL'
+          | 'STRIPE'
+          | 'KCP'
+          | 'INICIS'
+          | 'NONE'
+          | 'KCP_MOBILE'
+          | 'KCP_APP'
+          | 'NAVER_PAY'
+          | 'LIIVMATE'
+          | 'PAYPALPRO'
+          | 'ATHOR_NET'
+          | 'KAKAO_PAY'
+          | 'NAVER_EASY_PAY'
+          | 'LG_U_PLUS'
+          | 'TOSS_PAYMENTS'
+          | 'CHAI'
+          | 'SMARTRO_PAY'
+          | 'NICEPAY'
+          | 'MY_PAY'
+          | 'EXIMBAY_GLOBAL'
+          | 'EASY_PAY'
+          | 'GALAXIA_MONEY_TREE'
+          | 'VERITRANS'
+        )[];
+        /**
+         * @description payType 이름
+         * @example 신용카드
+         */
+        payTypeLabel: string;
+      }[];
       /** @description 거래은행 정보 */
       tradeBankAccountInfos: {
-          /**
-           * @description 계좌번호
-           * @example 12121212
-           */
-          bankAccount: string;
-          /**
-           * @description 은행 코드
-           * @example 002
-           */
-          bankCode: string;
-          /**
-           * @description 예금주명
-           * @example 홍길동
-           */
-          bankDepositorName: string;
-          /**
-           * @description 은행명
-           * @example 산업은행
-           */
-          bankName: string;
-        }[];
+        /**
+         * @description 계좌번호
+         * @example 12121212
+         */
+        bankAccount: string;
+        /**
+         * @description 은행 코드
+         * @example 002
+         */
+        bankCode: string;
+        /**
+         * @description 예금주명
+         * @example 홍길동
+         */
+        bankDepositorName: string;
+        /**
+         * @description 은행명
+         * @example 산업은행
+         */
+        bankName: string;
+      }[];
       /** @description 유효하지 않은 상품 (nullable) */
       invalidProducts?: (Record<string, never> | boolean | string | number)[];
       freeGiftInfos?: {
-          freeGifts?: {
-              /**
-               * @description 옵션번호
-               * @example 1258932
-               */
-              mallOptionNo: number;
-              /**
-               * @description 옵션값
-               * @example 105
-               */
-              optionValue: string;
-              /**
-               * @description 옵션명
-               * @example 사이즈
-               */
-              optionName: string;
-              /**
-               * @description 상품번호
-               * @example 100398947
-               */
-              mallProductNo: number;
-              /**
-               * @description 상품 이미지 URL
-               * @example //rlyfaazj0.cdn.toastcloud.com/SERVICE/20190306/3_add_image.png
-               */
-              mallProductMainImageUrl: string;
-              /**
-               * @description 상품명
-               * @example 상품1
-               */
-              productName: string;
-            }[];
+        freeGifts?: {
           /**
-           * @description 지급 시작 일시
-           * @example "2022-01-01T00:00:00.000Z"
+           * @description 옵션번호
+           * @example 1258932
            */
-          giveStartYmdt: string;
+          mallOptionNo: number;
           /**
-           * @description 지급 종료 일시
-           * @example "2022-01-31T23:59:59.000Z"
+           * @description 옵션값
+           * @example 105
            */
-          giveEndYmdt: string;
+          optionValue: string;
           /**
-           * @description 지급조건명
-           * @example 지급조건명
+           * @description 옵션명
+           * @example 사이즈
            */
-          giveConditionName: string;
+          optionName: string;
+          /**
+           * @description 상품번호
+           * @example 100398947
+           */
+          mallProductNo: number;
+          /**
+           * @description 상품 이미지 URL
+           * @example //rlyfaazj0.cdn.toastcloud.com/SERVICE/20190306/3_add_image.png
+           */
+          mallProductMainImageUrl: string;
+          /**
+           * @description 상품명
+           * @example 상품1
+           */
+          productName: string;
         }[];
+        /**
+         * @description 지급 시작 일시
+         * @example "2022-01-01T00:00:00.000Z"
+         */
+        giveStartYmdt: string;
+        /**
+         * @description 지급 종료 일시
+         * @example "2022-01-31T23:59:59.000Z"
+         */
+        giveEndYmdt: string;
+        /**
+         * @description 지급조건명
+         * @example 지급조건명
+         */
+        giveConditionName: string;
+      }[];
       /** @description 주문자 연락처 (nullable) */
       ordererContact?: {
         /**
@@ -5245,7 +6378,18 @@ export interface components {
        * @description 필수동의항목
        * @example TERMS_OF_USE
        */
-      agreementTypes: ("TERMS_OF_USE: 이용약관" | "PRIVACY_USAGE_AGREEMENT: 개인정보 이용동의" | "NONE_MEMBER_PRIVACY_USAGE_AGREEMENT: 비회원 개인정보 수집 · 이용 동의" | "SELLER_PRIVACY_USAGE_AGREEMENT: 개인정보 판매자 제공 동의" | "CUSTOMS_CLEARANCE_AGREEMENT: 통관정보 수집 · 이용 동의" | "OVERSEA_PRIVACY_USAGE_AGREEMENT: 개인정보 국외 이전 동의" | "ORDER_INFO_AGREE: 주문 상품 정보 동의" | "PI_LIQUOR_PURCHASE_PROVISION: 주류구매 개인정보 제공 동의" | "REGULAR_PAYMENT_USE: 정기결제(배송) 이용약관" | "AUTO_APPROVAL_USE: 자동 승인 이용약관")[];
+      agreementTypes: (
+        | 'TERMS_OF_USE'
+        | 'PRIVACY_USAGE_AGREEMENT'
+        | 'NONE_MEMBER_PRIVACY_USAGE_AGREEMENT'
+        | 'SELLER_PRIVACY_USAGE_AGREEMENT'
+        | 'CUSTOMS_CLEARANCE_AGREEMENT'
+        | 'OVERSEA_PRIVACY_USAGE_AGREEMENT'
+        | 'ORDER_INFO_AGREE'
+        | 'PI_LIQUOR_PURCHASE_PROVISION'
+        | 'REGULAR_PAYMENT_USE'
+        | 'AUTO_APPROVAL_USE'
+      )[];
       /**
        * @description 개인통관고유부호필요여부 (true: 필요, false: 불필요)
        * @example false
@@ -5255,13 +6399,54 @@ export interface components {
        * @description 배송 불가능한 국가 목록 (ISO 3166-1 alpha-2)
        * @example [KR, CN, JP]
        */
-      undeliverableCountries: (Record<string, never> | boolean | string | number)[];
+      undeliverableCountries: (
+        | Record<string, never>
+        | boolean
+        | string
+        | number
+      )[];
       /**
        * @description 최근사용한 결제수단
        * @example CREDIT_CARD
        * @enum {string}
        */
-      lastPayType: "CREDIT_CARD: Credit Card" | "ACCOUNT: Deposit without bankbook" | "MOBILE: Mobile payment" | "REALTIME_ACCOUNT_TRANSFER: Real-time bank transfer" | "VIRTUAL_ACCOUNT: Virtual account" | "GIFT: Gift card" | "ATM: ATM" | "PAYCO: PAYCO" | "ZERO_PAY: Zero payment" | "ACCUMULATION: Accumulation" | "PHONE_BILL: Phone payment" | "POINT: Point payment" | "YPAY: Yello Pay" | "KPAY: K Pay" | "PAYPIN: Paypin" | "INIPAY: INIPay" | "PAYPAL: PAYPAL" | "STRIPE: STRIPE" | "NAVER_PAY: Naver Pay" | "KAKAO_PAY: Kakao Pay" | "NAVER_EASY_PAY: Naver Pay" | "SAMSUNG_PAY: Samsung Pay" | "CHAI: Chai" | "TOSS_PAY: Toss Pay" | "SK_PAY: SK Pay" | "APPLE_PAY: Apple Pay" | "LPAY: L Pay" | "ESCROW_REALTIME_ACCOUNT_TRANSFER: Real-time bank transfer - Escrow" | "ESCROW_VIRTUAL_ACCOUNT: Virtual account - Escrow" | "RENTAL: Rental payment" | "VERITRANS_CARD: Veritrans CreditCard" | "TOASTCAM: ToastCam" | "UNION_PAY: UnionPay" | "ALIPAY: AliPay Plus" | "WECHAT_PAY: WeChat Pay" | "ETC: Other payment methods";
+      lastPayType:
+        | 'CREDIT_CARD'
+        | 'ACCOUNT'
+        | 'MOBILE'
+        | 'REALTIME_ACCOUNT_TRANSFER'
+        | 'VIRTUAL_ACCOUNT'
+        | 'GIFT'
+        | 'ATM'
+        | 'PAYCO'
+        | 'ZERO_PAY'
+        | 'ACCUMULATION'
+        | 'PHONE_BILL'
+        | 'POINT'
+        | 'YPAY'
+        | 'KPAY'
+        | 'PAYPIN'
+        | 'INIPAY'
+        | 'PAYPAL'
+        | 'STRIPE'
+        | 'NAVER_PAY'
+        | 'KAKAO_PAY'
+        | 'NAVER_EASY_PAY'
+        | 'SAMSUNG_PAY'
+        | 'CHAI'
+        | 'TOSS_PAY'
+        | 'SK_PAY'
+        | 'APPLE_PAY'
+        | 'LPAY'
+        | 'ESCROW_REALTIME_ACCOUNT_TRANSFER'
+        | 'ESCROW_VIRTUAL_ACCOUNT'
+        | 'RENTAL'
+        | 'VERITRANS_CARD'
+        | 'TOASTCAM'
+        | 'UNION_PAY'
+        | 'ALIPAY'
+        | 'WECHAT_PAY'
+        | 'ETC';
       /** @description 프로모션 정보 요약 (nullable) */
       orderSheetPromotionSummary?: {
         /**
@@ -5286,47 +6471,57 @@ export interface components {
        */
       applyCashReceiptForAccount: boolean;
       /** @description 필수 약관 동의 항목 리스트 */
-      termsInfos: ({
-          /** @description 약관 내용 */
-          contents: string;
-          /** @description 약관명 */
-          termsName: string;
-          /**
-           * @description 필수 약관 항목
-           * @example USE
-           * @enum {string}
-           */
-          termsType: "USE: 이용약관" | "PI_COLLECTION_AND_USE_ON_ORDER: 개인정보 이용동의" | "PI_SELLER_PROVISION: 개인정보 판매자 제공 동의" | "CLEARANCE_INFO_COLLECTION_AND_USE: 통관정보 수집 · 이용 동의" | "TRANSFER_AGREE: 개인정보 국외 이전 동의" | "ORDER_INFO_AGREE: 주문 상품 정보 동의" | "PI_LIQUOR_PURCHASE_PROVISION: 주류구매 개인정보 제공 동의" | "REGULAR_PAYMENT_USE: 정기결제(배송) 이용약관" | "AUTO_APPROVAL_USE: 자동 승인 이용약관" | "ORDER_DEFAULT: 주문 기본 동의";
-          /**
-           * @description 필수 여부
-           * @example true
-           */
-          required: boolean;
-          /**
-           * @description 필수 약관 번호
-           * @example 1
-           */
-          termsNo: number;
-        })[];
+      termsInfos: {
+        /** @description 약관 내용 */
+        contents: string;
+        /** @description 약관명 */
+        termsName: string;
+        /**
+         * @description 필수 약관 항목
+         * @example USE
+         * @enum {string}
+         */
+        termsType:
+          | 'USE'
+          | 'PI_COLLECTION_AND_USE_ON_ORDER'
+          | 'PI_SELLER_PROVISION'
+          | 'CLEARANCE_INFO_COLLECTION_AND_USE'
+          | 'TRANSFER_AGREE'
+          | 'ORDER_INFO_AGREE'
+          | 'PI_LIQUOR_PURCHASE_PROVISION'
+          | 'REGULAR_PAYMENT_USE'
+          | 'AUTO_APPROVAL_USE'
+          | 'ORDER_DEFAULT';
+        /**
+         * @description 필수 여부
+         * @example true
+         */
+        required: boolean;
+        /**
+         * @description 필수 약관 번호
+         * @example 1
+         */
+        termsNo: number;
+      }[];
       /** @description 추가 약관 동의 항목 리스트 */
       customTermsInfos: {
-          /** @description 약관 내용 */
-          contents: string;
-          /** @description 약관명 */
-          termsName: string;
-          /**
-           * @description 추가 약관 번호
-           * @example 1
-           */
-          customTermsNo: number;
-          /**
-           * @description 필수 여부
-           * @example true
-           */
-          required: boolean;
-          /** @description 약관 영문명 */
-          termsNameEng: string;
-        }[];
+        /** @description 약관 내용 */
+        contents: string;
+        /** @description 약관명 */
+        termsName: string;
+        /**
+         * @description 추가 약관 번호
+         * @example 1
+         */
+        customTermsNo: number;
+        /**
+         * @description 필수 여부
+         * @example true
+         */
+        required: boolean;
+        /** @description 약관 영문명 */
+        termsNameEng: string;
+      }[];
       myPayInfo?: {
         /**
          * @description 대표 색상 (3 또는 6자리의 16진수)
@@ -5375,95 +6570,180 @@ export interface components {
       /** @description 배송지 */
       orderSheetAddress: {
         /** @description 최근 배송지 */
-        recentAddresses: ({
+        recentAddresses: {
+          /**
+           * @description 배송지 지번(지역추가배송비계산 시 사용)
+           * @example 경기도 성남시 분당구 삼평동 629번지 NHN 플레이뮤지엄
+           */
+          receiverJibunAddress: string;
+          /**
+           * @description 수령자 명 (nullable)
+           * @example 홍길동
+           */
+          receiverName?: string;
+          /**
+           * @description 개인고유통관부호 (nullable)
+           * @example P12341234
+           */
+          customsIdNumber?: string;
+          /**
+           * @description 국가코드
+           * @example KR
+           * @enum {string}
+           */
+          countryCd:
+            | 'AX'
+            | 'AD'
+            | 'AU'
+            | 'AT'
+            | 'BH'
+            | 'BE'
+            | 'BZ'
+            | 'BR'
+            | 'BN'
+            | 'BG'
+            | 'CA'
+            | 'ES_CANARY'
+            | 'CL'
+            | 'CN'
+            | 'CO'
+            | 'CR'
+            | 'CY'
+            | 'CZ'
+            | 'DK'
+            | 'EC'
+            | 'EG'
+            | 'SV'
+            | 'EE'
+            | 'FR'
+            | 'GF'
+            | 'DE'
+            | 'GR'
+            | 'GL'
+            | 'GU'
+            | 'GT'
+            | 'GG'
+            | 'GY'
+            | 'HK'
+            | 'HU'
+            | 'IS'
+            | 'ID'
+            | 'IE'
+            | 'IL'
+            | 'IT'
+            | 'JP'
+            | 'JE'
+            | 'JO'
+            | 'KR'
+            | 'KW'
+            | 'LV'
+            | 'LB'
+            | 'LI'
+            | 'LT'
+            | 'LU'
+            | 'MO'
+            | 'PT_MADEIRA'
+            | 'MY'
+            | 'NL'
+            | 'NZ'
+            | 'GB_NORTHERN_ISLAND'
+            | 'NO'
+            | 'PY'
+            | 'PE'
+            | 'PL'
+            | 'PT'
+            | 'RO'
+            | 'RU'
+            | 'SM'
+            | 'SA'
+            | 'GB_SCOTLAND'
+            | 'SG'
+            | 'SK'
+            | 'SI'
+            | 'ES'
+            | 'CH'
+            | 'TW'
+            | 'TH'
+            | 'TR'
+            | 'AE'
+            | 'GB'
+            | 'US'
+            | 'U2'
+            | 'UY'
+            | 'VN'
+            | 'GB_WALES'
+            | 'YE'
+            | 'HR'
+            | 'MT'
+            | 'FI'
+            | 'SE';
+          /**
+           * @description 배송지 우편 번호
+           * @example 13487
+           */
+          receiverZipCd: string;
+          /**
+           * @description 배송지 상세 주소
+           * @example 16 NHN 플레이뮤지엄
+           */
+          receiverDetailAddress: string;
+          /**
+           * @description (해외) 도시 (nullable)
+           * @example null
+           */
+          receiverCity?: string;
+          /**
+           * @description 배송지 주소
+           * @example 경기도 성남시 분당구 대왕판교로645번길 12
+           */
+          receiverAddress: string;
+          /**
+           * @description 해외배송지 기타정보 (nullable)
+           * @example null
+           */
+          shippingEtcInfo?: {
             /**
-             * @description 배송지 지번(지역추가배송비계산 시 사용)
-             * @example 경기도 성남시 분당구 삼평동 629번지 NHN 플레이뮤지엄
-             */
-            receiverJibunAddress: string;
-            /**
-             * @description 수령자 명 (nullable)
-             * @example 홍길동
-             */
-            receiverName?: string;
-            /**
-             * @description 개인고유통관부호 (nullable)
-             * @example P12341234
-             */
-            customsIdNumber?: string;
-            /**
-             * @description 국가코드
-             * @example KR
-             * @enum {string}
-             */
-            countryCd: "AX: Åland Islands" | "AD: Andorra" | "AU: Australia" | "AT: Austria" | "BH: Bahrain" | "BE: Belgium" | "BZ: Belize" | "BR: Brazil" | "BN: Brunei" | "BG: Bulgaria" | "CA: Canada" | "ES_CANARY: Spain" | "CL: Chile" | "CN: China" | "CO: Colombia" | "CR: Costa Rica" | "CY: Cyprus" | "CZ: Czech Republic" | "DK: Denmark" | "EC: Ecuador" | "EG: Egypt" | "SV: El Salvador" | "EE: Estonia" | "FR: France" | "GF: French Guiana" | "DE: Germany" | "GR: Greece" | "GL: Denmark" | "GU: Guam" | "GT: Guatemala" | "GG: Guernsey" | "GY: Guyana" | "HK: Hong Kong" | "HU: Hungary" | "IS: Iceland" | "ID: Indonesia" | "IE: Ireland" | "IL: Israel" | "IT: Italy" | "JP: Japan" | "JE: Jersey" | "JO: Jordan" | "KR: South Korea" | "KW: Kuwait" | "LV: Latvia" | "LB: Lebanon" | "LI: Liechtenstein" | "LT: Lithuania" | "LU: Luxembourg" | "MO: Macau" | "PT_MADEIRA: Portugal" | "MY: Malaysia" | "NL: Netherlands" | "NZ: New Zealand" | "GB_NORTHERN_ISLAND: United Kingdom" | "NO: Norway" | "PY: Paraguay" | "PE: Peru" | "PL: Poland" | "PT: Portugal" | "RO: Romania" | "RU: Russia" | "SM: San Marino" | "SA: Saudi Arabia" | "GB_SCOTLAND: United Kingdom" | "SG: Singapore" | "SK: Slovakia" | "SI: Slovenia" | "ES: Spain" | "CH: Switzerland" | "TW: Taiwan" | "TH: Thailand" | "TR: Turkey" | "AE: United Arab Emirates" | "GB: United Kingdom" | "US: United States (Mainland)" | "U2: United States (Mainland)" | "UY: Uruguay" | "VN: Vietnam" | "GB_WALES: United Kingdom" | "YE: Yemen" | "HR: Croatia" | "MT: Malta" | "FI: Finland" | "SE: Sweden";
-            /**
-             * @description 배송지 우편 번호
-             * @example 13487
-             */
-            receiverZipCd: string;
-            /**
-             * @description 배송지 상세 주소
-             * @example 16 NHN 플레이뮤지엄
-             */
-            receiverDetailAddress: string;
-            /**
-             * @description (해외) 도시 (nullable)
+             * @description 수령인 LastName (nullable)
              * @example null
              */
-            receiverCity?: string;
+            receiverLastName?: string;
             /**
-             * @description 배송지 주소
-             * @example 경기도 성남시 분당구 대왕판교로645번길 12
+             * @description 주문 추가 정보 (nullable)
+             * @example 여권번호 : M0123456789
              */
-            receiverAddress: string;
+            orderAdditionalInfo?: string;
             /**
-             * @description 해외배송지 기타정보 (nullable)
+             * @description (해외배송 / 글로벌결제 시 필수) 수령인 FirstName (nullable)
              * @example null
              */
-            shippingEtcInfo?: {
-              /**
-               * @description 수령인 LastName (nullable)
-               * @example null
-               */
-              receiverLastName?: string;
-              /**
-               * @description 주문 추가 정보 (nullable)
-               * @example 여권번호 : M0123456789
-               */
-              orderAdditionalInfo?: string;
-              /**
-               * @description (해외배송 / 글로벌결제 시 필수) 수령인 FirstName (nullable)
-               * @example null
-               */
-              receiverFirstName?: string;
-            };
-            /**
-             * @description 배송지 번호(0:신규, 0이상:이전배송지)
-             * @example 1
-             */
-            addressNo: number;
-            /**
-             * @description (해외) 주 (nullable)
-             * @example null
-             */
-            receiverState?: string;
-            /**
-             * @description 주소록명 (nullable)
-             * @example 홍길동집
-             */
-            addressName?: string;
-            /**
-             * @description 연락처1
-             * @example 010-0000-0000
-             */
-            receiverContact1: string;
-            /**
-             * @description 연락처2
-             * @example 010-0000-0000
-             */
-            receiverContact2: string;
-          })[];
+            receiverFirstName?: string;
+          };
+          /**
+           * @description 배송지 번호(0:신규, 0이상:이전배송지)
+           * @example 1
+           */
+          addressNo: number;
+          /**
+           * @description (해외) 주 (nullable)
+           * @example null
+           */
+          receiverState?: string;
+          /**
+           * @description 주소록명 (nullable)
+           * @example 홍길동집
+           */
+          addressName?: string;
+          /**
+           * @description 연락처1
+           * @example 010-0000-0000
+           */
+          receiverContact1: string;
+          /**
+           * @description 연락처2
+           * @example 010-0000-0000
+           */
+          receiverContact2: string;
+        }[];
         /**
          * @description 최근 배송 메시지 (nullable)
          * @example 빠른 배송 부탁합니다.
@@ -5550,7 +6830,92 @@ export interface components {
            * @example KR
            * @enum {string}
            */
-          countryCd: "AX: Åland Islands" | "AD: Andorra" | "AU: Australia" | "AT: Austria" | "BH: Bahrain" | "BE: Belgium" | "BZ: Belize" | "BR: Brazil" | "BN: Brunei" | "BG: Bulgaria" | "CA: Canada" | "ES_CANARY: Spain" | "CL: Chile" | "CN: China" | "CO: Colombia" | "CR: Costa Rica" | "CY: Cyprus" | "CZ: Czech Republic" | "DK: Denmark" | "EC: Ecuador" | "EG: Egypt" | "SV: El Salvador" | "EE: Estonia" | "FR: France" | "GF: French Guiana" | "DE: Germany" | "GR: Greece" | "GL: Denmark" | "GU: Guam" | "GT: Guatemala" | "GG: Guernsey" | "GY: Guyana" | "HK: Hong Kong" | "HU: Hungary" | "IS: Iceland" | "ID: Indonesia" | "IE: Ireland" | "IL: Israel" | "IT: Italy" | "JP: Japan" | "JE: Jersey" | "JO: Jordan" | "KR: South Korea" | "KW: Kuwait" | "LV: Latvia" | "LB: Lebanon" | "LI: Liechtenstein" | "LT: Lithuania" | "LU: Luxembourg" | "MO: Macau" | "PT_MADEIRA: Portugal" | "MY: Malaysia" | "NL: Netherlands" | "NZ: New Zealand" | "GB_NORTHERN_ISLAND: United Kingdom" | "NO: Norway" | "PY: Paraguay" | "PE: Peru" | "PL: Poland" | "PT: Portugal" | "RO: Romania" | "RU: Russia" | "SM: San Marino" | "SA: Saudi Arabia" | "GB_SCOTLAND: United Kingdom" | "SG: Singapore" | "SK: Slovakia" | "SI: Slovenia" | "ES: Spain" | "CH: Switzerland" | "TW: Taiwan" | "TH: Thailand" | "TR: Turkey" | "AE: United Arab Emirates" | "GB: United Kingdom" | "US: United States (Mainland)" | "U2: United States (Mainland)" | "UY: Uruguay" | "VN: Vietnam" | "GB_WALES: United Kingdom" | "YE: Yemen" | "HR: Croatia" | "MT: Malta" | "FI: Finland" | "SE: Sweden";
+          countryCd:
+            | 'AX'
+            | 'AD'
+            | 'AU'
+            | 'AT'
+            | 'BH'
+            | 'BE'
+            | 'BZ'
+            | 'BR'
+            | 'BN'
+            | 'BG'
+            | 'CA'
+            | 'ES_CANARY'
+            | 'CL'
+            | 'CN'
+            | 'CO'
+            | 'CR'
+            | 'CY'
+            | 'CZ'
+            | 'DK'
+            | 'EC'
+            | 'EG'
+            | 'SV'
+            | 'EE'
+            | 'FR'
+            | 'GF'
+            | 'DE'
+            | 'GR'
+            | 'GL'
+            | 'GU'
+            | 'GT'
+            | 'GG'
+            | 'GY'
+            | 'HK'
+            | 'HU'
+            | 'IS'
+            | 'ID'
+            | 'IE'
+            | 'IL'
+            | 'IT'
+            | 'JP'
+            | 'JE'
+            | 'JO'
+            | 'KR'
+            | 'KW'
+            | 'LV'
+            | 'LB'
+            | 'LI'
+            | 'LT'
+            | 'LU'
+            | 'MO'
+            | 'PT_MADEIRA'
+            | 'MY'
+            | 'NL'
+            | 'NZ'
+            | 'GB_NORTHERN_ISLAND'
+            | 'NO'
+            | 'PY'
+            | 'PE'
+            | 'PL'
+            | 'PT'
+            | 'RO'
+            | 'RU'
+            | 'SM'
+            | 'SA'
+            | 'GB_SCOTLAND'
+            | 'SG'
+            | 'SK'
+            | 'SI'
+            | 'ES'
+            | 'CH'
+            | 'TW'
+            | 'TH'
+            | 'TR'
+            | 'AE'
+            | 'GB'
+            | 'US'
+            | 'U2'
+            | 'UY'
+            | 'VN'
+            | 'GB_WALES'
+            | 'YE'
+            | 'HR'
+            | 'MT'
+            | 'FI'
+            | 'SE';
           /**
            * @description 배송지 우편 번호
            * @example 13487
@@ -5725,31 +7090,116 @@ export interface components {
         totalStandardAmt: number;
       };
       /** @description 해외 파트너 */
-      foreignPartners: ({
-          /**
-           * @description 파트너명
-           * @example NCP
-           */
-          partnerName: string;
-          /**
-           * @description 개인정보관리책임자 연락처
-           * @example 010-1111-1111
-           */
-          privacyManagerPhoneNo: string;
-          /**
-           * @description 개인정보관리책임자 이름
-           * @example 김책임
-           */
-          privacyManagerName: string;
-          /**
-           * @description 국가코드
-           * @example KR
-           * @enum {string}
-           */
-          countryCd: "AX: Åland Islands" | "AD: Andorra" | "AU: Australia" | "AT: Austria" | "BH: Bahrain" | "BE: Belgium" | "BZ: Belize" | "BR: Brazil" | "BN: Brunei" | "BG: Bulgaria" | "CA: Canada" | "ES_CANARY: Spain" | "CL: Chile" | "CN: China" | "CO: Colombia" | "CR: Costa Rica" | "CY: Cyprus" | "CZ: Czech Republic" | "DK: Denmark" | "EC: Ecuador" | "EG: Egypt" | "SV: El Salvador" | "EE: Estonia" | "FR: France" | "GF: French Guiana" | "DE: Germany" | "GR: Greece" | "GL: Denmark" | "GU: Guam" | "GT: Guatemala" | "GG: Guernsey" | "GY: Guyana" | "HK: Hong Kong" | "HU: Hungary" | "IS: Iceland" | "ID: Indonesia" | "IE: Ireland" | "IL: Israel" | "IT: Italy" | "JP: Japan" | "JE: Jersey" | "JO: Jordan" | "KR: South Korea" | "KW: Kuwait" | "LV: Latvia" | "LB: Lebanon" | "LI: Liechtenstein" | "LT: Lithuania" | "LU: Luxembourg" | "MO: Macau" | "PT_MADEIRA: Portugal" | "MY: Malaysia" | "NL: Netherlands" | "NZ: New Zealand" | "GB_NORTHERN_ISLAND: United Kingdom" | "NO: Norway" | "PY: Paraguay" | "PE: Peru" | "PL: Poland" | "PT: Portugal" | "RO: Romania" | "RU: Russia" | "SM: San Marino" | "SA: Saudi Arabia" | "GB_SCOTLAND: United Kingdom" | "SG: Singapore" | "SK: Slovakia" | "SI: Slovenia" | "ES: Spain" | "CH: Switzerland" | "TW: Taiwan" | "TH: Thailand" | "TR: Turkey" | "AE: United Arab Emirates" | "GB: United Kingdom" | "US: United States (Mainland)" | "U2: United States (Mainland)" | "UY: Uruguay" | "VN: Vietnam" | "GB_WALES: United Kingdom" | "YE: Yemen" | "HR: Croatia" | "MT: Malta" | "FI: Finland" | "SE: Sweden";
-        })[];
+      foreignPartners: {
+        /**
+         * @description 파트너명
+         * @example NCP
+         */
+        partnerName: string;
+        /**
+         * @description 개인정보관리책임자 연락처
+         * @example 010-1111-1111
+         */
+        privacyManagerPhoneNo: string;
+        /**
+         * @description 개인정보관리책임자 이름
+         * @example 김책임
+         */
+        privacyManagerName: string;
+        /**
+         * @description 국가코드
+         * @example KR
+         * @enum {string}
+         */
+        countryCd:
+          | 'AX'
+          | 'AD'
+          | 'AU'
+          | 'AT'
+          | 'BH'
+          | 'BE'
+          | 'BZ'
+          | 'BR'
+          | 'BN'
+          | 'BG'
+          | 'CA'
+          | 'ES_CANARY'
+          | 'CL'
+          | 'CN'
+          | 'CO'
+          | 'CR'
+          | 'CY'
+          | 'CZ'
+          | 'DK'
+          | 'EC'
+          | 'EG'
+          | 'SV'
+          | 'EE'
+          | 'FR'
+          | 'GF'
+          | 'DE'
+          | 'GR'
+          | 'GL'
+          | 'GU'
+          | 'GT'
+          | 'GG'
+          | 'GY'
+          | 'HK'
+          | 'HU'
+          | 'IS'
+          | 'ID'
+          | 'IE'
+          | 'IL'
+          | 'IT'
+          | 'JP'
+          | 'JE'
+          | 'JO'
+          | 'KR'
+          | 'KW'
+          | 'LV'
+          | 'LB'
+          | 'LI'
+          | 'LT'
+          | 'LU'
+          | 'MO'
+          | 'PT_MADEIRA'
+          | 'MY'
+          | 'NL'
+          | 'NZ'
+          | 'GB_NORTHERN_ISLAND'
+          | 'NO'
+          | 'PY'
+          | 'PE'
+          | 'PL'
+          | 'PT'
+          | 'RO'
+          | 'RU'
+          | 'SM'
+          | 'SA'
+          | 'GB_SCOTLAND'
+          | 'SG'
+          | 'SK'
+          | 'SI'
+          | 'ES'
+          | 'CH'
+          | 'TW'
+          | 'TH'
+          | 'TR'
+          | 'AE'
+          | 'GB'
+          | 'US'
+          | 'U2'
+          | 'UY'
+          | 'VN'
+          | 'GB_WALES'
+          | 'YE'
+          | 'HR'
+          | 'MT'
+          | 'FI'
+          | 'SE';
+      }[];
     };
-    "profile-orders-summary-amount-1975758925": {
+    'profile-orders-summary-amount-1975758925': {
       /** @description 최종 결제 금액 */
       lastPayAmt: number;
       /** @description 최종 배송 금액 */
@@ -5773,7 +7223,7 @@ export interface components {
       /** @description 최종 주문 쿠폰 할인 금액 */
       lastCartCouponDiscountAmt: number;
     };
-    "unidentifiedDepositors-config792080057": {
+    'unidentifiedDepositors-config792080057': {
       /**
        * @description 입금 금액 숨김
        * @example false
@@ -5814,7 +7264,7 @@ export interface components {
        * @example NONE
        * @enum {string}
        */
-      bannerDisplayType: "ALL: 전부" | "PC: PC" | "MOBILE: 모바일" | "NONE: 없음";
+      bannerDisplayType: 'ALL' | 'PC' | 'MOBILE' | 'NONE';
       /**
        * @description 모바일웹 미확인 입금자 디자인 설정 - 메인 배너 이미지 url (nullable)
        * @example http://image.com/abc
@@ -5849,126 +7299,126 @@ export interface components {
     unidentifiedDepositors2122825748: {
       /** @description 미확인 입금자 목록 */
       contents: {
-          /**
-           * @description 입금일
-           * @example YYYY-MM-DD
-           */
-          depositYmd: string;
-          /**
-           * @description 미확인입금자번호
-           * @example 1
-           */
-          no: number;
-          /**
-           * @description 입금은행명
-           * @example 신한은행
-           */
-          bank: string;
-          /**
-           * @description 등록운영자
-           * @example 1
-           */
-          registerAdminNo: number;
-          /**
-           * @description 입금자명
-           * @example 윤범열
-           */
-          name: string;
-          /**
-           * @description 입금금액
-           * @example 1000
-           */
-          amt: string;
-          /**
-           * @description 등록일
-           * @example YYYY-MM-DD hh:mm:ss
-           */
-          registerYmdt: string;
-        }[];
+        /**
+         * @description 입금일
+         * @example YYYY-MM-DD
+         */
+        depositYmd: string;
+        /**
+         * @description 미확인입금자번호
+         * @example 1
+         */
+        no: number;
+        /**
+         * @description 입금은행명
+         * @example 신한은행
+         */
+        bank: string;
+        /**
+         * @description 등록운영자
+         * @example 1
+         */
+        registerAdminNo: number;
+        /**
+         * @description 입금자명
+         * @example 윤범열
+         */
+        name: string;
+        /**
+         * @description 입금금액
+         * @example 1000
+         */
+        amt: string;
+        /**
+         * @description 등록일
+         * @example YYYY-MM-DD hh:mm:ss
+         */
+        registerYmdt: string;
+      }[];
       /** @description 100 */
       totalCount: number;
     };
-    "order-sheets-orderSheetNo-coupons-maximum-441133280": {
+    'order-sheets-orderSheetNo-coupons-maximum-441133280': {
       /**
        * @description 외부 주문 유입 경로 (nullable)
        * @example PAYCO_MALL
        */
       channelType?: string;
     };
-    "profile-orders-orderNo-cashReceipt-2129761381": {
+    'profile-orders-orderNo-cashReceipt-2129761381': {
       /**
        * @description 신청 결과
        * @example ISSUE
        * @enum {string}
        */
-      resultType: "ISSUE: 발행완료" | "REQUEST_ONLY: 응답없음" | "FAIL: 실패";
+      resultType: 'ISSUE' | 'REQUEST_ONLY' | 'FAIL';
     };
-    "cart-coupons-maximum-961317083": {
+    'cart-coupons-maximum-961317083': {
       /** @description 최적 상품쿠폰 정보 */
       productCoupons: {
-          /** @description 상품쿠폰 할인금액 */
-          discountAmt: number;
-          /** @description 상품쿠폰 발급번호 */
-          productCouponIssueNo: number;
-          /** @description 상품쿠폰번호 */
-          productCouponNo: number;
-          /** @description 상품번호 */
-          mallProductNo: number;
-        }[];
+        /** @description 상품쿠폰 할인금액 */
+        discountAmt: number;
+        /** @description 상품쿠폰 발급번호 */
+        productCouponIssueNo: number;
+        /** @description 상품쿠폰번호 */
+        productCouponNo: number;
+        /** @description 상품번호 */
+        mallProductNo: number;
+      }[];
       /** @description 전체 할인 금액 */
       totalDiscountAmt: number;
       /** @description 최적 장바구니쿠폰 정보 */
       cartCoupons: {
-          /** @description 장바구니쿠폰 할인금액 */
-          discountAmt: number;
-          /** @description 장바구니쿠폰 발급번호 */
-          cartCouponIssueNo: number;
-          /** @description 장바구니쿠폰 번호 */
-          cartCouponNo: number;
-        }[];
+        /** @description 장바구니쿠폰 할인금액 */
+        discountAmt: number;
+        /** @description 장바구니쿠폰 발급번호 */
+        cartCouponIssueNo: number;
+        /** @description 장바구니쿠폰 번호 */
+        cartCouponNo: number;
+      }[];
     };
     /** @description 장바구니 목록 */
-    "guest-cart1944647664": {
+    'guest-cart1944647664': {
+      /**
+       * @description 유입채널 (nullable)
+       * @example NAVER_EP
+       */
+      channelType?: string;
+      /**
+       * @description 구매개수
+       * @example 1
+       */
+      orderCnt: number;
+      /** @description 구매자 입력형 옵션 */
+      optionInputs: {
         /**
-         * @description 유입채널 (nullable)
-         * @example NAVER_EP
+         * @description 구매자 작성형 입력 값 (nullable)
+         * @example 14호
          */
-        channelType?: string;
+        inputValue?: string;
         /**
-         * @description 구매개수
-         * @example 1
+         * @description 구매자 작성형 입력 이름 (nullable)
+         * @example 사이즈
          */
-        orderCnt: number;
-        /** @description 구매자 입력형 옵션 */
-        optionInputs: {
-            /**
-             * @description 구매자 작성형 입력 값 (nullable)
-             * @example 14호
-             */
-            inputValue?: string;
-            /**
-             * @description 구매자 작성형 입력 이름 (nullable)
-             * @example 사이즈
-             */
-            inputLabel?: string;
-          }[];
-        /**
-         * @description 옵션번호
-         * @example 1258932
-         */
-        optionNo: number;
-        /**
-         * @description 카트번호
-         * @example 100398947
-         */
-        cartNo: number;
-        /**
-         * @description 상품번호
-         * @example 100398947
-         */
-        productNo: number;
+        inputLabel?: string;
       }[];
-    "profile-orders-orderNo-cashReceipt-1665654877": {
+      /**
+       * @description 옵션번호
+       * @example 1258932
+       */
+      optionNo: number;
+      /**
+       * @description 카트번호
+       * @example 100398947
+       */
+      cartNo: number;
+      /**
+       * @description 상품번호
+       * @example 100398947
+       */
+      productNo: number;
+    }[];
+    'profile-orders-orderNo-cashReceipt-1665654877': {
       /**
        * @description 발급 용도에 따른 키(소득공제용: 휴대폰번호, 지출증빙용: 사업자번호)
        * @example 123456
@@ -5979,9 +7429,9 @@ export interface components {
        * @example INCOME_TAX_DEDUCTION
        * @enum {string}
        */
-      cashReceiptIssuePurposeType: "INCOME_TAX_DEDUCTION: 소득공제용" | "PROOF_EXPENDITURE: 지출증빙용";
+      cashReceiptIssuePurposeType: 'INCOME_TAX_DEDUCTION' | 'PROOF_EXPENDITURE';
     };
-    "payments-reserve-92877080": {
+    'payments-reserve-92877080': {
       /**
        * @description 주문서번호
        * @example 20170100000000001
@@ -6015,14 +7465,14 @@ export interface components {
        */
       key?: string;
     };
-    "recurring-payments-order-sheets1613778223": {
+    'recurring-payments-order-sheets1613778223': {
       /**
        * @description 주문서번호
        * @example 202001012000000009
        */
       orderSheetNo: string;
     };
-    "profile-orders-summary-status1277891083": {
+    'profile-orders-summary-status1277891083': {
       /**
        * @description 배송완료수
        * @example 0
@@ -6099,7 +7549,7 @@ export interface components {
        */
       exchangeProcessingCnt: number;
     };
-    "profile-shipping-addresses790608702": {
+    'profile-shipping-addresses790608702': {
       /**
        * @description (해외배송 / 글로벌결제 시 필수)  수령인 LastName (nullable)
        * @example null
@@ -6125,7 +7575,7 @@ export interface components {
        * @example RECENT
        * @enum {string}
        */
-      addressType: "BOOK: 기본주소" | "RECENT: 최근주소" | "RECURRING_PAYMENT: 정기결제 배송주소";
+      addressType: 'BOOK' | 'RECENT' | 'RECURRING_PAYMENT';
       /**
        * @description 개인고유통관부호 (nullable)
        * @example P12341234
@@ -6136,7 +7586,92 @@ export interface components {
        * @example KR
        * @enum {string}
        */
-      countryCd?: "AX: Åland Islands" | "AD: Andorra" | "AU: Australia" | "AT: Austria" | "BH: Bahrain" | "BE: Belgium" | "BZ: Belize" | "BR: Brazil" | "BN: Brunei" | "BG: Bulgaria" | "CA: Canada" | "ES_CANARY: Spain" | "CL: Chile" | "CN: China" | "CO: Colombia" | "CR: Costa Rica" | "CY: Cyprus" | "CZ: Czech Republic" | "DK: Denmark" | "EC: Ecuador" | "EG: Egypt" | "SV: El Salvador" | "EE: Estonia" | "FR: France" | "GF: French Guiana" | "DE: Germany" | "GR: Greece" | "GL: Denmark" | "GU: Guam" | "GT: Guatemala" | "GG: Guernsey" | "GY: Guyana" | "HK: Hong Kong" | "HU: Hungary" | "IS: Iceland" | "ID: Indonesia" | "IE: Ireland" | "IL: Israel" | "IT: Italy" | "JP: Japan" | "JE: Jersey" | "JO: Jordan" | "KR: South Korea" | "KW: Kuwait" | "LV: Latvia" | "LB: Lebanon" | "LI: Liechtenstein" | "LT: Lithuania" | "LU: Luxembourg" | "MO: Macau" | "PT_MADEIRA: Portugal" | "MY: Malaysia" | "NL: Netherlands" | "NZ: New Zealand" | "GB_NORTHERN_ISLAND: United Kingdom" | "NO: Norway" | "PY: Paraguay" | "PE: Peru" | "PL: Poland" | "PT: Portugal" | "RO: Romania" | "RU: Russia" | "SM: San Marino" | "SA: Saudi Arabia" | "GB_SCOTLAND: United Kingdom" | "SG: Singapore" | "SK: Slovakia" | "SI: Slovenia" | "ES: Spain" | "CH: Switzerland" | "TW: Taiwan" | "TH: Thailand" | "TR: Turkey" | "AE: United Arab Emirates" | "GB: United Kingdom" | "US: United States (Mainland)" | "U2: United States (Mainland)" | "UY: Uruguay" | "VN: Vietnam" | "GB_WALES: United Kingdom" | "YE: Yemen" | "HR: Croatia" | "MT: Malta" | "FI: Finland" | "SE: Sweden";
+      countryCd?:
+        | 'AX'
+        | 'AD'
+        | 'AU'
+        | 'AT'
+        | 'BH'
+        | 'BE'
+        | 'BZ'
+        | 'BR'
+        | 'BN'
+        | 'BG'
+        | 'CA'
+        | 'ES_CANARY'
+        | 'CL'
+        | 'CN'
+        | 'CO'
+        | 'CR'
+        | 'CY'
+        | 'CZ'
+        | 'DK'
+        | 'EC'
+        | 'EG'
+        | 'SV'
+        | 'EE'
+        | 'FR'
+        | 'GF'
+        | 'DE'
+        | 'GR'
+        | 'GL'
+        | 'GU'
+        | 'GT'
+        | 'GG'
+        | 'GY'
+        | 'HK'
+        | 'HU'
+        | 'IS'
+        | 'ID'
+        | 'IE'
+        | 'IL'
+        | 'IT'
+        | 'JP'
+        | 'JE'
+        | 'JO'
+        | 'KR'
+        | 'KW'
+        | 'LV'
+        | 'LB'
+        | 'LI'
+        | 'LT'
+        | 'LU'
+        | 'MO'
+        | 'PT_MADEIRA'
+        | 'MY'
+        | 'NL'
+        | 'NZ'
+        | 'GB_NORTHERN_ISLAND'
+        | 'NO'
+        | 'PY'
+        | 'PE'
+        | 'PL'
+        | 'PT'
+        | 'RO'
+        | 'RU'
+        | 'SM'
+        | 'SA'
+        | 'GB_SCOTLAND'
+        | 'SG'
+        | 'SK'
+        | 'SI'
+        | 'ES'
+        | 'CH'
+        | 'TW'
+        | 'TH'
+        | 'TR'
+        | 'AE'
+        | 'GB'
+        | 'US'
+        | 'U2'
+        | 'UY'
+        | 'VN'
+        | 'GB_WALES'
+        | 'YE'
+        | 'HR'
+        | 'MT'
+        | 'FI'
+        | 'SE';
       /**
        * @description 배송지 우편 번호
        * @example 13487
@@ -6183,367 +7718,622 @@ export interface components {
        */
       receiverContact2?: string;
     };
-    "profile-shipping-addresses1302588806": {
+    'profile-shipping-addresses1302588806': {
       /** @description 최근 배송지 */
-      recentAddresses: ({
-          /**
-           * @description 성 (nullable)
-           * @example 홍
-           */
-          lastName?: string;
-          /**
-           * @description 배송지 지번 (nullable)
-           * @example 경기도 성남시 분당구 삼평동 629번지 NHN 플레이뮤지엄
-           */
-          receiverJibunAddress?: string;
-          /**
-           * @description 기본 배송지 여부
-           * @example Y
-           */
-          defaultYn: string;
-          /**
-           * @description 도시 (nullable)
-           * @example Los Angeles
-           */
-          city?: string;
-          /**
-           * @description 수령자 명
-           * @example 홍길동
-           */
-          receiverName: string;
-          /**
-           * @description 배송지타입
-           * @example RECENT
-           * @enum {string}
-           */
-          addressType: "BOOK: 기본주소" | "RECENT: 최근주소" | "RECURRING_PAYMENT: 정기결제 배송주소";
-          /**
-           * @description 개인고유통관부호 (nullable)
-           * @example P12341234
-           */
-          customsIdNumber?: string;
-          /**
-           * @description 배송지 마지막 사용일 (nullable)
-           * @example YYYY-MM-DD hh:mm:ss
-           */
-          lastUseYmdt?: string;
-          /**
-           * @description 국가코드 (nullable)
-           * @example KR
-           * @enum {string}
-           */
-          countryCd?: "AX: Åland Islands" | "AD: Andorra" | "AU: Australia" | "AT: Austria" | "BH: Bahrain" | "BE: Belgium" | "BZ: Belize" | "BR: Brazil" | "BN: Brunei" | "BG: Bulgaria" | "CA: Canada" | "ES_CANARY: Spain" | "CL: Chile" | "CN: China" | "CO: Colombia" | "CR: Costa Rica" | "CY: Cyprus" | "CZ: Czech Republic" | "DK: Denmark" | "EC: Ecuador" | "EG: Egypt" | "SV: El Salvador" | "EE: Estonia" | "FR: France" | "GF: French Guiana" | "DE: Germany" | "GR: Greece" | "GL: Denmark" | "GU: Guam" | "GT: Guatemala" | "GG: Guernsey" | "GY: Guyana" | "HK: Hong Kong" | "HU: Hungary" | "IS: Iceland" | "ID: Indonesia" | "IE: Ireland" | "IL: Israel" | "IT: Italy" | "JP: Japan" | "JE: Jersey" | "JO: Jordan" | "KR: South Korea" | "KW: Kuwait" | "LV: Latvia" | "LB: Lebanon" | "LI: Liechtenstein" | "LT: Lithuania" | "LU: Luxembourg" | "MO: Macau" | "PT_MADEIRA: Portugal" | "MY: Malaysia" | "NL: Netherlands" | "NZ: New Zealand" | "GB_NORTHERN_ISLAND: United Kingdom" | "NO: Norway" | "PY: Paraguay" | "PE: Peru" | "PL: Poland" | "PT: Portugal" | "RO: Romania" | "RU: Russia" | "SM: San Marino" | "SA: Saudi Arabia" | "GB_SCOTLAND: United Kingdom" | "SG: Singapore" | "SK: Slovakia" | "SI: Slovenia" | "ES: Spain" | "CH: Switzerland" | "TW: Taiwan" | "TH: Thailand" | "TR: Turkey" | "AE: United Arab Emirates" | "GB: United Kingdom" | "US: United States (Mainland)" | "U2: United States (Mainland)" | "UY: Uruguay" | "VN: Vietnam" | "GB_WALES: United Kingdom" | "YE: Yemen" | "HR: Croatia" | "MT: Malta" | "FI: Finland" | "SE: Sweden";
-          /**
-           * @description 외부회원 번호 (nullable)
-           * @example M001
-           */
-          externalMemberNo?: string;
-          /**
-           * @description 배송지 우편 번호
-           * @example 13487
-           */
-          receiverZipCd: string;
-          /**
-           * @description 배송지 상세 주소 (nullable)
-           * @example 16 NHN 플레이뮤지엄
-           */
-          receiverDetailAddress?: string;
-          /**
-           * @description 배송지 주소
-           * @example 경기도 성남시 분당구 대왕판교로645번길 12
-           */
-          receiverAddress: string;
-          /**
-           * @description 해외배송지 기타정보 (nullable)
-           * @example null
-           */
-          shippingEtcInfo?: string;
-          /**
-           * @description 이름 (nullable)
-           * @example 길동
-           */
-          firstName?: string;
-          /**
-           * @description 회원 번호
-           * @example 1
-           */
-          memberNo: number;
-          /**
-           * @description 배송지 번호
-           * @example 1
-           */
-          addressNo: number;
-          /**
-           * @description 주소록명
-           * @example 홍길동집
-           */
-          addressName: string;
-          /**
-           * @description 주/지역 (nullable)
-           * @example CA
-           */
-          state?: string;
-          /**
-           * @description 쇼핑몰 번호
-           * @example 1
-           */
-          mallNo: number;
-          /**
-           * @description 연락처1
-           * @example 010-0000-0000
-           */
-          receiverContact1: string;
-          /**
-           * @description 연락처2 (nullable)
-           * @example 010-0000-0000
-           */
-          receiverContact2?: string;
-          /**
-           * @description 배송지 등록일 (nullable)
-           * @example YYYY-MM-DD hh:mm:ss
-           */
-          registerYmdt?: string;
-        })[];
+      recentAddresses: {
+        /**
+         * @description 성 (nullable)
+         * @example 홍
+         */
+        lastName?: string;
+        /**
+         * @description 배송지 지번 (nullable)
+         * @example 경기도 성남시 분당구 삼평동 629번지 NHN 플레이뮤지엄
+         */
+        receiverJibunAddress?: string;
+        /**
+         * @description 기본 배송지 여부
+         * @example Y
+         */
+        defaultYn: string;
+        /**
+         * @description 도시 (nullable)
+         * @example Los Angeles
+         */
+        city?: string;
+        /**
+         * @description 수령자 명
+         * @example 홍길동
+         */
+        receiverName: string;
+        /**
+         * @description 배송지타입
+         * @example RECENT
+         * @enum {string}
+         */
+        addressType: 'BOOK' | 'RECENT' | 'RECURRING_PAYMENT';
+        /**
+         * @description 개인고유통관부호 (nullable)
+         * @example P12341234
+         */
+        customsIdNumber?: string;
+        /**
+         * @description 배송지 마지막 사용일 (nullable)
+         * @example YYYY-MM-DD hh:mm:ss
+         */
+        lastUseYmdt?: string;
+        /**
+         * @description 국가코드 (nullable)
+         * @example KR
+         * @enum {string}
+         */
+        countryCd?:
+          | 'AX'
+          | 'AD'
+          | 'AU'
+          | 'AT'
+          | 'BH'
+          | 'BE'
+          | 'BZ'
+          | 'BR'
+          | 'BN'
+          | 'BG'
+          | 'CA'
+          | 'ES_CANARY'
+          | 'CL'
+          | 'CN'
+          | 'CO'
+          | 'CR'
+          | 'CY'
+          | 'CZ'
+          | 'DK'
+          | 'EC'
+          | 'EG'
+          | 'SV'
+          | 'EE'
+          | 'FR'
+          | 'GF'
+          | 'DE'
+          | 'GR'
+          | 'GL'
+          | 'GU'
+          | 'GT'
+          | 'GG'
+          | 'GY'
+          | 'HK'
+          | 'HU'
+          | 'IS'
+          | 'ID'
+          | 'IE'
+          | 'IL'
+          | 'IT'
+          | 'JP'
+          | 'JE'
+          | 'JO'
+          | 'KR'
+          | 'KW'
+          | 'LV'
+          | 'LB'
+          | 'LI'
+          | 'LT'
+          | 'LU'
+          | 'MO'
+          | 'PT_MADEIRA'
+          | 'MY'
+          | 'NL'
+          | 'NZ'
+          | 'GB_NORTHERN_ISLAND'
+          | 'NO'
+          | 'PY'
+          | 'PE'
+          | 'PL'
+          | 'PT'
+          | 'RO'
+          | 'RU'
+          | 'SM'
+          | 'SA'
+          | 'GB_SCOTLAND'
+          | 'SG'
+          | 'SK'
+          | 'SI'
+          | 'ES'
+          | 'CH'
+          | 'TW'
+          | 'TH'
+          | 'TR'
+          | 'AE'
+          | 'GB'
+          | 'US'
+          | 'U2'
+          | 'UY'
+          | 'VN'
+          | 'GB_WALES'
+          | 'YE'
+          | 'HR'
+          | 'MT'
+          | 'FI'
+          | 'SE';
+        /**
+         * @description 외부회원 번호 (nullable)
+         * @example M001
+         */
+        externalMemberNo?: string;
+        /**
+         * @description 배송지 우편 번호
+         * @example 13487
+         */
+        receiverZipCd: string;
+        /**
+         * @description 배송지 상세 주소 (nullable)
+         * @example 16 NHN 플레이뮤지엄
+         */
+        receiverDetailAddress?: string;
+        /**
+         * @description 배송지 주소
+         * @example 경기도 성남시 분당구 대왕판교로645번길 12
+         */
+        receiverAddress: string;
+        /**
+         * @description 해외배송지 기타정보 (nullable)
+         * @example null
+         */
+        shippingEtcInfo?: string;
+        /**
+         * @description 이름 (nullable)
+         * @example 길동
+         */
+        firstName?: string;
+        /**
+         * @description 회원 번호
+         * @example 1
+         */
+        memberNo: number;
+        /**
+         * @description 배송지 번호
+         * @example 1
+         */
+        addressNo: number;
+        /**
+         * @description 주소록명
+         * @example 홍길동집
+         */
+        addressName: string;
+        /**
+         * @description 주/지역 (nullable)
+         * @example CA
+         */
+        state?: string;
+        /**
+         * @description 쇼핑몰 번호
+         * @example 1
+         */
+        mallNo: number;
+        /**
+         * @description 연락처1
+         * @example 010-0000-0000
+         */
+        receiverContact1: string;
+        /**
+         * @description 연락처2 (nullable)
+         * @example 010-0000-0000
+         */
+        receiverContact2?: string;
+        /**
+         * @description 배송지 등록일 (nullable)
+         * @example YYYY-MM-DD hh:mm:ss
+         */
+        registerYmdt?: string;
+      }[];
       /** @description 정기결제배송지(샵바이프리미엄 전용) */
-      recurringPaymentAddresses: ({
-          /**
-           * @description 성 (nullable)
-           * @example 홍
-           */
-          lastName?: string;
-          /**
-           * @description 배송지 지번 (nullable)
-           * @example 경기도 성남시 분당구 삼평동 629번지 NHN 플레이뮤지엄
-           */
-          receiverJibunAddress?: string;
-          /**
-           * @description 기본 배송지 여부
-           * @example Y
-           */
-          defaultYn: string;
-          /**
-           * @description 도시 (nullable)
-           * @example Los Angeles
-           */
-          city?: string;
-          /**
-           * @description 수령자 명
-           * @example 홍길동
-           */
-          receiverName: string;
-          /**
-           * @description 배송지타입
-           * @example RECENT
-           * @enum {string}
-           */
-          addressType: "BOOK: 기본주소" | "RECENT: 최근주소" | "RECURRING_PAYMENT: 정기결제 배송주소";
-          /**
-           * @description 개인고유통관부호 (nullable)
-           * @example P12341234
-           */
-          customsIdNumber?: string;
-          /**
-           * @description 배송지 마지막 사용일 (nullable)
-           * @example YYYY-MM-DD hh:mm:ss
-           */
-          lastUseYmdt?: string;
-          /**
-           * @description 국가코드 (nullable)
-           * @example KR
-           * @enum {string}
-           */
-          countryCd?: "AX: Åland Islands" | "AD: Andorra" | "AU: Australia" | "AT: Austria" | "BH: Bahrain" | "BE: Belgium" | "BZ: Belize" | "BR: Brazil" | "BN: Brunei" | "BG: Bulgaria" | "CA: Canada" | "ES_CANARY: Spain" | "CL: Chile" | "CN: China" | "CO: Colombia" | "CR: Costa Rica" | "CY: Cyprus" | "CZ: Czech Republic" | "DK: Denmark" | "EC: Ecuador" | "EG: Egypt" | "SV: El Salvador" | "EE: Estonia" | "FR: France" | "GF: French Guiana" | "DE: Germany" | "GR: Greece" | "GL: Denmark" | "GU: Guam" | "GT: Guatemala" | "GG: Guernsey" | "GY: Guyana" | "HK: Hong Kong" | "HU: Hungary" | "IS: Iceland" | "ID: Indonesia" | "IE: Ireland" | "IL: Israel" | "IT: Italy" | "JP: Japan" | "JE: Jersey" | "JO: Jordan" | "KR: South Korea" | "KW: Kuwait" | "LV: Latvia" | "LB: Lebanon" | "LI: Liechtenstein" | "LT: Lithuania" | "LU: Luxembourg" | "MO: Macau" | "PT_MADEIRA: Portugal" | "MY: Malaysia" | "NL: Netherlands" | "NZ: New Zealand" | "GB_NORTHERN_ISLAND: United Kingdom" | "NO: Norway" | "PY: Paraguay" | "PE: Peru" | "PL: Poland" | "PT: Portugal" | "RO: Romania" | "RU: Russia" | "SM: San Marino" | "SA: Saudi Arabia" | "GB_SCOTLAND: United Kingdom" | "SG: Singapore" | "SK: Slovakia" | "SI: Slovenia" | "ES: Spain" | "CH: Switzerland" | "TW: Taiwan" | "TH: Thailand" | "TR: Turkey" | "AE: United Arab Emirates" | "GB: United Kingdom" | "US: United States (Mainland)" | "U2: United States (Mainland)" | "UY: Uruguay" | "VN: Vietnam" | "GB_WALES: United Kingdom" | "YE: Yemen" | "HR: Croatia" | "MT: Malta" | "FI: Finland" | "SE: Sweden";
-          /**
-           * @description 외부회원 번호 (nullable)
-           * @example M001
-           */
-          externalMemberNo?: string;
-          /**
-           * @description 배송지 우편 번호
-           * @example 13487
-           */
-          receiverZipCd: string;
-          /**
-           * @description 배송지 상세 주소 (nullable)
-           * @example 16 NHN 플레이뮤지엄
-           */
-          receiverDetailAddress?: string;
-          /**
-           * @description 배송지 주소
-           * @example 경기도 성남시 분당구 대왕판교로645번길 12
-           */
-          receiverAddress: string;
-          /**
-           * @description 해외배송지 기타정보 (nullable)
-           * @example null
-           */
-          shippingEtcInfo?: string;
-          /**
-           * @description 이름 (nullable)
-           * @example 길동
-           */
-          firstName?: string;
-          /**
-           * @description 회원 번호
-           * @example 1
-           */
-          memberNo: number;
-          /**
-           * @description 배송지 번호
-           * @example 1
-           */
-          addressNo: number;
-          /**
-           * @description 주소록명
-           * @example 홍길동집
-           */
-          addressName: string;
-          /**
-           * @description 주/지역 (nullable)
-           * @example CA
-           */
-          state?: string;
-          /**
-           * @description 쇼핑몰 번호
-           * @example 1
-           */
-          mallNo: number;
-          /**
-           * @description 연락처1
-           * @example 010-0000-0000
-           */
-          receiverContact1: string;
-          /**
-           * @description 연락처2 (nullable)
-           * @example 010-0000-0000
-           */
-          receiverContact2?: string;
-          /**
-           * @description 배송지 등록일 (nullable)
-           * @example YYYY-MM-DD hh:mm:ss
-           */
-          registerYmdt?: string;
-        })[];
+      recurringPaymentAddresses: {
+        /**
+         * @description 성 (nullable)
+         * @example 홍
+         */
+        lastName?: string;
+        /**
+         * @description 배송지 지번 (nullable)
+         * @example 경기도 성남시 분당구 삼평동 629번지 NHN 플레이뮤지엄
+         */
+        receiverJibunAddress?: string;
+        /**
+         * @description 기본 배송지 여부
+         * @example Y
+         */
+        defaultYn: string;
+        /**
+         * @description 도시 (nullable)
+         * @example Los Angeles
+         */
+        city?: string;
+        /**
+         * @description 수령자 명
+         * @example 홍길동
+         */
+        receiverName: string;
+        /**
+         * @description 배송지타입
+         * @example RECENT
+         * @enum {string}
+         */
+        addressType: 'BOOK' | 'RECENT' | 'RECURRING_PAYMENT';
+        /**
+         * @description 개인고유통관부호 (nullable)
+         * @example P12341234
+         */
+        customsIdNumber?: string;
+        /**
+         * @description 배송지 마지막 사용일 (nullable)
+         * @example YYYY-MM-DD hh:mm:ss
+         */
+        lastUseYmdt?: string;
+        /**
+         * @description 국가코드 (nullable)
+         * @example KR
+         * @enum {string}
+         */
+        countryCd?:
+          | 'AX'
+          | 'AD'
+          | 'AU'
+          | 'AT'
+          | 'BH'
+          | 'BE'
+          | 'BZ'
+          | 'BR'
+          | 'BN'
+          | 'BG'
+          | 'CA'
+          | 'ES_CANARY'
+          | 'CL'
+          | 'CN'
+          | 'CO'
+          | 'CR'
+          | 'CY'
+          | 'CZ'
+          | 'DK'
+          | 'EC'
+          | 'EG'
+          | 'SV'
+          | 'EE'
+          | 'FR'
+          | 'GF'
+          | 'DE'
+          | 'GR'
+          | 'GL'
+          | 'GU'
+          | 'GT'
+          | 'GG'
+          | 'GY'
+          | 'HK'
+          | 'HU'
+          | 'IS'
+          | 'ID'
+          | 'IE'
+          | 'IL'
+          | 'IT'
+          | 'JP'
+          | 'JE'
+          | 'JO'
+          | 'KR'
+          | 'KW'
+          | 'LV'
+          | 'LB'
+          | 'LI'
+          | 'LT'
+          | 'LU'
+          | 'MO'
+          | 'PT_MADEIRA'
+          | 'MY'
+          | 'NL'
+          | 'NZ'
+          | 'GB_NORTHERN_ISLAND'
+          | 'NO'
+          | 'PY'
+          | 'PE'
+          | 'PL'
+          | 'PT'
+          | 'RO'
+          | 'RU'
+          | 'SM'
+          | 'SA'
+          | 'GB_SCOTLAND'
+          | 'SG'
+          | 'SK'
+          | 'SI'
+          | 'ES'
+          | 'CH'
+          | 'TW'
+          | 'TH'
+          | 'TR'
+          | 'AE'
+          | 'GB'
+          | 'US'
+          | 'U2'
+          | 'UY'
+          | 'VN'
+          | 'GB_WALES'
+          | 'YE'
+          | 'HR'
+          | 'MT'
+          | 'FI'
+          | 'SE';
+        /**
+         * @description 외부회원 번호 (nullable)
+         * @example M001
+         */
+        externalMemberNo?: string;
+        /**
+         * @description 배송지 우편 번호
+         * @example 13487
+         */
+        receiverZipCd: string;
+        /**
+         * @description 배송지 상세 주소 (nullable)
+         * @example 16 NHN 플레이뮤지엄
+         */
+        receiverDetailAddress?: string;
+        /**
+         * @description 배송지 주소
+         * @example 경기도 성남시 분당구 대왕판교로645번길 12
+         */
+        receiverAddress: string;
+        /**
+         * @description 해외배송지 기타정보 (nullable)
+         * @example null
+         */
+        shippingEtcInfo?: string;
+        /**
+         * @description 이름 (nullable)
+         * @example 길동
+         */
+        firstName?: string;
+        /**
+         * @description 회원 번호
+         * @example 1
+         */
+        memberNo: number;
+        /**
+         * @description 배송지 번호
+         * @example 1
+         */
+        addressNo: number;
+        /**
+         * @description 주소록명
+         * @example 홍길동집
+         */
+        addressName: string;
+        /**
+         * @description 주/지역 (nullable)
+         * @example CA
+         */
+        state?: string;
+        /**
+         * @description 쇼핑몰 번호
+         * @example 1
+         */
+        mallNo: number;
+        /**
+         * @description 연락처1
+         * @example 010-0000-0000
+         */
+        receiverContact1: string;
+        /**
+         * @description 연락처2 (nullable)
+         * @example 010-0000-0000
+         */
+        receiverContact2?: string;
+        /**
+         * @description 배송지 등록일 (nullable)
+         * @example YYYY-MM-DD hh:mm:ss
+         */
+        registerYmdt?: string;
+      }[];
       /** @description 저장된 배송지 */
-      bookedAddresses: ({
-          /**
-           * @description 성 (nullable)
-           * @example 홍
-           */
-          lastName?: string;
-          /**
-           * @description 배송지 지번 (nullable)
-           * @example 경기도 성남시 분당구 삼평동 629번지 NHN 플레이뮤지엄
-           */
-          receiverJibunAddress?: string;
-          /**
-           * @description 기본 배송지 여부
-           * @example Y
-           */
-          defaultYn: string;
-          /**
-           * @description 도시 (nullable)
-           * @example Los Angeles
-           */
-          city?: string;
-          /**
-           * @description 수령자 명
-           * @example 홍길동
-           */
-          receiverName: string;
-          /**
-           * @description 배송지타입
-           * @example RECENT
-           * @enum {string}
-           */
-          addressType: "BOOK: 기본주소" | "RECENT: 최근주소" | "RECURRING_PAYMENT: 정기결제 배송주소";
-          /**
-           * @description 개인고유통관부호 (nullable)
-           * @example P12341234
-           */
-          customsIdNumber?: string;
-          /**
-           * @description 배송지 마지막 사용일 (nullable)
-           * @example YYYY-MM-DD hh:mm:ss
-           */
-          lastUseYmdt?: string;
-          /**
-           * @description 국가코드 (nullable)
-           * @example KR
-           * @enum {string}
-           */
-          countryCd?: "AX: Åland Islands" | "AD: Andorra" | "AU: Australia" | "AT: Austria" | "BH: Bahrain" | "BE: Belgium" | "BZ: Belize" | "BR: Brazil" | "BN: Brunei" | "BG: Bulgaria" | "CA: Canada" | "ES_CANARY: Spain" | "CL: Chile" | "CN: China" | "CO: Colombia" | "CR: Costa Rica" | "CY: Cyprus" | "CZ: Czech Republic" | "DK: Denmark" | "EC: Ecuador" | "EG: Egypt" | "SV: El Salvador" | "EE: Estonia" | "FR: France" | "GF: French Guiana" | "DE: Germany" | "GR: Greece" | "GL: Denmark" | "GU: Guam" | "GT: Guatemala" | "GG: Guernsey" | "GY: Guyana" | "HK: Hong Kong" | "HU: Hungary" | "IS: Iceland" | "ID: Indonesia" | "IE: Ireland" | "IL: Israel" | "IT: Italy" | "JP: Japan" | "JE: Jersey" | "JO: Jordan" | "KR: South Korea" | "KW: Kuwait" | "LV: Latvia" | "LB: Lebanon" | "LI: Liechtenstein" | "LT: Lithuania" | "LU: Luxembourg" | "MO: Macau" | "PT_MADEIRA: Portugal" | "MY: Malaysia" | "NL: Netherlands" | "NZ: New Zealand" | "GB_NORTHERN_ISLAND: United Kingdom" | "NO: Norway" | "PY: Paraguay" | "PE: Peru" | "PL: Poland" | "PT: Portugal" | "RO: Romania" | "RU: Russia" | "SM: San Marino" | "SA: Saudi Arabia" | "GB_SCOTLAND: United Kingdom" | "SG: Singapore" | "SK: Slovakia" | "SI: Slovenia" | "ES: Spain" | "CH: Switzerland" | "TW: Taiwan" | "TH: Thailand" | "TR: Turkey" | "AE: United Arab Emirates" | "GB: United Kingdom" | "US: United States (Mainland)" | "U2: United States (Mainland)" | "UY: Uruguay" | "VN: Vietnam" | "GB_WALES: United Kingdom" | "YE: Yemen" | "HR: Croatia" | "MT: Malta" | "FI: Finland" | "SE: Sweden";
-          /**
-           * @description 외부회원 번호 (nullable)
-           * @example M001
-           */
-          externalMemberNo?: string;
-          /**
-           * @description 배송지 우편 번호
-           * @example 13487
-           */
-          receiverZipCd: string;
-          /**
-           * @description 배송지 상세 주소 (nullable)
-           * @example 16 NHN 플레이뮤지엄
-           */
-          receiverDetailAddress?: string;
-          /**
-           * @description 배송지 주소
-           * @example 경기도 성남시 분당구 대왕판교로645번길 12
-           */
-          receiverAddress: string;
-          /**
-           * @description 해외배송지 기타정보 (nullable)
-           * @example null
-           */
-          shippingEtcInfo?: string;
-          /**
-           * @description 이름 (nullable)
-           * @example 길동
-           */
-          firstName?: string;
-          /**
-           * @description 회원 번호
-           * @example 1
-           */
-          memberNo: number;
-          /**
-           * @description 배송지 번호
-           * @example 1
-           */
-          addressNo: number;
-          /**
-           * @description 주소록명
-           * @example 홍길동집
-           */
-          addressName: string;
-          /**
-           * @description 주/지역 (nullable)
-           * @example CA
-           */
-          state?: string;
-          /**
-           * @description 쇼핑몰 번호
-           * @example 1
-           */
-          mallNo: number;
-          /**
-           * @description 연락처1
-           * @example 010-0000-0000
-           */
-          receiverContact1: string;
-          /**
-           * @description 연락처2 (nullable)
-           * @example 010-0000-0000
-           */
-          receiverContact2?: string;
-          /**
-           * @description 배송지 등록일 (nullable)
-           * @example YYYY-MM-DD hh:mm:ss
-           */
-          registerYmdt?: string;
-        })[];
+      bookedAddresses: {
+        /**
+         * @description 성 (nullable)
+         * @example 홍
+         */
+        lastName?: string;
+        /**
+         * @description 배송지 지번 (nullable)
+         * @example 경기도 성남시 분당구 삼평동 629번지 NHN 플레이뮤지엄
+         */
+        receiverJibunAddress?: string;
+        /**
+         * @description 기본 배송지 여부
+         * @example Y
+         */
+        defaultYn: string;
+        /**
+         * @description 도시 (nullable)
+         * @example Los Angeles
+         */
+        city?: string;
+        /**
+         * @description 수령자 명
+         * @example 홍길동
+         */
+        receiverName: string;
+        /**
+         * @description 배송지타입
+         * @example RECENT
+         * @enum {string}
+         */
+        addressType: 'BOOK' | 'RECENT' | 'RECURRING_PAYMENT';
+        /**
+         * @description 개인고유통관부호 (nullable)
+         * @example P12341234
+         */
+        customsIdNumber?: string;
+        /**
+         * @description 배송지 마지막 사용일 (nullable)
+         * @example YYYY-MM-DD hh:mm:ss
+         */
+        lastUseYmdt?: string;
+        /**
+         * @description 국가코드 (nullable)
+         * @example KR
+         * @enum {string}
+         */
+        countryCd?:
+          | 'AX'
+          | 'AD'
+          | 'AU'
+          | 'AT'
+          | 'BH'
+          | 'BE'
+          | 'BZ'
+          | 'BR'
+          | 'BN'
+          | 'BG'
+          | 'CA'
+          | 'ES_CANARY'
+          | 'CL'
+          | 'CN'
+          | 'CO'
+          | 'CR'
+          | 'CY'
+          | 'CZ'
+          | 'DK'
+          | 'EC'
+          | 'EG'
+          | 'SV'
+          | 'EE'
+          | 'FR'
+          | 'GF'
+          | 'DE'
+          | 'GR'
+          | 'GL'
+          | 'GU'
+          | 'GT'
+          | 'GG'
+          | 'GY'
+          | 'HK'
+          | 'HU'
+          | 'IS'
+          | 'ID'
+          | 'IE'
+          | 'IL'
+          | 'IT'
+          | 'JP'
+          | 'JE'
+          | 'JO'
+          | 'KR'
+          | 'KW'
+          | 'LV'
+          | 'LB'
+          | 'LI'
+          | 'LT'
+          | 'LU'
+          | 'MO'
+          | 'PT_MADEIRA'
+          | 'MY'
+          | 'NL'
+          | 'NZ'
+          | 'GB_NORTHERN_ISLAND'
+          | 'NO'
+          | 'PY'
+          | 'PE'
+          | 'PL'
+          | 'PT'
+          | 'RO'
+          | 'RU'
+          | 'SM'
+          | 'SA'
+          | 'GB_SCOTLAND'
+          | 'SG'
+          | 'SK'
+          | 'SI'
+          | 'ES'
+          | 'CH'
+          | 'TW'
+          | 'TH'
+          | 'TR'
+          | 'AE'
+          | 'GB'
+          | 'US'
+          | 'U2'
+          | 'UY'
+          | 'VN'
+          | 'GB_WALES'
+          | 'YE'
+          | 'HR'
+          | 'MT'
+          | 'FI'
+          | 'SE';
+        /**
+         * @description 외부회원 번호 (nullable)
+         * @example M001
+         */
+        externalMemberNo?: string;
+        /**
+         * @description 배송지 우편 번호
+         * @example 13487
+         */
+        receiverZipCd: string;
+        /**
+         * @description 배송지 상세 주소 (nullable)
+         * @example 16 NHN 플레이뮤지엄
+         */
+        receiverDetailAddress?: string;
+        /**
+         * @description 배송지 주소
+         * @example 경기도 성남시 분당구 대왕판교로645번길 12
+         */
+        receiverAddress: string;
+        /**
+         * @description 해외배송지 기타정보 (nullable)
+         * @example null
+         */
+        shippingEtcInfo?: string;
+        /**
+         * @description 이름 (nullable)
+         * @example 길동
+         */
+        firstName?: string;
+        /**
+         * @description 회원 번호
+         * @example 1
+         */
+        memberNo: number;
+        /**
+         * @description 배송지 번호
+         * @example 1
+         */
+        addressNo: number;
+        /**
+         * @description 주소록명
+         * @example 홍길동집
+         */
+        addressName: string;
+        /**
+         * @description 주/지역 (nullable)
+         * @example CA
+         */
+        state?: string;
+        /**
+         * @description 쇼핑몰 번호
+         * @example 1
+         */
+        mallNo: number;
+        /**
+         * @description 연락처1
+         * @example 010-0000-0000
+         */
+        receiverContact1: string;
+        /**
+         * @description 연락처2 (nullable)
+         * @example 010-0000-0000
+         */
+        receiverContact2?: string;
+        /**
+         * @description 배송지 등록일 (nullable)
+         * @example YYYY-MM-DD hh:mm:ss
+         */
+        registerYmdt?: string;
+      }[];
       /** @description 기본 배송지 */
       defaultAddress: {
         /**
@@ -6576,7 +8366,7 @@ export interface components {
          * @example RECENT
          * @enum {string}
          */
-        addressType: "BOOK: 기본주소" | "RECENT: 최근주소" | "RECURRING_PAYMENT: 정기결제 배송주소";
+        addressType: 'BOOK' | 'RECENT' | 'RECURRING_PAYMENT';
         /**
          * @description 개인고유통관부호 (nullable)
          * @example P12341234
@@ -6592,7 +8382,92 @@ export interface components {
          * @example KR
          * @enum {string}
          */
-        countryCd?: "AX: Åland Islands" | "AD: Andorra" | "AU: Australia" | "AT: Austria" | "BH: Bahrain" | "BE: Belgium" | "BZ: Belize" | "BR: Brazil" | "BN: Brunei" | "BG: Bulgaria" | "CA: Canada" | "ES_CANARY: Spain" | "CL: Chile" | "CN: China" | "CO: Colombia" | "CR: Costa Rica" | "CY: Cyprus" | "CZ: Czech Republic" | "DK: Denmark" | "EC: Ecuador" | "EG: Egypt" | "SV: El Salvador" | "EE: Estonia" | "FR: France" | "GF: French Guiana" | "DE: Germany" | "GR: Greece" | "GL: Denmark" | "GU: Guam" | "GT: Guatemala" | "GG: Guernsey" | "GY: Guyana" | "HK: Hong Kong" | "HU: Hungary" | "IS: Iceland" | "ID: Indonesia" | "IE: Ireland" | "IL: Israel" | "IT: Italy" | "JP: Japan" | "JE: Jersey" | "JO: Jordan" | "KR: South Korea" | "KW: Kuwait" | "LV: Latvia" | "LB: Lebanon" | "LI: Liechtenstein" | "LT: Lithuania" | "LU: Luxembourg" | "MO: Macau" | "PT_MADEIRA: Portugal" | "MY: Malaysia" | "NL: Netherlands" | "NZ: New Zealand" | "GB_NORTHERN_ISLAND: United Kingdom" | "NO: Norway" | "PY: Paraguay" | "PE: Peru" | "PL: Poland" | "PT: Portugal" | "RO: Romania" | "RU: Russia" | "SM: San Marino" | "SA: Saudi Arabia" | "GB_SCOTLAND: United Kingdom" | "SG: Singapore" | "SK: Slovakia" | "SI: Slovenia" | "ES: Spain" | "CH: Switzerland" | "TW: Taiwan" | "TH: Thailand" | "TR: Turkey" | "AE: United Arab Emirates" | "GB: United Kingdom" | "US: United States (Mainland)" | "U2: United States (Mainland)" | "UY: Uruguay" | "VN: Vietnam" | "GB_WALES: United Kingdom" | "YE: Yemen" | "HR: Croatia" | "MT: Malta" | "FI: Finland" | "SE: Sweden";
+        countryCd?:
+          | 'AX'
+          | 'AD'
+          | 'AU'
+          | 'AT'
+          | 'BH'
+          | 'BE'
+          | 'BZ'
+          | 'BR'
+          | 'BN'
+          | 'BG'
+          | 'CA'
+          | 'ES_CANARY'
+          | 'CL'
+          | 'CN'
+          | 'CO'
+          | 'CR'
+          | 'CY'
+          | 'CZ'
+          | 'DK'
+          | 'EC'
+          | 'EG'
+          | 'SV'
+          | 'EE'
+          | 'FR'
+          | 'GF'
+          | 'DE'
+          | 'GR'
+          | 'GL'
+          | 'GU'
+          | 'GT'
+          | 'GG'
+          | 'GY'
+          | 'HK'
+          | 'HU'
+          | 'IS'
+          | 'ID'
+          | 'IE'
+          | 'IL'
+          | 'IT'
+          | 'JP'
+          | 'JE'
+          | 'JO'
+          | 'KR'
+          | 'KW'
+          | 'LV'
+          | 'LB'
+          | 'LI'
+          | 'LT'
+          | 'LU'
+          | 'MO'
+          | 'PT_MADEIRA'
+          | 'MY'
+          | 'NL'
+          | 'NZ'
+          | 'GB_NORTHERN_ISLAND'
+          | 'NO'
+          | 'PY'
+          | 'PE'
+          | 'PL'
+          | 'PT'
+          | 'RO'
+          | 'RU'
+          | 'SM'
+          | 'SA'
+          | 'GB_SCOTLAND'
+          | 'SG'
+          | 'SK'
+          | 'SI'
+          | 'ES'
+          | 'CH'
+          | 'TW'
+          | 'TH'
+          | 'TR'
+          | 'AE'
+          | 'GB'
+          | 'US'
+          | 'U2'
+          | 'UY'
+          | 'VN'
+          | 'GB_WALES'
+          | 'YE'
+          | 'HR'
+          | 'MT'
+          | 'FI'
+          | 'SE';
         /**
          * @description 외부회원 번호 (nullable)
          * @example M001
@@ -6665,7 +8540,7 @@ export interface components {
         registerYmdt?: string;
       };
     };
-    "recurring-payments-delivery-cycle-1813425842": {
+    'recurring-payments-delivery-cycle-1813425842': {
       /**
        * @description 정기결제 일자 (nullable)
        * @example 1
@@ -6676,7 +8551,7 @@ export interface components {
        * @example MONTH
        * @enum {string}
        */
-      cycleType?: "MONTH: Month" | "WEEK: Week";
+      cycleType?: 'MONTH' | 'WEEK';
       /**
        * @description 정기결제 신청번호
        * @example 202108251705594
@@ -6693,7 +8568,7 @@ export interface components {
        */
       cycle?: number;
     };
-    "recurring-payments-card247629157": {
+    'recurring-payments-card247629157': {
       /**
        * @description 카드명 (nullable)
        * @example 롯데카드
@@ -6705,20 +8580,20 @@ export interface components {
        */
       cardEndDigit?: string;
     };
-    "cart-1843750990": {
+    'cart-1843750990': {
       /**
        * @description 회원의 총 Cart 상품수
        * @example 1
        */
       count: number;
     };
-    "recurring-payments-close-recurring-payment-no1740267411": {
+    'recurring-payments-close-recurring-payment-no1740267411': {
       /**
        * @description 정기결제 해지 사유
        * @example NECESSITY
        * @enum {string}
        */
-      closeReasonType: "NECESSITY: Subscriptions are no longer required." | "CYCLE: Recurring delivery times do not fit." | "PRODUCT: There is a problem with the delivery item." | "EXPENSIVE: The regular delivery payment of other shopping malls is cheaper." | "ETC: ETC";
+      closeReasonType: 'NECESSITY' | 'CYCLE' | 'PRODUCT' | 'EXPENSIVE' | 'ETC';
       /**
        * @description 해지 사유(closeReasonType.etc 일 경우만) (nullable)
        * @example 너무 비싸요
@@ -6726,126 +8601,211 @@ export interface components {
       closeReason?: string;
     };
     /** @description 최근 배송지 */
-    "profile-shipping-addresses-recent-1693328833": ({
-        /**
-         * @description 성 (nullable)
-         * @example 홍
-         */
-        lastName?: string;
-        /**
-         * @description 배송지 지번 (nullable)
-         * @example 경기도 성남시 분당구 삼평동 629번지 NHN 플레이뮤지엄
-         */
-        receiverJibunAddress?: string;
-        /**
-         * @description 기본 배송지 여부
-         * @example Y
-         */
-        defaultYn: string;
-        /**
-         * @description 도시 (nullable)
-         * @example Los Angeles
-         */
-        city?: string;
-        /**
-         * @description 수령자 명
-         * @example 홍길동
-         */
-        receiverName: string;
-        /**
-         * @description 배송지타입
-         * @example RECENT
-         * @enum {string}
-         */
-        addressType: "BOOK: 기본주소" | "RECENT: 최근주소" | "RECURRING_PAYMENT: 정기결제 배송주소";
-        /**
-         * @description 개인고유통관부호 (nullable)
-         * @example P12341234
-         */
-        customsIdNumber?: string;
-        /**
-         * @description 배송지 마지막 사용일 (nullable)
-         * @example YYYY-MM-DD hh:mm:ss
-         */
-        lastUseYmdt?: string;
-        /**
-         * @description 국가코드 (nullable)
-         * @example KR
-         * @enum {string}
-         */
-        countryCd?: "AX: Åland Islands" | "AD: Andorra" | "AU: Australia" | "AT: Austria" | "BH: Bahrain" | "BE: Belgium" | "BZ: Belize" | "BR: Brazil" | "BN: Brunei" | "BG: Bulgaria" | "CA: Canada" | "ES_CANARY: Spain" | "CL: Chile" | "CN: China" | "CO: Colombia" | "CR: Costa Rica" | "CY: Cyprus" | "CZ: Czech Republic" | "DK: Denmark" | "EC: Ecuador" | "EG: Egypt" | "SV: El Salvador" | "EE: Estonia" | "FR: France" | "GF: French Guiana" | "DE: Germany" | "GR: Greece" | "GL: Denmark" | "GU: Guam" | "GT: Guatemala" | "GG: Guernsey" | "GY: Guyana" | "HK: Hong Kong" | "HU: Hungary" | "IS: Iceland" | "ID: Indonesia" | "IE: Ireland" | "IL: Israel" | "IT: Italy" | "JP: Japan" | "JE: Jersey" | "JO: Jordan" | "KR: South Korea" | "KW: Kuwait" | "LV: Latvia" | "LB: Lebanon" | "LI: Liechtenstein" | "LT: Lithuania" | "LU: Luxembourg" | "MO: Macau" | "PT_MADEIRA: Portugal" | "MY: Malaysia" | "NL: Netherlands" | "NZ: New Zealand" | "GB_NORTHERN_ISLAND: United Kingdom" | "NO: Norway" | "PY: Paraguay" | "PE: Peru" | "PL: Poland" | "PT: Portugal" | "RO: Romania" | "RU: Russia" | "SM: San Marino" | "SA: Saudi Arabia" | "GB_SCOTLAND: United Kingdom" | "SG: Singapore" | "SK: Slovakia" | "SI: Slovenia" | "ES: Spain" | "CH: Switzerland" | "TW: Taiwan" | "TH: Thailand" | "TR: Turkey" | "AE: United Arab Emirates" | "GB: United Kingdom" | "US: United States (Mainland)" | "U2: United States (Mainland)" | "UY: Uruguay" | "VN: Vietnam" | "GB_WALES: United Kingdom" | "YE: Yemen" | "HR: Croatia" | "MT: Malta" | "FI: Finland" | "SE: Sweden";
-        /**
-         * @description 외부회원 번호 (nullable)
-         * @example M001
-         */
-        externalMemberNo?: string;
-        /**
-         * @description 배송지 우편 번호
-         * @example 13487
-         */
-        receiverZipCd: string;
-        /**
-         * @description 배송지 상세 주소 (nullable)
-         * @example 16 NHN 플레이뮤지엄
-         */
-        receiverDetailAddress?: string;
-        /**
-         * @description 배송지 주소
-         * @example 경기도 성남시 분당구 대왕판교로645번길 12
-         */
-        receiverAddress: string;
-        /**
-         * @description 해외배송지 기타정보 (nullable)
-         * @example null
-         */
-        shippingEtcInfo?: string;
-        /**
-         * @description 이름 (nullable)
-         * @example 길동
-         */
-        firstName?: string;
-        /**
-         * @description 회원 번호
-         * @example 1
-         */
-        memberNo: number;
-        /**
-         * @description 배송지 번호
-         * @example 1
-         */
-        addressNo: number;
-        /**
-         * @description 주소록명
-         * @example 홍길동집
-         */
-        addressName: string;
-        /**
-         * @description 주/지역 (nullable)
-         * @example CA
-         */
-        state?: string;
-        /**
-         * @description 쇼핑몰 번호
-         * @example 1
-         */
-        mallNo: number;
-        /**
-         * @description 연락처1
-         * @example 010-0000-0000
-         */
-        receiverContact1: string;
-        /**
-         * @description 연락처2 (nullable)
-         * @example 010-0000-0000
-         */
-        receiverContact2?: string;
-        /**
-         * @description 배송지 등록일 (nullable)
-         * @example YYYY-MM-DD hh:mm:ss
-         */
-        registerYmdt?: string;
-      })[];
-    "order-sheets-orderSheetNo-coupons-maximum-1318207009": {
+    'profile-shipping-addresses-recent-1693328833': {
+      /**
+       * @description 성 (nullable)
+       * @example 홍
+       */
+      lastName?: string;
+      /**
+       * @description 배송지 지번 (nullable)
+       * @example 경기도 성남시 분당구 삼평동 629번지 NHN 플레이뮤지엄
+       */
+      receiverJibunAddress?: string;
+      /**
+       * @description 기본 배송지 여부
+       * @example Y
+       */
+      defaultYn: string;
+      /**
+       * @description 도시 (nullable)
+       * @example Los Angeles
+       */
+      city?: string;
+      /**
+       * @description 수령자 명
+       * @example 홍길동
+       */
+      receiverName: string;
+      /**
+       * @description 배송지타입
+       * @example RECENT
+       * @enum {string}
+       */
+      addressType: 'BOOK' | 'RECENT' | 'RECURRING_PAYMENT';
+      /**
+       * @description 개인고유통관부호 (nullable)
+       * @example P12341234
+       */
+      customsIdNumber?: string;
+      /**
+       * @description 배송지 마지막 사용일 (nullable)
+       * @example YYYY-MM-DD hh:mm:ss
+       */
+      lastUseYmdt?: string;
+      /**
+       * @description 국가코드 (nullable)
+       * @example KR
+       * @enum {string}
+       */
+      countryCd?:
+        | 'AX'
+        | 'AD'
+        | 'AU'
+        | 'AT'
+        | 'BH'
+        | 'BE'
+        | 'BZ'
+        | 'BR'
+        | 'BN'
+        | 'BG'
+        | 'CA'
+        | 'ES_CANARY'
+        | 'CL'
+        | 'CN'
+        | 'CO'
+        | 'CR'
+        | 'CY'
+        | 'CZ'
+        | 'DK'
+        | 'EC'
+        | 'EG'
+        | 'SV'
+        | 'EE'
+        | 'FR'
+        | 'GF'
+        | 'DE'
+        | 'GR'
+        | 'GL'
+        | 'GU'
+        | 'GT'
+        | 'GG'
+        | 'GY'
+        | 'HK'
+        | 'HU'
+        | 'IS'
+        | 'ID'
+        | 'IE'
+        | 'IL'
+        | 'IT'
+        | 'JP'
+        | 'JE'
+        | 'JO'
+        | 'KR'
+        | 'KW'
+        | 'LV'
+        | 'LB'
+        | 'LI'
+        | 'LT'
+        | 'LU'
+        | 'MO'
+        | 'PT_MADEIRA'
+        | 'MY'
+        | 'NL'
+        | 'NZ'
+        | 'GB_NORTHERN_ISLAND'
+        | 'NO'
+        | 'PY'
+        | 'PE'
+        | 'PL'
+        | 'PT'
+        | 'RO'
+        | 'RU'
+        | 'SM'
+        | 'SA'
+        | 'GB_SCOTLAND'
+        | 'SG'
+        | 'SK'
+        | 'SI'
+        | 'ES'
+        | 'CH'
+        | 'TW'
+        | 'TH'
+        | 'TR'
+        | 'AE'
+        | 'GB'
+        | 'US'
+        | 'U2'
+        | 'UY'
+        | 'VN'
+        | 'GB_WALES'
+        | 'YE'
+        | 'HR'
+        | 'MT'
+        | 'FI'
+        | 'SE';
+      /**
+       * @description 외부회원 번호 (nullable)
+       * @example M001
+       */
+      externalMemberNo?: string;
+      /**
+       * @description 배송지 우편 번호
+       * @example 13487
+       */
+      receiverZipCd: string;
+      /**
+       * @description 배송지 상세 주소 (nullable)
+       * @example 16 NHN 플레이뮤지엄
+       */
+      receiverDetailAddress?: string;
+      /**
+       * @description 배송지 주소
+       * @example 경기도 성남시 분당구 대왕판교로645번길 12
+       */
+      receiverAddress: string;
+      /**
+       * @description 해외배송지 기타정보 (nullable)
+       * @example null
+       */
+      shippingEtcInfo?: string;
+      /**
+       * @description 이름 (nullable)
+       * @example 길동
+       */
+      firstName?: string;
+      /**
+       * @description 회원 번호
+       * @example 1
+       */
+      memberNo: number;
+      /**
+       * @description 배송지 번호
+       * @example 1
+       */
+      addressNo: number;
+      /**
+       * @description 주소록명
+       * @example 홍길동집
+       */
+      addressName: string;
+      /**
+       * @description 주/지역 (nullable)
+       * @example CA
+       */
+      state?: string;
+      /**
+       * @description 쇼핑몰 번호
+       * @example 1
+       */
+      mallNo: number;
+      /**
+       * @description 연락처1
+       * @example 010-0000-0000
+       */
+      receiverContact1: string;
+      /**
+       * @description 연락처2 (nullable)
+       * @example 010-0000-0000
+       */
+      receiverContact2?: string;
+      /**
+       * @description 배송지 등록일 (nullable)
+       * @example YYYY-MM-DD hh:mm:ss
+       */
+      registerYmdt?: string;
+    }[];
+    'order-sheets-orderSheetNo-coupons-maximum-1318207009': {
       /**
        * @description 주문서번호
        * @example 202001012000000009
@@ -6867,132 +8827,413 @@ export interface components {
        */
       cartCouponDiscountAmt: number;
       /** @description 장바구니 쿠폰 */
-      cartCoupons: ({
-          /**
-           * @description 쿠폰 생성 사유
-           * @example 프로모션 진행
-           */
-          reason: string;
-          /** @description 할인비율 (nullable) */
-          discountRate?: number;
-          /** @description 쿠폰명 */
-          couponName: string;
-          /**
-           * @description 쿠폰 발급 번호
-           * @example 1415130
-           */
-          couponIssueNo: number;
-          /**
-           * @description 쿠폰 사용 가능한 최소 금액
-           * @example 10000
-           */
-          minSalePrice: number;
-          /**
-           * @description 배송비무료여부 (true: 무료, false: 유료)
-           * @example false
-           */
-          freeDelivery: boolean;
-          /**
-           * @description 최대할인금액(정률에서)
-           * @example 2500
-           */
-          maxDiscountAmt: number;
-          /**
-           * @description 장바구니 쿠폰 사용 가능 여부(상품쿠폰인 경우) (true: 가능, false: 불가능)
-           * @example false
-           */
-          cartCouponUsable: boolean;
-          /**
-           * @description 사용종료일
-           * @example YYYY-MM-DD hh:mm:ss
-           */
-          useEndYmdt: string;
-          /**
-           * @description 현재 주문에서 쿠폰 사용 여부 (true: 사용, false: 미사용)
-           * @example true
-           */
-          used: boolean;
-          /**
-           * @description 쿠폰할인금액
-           * @example 0
-           */
-          couponDiscountAmt: number;
-          /**
-           * @description 쿠폰 유형 (PRODUCT: 상품, CART: 장바구니)
-           * @example PRODUCT
-           */
-          couponType: string;
-          /**
-           * @description 상품쿠폰 사용 가능 여부(주문쿠폰인 경우) (true: 가능, false: 불가능)
-           * @example false
-           */
-          productCouponUsable: boolean;
-          /**
-           * @description 제한 결제수단 리스트
-           * @example ["CREDIT_CARD"]
-           */
-          limitPayTypes: ("CREDIT_CARD: Credit Card" | "ACCOUNT: Deposit without bankbook" | "MOBILE: Mobile payment" | "REALTIME_ACCOUNT_TRANSFER: Real-time bank transfer" | "VIRTUAL_ACCOUNT: Virtual account" | "GIFT: Gift card" | "ATM: ATM" | "PAYCO: PAYCO" | "ZERO_PAY: Zero payment" | "ACCUMULATION: Accumulation" | "PHONE_BILL: Phone payment" | "POINT: Point payment" | "YPAY: Yello Pay" | "KPAY: K Pay" | "PAYPIN: Paypin" | "INIPAY: INIPay" | "PAYPAL: PAYPAL" | "STRIPE: STRIPE" | "NAVER_PAY: Naver Pay" | "KAKAO_PAY: Kakao Pay" | "NAVER_EASY_PAY: Naver Pay" | "SAMSUNG_PAY: Samsung Pay" | "CHAI: Chai" | "TOSS_PAY: Toss Pay" | "SK_PAY: SK Pay" | "APPLE_PAY: Apple Pay" | "LPAY: L Pay" | "ESCROW_REALTIME_ACCOUNT_TRANSFER: Real-time bank transfer - Escrow" | "ESCROW_VIRTUAL_ACCOUNT: Virtual account - Escrow" | "RENTAL: Rental payment" | "VERITRANS_CARD: Veritrans CreditCard" | "TOASTCAM: ToastCam" | "UNION_PAY: UnionPay" | "ALIPAY: AliPay Plus" | "WECHAT_PAY: WeChat Pay" | "ETC: Other payment methods")[];
-          /**
-           * @description 선택여부 (true: 선택, false: 선택안함)
-           * @example true
-           */
-          selected: boolean;
-          /**
-           * @description 제한 결제수단 (limitPayTypes를 사용하세요.
-           * @example CREDIT_CARD
-           * @enum {string}
-           */
-          limitPayType: "CREDIT_CARD: Credit Card" | "ACCOUNT: Deposit without bankbook" | "MOBILE: Mobile payment" | "REALTIME_ACCOUNT_TRANSFER: Real-time bank transfer" | "VIRTUAL_ACCOUNT: Virtual account" | "GIFT: Gift card" | "ATM: ATM" | "PAYCO: PAYCO" | "ZERO_PAY: Zero payment" | "ACCUMULATION: Accumulation" | "PHONE_BILL: Phone payment" | "POINT: Point payment" | "YPAY: Yello Pay" | "KPAY: K Pay" | "PAYPIN: Paypin" | "INIPAY: INIPay" | "PAYPAL: PAYPAL" | "STRIPE: STRIPE" | "NAVER_PAY: Naver Pay" | "KAKAO_PAY: Kakao Pay" | "NAVER_EASY_PAY: Naver Pay" | "SAMSUNG_PAY: Samsung Pay" | "CHAI: Chai" | "TOSS_PAY: Toss Pay" | "SK_PAY: SK Pay" | "APPLE_PAY: Apple Pay" | "LPAY: L Pay" | "ESCROW_REALTIME_ACCOUNT_TRANSFER: Real-time bank transfer - Escrow" | "ESCROW_VIRTUAL_ACCOUNT: Virtual account - Escrow" | "RENTAL: Rental payment" | "VERITRANS_CARD: Veritrans CreditCard" | "TOASTCAM: ToastCam" | "UNION_PAY: UnionPay" | "ALIPAY: AliPay Plus" | "WECHAT_PAY: WeChat Pay" | "ETC: Other payment methods";
-          /**
-           * @description 배송비무료여부
-           * @example Y
-           */
-          freeDeliveryYn: string;
-          /**
-           * @description 쿠폰명(노출용)
-           * @example 이벤트 쿠폰
-           */
-          displayCouponName: string;
-          /**
-           * @description 쿠폰 번호
-           * @example 1415130
-           */
-          couponNo: number;
-          /** @description 사용 가능플랫폼 (PC웹,모바일웹,모바일앱) */
-          usablePlatformTypes: string;
-          /**
-           * @description 쿠폰 대상 유형
-           * @example PRODUCT
-           * @enum {string}
-           */
-          couponTargetType: "ALL_PRODUCT: promotion.couponTargetType.allProduct" | "PRODUCT: promotion.couponTargetType.product" | "BRAND: promotion.couponTargetType.brand" | "CATEGORY: promotion.couponTargetType.category" | "PARTNER: promotion.couponTargetType.partner" | "EVENT: promotion.couponTargetType.event";
-          /**
-           * @description 적립금 적립 불가 여부 (true: 불가능, false: 가능)
-           * @example true
-           */
-          skipsAccumulation: boolean;
-          /**
-           * @description 쿠폰 사용 가능한 최대 금액
-           * @example 1000000
-           */
-          maxSalePrice: number;
-          /**
-           * @description 최대 할인 적용 가능한 쿠폰 여부
-           * @example true
-           */
-          maximum: boolean;
-          /**
-           * @description 고정금액할인 (true:정액, false:정률)
-           * @example false
-           */
-          fixedAmountDiscount: boolean;
-        })[];
+      cartCoupons: {
+        /**
+         * @description 쿠폰 생성 사유
+         * @example 프로모션 진행
+         */
+        reason: string;
+        /** @description 할인비율 (nullable) */
+        discountRate?: number;
+        /** @description 쿠폰명 */
+        couponName: string;
+        /**
+         * @description 쿠폰 발급 번호
+         * @example 1415130
+         */
+        couponIssueNo: number;
+        /**
+         * @description 쿠폰 사용 가능한 최소 금액
+         * @example 10000
+         */
+        minSalePrice: number;
+        /**
+         * @description 배송비무료여부 (true: 무료, false: 유료)
+         * @example false
+         */
+        freeDelivery: boolean;
+        /**
+         * @description 최대할인금액(정률에서)
+         * @example 2500
+         */
+        maxDiscountAmt: number;
+        /**
+         * @description 장바구니 쿠폰 사용 가능 여부(상품쿠폰인 경우) (true: 가능, false: 불가능)
+         * @example false
+         */
+        cartCouponUsable: boolean;
+        /**
+         * @description 사용종료일
+         * @example YYYY-MM-DD hh:mm:ss
+         */
+        useEndYmdt: string;
+        /**
+         * @description 현재 주문에서 쿠폰 사용 여부 (true: 사용, false: 미사용)
+         * @example true
+         */
+        used: boolean;
+        /**
+         * @description 쿠폰할인금액
+         * @example 0
+         */
+        couponDiscountAmt: number;
+        /**
+         * @description 쿠폰 유형 (PRODUCT: 상품, CART: 장바구니)
+         * @example PRODUCT
+         */
+        couponType: string;
+        /**
+         * @description 상품쿠폰 사용 가능 여부(주문쿠폰인 경우) (true: 가능, false: 불가능)
+         * @example false
+         */
+        productCouponUsable: boolean;
+        /**
+         * @description 제한 결제수단 리스트
+         * @example ["CREDIT_CARD"]
+         */
+        limitPayTypes: (
+          | 'CREDIT_CARD'
+          | 'ACCOUNT'
+          | 'MOBILE'
+          | 'REALTIME_ACCOUNT_TRANSFER'
+          | 'VIRTUAL_ACCOUNT'
+          | 'GIFT'
+          | 'ATM'
+          | 'PAYCO'
+          | 'ZERO_PAY'
+          | 'ACCUMULATION'
+          | 'PHONE_BILL'
+          | 'POINT'
+          | 'YPAY'
+          | 'KPAY'
+          | 'PAYPIN'
+          | 'INIPAY'
+          | 'PAYPAL'
+          | 'STRIPE'
+          | 'NAVER_PAY'
+          | 'KAKAO_PAY'
+          | 'NAVER_EASY_PAY'
+          | 'SAMSUNG_PAY'
+          | 'CHAI'
+          | 'TOSS_PAY'
+          | 'SK_PAY'
+          | 'APPLE_PAY'
+          | 'LPAY'
+          | 'ESCROW_REALTIME_ACCOUNT_TRANSFER'
+          | 'ESCROW_VIRTUAL_ACCOUNT'
+          | 'RENTAL'
+          | 'VERITRANS_CARD'
+          | 'TOASTCAM'
+          | 'UNION_PAY'
+          | 'ALIPAY'
+          | 'WECHAT_PAY'
+          | 'ETC'
+        )[];
+        /**
+         * @description 선택여부 (true: 선택, false: 선택안함)
+         * @example true
+         */
+        selected: boolean;
+        /**
+         * @description 제한 결제수단 (limitPayTypes를 사용하세요.
+         * @example CREDIT_CARD
+         * @enum {string}
+         */
+        limitPayType:
+          | 'CREDIT_CARD'
+          | 'ACCOUNT'
+          | 'MOBILE'
+          | 'REALTIME_ACCOUNT_TRANSFER'
+          | 'VIRTUAL_ACCOUNT'
+          | 'GIFT'
+          | 'ATM'
+          | 'PAYCO'
+          | 'ZERO_PAY'
+          | 'ACCUMULATION'
+          | 'PHONE_BILL'
+          | 'POINT'
+          | 'YPAY'
+          | 'KPAY'
+          | 'PAYPIN'
+          | 'INIPAY'
+          | 'PAYPAL'
+          | 'STRIPE'
+          | 'NAVER_PAY'
+          | 'KAKAO_PAY'
+          | 'NAVER_EASY_PAY'
+          | 'SAMSUNG_PAY'
+          | 'CHAI'
+          | 'TOSS_PAY'
+          | 'SK_PAY'
+          | 'APPLE_PAY'
+          | 'LPAY'
+          | 'ESCROW_REALTIME_ACCOUNT_TRANSFER'
+          | 'ESCROW_VIRTUAL_ACCOUNT'
+          | 'RENTAL'
+          | 'VERITRANS_CARD'
+          | 'TOASTCAM'
+          | 'UNION_PAY'
+          | 'ALIPAY'
+          | 'WECHAT_PAY'
+          | 'ETC';
+        /**
+         * @description 배송비무료여부
+         * @example Y
+         */
+        freeDeliveryYn: string;
+        /**
+         * @description 쿠폰명(노출용)
+         * @example 이벤트 쿠폰
+         */
+        displayCouponName: string;
+        /**
+         * @description 쿠폰 번호
+         * @example 1415130
+         */
+        couponNo: number;
+        /** @description 사용 가능플랫폼 (PC웹,모바일웹,모바일앱) */
+        usablePlatformTypes: string;
+        /**
+         * @description 쿠폰 대상 유형
+         * @example PRODUCT
+         * @enum {string}
+         */
+        couponTargetType:
+          | 'ALL_PRODUCT'
+          | 'PRODUCT'
+          | 'BRAND'
+          | 'CATEGORY'
+          | 'PARTNER'
+          | 'EVENT';
+        /**
+         * @description 적립금 적립 불가 여부 (true: 불가능, false: 가능)
+         * @example true
+         */
+        skipsAccumulation: boolean;
+        /**
+         * @description 쿠폰 사용 가능한 최대 금액
+         * @example 1000000
+         */
+        maxSalePrice: number;
+        /**
+         * @description 최대 할인 적용 가능한 쿠폰 여부
+         * @example true
+         */
+        maximum: boolean;
+        /**
+         * @description 고정금액할인 (true:정액, false:정률)
+         * @example false
+         */
+        fixedAmountDiscount: boolean;
+      }[];
       /**
        * @description 상품쿠폰할인금액
        * @example 0
        */
       productCouponDiscountAmt: number;
-      deliveryCoupons?: ({
+      deliveryCoupons?: {
+        /**
+         * @description 쿠폰 생성 사유
+         * @example 프로모션 진행
+         */
+        reason: string;
+        /** @description 할인비율 (nullable) */
+        discountRate?: number;
+        /** @description 쿠폰명 */
+        couponName: string;
+        /**
+         * @description 쿠폰 발급 번호
+         * @example 1415130
+         */
+        couponIssueNo: number;
+        /**
+         * @description 쿠폰 사용 가능한 최소 금액
+         * @example 10000
+         */
+        minSalePrice: number;
+        /**
+         * @description 배송비무료여부 (true: 무료, false: 유료)
+         * @example false
+         */
+        freeDelivery: boolean;
+        /**
+         * @description 최대할인금액(정률에서)
+         * @example 2500
+         */
+        maxDiscountAmt: number;
+        /**
+         * @description 장바구니 쿠폰 사용 가능 여부(상품쿠폰인 경우) (true: 가능, false: 불가능)
+         * @example false
+         */
+        cartCouponUsable: boolean;
+        /**
+         * @description 사용종료일
+         * @example YYYY-MM-DD hh:mm:ss
+         */
+        useEndYmdt: string;
+        /**
+         * @description 현재 주문에서 쿠폰 사용 여부 (true: 사용, false: 미사용)
+         * @example true
+         */
+        used: boolean;
+        /**
+         * @description 쿠폰할인금액
+         * @example 0
+         */
+        couponDiscountAmt: number;
+        /**
+         * @description 쿠폰 유형 (PRODUCT: 상품, CART: 장바구니)
+         * @example PRODUCT
+         */
+        couponType: string;
+        /**
+         * @description 상품쿠폰 사용 가능 여부(주문쿠폰인 경우) (true: 가능, false: 불가능)
+         * @example false
+         */
+        productCouponUsable: boolean;
+        /**
+         * @description 제한 결제수단 리스트
+         * @example ["CREDIT_CARD"]
+         */
+        limitPayTypes: (
+          | 'CREDIT_CARD'
+          | 'ACCOUNT'
+          | 'MOBILE'
+          | 'REALTIME_ACCOUNT_TRANSFER'
+          | 'VIRTUAL_ACCOUNT'
+          | 'GIFT'
+          | 'ATM'
+          | 'PAYCO'
+          | 'ZERO_PAY'
+          | 'ACCUMULATION'
+          | 'PHONE_BILL'
+          | 'POINT'
+          | 'YPAY'
+          | 'KPAY'
+          | 'PAYPIN'
+          | 'INIPAY'
+          | 'PAYPAL'
+          | 'STRIPE'
+          | 'NAVER_PAY'
+          | 'KAKAO_PAY'
+          | 'NAVER_EASY_PAY'
+          | 'SAMSUNG_PAY'
+          | 'CHAI'
+          | 'TOSS_PAY'
+          | 'SK_PAY'
+          | 'APPLE_PAY'
+          | 'LPAY'
+          | 'ESCROW_REALTIME_ACCOUNT_TRANSFER'
+          | 'ESCROW_VIRTUAL_ACCOUNT'
+          | 'RENTAL'
+          | 'VERITRANS_CARD'
+          | 'TOASTCAM'
+          | 'UNION_PAY'
+          | 'ALIPAY'
+          | 'WECHAT_PAY'
+          | 'ETC'
+        )[];
+        /**
+         * @description 선택여부 (true: 선택, false: 선택안함)
+         * @example true
+         */
+        selected: boolean;
+        /**
+         * @description 제한 결제수단 (limitPayTypes를 사용하세요.
+         * @example CREDIT_CARD
+         * @enum {string}
+         */
+        limitPayType:
+          | 'CREDIT_CARD'
+          | 'ACCOUNT'
+          | 'MOBILE'
+          | 'REALTIME_ACCOUNT_TRANSFER'
+          | 'VIRTUAL_ACCOUNT'
+          | 'GIFT'
+          | 'ATM'
+          | 'PAYCO'
+          | 'ZERO_PAY'
+          | 'ACCUMULATION'
+          | 'PHONE_BILL'
+          | 'POINT'
+          | 'YPAY'
+          | 'KPAY'
+          | 'PAYPIN'
+          | 'INIPAY'
+          | 'PAYPAL'
+          | 'STRIPE'
+          | 'NAVER_PAY'
+          | 'KAKAO_PAY'
+          | 'NAVER_EASY_PAY'
+          | 'SAMSUNG_PAY'
+          | 'CHAI'
+          | 'TOSS_PAY'
+          | 'SK_PAY'
+          | 'APPLE_PAY'
+          | 'LPAY'
+          | 'ESCROW_REALTIME_ACCOUNT_TRANSFER'
+          | 'ESCROW_VIRTUAL_ACCOUNT'
+          | 'RENTAL'
+          | 'VERITRANS_CARD'
+          | 'TOASTCAM'
+          | 'UNION_PAY'
+          | 'ALIPAY'
+          | 'WECHAT_PAY'
+          | 'ETC';
+        /**
+         * @description 배송비무료여부
+         * @example Y
+         */
+        freeDeliveryYn: string;
+        /**
+         * @description 쿠폰명(노출용)
+         * @example 이벤트 쿠폰
+         */
+        displayCouponName: string;
+        /**
+         * @description 쿠폰 번호
+         * @example 1415130
+         */
+        couponNo: number;
+        /** @description 사용 가능플랫폼 (PC웹,모바일웹,모바일앱) */
+        usablePlatformTypes: string;
+        /**
+         * @description 쿠폰 대상 유형
+         * @example PRODUCT
+         * @enum {string}
+         */
+        couponTargetType:
+          | 'ALL_PRODUCT'
+          | 'PRODUCT'
+          | 'BRAND'
+          | 'CATEGORY'
+          | 'PARTNER'
+          | 'EVENT';
+        /**
+         * @description 적립금 적립 불가 여부 (true: 불가능, false: 가능)
+         * @example true
+         */
+        skipsAccumulation: boolean;
+        /**
+         * @description 쿠폰 사용 가능한 최대 금액
+         * @example 1000000
+         */
+        maxSalePrice: number;
+        /**
+         * @description 최대 할인 적용 가능한 쿠폰 여부
+         * @example true
+         */
+        maximum: boolean;
+        /**
+         * @description 고정금액할인 (true:정액, false:정률)
+         * @example false
+         */
+        fixedAmountDiscount: boolean;
+      }[];
+      /** @description 상품 정보 */
+      products: {
+        /** @description 상품 쿠폰 (nullable) */
+        productCoupons?: {
           /**
            * @description 쿠폰 생성 사유
            * @example 프로모션 진행
@@ -7056,7 +9297,44 @@ export interface components {
            * @description 제한 결제수단 리스트
            * @example ["CREDIT_CARD"]
            */
-          limitPayTypes: ("CREDIT_CARD: Credit Card" | "ACCOUNT: Deposit without bankbook" | "MOBILE: Mobile payment" | "REALTIME_ACCOUNT_TRANSFER: Real-time bank transfer" | "VIRTUAL_ACCOUNT: Virtual account" | "GIFT: Gift card" | "ATM: ATM" | "PAYCO: PAYCO" | "ZERO_PAY: Zero payment" | "ACCUMULATION: Accumulation" | "PHONE_BILL: Phone payment" | "POINT: Point payment" | "YPAY: Yello Pay" | "KPAY: K Pay" | "PAYPIN: Paypin" | "INIPAY: INIPay" | "PAYPAL: PAYPAL" | "STRIPE: STRIPE" | "NAVER_PAY: Naver Pay" | "KAKAO_PAY: Kakao Pay" | "NAVER_EASY_PAY: Naver Pay" | "SAMSUNG_PAY: Samsung Pay" | "CHAI: Chai" | "TOSS_PAY: Toss Pay" | "SK_PAY: SK Pay" | "APPLE_PAY: Apple Pay" | "LPAY: L Pay" | "ESCROW_REALTIME_ACCOUNT_TRANSFER: Real-time bank transfer - Escrow" | "ESCROW_VIRTUAL_ACCOUNT: Virtual account - Escrow" | "RENTAL: Rental payment" | "VERITRANS_CARD: Veritrans CreditCard" | "TOASTCAM: ToastCam" | "UNION_PAY: UnionPay" | "ALIPAY: AliPay Plus" | "WECHAT_PAY: WeChat Pay" | "ETC: Other payment methods")[];
+          limitPayTypes: (
+            | 'CREDIT_CARD'
+            | 'ACCOUNT'
+            | 'MOBILE'
+            | 'REALTIME_ACCOUNT_TRANSFER'
+            | 'VIRTUAL_ACCOUNT'
+            | 'GIFT'
+            | 'ATM'
+            | 'PAYCO'
+            | 'ZERO_PAY'
+            | 'ACCUMULATION'
+            | 'PHONE_BILL'
+            | 'POINT'
+            | 'YPAY'
+            | 'KPAY'
+            | 'PAYPIN'
+            | 'INIPAY'
+            | 'PAYPAL'
+            | 'STRIPE'
+            | 'NAVER_PAY'
+            | 'KAKAO_PAY'
+            | 'NAVER_EASY_PAY'
+            | 'SAMSUNG_PAY'
+            | 'CHAI'
+            | 'TOSS_PAY'
+            | 'SK_PAY'
+            | 'APPLE_PAY'
+            | 'LPAY'
+            | 'ESCROW_REALTIME_ACCOUNT_TRANSFER'
+            | 'ESCROW_VIRTUAL_ACCOUNT'
+            | 'RENTAL'
+            | 'VERITRANS_CARD'
+            | 'TOASTCAM'
+            | 'UNION_PAY'
+            | 'ALIPAY'
+            | 'WECHAT_PAY'
+            | 'ETC'
+          )[];
           /**
            * @description 선택여부 (true: 선택, false: 선택안함)
            * @example true
@@ -7067,7 +9345,43 @@ export interface components {
            * @example CREDIT_CARD
            * @enum {string}
            */
-          limitPayType: "CREDIT_CARD: Credit Card" | "ACCOUNT: Deposit without bankbook" | "MOBILE: Mobile payment" | "REALTIME_ACCOUNT_TRANSFER: Real-time bank transfer" | "VIRTUAL_ACCOUNT: Virtual account" | "GIFT: Gift card" | "ATM: ATM" | "PAYCO: PAYCO" | "ZERO_PAY: Zero payment" | "ACCUMULATION: Accumulation" | "PHONE_BILL: Phone payment" | "POINT: Point payment" | "YPAY: Yello Pay" | "KPAY: K Pay" | "PAYPIN: Paypin" | "INIPAY: INIPay" | "PAYPAL: PAYPAL" | "STRIPE: STRIPE" | "NAVER_PAY: Naver Pay" | "KAKAO_PAY: Kakao Pay" | "NAVER_EASY_PAY: Naver Pay" | "SAMSUNG_PAY: Samsung Pay" | "CHAI: Chai" | "TOSS_PAY: Toss Pay" | "SK_PAY: SK Pay" | "APPLE_PAY: Apple Pay" | "LPAY: L Pay" | "ESCROW_REALTIME_ACCOUNT_TRANSFER: Real-time bank transfer - Escrow" | "ESCROW_VIRTUAL_ACCOUNT: Virtual account - Escrow" | "RENTAL: Rental payment" | "VERITRANS_CARD: Veritrans CreditCard" | "TOASTCAM: ToastCam" | "UNION_PAY: UnionPay" | "ALIPAY: AliPay Plus" | "WECHAT_PAY: WeChat Pay" | "ETC: Other payment methods";
+          limitPayType:
+            | 'CREDIT_CARD'
+            | 'ACCOUNT'
+            | 'MOBILE'
+            | 'REALTIME_ACCOUNT_TRANSFER'
+            | 'VIRTUAL_ACCOUNT'
+            | 'GIFT'
+            | 'ATM'
+            | 'PAYCO'
+            | 'ZERO_PAY'
+            | 'ACCUMULATION'
+            | 'PHONE_BILL'
+            | 'POINT'
+            | 'YPAY'
+            | 'KPAY'
+            | 'PAYPIN'
+            | 'INIPAY'
+            | 'PAYPAL'
+            | 'STRIPE'
+            | 'NAVER_PAY'
+            | 'KAKAO_PAY'
+            | 'NAVER_EASY_PAY'
+            | 'SAMSUNG_PAY'
+            | 'CHAI'
+            | 'TOSS_PAY'
+            | 'SK_PAY'
+            | 'APPLE_PAY'
+            | 'LPAY'
+            | 'ESCROW_REALTIME_ACCOUNT_TRANSFER'
+            | 'ESCROW_VIRTUAL_ACCOUNT'
+            | 'RENTAL'
+            | 'VERITRANS_CARD'
+            | 'TOASTCAM'
+            | 'UNION_PAY'
+            | 'ALIPAY'
+            | 'WECHAT_PAY'
+            | 'ETC';
           /**
            * @description 배송비무료여부
            * @example Y
@@ -7090,7 +9404,13 @@ export interface components {
            * @example PRODUCT
            * @enum {string}
            */
-          couponTargetType: "ALL_PRODUCT: promotion.couponTargetType.allProduct" | "PRODUCT: promotion.couponTargetType.product" | "BRAND: promotion.couponTargetType.brand" | "CATEGORY: promotion.couponTargetType.category" | "PARTNER: promotion.couponTargetType.partner" | "EVENT: promotion.couponTargetType.event";
+          couponTargetType:
+            | 'ALL_PRODUCT'
+            | 'PRODUCT'
+            | 'BRAND'
+            | 'CATEGORY'
+            | 'PARTNER'
+            | 'EVENT';
           /**
            * @description 적립금 적립 불가 여부 (true: 불가능, false: 가능)
            * @example true
@@ -7111,863 +9431,350 @@ export interface components {
            * @example false
            */
           fixedAmountDiscount: boolean;
-        })[];
-      /** @description 상품 정보 */
-      products: ({
-          /** @description 상품 쿠폰 (nullable) */
-          productCoupons?: ({
-              /**
-               * @description 쿠폰 생성 사유
-               * @example 프로모션 진행
-               */
-              reason: string;
-              /** @description 할인비율 (nullable) */
-              discountRate?: number;
-              /** @description 쿠폰명 */
-              couponName: string;
-              /**
-               * @description 쿠폰 발급 번호
-               * @example 1415130
-               */
-              couponIssueNo: number;
-              /**
-               * @description 쿠폰 사용 가능한 최소 금액
-               * @example 10000
-               */
-              minSalePrice: number;
-              /**
-               * @description 배송비무료여부 (true: 무료, false: 유료)
-               * @example false
-               */
-              freeDelivery: boolean;
-              /**
-               * @description 최대할인금액(정률에서)
-               * @example 2500
-               */
-              maxDiscountAmt: number;
-              /**
-               * @description 장바구니 쿠폰 사용 가능 여부(상품쿠폰인 경우) (true: 가능, false: 불가능)
-               * @example false
-               */
-              cartCouponUsable: boolean;
-              /**
-               * @description 사용종료일
-               * @example YYYY-MM-DD hh:mm:ss
-               */
-              useEndYmdt: string;
-              /**
-               * @description 현재 주문에서 쿠폰 사용 여부 (true: 사용, false: 미사용)
-               * @example true
-               */
-              used: boolean;
-              /**
-               * @description 쿠폰할인금액
-               * @example 0
-               */
-              couponDiscountAmt: number;
-              /**
-               * @description 쿠폰 유형 (PRODUCT: 상품, CART: 장바구니)
-               * @example PRODUCT
-               */
-              couponType: string;
-              /**
-               * @description 상품쿠폰 사용 가능 여부(주문쿠폰인 경우) (true: 가능, false: 불가능)
-               * @example false
-               */
-              productCouponUsable: boolean;
-              /**
-               * @description 제한 결제수단 리스트
-               * @example ["CREDIT_CARD"]
-               */
-              limitPayTypes: ("CREDIT_CARD: Credit Card" | "ACCOUNT: Deposit without bankbook" | "MOBILE: Mobile payment" | "REALTIME_ACCOUNT_TRANSFER: Real-time bank transfer" | "VIRTUAL_ACCOUNT: Virtual account" | "GIFT: Gift card" | "ATM: ATM" | "PAYCO: PAYCO" | "ZERO_PAY: Zero payment" | "ACCUMULATION: Accumulation" | "PHONE_BILL: Phone payment" | "POINT: Point payment" | "YPAY: Yello Pay" | "KPAY: K Pay" | "PAYPIN: Paypin" | "INIPAY: INIPay" | "PAYPAL: PAYPAL" | "STRIPE: STRIPE" | "NAVER_PAY: Naver Pay" | "KAKAO_PAY: Kakao Pay" | "NAVER_EASY_PAY: Naver Pay" | "SAMSUNG_PAY: Samsung Pay" | "CHAI: Chai" | "TOSS_PAY: Toss Pay" | "SK_PAY: SK Pay" | "APPLE_PAY: Apple Pay" | "LPAY: L Pay" | "ESCROW_REALTIME_ACCOUNT_TRANSFER: Real-time bank transfer - Escrow" | "ESCROW_VIRTUAL_ACCOUNT: Virtual account - Escrow" | "RENTAL: Rental payment" | "VERITRANS_CARD: Veritrans CreditCard" | "TOASTCAM: ToastCam" | "UNION_PAY: UnionPay" | "ALIPAY: AliPay Plus" | "WECHAT_PAY: WeChat Pay" | "ETC: Other payment methods")[];
-              /**
-               * @description 선택여부 (true: 선택, false: 선택안함)
-               * @example true
-               */
-              selected: boolean;
-              /**
-               * @description 제한 결제수단 (limitPayTypes를 사용하세요.
-               * @example CREDIT_CARD
-               * @enum {string}
-               */
-              limitPayType: "CREDIT_CARD: Credit Card" | "ACCOUNT: Deposit without bankbook" | "MOBILE: Mobile payment" | "REALTIME_ACCOUNT_TRANSFER: Real-time bank transfer" | "VIRTUAL_ACCOUNT: Virtual account" | "GIFT: Gift card" | "ATM: ATM" | "PAYCO: PAYCO" | "ZERO_PAY: Zero payment" | "ACCUMULATION: Accumulation" | "PHONE_BILL: Phone payment" | "POINT: Point payment" | "YPAY: Yello Pay" | "KPAY: K Pay" | "PAYPIN: Paypin" | "INIPAY: INIPay" | "PAYPAL: PAYPAL" | "STRIPE: STRIPE" | "NAVER_PAY: Naver Pay" | "KAKAO_PAY: Kakao Pay" | "NAVER_EASY_PAY: Naver Pay" | "SAMSUNG_PAY: Samsung Pay" | "CHAI: Chai" | "TOSS_PAY: Toss Pay" | "SK_PAY: SK Pay" | "APPLE_PAY: Apple Pay" | "LPAY: L Pay" | "ESCROW_REALTIME_ACCOUNT_TRANSFER: Real-time bank transfer - Escrow" | "ESCROW_VIRTUAL_ACCOUNT: Virtual account - Escrow" | "RENTAL: Rental payment" | "VERITRANS_CARD: Veritrans CreditCard" | "TOASTCAM: ToastCam" | "UNION_PAY: UnionPay" | "ALIPAY: AliPay Plus" | "WECHAT_PAY: WeChat Pay" | "ETC: Other payment methods";
-              /**
-               * @description 배송비무료여부
-               * @example Y
-               */
-              freeDeliveryYn: string;
-              /**
-               * @description 쿠폰명(노출용)
-               * @example 이벤트 쿠폰
-               */
-              displayCouponName: string;
-              /**
-               * @description 쿠폰 번호
-               * @example 1415130
-               */
-              couponNo: number;
-              /** @description 사용 가능플랫폼 (PC웹,모바일웹,모바일앱) */
-              usablePlatformTypes: string;
-              /**
-               * @description 쿠폰 대상 유형
-               * @example PRODUCT
-               * @enum {string}
-               */
-              couponTargetType: "ALL_PRODUCT: promotion.couponTargetType.allProduct" | "PRODUCT: promotion.couponTargetType.product" | "BRAND: promotion.couponTargetType.brand" | "CATEGORY: promotion.couponTargetType.category" | "PARTNER: promotion.couponTargetType.partner" | "EVENT: promotion.couponTargetType.event";
-              /**
-               * @description 적립금 적립 불가 여부 (true: 불가능, false: 가능)
-               * @example true
-               */
-              skipsAccumulation: boolean;
-              /**
-               * @description 쿠폰 사용 가능한 최대 금액
-               * @example 1000000
-               */
-              maxSalePrice: number;
-              /**
-               * @description 최대 할인 적용 가능한 쿠폰 여부
-               * @example true
-               */
-              maximum: boolean;
-              /**
-               * @description 고정금액할인 (true:정액, false:정률)
-               * @example false
-               */
-              fixedAmountDiscount: boolean;
-            })[];
-          /** @description 구매금액(구매가 * 주문수량) */
-          buyAmt: number;
-          /** @description 상품플러스쿠폰 (nullable) */
-          productPlusCoupons?: ({
-              /**
-               * @description 쿠폰 생성 사유
-               * @example 프로모션 진행
-               */
-              reason: string;
-              /** @description 할인비율 (nullable) */
-              discountRate?: number;
-              /** @description 쿠폰명 */
-              couponName: string;
-              /**
-               * @description 쿠폰 발급 번호
-               * @example 1415130
-               */
-              couponIssueNo: number;
-              /**
-               * @description 쿠폰 사용 가능한 최소 금액
-               * @example 10000
-               */
-              minSalePrice: number;
-              /**
-               * @description 배송비무료여부 (true: 무료, false: 유료)
-               * @example false
-               */
-              freeDelivery: boolean;
-              /**
-               * @description 최대할인금액(정률에서)
-               * @example 2500
-               */
-              maxDiscountAmt: number;
-              /**
-               * @description 장바구니 쿠폰 사용 가능 여부(상품쿠폰인 경우) (true: 가능, false: 불가능)
-               * @example false
-               */
-              cartCouponUsable: boolean;
-              /**
-               * @description 사용종료일
-               * @example YYYY-MM-DD hh:mm:ss
-               */
-              useEndYmdt: string;
-              /**
-               * @description 현재 주문에서 쿠폰 사용 여부 (true: 사용, false: 미사용)
-               * @example true
-               */
-              used: boolean;
-              /**
-               * @description 쿠폰할인금액
-               * @example 0
-               */
-              couponDiscountAmt: number;
-              /**
-               * @description 쿠폰 유형 (PRODUCT: 상품, CART: 장바구니)
-               * @example PRODUCT
-               */
-              couponType: string;
-              /**
-               * @description 상품쿠폰 사용 가능 여부(주문쿠폰인 경우) (true: 가능, false: 불가능)
-               * @example false
-               */
-              productCouponUsable: boolean;
-              /**
-               * @description 제한 결제수단 리스트
-               * @example ["CREDIT_CARD"]
-               */
-              limitPayTypes: ("CREDIT_CARD: Credit Card" | "ACCOUNT: Deposit without bankbook" | "MOBILE: Mobile payment" | "REALTIME_ACCOUNT_TRANSFER: Real-time bank transfer" | "VIRTUAL_ACCOUNT: Virtual account" | "GIFT: Gift card" | "ATM: ATM" | "PAYCO: PAYCO" | "ZERO_PAY: Zero payment" | "ACCUMULATION: Accumulation" | "PHONE_BILL: Phone payment" | "POINT: Point payment" | "YPAY: Yello Pay" | "KPAY: K Pay" | "PAYPIN: Paypin" | "INIPAY: INIPay" | "PAYPAL: PAYPAL" | "STRIPE: STRIPE" | "NAVER_PAY: Naver Pay" | "KAKAO_PAY: Kakao Pay" | "NAVER_EASY_PAY: Naver Pay" | "SAMSUNG_PAY: Samsung Pay" | "CHAI: Chai" | "TOSS_PAY: Toss Pay" | "SK_PAY: SK Pay" | "APPLE_PAY: Apple Pay" | "LPAY: L Pay" | "ESCROW_REALTIME_ACCOUNT_TRANSFER: Real-time bank transfer - Escrow" | "ESCROW_VIRTUAL_ACCOUNT: Virtual account - Escrow" | "RENTAL: Rental payment" | "VERITRANS_CARD: Veritrans CreditCard" | "TOASTCAM: ToastCam" | "UNION_PAY: UnionPay" | "ALIPAY: AliPay Plus" | "WECHAT_PAY: WeChat Pay" | "ETC: Other payment methods")[];
-              /**
-               * @description 선택여부 (true: 선택, false: 선택안함)
-               * @example true
-               */
-              selected: boolean;
-              /**
-               * @description 제한 결제수단 (limitPayTypes를 사용하세요.
-               * @example CREDIT_CARD
-               * @enum {string}
-               */
-              limitPayType: "CREDIT_CARD: Credit Card" | "ACCOUNT: Deposit without bankbook" | "MOBILE: Mobile payment" | "REALTIME_ACCOUNT_TRANSFER: Real-time bank transfer" | "VIRTUAL_ACCOUNT: Virtual account" | "GIFT: Gift card" | "ATM: ATM" | "PAYCO: PAYCO" | "ZERO_PAY: Zero payment" | "ACCUMULATION: Accumulation" | "PHONE_BILL: Phone payment" | "POINT: Point payment" | "YPAY: Yello Pay" | "KPAY: K Pay" | "PAYPIN: Paypin" | "INIPAY: INIPay" | "PAYPAL: PAYPAL" | "STRIPE: STRIPE" | "NAVER_PAY: Naver Pay" | "KAKAO_PAY: Kakao Pay" | "NAVER_EASY_PAY: Naver Pay" | "SAMSUNG_PAY: Samsung Pay" | "CHAI: Chai" | "TOSS_PAY: Toss Pay" | "SK_PAY: SK Pay" | "APPLE_PAY: Apple Pay" | "LPAY: L Pay" | "ESCROW_REALTIME_ACCOUNT_TRANSFER: Real-time bank transfer - Escrow" | "ESCROW_VIRTUAL_ACCOUNT: Virtual account - Escrow" | "RENTAL: Rental payment" | "VERITRANS_CARD: Veritrans CreditCard" | "TOASTCAM: ToastCam" | "UNION_PAY: UnionPay" | "ALIPAY: AliPay Plus" | "WECHAT_PAY: WeChat Pay" | "ETC: Other payment methods";
-              /**
-               * @description 배송비무료여부
-               * @example Y
-               */
-              freeDeliveryYn: string;
-              /**
-               * @description 쿠폰명(노출용)
-               * @example 이벤트 쿠폰
-               */
-              displayCouponName: string;
-              /**
-               * @description 쿠폰 번호
-               * @example 1415130
-               */
-              couponNo: number;
-              /** @description 사용 가능플랫폼 (PC웹,모바일웹,모바일앱) */
-              usablePlatformTypes: string;
-              /**
-               * @description 쿠폰 대상 유형
-               * @example PRODUCT
-               * @enum {string}
-               */
-              couponTargetType: "ALL_PRODUCT: promotion.couponTargetType.allProduct" | "PRODUCT: promotion.couponTargetType.product" | "BRAND: promotion.couponTargetType.brand" | "CATEGORY: promotion.couponTargetType.category" | "PARTNER: promotion.couponTargetType.partner" | "EVENT: promotion.couponTargetType.event";
-              /**
-               * @description 적립금 적립 불가 여부 (true: 불가능, false: 가능)
-               * @example true
-               */
-              skipsAccumulation: boolean;
-              /**
-               * @description 쿠폰 사용 가능한 최대 금액
-               * @example 1000000
-               */
-              maxSalePrice: number;
-              /**
-               * @description 최대 할인 적용 가능한 쿠폰 여부
-               * @example true
-               */
-              maximum: boolean;
-              /**
-               * @description 고정금액할인 (true:정액, false:정률)
-               * @example false
-               */
-              fixedAmountDiscount: boolean;
-            })[];
+        }[];
+        /** @description 구매금액(구매가 * 주문수량) */
+        buyAmt: number;
+        /** @description 상품플러스쿠폰 (nullable) */
+        productPlusCoupons?: {
           /**
-           * @description 브랜드명
-           * @example 나이키
+           * @description 쿠폰 생성 사유
+           * @example 프로모션 진행
            */
-          brandName: string;
+          reason: string;
+          /** @description 할인비율 (nullable) */
+          discountRate?: number;
+          /** @description 쿠폰명 */
+          couponName: string;
           /**
-           * @description 옵션 요약 정보
-           * @example 사이즈:105
+           * @description 쿠폰 발급 번호
+           * @example 1415130
            */
-          mainOption: string;
+          couponIssueNo: number;
           /**
-           * @description 총구매수량
-           * @example 1
+           * @description 쿠폰 사용 가능한 최소 금액
+           * @example 10000
            */
-          totalOrderCnt: number;
+          minSalePrice: number;
           /**
-           * @description 옵션개수
-           * @example 1
+           * @description 배송비무료여부 (true: 무료, false: 유료)
+           * @example false
            */
-          optionCnt: number;
-          /** @description 사용불가 상품 쿠폰 (nullable) */
-          invalidProductCoupons?: {
-              /**
-               * @description 쿠폰 지급 불가 이유
-               * @example 기간 만료
-               */
-              reason: string;
-              /** @description 쿠폰명 */
-              couponName: string;
-              /**
-               * @description 쿠폰 발급 번호
-               * @example 1415130
-               */
-              couponIssueNo: number;
-              /**
-               * @description 쿠폰 번호
-               * @example 1415130
-               */
-              couponNo: number;
-            }[];
+          freeDelivery: boolean;
           /**
-           * @description 상품쿠폰할인금액
-           * @example 0
-           */
-          productCouponDiscountAmt: number;
-          /** @description deprecated(더 이상 제공하지 않는 개체항목입니다) (nullable) */
-          optionInputs?: (Record<string, never> | boolean | string | number)[];
-          /**
-           * @description 상품명
-           * @example 상품1
-           */
-          productName: string;
-          /**
-           * @description 상품번호
-           * @example 100398947
-           */
-          productNo: number;
-        })[];
-    };
-    "recurring-payments-cart-subset84337202": {
-      /** @description 배송 그룹 */
-      deliveryGroups: ({
-          /**
-           * @description 배송그룹별 구매금액 합
-           * @example 0
-           */
-          buyAmt: number;
-          /**
-           * @description 파트너번호 (nullable)
+           * @description 최대할인금액(정률에서)
            * @example 2500
            */
-          partnerNo?: number;
+          maxDiscountAmt: number;
           /**
-           * @description 배송비착불여부
-           * @example PREPAID_DELIVERY
+           * @description 장바구니 쿠폰 사용 가능 여부(상품쿠폰인 경우) (true: 가능, false: 불가능)
+           * @example false
+           */
+          cartCouponUsable: boolean;
+          /**
+           * @description 사용종료일
+           * @example YYYY-MM-DD hh:mm:ss
+           */
+          useEndYmdt: string;
+          /**
+           * @description 현재 주문에서 쿠폰 사용 여부 (true: 사용, false: 미사용)
+           * @example true
+           */
+          used: boolean;
+          /**
+           * @description 쿠폰할인금액
+           * @example 0
+           */
+          couponDiscountAmt: number;
+          /**
+           * @description 쿠폰 유형 (PRODUCT: 상품, CART: 장바구니)
+           * @example PRODUCT
+           */
+          couponType: string;
+          /**
+           * @description 상품쿠폰 사용 가능 여부(주문쿠폰인 경우) (true: 가능, false: 불가능)
+           * @example false
+           */
+          productCouponUsable: boolean;
+          /**
+           * @description 제한 결제수단 리스트
+           * @example ["CREDIT_CARD"]
+           */
+          limitPayTypes: (
+            | 'CREDIT_CARD'
+            | 'ACCOUNT'
+            | 'MOBILE'
+            | 'REALTIME_ACCOUNT_TRANSFER'
+            | 'VIRTUAL_ACCOUNT'
+            | 'GIFT'
+            | 'ATM'
+            | 'PAYCO'
+            | 'ZERO_PAY'
+            | 'ACCUMULATION'
+            | 'PHONE_BILL'
+            | 'POINT'
+            | 'YPAY'
+            | 'KPAY'
+            | 'PAYPIN'
+            | 'INIPAY'
+            | 'PAYPAL'
+            | 'STRIPE'
+            | 'NAVER_PAY'
+            | 'KAKAO_PAY'
+            | 'NAVER_EASY_PAY'
+            | 'SAMSUNG_PAY'
+            | 'CHAI'
+            | 'TOSS_PAY'
+            | 'SK_PAY'
+            | 'APPLE_PAY'
+            | 'LPAY'
+            | 'ESCROW_REALTIME_ACCOUNT_TRANSFER'
+            | 'ESCROW_VIRTUAL_ACCOUNT'
+            | 'RENTAL'
+            | 'VERITRANS_CARD'
+            | 'TOASTCAM'
+            | 'UNION_PAY'
+            | 'ALIPAY'
+            | 'WECHAT_PAY'
+            | 'ETC'
+          )[];
+          /**
+           * @description 선택여부 (true: 선택, false: 선택안함)
+           * @example true
+           */
+          selected: boolean;
+          /**
+           * @description 제한 결제수단 (limitPayTypes를 사용하세요.
+           * @example CREDIT_CARD
            * @enum {string}
            */
-          deliveryPayType: "PREPAID_DELIVERY: 배송비 선불" | "PAY_ON_DELIVERY: 배송비 착불";
-          /** @description 배송 조건 */
-          deliveryCondition: {
-            /**
-             * @description 배송조건 (nullable)
-             * @example FREE
-             * @enum {string}
-             */
-            deliveryConditionType?: "FREE: 무료" | "CONDITIONAL: 조건별무료" | "FIXED_FEE: 유료(고정 배송비)" | "QUANTITY_PROPOSITIONAL_FEE: 수량 비례" | "PRICE_FEE: 금액별 차등" | "QUANTITY_FEE: 수량별 차등";
-            /**
-             * @description 조건부 배송비의 기준값(9,800원 미만 배송비 2,500원일때 aboveDeliveryAmt는 9800)
-             * @example 9800
-             */
-            aboveDeliveryAmt: number;
-            /**
-             * @description 배송비(조건에 의해 계산되어진)
-             * @example 2500
-             */
-            deliveryAmt: number;
-            /**
-             * @description 묶음배송조건 (nullable)
-             * @example MAXIMUM_SELECTED
-             * @enum {string}
-             */
-            groupDeliveryAmtType?: "MAXIMUM_SELECTED: 최대부과" | "MINIMUM_SELECTED: 최소부과";
-            /**
-             * @description 반품배송비
-             * @example 2500
-             */
-            returnDeliveryAmt: number;
-            /**
-             * @description 조건부 배송비 미달 시 배송비(9,800원 미만 배송비 2,500원일때 baseDeliveryAmt는 2,500)
-             * @example 2500
-             */
-            baseDeliveryAmt: number;
-            /**
-             * @description 추가배송비(조건에 의해 계산되어진)
-             * @example 2500
-             */
-            remoteDeliveryAmt: number;
-            /**
-             * @description 지역별추가배송비사용여부 (nullable)
-             * @example false
-             */
-            chargesRemoteDeliveryAmt?: boolean;
-          };
+          limitPayType:
+            | 'CREDIT_CARD'
+            | 'ACCOUNT'
+            | 'MOBILE'
+            | 'REALTIME_ACCOUNT_TRANSFER'
+            | 'VIRTUAL_ACCOUNT'
+            | 'GIFT'
+            | 'ATM'
+            | 'PAYCO'
+            | 'ZERO_PAY'
+            | 'ACCUMULATION'
+            | 'PHONE_BILL'
+            | 'POINT'
+            | 'YPAY'
+            | 'KPAY'
+            | 'PAYPIN'
+            | 'INIPAY'
+            | 'PAYPAL'
+            | 'STRIPE'
+            | 'NAVER_PAY'
+            | 'KAKAO_PAY'
+            | 'NAVER_EASY_PAY'
+            | 'SAMSUNG_PAY'
+            | 'CHAI'
+            | 'TOSS_PAY'
+            | 'SK_PAY'
+            | 'APPLE_PAY'
+            | 'LPAY'
+            | 'ESCROW_REALTIME_ACCOUNT_TRANSFER'
+            | 'ESCROW_VIRTUAL_ACCOUNT'
+            | 'RENTAL'
+            | 'VERITRANS_CARD'
+            | 'TOASTCAM'
+            | 'UNION_PAY'
+            | 'ALIPAY'
+            | 'WECHAT_PAY'
+            | 'ETC';
           /**
-           * @description 배송비
-           * @example 2500
+           * @description 배송비무료여부
+           * @example Y
            */
-          deliveryAmt: number;
+          freeDeliveryYn: string;
           /**
-           * @description 파트너명
-           * @example NCP
+           * @description 쿠폰명(노출용)
+           * @example 이벤트 쿠폰
            */
-          partnerName: string;
-          /** @description 주문 상품 */
-          orderProducts: ({
-              /**
-               * @description 교환가능여부
-               * @example false
-               */
-              exchangeable: boolean;
-              /**
-               * @description 구매금액 합
-               * @example 0
-               */
-              buyAmt: number;
-              /**
-               * @description 취소가능여부
-               * @example false
-               */
-              cancelable: boolean;
-              /**
-               * @description 쿠폰 사용 가능 여부
-               * @example true
-               */
-              couponUsable: boolean;
-              /**
-               * @description 배송가능여부
-               * @example false
-               */
-              deliverable: boolean;
-              /** @description 카테고리 명 */
-              categoryName: string;
-              /**
-               * @description 옵션사용여부
-               * @example false
-               */
-              optionUsed: boolean;
-              /**
-               * @description 찜상품 여부
-               * @example false
-               */
-              liked: boolean;
-              /**
-               * @description 상품 명
-               * @example string
-               */
-              productName: string;
-              /** @description 파트너 번호 */
-              partnerNo: number;
-              /** @description 최대 구매수량 정보 */
-              maxBuyCountInfo: {
-                /** @description 1인당 최대 구매 수량 */
-                maxBuyPersonCount: number;
-                /** @description 최대 구매 수량 기간 제한 : 7일 동안 최대 2개 구매가능 (2개 항목) */
-                maxBuyPeriodCount: number;
-                /**
-                 * @description 최대 구매 수량 기간 제한 : 7일 동안 최대 2개 구매가능 (7일 항목)
-                 * @example 0
-                 */
-                maxBuyDays: number;
-                /**
-                 * @description 1회당 최대 구매 수량
-                 * @example 0
-                 */
-                maxBuyTimeCount: number;
-              };
-              /**
-               * @description 적립금 사용 가능 여부
-               * @example true
-               */
-              accumulationUsable: boolean;
-              /**
-               * @description eanCode
-               * @example e1
-               */
-              eanCode: string;
-              /** @description 최소 구매 수량 */
-              minBuyCount: number;
-              /**
-               * @description 상품 url
-               * @example http://image.url
-               */
-              imageUrl: string;
-              /** @description 표준 카테고리 번호 */
-              categoryNo: number;
-              /**
-               * @description 옵션 선택 방식 (nullable)
-               * @example FLAT
-               * @enum {string}
-               */
-              selectType?: "FLAT: 일체형" | "MULTI: 분리형";
-              /** @description 주문 상품 옵션 */
-              orderProductOptions: ({
-                  /**
-                   * @description 예약주문 상품 배송시작예정일
-                   * @example String
-                   */
-                  reservationDeliveryYmdt: string;
-                  /**
-                   * @description 구매확정 시 적립금 합
-                   * @example 0
-                   */
-                  accumulationAmtWhenBuyConfirm: number;
-                  /** @description 유효성 정보 */
-                  validInfo: {
-                    /**
-                     * @description 유효 여부(true: 유효, false: 유효하지 않음)
-                     * @example false
-                     */
-                    valid: boolean;
-                    /** @description deprecated(더 이상 제공하지 않는 개체항목입니다) */
-                    validYn: string;
-                    /**
-                     * @description 유효성 실패 코드 (nullable)
-                     * @example string
-                     */
-                    errorCode?: string;
-                    /**
-                     * @description 유효성 실패 사유 메세지 (nullable)
-                     * @example string
-                     */
-                    message?: string;
-                    /**
-                     * @description 주문수량변경 가능 여부 (true:변경가능, false:변경불가능)
-                     * @example false
-                     */
-                    orderCntChangeable: boolean;
-                  };
-                  /** @description 카테고리 명 */
-                  categoryName: string;
-                  /**
-                   * @description 옵션형태
-                   * @example PRODUCT_ONLY
-                   * @enum {string}
-                   */
-                  optionType: "PRODUCT_ONLY: 옵션없음" | "NORMAL_OPTION: 일반옵션" | "ADDITIONAL_PRODUCT: 추가옵션";
-                  /**
-                   * @description 구매확정 시 회원에 대한 적립률(회원등급/그룹 중 큰 값)
-                   * @example 0
-                   */
-                  accumulationRateForMemberWhenBuyConfirm: number;
-                  /** @description 가격 정보 */
-                  price: {
-                    /**
-                     * @description 구매금액(구매가 * 주문수량)
-                     * @example 0
-                     */
-                    buyAmt: number;
-                    /**
-                     * @description 추가할인금액
-                     * @example 0
-                     */
-                    additionalDiscountAmt: number;
-                    /**
-                     * @description 즉시할인금액
-                     * @example 0
-                     */
-                    immediateDiscountAmt: number;
-                    /**
-                     * @description 상품판매가
-                     * @example 0
-                     */
-                    salePrice: number;
-                    /**
-                     * @description 정상금액(상품판매가 + 옵션추가금액) * 주문수량
-                     * @example 0
-                     */
-                    standardAmt: number;
-                    /**
-                     * @description 옵션가격(추가금액)
-                     * @example 0
-                     */
-                    addPrice: number;
-                  };
-                  /**
-                   * @description 옵션 이미지 URL
-                   * @example http://image.url
-                   */
-                  imageUrl: string;
-                  /** @description 표준 카테고리 번호 */
-                  categoryNo: number;
-                  /** @description 주문 상품 옵션 */
-                  setOptions: {
-                      /**
-                       * @description 옵션사용여부
-                       * @example true
-                       */
-                      usesOption: boolean;
-                      /**
-                       * @description 옵션번호
-                       * @example 1
-                       */
-                      mallOptionNo: number;
-                      /**
-                       * @description 상품관리코드 (nullable)
-                       * @example 1231
-                       */
-                      productManagementCd?: string;
-                      /**
-                       * @description 옵션
-                       * @example 100
-                       */
-                      optionValue: string;
-                      /**
-                       * @description 구매수
-                       * @example 1
-                       */
-                      count: number;
-                      /**
-                       * @description 옵션가격
-                       * @example 1000
-                       */
-                      optionPrice: number;
-                      /**
-                       * @description sku (nullable)
-                       * @example 1231
-                       */
-                      sku?: string;
-                      /**
-                       * @description 옵션명
-                       * @example 사이즈
-                       */
-                      optionName: string;
-                      /**
-                       * @description 옵션관리코드 (nullable)
-                       * @example 1231
-                       */
-                      optionManagementCd?: string;
-                      /**
-                       * @description 상품번호
-                       * @example 1
-                       */
-                      mallProductNo: number;
-                      /**
-                       * @description 재고번호
-                       * @example 1
-                       */
-                      stockNo: number;
-                      /**
-                       * @description 상품명
-                       * @example TEST_PRODUCT
-                       */
-                      productName: string;
-                    }[];
-                  /**
-                   * @description 예약주문여부 (true: 예약주문상품, false: 일반상품)
-                   * @example false
-                   */
-                  reservation: boolean;
-                  /**
-                   * @description 옵션번호
-                   * @example 0
-                   */
-                  optionNo: number;
-                  /**
-                   * @description 구매확정 시 회원에 대한 적립금(회원등급/그룹 중 큰 값)
-                   * @example 0
-                   */
-                  accumulationAmtForMemberWhenBuyConfirm: number;
-                  /**
-                   * @description 상품번호
-                   * @example 0
-                   */
-                  productNo: number;
-                  /**
-                   * @description 옵션권장출력값
-                   * @example string
-                   */
-                  optionTitle: string;
-                  /**
-                   * @description 옵션값
-                   * @example string
-                   */
-                  optionValue: string;
-                  /**
-                   * @description 주문수량
-                   * @example 0
-                   */
-                  orderCnt: number;
-                  /** @description 소비자 입력형 옵션 */
-                  optionInputs: {
-                      /**
-                       * @description 구매자 작성형 입력 깂
-                       * @example 14호
-                       */
-                      inputValue: string;
-                      /**
-                       * @description 구매자 작성형 입력 이름
-                       * @example 사이즈
-                       */
-                      inputLabel: string;
-                      /**
-                       * @description 구매자 작성형 입력 필수여부 (nullable)
-                       * @example true
-                       */
-                      required?: boolean;
-                    }[];
-                  /**
-                   * @description 품절여부 (true:품절 false:구매가능)
-                   * @example false
-                   */
-                  soldOut: boolean;
-                  /**
-                   * @description 구매확정 시 상품에 대한 적립률
-                   * @example 0
-                   */
-                  accumulationRateForProductWhenBuyConfirm: number;
-                  /**
-                   * @description 구매확정 시 상품에 대한 적립금
-                   * @example 0
-                   */
-                  accumulationAmtForProductWhenBuyConfirm: number;
-                  /**
-                   * @description 정기 결제 배송 주기 (nullable)
-                   * @example 1,2,3
-                   */
-                  recurringDeliveryCycles?: number[];
-                  /**
-                   * @description 재고 개수
-                   * @example 0
-                   */
-                  stockCnt: number;
-                  /**
-                   * @description 옵션명
-                   * @example string
-                   */
-                  optionName: string;
-                  /**
-                   * @description 판매자 관리코드
-                   * @example string
-                   */
-                  optionManagementCd: string;
-                  /**
-                   * @description 장바구니 번호
-                   * @example 0
-                   */
-                  cartNo: number;
-                })[];
-              /**
-               * @description 환불가능여부
-               * @example false
-               */
-              refundable: boolean;
-              /** @description 전시 카테고리 번호 목록 */
-              categoryNos: (Record<string, never> | boolean | string | number)[];
-              /** @description 배송일 지정 정보 */
-              deliveryDate: {
-                /** @description 기간 */
-                period: {
-                  /**
-                   * @description 배송일지정 가능한 시작일
-                   * @example YYYY-MM-DD hh:mm:ss
-                   */
-                  startYmdt: string;
-                  /**
-                   * @description 배송일지정 가능한 종료일
-                   * @example YYYY-MM-DD hh:mm:ss
-                   */
-                  endYmdt: string;
-                };
-                /**
-                 * @description 요일
-                 * @example [MON]
-                 */
-                daysOfWeek: ("SUN: 일" | "MON: 월" | "TUE: 화" | "WED: 수" | "THU: 목" | "FRI: 금" | "SAT: 토")[];
-                /**
-                 * @description 주문일 기준
-                 * @example 0
-                 */
-                daysAfterPurchase: number;
-              };
-              /**
-               * @description 브랜드 번호
-               * @example 12
-               */
-              brandNo: number;
-              /**
-               * @description 해외직배송여부
-               * @example false
-               */
-              deliveryInternational: boolean;
-              /**
-               * @description 상품번호
-               * @example 0
-               */
-              productNo: number;
-              /**
-               * @description 브랜드 명
-               * @example string
-               */
-              brandName: string;
-              /** @description 파트너 명 */
-              partnerName: string;
-              /** @description 네이버페이 주문형 결제 가능 여부 */
-              allowsNaverPay: boolean;
-              /**
-               * @description 배송구분
-               * @example PARTNER_SHIPPING_AREA
-               * @enum {string}
-               */
-              shippingAreaType: "PARTNER_SHIPPING_AREA: Partner Delivery" | "MALL_SHIPPING_AREA: Shipping Mall Delivery";
-              /** @description 미성년자 구매 가능 여부 */
-              minorPurchasable: boolean;
-              /**
-               * @description 반품가능여부
-               * @example false
-               */
-              returnable: boolean;
-              /**
-               * @description hsCode
-               * @example p1
-               */
-              hsCode: string;
-              /**
-               * @description 브랜드 영문명
-               * @example string
-               */
-              brandNameEn: string;
-              /**
-               * @description 상품 영문명
-               * @example string
-               */
-              productNameEn: string;
-            })[];
+          displayCouponName: string;
           /**
-           * @description 배송비 템플릿 그룹 번호 (nullable)
-           * @example 1
+           * @description 쿠폰 번호
+           * @example 1415130
            */
-          deliveryTemplateGroupNo?: number;
+          couponNo: number;
+          /** @description 사용 가능플랫폼 (PC웹,모바일웹,모바일앱) */
+          usablePlatformTypes: string;
           /**
-           * @description 배송비 템플릿 번호 (nullable)
-           * @example 1
+           * @description 쿠폰 대상 유형
+           * @example PRODUCT
+           * @enum {string}
            */
-          deliveryTemplateNo?: number;
-        })[];
-      /** @description 가격 정보 */
-      price: {
+          couponTargetType:
+            | 'ALL_PRODUCT'
+            | 'PRODUCT'
+            | 'BRAND'
+            | 'CATEGORY'
+            | 'PARTNER'
+            | 'EVENT';
+          /**
+           * @description 적립금 적립 불가 여부 (true: 불가능, false: 가능)
+           * @example true
+           */
+          skipsAccumulation: boolean;
+          /**
+           * @description 쿠폰 사용 가능한 최대 금액
+           * @example 1000000
+           */
+          maxSalePrice: number;
+          /**
+           * @description 최대 할인 적용 가능한 쿠폰 여부
+           * @example true
+           */
+          maximum: boolean;
+          /**
+           * @description 고정금액할인 (true:정액, false:정률)
+           * @example false
+           */
+          fixedAmountDiscount: boolean;
+        }[];
         /**
-         * @description 구매금액 합
+         * @description 브랜드명
+         * @example 나이키
+         */
+        brandName: string;
+        /**
+         * @description 옵션 요약 정보
+         * @example 사이즈:105
+         */
+        mainOption: string;
+        /**
+         * @description 총구매수량
+         * @example 1
+         */
+        totalOrderCnt: number;
+        /**
+         * @description 옵션개수
+         * @example 1
+         */
+        optionCnt: number;
+        /** @description 사용불가 상품 쿠폰 (nullable) */
+        invalidProductCoupons?: {
+          /**
+           * @description 쿠폰 지급 불가 이유
+           * @example 기간 만료
+           */
+          reason: string;
+          /** @description 쿠폰명 */
+          couponName: string;
+          /**
+           * @description 쿠폰 발급 번호
+           * @example 1415130
+           */
+          couponIssueNo: number;
+          /**
+           * @description 쿠폰 번호
+           * @example 1415130
+           */
+          couponNo: number;
+        }[];
+        /**
+         * @description 상품쿠폰할인금액
+         * @example 0
+         */
+        productCouponDiscountAmt: number;
+        /** @description deprecated(더 이상 제공하지 않는 개체항목입니다) (nullable) */
+        optionInputs?: (Record<string, never> | boolean | string | number)[];
+        /**
+         * @description 상품명
+         * @example 상품1
+         */
+        productName: string;
+        /**
+         * @description 상품번호
+         * @example 100398947
+         */
+        productNo: number;
+      }[];
+    };
+    'recurring-payments-cart-subset84337202': {
+      /** @description 배송 그룹 */
+      deliveryGroups: {
+        /**
+         * @description 배송그룹별 구매금액 합
          * @example 0
          */
         buyAmt: number;
         /**
-         * @description 할인금액
-         * @example 0
+         * @description 파트너번호 (nullable)
+         * @example 2500
          */
-        discountAmt: number;
+        partnerNo?: number;
         /**
-         * @description 총 구매금액 합(구매금액 합 + 총 선불배송비 합)
-         * @example 0
+         * @description 배송비착불여부
+         * @example PREPAID_DELIVERY
+         * @enum {string}
          */
-        totalAmt: number;
+        deliveryPayType: 'PREPAID_DELIVERY' | 'PAY_ON_DELIVERY';
+        /** @description 배송 조건 */
+        deliveryCondition: {
+          /**
+           * @description 배송조건 (nullable)
+           * @example FREE
+           * @enum {string}
+           */
+          deliveryConditionType?:
+            | 'FREE'
+            | 'CONDITIONAL'
+            | 'FIXED_FEE'
+            | 'QUANTITY_PROPOSITIONAL_FEE'
+            | 'PRICE_FEE'
+            | 'QUANTITY_FEE';
+          /**
+           * @description 조건부 배송비의 기준값(9,800원 미만 배송비 2,500원일때 aboveDeliveryAmt는 9800)
+           * @example 9800
+           */
+          aboveDeliveryAmt: number;
+          /**
+           * @description 배송비(조건에 의해 계산되어진)
+           * @example 2500
+           */
+          deliveryAmt: number;
+          /**
+           * @description 묶음배송조건 (nullable)
+           * @example MAXIMUM_SELECTED
+           * @enum {string}
+           */
+          groupDeliveryAmtType?: 'MAXIMUM_SELECTED' | 'MINIMUM_SELECTED';
+          /**
+           * @description 반품배송비
+           * @example 2500
+           */
+          returnDeliveryAmt: number;
+          /**
+           * @description 조건부 배송비 미달 시 배송비(9,800원 미만 배송비 2,500원일때 baseDeliveryAmt는 2,500)
+           * @example 2500
+           */
+          baseDeliveryAmt: number;
+          /**
+           * @description 추가배송비(조건에 의해 계산되어진)
+           * @example 2500
+           */
+          remoteDeliveryAmt: number;
+          /**
+           * @description 지역별추가배송비사용여부 (nullable)
+           * @example false
+           */
+          chargesRemoteDeliveryAmt?: boolean;
+        };
         /**
-         * @description 구매확정 시 적립금 합
-         * @example 0
+         * @description 배송비
+         * @example 2500
          */
-        accumulationAmtWhenBuyConfirm: number;
+        deliveryAmt: number;
         /**
-         * @description 정상금액(상품판매가 + 옵션추가금액) * 주문수량
-         * @example 0
+         * @description 파트너명
+         * @example NCP
          */
-        standardAmt: number;
-        /**
-         * @description 총 착불배송비 합
-         * @example 0
-         */
-        totalPayOnDeliveryAmt: number;
-        /**
-         * @description 총 배송비 합
-         * @example 0
-         */
-        totalDeliveryAmt: number;
-        /**
-         * @description 총 선불배송비 합
-         * @example 0
-         */
-        totalPrePaidDeliveryAmt: number;
-      };
-      /** @description 유효하지 않은 상품 */
-      invalidProducts: ({
+        partnerName: string;
+        /** @description 주문 상품 */
+        orderProducts: {
           /**
            * @description 교환가능여부
            * @example false
@@ -8053,254 +9860,254 @@ export interface components {
            * @example FLAT
            * @enum {string}
            */
-          selectType?: "FLAT: 일체형" | "MULTI: 분리형";
+          selectType?: 'FLAT' | 'MULTI';
           /** @description 주문 상품 옵션 */
-          orderProductOptions: ({
+          orderProductOptions: {
+            /**
+             * @description 예약주문 상품 배송시작예정일
+             * @example String
+             */
+            reservationDeliveryYmdt: string;
+            /**
+             * @description 구매확정 시 적립금 합
+             * @example 0
+             */
+            accumulationAmtWhenBuyConfirm: number;
+            /** @description 유효성 정보 */
+            validInfo: {
               /**
-               * @description 예약주문 상품 배송시작예정일
-               * @example String
-               */
-              reservationDeliveryYmdt: string;
-              /**
-               * @description 구매확정 시 적립금 합
-               * @example 0
-               */
-              accumulationAmtWhenBuyConfirm: number;
-              /** @description 유효성 정보 */
-              validInfo: {
-                /**
-                 * @description 유효 여부(true: 유효, false: 유효하지 않음)
-                 * @example false
-                 */
-                valid: boolean;
-                /** @description deprecated(더 이상 제공하지 않는 개체항목입니다) */
-                validYn: string;
-                /**
-                 * @description 유효성 실패 코드 (nullable)
-                 * @example string
-                 */
-                errorCode?: string;
-                /**
-                 * @description 유효성 실패 사유 메세지 (nullable)
-                 * @example string
-                 */
-                message?: string;
-                /**
-                 * @description 주문수량변경 가능 여부 (true:변경가능, false:변경불가능)
-                 * @example false
-                 */
-                orderCntChangeable: boolean;
-              };
-              /** @description 카테고리 명 */
-              categoryName: string;
-              /**
-               * @description 옵션형태
-               * @example PRODUCT_ONLY
-               * @enum {string}
-               */
-              optionType: "PRODUCT_ONLY: 옵션없음" | "NORMAL_OPTION: 일반옵션" | "ADDITIONAL_PRODUCT: 추가옵션";
-              /**
-               * @description 구매확정 시 회원에 대한 적립률(회원등급/그룹 중 큰 값)
-               * @example 0
-               */
-              accumulationRateForMemberWhenBuyConfirm: number;
-              /** @description 가격 정보 */
-              price: {
-                /**
-                 * @description 구매금액(구매가 * 주문수량)
-                 * @example 0
-                 */
-                buyAmt: number;
-                /**
-                 * @description 추가할인금액
-                 * @example 0
-                 */
-                additionalDiscountAmt: number;
-                /**
-                 * @description 즉시할인금액
-                 * @example 0
-                 */
-                immediateDiscountAmt: number;
-                /**
-                 * @description 상품판매가
-                 * @example 0
-                 */
-                salePrice: number;
-                /**
-                 * @description 정상금액(상품판매가 + 옵션추가금액) * 주문수량
-                 * @example 0
-                 */
-                standardAmt: number;
-                /**
-                 * @description 옵션가격(추가금액)
-                 * @example 0
-                 */
-                addPrice: number;
-              };
-              /**
-               * @description 옵션 이미지 URL
-               * @example http://image.url
-               */
-              imageUrl: string;
-              /** @description 표준 카테고리 번호 */
-              categoryNo: number;
-              /** @description 주문 상품 옵션 */
-              setOptions: {
-                  /**
-                   * @description 옵션사용여부
-                   * @example true
-                   */
-                  usesOption: boolean;
-                  /**
-                   * @description 옵션번호
-                   * @example 1
-                   */
-                  mallOptionNo: number;
-                  /**
-                   * @description 상품관리코드 (nullable)
-                   * @example 1231
-                   */
-                  productManagementCd?: string;
-                  /**
-                   * @description 옵션
-                   * @example 100
-                   */
-                  optionValue: string;
-                  /**
-                   * @description 구매수
-                   * @example 1
-                   */
-                  count: number;
-                  /**
-                   * @description 옵션가격
-                   * @example 1000
-                   */
-                  optionPrice: number;
-                  /**
-                   * @description sku (nullable)
-                   * @example 1231
-                   */
-                  sku?: string;
-                  /**
-                   * @description 옵션명
-                   * @example 사이즈
-                   */
-                  optionName: string;
-                  /**
-                   * @description 옵션관리코드 (nullable)
-                   * @example 1231
-                   */
-                  optionManagementCd?: string;
-                  /**
-                   * @description 상품번호
-                   * @example 1
-                   */
-                  mallProductNo: number;
-                  /**
-                   * @description 재고번호
-                   * @example 1
-                   */
-                  stockNo: number;
-                  /**
-                   * @description 상품명
-                   * @example TEST_PRODUCT
-                   */
-                  productName: string;
-                }[];
-              /**
-               * @description 예약주문여부 (true: 예약주문상품, false: 일반상품)
+               * @description 유효 여부(true: 유효, false: 유효하지 않음)
                * @example false
                */
-              reservation: boolean;
+              valid: boolean;
+              /** @description deprecated(더 이상 제공하지 않는 개체항목입니다) */
+              validYn: string;
+              /**
+               * @description 유효성 실패 코드 (nullable)
+               * @example string
+               */
+              errorCode?: string;
+              /**
+               * @description 유효성 실패 사유 메세지 (nullable)
+               * @example string
+               */
+              message?: string;
+              /**
+               * @description 주문수량변경 가능 여부 (true:변경가능, false:변경불가능)
+               * @example false
+               */
+              orderCntChangeable: boolean;
+            };
+            /** @description 카테고리 명 */
+            categoryName: string;
+            /**
+             * @description 옵션형태
+             * @example PRODUCT_ONLY
+             * @enum {string}
+             */
+            optionType: 'PRODUCT_ONLY' | 'NORMAL_OPTION' | 'ADDITIONAL_PRODUCT';
+            /**
+             * @description 구매확정 시 회원에 대한 적립률(회원등급/그룹 중 큰 값)
+             * @example 0
+             */
+            accumulationRateForMemberWhenBuyConfirm: number;
+            /** @description 가격 정보 */
+            price: {
+              /**
+               * @description 구매금액(구매가 * 주문수량)
+               * @example 0
+               */
+              buyAmt: number;
+              /**
+               * @description 추가할인금액
+               * @example 0
+               */
+              additionalDiscountAmt: number;
+              /**
+               * @description 즉시할인금액
+               * @example 0
+               */
+              immediateDiscountAmt: number;
+              /**
+               * @description 상품판매가
+               * @example 0
+               */
+              salePrice: number;
+              /**
+               * @description 정상금액(상품판매가 + 옵션추가금액) * 주문수량
+               * @example 0
+               */
+              standardAmt: number;
+              /**
+               * @description 옵션가격(추가금액)
+               * @example 0
+               */
+              addPrice: number;
+            };
+            /**
+             * @description 옵션 이미지 URL
+             * @example http://image.url
+             */
+            imageUrl: string;
+            /** @description 표준 카테고리 번호 */
+            categoryNo: number;
+            /** @description 주문 상품 옵션 */
+            setOptions: {
+              /**
+               * @description 옵션사용여부
+               * @example true
+               */
+              usesOption: boolean;
               /**
                * @description 옵션번호
-               * @example 0
+               * @example 1
                */
-              optionNo: number;
+              mallOptionNo: number;
               /**
-               * @description 구매확정 시 회원에 대한 적립금(회원등급/그룹 중 큰 값)
-               * @example 0
+               * @description 상품관리코드 (nullable)
+               * @example 1231
                */
-              accumulationAmtForMemberWhenBuyConfirm: number;
+              productManagementCd?: string;
               /**
-               * @description 상품번호
-               * @example 0
-               */
-              productNo: number;
-              /**
-               * @description 옵션권장출력값
-               * @example string
-               */
-              optionTitle: string;
-              /**
-               * @description 옵션값
-               * @example string
+               * @description 옵션
+               * @example 100
                */
               optionValue: string;
               /**
-               * @description 주문수량
-               * @example 0
+               * @description 구매수
+               * @example 1
                */
-              orderCnt: number;
-              /** @description 소비자 입력형 옵션 */
-              optionInputs: {
-                  /**
-                   * @description 구매자 작성형 입력 깂
-                   * @example 14호
-                   */
-                  inputValue: string;
-                  /**
-                   * @description 구매자 작성형 입력 이름
-                   * @example 사이즈
-                   */
-                  inputLabel: string;
-                  /**
-                   * @description 구매자 작성형 입력 필수여부 (nullable)
-                   * @example true
-                   */
-                  required?: boolean;
-                }[];
+              count: number;
               /**
-               * @description 품절여부 (true:품절 false:구매가능)
-               * @example false
+               * @description 옵션가격
+               * @example 1000
                */
-              soldOut: boolean;
+              optionPrice: number;
               /**
-               * @description 구매확정 시 상품에 대한 적립률
-               * @example 0
+               * @description sku (nullable)
+               * @example 1231
                */
-              accumulationRateForProductWhenBuyConfirm: number;
-              /**
-               * @description 구매확정 시 상품에 대한 적립금
-               * @example 0
-               */
-              accumulationAmtForProductWhenBuyConfirm: number;
-              /**
-               * @description 정기 결제 배송 주기 (nullable)
-               * @example 1,2,3
-               */
-              recurringDeliveryCycles?: number[];
-              /**
-               * @description 재고 개수
-               * @example 0
-               */
-              stockCnt: number;
+              sku?: string;
               /**
                * @description 옵션명
-               * @example string
+               * @example 사이즈
                */
               optionName: string;
               /**
-               * @description 판매자 관리코드
-               * @example string
+               * @description 옵션관리코드 (nullable)
+               * @example 1231
                */
-              optionManagementCd: string;
+              optionManagementCd?: string;
               /**
-               * @description 장바구니 번호
-               * @example 0
+               * @description 상품번호
+               * @example 1
                */
-              cartNo: number;
-            })[];
+              mallProductNo: number;
+              /**
+               * @description 재고번호
+               * @example 1
+               */
+              stockNo: number;
+              /**
+               * @description 상품명
+               * @example TEST_PRODUCT
+               */
+              productName: string;
+            }[];
+            /**
+             * @description 예약주문여부 (true: 예약주문상품, false: 일반상품)
+             * @example false
+             */
+            reservation: boolean;
+            /**
+             * @description 옵션번호
+             * @example 0
+             */
+            optionNo: number;
+            /**
+             * @description 구매확정 시 회원에 대한 적립금(회원등급/그룹 중 큰 값)
+             * @example 0
+             */
+            accumulationAmtForMemberWhenBuyConfirm: number;
+            /**
+             * @description 상품번호
+             * @example 0
+             */
+            productNo: number;
+            /**
+             * @description 옵션권장출력값
+             * @example string
+             */
+            optionTitle: string;
+            /**
+             * @description 옵션값
+             * @example string
+             */
+            optionValue: string;
+            /**
+             * @description 주문수량
+             * @example 0
+             */
+            orderCnt: number;
+            /** @description 소비자 입력형 옵션 */
+            optionInputs: {
+              /**
+               * @description 구매자 작성형 입력 깂
+               * @example 14호
+               */
+              inputValue: string;
+              /**
+               * @description 구매자 작성형 입력 이름
+               * @example 사이즈
+               */
+              inputLabel: string;
+              /**
+               * @description 구매자 작성형 입력 필수여부 (nullable)
+               * @example true
+               */
+              required?: boolean;
+            }[];
+            /**
+             * @description 품절여부 (true:품절 false:구매가능)
+             * @example false
+             */
+            soldOut: boolean;
+            /**
+             * @description 구매확정 시 상품에 대한 적립률
+             * @example 0
+             */
+            accumulationRateForProductWhenBuyConfirm: number;
+            /**
+             * @description 구매확정 시 상품에 대한 적립금
+             * @example 0
+             */
+            accumulationAmtForProductWhenBuyConfirm: number;
+            /**
+             * @description 정기 결제 배송 주기 (nullable)
+             * @example 1,2,3
+             */
+            recurringDeliveryCycles?: number[];
+            /**
+             * @description 재고 개수
+             * @example 0
+             */
+            stockCnt: number;
+            /**
+             * @description 옵션명
+             * @example string
+             */
+            optionName: string;
+            /**
+             * @description 판매자 관리코드
+             * @example string
+             */
+            optionManagementCd: string;
+            /**
+             * @description 장바구니 번호
+             * @example 0
+             */
+            cartNo: number;
+          }[];
           /**
            * @description 환불가능여부
            * @example false
@@ -8327,7 +10134,15 @@ export interface components {
              * @description 요일
              * @example [MON]
              */
-            daysOfWeek: ("SUN: 일" | "MON: 월" | "TUE: 화" | "WED: 수" | "THU: 목" | "FRI: 금" | "SAT: 토")[];
+            daysOfWeek: (
+              | 'SUN'
+              | 'MON'
+              | 'TUE'
+              | 'WED'
+              | 'THU'
+              | 'FRI'
+              | 'SAT'
+            )[];
             /**
              * @description 주문일 기준
              * @example 0
@@ -8363,7 +10178,7 @@ export interface components {
            * @example PARTNER_SHIPPING_AREA
            * @enum {string}
            */
-          shippingAreaType: "PARTNER_SHIPPING_AREA: Partner Delivery" | "MALL_SHIPPING_AREA: Shipping Mall Delivery";
+          shippingAreaType: 'PARTNER_SHIPPING_AREA' | 'MALL_SHIPPING_AREA';
           /** @description 미성년자 구매 가능 여부 */
           minorPurchasable: boolean;
           /**
@@ -8386,16 +10201,491 @@ export interface components {
            * @example string
            */
           productNameEn: string;
-        })[];
+        }[];
+        /**
+         * @description 배송비 템플릿 그룹 번호 (nullable)
+         * @example 1
+         */
+        deliveryTemplateGroupNo?: number;
+        /**
+         * @description 배송비 템플릿 번호 (nullable)
+         * @example 1
+         */
+        deliveryTemplateNo?: number;
+      }[];
+      /** @description 가격 정보 */
+      price: {
+        /**
+         * @description 구매금액 합
+         * @example 0
+         */
+        buyAmt: number;
+        /**
+         * @description 할인금액
+         * @example 0
+         */
+        discountAmt: number;
+        /**
+         * @description 총 구매금액 합(구매금액 합 + 총 선불배송비 합)
+         * @example 0
+         */
+        totalAmt: number;
+        /**
+         * @description 구매확정 시 적립금 합
+         * @example 0
+         */
+        accumulationAmtWhenBuyConfirm: number;
+        /**
+         * @description 정상금액(상품판매가 + 옵션추가금액) * 주문수량
+         * @example 0
+         */
+        standardAmt: number;
+        /**
+         * @description 총 착불배송비 합
+         * @example 0
+         */
+        totalPayOnDeliveryAmt: number;
+        /**
+         * @description 총 배송비 합
+         * @example 0
+         */
+        totalDeliveryAmt: number;
+        /**
+         * @description 총 선불배송비 합
+         * @example 0
+         */
+        totalPrePaidDeliveryAmt: number;
+      };
+      /** @description 유효하지 않은 상품 */
+      invalidProducts: {
+        /**
+         * @description 교환가능여부
+         * @example false
+         */
+        exchangeable: boolean;
+        /**
+         * @description 구매금액 합
+         * @example 0
+         */
+        buyAmt: number;
+        /**
+         * @description 취소가능여부
+         * @example false
+         */
+        cancelable: boolean;
+        /**
+         * @description 쿠폰 사용 가능 여부
+         * @example true
+         */
+        couponUsable: boolean;
+        /**
+         * @description 배송가능여부
+         * @example false
+         */
+        deliverable: boolean;
+        /** @description 카테고리 명 */
+        categoryName: string;
+        /**
+         * @description 옵션사용여부
+         * @example false
+         */
+        optionUsed: boolean;
+        /**
+         * @description 찜상품 여부
+         * @example false
+         */
+        liked: boolean;
+        /**
+         * @description 상품 명
+         * @example string
+         */
+        productName: string;
+        /** @description 파트너 번호 */
+        partnerNo: number;
+        /** @description 최대 구매수량 정보 */
+        maxBuyCountInfo: {
+          /** @description 1인당 최대 구매 수량 */
+          maxBuyPersonCount: number;
+          /** @description 최대 구매 수량 기간 제한 : 7일 동안 최대 2개 구매가능 (2개 항목) */
+          maxBuyPeriodCount: number;
+          /**
+           * @description 최대 구매 수량 기간 제한 : 7일 동안 최대 2개 구매가능 (7일 항목)
+           * @example 0
+           */
+          maxBuyDays: number;
+          /**
+           * @description 1회당 최대 구매 수량
+           * @example 0
+           */
+          maxBuyTimeCount: number;
+        };
+        /**
+         * @description 적립금 사용 가능 여부
+         * @example true
+         */
+        accumulationUsable: boolean;
+        /**
+         * @description eanCode
+         * @example e1
+         */
+        eanCode: string;
+        /** @description 최소 구매 수량 */
+        minBuyCount: number;
+        /**
+         * @description 상품 url
+         * @example http://image.url
+         */
+        imageUrl: string;
+        /** @description 표준 카테고리 번호 */
+        categoryNo: number;
+        /**
+         * @description 옵션 선택 방식 (nullable)
+         * @example FLAT
+         * @enum {string}
+         */
+        selectType?: 'FLAT' | 'MULTI';
+        /** @description 주문 상품 옵션 */
+        orderProductOptions: {
+          /**
+           * @description 예약주문 상품 배송시작예정일
+           * @example String
+           */
+          reservationDeliveryYmdt: string;
+          /**
+           * @description 구매확정 시 적립금 합
+           * @example 0
+           */
+          accumulationAmtWhenBuyConfirm: number;
+          /** @description 유효성 정보 */
+          validInfo: {
+            /**
+             * @description 유효 여부(true: 유효, false: 유효하지 않음)
+             * @example false
+             */
+            valid: boolean;
+            /** @description deprecated(더 이상 제공하지 않는 개체항목입니다) */
+            validYn: string;
+            /**
+             * @description 유효성 실패 코드 (nullable)
+             * @example string
+             */
+            errorCode?: string;
+            /**
+             * @description 유효성 실패 사유 메세지 (nullable)
+             * @example string
+             */
+            message?: string;
+            /**
+             * @description 주문수량변경 가능 여부 (true:변경가능, false:변경불가능)
+             * @example false
+             */
+            orderCntChangeable: boolean;
+          };
+          /** @description 카테고리 명 */
+          categoryName: string;
+          /**
+           * @description 옵션형태
+           * @example PRODUCT_ONLY
+           * @enum {string}
+           */
+          optionType: 'PRODUCT_ONLY' | 'NORMAL_OPTION' | 'ADDITIONAL_PRODUCT';
+          /**
+           * @description 구매확정 시 회원에 대한 적립률(회원등급/그룹 중 큰 값)
+           * @example 0
+           */
+          accumulationRateForMemberWhenBuyConfirm: number;
+          /** @description 가격 정보 */
+          price: {
+            /**
+             * @description 구매금액(구매가 * 주문수량)
+             * @example 0
+             */
+            buyAmt: number;
+            /**
+             * @description 추가할인금액
+             * @example 0
+             */
+            additionalDiscountAmt: number;
+            /**
+             * @description 즉시할인금액
+             * @example 0
+             */
+            immediateDiscountAmt: number;
+            /**
+             * @description 상품판매가
+             * @example 0
+             */
+            salePrice: number;
+            /**
+             * @description 정상금액(상품판매가 + 옵션추가금액) * 주문수량
+             * @example 0
+             */
+            standardAmt: number;
+            /**
+             * @description 옵션가격(추가금액)
+             * @example 0
+             */
+            addPrice: number;
+          };
+          /**
+           * @description 옵션 이미지 URL
+           * @example http://image.url
+           */
+          imageUrl: string;
+          /** @description 표준 카테고리 번호 */
+          categoryNo: number;
+          /** @description 주문 상품 옵션 */
+          setOptions: {
+            /**
+             * @description 옵션사용여부
+             * @example true
+             */
+            usesOption: boolean;
+            /**
+             * @description 옵션번호
+             * @example 1
+             */
+            mallOptionNo: number;
+            /**
+             * @description 상품관리코드 (nullable)
+             * @example 1231
+             */
+            productManagementCd?: string;
+            /**
+             * @description 옵션
+             * @example 100
+             */
+            optionValue: string;
+            /**
+             * @description 구매수
+             * @example 1
+             */
+            count: number;
+            /**
+             * @description 옵션가격
+             * @example 1000
+             */
+            optionPrice: number;
+            /**
+             * @description sku (nullable)
+             * @example 1231
+             */
+            sku?: string;
+            /**
+             * @description 옵션명
+             * @example 사이즈
+             */
+            optionName: string;
+            /**
+             * @description 옵션관리코드 (nullable)
+             * @example 1231
+             */
+            optionManagementCd?: string;
+            /**
+             * @description 상품번호
+             * @example 1
+             */
+            mallProductNo: number;
+            /**
+             * @description 재고번호
+             * @example 1
+             */
+            stockNo: number;
+            /**
+             * @description 상품명
+             * @example TEST_PRODUCT
+             */
+            productName: string;
+          }[];
+          /**
+           * @description 예약주문여부 (true: 예약주문상품, false: 일반상품)
+           * @example false
+           */
+          reservation: boolean;
+          /**
+           * @description 옵션번호
+           * @example 0
+           */
+          optionNo: number;
+          /**
+           * @description 구매확정 시 회원에 대한 적립금(회원등급/그룹 중 큰 값)
+           * @example 0
+           */
+          accumulationAmtForMemberWhenBuyConfirm: number;
+          /**
+           * @description 상품번호
+           * @example 0
+           */
+          productNo: number;
+          /**
+           * @description 옵션권장출력값
+           * @example string
+           */
+          optionTitle: string;
+          /**
+           * @description 옵션값
+           * @example string
+           */
+          optionValue: string;
+          /**
+           * @description 주문수량
+           * @example 0
+           */
+          orderCnt: number;
+          /** @description 소비자 입력형 옵션 */
+          optionInputs: {
+            /**
+             * @description 구매자 작성형 입력 깂
+             * @example 14호
+             */
+            inputValue: string;
+            /**
+             * @description 구매자 작성형 입력 이름
+             * @example 사이즈
+             */
+            inputLabel: string;
+            /**
+             * @description 구매자 작성형 입력 필수여부 (nullable)
+             * @example true
+             */
+            required?: boolean;
+          }[];
+          /**
+           * @description 품절여부 (true:품절 false:구매가능)
+           * @example false
+           */
+          soldOut: boolean;
+          /**
+           * @description 구매확정 시 상품에 대한 적립률
+           * @example 0
+           */
+          accumulationRateForProductWhenBuyConfirm: number;
+          /**
+           * @description 구매확정 시 상품에 대한 적립금
+           * @example 0
+           */
+          accumulationAmtForProductWhenBuyConfirm: number;
+          /**
+           * @description 정기 결제 배송 주기 (nullable)
+           * @example 1,2,3
+           */
+          recurringDeliveryCycles?: number[];
+          /**
+           * @description 재고 개수
+           * @example 0
+           */
+          stockCnt: number;
+          /**
+           * @description 옵션명
+           * @example string
+           */
+          optionName: string;
+          /**
+           * @description 판매자 관리코드
+           * @example string
+           */
+          optionManagementCd: string;
+          /**
+           * @description 장바구니 번호
+           * @example 0
+           */
+          cartNo: number;
+        }[];
+        /**
+         * @description 환불가능여부
+         * @example false
+         */
+        refundable: boolean;
+        /** @description 전시 카테고리 번호 목록 */
+        categoryNos: (Record<string, never> | boolean | string | number)[];
+        /** @description 배송일 지정 정보 */
+        deliveryDate: {
+          /** @description 기간 */
+          period: {
+            /**
+             * @description 배송일지정 가능한 시작일
+             * @example YYYY-MM-DD hh:mm:ss
+             */
+            startYmdt: string;
+            /**
+             * @description 배송일지정 가능한 종료일
+             * @example YYYY-MM-DD hh:mm:ss
+             */
+            endYmdt: string;
+          };
+          /**
+           * @description 요일
+           * @example [MON]
+           */
+          daysOfWeek: ('SUN' | 'MON' | 'TUE' | 'WED' | 'THU' | 'FRI' | 'SAT')[];
+          /**
+           * @description 주문일 기준
+           * @example 0
+           */
+          daysAfterPurchase: number;
+        };
+        /**
+         * @description 브랜드 번호
+         * @example 12
+         */
+        brandNo: number;
+        /**
+         * @description 해외직배송여부
+         * @example false
+         */
+        deliveryInternational: boolean;
+        /**
+         * @description 상품번호
+         * @example 0
+         */
+        productNo: number;
+        /**
+         * @description 브랜드 명
+         * @example string
+         */
+        brandName: string;
+        /** @description 파트너 명 */
+        partnerName: string;
+        /** @description 네이버페이 주문형 결제 가능 여부 */
+        allowsNaverPay: boolean;
+        /**
+         * @description 배송구분
+         * @example PARTNER_SHIPPING_AREA
+         * @enum {string}
+         */
+        shippingAreaType: 'PARTNER_SHIPPING_AREA' | 'MALL_SHIPPING_AREA';
+        /** @description 미성년자 구매 가능 여부 */
+        minorPurchasable: boolean;
+        /**
+         * @description 반품가능여부
+         * @example false
+         */
+        returnable: boolean;
+        /**
+         * @description hsCode
+         * @example p1
+         */
+        hsCode: string;
+        /**
+         * @description 브랜드 영문명
+         * @example string
+         */
+        brandNameEn: string;
+        /**
+         * @description 상품 영문명
+         * @example string
+         */
+        productNameEn: string;
+      }[];
     };
-    "payments-naver-wish-list-1666491885": {
+    'payments-naver-wish-list-1666491885': {
       /**
        * @description 상품번호
        * @example 123
        */
       productNo: number;
     };
-    "my-pay-register-payment720401483": {
+    'my-pay-register-payment720401483': {
       /**
        * @description 암호화된 이니시스에서 발행한 SEED wpayUserKey
        * @example 82fGOwir8hlYR2aboH/vkw==
@@ -8423,42 +10713,42 @@ export interface components {
       returnUrl: string;
     };
     /** @description 검증 요청 값 */
-    "payments-naver-validate-1868535393": {
+    'payments-naver-validate-1868535393': {
+      /**
+       * @description 채널타입
+       * @example PAYCO
+       */
+      channelType: string;
+      /**
+       * @description 상품개수
+       * @example 1
+       */
+      orderCnt: number;
+      /** @description 옵션 */
+      optionInputs: {
         /**
-         * @description 채널타입
-         * @example PAYCO
-         */
-        channelType: string;
-        /**
-         * @description 상품개수
+         * @description 옵션 입력값
          * @example 1
          */
-        orderCnt: number;
-        /** @description 옵션 */
-        optionInputs: {
-            /**
-             * @description 옵션 입력값
-             * @example 1
-             */
-            inputValue: string;
-            /**
-             * @description 옵션 입력라벨
-             * @example 상품
-             */
-            inputLabel: string;
-          }[];
+        inputValue: string;
         /**
-         * @description 옵션번호
-         * @example 1
+         * @description 옵션 입력라벨
+         * @example 상품
          */
-        optionNo: number;
-        /**
-         * @description 상품번호
-         * @example 1
-         */
-        productNo: number;
+        inputLabel: string;
       }[];
-    "recurring-payments-delivery-cycle1814328293": {
+      /**
+       * @description 옵션번호
+       * @example 1
+       */
+      optionNo: number;
+      /**
+       * @description 상품번호
+       * @example 1
+       */
+      productNo: number;
+    }[];
+    'recurring-payments-delivery-cycle1814328293': {
       /**
        * @description 정기결제 신청번호
        * @example 202108251705594
@@ -8475,7 +10765,7 @@ export interface components {
        */
       cycle: number;
     };
-    "payments-reserve1642123685": {
+    'payments-reserve1642123685': {
       /**
        * @description 결제완료 API 호출 후 다시 전달 받을 값(NCPPay script에서 넣음) (nullable)
        * @example {"mallNo" : "1", "orderName" : "주문테스트"}
@@ -8488,16 +10778,26 @@ export interface components {
       extraData?: Record<string, never>;
       /** @description 추가 약관 동의 항목 번호 리스트 */
       customTermsAgrees: {
-          /** @description 추가 약관 동의 여부 */
-          isAgree: boolean;
-          /** @description 추가 약관 동의 항목 번호 */
-          customTermsNo: number;
-        }[];
+        /** @description 추가 약관 동의 여부 */
+        isAgree: boolean;
+        /** @description 추가 약관 동의 항목 번호 */
+        customTermsNo: number;
+      }[];
       /**
        * @description 필수 약관 동의 항목 리스트(deprecated: agreementTermsAgrees 사용)
        * @enum {string}
        */
-      agreementTypes: "USE: 이용약관" | "PI_COLLECTION_AND_USE_ON_ORDER: 개인정보 이용동의" | "PI_SELLER_PROVISION: 개인정보 판매자 제공 동의" | "CLEARANCE_INFO_COLLECTION_AND_USE: 통관정보 수집 · 이용 동의" | "TRANSFER_AGREE: 개인정보 국외 이전 동의" | "ORDER_INFO_AGREE: 주문 상품 정보 동의" | "PI_LIQUOR_PURCHASE_PROVISION: 주류구매 개인정보 제공 동의" | "REGULAR_PAYMENT_USE: 정기결제(배송) 이용약관" | "AUTO_APPROVAL_USE: 자동 승인 이용약관" | "ORDER_DEFAULT: 주문 기본 동의";
+      agreementTypes:
+        | 'USE'
+        | 'PI_COLLECTION_AND_USE_ON_ORDER'
+        | 'PI_SELLER_PROVISION'
+        | 'CLEARANCE_INFO_COLLECTION_AND_USE'
+        | 'TRANSFER_AGREE'
+        | 'ORDER_INFO_AGREE'
+        | 'PI_LIQUOR_PURCHASE_PROVISION'
+        | 'REGULAR_PAYMENT_USE'
+        | 'AUTO_APPROVAL_USE'
+        | 'ORDER_DEFAULT';
       /**
        * @description 주문메모 (nullable)
        * @example 빠른 배송 부탁 드립니다.
@@ -8533,7 +10833,43 @@ export interface components {
        * @example CREDIT_CARD
        * @enum {string}
        */
-      payType: "CREDIT_CARD: Credit Card" | "ACCOUNT: Deposit without bankbook" | "MOBILE: Mobile payment" | "REALTIME_ACCOUNT_TRANSFER: Real-time bank transfer" | "VIRTUAL_ACCOUNT: Virtual account" | "GIFT: Gift card" | "ATM: ATM" | "PAYCO: PAYCO" | "ZERO_PAY: Zero payment" | "ACCUMULATION: Accumulation" | "PHONE_BILL: Phone payment" | "POINT: Point payment" | "YPAY: Yello Pay" | "KPAY: K Pay" | "PAYPIN: Paypin" | "INIPAY: INIPay" | "PAYPAL: PAYPAL" | "STRIPE: STRIPE" | "NAVER_PAY: Naver Pay" | "KAKAO_PAY: Kakao Pay" | "NAVER_EASY_PAY: Naver Pay" | "SAMSUNG_PAY: Samsung Pay" | "CHAI: Chai" | "TOSS_PAY: Toss Pay" | "SK_PAY: SK Pay" | "APPLE_PAY: Apple Pay" | "LPAY: L Pay" | "ESCROW_REALTIME_ACCOUNT_TRANSFER: Real-time bank transfer - Escrow" | "ESCROW_VIRTUAL_ACCOUNT: Virtual account - Escrow" | "RENTAL: Rental payment" | "VERITRANS_CARD: Veritrans CreditCard" | "TOASTCAM: ToastCam" | "UNION_PAY: UnionPay" | "ALIPAY: AliPay Plus" | "WECHAT_PAY: WeChat Pay" | "ETC: Other payment methods";
+      payType:
+        | 'CREDIT_CARD'
+        | 'ACCOUNT'
+        | 'MOBILE'
+        | 'REALTIME_ACCOUNT_TRANSFER'
+        | 'VIRTUAL_ACCOUNT'
+        | 'GIFT'
+        | 'ATM'
+        | 'PAYCO'
+        | 'ZERO_PAY'
+        | 'ACCUMULATION'
+        | 'PHONE_BILL'
+        | 'POINT'
+        | 'YPAY'
+        | 'KPAY'
+        | 'PAYPIN'
+        | 'INIPAY'
+        | 'PAYPAL'
+        | 'STRIPE'
+        | 'NAVER_PAY'
+        | 'KAKAO_PAY'
+        | 'NAVER_EASY_PAY'
+        | 'SAMSUNG_PAY'
+        | 'CHAI'
+        | 'TOSS_PAY'
+        | 'SK_PAY'
+        | 'APPLE_PAY'
+        | 'LPAY'
+        | 'ESCROW_REALTIME_ACCOUNT_TRANSFER'
+        | 'ESCROW_VIRTUAL_ACCOUNT'
+        | 'RENTAL'
+        | 'VERITRANS_CARD'
+        | 'TOASTCAM'
+        | 'UNION_PAY'
+        | 'ALIPAY'
+        | 'WECHAT_PAY'
+        | 'ETC';
       /**
        * @description 결제 완료 후 리턴되는 쇼핑몰의 URL<br>URL 의 파라미터중<br>result=SUCCESS 인 경우 : 성공 페이지 구현 (orderNo 파라미터로 주문정보 출력가능)<br>result=FAIL 인 경우 : message 값을 화면이나 경고창으로 출력함
        * @example http://쇼핑몰 URL/return.html
@@ -8543,22 +10879,22 @@ export interface components {
       coupons: {
         /** @description 상품쿠폰 */
         productCoupons: {
-            /**
-             * @description 상품쿠폰 발행번호
-             * @example 12121212
-             */
-            couponIssueNo: number;
-            /**
-             * @description 상품 쿠폰 프로모션 코드 (nullable)
-             * @example 1258932
-             */
-            promotionCode?: string;
-            /**
-             * @description 상품번호
-             * @example 12121212
-             */
-            productNo: number;
-          }[];
+          /**
+           * @description 상품쿠폰 발행번호
+           * @example 12121212
+           */
+          couponIssueNo: number;
+          /**
+           * @description 상품 쿠폰 프로모션 코드 (nullable)
+           * @example 1258932
+           */
+          promotionCode?: string;
+          /**
+           * @description 상품번호
+           * @example 12121212
+           */
+          productNo: number;
+        }[];
         /**
          * @description 장바구니 쿠폰 발행 번호 (nullable)
          * @example 12121212
@@ -8620,7 +10956,32 @@ export interface components {
        * @example KCP
        * @enum {string}
        */
-      pgType: "DUMMY: None" | "PAYCO: Payco" | "PAYPAL: PayPal" | "STRIPE: STRIPE" | "KCP: KCP" | "INICIS: INICIS" | "NONE: None" | "KCP_MOBILE: KCP(Mobile)" | "KCP_APP: KCP(App)" | "NAVER_PAY: Naver Pay" | "LIIVMATE: Liivmate" | "PAYPALPRO: PAYPAL PRO" | "ATHOR_NET: AthorizeNet" | "KAKAO_PAY: Kakao Pay" | "NAVER_EASY_PAY: Naver Pay" | "LG_U_PLUS: Toss Payments" | "TOSS_PAYMENTS: Toss Payments" | "CHAI: Chai" | "SMARTRO_PAY: Smartro Pay" | "NICEPAY: Nice Pay" | "MY_PAY: MyPay" | "EXIMBAY_GLOBAL: Eximbay(Global)" | "EASY_PAY: Easy Pay" | "GALAXIA_MONEY_TREE: Galaxia Money Tree" | "VERITRANS: Veritrans";
+      pgType:
+        | 'DUMMY'
+        | 'PAYCO'
+        | 'PAYPAL'
+        | 'STRIPE'
+        | 'KCP'
+        | 'INICIS'
+        | 'NONE'
+        | 'KCP_MOBILE'
+        | 'KCP_APP'
+        | 'NAVER_PAY'
+        | 'LIIVMATE'
+        | 'PAYPALPRO'
+        | 'ATHOR_NET'
+        | 'KAKAO_PAY'
+        | 'NAVER_EASY_PAY'
+        | 'LG_U_PLUS'
+        | 'TOSS_PAYMENTS'
+        | 'CHAI'
+        | 'SMARTRO_PAY'
+        | 'NICEPAY'
+        | 'MY_PAY'
+        | 'EXIMBAY_GLOBAL'
+        | 'EASY_PAY'
+        | 'GALAXIA_MONEY_TREE'
+        | 'VERITRANS';
       /**
        * @description 무통장 입금 시 입금할 입금자 이름 (nullable)
        * @example 홍길동
@@ -8632,15 +10993,25 @@ export interface components {
        */
       deliveryMemo?: string;
       /** @description 필수 약관 동의 항목 리스트 */
-      agreementTermsAgrees: ({
-          /** @description 필수 약관 동의 여부 */
-          isAgree: boolean;
-          /**
-           * @description 필수 약관 동의 항목
-           * @enum {string}
-           */
-          termsType: "USE: 이용약관" | "PI_COLLECTION_AND_USE_ON_ORDER: 개인정보 이용동의" | "PI_SELLER_PROVISION: 개인정보 판매자 제공 동의" | "CLEARANCE_INFO_COLLECTION_AND_USE: 통관정보 수집 · 이용 동의" | "TRANSFER_AGREE: 개인정보 국외 이전 동의" | "ORDER_INFO_AGREE: 주문 상품 정보 동의" | "PI_LIQUOR_PURCHASE_PROVISION: 주류구매 개인정보 제공 동의" | "REGULAR_PAYMENT_USE: 정기결제(배송) 이용약관" | "AUTO_APPROVAL_USE: 자동 승인 이용약관" | "ORDER_DEFAULT: 주문 기본 동의";
-        })[];
+      agreementTermsAgrees: {
+        /** @description 필수 약관 동의 여부 */
+        isAgree: boolean;
+        /**
+         * @description 필수 약관 동의 항목
+         * @enum {string}
+         */
+        termsType:
+          | 'USE'
+          | 'PI_COLLECTION_AND_USE_ON_ORDER'
+          | 'PI_SELLER_PROVISION'
+          | 'CLEARANCE_INFO_COLLECTION_AND_USE'
+          | 'TRANSFER_AGREE'
+          | 'ORDER_INFO_AGREE'
+          | 'PI_LIQUOR_PURCHASE_PROVISION'
+          | 'REGULAR_PAYMENT_USE'
+          | 'AUTO_APPROVAL_USE'
+          | 'ORDER_DEFAULT';
+      }[];
       /** @description 주문자 정보 */
       orderer: {
         /**
@@ -8844,164 +11215,166 @@ export interface components {
          * @example INCOME_TAX_DEDUCTION
          * @enum {string}
          */
-        cashReceiptIssuePurposeType: "INCOME_TAX_DEDUCTION: 소득공제용" | "PROOF_EXPENDITURE: 지출증빙용";
+        cashReceiptIssuePurposeType:
+          | 'INCOME_TAX_DEDUCTION'
+          | 'PROOF_EXPENDITURE';
       };
       /** @description 복수 배송지 */
       shippingAddresses: {
-          /** @description 복수 배송지 */
-          payProductParams: {
+        /** @description 복수 배송지 */
+        payProductParams: {
+          /**
+           * @description 옵션번호
+           * @example 12121212
+           */
+          mallOptionNo: number;
+          /**
+           * @description 채널타입 (nullable)
+           * @example PAYCO_MALL
+           */
+          channelType?: string;
+          /**
+           * @description 구매수량
+           * @example 1
+           */
+          orderCnt: number;
+          /** @description 구매자 입력형 옵션 */
+          optionInputs: {
             /**
-             * @description 옵션번호
-             * @example 12121212
+             * @description 구매자 작성형 입력 깂
+             * @example 14호
              */
-            mallOptionNo: number;
+            inputValue: string;
             /**
-             * @description 채널타입 (nullable)
-             * @example PAYCO_MALL
+             * @description 구매자 작성형 입력 이름
+             * @example 사이즈
              */
-            channelType?: string;
-            /**
-             * @description 구매수량
-             * @example 1
-             */
-            orderCnt: number;
-            /** @description 구매자 입력형 옵션 */
-            optionInputs: {
-              /**
-               * @description 구매자 작성형 입력 깂
-               * @example 14호
-               */
-              inputValue: string;
-              /**
-               * @description 구매자 작성형 입력 이름
-               * @example 사이즈
-               */
-              inputLabel: string;
-            };
-            /**
-             * @description 상품번호
-             * @example 12121212
-             */
-            mallProductNo: number;
+            inputLabel: string;
           };
           /**
-           * @description 배송지정일 (nullable)
-           * @example YYYY-MM-DD
+           * @description 상품번호
+           * @example 12121212
            */
-          requestShippingDate?: string;
+          mallProductNo: number;
+        };
+        /**
+         * @description 배송지정일 (nullable)
+         * @example YYYY-MM-DD
+         */
+        requestShippingDate?: string;
+        /**
+         * @description 배송지 번호(0:신규, 0이상:기존 배송지)
+         * @example 1
+         */
+        addressNo: number;
+        /**
+         * @description 배송지 나중입력 여부 (true: 나중입력, false: 바로입력) (nullable)
+         * @example true
+         */
+        usesShippingInfoLaterInput?: boolean;
+        /**
+         * @description 기본 주소지 설정 여부 (true: 선택한 배송지 정보가 기본주소지로 설정, false: 미설정) (nullable)
+         * @example true
+         */
+        useDefaultAddress?: boolean;
+        /** @description 배송지 정보 */
+        shippingAddress: {
           /**
-           * @description 배송지 번호(0:신규, 0이상:기존 배송지)
+           * @description 배송지 주소
+           * @example 경기도 성남시 분당구 대왕판교로645번길 12
+           */
+          receiverAddress: string;
+          /**
+           * @description 배송지 지번(지역추가배송비계산 시 사용)
+           * @example 경기도 성남시 분당구 삼평동 629번지 NHN 플레이뮤지엄
+           */
+          receiverJibunAddress: string;
+          /**
+           * @description 배송지 번호(0:신규, 0이상:이전배송지
            * @example 1
            */
           addressNo: number;
           /**
-           * @description 배송지 나중입력 여부 (true: 나중입력, false: 바로입력) (nullable)
-           * @example true
+           * @description 수령자 명
+           * @example 홍길동
            */
-          usesShippingInfoLaterInput?: boolean;
+          receiverName: string;
           /**
-           * @description 기본 주소지 설정 여부 (true: 선택한 배송지 정보가 기본주소지로 설정, false: 미설정) (nullable)
-           * @example true
+           * @description 개인고유통관부호 (nullable)
+           * @example P12341234
            */
-          useDefaultAddress?: boolean;
-          /** @description 배송지 정보 */
-          shippingAddress: {
-            /**
-             * @description 배송지 주소
-             * @example 경기도 성남시 분당구 대왕판교로645번길 12
-             */
-            receiverAddress: string;
-            /**
-             * @description 배송지 지번(지역추가배송비계산 시 사용)
-             * @example 경기도 성남시 분당구 삼평동 629번지 NHN 플레이뮤지엄
-             */
-            receiverJibunAddress: string;
-            /**
-             * @description 배송지 번호(0:신규, 0이상:이전배송지
-             * @example 1
-             */
-            addressNo: number;
-            /**
-             * @description 수령자 명
-             * @example 홍길동
-             */
-            receiverName: string;
-            /**
-             * @description 개인고유통관부호 (nullable)
-             * @example P12341234
-             */
-            customsIdNumber?: string;
-            /**
-             * @description 국가코드
-             * @example KR
-             */
-            countryCd: string;
-            /**
-             * @description 주소록명 (nullable)
-             * @example 홍길동집
-             */
-            addressName?: string;
-            /**
-             * @description 배송지 우편 번호
-             * @example 13487
-             */
-            receiverZipCd: string;
-            /**
-             * @description 배송지 상세 주소
-             * @example 16 NHN 플레이뮤지엄
-             */
-            receiverDetailAddress: string;
-            /**
-             * @description 연락처1
-             * @example 010-0000-0000
-             */
-            receiverContact1: string;
-            /**
-             * @description 연락처2 (nullable)
-             * @example 031-0000-0000
-             */
-            receiverContact2?: string;
-          };
+          customsIdNumber?: string;
+          /**
+           * @description 국가코드
+           * @example KR
+           */
+          countryCd: string;
           /**
            * @description 주소록명 (nullable)
            * @example 홍길동집
            */
           addressName?: string;
           /**
-           * @description 배송지 나중입력 연락처 (nullable)
-           * @example 010-1111-1111
+           * @description 배송지 우편 번호
+           * @example 13487
            */
-          shippingInfoLaterInputContact?: string;
+          receiverZipCd: string;
           /**
-           * @description 주소록에 등록 여부 <br>(true 이면 선택한 배송지 정보가 주소록에 저장된다. <br>이미 저장된 주소록을 선택하여 주소를 수정했다면, <br>변경한 주소로 수정되어 저장한다) (nullable)
-           * @example true
+           * @description 배송지 상세 주소
+           * @example 16 NHN 플레이뮤지엄
            */
-          saveAddressBook?: boolean;
-        }[];
+          receiverDetailAddress: string;
+          /**
+           * @description 연락처1
+           * @example 010-0000-0000
+           */
+          receiverContact1: string;
+          /**
+           * @description 연락처2 (nullable)
+           * @example 031-0000-0000
+           */
+          receiverContact2?: string;
+        };
+        /**
+         * @description 주소록명 (nullable)
+         * @example 홍길동집
+         */
+        addressName?: string;
+        /**
+         * @description 배송지 나중입력 연락처 (nullable)
+         * @example 010-1111-1111
+         */
+        shippingInfoLaterInputContact?: string;
+        /**
+         * @description 주소록에 등록 여부 <br>(true 이면 선택한 배송지 정보가 주소록에 저장된다. <br>이미 저장된 주소록을 선택하여 주소를 수정했다면, <br>변경한 주소로 수정되어 저장한다) (nullable)
+         * @example true
+         */
+        saveAddressBook?: boolean;
+      }[];
     };
     /** @description 장바구니 수정 리스트 */
-    "recurring-payments-cart-890037452": {
-        /**
-         * @description 구매갯수
-         * @example 1
-         */
-        orderCnt: number;
-        /** @description 구매자 입력형 옵션 */
-        optionInputs: {
-            /** @description 구매자 작성형 입력 텍스트 옵션 */
-            inputMatchingType: string;
-            /** @description 구매자 작성형 입력 값 */
-            inputValue: string;
-            /** @description 구매자 작성형 입력 이름 */
-            inputLabel: string;
-          }[];
-        /**
-         * @description 장바구니 번호
-         * @example 1
-         */
-        cartNo: number;
+    'recurring-payments-cart-890037452': {
+      /**
+       * @description 구매갯수
+       * @example 1
+       */
+      orderCnt: number;
+      /** @description 구매자 입력형 옵션 */
+      optionInputs: {
+        /** @description 구매자 작성형 입력 텍스트 옵션 */
+        inputMatchingType: string;
+        /** @description 구매자 작성형 입력 값 */
+        inputValue: string;
+        /** @description 구매자 작성형 입력 이름 */
+        inputLabel: string;
       }[];
-    "profile-shipping-addresses-2110780552": {
+      /**
+       * @description 장바구니 번호
+       * @example 1
+       */
+      cartNo: number;
+    }[];
+    'profile-shipping-addresses-2110780552': {
       /**
        * @description 성 (nullable)
        * @example 홍
@@ -9032,7 +11405,7 @@ export interface components {
        * @example RECENT
        * @enum {string}
        */
-      addressType: "BOOK: 기본주소" | "RECENT: 최근주소" | "RECURRING_PAYMENT: 정기결제 배송주소";
+      addressType: 'BOOK' | 'RECENT' | 'RECURRING_PAYMENT';
       /**
        * @description 개인고유통관부호 (nullable)
        * @example P12341234
@@ -9048,7 +11421,92 @@ export interface components {
        * @example KR
        * @enum {string}
        */
-      countryCd?: "AX: Åland Islands" | "AD: Andorra" | "AU: Australia" | "AT: Austria" | "BH: Bahrain" | "BE: Belgium" | "BZ: Belize" | "BR: Brazil" | "BN: Brunei" | "BG: Bulgaria" | "CA: Canada" | "ES_CANARY: Spain" | "CL: Chile" | "CN: China" | "CO: Colombia" | "CR: Costa Rica" | "CY: Cyprus" | "CZ: Czech Republic" | "DK: Denmark" | "EC: Ecuador" | "EG: Egypt" | "SV: El Salvador" | "EE: Estonia" | "FR: France" | "GF: French Guiana" | "DE: Germany" | "GR: Greece" | "GL: Denmark" | "GU: Guam" | "GT: Guatemala" | "GG: Guernsey" | "GY: Guyana" | "HK: Hong Kong" | "HU: Hungary" | "IS: Iceland" | "ID: Indonesia" | "IE: Ireland" | "IL: Israel" | "IT: Italy" | "JP: Japan" | "JE: Jersey" | "JO: Jordan" | "KR: South Korea" | "KW: Kuwait" | "LV: Latvia" | "LB: Lebanon" | "LI: Liechtenstein" | "LT: Lithuania" | "LU: Luxembourg" | "MO: Macau" | "PT_MADEIRA: Portugal" | "MY: Malaysia" | "NL: Netherlands" | "NZ: New Zealand" | "GB_NORTHERN_ISLAND: United Kingdom" | "NO: Norway" | "PY: Paraguay" | "PE: Peru" | "PL: Poland" | "PT: Portugal" | "RO: Romania" | "RU: Russia" | "SM: San Marino" | "SA: Saudi Arabia" | "GB_SCOTLAND: United Kingdom" | "SG: Singapore" | "SK: Slovakia" | "SI: Slovenia" | "ES: Spain" | "CH: Switzerland" | "TW: Taiwan" | "TH: Thailand" | "TR: Turkey" | "AE: United Arab Emirates" | "GB: United Kingdom" | "US: United States (Mainland)" | "U2: United States (Mainland)" | "UY: Uruguay" | "VN: Vietnam" | "GB_WALES: United Kingdom" | "YE: Yemen" | "HR: Croatia" | "MT: Malta" | "FI: Finland" | "SE: Sweden";
+      countryCd?:
+        | 'AX'
+        | 'AD'
+        | 'AU'
+        | 'AT'
+        | 'BH'
+        | 'BE'
+        | 'BZ'
+        | 'BR'
+        | 'BN'
+        | 'BG'
+        | 'CA'
+        | 'ES_CANARY'
+        | 'CL'
+        | 'CN'
+        | 'CO'
+        | 'CR'
+        | 'CY'
+        | 'CZ'
+        | 'DK'
+        | 'EC'
+        | 'EG'
+        | 'SV'
+        | 'EE'
+        | 'FR'
+        | 'GF'
+        | 'DE'
+        | 'GR'
+        | 'GL'
+        | 'GU'
+        | 'GT'
+        | 'GG'
+        | 'GY'
+        | 'HK'
+        | 'HU'
+        | 'IS'
+        | 'ID'
+        | 'IE'
+        | 'IL'
+        | 'IT'
+        | 'JP'
+        | 'JE'
+        | 'JO'
+        | 'KR'
+        | 'KW'
+        | 'LV'
+        | 'LB'
+        | 'LI'
+        | 'LT'
+        | 'LU'
+        | 'MO'
+        | 'PT_MADEIRA'
+        | 'MY'
+        | 'NL'
+        | 'NZ'
+        | 'GB_NORTHERN_ISLAND'
+        | 'NO'
+        | 'PY'
+        | 'PE'
+        | 'PL'
+        | 'PT'
+        | 'RO'
+        | 'RU'
+        | 'SM'
+        | 'SA'
+        | 'GB_SCOTLAND'
+        | 'SG'
+        | 'SK'
+        | 'SI'
+        | 'ES'
+        | 'CH'
+        | 'TW'
+        | 'TH'
+        | 'TR'
+        | 'AE'
+        | 'GB'
+        | 'US'
+        | 'U2'
+        | 'UY'
+        | 'VN'
+        | 'GB_WALES'
+        | 'YE'
+        | 'HR'
+        | 'MT'
+        | 'FI'
+        | 'SE';
       /**
        * @description 외부회원 번호 (nullable)
        * @example M001
@@ -9120,7 +11578,7 @@ export interface components {
        */
       registerYmdt?: string;
     };
-    "order-configs-2107962221": {
+    'order-configs-2107962221': {
       /**
        * @description pg사
        * @example KCP, INICIS, TOSS_PAYMENTS
@@ -9168,7 +11626,7 @@ export interface components {
        */
       includesPreviousOrder: boolean;
     };
-    "wish-938362791": {
+    'wish-938362791': {
       /** @description 가격 정보 */
       price: {
         /**
@@ -9183,228 +11641,228 @@ export interface components {
         accumulationAmtWhenBuyConfirm: number;
       };
       /** @description 주문 상품 옵션 */
-      orderProductOptions: ({
+      orderProductOptions: {
+        /**
+         * @description 예약주문 상품 배송시작예정일
+         * @example String
+         */
+        reservationDeliveryYmdt: string;
+        /**
+         * @description 옵션권장출력값
+         * @example string
+         */
+        optionTitle: string;
+        /** @description 주문 상품 */
+        product: {
           /**
-           * @description 예약주문 상품 배송시작예정일
-           * @example String
-           */
-          reservationDeliveryYmdt: string;
-          /**
-           * @description 옵션권장출력값
+           * @description 브랜드 명
            * @example string
            */
-          optionTitle: string;
-          /** @description 주문 상품 */
-          product: {
-            /**
-             * @description 브랜드 명
-             * @example string
-             */
-            brandName: string;
-            /**
-             * @description 상품 url
-             * @example http://image.url
-             */
-            imageUrl: string;
-            /**
-             * @description 상품 영문명
-             * @example string
-             */
-            productNameEn: string;
-            /**
-             * @description 브랜드 번호 (nullable)
-             * @example 1
-             */
-            brandNo?: number;
-            /**
-             * @description 상품 명
-             * @example string
-             */
-            productName: string;
-            /**
-             * @description 상품 번호
-             * @example 0
-             */
-            productNo: number;
-          };
+          brandName: string;
           /**
-           * @description 구매확정 시 적립금 합
-           * @example 0
-           */
-          accumulationAmtWhenBuyConfirm: number;
-          /** @description 유효성 정보 */
-          validInfo: {
-            /**
-             * @description 유효 여부(true: 유효, false: 유효하지 않음)
-             * @example false
-             */
-            valid: boolean;
-            /** @description deprecated(더 이상 제공하지 않는 개체항목입니다) */
-            validYn: string;
-            /**
-             * @description  (nullable)
-             * @example string
-             */
-            errorCode?: string;
-            /**
-             * @description 유효성 실패 사유 메세지 (nullable)
-             * @example string
-             */
-            message?: string;
-            /**
-             * @description 주문수량변경 가능 여부(true:변경가능, false:변경불가능)
-             * @example false
-             */
-            orderCntChangeable: boolean;
-          };
-          /**
-           * @description 위시리스트 번호
-           * @example 0
-           */
-          wishNo: number;
-          /**
-           * @description 옵션값
-           * @example string
-           */
-          optionValue: string;
-          /**
-           * @description 주문수량
-           * @example 0
-           */
-          orderCnt: number;
-          /** @description 소비자 입력형 옵션 */
-          optionInputs: {
-              /**
-               * @description 구매자 작성형 입력 깂
-               * @example 14호
-               */
-              inputValue: string;
-              /**
-               * @description 구매자 작성형 입력 이름
-               * @example 사이즈
-               */
-              inputLabel: string;
-              /** @description 구매자 작성형 입력 필수여부 */
-              required: string;
-            }[];
-          /**
-           * @description 품절여부 (true:품절 false:구매가능)
-           * @example false
-           */
-          soldOut: boolean;
-          /**
-           * @description 옵션형태
-           * @example PRODUCT_ONLY
-           * @enum {string}
-           */
-          optionType: "PRODUCT_ONLY: 옵션없음" | "NORMAL_OPTION: 일반옵션" | "ADDITIONAL_PRODUCT: 추가옵션";
-          /** @description 옵션 가격 정보 */
-          price: {
-            /**
-             * @description 구매금액(구매가 * 주문수량)
-             * @example 0
-             */
-            buyAmt: number;
-            /**
-             * @description 추가할인금액
-             * @example 0
-             */
-            additionalDiscountAmt: number;
-            /**
-             * @description 즉시할인금액
-             * @example 0
-             */
-            immediateDiscountAmt: number;
-            /**
-             * @description 상품판매가
-             * @example 0
-             */
-            salePrice: number;
-            /**
-             * @description 정상금액(상품판매가 + 옵션추가금액) * 주문수량
-             * @example 0
-             */
-            standardAmt: number;
-            /**
-             * @description 옵션가격(추가금액)
-             * @example 0
-             */
-            addPrice: number;
-          };
-          /**
-           * @description 옵션 이미지 URL
+           * @description 상품 url
            * @example http://image.url
            */
           imageUrl: string;
           /**
-           * @description 예약주문여부 (true: 예약주문상품, false: 일반상품)
-           * @example false
-           */
-          reservation: boolean;
-          /**
-           * @description 재고 개수
-           * @example 0
-           */
-          stockCnt: number;
-          /**
-           * @description 옵션번호
-           * @example 0
-           */
-          optionNo: number;
-          /**
-           * @description 옵션명
+           * @description 상품 영문명
            * @example string
            */
-          optionName: string;
+          productNameEn: string;
           /**
-           * @description 판매자 관리코드
+           * @description 브랜드 번호 (nullable)
+           * @example 1
+           */
+          brandNo?: number;
+          /**
+           * @description 상품 명
            * @example string
            */
-          optionManagementCd: string;
+          productName: string;
           /**
-           * @description 상품번호
+           * @description 상품 번호
            * @example 0
            */
           productNo: number;
-        })[];
-    };
-    /** @description 위시 등록리스트 */
-    wish1402593107: {
+        };
         /**
-         * @description 구매개수 (nullable)
-         * @example 1
+         * @description 구매확정 시 적립금 합
+         * @example 0
          */
-        orderCnt?: number;
-        /** @description 구매자 입력형 옵션 */
+        accumulationAmtWhenBuyConfirm: number;
+        /** @description 유효성 정보 */
+        validInfo: {
+          /**
+           * @description 유효 여부(true: 유효, false: 유효하지 않음)
+           * @example false
+           */
+          valid: boolean;
+          /** @description deprecated(더 이상 제공하지 않는 개체항목입니다) */
+          validYn: string;
+          /**
+           * @description  (nullable)
+           * @example string
+           */
+          errorCode?: string;
+          /**
+           * @description 유효성 실패 사유 메세지 (nullable)
+           * @example string
+           */
+          message?: string;
+          /**
+           * @description 주문수량변경 가능 여부(true:변경가능, false:변경불가능)
+           * @example false
+           */
+          orderCntChangeable: boolean;
+        };
+        /**
+         * @description 위시리스트 번호
+         * @example 0
+         */
+        wishNo: number;
+        /**
+         * @description 옵션값
+         * @example string
+         */
+        optionValue: string;
+        /**
+         * @description 주문수량
+         * @example 0
+         */
+        orderCnt: number;
+        /** @description 소비자 입력형 옵션 */
         optionInputs: {
-            /**
-             * @description 구매자 작성형 입력 값
-             * @example 14호
-             */
-            inputValue: string;
-            /**
-             * @description 구매자 작성형 입력 이름
-             * @example 사이즈
-             */
-            inputLabel: string;
-          }[];
+          /**
+           * @description 구매자 작성형 입력 깂
+           * @example 14호
+           */
+          inputValue: string;
+          /**
+           * @description 구매자 작성형 입력 이름
+           * @example 사이즈
+           */
+          inputLabel: string;
+          /** @description 구매자 작성형 입력 필수여부 */
+          required: string;
+        }[];
+        /**
+         * @description 품절여부 (true:품절 false:구매가능)
+         * @example false
+         */
+        soldOut: boolean;
+        /**
+         * @description 옵션형태
+         * @example PRODUCT_ONLY
+         * @enum {string}
+         */
+        optionType: 'PRODUCT_ONLY' | 'NORMAL_OPTION' | 'ADDITIONAL_PRODUCT';
+        /** @description 옵션 가격 정보 */
+        price: {
+          /**
+           * @description 구매금액(구매가 * 주문수량)
+           * @example 0
+           */
+          buyAmt: number;
+          /**
+           * @description 추가할인금액
+           * @example 0
+           */
+          additionalDiscountAmt: number;
+          /**
+           * @description 즉시할인금액
+           * @example 0
+           */
+          immediateDiscountAmt: number;
+          /**
+           * @description 상품판매가
+           * @example 0
+           */
+          salePrice: number;
+          /**
+           * @description 정상금액(상품판매가 + 옵션추가금액) * 주문수량
+           * @example 0
+           */
+          standardAmt: number;
+          /**
+           * @description 옵션가격(추가금액)
+           * @example 0
+           */
+          addPrice: number;
+        };
+        /**
+         * @description 옵션 이미지 URL
+         * @example http://image.url
+         */
+        imageUrl: string;
+        /**
+         * @description 예약주문여부 (true: 예약주문상품, false: 일반상품)
+         * @example false
+         */
+        reservation: boolean;
+        /**
+         * @description 재고 개수
+         * @example 0
+         */
+        stockCnt: number;
         /**
          * @description 옵션번호
-         * @example 1258932
+         * @example 0
          */
         optionNo: number;
         /**
-         * @description 상품번호
-         * @example 100398947
+         * @description 옵션명
+         * @example string
          */
-        productNo: number;
+        optionName: string;
         /**
-         * @description 추가상품번호 (nullable)
+         * @description 판매자 관리코드
+         * @example string
+         */
+        optionManagementCd: string;
+        /**
+         * @description 상품번호
          * @example 0
          */
-        additionalProductNo?: number;
+        productNo: number;
       }[];
-    "previous-orders-orderNo-942189284": {
+    };
+    /** @description 위시 등록리스트 */
+    wish1402593107: {
+      /**
+       * @description 구매개수 (nullable)
+       * @example 1
+       */
+      orderCnt?: number;
+      /** @description 구매자 입력형 옵션 */
+      optionInputs: {
+        /**
+         * @description 구매자 작성형 입력 값
+         * @example 14호
+         */
+        inputValue: string;
+        /**
+         * @description 구매자 작성형 입력 이름
+         * @example 사이즈
+         */
+        inputLabel: string;
+      }[];
+      /**
+       * @description 옵션번호
+       * @example 1258932
+       */
+      optionNo: number;
+      /**
+       * @description 상품번호
+       * @example 100398947
+       */
+      productNo: number;
+      /**
+       * @description 추가상품번호 (nullable)
+       * @example 0
+       */
+      additionalProductNo?: number;
+    }[];
+    'previous-orders-orderNo-942189284': {
       firstPayment?: {
         /**
          * @description 할인혜택
@@ -9444,86 +11902,86 @@ export interface components {
       };
       /** @description 수령자 정보 */
       receiver: {
-          /**
-           * @description 배송지 정보
-           * @example 메인 배송지
-           */
-          deliveryInfo: string;
-          /**
-           * @description 수령자명
-           * @example 수령자
-           */
-          receiverName: string;
-          /**
-           * @description 옵션값
-           * @example 초코
-           */
-          optionValue: string;
-          /**
-           * @description 개인통관번호
-           * @example P123412341234
-           */
-          customsIdNumber: string;
-          /**
-           * @description 전화번호
-           * @example 0298765432
-           */
-          receiverPhoneNumber: string;
-          /** @description 사용자 입력형 옵션 */
-          purchaserInputs: {
-              /** @description 값 */
-              inputValue: string;
-              /** @description 이름 */
-              inputLabel: string;
-              /** @description 필수 여부 */
-              required: string;
-            }[];
-          /**
-           * @description 택배사
-           * @example CJ
-           */
-          deliveryCompanyType: string;
-          /**
-           * @description 우편번호
-           * @example 12345
-           */
-          receiverZipCd: string;
-          /**
-           * @description 배송지 상세 주소
-           * @example 경기도 성남시 분당구 대왕판교로645번길 14 301호
-           */
-          receiverDetailAddress: string;
-          /**
-           * @description 배송메모
-           * @example 부재시 경비실에 맡겨주세요.
-           */
-          deliveryMemo: string;
-          /**
-           * @description 상품명
-           * @example 케이크
-           */
-          productName: string;
-          /**
-           * @description 배송지 주소
-           * @example 경기도 성남시 분당구 대왕판교로645번길 14
-           */
-          receiverAddress: string;
-          /**
-           * @description 휴대폰번호
-           * @example 0298765432
-           */
-          receiverMobileNumber: string;
-          /**
-           * @description 옵션명
-           * @example 맛
-           */
-          optionName: string;
-          /**
-           * @description 송장번호
-           * @example 12345
-           */
-          invoiceNo: string;
+        /**
+         * @description 배송지 정보
+         * @example 메인 배송지
+         */
+        deliveryInfo: string;
+        /**
+         * @description 수령자명
+         * @example 수령자
+         */
+        receiverName: string;
+        /**
+         * @description 옵션값
+         * @example 초코
+         */
+        optionValue: string;
+        /**
+         * @description 개인통관번호
+         * @example P123412341234
+         */
+        customsIdNumber: string;
+        /**
+         * @description 전화번호
+         * @example 0298765432
+         */
+        receiverPhoneNumber: string;
+        /** @description 사용자 입력형 옵션 */
+        purchaserInputs: {
+          /** @description 값 */
+          inputValue: string;
+          /** @description 이름 */
+          inputLabel: string;
+          /** @description 필수 여부 */
+          required: string;
         }[];
+        /**
+         * @description 택배사
+         * @example CJ
+         */
+        deliveryCompanyType: string;
+        /**
+         * @description 우편번호
+         * @example 12345
+         */
+        receiverZipCd: string;
+        /**
+         * @description 배송지 상세 주소
+         * @example 경기도 성남시 분당구 대왕판교로645번길 14 301호
+         */
+        receiverDetailAddress: string;
+        /**
+         * @description 배송메모
+         * @example 부재시 경비실에 맡겨주세요.
+         */
+        deliveryMemo: string;
+        /**
+         * @description 상품명
+         * @example 케이크
+         */
+        productName: string;
+        /**
+         * @description 배송지 주소
+         * @example 경기도 성남시 분당구 대왕판교로645번길 14
+         */
+        receiverAddress: string;
+        /**
+         * @description 휴대폰번호
+         * @example 0298765432
+         */
+        receiverMobileNumber: string;
+        /**
+         * @description 옵션명
+         * @example 맛
+         */
+        optionName: string;
+        /**
+         * @description 송장번호
+         * @example 12345
+         */
+        invoiceNo: string;
+      }[];
       /**
        * @description 적립혜택
        * @example 12340
@@ -9652,81 +12110,81 @@ export interface components {
       };
       /** @description 주문상품 정보 */
       orderProduct: {
-          /**
-           * @description 상품합계
-           * @example 10000
-           */
-          salePrice: number;
-          /**
-           * @description 파트너사
-           * @example 기본파트너
-           */
-          partnerName: string;
-          /**
-           * @description 주문상태
-           * @example DELIVERY_DONE
-           */
-          orderStatusType: string;
-          /**
-           * @description 옵션값
-           * @example 초코
-           */
-          optionValue: string;
-          /**
-           * @description 택배사
-           * @example CJ
-           */
-          deliveryCompanyType: string;
-          /**
-           * @description 지역별 배송비
-           * @example 3000
-           */
-          remoteDeliveryAmt: number;
-          /** @description 사용자 입력형 옵션 */
-          purchaserInputs: {
-              /** @description 값 */
-              inputValue: string;
-              /** @description 이름 */
-              inputLabel: string;
-              /** @description 필수 여부 */
-              required: string;
-            }[];
-          /**
-           * @description 수량
-           * @example 1
-           */
-          orderCnt: number;
-          /**
-           * @description 주문금액
-           * @example 10000
-           */
-          purchasePrice: number;
-          /**
-           * @description 상품명
-           * @example 케이크
-           */
-          productName: string;
-          /**
-           * @description 기본 배송비
-           * @example 2000
-           */
-          deliveryAmt: number;
-          /**
-           * @description 송장번호
-           * @example 12345
-           */
-          invoiceNo: string;
-          /**
-           * @description 옵션명
-           * @example 맛
-           */
-          optionName: string;
-          /**
-           * @description 옵션 번호
-           * @example 1
-           */
-          optionNo: number;
+        /**
+         * @description 상품합계
+         * @example 10000
+         */
+        salePrice: number;
+        /**
+         * @description 파트너사
+         * @example 기본파트너
+         */
+        partnerName: string;
+        /**
+         * @description 주문상태
+         * @example DELIVERY_DONE
+         */
+        orderStatusType: string;
+        /**
+         * @description 옵션값
+         * @example 초코
+         */
+        optionValue: string;
+        /**
+         * @description 택배사
+         * @example CJ
+         */
+        deliveryCompanyType: string;
+        /**
+         * @description 지역별 배송비
+         * @example 3000
+         */
+        remoteDeliveryAmt: number;
+        /** @description 사용자 입력형 옵션 */
+        purchaserInputs: {
+          /** @description 값 */
+          inputValue: string;
+          /** @description 이름 */
+          inputLabel: string;
+          /** @description 필수 여부 */
+          required: string;
         }[];
+        /**
+         * @description 수량
+         * @example 1
+         */
+        orderCnt: number;
+        /**
+         * @description 주문금액
+         * @example 10000
+         */
+        purchasePrice: number;
+        /**
+         * @description 상품명
+         * @example 케이크
+         */
+        productName: string;
+        /**
+         * @description 기본 배송비
+         * @example 2000
+         */
+        deliveryAmt: number;
+        /**
+         * @description 송장번호
+         * @example 12345
+         */
+        invoiceNo: string;
+        /**
+         * @description 옵션명
+         * @example 맛
+         */
+        optionName: string;
+        /**
+         * @description 옵션 번호
+         * @example 1
+         */
+        optionNo: number;
+      }[];
       /** @description 몰 번호 */
       mallNo: number;
       /**
@@ -9775,13 +12233,13 @@ export interface components {
         refundAmt: number;
       };
     };
-    "guest-orders-orderNo1327590381": {
+    'guest-orders-orderNo1327590381': {
       /**
        * @description 주문옵션타입
        * @example ALL
        * @enum {string}
        */
-      orderRequestType: "ALL: 전체" | "CLAIM: 클레임진행" | "NORMAL: 클레임미진행";
+      orderRequestType: 'ALL' | 'CLAIM' | 'NORMAL';
       /**
        * @description 비회원 주문 비밀번호 (nullable)
        * @example 12345
@@ -9794,7 +12252,7 @@ export interface components {
       /** @description 이메일 (nullable) */
       email?: string;
     };
-    "shippings-encryptedShippingNo-later-input350289840": {
+    'shippings-encryptedShippingNo-later-input350289840': {
       /**
        * @description 배송지 주소
        * @example 경기도 성남시 분당구 대왕판교로645번길 12
@@ -9856,7 +12314,7 @@ export interface components {
        */
       receiverContact1: string;
     };
-    "shippings-encryptedShippingNo-later-input-305682154": {
+    'shippings-encryptedShippingNo-later-input-305682154': {
       /**
        * @description 배송지 주소
        * @example 경기도 성남시 분당구 대왕판교로645번길 12
@@ -9913,7 +12371,7 @@ export interface components {
        */
       receiverContact1?: string;
     };
-    "guest-orders-orderNo-cashReceipt-2137606971": {
+    'guest-orders-orderNo-cashReceipt-2137606971': {
       /**
        * @description 발급 용도에 따른 키(소득공제용: 휴대폰번호, 지출증빙용: 사업자번호)
        * @example 123456
@@ -9924,9 +12382,9 @@ export interface components {
        * @example INCOME_TAX_DEDUCTION
        * @enum {string}
        */
-      cashReceiptIssuePurposeType: "INCOME_TAX_DEDUCTION: 소득공제용" | "PROOF_EXPENDITURE: 지출증빙용";
+      cashReceiptIssuePurposeType: 'INCOME_TAX_DEDUCTION' | 'PROOF_EXPENDITURE';
     };
-    "recurring-payments-cart-calculate-1315479487": {
+    'recurring-payments-cart-calculate-1315479487': {
       /**
        * @description 구매금액 합
        * @example 0
@@ -9968,483 +12426,502 @@ export interface components {
        */
       totalPrePaidDeliveryAmt: number;
     };
-    "wish-count655543630": {
+    'wish-count655543630': {
       /**
        * @description 회원의 총 Wish 상품수 (최대 100개 가능)
        * @example 1
        */
       count: number;
     };
-    "order-sheets-orderSheetNo-calculate559250314": {
+    'order-sheets-orderSheetNo-calculate559250314': {
       /** @description 합배송 그룹별 상품 목록 */
-      deliveryGroups: ({
+      deliveryGroups: {
+        /**
+         * @description 파트너번호
+         * @example 1
+         */
+        partnerNo: number;
+        /**
+         * @description 배송비착불여부
+         * @example PREPAID_DELIVERY
+         * @enum {string}
+         */
+        deliveryPayType: 'PREPAID_DELIVERY' | 'PAY_ON_DELIVERY';
+        /** @description 배송 조건 */
+        deliveryCondition: {
           /**
-           * @description 파트너번호
-           * @example 1
-           */
-          partnerNo: number;
-          /**
-           * @description 배송비착불여부
-           * @example PREPAID_DELIVERY
+           * @description 배송조건
+           * @example CONDITIONAL
            * @enum {string}
            */
-          deliveryPayType: "PREPAID_DELIVERY: 배송비 선불" | "PAY_ON_DELIVERY: 배송비 착불";
-          /** @description 배송 조건 */
-          deliveryCondition: {
-            /**
-             * @description 배송조건
-             * @example CONDITIONAL
-             * @enum {string}
-             */
-            deliveryConditionType: "FREE: 무료" | "CONDITIONAL: 조건별무료" | "FIXED_FEE: 유료(고정 배송비)" | "QUANTITY_PROPOSITIONAL_FEE: 수량 비례" | "PRICE_FEE: 금액별 차등" | "QUANTITY_FEE: 수량별 차등";
-            /**
-             * @description 조건부 배송비의 기준값(9,800원 미만 배송비 2,500원일때 aboveDeliveryAmt는 9800)
-             * @example 2500
-             */
-            aboveDeliveryAmt: number;
-            /**
-             * @description 배송비
-             * @example 2500
-             */
-            deliveryAmt: number;
-            /**
-             * @description 묶음배송조건
-             * @example MAXIMUM_SELECTED
-             * @enum {string}
-             */
-            groupDeliveryAmtType: "MAXIMUM_SELECTED: 최대부과" | "MINIMUM_SELECTED: 최소부과";
-            /**
-             * @description 반품배송비
-             * @example 2500
-             */
-            returnDeliveryAmt: number;
-            /**
-             * @description 조건부 배송비 미달 시 배송비(9,800원 미만 배송비 2,500원일때 baseDeliveryAmt는 2,500)
-             * @example 2500
-             */
-            baseDeliveryAmt: number;
-            /**
-             * @description 추가배송비(조건에 의해 계산되어진)
-             * @example 2500
-             */
-            remoteDeliveryAmt: number;
-            /**
-             * @description 지역별추가배송비사용여부 (true: 사용, false: 미사용)
-             * @example false
-             */
-            chargesRemoteDeliveryAmt: boolean;
-          };
+          deliveryConditionType:
+            | 'FREE'
+            | 'CONDITIONAL'
+            | 'FIXED_FEE'
+            | 'QUANTITY_PROPOSITIONAL_FEE'
+            | 'PRICE_FEE'
+            | 'QUANTITY_FEE';
+          /**
+           * @description 조건부 배송비의 기준값(9,800원 미만 배송비 2,500원일때 aboveDeliveryAmt는 9800)
+           * @example 2500
+           */
+          aboveDeliveryAmt: number;
           /**
            * @description 배송비
            * @example 2500
            */
           deliveryAmt: number;
           /**
-           * @description 파트너명
-           * @example NCP
+           * @description 묶음배송조건
+           * @example MAXIMUM_SELECTED
+           * @enum {string}
            */
-          partnerName: string;
-          /** @description 주문상품 */
-          orderProducts: ({
+          groupDeliveryAmtType: 'MAXIMUM_SELECTED' | 'MINIMUM_SELECTED';
+          /**
+           * @description 반품배송비
+           * @example 2500
+           */
+          returnDeliveryAmt: number;
+          /**
+           * @description 조건부 배송비 미달 시 배송비(9,800원 미만 배송비 2,500원일때 baseDeliveryAmt는 2,500)
+           * @example 2500
+           */
+          baseDeliveryAmt: number;
+          /**
+           * @description 추가배송비(조건에 의해 계산되어진)
+           * @example 2500
+           */
+          remoteDeliveryAmt: number;
+          /**
+           * @description 지역별추가배송비사용여부 (true: 사용, false: 미사용)
+           * @example false
+           */
+          chargesRemoteDeliveryAmt: boolean;
+        };
+        /**
+         * @description 배송비
+         * @example 2500
+         */
+        deliveryAmt: number;
+        /**
+         * @description 파트너명
+         * @example NCP
+         */
+        partnerName: string;
+        /** @description 주문상품 */
+        orderProducts: {
+          /** @description 구매금액(구매가 * 주문수량) */
+          buyAmt: number;
+          /**
+           * @description 브랜드명
+           * @example 나이키
+           */
+          brandName: string;
+          /**
+           * @description 쿠폰 사용 가능 여부
+           * @example true
+           */
+          couponUsable: boolean;
+          /**
+           * @description 배송구분
+           * @example PARTNER_SHIPPING_AREA
+           * @enum {string}
+           */
+          shippingAreaType: 'PARTNER_SHIPPING_AREA' | 'MALL_SHIPPING_AREA';
+          /**
+           * @description 배송가능여부
+           * @example true
+           */
+          deliverable: boolean;
+          /**
+           * @description 옵션사용여부
+           * @example true
+           */
+          optionUsed: boolean;
+          /**
+           * @description 찜상품 여부 (true: 찜상품, false: 일반상품)
+           * @example false
+           */
+          liked: boolean;
+          /**
+           * @description 상품명
+           * @example 상품1
+           */
+          productName: string;
+          /**
+           * @description 적립금 사용 가능 여부
+           * @example true
+           */
+          accumulationUsable: boolean;
+          /** @description 추가상품 */
+          additionalProducts: (
+            | Record<string, never>
+            | boolean
+            | string
+            | number
+          )[];
+          /**
+           * @description 상품 이미지 URL
+           * @example http://image.url
+           */
+          imageUrl: string;
+          /**
+           * @description 브랜드 영문명
+           * @example nike
+           */
+          brandNameEn: string;
+          /**
+           * @description (알파 개발중) 표준 카테고리 번호
+           * @example 1
+           */
+          categoryNo: number;
+          /**
+           * @description 상품 영문명
+           * @example product1
+           */
+          productNameEn: string;
+          /** @description 옵션 */
+          orderProductOptions: {
+            recurringPaymentDelivery?: {
+              /**
+               * @description 정기결제 배송주기 일자 (nullable)
+               * @example 20
+               */
+              date?: number;
+              /**
+               * @description 정기결제 배송주기 타입 (nullable)
+               * @example MONTH
+               * @enum {string}
+               */
+              cycleType?: 'MONTH' | 'WEEK';
+              /**
+               * @description 정기결제 첫 배송 예정일 (nullable)
+               * @example YYYY-MM-DD
+               */
+              firstRecurringDate?: string;
+              /**
+               * @description 정기결제 배송주기 (nullable)
+               * @example 1
+               */
+              cycle?: number;
+            };
+            /**
+             * @description 예약주문 상품 배송시작예정일
+             * @example YYYY-MM-DD hh:mm:ss
+             */
+            reservationDeliveryYmdt: string;
+            /**
+             * @description 옵션권장출력값
+             * @example 사이즈/FREE
+             */
+            optionTitle: string;
+            /**
+             * @description 구매확정시 예상 적립금
+             * @example 0
+             */
+            accumulationAmtWhenBuyConfirm: number;
+            /** @description 유효성 정보 */
+            validInfo: {
+              /**
+               * @description 유효 여부(true: 유효, false: 유효하지 않음)
+               * @example true
+               */
+              valid: boolean;
+              /** @description deprecated(더 이상 제공하지 않는 개체항목입니다) */
+              validYn: string;
+              /** @description 에러코드 */
+              errorCode: {
+                /**
+                 * @description code
+                 * @example PPVE0001
+                 */
+                code: string;
+                /**
+                 * @description simpleCode
+                 * @example PPVE0001
+                 */
+                simpleCode: string;
+              };
+              /**
+               * @description 유효성 실패 사유 메세지
+               * @example 재고없음
+               */
+              message: string;
+              /**
+               * @description 주문수량변경 가능 여부 (true:변경가능 false:변경불가능)
+               * @example false
+               */
+              orderCntChangeable: boolean;
+            };
+            /**
+             * @description 옵션값
+             * @example 105
+             */
+            optionValue: string;
+            /**
+             * @description 주문수량
+             * @example 1
+             */
+            orderCnt: number;
+            /** @description 소비자 입력형 옵션 (nullable) */
+            optionInputs?: {
+              /**
+               * @description 구매자 입력형 옵션 - 값
+               * @example 14호
+               */
+              inputValue: string;
+              /**
+               * @description 구매자 입력형 옵션 - 이름
+               * @example 사이즈
+               */
+              inputLabel: string;
+              /**
+               * @description 구매자 입력형 옵션 - 필수여부 (true: 필수, false: 선택) (nullable)
+               * @example true
+               */
+              required?: boolean;
+            }[];
+            /**
+             * @description 품절여부(true:품절 false:구매가능)
+             * @example false
+             */
+            soldOut: boolean;
+            /**
+             * @description 옵션형태
+             * @example PRODUCT_ONLY
+             * @enum {string}
+             */
+            optionType: 'PRODUCT_ONLY' | 'NORMAL_OPTION' | 'ADDITIONAL_PRODUCT';
+            /**
+             * @description 구매확정 시 회원에 대한 적립률(회원등급/그룹 중 큰 값)
+             * @example 0
+             */
+            accumulationRateForMemberWhenBuyConfirm: number;
+            /**
+             * @description 구매확정 시 상품에 대한 적립률
+             * @example 0
+             */
+            accumulationRateForProductWhenBuyConfirm: number;
+            /**
+             * @description 구매확정 시 상품에 대한 적립금
+             * @example 0
+             */
+            accumulationAmtForProductWhenBuyConfirm: number;
+            /** @description 가격 정보 */
+            price: {
               /** @description 구매금액(구매가 * 주문수량) */
               buyAmt: number;
               /**
-               * @description 브랜드명
-               * @example 나이키
+               * @description 추가할인 금액
+               * @example 0
                */
-              brandName: string;
+              additionalDiscountAmt: number;
               /**
-               * @description 쿠폰 사용 가능 여부
+               * @description 즉시할인 금액
+               * @example 0
+               */
+              immediateDiscountAmt: number;
+              /**
+               * @description 상품판매가
+               * @example 100
+               */
+              salePrice: number;
+              /**
+               * @description 정상금액(상품판매가 + 옵션추가금액) * 주문수량
+               * @example 1000
+               */
+              standardAmt: number;
+              /**
+               * @description 옵션가격(추가금액)
+               * @example 0
+               */
+              addPrice: number;
+            };
+            /**
+             * @description 상품 이미지 URL
+             * @example http://image.url
+             */
+            imageUrl: string;
+            /** @description 세트옵션 */
+            setOptions: {
+              /**
+               * @description 옵션사용여부 (true: 사용, false: 미사용)
                * @example true
                */
-              couponUsable: boolean;
+              usesOption: boolean;
               /**
-               * @description 배송구분
-               * @example PARTNER_SHIPPING_AREA
-               * @enum {string}
+               * @description 옵션번호
+               * @example 1258932
                */
-              shippingAreaType: "PARTNER_SHIPPING_AREA: Partner Delivery" | "MALL_SHIPPING_AREA: Shipping Mall Delivery";
+              mallOptionNo: number;
               /**
-               * @description 배송가능여부
-               * @example true
+               * @description 상품관리코드 (nullable)
+               * @example 1231
                */
-              deliverable: boolean;
+              productManagementCd?: string;
               /**
-               * @description 옵션사용여부
-               * @example true
+               * @description 옵션값
+               * @example 105
                */
-              optionUsed: boolean;
+              optionValue: string;
               /**
-               * @description 찜상품 여부 (true: 찜상품, false: 일반상품)
-               * @example false
+               * @description 구매수
+               * @example 1
                */
-              liked: boolean;
+              count: number;
+              /**
+               * @description 옵션가격
+               * @example 1000
+               */
+              optionPrice: number;
+              /**
+               * @description sku (nullable)
+               * @example 1231
+               */
+              sku?: string;
+              /**
+               * @description 옵션명
+               * @example 사이즈
+               */
+              optionName: string;
+              /**
+               * @description 판매자 관리코드 (nullable)
+               * @example option cd
+               */
+              optionManagementCd?: string;
+              /**
+               * @description 상품번호
+               * @example 100398947
+               */
+              mallProductNo: number;
+              /**
+               * @description 재고번호
+               * @example 1
+               */
+              stockNo: number;
               /**
                * @description 상품명
                * @example 상품1
                */
               productName: string;
-              /**
-               * @description 적립금 사용 가능 여부
-               * @example true
-               */
-              accumulationUsable: boolean;
-              /** @description 추가상품 */
-              additionalProducts: (Record<string, never> | boolean | string | number)[];
-              /**
-               * @description 상품 이미지 URL
-               * @example http://image.url
-               */
-              imageUrl: string;
-              /**
-               * @description 브랜드 영문명
-               * @example nike
-               */
-              brandNameEn: string;
-              /**
-               * @description (알파 개발중) 표준 카테고리 번호
-               * @example 1
-               */
-              categoryNo: number;
-              /**
-               * @description 상품 영문명
-               * @example product1
-               */
-              productNameEn: string;
-              /** @description 옵션 */
-              orderProductOptions: ({
-                  recurringPaymentDelivery?: {
-                    /**
-                     * @description 정기결제 배송주기 일자 (nullable)
-                     * @example 20
-                     */
-                    date?: number;
-                    /**
-                     * @description 정기결제 배송주기 타입 (nullable)
-                     * @example MONTH
-                     * @enum {string}
-                     */
-                    cycleType?: "MONTH: Month" | "WEEK: Week";
-                    /**
-                     * @description 정기결제 첫 배송 예정일 (nullable)
-                     * @example YYYY-MM-DD
-                     */
-                    firstRecurringDate?: string;
-                    /**
-                     * @description 정기결제 배송주기 (nullable)
-                     * @example 1
-                     */
-                    cycle?: number;
-                  };
-                  /**
-                   * @description 예약주문 상품 배송시작예정일
-                   * @example YYYY-MM-DD hh:mm:ss
-                   */
-                  reservationDeliveryYmdt: string;
-                  /**
-                   * @description 옵션권장출력값
-                   * @example 사이즈/FREE
-                   */
-                  optionTitle: string;
-                  /**
-                   * @description 구매확정시 예상 적립금
-                   * @example 0
-                   */
-                  accumulationAmtWhenBuyConfirm: number;
-                  /** @description 유효성 정보 */
-                  validInfo: {
-                    /**
-                     * @description 유효 여부(true: 유효, false: 유효하지 않음)
-                     * @example true
-                     */
-                    valid: boolean;
-                    /** @description deprecated(더 이상 제공하지 않는 개체항목입니다) */
-                    validYn: string;
-                    /** @description 에러코드 */
-                    errorCode: {
-                      /**
-                       * @description code
-                       * @example PPVE0001
-                       */
-                      code: string;
-                      /**
-                       * @description simpleCode
-                       * @example PPVE0001
-                       */
-                      simpleCode: string;
-                    };
-                    /**
-                     * @description 유효성 실패 사유 메세지
-                     * @example 재고없음
-                     */
-                    message: string;
-                    /**
-                     * @description 주문수량변경 가능 여부 (true:변경가능 false:변경불가능)
-                     * @example false
-                     */
-                    orderCntChangeable: boolean;
-                  };
-                  /**
-                   * @description 옵션값
-                   * @example 105
-                   */
-                  optionValue: string;
-                  /**
-                   * @description 주문수량
-                   * @example 1
-                   */
-                  orderCnt: number;
-                  /** @description 소비자 입력형 옵션 (nullable) */
-                  optionInputs?: {
-                      /**
-                       * @description 구매자 입력형 옵션 - 값
-                       * @example 14호
-                       */
-                      inputValue: string;
-                      /**
-                       * @description 구매자 입력형 옵션 - 이름
-                       * @example 사이즈
-                       */
-                      inputLabel: string;
-                      /**
-                       * @description 구매자 입력형 옵션 - 필수여부 (true: 필수, false: 선택) (nullable)
-                       * @example true
-                       */
-                      required?: boolean;
-                    }[];
-                  /**
-                   * @description 품절여부(true:품절 false:구매가능)
-                   * @example false
-                   */
-                  soldOut: boolean;
-                  /**
-                   * @description 옵션형태
-                   * @example PRODUCT_ONLY
-                   * @enum {string}
-                   */
-                  optionType: "PRODUCT_ONLY: 옵션없음" | "NORMAL_OPTION: 일반옵션" | "ADDITIONAL_PRODUCT: 추가옵션";
-                  /**
-                   * @description 구매확정 시 회원에 대한 적립률(회원등급/그룹 중 큰 값)
-                   * @example 0
-                   */
-                  accumulationRateForMemberWhenBuyConfirm: number;
-                  /**
-                   * @description 구매확정 시 상품에 대한 적립률
-                   * @example 0
-                   */
-                  accumulationRateForProductWhenBuyConfirm: number;
-                  /**
-                   * @description 구매확정 시 상품에 대한 적립금
-                   * @example 0
-                   */
-                  accumulationAmtForProductWhenBuyConfirm: number;
-                  /** @description 가격 정보 */
-                  price: {
-                    /** @description 구매금액(구매가 * 주문수량) */
-                    buyAmt: number;
-                    /**
-                     * @description 추가할인 금액
-                     * @example 0
-                     */
-                    additionalDiscountAmt: number;
-                    /**
-                     * @description 즉시할인 금액
-                     * @example 0
-                     */
-                    immediateDiscountAmt: number;
-                    /**
-                     * @description 상품판매가
-                     * @example 100
-                     */
-                    salePrice: number;
-                    /**
-                     * @description 정상금액(상품판매가 + 옵션추가금액) * 주문수량
-                     * @example 1000
-                     */
-                    standardAmt: number;
-                    /**
-                     * @description 옵션가격(추가금액)
-                     * @example 0
-                     */
-                    addPrice: number;
-                  };
-                  /**
-                   * @description 상품 이미지 URL
-                   * @example http://image.url
-                   */
-                  imageUrl: string;
-                  /** @description 세트옵션 */
-                  setOptions: {
-                      /**
-                       * @description 옵션사용여부 (true: 사용, false: 미사용)
-                       * @example true
-                       */
-                      usesOption: boolean;
-                      /**
-                       * @description 옵션번호
-                       * @example 1258932
-                       */
-                      mallOptionNo: number;
-                      /**
-                       * @description 상품관리코드 (nullable)
-                       * @example 1231
-                       */
-                      productManagementCd?: string;
-                      /**
-                       * @description 옵션값
-                       * @example 105
-                       */
-                      optionValue: string;
-                      /**
-                       * @description 구매수
-                       * @example 1
-                       */
-                      count: number;
-                      /**
-                       * @description 옵션가격
-                       * @example 1000
-                       */
-                      optionPrice: number;
-                      /**
-                       * @description sku (nullable)
-                       * @example 1231
-                       */
-                      sku?: string;
-                      /**
-                       * @description 옵션명
-                       * @example 사이즈
-                       */
-                      optionName: string;
-                      /**
-                       * @description 판매자 관리코드 (nullable)
-                       * @example option cd
-                       */
-                      optionManagementCd?: string;
-                      /**
-                       * @description 상품번호
-                       * @example 100398947
-                       */
-                      mallProductNo: number;
-                      /**
-                       * @description 재고번호
-                       * @example 1
-                       */
-                      stockNo: number;
-                      /**
-                       * @description 상품명
-                       * @example 상품1
-                       */
-                      productName: string;
-                    }[];
-                  /**
-                   * @description 예약주문여부 (true: 예약주문상품, false: 일반상품)
-                   * @example false
-                   */
-                  reservation: boolean;
-                  /**
-                   * @description 재고 개수
-                   * @example 100
-                   */
-                  stockCnt: number;
-                  /**
-                   * @description 옵션번호
-                   * @example 1258932
-                   */
-                  optionNo: number;
-                  /**
-                   * @description 옵션명
-                   * @example 사이즈
-                   */
-                  optionName: string;
-                  /**
-                   * @description 판매자 관리코드 (nullable)
-                   * @example option cd
-                   */
-                  optionManagementCd?: string;
-                  /**
-                   * @description 장바구니 번호
-                   * @example 12121212
-                   */
-                  cartNo: number;
-                  /**
-                   * @description 상품번호
-                   * @example 100398947
-                   */
-                  productNo: number;
-                  /**
-                   * @description 구매확정 시 회원에 대한 적립금(회원등급/그룹 중 큰 값)
-                   * @example 0
-                   */
-                  accumulationAmtForMemberWhenBuyConfirm: number;
-                })[];
-              /** @description 배송 예정일 */
-              deliveryDate: {
-                /** @description 기간 */
-                period: {
-                  /**
-                   * @description 배송일지정 가능한 시작일
-                   * @example YYYY-MM-DD hh:mm:ss
-                   */
-                  startYmdt: string;
-                  /**
-                   * @description 배송일지정 가능한 종료일
-                   * @example YYYY-MM-DD hh:mm:ss
-                   */
-                  endYmdt: string;
-                };
-                /**
-                 * @description 요일
-                 * @example [MON]
-                 */
-                daysOfWeek: ("SUN: 일" | "MON: 월" | "TUE: 화" | "WED: 수" | "THU: 목" | "FRI: 금" | "SAT: 토")[];
-                /**
-                 * @description 주문일 기준
-                 * @example 5
-                 */
-                daysAfterPurchase: number;
-              };
-              /**
-               * @description 전시 카테고리 번호 목록
-               * @example [1, 2, 3]
-               */
-              categoryNos: (Record<string, never> | boolean | string | number)[];
-              /**
-               * @description 브랜드 번호
-               * @example 12
-               */
-              brandNo: number;
-              /**
-               * @description 해외배송여부
-               * @example false
-               */
-              deliveryInternational: boolean;
-              /**
-               * @description 상품번호
-               * @example 100398947
-               */
-              productNo: number;
-            })[];
-        })[];
-      /** @description 적용된 쿠폰 (nullable) */
-      appliedCoupons?: {
-        /** @description 상품 쿠폰 (nullable) */
-        productCoupons?: {
+            }[];
             /**
-             * @description 쿠폰 적용 여부
-             * @example true
+             * @description 예약주문여부 (true: 예약주문상품, false: 일반상품)
+             * @example false
              */
-            couponApplied: boolean;
+            reservation: boolean;
             /**
-             * @description 쿠폰 발급 번호
-             * @example 1415130
+             * @description 재고 개수
+             * @example 100
              */
-            couponIssueNo: number;
+            stockCnt: number;
+            /**
+             * @description 옵션번호
+             * @example 1258932
+             */
+            optionNo: number;
+            /**
+             * @description 옵션명
+             * @example 사이즈
+             */
+            optionName: string;
+            /**
+             * @description 판매자 관리코드 (nullable)
+             * @example option cd
+             */
+            optionManagementCd?: string;
+            /**
+             * @description 장바구니 번호
+             * @example 12121212
+             */
+            cartNo: number;
             /**
              * @description 상품번호
              * @example 100398947
              */
             productNo: number;
+            /**
+             * @description 구매확정 시 회원에 대한 적립금(회원등급/그룹 중 큰 값)
+             * @example 0
+             */
+            accumulationAmtForMemberWhenBuyConfirm: number;
           }[];
+          /** @description 배송 예정일 */
+          deliveryDate: {
+            /** @description 기간 */
+            period: {
+              /**
+               * @description 배송일지정 가능한 시작일
+               * @example YYYY-MM-DD hh:mm:ss
+               */
+              startYmdt: string;
+              /**
+               * @description 배송일지정 가능한 종료일
+               * @example YYYY-MM-DD hh:mm:ss
+               */
+              endYmdt: string;
+            };
+            /**
+             * @description 요일
+             * @example [MON]
+             */
+            daysOfWeek: (
+              | 'SUN'
+              | 'MON'
+              | 'TUE'
+              | 'WED'
+              | 'THU'
+              | 'FRI'
+              | 'SAT'
+            )[];
+            /**
+             * @description 주문일 기준
+             * @example 5
+             */
+            daysAfterPurchase: number;
+          };
+          /**
+           * @description 전시 카테고리 번호 목록
+           * @example [1, 2, 3]
+           */
+          categoryNos: (Record<string, never> | boolean | string | number)[];
+          /**
+           * @description 브랜드 번호
+           * @example 12
+           */
+          brandNo: number;
+          /**
+           * @description 해외배송여부
+           * @example false
+           */
+          deliveryInternational: boolean;
+          /**
+           * @description 상품번호
+           * @example 100398947
+           */
+          productNo: number;
+        }[];
+      }[];
+      /** @description 적용된 쿠폰 (nullable) */
+      appliedCoupons?: {
+        /** @description 상품 쿠폰 (nullable) */
+        productCoupons?: {
+          /**
+           * @description 쿠폰 적용 여부
+           * @example true
+           */
+          couponApplied: boolean;
+          /**
+           * @description 쿠폰 발급 번호
+           * @example 1415130
+           */
+          couponIssueNo: number;
+          /**
+           * @description 상품번호
+           * @example 100398947
+           */
+          productNo: number;
+        }[];
         /**
          * @description 장바구니 쿠폰 발행 번호
          * @example 12121212
@@ -10462,7 +12939,44 @@ export interface components {
         promotionCode: string;
       };
       /** @description 사용가능한 결제정보 <br> 쇼핑몰에서 다양한 PG사와 계약해서 결제수단을 제공할 수 있기 때문에, payType을 기준으로 pgTypes를 내려주고 있으니 프론트에서 구현 시 내려온 pgTypes에 따라 결제모듈을 제공할 수 있습니다. */
-      availablePayTypes: ("CREDIT_CARD: Credit Card" | "ACCOUNT: Deposit without bankbook" | "MOBILE: Mobile payment" | "REALTIME_ACCOUNT_TRANSFER: Real-time bank transfer" | "VIRTUAL_ACCOUNT: Virtual account" | "GIFT: Gift card" | "ATM: ATM" | "PAYCO: PAYCO" | "ZERO_PAY: Zero payment" | "ACCUMULATION: Accumulation" | "PHONE_BILL: Phone payment" | "POINT: Point payment" | "YPAY: Yello Pay" | "KPAY: K Pay" | "PAYPIN: Paypin" | "INIPAY: INIPay" | "PAYPAL: PAYPAL" | "STRIPE: STRIPE" | "NAVER_PAY: Naver Pay" | "KAKAO_PAY: Kakao Pay" | "NAVER_EASY_PAY: Naver Pay" | "SAMSUNG_PAY: Samsung Pay" | "CHAI: Chai" | "TOSS_PAY: Toss Pay" | "SK_PAY: SK Pay" | "APPLE_PAY: Apple Pay" | "LPAY: L Pay" | "ESCROW_REALTIME_ACCOUNT_TRANSFER: Real-time bank transfer - Escrow" | "ESCROW_VIRTUAL_ACCOUNT: Virtual account - Escrow" | "RENTAL: Rental payment" | "VERITRANS_CARD: Veritrans CreditCard" | "TOASTCAM: ToastCam" | "UNION_PAY: UnionPay" | "ALIPAY: AliPay Plus" | "WECHAT_PAY: WeChat Pay" | "ETC: Other payment methods")[];
+      availablePayTypes: (
+        | 'CREDIT_CARD'
+        | 'ACCOUNT'
+        | 'MOBILE'
+        | 'REALTIME_ACCOUNT_TRANSFER'
+        | 'VIRTUAL_ACCOUNT'
+        | 'GIFT'
+        | 'ATM'
+        | 'PAYCO'
+        | 'ZERO_PAY'
+        | 'ACCUMULATION'
+        | 'PHONE_BILL'
+        | 'POINT'
+        | 'YPAY'
+        | 'KPAY'
+        | 'PAYPIN'
+        | 'INIPAY'
+        | 'PAYPAL'
+        | 'STRIPE'
+        | 'NAVER_PAY'
+        | 'KAKAO_PAY'
+        | 'NAVER_EASY_PAY'
+        | 'SAMSUNG_PAY'
+        | 'CHAI'
+        | 'TOSS_PAY'
+        | 'SK_PAY'
+        | 'APPLE_PAY'
+        | 'LPAY'
+        | 'ESCROW_REALTIME_ACCOUNT_TRANSFER'
+        | 'ESCROW_VIRTUAL_ACCOUNT'
+        | 'RENTAL'
+        | 'VERITRANS_CARD'
+        | 'TOASTCAM'
+        | 'UNION_PAY'
+        | 'ALIPAY'
+        | 'WECHAT_PAY'
+        | 'ETC'
+      )[];
       /** @description 해외결제 결제정보 (nullable) */
       internationalPaymentInfo?: {
         /**
@@ -10587,20 +13101,20 @@ export interface components {
         totalStandardAmt: number;
       };
     };
-    "order-sheets-1565420976": {
+    'order-sheets-1565420976': {
       /** @description 상품 쿠폰 (nullable) */
       productCoupons?: {
-          /**
-           * @description 쿠폰 발급 번호
-           * @example 1415130
-           */
-          couponIssueNo: number;
-          /**
-           * @description 상품번호
-           * @example 100398947
-           */
-          mallProductNo: number;
-        }[];
+        /**
+         * @description 쿠폰 발급 번호
+         * @example 1415130
+         */
+        couponIssueNo: number;
+        /**
+         * @description 상품번호
+         * @example 100398947
+         */
+        mallProductNo: number;
+      }[];
       /**
        * @description 쇼핑채널링-추적키
        * @example 10a00a00-a00a-00a0-a000-000000aa0000
@@ -10617,124 +13131,124 @@ export interface components {
        */
       channelType?: string;
       /** @description 상품 정보 */
-      products: ({
-          /** @description 렌탈 정보 (nullable) */
-          rentalInfos?: {
-              /**
-               * @description 월 렌탈료
-               * @example 10000
-               */
-              monthlyRentalAmount: number;
-              /**
-               * @description 렌탈 기간
-               * @example 1
-               */
-              rentalPeriod: number;
-            }[];
-          /** @description 정기결제 배송 정보 */
-          recurringPaymentDelivery: {
-            /**
-             * @description 정기결제 배송주기 일자 (nullable)
-             * @example 20
-             */
-            date?: number;
-            /**
-             * @description 정기결제 배송주기 타입 (nullable)
-             * @example MONTH
-             * @enum {string}
-             */
-            cycleType?: "MONTH: Month" | "WEEK: Week";
-            /**
-             * @description 정기결제 첫 배송 예정일 (nullable)
-             * @example YYYY-MM-DD
-             */
-            firstRecurringDate?: string;
-            /**
-             * @description 정기결제 배송주기 (nullable)
-             * @example 1
-             */
-            cycle?: number;
-          };
+      products: {
+        /** @description 렌탈 정보 (nullable) */
+        rentalInfos?: {
           /**
-           * @description 쇼핑채널링-채널타입 (nullable)
-           * @example NAVER_EP
+           * @description 월 렌탈료
+           * @example 10000
            */
-          channelType?: string;
+          monthlyRentalAmount: number;
           /**
-           * @description 주문수량
+           * @description 렌탈 기간
            * @example 1
            */
-          orderCnt: number;
-          /** @description 소비자 입력형 옵션 (nullable) */
-          optionInputs?: {
-              /**
-               * @description 구매자 입력형 옵션 - 값
-               * @example 14호
-               */
-              inputValue: string;
-              /**
-               * @description 구매자 입력형 옵션 - 이름
-               * @example 사이즈
-               */
-              inputLabel: string;
-              /**
-               * @description 구매자 입력형 옵션 - 필수여부 (true: 필수, false: 선택) (nullable)
-               * @example true
-               */
-              required?: boolean;
-            }[];
+          rentalPeriod: number;
+        }[];
+        /** @description 정기결제 배송 정보 */
+        recurringPaymentDelivery: {
           /**
-           * @description 옵션번호
-           * @example 1258932
+           * @description 정기결제 배송주기 일자 (nullable)
+           * @example 20
            */
-          optionNo: number;
+          date?: number;
           /**
-           * @description 상품번호
-           * @example 100398947
+           * @description 정기결제 배송주기 타입 (nullable)
+           * @example MONTH
+           * @enum {string}
            */
-          productNo: number;
-        })[];
-    };
-    /** @description 장바구니 수정 리스트 */
-    cart752002737: {
+          cycleType?: 'MONTH' | 'WEEK';
+          /**
+           * @description 정기결제 첫 배송 예정일 (nullable)
+           * @example YYYY-MM-DD
+           */
+          firstRecurringDate?: string;
+          /**
+           * @description 정기결제 배송주기 (nullable)
+           * @example 1
+           */
+          cycle?: number;
+        };
         /**
-         * @description 구매개수
+         * @description 쇼핑채널링-채널타입 (nullable)
+         * @example NAVER_EP
+         */
+        channelType?: string;
+        /**
+         * @description 주문수량
          * @example 1
          */
         orderCnt: number;
-        /** @description 구매자 입력형 옵션 */
-        optionInputs: {
-            /**
-             * @description 구매자 작성형 입력 값 (nullable)
-             * @example 14호
-             */
-            inputValue?: string;
-            /**
-             * @description 구매자 작성형 입력 이름 (nullable)
-             * @example 사이즈
-             */
-            inputLabel?: string;
-          }[];
+        /** @description 소비자 입력형 옵션 (nullable) */
+        optionInputs?: {
+          /**
+           * @description 구매자 입력형 옵션 - 값
+           * @example 14호
+           */
+          inputValue: string;
+          /**
+           * @description 구매자 입력형 옵션 - 이름
+           * @example 사이즈
+           */
+          inputLabel: string;
+          /**
+           * @description 구매자 입력형 옵션 - 필수여부 (true: 필수, false: 선택) (nullable)
+           * @example true
+           */
+          required?: boolean;
+        }[];
         /**
-         * @description 장바구니 번호
-         * @example 1
+         * @description 옵션번호
+         * @example 1258932
          */
-        cartNo: number;
+        optionNo: number;
+        /**
+         * @description 상품번호
+         * @example 100398947
+         */
+        productNo: number;
       }[];
-    "recurring-payments-order-sheets-1030890519": {
+    };
+    /** @description 장바구니 수정 리스트 */
+    cart752002737: {
+      /**
+       * @description 구매개수
+       * @example 1
+       */
+      orderCnt: number;
+      /** @description 구매자 입력형 옵션 */
+      optionInputs: {
+        /**
+         * @description 구매자 작성형 입력 값 (nullable)
+         * @example 14호
+         */
+        inputValue?: string;
+        /**
+         * @description 구매자 작성형 입력 이름 (nullable)
+         * @example 사이즈
+         */
+        inputLabel?: string;
+      }[];
+      /**
+       * @description 장바구니 번호
+       * @example 1
+       */
+      cartNo: number;
+    }[];
+    'recurring-payments-order-sheets-1030890519': {
       /** @description 상품 쿠폰 (nullable) */
       productCoupons?: {
-          /**
-           * @description 쿠폰 발급 번호
-           * @example 1415130
-           */
-          couponIssueNo: number;
-          /**
-           * @description 상품번호
-           * @example 100398947
-           */
-          mallProductNo: number;
-        }[];
+        /**
+         * @description 쿠폰 발급 번호
+         * @example 1415130
+         */
+        couponIssueNo: number;
+        /**
+         * @description 상품번호
+         * @example 100398947
+         */
+        mallProductNo: number;
+      }[];
       /**
        * @description 쇼핑채널링-추적키
        * @example 10a00a00-a00a-00a0-a000-000000aa0000
@@ -10751,84 +13265,84 @@ export interface components {
        */
       channelType?: string;
       /** @description 상품 정보 */
-      products: ({
-          /** @description 렌탈 정보 (nullable) */
-          rentalInfos?: {
-              /**
-               * @description 월 렌탈료
-               * @example 10000
-               */
-              monthlyRentalAmount: number;
-              /**
-               * @description 렌탈 기간
-               * @example 1
-               */
-              rentalPeriod: number;
-            }[];
-          recurringPaymentDelivery?: {
-            /**
-             * @description 정기결제 배송주기 일자 (nullable)
-             * @example 20
-             */
-            date?: number;
-            /**
-             * @description 정기결제 배송주기 타입 (nullable)
-             * @example MONTH
-             * @enum {string}
-             */
-            cycleType?: "MONTH: Month" | "WEEK: Week";
-            /**
-             * @description 정기결제 첫 배송 예정일 (nullable)
-             * @example YYYY-MM-DD
-             */
-            firstRecurringDate?: string;
-            /**
-             * @description 정기결제 배송주기 (nullable)
-             * @example 1
-             */
-            cycle?: number;
-          };
+      products: {
+        /** @description 렌탈 정보 (nullable) */
+        rentalInfos?: {
           /**
-           * @description 쇼핑채널링-채널타입 (nullable)
-           * @example NAVER_EP
+           * @description 월 렌탈료
+           * @example 10000
            */
-          channelType?: string;
+          monthlyRentalAmount: number;
           /**
-           * @description 주문수량
+           * @description 렌탈 기간
            * @example 1
            */
-          orderCnt: number;
-          /** @description 소비자 입력형 옵션 (nullable) */
-          optionInputs?: {
-              /**
-               * @description 구매자 입력형 옵션 - 값
-               * @example 14호
-               */
-              inputValue: string;
-              /**
-               * @description 구매자 입력형 옵션 - 이름
-               * @example 사이즈
-               */
-              inputLabel: string;
-              /**
-               * @description 구매자 입력형 옵션 - 필수여부 (true: 필수, false: 선택) (nullable)
-               * @example true
-               */
-              required?: boolean;
-            }[];
+          rentalPeriod: number;
+        }[];
+        recurringPaymentDelivery?: {
           /**
-           * @description 옵션번호
-           * @example 1258932
+           * @description 정기결제 배송주기 일자 (nullable)
+           * @example 20
            */
-          optionNo: number;
+          date?: number;
           /**
-           * @description 상품번호
-           * @example 100398947
+           * @description 정기결제 배송주기 타입 (nullable)
+           * @example MONTH
+           * @enum {string}
            */
-          productNo: number;
-        })[];
+          cycleType?: 'MONTH' | 'WEEK';
+          /**
+           * @description 정기결제 첫 배송 예정일 (nullable)
+           * @example YYYY-MM-DD
+           */
+          firstRecurringDate?: string;
+          /**
+           * @description 정기결제 배송주기 (nullable)
+           * @example 1
+           */
+          cycle?: number;
+        };
+        /**
+         * @description 쇼핑채널링-채널타입 (nullable)
+         * @example NAVER_EP
+         */
+        channelType?: string;
+        /**
+         * @description 주문수량
+         * @example 1
+         */
+        orderCnt: number;
+        /** @description 소비자 입력형 옵션 (nullable) */
+        optionInputs?: {
+          /**
+           * @description 구매자 입력형 옵션 - 값
+           * @example 14호
+           */
+          inputValue: string;
+          /**
+           * @description 구매자 입력형 옵션 - 이름
+           * @example 사이즈
+           */
+          inputLabel: string;
+          /**
+           * @description 구매자 입력형 옵션 - 필수여부 (true: 필수, false: 선택) (nullable)
+           * @example true
+           */
+          required?: boolean;
+        }[];
+        /**
+         * @description 옵션번호
+         * @example 1258932
+         */
+        optionNo: number;
+        /**
+         * @description 상품번호
+         * @example 100398947
+         */
+        productNo: number;
+      }[];
     };
-    "my-pay-modify-password-1997353067": {
+    'my-pay-modify-password-1997353067': {
       /**
        * @description 암호화된 이니시스에서 발행한 SEED wpayUserKey
        * @example 82fGOwir8hlYR2aboH/vkw==
@@ -10855,14 +13369,14 @@ export interface components {
        */
       returnUrl: string;
     };
-    "my-pay-modify-main-payment667999033": {
+    'my-pay-modify-main-payment667999033': {
       /**
        * @description 이니시스에서 발행한 SEED wpaytoken
        * @example LL3E994QcmzSFH0JCiZOFw==
        */
       payToken: string;
     };
-    "recurring-payments-976798933": {
+    'recurring-payments-976798933': {
       /**
        * @description 구매금액 (배송비 별도 standardAmt - discountAmt) (nullable)
        * @example 10000
@@ -10903,27 +13417,27 @@ export interface components {
        * @example {}
        */
       products: {
-          /**
-           * @description 정기결제 신청번호
-           * @example {}
-           */
-          recurringPaymentId: string;
-          /**
-           * @description 옵션값
-           * @example {}
-           */
-          optionValue: string;
-          /**
-           * @description 옵션명
-           * @example {}
-           */
-          optionName: string;
-          /**
-           * @description 상품명
-           * @example {}
-           */
-          productName: string;
-        }[];
+        /**
+         * @description 정기결제 신청번호
+         * @example {}
+         */
+        recurringPaymentId: string;
+        /**
+         * @description 옵션값
+         * @example {}
+         */
+        optionValue: string;
+        /**
+         * @description 옵션명
+         * @example {}
+         */
+        optionName: string;
+        /**
+         * @description 상품명
+         * @example {}
+         */
+        productName: string;
+      }[];
       /**
        * @description 수령자 주소 (nullable)
        * @example 성남시 분당구 대왕판교로
@@ -10950,20 +13464,20 @@ export interface components {
        */
       cardEndDigit?: string;
     };
-    "order-sheets-orderSheetNo-coupons-apply-1755276020": {
+    'order-sheets-orderSheetNo-coupons-apply-1755276020': {
       /** @description 상품 쿠폰 (nullable) */
       productCoupons?: {
-          /**
-           * @description 쿠폰 발급 번호
-           * @example 1415130
-           */
-          couponIssueNo: number;
-          /**
-           * @description 상품번호
-           * @example 100398947
-           */
-          productNo: number;
-        }[];
+        /**
+         * @description 쿠폰 발급 번호
+         * @example 1415130
+         */
+        couponIssueNo: number;
+        /**
+         * @description 상품번호
+         * @example 100398947
+         */
+        productNo: number;
+      }[];
       /**
        * @description 장바구니 쿠폰 발행 번호
        * @example 12121212
@@ -10980,7 +13494,7 @@ export interface components {
        */
       channelType?: string;
     };
-    "guest-orders-orderNo-deliveries1990893381": {
+    'guest-orders-orderNo-deliveries1990893381': {
       /** @description (해외배송 / 글로벌결제 시 필수) 수령인 LastName (nullable) */
       receiverLastName?: string;
       /** @description 지번주소(대한민국 주소의 경우는 필수 값) (nullable) */
@@ -10993,7 +13507,92 @@ export interface components {
        * @description 국가코드(default:mall의 국가코드) (nullable)
        * @enum {string}
        */
-      countryCd?: "AX: Åland Islands" | "AD: Andorra" | "AU: Australia" | "AT: Austria" | "BH: Bahrain" | "BE: Belgium" | "BZ: Belize" | "BR: Brazil" | "BN: Brunei" | "BG: Bulgaria" | "CA: Canada" | "ES_CANARY: Spain" | "CL: Chile" | "CN: China" | "CO: Colombia" | "CR: Costa Rica" | "CY: Cyprus" | "CZ: Czech Republic" | "DK: Denmark" | "EC: Ecuador" | "EG: Egypt" | "SV: El Salvador" | "EE: Estonia" | "FR: France" | "GF: French Guiana" | "DE: Germany" | "GR: Greece" | "GL: Denmark" | "GU: Guam" | "GT: Guatemala" | "GG: Guernsey" | "GY: Guyana" | "HK: Hong Kong" | "HU: Hungary" | "IS: Iceland" | "ID: Indonesia" | "IE: Ireland" | "IL: Israel" | "IT: Italy" | "JP: Japan" | "JE: Jersey" | "JO: Jordan" | "KR: South Korea" | "KW: Kuwait" | "LV: Latvia" | "LB: Lebanon" | "LI: Liechtenstein" | "LT: Lithuania" | "LU: Luxembourg" | "MO: Macau" | "PT_MADEIRA: Portugal" | "MY: Malaysia" | "NL: Netherlands" | "NZ: New Zealand" | "GB_NORTHERN_ISLAND: United Kingdom" | "NO: Norway" | "PY: Paraguay" | "PE: Peru" | "PL: Poland" | "PT: Portugal" | "RO: Romania" | "RU: Russia" | "SM: San Marino" | "SA: Saudi Arabia" | "GB_SCOTLAND: United Kingdom" | "SG: Singapore" | "SK: Slovakia" | "SI: Slovenia" | "ES: Spain" | "CH: Switzerland" | "TW: Taiwan" | "TH: Thailand" | "TR: Turkey" | "AE: United Arab Emirates" | "GB: United Kingdom" | "US: United States (Mainland)" | "U2: United States (Mainland)" | "UY: Uruguay" | "VN: Vietnam" | "GB_WALES: United Kingdom" | "YE: Yemen" | "HR: Croatia" | "MT: Malta" | "FI: Finland" | "SE: Sweden";
+      countryCd?:
+        | 'AX'
+        | 'AD'
+        | 'AU'
+        | 'AT'
+        | 'BH'
+        | 'BE'
+        | 'BZ'
+        | 'BR'
+        | 'BN'
+        | 'BG'
+        | 'CA'
+        | 'ES_CANARY'
+        | 'CL'
+        | 'CN'
+        | 'CO'
+        | 'CR'
+        | 'CY'
+        | 'CZ'
+        | 'DK'
+        | 'EC'
+        | 'EG'
+        | 'SV'
+        | 'EE'
+        | 'FR'
+        | 'GF'
+        | 'DE'
+        | 'GR'
+        | 'GL'
+        | 'GU'
+        | 'GT'
+        | 'GG'
+        | 'GY'
+        | 'HK'
+        | 'HU'
+        | 'IS'
+        | 'ID'
+        | 'IE'
+        | 'IL'
+        | 'IT'
+        | 'JP'
+        | 'JE'
+        | 'JO'
+        | 'KR'
+        | 'KW'
+        | 'LV'
+        | 'LB'
+        | 'LI'
+        | 'LT'
+        | 'LU'
+        | 'MO'
+        | 'PT_MADEIRA'
+        | 'MY'
+        | 'NL'
+        | 'NZ'
+        | 'GB_NORTHERN_ISLAND'
+        | 'NO'
+        | 'PY'
+        | 'PE'
+        | 'PL'
+        | 'PT'
+        | 'RO'
+        | 'RU'
+        | 'SM'
+        | 'SA'
+        | 'GB_SCOTLAND'
+        | 'SG'
+        | 'SK'
+        | 'SI'
+        | 'ES'
+        | 'CH'
+        | 'TW'
+        | 'TH'
+        | 'TR'
+        | 'AE'
+        | 'GB'
+        | 'US'
+        | 'U2'
+        | 'UY'
+        | 'VN'
+        | 'GB_WALES'
+        | 'YE'
+        | 'HR'
+        | 'MT'
+        | 'FI'
+        | 'SE';
       /** @description 우편번호 */
       receiverZipCd: string;
       /** @description 상세주소 */
@@ -11013,14 +13612,14 @@ export interface components {
       /** @description 수령자연락처2 (nullable) */
       receiverContact2?: string;
     };
-    "payments-naver-validate149892381": {
+    'payments-naver-validate149892381': {
       /**
        * @description 검증 결과
        * @example true
        */
       result: boolean;
     };
-    "my-pay-register-user1853670927": {
+    'my-pay-register-user1853670927': {
       /** @description 고객 실명 */
       userNm: string;
       /** @description 암호화된 생년월일 (YYYYMMDD) */
@@ -11059,45 +13658,114 @@ export interface components {
       /** @description 암호화된 고객 휴대폰번호 */
       hNum: string;
     };
-    "later-input-areafees694667795": {
-        /**
-         * @description 주소
-         * @example 제주특별자치도 제주시
-         */
-        address: string;
-        /**
-         * @description 추가배송비
-         * @example 2500
-         */
-        extraDeliveryAmt: number;
-      }[];
-    "guest-orders-orderNo-cashReceipt704793082": {
+    'later-input-areafees694667795': {
+      /**
+       * @description 주소
+       * @example 제주특별자치도 제주시
+       */
+      address: string;
+      /**
+       * @description 추가배송비
+       * @example 2500
+       */
+      extraDeliveryAmt: number;
+    }[];
+    'guest-orders-orderNo-cashReceipt704793082': {
       /**
        * @description 신청 결과 ( ISSUE: 발행완료, REQUEST_ONLY: 응답없음, FAIL: 실패 )
        * @example ISSUE
        */
       resultType: string;
     };
-    "payments-naver-wish-list1116014589": Record<string, never>;
+    'payments-naver-wish-list1116014589': Record<string, never>;
     /** @description 비회원장바구니 요청리스트 */
-    "recurring-payments-guest-cart-1583522844": {
+    'recurring-payments-guest-cart-1583522844': {
+      /**
+       * @description 채널타입 (nullable)
+       * @example NAVER_EP
+       */
+      channelType?: string;
+      /**
+       * @description 구매갯수
+       * @example 1
+       */
+      orderCnt: number;
+      /** @description 구매자 입력형 옵션 */
+      optionInputs: {
         /**
-         * @description 채널타입 (nullable)
-         * @example NAVER_EP
+         * @description 구매자 작성형 입력 텍스트 옵션 (nullable)
+         * @example AMOUNT
          */
-        channelType?: string;
+        inputMatchingType?: string;
         /**
-         * @description 구매갯수
-         * @example 1
+         * @description 구매자 작성형 입력 값 (nullable)
+         * @example 14호
          */
-        orderCnt: number;
-        /** @description 구매자 입력형 옵션 */
-        optionInputs: {
-            /**
-             * @description 구매자 작성형 입력 텍스트 옵션 (nullable)
-             * @example AMOUNT
-             */
-            inputMatchingType?: string;
+        inputValue?: string;
+        /**
+         * @description 구매자 작성형 입력 이름 (nullable)
+         * @example 사이즈
+         */
+        inputLabel?: string;
+      }[];
+      /**
+       * @description 옵션번호
+       * @example 1258932
+       */
+      optionNo: number;
+      /**
+       * @description 카트번호
+       * @example 100398947
+       */
+      cartNo: number;
+      /**
+       * @description 상품번호
+       * @example 100398947
+       */
+      productNo: number;
+    }[];
+    'profile-orders898513268': {
+      /**
+       * @description 총 수량
+       * @example 12
+       */
+      totalCount: number;
+      /** @description 주문 내역 */
+      items: {
+        /** @description 주문 상품 옵션 */
+        orderOptions: {
+          /**
+           * @description 교환가능여부
+           * @example true
+           */
+          exchangeable: boolean;
+          /**
+           * @description 예약배송시작일 (nullable)
+           * @example YYYY-MM-DD hh:mm:ss
+           */
+          reservationDeliveryYmdt?: string;
+          /**
+           * @description 클레임 번호 (nullable)
+           * @example 1
+           */
+          claimNo?: number;
+          /**
+           * @description 취소가능여부
+           * @example true
+           */
+          cancelable: boolean;
+          /**
+           * @description 주문상태 (nullable)
+           * @example 결제완료
+           */
+          orderStatusTypeLabel?: string;
+          /**
+           * @description 사은품 여부
+           * @example true
+           */
+          isFreeGift: boolean;
+          /** @description 구매자 작성형 옵션 */
+          inputs: {
             /**
              * @description 구매자 작성형 입력 값 (nullable)
              * @example 14호
@@ -11109,685 +13777,747 @@ export interface components {
              */
             inputLabel?: string;
           }[];
-        /**
-         * @description 옵션번호
-         * @example 1258932
-         */
-        optionNo: number;
-        /**
-         * @description 카트번호
-         * @example 100398947
-         */
-        cartNo: number;
-        /**
-         * @description 상품번호
-         * @example 100398947
-         */
-        productNo: number;
-      }[];
-    "profile-orders898513268": {
-      /**
-       * @description 총 수량
-       * @example 12
-       */
-      totalCount: number;
-      /** @description 주문 내역 */
-      items: ({
-          /** @description 주문 상품 옵션 */
-          orderOptions: ({
-              /**
-               * @description 교환가능여부
-               * @example true
-               */
-              exchangeable: boolean;
-              /**
-               * @description 예약배송시작일 (nullable)
-               * @example YYYY-MM-DD hh:mm:ss
-               */
-              reservationDeliveryYmdt?: string;
-              /**
-               * @description 클레임 번호 (nullable)
-               * @example 1
-               */
-              claimNo?: number;
-              /**
-               * @description 취소가능여부
-               * @example true
-               */
-              cancelable: boolean;
-              /**
-               * @description 주문상태 (nullable)
-               * @example 결제완료
-               */
-              orderStatusTypeLabel?: string;
-              /**
-               * @description 사은품 여부
-               * @example true
-               */
-              isFreeGift: boolean;
-              /** @description 구매자 작성형 옵션 */
-              inputs: {
-                  /**
-                   * @description 구매자 작성형 입력 값 (nullable)
-                   * @example 14호
-                   */
-                  inputValue?: string;
-                  /**
-                   * @description 구매자 작성형 입력 이름 (nullable)
-                   * @example 사이즈
-                   */
-                  inputLabel?: string;
-                }[];
-              /**
-               * @description 배송여부
-               * @example true
-               */
-              deliverable: boolean;
-              /**
-               * @description 배송보류 해제 일시 (nullable)
-               * @example "2023-09-01T18:00:00.000Z"
-               */
-              releaseHoldDeliveryYmdt?: string;
-              /**
-               * @description 옵션사용여부
-               * @example true
-               */
-              optionUsed: boolean;
-              /**
-               * @description 정기배송 상품여부 (nullable)
-               * @example false
-               */
-              isRecurringPayment?: boolean;
-              /**
-               * @description 클레임상태 (nullable)
-               * @example 취소신청
-               */
-              claimStatusTypeLabel?: string;
-              /**
-               * @description 상품명
-               * @example 상품1
-               */
-              productName: string;
-              /**
-               * @description 클레임상태 (nullable)
-               * @example CANCEL_NO_REFUND
-               * @enum {string}
-               */
-              claimStatusType?: "CANCEL_NO_REFUND: 취소완료[환불없음]" | "CANCEL_REQUEST: 취소신청[승인대기]" | "CANCEL_PROC_REQUEST_REFUND: 취소처리[환불보류]" | "CANCEL_PROC_WAITING_REFUND: 취소처리[환불대기]" | "CANCEL_DONE: 취소완료[환불완료]" | "RETURN_REQUEST: 반품신청[승인대기]" | "RETURN_REJECT_REQUEST: 반품신청[철회대기]" | "RETURN_PROC_BEFORE_RECEIVE: 반품처리[수거진행]" | "RETURN_PROC_REQUEST_REFUND: 반품처리[환불보류]" | "RETURN_PROC_WAITING_REFUND: 반품처리[환불대기]" | "RETURN_DONE: 반품완료[환불완료]" | "RETURN_REFUND_AMT_ADJUST_REQUESTED: 반품처리[조정요청]" | "RETURN_NO_REFUND: 반품완료[환불없음]" | "EXCHANGE_REQUEST: 교환신청[승인대기]" | "EXCHANGE_REJECT_REQUEST: 교환처리[철회대기]" | "EXCHANGE_PROC_BEFORE_RECEIVE: 교환처리[수거진행]" | "EXCHANGE_PROC_REQUEST_PAY: 교환처리[결제대기]" | "EXCHANGE_PROC_REQUEST_REFUND: 교환처리[환불보류]" | "EXCHANGE_PROC_WAITING: 교환처리[처리대기]" | "EXCHANGE_DONE: 교환완료[차액없음]" | "EXCHANGE_PROC_WAITING_PAY: 교환처리[입금처리대기]" | "EXCHANGE_PROC_WAITING_REFUND: 교환처리[환불대기]" | "EXCHANGE_DONE_PAY_DONE: 교환완료[결제완료]" | "EXCHANGE_DONE_REFUND_DONE: 교환완료[환불완료]";
-              /**
-               * @description 추가상품번호
-               * @example 1234
-               */
-              additionalProductNo: number;
-              /**
-               * @description 옵션형태
-               * @example PRODUCT_ONLY
-               * @enum {string}
-               */
-              optionType: "PRODUCT_ONLY: 옵션없음" | "NORMAL_OPTION: 일반옵션" | "ADDITIONAL_PRODUCT: 추가옵션";
-              /**
-               * @description 해외배송여부
-               * @example false
-               */
-              deliveryInternationalYn: boolean;
-              /** @description 가격정보 */
-              price: {
-                /**
-                 * @description 구매가(즉시할인 + 추가할인 적용)
-                 * @example 10000
-                 */
-                buyPrice: number;
-                /**
-                 * @description 구매금액(구매가 * 주문수량)
-                 * @example 10000
-                 */
-                buyAmt: number;
-                /**
-                 * @description 즉시할인적용가 * 주문수량
-                 * @example 10000
-                 */
-                immediateDiscountedAmt: number;
-                /**
-                 * @description 추가할인금액
-                 * @example 10000
-                 */
-                additionalDiscountAmt: number;
-                /**
-                 * @description 즉시할인금액
-                 * @example 10000
-                 */
-                immediateDiscountAmt: number;
-                /**
-                 * @description 상품판매가
-                 * @example 10000
-                 */
-                salePrice: number;
-                /**
-                 * @description 정상금액(상품판매가 + 옵션추가금액) * 주문수량
-                 * @example 10000
-                 */
-                standardAmt: number;
-                /**
-                 * @description 즉시할인적용가
-                 * @example 10000
-                 */
-                immediateDiscountedPrice: number;
-                /**
-                 * @description 옵션추가금액
-                 * @example 10000
-                 */
-                addPrice: number;
-                /**
-                 * @description 정상가(상품판매가 + 옵션추가금액)
-                 * @example 10000
-                 */
-                standardPrice: number;
-                /**
-                 * @description 적립율
-                 * @example 10
-                 */
-                accumulationRate: number;
-              };
-              /** @description 배송지연사유 (nullable) */
-              holdDeliveryReason?: string;
-              /**
-               * @description 상품 이미지 URL
-               * @example http://image.url
-               */
-              imageUrl: string;
-              /**
-               * @description 회원여부
-               * @example true
-               */
-              member: boolean;
-              /** @description 세트옵션 */
-              setOptions: {
-                  /**
-                   * @description 세트옵션옵션사용여부
-                   * @example true
-                   */
-                  usesOption: boolean;
-                  /**
-                   * @description 세트옵션옵션번호
-                   * @example 1
-                   */
-                  mallOptionNo: number;
-                  /**
-                   * @description 세트옵션상품관리코드 (nullable)
-                   * @example 1231
-                   */
-                  productManagementCd?: string;
-                  /**
-                   * @description 세트옵션옵션
-                   * @example 100
-                   */
-                  optionValue: string;
-                  /**
-                   * @description 세트옵션구매수
-                   * @example 1
-                   */
-                  count: number;
-                  /**
-                   * @description 세트옵션옵션가격
-                   * @example 1000
-                   */
-                  optionPrice: number;
-                  /**
-                   * @description 세트옵션sku (nullable)
-                   * @example 1231
-                   */
-                  sku?: string;
-                  /**
-                   * @description 세트옵션옵션명
-                   * @example 사이즈
-                   */
-                  optionName: string;
-                  /**
-                   * @description 세트옵션옵션관리코드 (nullable)
-                   * @example 1231
-                   */
-                  optionManagementCd?: string;
-                  /**
-                   * @description 세트옵션상품번호
-                   * @example 1
-                   */
-                  mallProductNo: number;
-                  /**
-                   * @description 세트옵션재고번호
-                   * @example 1
-                   */
-                  stockNo: number;
-                  /**
-                   * @description 세트옵션상품명
-                   * @example TEST_PRODUCT
-                   */
-                  productName: string;
-                }[];
-              /** @description 배송예상일자 (nullable) */
-              deliveryExpectedYmdt?: string;
-              /**
-               * @description 예약여부
-               * @example true
-               */
-              reservation: boolean;
-              /** @description 다음에 할 수 있는 작업 */
-              nextActions: ({
-                  /**
-                   * @description 다음에 할 수 있는 작업 그룹
-                   * @example NORMAL
-                   */
-                  actionGroupType: string;
-                  /**
-                   * @description 작업타입
-                   * @example CANCEL_ALL
-                   * @enum {string}
-                   */
-                  nextActionType: "CANCEL_ALL: 주문취소" | "CANCEL: 취소" | "EXCHANGE: 교환" | "RETURN: 반품" | "WITHDRAW_CANCEL: 취소신청 취소" | "WITHDRAW_EXCHANGE: 교환신청 취소" | "WITHDRAW_RETURN: 반품신청 취소" | "VIEW_CLAIM: 클레임 조회" | "VIEW_DELIVERY: 배송조회" | "DELIVERY_DONE: 수취확인" | "CONFIRM_ORDER: 구매확정" | "CHANGE_ADDRESS: 배송지변경" | "WRITE_REVIEW: 상품평작성" | "ISSUE_CASH_RECEIPT: 현금영수증 발행" | "VIEW_RECEIPT: 현금영수증 조회";
-                  /**
-                   * @description uri
-                   * @example /profile/orders/{orderNo}/claim
-                   */
-                  uri: string;
-                })[];
-              /**
-               * @description 환불가능여부
-               * @example true
-               */
-              refundable: boolean;
-              /**
-               * @description 옵션번호
-               * @example 123
-               */
-              optionNo: number;
-              /**
-               * @description 브랜드 번호 (nullable)
-               * @example 1234
-               */
-              brandNo?: number;
-              /**
-               * @description 주문옵션번호
-               * @example 123
-               */
-              orderOptionNo: number;
-              /**
-               * @description 상품번호
-               * @example 123
-               */
-              productNo: number;
-              /** @description 배송정보 */
-              delivery: {
-                /**
-                 * @description 배송지 나중입력 여부 (nullable)
-                 * @example false
-                 */
-                usesShippingInfoLaterInput?: boolean;
-                /**
-                 * @description 택배사 (nullable)
-                 * @example CJ대한통운
-                 */
-                deliveryCompanyTypeLabel?: string;
-                /**
-                 * @description 배송타입 (nullable)
-                 * @example PARCEL_DELIVERY
-                 * @enum {string}
-                 */
-                deliveryType?: "PARCEL_DELIVERY: Parcel/Registered Mail/Parcel Post" | "DIRECT_DELIVERY: Direct Delivery(Freight Delivery)" | "NONE: None";
-                /**
-                 * @description 택배사타입 (nullable)
-                 * @example CJ
-                 */
-                deliveryCompanyType?: string;
-                /**
-                 * @description 송장추적 URL (nullable)
-                 * @example https://www.logistics.dhl/de-en/home/tracking.html?tracking-id=12345
-                 */
-                retrieveInvoiceUrl?: string;
-                /**
-                 * @description 송장번호 (nullable)
-                 * @example 123456789
-                 */
-                invoiceNo?: string;
-              };
-              /**
-               * @description 옵션권장출력값
-               * @example 색상/레드
-               */
-              optionTitle: string;
-              /**
-               * @description 브랜드명 (nullable)
-               * @example 나이키
-               */
-              brandName?: string;
-              /**
-               * @description 주문번호
-               * @example 20201011231211
-               */
-              orderNo: string;
-              /**
-               * @description 파트너명 (nullable)
-               * @example 파트너 이름
-               */
-              partnerName?: string;
-              /**
-               * @description 주문상태
-               * @example DEPOSIT_WAIT
-               * @enum {string}
-               */
-              orderStatusType: "DEPOSIT_WAIT: Deposit Wait" | "PAY_DONE: Pay Done" | "PRODUCT_PREPARE: Product Prepare" | "DELIVERY_PREPARE: Delivery Prepare" | "DELIVERY_ING: Delivering" | "DELIVERY_DONE: Delivery Done" | "BUY_CONFIRM: Buy Confirm" | "CANCEL_DONE: Cancel Done" | "RETURN_DONE: Return Done" | "EXCHANGE_DONE: Exchange Done" | "PAY_WAIT: Pay Wait" | "PAY_CANCEL: Pay Cancel" | "PAY_FAIL: Pay Fail" | "DELETE: Delete" | "EXCHANGE_WAIT: Exchange Wait" | "REFUND_DONE: Refund Done";
-              /**
-               * @description 옵션값
-               * @example 레드
-               */
-              optionValue: string;
-              /**
-               * @description 배송보류 여부 (nullable)
-               * @example false
-               */
-              holdDelivery?: boolean;
-              /**
-               * @description 주문수량
-               * @example 1
-               */
-              orderCnt: number;
-              /**
-               * @description 반품가능여부
-               * @example true
-               */
-              returnable: boolean;
-              /**
-               * @description 교환여부
-               * @example N
-               */
-              exchangeYn: string;
-              /**
-               * @description 적립금
-               * @example 1000
-               */
-              accumulationAmt: number;
-              /** @description 주문 상태 일자 */
-              orderStatusDate: {
-                /**
-                 * @description 상품평작성기한 (nullable)
-                 * @example YYYY-MM-DD hh:mm:ss
-                 */
-                reviewableYmdt?: string;
-                /**
-                 * @description 배송완료일시 (nullable)
-                 * @example YYYY-MM-DD hh:mm:ss
-                 */
-                deliveryCompleteYmdt?: string;
-                /**
-                 * @description 구매확정일자 (nullable)
-                 * @example YYYY-MM-DD hh:mm:ss
-                 */
-                buyConfirmYmdt?: string;
-                /**
-                 * @description 결제일시 (nullable)
-                 * @example YYYY-MM-DD hh:mm:ss
-                 */
-                payYmdt?: string;
-                /**
-                 * @description 등록일자
-                 * @example YYYY-MM-DD hh:mm:ss
-                 */
-                registerYmdt: string;
-              };
-              /**
-               * @description 브랜드영문명 (nullable)
-               * @example nike
-               */
-              brandNameEn?: string;
-              /**
-               * @description 영어상품명 (nullable)
-               * @example sangpum
-               */
-              productNameEn?: string;
-              /**
-               * @description 옵션관리코드 (nullable)
-               * @example OPTI123123
-               */
-              optionManagementCd?: string;
-              /**
-               * @description 옵션명
-               * @example 색상
-               */
-              optionName: string;
-            })[];
           /**
-           * @description 외부 PG사
-           * @example PAYCO
+           * @description 배송여부
+           * @example true
+           */
+          deliverable: boolean;
+          /**
+           * @description 배송보류 해제 일시 (nullable)
+           * @example "2023-09-01T18:00:00.000Z"
+           */
+          releaseHoldDeliveryYmdt?: string;
+          /**
+           * @description 옵션사용여부
+           * @example true
+           */
+          optionUsed: boolean;
+          /**
+           * @description 정기배송 상품여부 (nullable)
+           * @example false
+           */
+          isRecurringPayment?: boolean;
+          /**
+           * @description 클레임상태 (nullable)
+           * @example 취소신청
+           */
+          claimStatusTypeLabel?: string;
+          /**
+           * @description 상품명
+           * @example 상품1
+           */
+          productName: string;
+          /**
+           * @description 클레임상태 (nullable)
+           * @example CANCEL_NO_REFUND
            * @enum {string}
            */
-          pgType: "DUMMY: None" | "PAYCO: Payco" | "PAYPAL: PayPal" | "STRIPE: STRIPE" | "KCP: KCP" | "INICIS: INICIS" | "NONE: None" | "KCP_MOBILE: KCP(Mobile)" | "KCP_APP: KCP(App)" | "NAVER_PAY: Naver Pay" | "LIIVMATE: Liivmate" | "PAYPALPRO: PAYPAL PRO" | "ATHOR_NET: AthorizeNet" | "KAKAO_PAY: Kakao Pay" | "NAVER_EASY_PAY: Naver Pay" | "LG_U_PLUS: Toss Payments" | "TOSS_PAYMENTS: Toss Payments" | "CHAI: Chai" | "SMARTRO_PAY: Smartro Pay" | "NICEPAY: Nice Pay" | "MY_PAY: MyPay" | "EXIMBAY_GLOBAL: Eximbay(Global)" | "EASY_PAY: Easy Pay" | "GALAXIA_MONEY_TREE: Galaxia Money Tree" | "VERITRANS: Veritrans";
+          claimStatusType?:
+            | 'CANCEL_NO_REFUND'
+            | 'CANCEL_REQUEST'
+            | 'CANCEL_PROC_REQUEST_REFUND'
+            | 'CANCEL_PROC_WAITING_REFUND'
+            | 'CANCEL_DONE'
+            | 'RETURN_REQUEST'
+            | 'RETURN_REJECT_REQUEST'
+            | 'RETURN_PROC_BEFORE_RECEIVE'
+            | 'RETURN_PROC_REQUEST_REFUND'
+            | 'RETURN_PROC_WAITING_REFUND'
+            | 'RETURN_DONE'
+            | 'RETURN_REFUND_AMT_ADJUST_REQUESTED'
+            | 'RETURN_NO_REFUND'
+            | 'EXCHANGE_REQUEST'
+            | 'EXCHANGE_REJECT_REQUEST'
+            | 'EXCHANGE_PROC_BEFORE_RECEIVE'
+            | 'EXCHANGE_PROC_REQUEST_PAY'
+            | 'EXCHANGE_PROC_REQUEST_REFUND'
+            | 'EXCHANGE_PROC_WAITING'
+            | 'EXCHANGE_DONE'
+            | 'EXCHANGE_PROC_WAITING_PAY'
+            | 'EXCHANGE_PROC_WAITING_REFUND'
+            | 'EXCHANGE_DONE_PAY_DONE'
+            | 'EXCHANGE_DONE_REFUND_DONE';
           /**
-           * @description 주문번호
-           * @example 201912312312121234
+           * @description 추가상품번호
+           * @example 1234
            */
-          orderNo: string;
+          additionalProductNo: number;
           /**
-           * @description 추가정보 (json) (nullable)
-           * @example {}
-           */
-          extraData?: Record<string, never>;
-          /**
-           * @description PG사 결제키 (nullable)
-           * @example 12
-           */
-          pgMallKey?: string;
-          /**
-           * @description 결제수단
-           * @example CREDIT_CARD
+           * @description 옵션형태
+           * @example PRODUCT_ONLY
            * @enum {string}
            */
-          payType: "CREDIT_CARD: Credit Card" | "ACCOUNT: Deposit without bankbook" | "MOBILE: Mobile payment" | "REALTIME_ACCOUNT_TRANSFER: Real-time bank transfer" | "VIRTUAL_ACCOUNT: Virtual account" | "GIFT: Gift card" | "ATM: ATM" | "PAYCO: PAYCO" | "ZERO_PAY: Zero payment" | "ACCUMULATION: Accumulation" | "PHONE_BILL: Phone payment" | "POINT: Point payment" | "YPAY: Yello Pay" | "KPAY: K Pay" | "PAYPIN: Paypin" | "INIPAY: INIPay" | "PAYPAL: PAYPAL" | "STRIPE: STRIPE" | "NAVER_PAY: Naver Pay" | "KAKAO_PAY: Kakao Pay" | "NAVER_EASY_PAY: Naver Pay" | "SAMSUNG_PAY: Samsung Pay" | "CHAI: Chai" | "TOSS_PAY: Toss Pay" | "SK_PAY: SK Pay" | "APPLE_PAY: Apple Pay" | "LPAY: L Pay" | "ESCROW_REALTIME_ACCOUNT_TRANSFER: Real-time bank transfer - Escrow" | "ESCROW_VIRTUAL_ACCOUNT: Virtual account - Escrow" | "RENTAL: Rental payment" | "VERITRANS_CARD: Veritrans CreditCard" | "TOASTCAM: ToastCam" | "UNION_PAY: UnionPay" | "ALIPAY: AliPay Plus" | "WECHAT_PAY: WeChat Pay" | "ETC: Other payment methods";
-          /** @description 최종주문금액정보 */
-          lastOrderAmt: {
+          optionType: 'PRODUCT_ONLY' | 'NORMAL_OPTION' | 'ADDITIONAL_PRODUCT';
+          /**
+           * @description 해외배송여부
+           * @example false
+           */
+          deliveryInternationalYn: boolean;
+          /** @description 가격정보 */
+          price: {
             /**
-             * @description 총 상품금액 (즉시할인, 추가할인 포함) [총 상품정상금액(standardAmt) - 총 추가할인 금액(additionalDiscountAmt) - 총 즉시할인 금액(immediateDiscountAmt)]
+             * @description 구매가(즉시할인 + 추가할인 적용)
              * @example 10000
              */
-            totalProductAmt: number;
+            buyPrice: number;
             /**
-             * @description 총 추가할인 금액
-             * @example 0
+             * @description 구매금액(구매가 * 주문수량)
+             * @example 10000
+             */
+            buyAmt: number;
+            /**
+             * @description 즉시할인적용가 * 주문수량
+             * @example 10000
+             */
+            immediateDiscountedAmt: number;
+            /**
+             * @description 추가할인금액
+             * @example 10000
              */
             additionalDiscountAmt: number;
             /**
-             * @description 총 즉시할인 금액
-             * @example 0
+             * @description 즉시할인금액
+             * @example 10000
              */
             immediateDiscountAmt: number;
             /**
-             * @description 사용자 결제 금액 (적립금 제외) [payAmt - subPayAmt]
+             * @description 상품판매가
              * @example 10000
              */
-            chargeAmt: number;
+            salePrice: number;
             /**
-             * @description 총 배송비
-             * @example 2500
-             */
-            deliveryAmt: number;
-            /**
-             * @description 총 상품정상금액(즉시할인, 추가할인 제외)
-             * @example 7500
+             * @description 정상금액(상품판매가 + 옵션추가금액) * 주문수량
+             * @example 10000
              */
             standardAmt: number;
             /**
-             * @description 총 지역추가배송비
-             * @example 0
-             */
-            remoteDeliveryAmt: number;
-            /**
-             * @description 주문쿠폰할인 금액
-             * @example 0
-             */
-            cartCouponDiscountAmt: number;
-            /**
-             * @description 총 상품쿠폰할인 금액
-             * @example 0
-             */
-            productCouponDiscountAmt: number;
-            /**
-             * @description 보조결제금액(적립금)
-             * @example 2000
-             */
-            subPayAmt: number;
-            /**
-             * @description 결제금액
+             * @description 즉시할인적용가
              * @example 10000
              */
-            payAmt: number;
+            immediateDiscountedPrice: number;
+            /**
+             * @description 옵션추가금액
+             * @example 10000
+             */
+            addPrice: number;
+            /**
+             * @description 정상가(상품판매가 + 옵션추가금액)
+             * @example 10000
+             */
+            standardPrice: number;
+            /**
+             * @description 적립율
+             * @example 10
+             */
+            accumulationRate: number;
           };
-          /** @description 주문 상품 옵션 */
-          orderer: {
-            /**
-             * @description 주문자 연락처1 끝 4자리 (nullable)
-             * @example 0000
-             */
-            contact1LastDigits?: string;
-            /**
-             * @description 주문자 이름
-             * @example 홍길동
-             */
-            name: string;
-            /**
-             * @description 주문자 연락처 (nullable)
-             * @example 010-0000-0000
-             */
-            contact1?: string;
-            /** @description 환불계좌 (nullable) */
-            refundAccount?: string;
-            /** @description 주문자 이메일 (nullable) */
-            email?: string;
-            /**
-             * @description 주문자 연락처2 (nullable)
-             * @example 02-0000-0000
-             */
-            contact2?: string;
-          };
+          /** @description 배송지연사유 (nullable) */
+          holdDeliveryReason?: string;
           /**
-           * @description PG사 주문번호 - 매출전표등 확인용 (nullable)
-           * @example 12
+           * @description 상품 이미지 URL
+           * @example http://image.url
            */
-          pgOrderNo?: string;
+          imageUrl: string;
           /**
            * @description 회원여부
            * @example true
            */
           member: boolean;
-          /** @description 다음에 할 수 있는 작업 */
-          nextActions: ({
-              /**
-               * @description 다음에 할 수 있는 작업 그룹
-               * @example NORMAL
-               */
-              actionGroupType: string;
-              /**
-               * @description 작업타입
-               * @example CANCEL_ALL
-               * @enum {string}
-               */
-              nextActionType: "CANCEL_ALL: 주문취소" | "CANCEL: 취소" | "EXCHANGE: 교환" | "RETURN: 반품" | "WITHDRAW_CANCEL: 취소신청 취소" | "WITHDRAW_EXCHANGE: 교환신청 취소" | "WITHDRAW_RETURN: 반품신청 취소" | "VIEW_CLAIM: 클레임 조회" | "VIEW_DELIVERY: 배송조회" | "DELIVERY_DONE: 수취확인" | "CONFIRM_ORDER: 구매확정" | "CHANGE_ADDRESS: 배송지변경" | "WRITE_REVIEW: 상품평작성" | "ISSUE_CASH_RECEIPT: 현금영수증 발행" | "VIEW_RECEIPT: 현금영수증 조회";
-              /**
-               * @description uri
-               * @example /profile/orders/{orderNo}/claim
-               */
-              uri: string;
-            })[];
-          /**
-           * @description 에스크로 여부
-           * @example false
-           */
-          escrow: boolean;
-          /**
-           * @description 주문일자
-           * @example YYYY-MM-DD hh:mm:ss
-           */
-          orderYmdt: string;
-          /**
-           * @description 결제수단라벨
-           * @example 신용카드
-           */
-          payTypeLabel: string;
-          /** @description 해외결제 정보 */
-          internationalPaymentInfo: {
+          /** @description 세트옵션 */
+          setOptions: {
             /**
-             * @description 환율 (nullable)
+             * @description 세트옵션옵션사용여부
+             * @example true
+             */
+            usesOption: boolean;
+            /**
+             * @description 세트옵션옵션번호
              * @example 1
              */
-            exchangeRate?: number;
+            mallOptionNo: number;
             /**
-             * @description 환율 적용된 PG 결제 금액 (nullable)
+             * @description 세트옵션상품관리코드 (nullable)
+             * @example 1231
+             */
+            productManagementCd?: string;
+            /**
+             * @description 세트옵션옵션
+             * @example 100
+             */
+            optionValue: string;
+            /**
+             * @description 세트옵션구매수
+             * @example 1
+             */
+            count: number;
+            /**
+             * @description 세트옵션옵션가격
              * @example 1000
              */
-            exchangedAmt?: number;
+            optionPrice: number;
             /**
-             * @description 통화 코드
-             * @example KRW
+             * @description 세트옵션sku (nullable)
+             * @example 1231
              */
-            currencyCode: string;
+            sku?: string;
+            /**
+             * @description 세트옵션옵션명
+             * @example 사이즈
+             */
+            optionName: string;
+            /**
+             * @description 세트옵션옵션관리코드 (nullable)
+             * @example 1231
+             */
+            optionManagementCd?: string;
+            /**
+             * @description 세트옵션상품번호
+             * @example 1
+             */
+            mallProductNo: number;
+            /**
+             * @description 세트옵션재고번호
+             * @example 1
+             */
+            stockNo: number;
+            /**
+             * @description 세트옵션상품명
+             * @example TEST_PRODUCT
+             */
+            productName: string;
+          }[];
+          /** @description 배송예상일자 (nullable) */
+          deliveryExpectedYmdt?: string;
+          /**
+           * @description 예약여부
+           * @example true
+           */
+          reservation: boolean;
+          /** @description 다음에 할 수 있는 작업 */
+          nextActions: {
+            /**
+             * @description 다음에 할 수 있는 작업 그룹
+             * @example NORMAL
+             */
+            actionGroupType: string;
+            /**
+             * @description 작업타입
+             * @example CANCEL_ALL
+             * @enum {string}
+             */
+            nextActionType:
+              | 'CANCEL_ALL'
+              | 'CANCEL'
+              | 'EXCHANGE'
+              | 'RETURN'
+              | 'WITHDRAW_CANCEL'
+              | 'WITHDRAW_EXCHANGE'
+              | 'WITHDRAW_RETURN'
+              | 'VIEW_CLAIM'
+              | 'VIEW_DELIVERY'
+              | 'DELIVERY_DONE'
+              | 'CONFIRM_ORDER'
+              | 'CHANGE_ADDRESS'
+              | 'WRITE_REVIEW'
+              | 'ISSUE_CASH_RECEIPT'
+              | 'VIEW_RECEIPT';
+            /**
+             * @description uri
+             * @example /profile/orders/{orderNo}/claim
+             */
+            uri: string;
+          }[];
+          /**
+           * @description 환불가능여부
+           * @example true
+           */
+          refundable: boolean;
+          /**
+           * @description 옵션번호
+           * @example 123
+           */
+          optionNo: number;
+          /**
+           * @description 브랜드 번호 (nullable)
+           * @example 1234
+           */
+          brandNo?: number;
+          /**
+           * @description 주문옵션번호
+           * @example 123
+           */
+          orderOptionNo: number;
+          /**
+           * @description 상품번호
+           * @example 123
+           */
+          productNo: number;
+          /** @description 배송정보 */
+          delivery: {
+            /**
+             * @description 배송지 나중입력 여부 (nullable)
+             * @example false
+             */
+            usesShippingInfoLaterInput?: boolean;
+            /**
+             * @description 택배사 (nullable)
+             * @example CJ대한통운
+             */
+            deliveryCompanyTypeLabel?: string;
+            /**
+             * @description 배송타입 (nullable)
+             * @example PARCEL_DELIVERY
+             * @enum {string}
+             */
+            deliveryType?: 'PARCEL_DELIVERY' | 'DIRECT_DELIVERY' | 'NONE';
+            /**
+             * @description 택배사타입 (nullable)
+             * @example CJ
+             */
+            deliveryCompanyType?: string;
+            /**
+             * @description 송장추적 URL (nullable)
+             * @example https://www.logistics.dhl/de-en/home/tracking.html?tracking-id=12345
+             */
+            retrieveInvoiceUrl?: string;
+            /**
+             * @description 송장번호 (nullable)
+             * @example 123456789
+             */
+            invoiceNo?: string;
           };
-          /** @description 최초주문금액정보 */
-          firstOrderAmt: {
+          /**
+           * @description 옵션권장출력값
+           * @example 색상/레드
+           */
+          optionTitle: string;
+          /**
+           * @description 브랜드명 (nullable)
+           * @example 나이키
+           */
+          brandName?: string;
+          /**
+           * @description 주문번호
+           * @example 20201011231211
+           */
+          orderNo: string;
+          /**
+           * @description 파트너명 (nullable)
+           * @example 파트너 이름
+           */
+          partnerName?: string;
+          /**
+           * @description 주문상태
+           * @example DEPOSIT_WAIT
+           * @enum {string}
+           */
+          orderStatusType:
+            | 'DEPOSIT_WAIT'
+            | 'PAY_DONE'
+            | 'PRODUCT_PREPARE'
+            | 'DELIVERY_PREPARE'
+            | 'DELIVERY_ING'
+            | 'DELIVERY_DONE'
+            | 'BUY_CONFIRM'
+            | 'CANCEL_DONE'
+            | 'RETURN_DONE'
+            | 'EXCHANGE_DONE'
+            | 'PAY_WAIT'
+            | 'PAY_CANCEL'
+            | 'PAY_FAIL'
+            | 'DELETE'
+            | 'EXCHANGE_WAIT'
+            | 'REFUND_DONE';
+          /**
+           * @description 옵션값
+           * @example 레드
+           */
+          optionValue: string;
+          /**
+           * @description 배송보류 여부 (nullable)
+           * @example false
+           */
+          holdDelivery?: boolean;
+          /**
+           * @description 주문수량
+           * @example 1
+           */
+          orderCnt: number;
+          /**
+           * @description 반품가능여부
+           * @example true
+           */
+          returnable: boolean;
+          /**
+           * @description 교환여부
+           * @example N
+           */
+          exchangeYn: string;
+          /**
+           * @description 적립금
+           * @example 1000
+           */
+          accumulationAmt: number;
+          /** @description 주문 상태 일자 */
+          orderStatusDate: {
             /**
-             * @description 총 상품금액 (즉시할인, 추가할인 포함) [총 상품정상금액(standardAmt) - 총 추가할인 금액(additionalDiscountAmt) - 총 즉시할인 금액(immediateDiscountAmt)]
-             * @example 10000
+             * @description 상품평작성기한 (nullable)
+             * @example YYYY-MM-DD hh:mm:ss
              */
-            totalProductAmt: number;
+            reviewableYmdt?: string;
             /**
-             * @description 총 추가할인 금액
-             * @example 0
+             * @description 배송완료일시 (nullable)
+             * @example YYYY-MM-DD hh:mm:ss
              */
-            additionalDiscountAmt: number;
+            deliveryCompleteYmdt?: string;
             /**
-             * @description 총 즉시할인 금액
-             * @example 0
+             * @description 구매확정일자 (nullable)
+             * @example YYYY-MM-DD hh:mm:ss
              */
-            immediateDiscountAmt: number;
+            buyConfirmYmdt?: string;
             /**
-             * @description 사용자 결제 금액 (적립금 제외) [payAmt - subPayAmt]
-             * @example 10000
+             * @description 결제일시 (nullable)
+             * @example YYYY-MM-DD hh:mm:ss
              */
-            chargeAmt: number;
+            payYmdt?: string;
             /**
-             * @description 총 배송비
-             * @example 2500
+             * @description 등록일자
+             * @example YYYY-MM-DD hh:mm:ss
              */
-            deliveryAmt: number;
-            /**
-             * @description 총 상품정상금액(즉시할인, 추가할인 제외)
-             * @example 7500
-             */
-            standardAmt: number;
-            /**
-             * @description 총 지역추가배송비
-             * @example 0
-             */
-            remoteDeliveryAmt: number;
-            /**
-             * @description 주문쿠폰할인 금액
-             * @example 0
-             */
-            cartCouponDiscountAmt: number;
-            /**
-             * @description 총 상품쿠폰할인 금액
-             * @example 0
-             */
-            productCouponDiscountAmt: number;
-            /**
-             * @description 보조결제금액(적립금)
-             * @example 2000
-             */
-            subPayAmt: number;
-            /**
-             * @description 결제금액
-             * @example 10000
-             */
-            payAmt: number;
+            registerYmdt: string;
           };
-        })[];
+          /**
+           * @description 브랜드영문명 (nullable)
+           * @example nike
+           */
+          brandNameEn?: string;
+          /**
+           * @description 영어상품명 (nullable)
+           * @example sangpum
+           */
+          productNameEn?: string;
+          /**
+           * @description 옵션관리코드 (nullable)
+           * @example OPTI123123
+           */
+          optionManagementCd?: string;
+          /**
+           * @description 옵션명
+           * @example 색상
+           */
+          optionName: string;
+        }[];
+        /**
+         * @description 외부 PG사
+         * @example PAYCO
+         * @enum {string}
+         */
+        pgType:
+          | 'DUMMY'
+          | 'PAYCO'
+          | 'PAYPAL'
+          | 'STRIPE'
+          | 'KCP'
+          | 'INICIS'
+          | 'NONE'
+          | 'KCP_MOBILE'
+          | 'KCP_APP'
+          | 'NAVER_PAY'
+          | 'LIIVMATE'
+          | 'PAYPALPRO'
+          | 'ATHOR_NET'
+          | 'KAKAO_PAY'
+          | 'NAVER_EASY_PAY'
+          | 'LG_U_PLUS'
+          | 'TOSS_PAYMENTS'
+          | 'CHAI'
+          | 'SMARTRO_PAY'
+          | 'NICEPAY'
+          | 'MY_PAY'
+          | 'EXIMBAY_GLOBAL'
+          | 'EASY_PAY'
+          | 'GALAXIA_MONEY_TREE'
+          | 'VERITRANS';
+        /**
+         * @description 주문번호
+         * @example 201912312312121234
+         */
+        orderNo: string;
+        /**
+         * @description 추가정보 (json) (nullable)
+         * @example {}
+         */
+        extraData?: Record<string, never>;
+        /**
+         * @description PG사 결제키 (nullable)
+         * @example 12
+         */
+        pgMallKey?: string;
+        /**
+         * @description 결제수단
+         * @example CREDIT_CARD
+         * @enum {string}
+         */
+        payType:
+          | 'CREDIT_CARD'
+          | 'ACCOUNT'
+          | 'MOBILE'
+          | 'REALTIME_ACCOUNT_TRANSFER'
+          | 'VIRTUAL_ACCOUNT'
+          | 'GIFT'
+          | 'ATM'
+          | 'PAYCO'
+          | 'ZERO_PAY'
+          | 'ACCUMULATION'
+          | 'PHONE_BILL'
+          | 'POINT'
+          | 'YPAY'
+          | 'KPAY'
+          | 'PAYPIN'
+          | 'INIPAY'
+          | 'PAYPAL'
+          | 'STRIPE'
+          | 'NAVER_PAY'
+          | 'KAKAO_PAY'
+          | 'NAVER_EASY_PAY'
+          | 'SAMSUNG_PAY'
+          | 'CHAI'
+          | 'TOSS_PAY'
+          | 'SK_PAY'
+          | 'APPLE_PAY'
+          | 'LPAY'
+          | 'ESCROW_REALTIME_ACCOUNT_TRANSFER'
+          | 'ESCROW_VIRTUAL_ACCOUNT'
+          | 'RENTAL'
+          | 'VERITRANS_CARD'
+          | 'TOASTCAM'
+          | 'UNION_PAY'
+          | 'ALIPAY'
+          | 'WECHAT_PAY'
+          | 'ETC';
+        /** @description 최종주문금액정보 */
+        lastOrderAmt: {
+          /**
+           * @description 총 상품금액 (즉시할인, 추가할인 포함) [총 상품정상금액(standardAmt) - 총 추가할인 금액(additionalDiscountAmt) - 총 즉시할인 금액(immediateDiscountAmt)]
+           * @example 10000
+           */
+          totalProductAmt: number;
+          /**
+           * @description 총 추가할인 금액
+           * @example 0
+           */
+          additionalDiscountAmt: number;
+          /**
+           * @description 총 즉시할인 금액
+           * @example 0
+           */
+          immediateDiscountAmt: number;
+          /**
+           * @description 사용자 결제 금액 (적립금 제외) [payAmt - subPayAmt]
+           * @example 10000
+           */
+          chargeAmt: number;
+          /**
+           * @description 총 배송비
+           * @example 2500
+           */
+          deliveryAmt: number;
+          /**
+           * @description 총 상품정상금액(즉시할인, 추가할인 제외)
+           * @example 7500
+           */
+          standardAmt: number;
+          /**
+           * @description 총 지역추가배송비
+           * @example 0
+           */
+          remoteDeliveryAmt: number;
+          /**
+           * @description 주문쿠폰할인 금액
+           * @example 0
+           */
+          cartCouponDiscountAmt: number;
+          /**
+           * @description 총 상품쿠폰할인 금액
+           * @example 0
+           */
+          productCouponDiscountAmt: number;
+          /**
+           * @description 보조결제금액(적립금)
+           * @example 2000
+           */
+          subPayAmt: number;
+          /**
+           * @description 결제금액
+           * @example 10000
+           */
+          payAmt: number;
+        };
+        /** @description 주문 상품 옵션 */
+        orderer: {
+          /**
+           * @description 주문자 연락처1 끝 4자리 (nullable)
+           * @example 0000
+           */
+          contact1LastDigits?: string;
+          /**
+           * @description 주문자 이름
+           * @example 홍길동
+           */
+          name: string;
+          /**
+           * @description 주문자 연락처 (nullable)
+           * @example 010-0000-0000
+           */
+          contact1?: string;
+          /** @description 환불계좌 (nullable) */
+          refundAccount?: string;
+          /** @description 주문자 이메일 (nullable) */
+          email?: string;
+          /**
+           * @description 주문자 연락처2 (nullable)
+           * @example 02-0000-0000
+           */
+          contact2?: string;
+        };
+        /**
+         * @description PG사 주문번호 - 매출전표등 확인용 (nullable)
+         * @example 12
+         */
+        pgOrderNo?: string;
+        /**
+         * @description 회원여부
+         * @example true
+         */
+        member: boolean;
+        /** @description 다음에 할 수 있는 작업 */
+        nextActions: {
+          /**
+           * @description 다음에 할 수 있는 작업 그룹
+           * @example NORMAL
+           */
+          actionGroupType: string;
+          /**
+           * @description 작업타입
+           * @example CANCEL_ALL
+           * @enum {string}
+           */
+          nextActionType:
+            | 'CANCEL_ALL'
+            | 'CANCEL'
+            | 'EXCHANGE'
+            | 'RETURN'
+            | 'WITHDRAW_CANCEL'
+            | 'WITHDRAW_EXCHANGE'
+            | 'WITHDRAW_RETURN'
+            | 'VIEW_CLAIM'
+            | 'VIEW_DELIVERY'
+            | 'DELIVERY_DONE'
+            | 'CONFIRM_ORDER'
+            | 'CHANGE_ADDRESS'
+            | 'WRITE_REVIEW'
+            | 'ISSUE_CASH_RECEIPT'
+            | 'VIEW_RECEIPT';
+          /**
+           * @description uri
+           * @example /profile/orders/{orderNo}/claim
+           */
+          uri: string;
+        }[];
+        /**
+         * @description 에스크로 여부
+         * @example false
+         */
+        escrow: boolean;
+        /**
+         * @description 주문일자
+         * @example YYYY-MM-DD hh:mm:ss
+         */
+        orderYmdt: string;
+        /**
+         * @description 결제수단라벨
+         * @example 신용카드
+         */
+        payTypeLabel: string;
+        /** @description 해외결제 정보 */
+        internationalPaymentInfo: {
+          /**
+           * @description 환율 (nullable)
+           * @example 1
+           */
+          exchangeRate?: number;
+          /**
+           * @description 환율 적용된 PG 결제 금액 (nullable)
+           * @example 1000
+           */
+          exchangedAmt?: number;
+          /**
+           * @description 통화 코드
+           * @example KRW
+           */
+          currencyCode: string;
+        };
+        /** @description 최초주문금액정보 */
+        firstOrderAmt: {
+          /**
+           * @description 총 상품금액 (즉시할인, 추가할인 포함) [총 상품정상금액(standardAmt) - 총 추가할인 금액(additionalDiscountAmt) - 총 즉시할인 금액(immediateDiscountAmt)]
+           * @example 10000
+           */
+          totalProductAmt: number;
+          /**
+           * @description 총 추가할인 금액
+           * @example 0
+           */
+          additionalDiscountAmt: number;
+          /**
+           * @description 총 즉시할인 금액
+           * @example 0
+           */
+          immediateDiscountAmt: number;
+          /**
+           * @description 사용자 결제 금액 (적립금 제외) [payAmt - subPayAmt]
+           * @example 10000
+           */
+          chargeAmt: number;
+          /**
+           * @description 총 배송비
+           * @example 2500
+           */
+          deliveryAmt: number;
+          /**
+           * @description 총 상품정상금액(즉시할인, 추가할인 제외)
+           * @example 7500
+           */
+          standardAmt: number;
+          /**
+           * @description 총 지역추가배송비
+           * @example 0
+           */
+          remoteDeliveryAmt: number;
+          /**
+           * @description 주문쿠폰할인 금액
+           * @example 0
+           */
+          cartCouponDiscountAmt: number;
+          /**
+           * @description 총 상품쿠폰할인 금액
+           * @example 0
+           */
+          productCouponDiscountAmt: number;
+          /**
+           * @description 보조결제금액(적립금)
+           * @example 2000
+           */
+          subPayAmt: number;
+          /**
+           * @description 결제금액
+           * @example 10000
+           */
+          payAmt: number;
+        };
+      }[];
     };
-    "later-input-shippings-2025117647": {
+    'later-input-shippings-2025117647': {
       /**
        * @description 배송지 주소
        * @example 경기도 성남시 분당구 대왕판교로645번길 12
@@ -11844,7 +14574,7 @@ export interface components {
        */
       receiverContact1?: string;
     };
-    "cart-validate1571487702": {
+    'cart-validate1571487702': {
       /**
        * @description 구매 가능 여부
        * @example false
@@ -11852,114 +14582,114 @@ export interface components {
       result: boolean;
     };
     /** @description 정기결제 */
-    "recurring-payments313754189": ({
+    'recurring-payments313754189': {
+      /**
+       * @description 할인적용가(상품1개가격)
+       * @example 10000
+       */
+      buyPrice: number;
+      /**
+       * @description 조정가능 배송 주기
+       * @example {}
+       */
+      adjustableCycle: {
         /**
-         * @description 할인적용가(상품1개가격)
-         * @example 10000
-         */
-        buyPrice: number;
-        /**
-         * @description 조정가능 배송 주기
-         * @example {}
-         */
-        adjustableCycle: {
-          /**
-           * @description 조정가능한 배송 주기 타입
-           * @example MONTH
-           * @enum {string}
-           */
-          cycleType: "MONTH: Month" | "WEEK: Week";
-          /**
-           * @description 조정가능한 배송 주기 (배열)
-           * @example [1,2,3]
-           */
-          cycles: (Record<string, never> | boolean | string | number)[];
-        };
-        /**
-         * @description 정기배송 상태 타입 [ACTIVE : 이용중, SYSTEM_CLOSED : 시스템 해지 (결제 실패, 상품 가격/정보 변경), ADMIN_CLOSED : 관리자 해지 (SA > 정기결제 관리 > 관리자 수동 해지), USER_CLOSED : 사용자 해지]
-         * @example ACTIVE
+         * @description 조정가능한 배송 주기 타입
+         * @example MONTH
          * @enum {string}
          */
-        statusType: "ACTIVE: Active" | "SYSTEM_CLOSED: System Termination" | "ADMIN_CLOSED: Administrator Termination" | "USER_CLOSED: Termination";
+        cycleType: 'MONTH' | 'WEEK';
         /**
-         * @description 정기결제 신청번호
-         * @example 202101011230001
+         * @description 조정가능한 배송 주기 (배열)
+         * @example [1,2,3]
          */
-        recurringPaymentId: string;
+        cycles: (Record<string, never> | boolean | string | number)[];
+      };
+      /**
+       * @description 정기배송 상태 타입 [ACTIVE : 이용중, SYSTEM_CLOSED : 시스템 해지 (결제 실패, 상품 가격/정보 변경), ADMIN_CLOSED : 관리자 해지 (SA > 정기결제 관리 > 관리자 수동 해지), USER_CLOSED : 사용자 해지]
+       * @example ACTIVE
+       * @enum {string}
+       */
+      statusType: 'ACTIVE' | 'SYSTEM_CLOSED' | 'ADMIN_CLOSED' | 'USER_CLOSED';
+      /**
+       * @description 정기결제 신청번호
+       * @example 202101011230001
+       */
+      recurringPaymentId: string;
+      /**
+       * @description 옵션값
+       * @example 검정
+       */
+      optionValue: string;
+      /**
+       * @description 수량
+       * @example 1
+       */
+      orderCnt: number;
+      /**
+       * @description 정기배송 상태 라벨
+       * @example 신청완료
+       */
+      statusLabel: string;
+      /**
+       * @description 상품명
+       * @example 테스트상품
+       */
+      productName: string;
+      /**
+       * @description 다음회차
+       * @example 2
+       */
+      nextRound: number;
+      /**
+       * @description 정기배송 신청일
+       * @example YYYY-MM-DD
+       */
+      registerYmd: string;
+      /**
+       * @description 배송 주기 정보
+       * @example {}
+       */
+      deliveryCycle: {
         /**
-         * @description 옵션값
-         * @example 검정
+         * @description 배송일 (nullable)
+         * @example 15
          */
-        optionValue: string;
+        date?: number;
         /**
-         * @description 수량
+         * @description 배송 주기 타입 (현재 WEEK 미지원)
+         * @example MONTH
+         * @enum {string}
+         */
+        cycleType: 'MONTH' | 'WEEK';
+        /**
+         * @description 배송주기
          * @example 1
          */
-        orderCnt: number;
-        /**
-         * @description 정기배송 상태 라벨
-         * @example 신청완료
-         */
-        statusLabel: string;
-        /**
-         * @description 상품명
-         * @example 테스트상품
-         */
-        productName: string;
-        /**
-         * @description 다음회차
-         * @example 2
-         */
-        nextRound: number;
-        /**
-         * @description 정기배송 신청일
-         * @example YYYY-MM-DD
-         */
-        registerYmd: string;
-        /**
-         * @description 배송 주기 정보
-         * @example {}
-         */
-        deliveryCycle: {
-          /**
-           * @description 배송일 (nullable)
-           * @example 15
-           */
-          date?: number;
-          /**
-           * @description 배송 주기 타입 (현재 WEEK 미지원)
-           * @example MONTH
-           * @enum {string}
-           */
-          cycleType: "MONTH: Month" | "WEEK: Week";
-          /**
-           * @description 배송주기
-           * @example 1
-           */
-          cycle: number;
-        };
-        /**
-         * @description 다음 배송 예정일
-         * @example YYYY-MM-DD
-         */
-        nextRecurringDate: string;
-        /**
-         * @description 옵션명
-         * @example 색상
-         */
-        optionName: string;
-        /**
-         * @description 메인 이미지 url
-         * @example 1
-         */
-        mainImageUrl: string;
-        /**
-         * @description 상품 번호
-         * @example 1
-         */
-        productNo: number;
-      })[];
-    "payments-naver-ordersheet-1158900846": {
+        cycle: number;
+      };
+      /**
+       * @description 다음 배송 예정일
+       * @example YYYY-MM-DD
+       */
+      nextRecurringDate: string;
+      /**
+       * @description 옵션명
+       * @example 색상
+       */
+      optionName: string;
+      /**
+       * @description 메인 이미지 url
+       * @example 1
+       */
+      mainImageUrl: string;
+      /**
+       * @description 상품 번호
+       * @example 1
+       */
+      productNo: number;
+    }[];
+    'payments-naver-ordersheet-1158900846': {
       /**
        * @description 주문서 번호. items[].channelType 이 존지해는 경우 서버에서 주문서번호 생성함. (nullable)
        * @example 202001010101
@@ -11987,51 +14717,51 @@ export interface components {
       naCo?: string;
       /** @description 구매상품 */
       items: {
+        /**
+         * @description 채널타입
+         * @example PAYCO
+         */
+        channelType: string;
+        /**
+         * @description 상품개수
+         * @example 1
+         */
+        orderCnt: number;
+        /** @description 옵션 */
+        optionInputs: {
           /**
-           * @description 채널타입
-           * @example PAYCO
-           */
-          channelType: string;
-          /**
-           * @description 상품개수
+           * @description 옵션 입력값
            * @example 1
            */
-          orderCnt: number;
-          /** @description 옵션 */
-          optionInputs: {
-              /**
-               * @description 옵션 입력값
-               * @example 1
-               */
-              inputValue: string;
-              /**
-               * @description 옵션 입력라벨
-               * @example 상품
-               */
-              inputLabel: string;
-            }[];
+          inputValue: string;
           /**
-           * @description 옵션번호
-           * @example 1
+           * @description 옵션 입력라벨
+           * @example 상품
            */
-          optionNo: number;
-          /**
-           * @description 상품번호
-           * @example 1
-           */
-          productNo: number;
-          /**
-           * @description 추가상품번호 (nullable)
-           * @example 1
-           */
-          additionalProductNo?: number;
+          inputLabel: string;
         }[];
+        /**
+         * @description 옵션번호
+         * @example 1
+         */
+        optionNo: number;
+        /**
+         * @description 상품번호
+         * @example 1
+         */
+        productNo: number;
+        /**
+         * @description 추가상품번호 (nullable)
+         * @example 1
+         */
+        additionalProductNo?: number;
+      }[];
     };
   };
   responses: never;
   parameters: never;
   requestBodies: never;
-  headers: never;
+  headers?: never;
   pathItems: never;
 }
 
@@ -12040,7 +14770,6 @@ export type $defs = Record<string, never>;
 export type external = Record<string, never>;
 
 export interface operations {
-
   /**
    * 장바구니 가져오기
    * @description
@@ -12050,7 +14779,7 @@ export interface operations {
    * ## 화면예시
    * [![](http://image.toast.com/aaaaahb/api-description/order/cart/[GET]%20cart%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EB%AA%A9%EB%A1%9D%20%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0%201-2.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/cart/[GET]%20cart%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EB%AA%A9%EB%A1%9D%20%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0%201-2.png)
    */
-  "get-cart": {
+  'get-cart': {
     parameters: {
       query?: {
         /**
@@ -12059,39 +14788,39 @@ export interface operations {
          */
         divideInvalidProducts: boolean;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["recurring-payments-cart-subset84337202"];
+          'application/json': components['schemas']['recurring-payments-cart-subset84337202'];
         };
       };
     };
@@ -12106,39 +14835,39 @@ export interface operations {
    *
    * 옵션변경은 변경할 옵션을 삭제한 후 신규등록하는 방법으로 수정합니다.
    */
-  "put-cart": {
+  'put-cart': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     requestBody?: {
       content: {
-        "application/json": components["schemas"]["cart752002737"];
+        'application/json': components['schemas']['cart752002737'];
       };
     };
     responses: {
@@ -12154,46 +14883,46 @@ export interface operations {
    * ## 부가설명 및 특이사항
    * 로그인된 유저의 장바구니에 상품(옵션)을 추가하는 API 입니다.
    */
-  "post-cart": {
+  'post-cart': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     requestBody?: {
       content: {
-        "application/json": components["schemas"]["cart977837260"];
+        'application/json': components['schemas']['cart977837260'];
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["cart-1843750990"];
+          'application/json': components['schemas']['cart-1843750990'];
         };
       };
     };
@@ -12206,7 +14935,7 @@ export interface operations {
    *
    * cartNo를 List형으로 전달해야 합니다.
    */
-  "delete-cart": {
+  'delete-cart': {
     parameters: {
       query: {
         /**
@@ -12215,39 +14944,39 @@ export interface operations {
          */
         cartNo: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["cart-1843750990"];
+          'application/json': components['schemas']['cart-1843750990'];
         };
       };
     };
@@ -12267,7 +14996,7 @@ export interface operations {
    * ## 화면예시
    * [![](http://image.toast.com/aaaaahb/api-description/order/cart/[GET]%20cart_calculate%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EC%84%A0%ED%83%9D%20%EA%B3%84%EC%82%B0.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/cart/[GET]%20cart_calculate%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EC%84%A0%ED%83%9D%20%EA%B3%84%EC%82%B0.png)
    */
-  "get-cart-calculate": {
+  'get-cart-calculate': {
     parameters: {
       query?: {
         /**
@@ -12281,39 +15010,39 @@ export interface operations {
          */
         divideInvalidProducts: boolean;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["recurring-payments-cart-calculate-1315479487"];
+          'application/json': components['schemas']['recurring-payments-cart-calculate-1315479487'];
         };
       };
     };
@@ -12324,41 +15053,41 @@ export interface operations {
    * ## 부가설명 및 특이사항
    * 로그인된 유저의 장바구니에 담긴 상품 개수를 조회하기 위한 API 입니다.
    */
-  "get-cart-count": {
+  'get-cart-count': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["cart-1843750990"];
+          'application/json': components['schemas']['cart-1843750990'];
         };
       };
     };
@@ -12378,7 +15107,7 @@ export interface operations {
    * ## 화면예시
    * [![](http://image.toast.com/aaaaahb/api-description/order/cart/[GET]%20cart_subset%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%EC%97%90%EC%84%9C%20%EC%84%A0%ED%83%9D%EB%90%9C%20%ED%95%AD%EB%AA%A9%EB%A7%8C%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EA%B7%B8%EB%A3%B9%EB%B3%84%EB%A1%9C%20%EC%9E%AC%20%EA%B3%84%EC%82%B0.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/cart/[GET]%20cart_subset%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%EC%97%90%EC%84%9C%20%EC%84%A0%ED%83%9D%EB%90%9C%20%ED%95%AD%EB%AA%A9%EB%A7%8C%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EA%B7%B8%EB%A3%B9%EB%B3%84%EB%A1%9C%20%EC%9E%AC%20%EA%B3%84%EC%82%B0.png)
    */
-  "get-cart-subset": {
+  'get-cart-subset': {
     parameters: {
       query?: {
         /**
@@ -12392,39 +15121,39 @@ export interface operations {
          */
         divideInvalidProducts: boolean;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["recurring-payments-cart-subset84337202"];
+          'application/json': components['schemas']['recurring-payments-cart-subset84337202'];
         };
       };
     };
@@ -12435,41 +15164,41 @@ export interface operations {
    * ## 부가설명 및 특이사항
    * 장바구니에 저장된 모든 상품의 구매 가능 여부를 확인하는 API 입니다.
    */
-  "get-cart-validate": {
+  'get-cart-validate': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["cart-validate1571487702"];
+          'application/json': components['schemas']['cart-validate1571487702'];
         };
       };
     };
@@ -12480,7 +15209,7 @@ export interface operations {
    * ## 부가설명 및 특이사항
    * 장바구니 기준으로 최대 할인이 가능한 쿠폰 정보를 조회합니다.
    */
-  "get-cart-coupons-maximum": {
+  'get-cart-coupons-maximum': {
     parameters: {
       query: {
         /**
@@ -12489,39 +15218,39 @@ export interface operations {
          */
         cartNo: number;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["cart-coupons-maximum-961317083"];
+          'application/json': components['schemas']['cart-coupons-maximum-961317083'];
         };
       };
     };
@@ -12538,7 +15267,7 @@ export interface operations {
    * [![](http://image.toast.com/aaaaahb/api-description/order/guest/[POST]%20guest_cart%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EA%B3%84%EC%82%B0%201-1.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/guest/[POST]%20guest_cart%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EA%B3%84%EC%82%B0%201-1.png)
    * [![](http://image.toast.com/aaaaahb/api-description/order/guest/[POST]%20guest_cart%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EA%B3%84%EC%82%B0%201-2.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/guest/[POST]%20guest_cart%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EA%B3%84%EC%82%B0%201-2.png)
    */
-  "post-guest-cart": {
+  'post-guest-cart': {
     parameters: {
       query?: {
         /**
@@ -12547,39 +15276,39 @@ export interface operations {
          */
         divideInvalidProducts: boolean;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
     };
     requestBody?: {
       content: {
-        "application/json": components["schemas"]["guest-cart1944647664"];
+        'application/json': components['schemas']['guest-cart1944647664'];
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["recurring-payments-guest-cart816762413"];
+          'application/json': components['schemas']['recurring-payments-guest-cart816762413'];
         };
       };
     };
@@ -12594,7 +15323,7 @@ export interface operations {
    * [![](http://image.toast.com/aaaaahb/api-description/order/guest/[GET]%20guest_orders%20%EB%B9%84%ED%9A%8C%EC%9B%90%20%EC%A3%BC%EB%AC%B8%20%EC%83%81%EC%84%B8%EC%A1%B0%ED%9A%8C%201-1.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/guest/[GET]%20guest_orders%20%EB%B9%84%ED%9A%8C%EC%9B%90%20%EC%A3%BC%EB%AC%B8%20%EC%83%81%EC%84%B8%EC%A1%B0%ED%9A%8C%201-1.png)
    * [![](http://image.toast.com/aaaaahb/api-description/order/guest/[GET]%20guest_orders%20%EB%B9%84%ED%9A%8C%EC%9B%90%20%EC%A3%BC%EB%AC%B8%20%EC%83%81%EC%84%B8%EC%A1%B0%ED%9A%8C%201-2.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/guest/[GET]%20guest_orders%20%EB%B9%84%ED%9A%8C%EC%9B%90%20%EC%A3%BC%EB%AC%B8%20%EC%83%81%EC%84%B8%EC%A1%B0%ED%9A%8C%201-2.png)
    */
-  "get-guest-orders-order-no": {
+  'get-guest-orders-order-no': {
     parameters: {
       query?: {
         /**
@@ -12603,32 +15332,32 @@ export interface operations {
          */
         orderRequestType: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description guestToken
          * @example 12121a3-123123-1213
          */
-        guestToken: string;
+        guestToken?: string;
       };
       path: {
         orderNo: string;
@@ -12638,7 +15367,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["guest-orders-orderNo-236010523"];
+          'application/json': components['schemas']['guest-orders-orderNo-236010523'];
         };
       };
     };
@@ -12652,29 +15381,29 @@ export interface operations {
    * ## 화면예시
    * [![](http://image.toast.com/aaaaahb/api-description/order/guest/[POST]%20guest_orders%20%EB%B9%84%ED%9A%8C%EC%9B%90%20%EC%A3%BC%EB%AC%B8%20%ED%86%A0%ED%81%B0%20%EB%B0%9C%EA%B8%89.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/guest/[POST]%20guest_orders%20%EB%B9%84%ED%9A%8C%EC%9B%90%20%EC%A3%BC%EB%AC%B8%20%ED%86%A0%ED%81%B0%20%EB%B0%9C%EA%B8%89.png)
    */
-  "post-guest-orders-order-no": {
+  'post-guest-orders-order-no': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
       path: {
         /**
@@ -12686,14 +15415,14 @@ export interface operations {
     };
     requestBody?: {
       content: {
-        "application/json": components["schemas"]["guest-orders-orderNo1327590381"];
+        'application/json': components['schemas']['guest-orders-orderNo1327590381'];
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["guest-orders-orderNo-236010523"];
+          'application/json': components['schemas']['guest-orders-orderNo-236010523'];
         };
       };
     };
@@ -12707,34 +15436,34 @@ export interface operations {
    * ## 화면예시
    * [![](http://image.toast.com/aaaaahb/api-description/order/guest/[PUT]%20guest_order-options_confirm%20%EC%83%81%ED%92%88%20%EC%A3%BC%EB%AC%B8%20%EA%B5%AC%EB%A7%A4%ED%99%95%EC%A0%95.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/guest/[PUT]%20guest_order-options_confirm%20%EC%83%81%ED%92%88%20%EC%A3%BC%EB%AC%B8%20%EA%B5%AC%EB%A7%A4%ED%99%95%EC%A0%95.png)
    */
-  "put-guest-order-options-order-option-no-confirm": {
+  'put-guest-order-options-order-option-no-confirm': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description guestToken
          * @example 12121a3-123123-1213
          */
-        guestToken: string;
+        guestToken?: string;
       };
       path: {
         /**
@@ -12760,34 +15489,34 @@ export interface operations {
    * ## 화면예시
    * [![](http://image.toast.com/aaaaahb/api-description/order/guest/[PUT]%20guest_order-options_delivery-done%20%EC%83%81%ED%92%88%20%EC%A3%BC%EB%AC%B8%20%EB%B0%B0%EC%86%A1%EC%99%84%EB%A3%8C.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/guest/[PUT]%20guest_order-options_delivery-done%20%EC%83%81%ED%92%88%20%EC%A3%BC%EB%AC%B8%20%EB%B0%B0%EC%86%A1%EC%99%84%EB%A3%8C.png)
    */
-  "put-guest-order-options-order-option-no-delivery-done": {
+  'put-guest-order-options-order-option-no-delivery-done': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description guestToken
          * @example 12121a3-123123-1213
          */
-        guestToken: string;
+        guestToken?: string;
       };
       path: {
         /**
@@ -12813,34 +15542,34 @@ export interface operations {
    * ## 화면예시
    * [![](http://image.toast.com/aaaaahb/api-description/order/guest/[POST]%20guest_orders_cashReceipt%20%EB%B9%84%ED%9A%8C%EC%9B%90%20%ED%98%84%EA%B8%88%EC%98%81%EC%88%98%EC%A6%9D%20%EC%8B%A0%EC%B2%AD.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/guest/[POST]%20guest_orders_cashReceipt%20%EB%B9%84%ED%9A%8C%EC%9B%90%20%ED%98%84%EA%B8%88%EC%98%81%EC%88%98%EC%A6%9D%20%EC%8B%A0%EC%B2%AD.png)
    */
-  "post-guest-orders-order-no-cash-receipt": {
+  'post-guest-orders-order-no-cash-receipt': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description guestToken
          * @example 12121a3-123123-1213
          */
-        guestToken: string;
+        guestToken?: string;
       };
       path: {
         /**
@@ -12852,14 +15581,14 @@ export interface operations {
     };
     requestBody?: {
       content: {
-        "application/json": components["schemas"]["guest-orders-orderNo-cashReceipt-2137606971"];
+        'application/json': components['schemas']['guest-orders-orderNo-cashReceipt-2137606971'];
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["guest-orders-orderNo-cashReceipt704793082"];
+          'application/json': components['schemas']['guest-orders-orderNo-cashReceipt704793082'];
         };
       };
     };
@@ -12876,7 +15605,7 @@ export interface operations {
    * [![](http://image.toast.com/aaaaahb/api-description/order/guest/[GET]%20guest_orders_claim%20%EC%A0%84%EC%B2%B4%20%EC%A3%BC%EB%AC%B8%EC%B7%A8%EC%86%8C%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EC%A3%BC%EB%AC%B8%20%EC%83%81%EC%84%B8%EC%A1%B0%ED%9A%8C(%ED%81%B4%EB%A0%88%EC%9E%84%20%EC%83%81%EC%84%B8%EC%82%AC%EC%9C%A0%20%ED%8F%AC%ED%95%A8)%201-1.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/guest/[GET]%20guest_orders_claim%20%EC%A0%84%EC%B2%B4%20%EC%A3%BC%EB%AC%B8%EC%B7%A8%EC%86%8C%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EC%A3%BC%EB%AC%B8%20%EC%83%81%EC%84%B8%EC%A1%B0%ED%9A%8C(%ED%81%B4%EB%A0%88%EC%9E%84%20%EC%83%81%EC%84%B8%EC%82%AC%EC%9C%A0%20%ED%8F%AC%ED%95%A8)%201-1.png)
    * [![](http://image.toast.com/aaaaahb/api-description/order/guest/[GET]%20guest_orders_claim%20%EC%A0%84%EC%B2%B4%20%EC%A3%BC%EB%AC%B8%EC%B7%A8%EC%86%8C%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EC%A3%BC%EB%AC%B8%20%EC%83%81%EC%84%B8%EC%A1%B0%ED%9A%8C(%ED%81%B4%EB%A0%88%EC%9E%84%20%EC%83%81%EC%84%B8%EC%82%AC%EC%9C%A0%20%ED%8F%AC%ED%95%A8)%201-2.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/guest/[GET]%20guest_orders_claim%20%EC%A0%84%EC%B2%B4%20%EC%A3%BC%EB%AC%B8%EC%B7%A8%EC%86%8C%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EC%A3%BC%EB%AC%B8%20%EC%83%81%EC%84%B8%EC%A1%B0%ED%9A%8C(%ED%81%B4%EB%A0%88%EC%9E%84%20%EC%83%81%EC%84%B8%EC%82%AC%EC%9C%A0%20%ED%8F%AC%ED%95%A8)%201-2.png)
    */
-  "get-guest-orders-order-no-claim": {
+  'get-guest-orders-order-no-claim': {
     parameters: {
       query?: {
         /**
@@ -12890,27 +15619,27 @@ export interface operations {
          */
         claimType: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
       path: {
         orderNo: string;
@@ -12920,7 +15649,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["guest-orders-orderNo-236010523"];
+          'application/json': components['schemas']['guest-orders-orderNo-236010523'];
         };
       };
     };
@@ -12935,7 +15664,7 @@ export interface operations {
    * [![](http://image.toast.com/aaaaahb/api-description/order/guest/[PUT]%20guest_orders_deliveries%20%EC%A3%BC%EB%AC%B8%EB%8B%A8%EC%9C%84%20%EB%B0%B0%EC%86%A1%EC%A0%95%EB%B3%B4%20%EC%88%98%EC%A0%95%201-1.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/guest/[PUT]%20guest_orders_deliveries%20%EC%A3%BC%EB%AC%B8%EB%8B%A8%EC%9C%84%20%EB%B0%B0%EC%86%A1%EC%A0%95%EB%B3%B4%20%EC%88%98%EC%A0%95%201-1.png)
    * [![](http://image.toast.com/aaaaahb/api-description/order/guest/[PUT]%20guest_orders_deliveries%20%EC%A3%BC%EB%AC%B8%EB%8B%A8%EC%9C%84%20%EB%B0%B0%EC%86%A1%EC%A0%95%EB%B3%B4%20%EC%88%98%EC%A0%95%201-2.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/guest/[PUT]%20guest_orders_deliveries%20%EC%A3%BC%EB%AC%B8%EB%8B%A8%EC%9C%84%20%EB%B0%B0%EC%86%A1%EC%A0%95%EB%B3%B4%20%EC%88%98%EC%A0%95%201-2.png)
    */
-  "put-guest-orders-order-no-deliveries": {
+  'put-guest-orders-order-no-deliveries': {
     parameters: {
       query?: {
         /**
@@ -12944,32 +15673,32 @@ export interface operations {
          */
         add: boolean;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description guestToken
          * @example 12121a3-123123-1213
          */
-        guestToken: string;
+        guestToken?: string;
       };
       path: {
         /**
@@ -12981,7 +15710,7 @@ export interface operations {
     };
     requestBody?: {
       content: {
-        "application/json": components["schemas"]["guest-orders-orderNo-deliveries1990893381"];
+        'application/json': components['schemas']['guest-orders-orderNo-deliveries1990893381'];
       };
     };
     responses: {
@@ -13001,7 +15730,7 @@ export interface operations {
    * ## 화면예시
    * [![](http://image.toast.com/aaaaahb/api-description/order/guest/[GET]%20guest_orders_forgot-password%20%EB%B9%84%ED%9A%8C%EC%9B%90%20%EC%A3%BC%EB%AC%B8%20%ED%8C%A8%EC%8A%A4%EC%9B%8C%EB%93%9C%20%EC%9E%AC%EC%A0%84%EC%86%A1.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/guest/[GET]%20guest_orders_forgot-password%20%EB%B9%84%ED%9A%8C%EC%9B%90%20%EC%A3%BC%EB%AC%B8%20%ED%8C%A8%EC%8A%A4%EC%9B%8C%EB%93%9C%20%EC%9E%AC%EC%A0%84%EC%86%A1.png)
    */
-  "get-guest-orders-order-no-forgot-password": {
+  'get-guest-orders-order-no-forgot-password': {
     parameters: {
       query: {
         /**
@@ -13025,27 +15754,27 @@ export interface operations {
          */
         name: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
       path: {
         /**
@@ -13069,7 +15798,7 @@ export interface operations {
    * 배송비템플릿 번호 또는 암호화된 배송번호로 지역별 추가 배송비 목록을 조회하는 API 입니다.
    * (두 필드 중 하나만 입력해야 합니다.)
    */
-  "get-later-input-areafees": {
+  'get-later-input-areafees': {
     parameters: {
       query?: {
         /**
@@ -13083,34 +15812,34 @@ export interface operations {
          */
         encryptedShippingNo: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["later-input-areafees694667795"];
+          'application/json': components['schemas']['later-input-areafees694667795'];
         };
       };
     };
@@ -13121,7 +15850,7 @@ export interface operations {
    * ## 부가명 및 특이사항
    * 암호화된 배송 번호로 주문 상세정보를 조회하는 API 입니다.
    */
-  "get-order-encrypted-shipping-no-later-input": {
+  'get-order-encrypted-shipping-no-later-input': {
     parameters: {
       query?: {
         /**
@@ -13130,39 +15859,39 @@ export interface operations {
          */
         orderRequestType: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 암호화된 배송 번호
          * @example RDFlU2czQ3dZeGM1YXlMYm9XSklidz09
          */
-        encryptedShippingNo: string;
+        encryptedShippingNo?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["guest-orders-orderNo-236010523"];
+          'application/json': components['schemas']['guest-orders-orderNo-236010523'];
         };
       };
     };
@@ -13173,41 +15902,41 @@ export interface operations {
    * ## 부가설명 및 특이사항
    * 나중에 입력된 배송지를 조회하는 API 입니다.
    */
-  "get-later-input-shippings": {
+  'get-later-input-shippings': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 암호화된 배송 번호
          * @example UFE3Ylo2aUlkSWVuZHVGQjYyS2pZZz09
          */
-        encryptedShippingNo: string;
+        encryptedShippingNo?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["later-input-shippings-2025117647"];
+          'application/json': components['schemas']['later-input-shippings-2025117647'];
         };
       };
     };
@@ -13218,39 +15947,39 @@ export interface operations {
    * ## 부가설명 및 특이사항
    * 나중에 입력된 배송지 정보를 수정하는 API 입니다.
    */
-  "put-later-input-shippings": {
+  'put-later-input-shippings': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 암호화된 배송 번호
          * @example UFE3Ylo2aUlkSWVuZHVGQjYyS2pZZz09
          */
-        encryptedShippingNo: string;
+        encryptedShippingNo?: string;
       };
     };
     requestBody?: {
       content: {
-        "application/json": components["schemas"]["shippings-encryptedShippingNo-later-input350289840"];
+        'application/json': components['schemas']['shippings-encryptedShippingNo-later-input350289840'];
       };
     };
     responses: {
@@ -13268,39 +15997,39 @@ export interface operations {
    *
    * 신용카드와 계좌는 주 결제수단을 각각 관리합니다.
    */
-  "post-modify-main-payment": {
+  'post-modify-main-payment': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     requestBody?: {
       content: {
-        "application/json": components["schemas"]["my-pay-modify-main-payment667999033"];
+        'application/json': components['schemas']['my-pay-modify-main-payment667999033'];
       };
     };
     responses: {
@@ -13316,7 +16045,7 @@ export interface operations {
    * ## 부가설명 및 특이사항
    * 비밀번호 변경 webUI를 띄우기 위한 파라미터를 조회합니다.
    */
-  "post-modify-password": {
+  'post-modify-password': {
     parameters: {
       query: {
         /**
@@ -13327,39 +16056,39 @@ export interface operations {
         /** @description 고객의 CI */
         ci: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["my-pay-modify-password-1997353067"];
+          'application/json': components['schemas']['my-pay-modify-password-1997353067'];
         };
       };
     };
@@ -13370,7 +16099,7 @@ export interface operations {
    * ## 부가설명 및 특이사항
    * 등록된 결제수단 리스트를 조회합니다.
    */
-  "get-payment-infos": {
+  'get-payment-infos': {
     parameters: {
       query?: {
         /**
@@ -13384,39 +16113,39 @@ export interface operations {
          */
         bankCardCode: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["my-pay-payment-infos1122892899"];
+          'application/json': components['schemas']['my-pay-payment-infos1122892899'];
         };
       };
     };
@@ -13427,7 +16156,7 @@ export interface operations {
    * ## 부가설명 및 특이사항
    * 등록된 결제수단을 삭제합니다.
    */
-  "delete-payment-infos-pay-token": {
+  'delete-payment-infos-pay-token': {
     parameters: {
       query: {
         /**
@@ -13436,32 +16165,32 @@ export interface operations {
          */
         payToken: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     responses: {
@@ -13479,7 +16208,7 @@ export interface operations {
    *
    * payMethod에 입력한 값에 따라 다른 webUI를 응답합니다.
    */
-  "get-register-payment": {
+  'get-register-payment': {
     parameters: {
       query: {
         /**
@@ -13493,39 +16222,39 @@ export interface operations {
          */
         payMethod: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["my-pay-register-payment720401483"];
+          'application/json': components['schemas']['my-pay-register-payment720401483'];
         };
       };
     };
@@ -13536,7 +16265,7 @@ export interface operations {
    * ## 부가설명 및 특이사항
    * 회원등록 webUI를 띄우기 위한 파라미터를 조회합니다.
    */
-  "get-register-user": {
+  'get-register-user': {
     parameters: {
       query: {
         /**
@@ -13545,39 +16274,39 @@ export interface operations {
          */
         clientReturnUrl: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["my-pay-register-user1853670927"];
+          'application/json': components['schemas']['my-pay-register-user1853670927'];
         };
       };
     };
@@ -13590,7 +16319,7 @@ export interface operations {
    *
    * 회원등록이 성공적으로 끝나면 clientBridgeUrl 로 결제수단등록에 필요한 파라미터들이 urlEncoding이 된 상태로 함께 redirect 됩니다.
    */
-  "get-register-user-with-payment": {
+  'get-register-user-with-payment': {
     parameters: {
       query: {
         /**
@@ -13604,39 +16333,39 @@ export interface operations {
          */
         clientBridgeUrl: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["my-pay-register-user1853670927"];
+          'application/json': components['schemas']['my-pay-register-user1853670927'];
         };
       };
     };
@@ -13647,34 +16376,34 @@ export interface operations {
    * ## 부가설명 및 특이사항
    * 회원서비스를 해제합니다.
    */
-  "delete-user": {
+  'delete-user': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     responses: {
@@ -13690,36 +16419,36 @@ export interface operations {
    * ## 부가설명 및 특이사항
    * 주문 설정값을 조회하는 API 입니다.
    */
-  "get-order-configuration": {
+  'get-order-configuration': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["order-configs-2107962221"];
+          'application/json': components['schemas']['order-configs-2107962221'];
         };
       };
     };
@@ -13737,46 +16466,46 @@ export interface operations {
    * ## 화면예시
    * [![](http://image.toast.com/aaaaahb/api-description/order/ordersheet/[POST]%20order-sheets%20%EC%A3%BC%EB%AC%B8%EC%84%9C%20%EC%83%9D%EC%84%B1.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/ordersheet/[POST]%20order-sheets%20%EC%A3%BC%EB%AC%B8%EC%84%9C%20%EC%83%9D%EC%84%B1.png)
    */
-  "post-order-sheet": {
+  'post-order-sheet': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     requestBody?: {
       content: {
-        "application/json": components["schemas"]["order-sheets-1565420976"];
+        'application/json': components['schemas']['order-sheets-1565420976'];
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["recurring-payments-order-sheets1613778223"];
+          'application/json': components['schemas']['recurring-payments-order-sheets1613778223'];
         };
       };
     };
@@ -13793,7 +16522,7 @@ export interface operations {
    * [![](http://image.toast.com/aaaaahb/api-description/order/ordersheet/[GET]%20order-sheets%20%EC%A3%BC%EB%AC%B8%EC%84%9C%20%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0%201-1.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/ordersheet/[GET]%20order-sheets%20%EC%A3%BC%EB%AC%B8%EC%84%9C%20%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0%201-1.png)
    * [![](http://image.toast.com/aaaaahb/api-description/order/ordersheet/[GET]%20order-sheets%20%EC%A3%BC%EB%AC%B8%EC%84%9C%20%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0%201-2.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/ordersheet/[GET]%20order-sheets%20%EC%A3%BC%EB%AC%B8%EC%84%9C%20%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0%201-2.png)
    */
-  "get-order-sheet": {
+  'get-order-sheet': {
     parameters: {
       query?: {
         /**
@@ -13802,37 +16531,37 @@ export interface operations {
          */
         includeMemberAddress: boolean;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 통화 코드
          * @example KRW
          */
-        currency: string;
+        currency?: string;
       };
       path: {
         orderSheetNo: string;
@@ -13842,7 +16571,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["order-sheets-orderSheetNo515085756"];
+          'application/json': components['schemas']['order-sheets-orderSheetNo515085756'];
         };
       };
     };
@@ -13860,39 +16589,39 @@ export interface operations {
    * ## 화면예시
    * [![](http://image.toast.com/aaaaahb/api-description/order/ordersheet/[POST]%20order-sheets_calculate%20%EC%BF%A0%ED%8F%B0%20%EB%B0%8F%20%EB%B0%B0%EC%86%A1%EC%A7%80%20%EC%A0%95%EB%B3%B4%EA%B0%80%20%EC%A0%81%EC%9A%A9%EB%90%9C%20%EA%B8%88%EC%95%A1%EC%9D%84%20%EB%85%B8%EC%B6%9C.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/ordersheet/[POST]%20order-sheets_calculate%20%EC%BF%A0%ED%8F%B0%20%EB%B0%8F%20%EB%B0%B0%EC%86%A1%EC%A7%80%20%EC%A0%95%EB%B3%B4%EA%B0%80%20%EC%A0%81%EC%9A%A9%EB%90%9C%20%EA%B8%88%EC%95%A1%EC%9D%84%20%EB%85%B8%EC%B6%9C.png)
    */
-  "post-order-sheets-order-sheet-no-calculate": {
+  'post-order-sheets-order-sheet-no-calculate': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 통화 코드
          * @example KRW
          */
-        currency: string;
+        currency?: string;
       };
       path: {
         orderSheetNo: string;
@@ -13900,14 +16629,14 @@ export interface operations {
     };
     requestBody?: {
       content: {
-        "application/json": components["schemas"]["order-sheets-orderSheetNo-calculate-1073273719"];
+        'application/json': components['schemas']['order-sheets-orderSheetNo-calculate-1073273719'];
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["order-sheets-orderSheetNo-calculate559250314"];
+          'application/json': components['schemas']['order-sheets-orderSheetNo-calculate559250314'];
         };
       };
     };
@@ -13921,7 +16650,7 @@ export interface operations {
    * ## 화면예시
    * [![](http://image.toast.com/aaaaahb/api-description/order/ordersheet/[GET]%20order-sheets_coupons%20%EC%A0%81%EC%9A%A9%ED%95%A0%20%EC%88%98%20%EC%9E%88%EB%8A%94%20%EC%BF%A0%ED%8F%B0%20%EC%A0%95%EB%B3%B4%20%EC%A1%B0%ED%9A%8C.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/ordersheet/[GET]%20order-sheets_coupons%20%EC%A0%81%EC%9A%A9%ED%95%A0%20%EC%88%98%20%EC%9E%88%EB%8A%94%20%EC%BF%A0%ED%8F%B0%20%EC%A0%95%EB%B3%B4%20%EC%A1%B0%ED%9A%8C.png)
    */
-  "get-order-sheets-order-sheet-no-coupons": {
+  'get-order-sheets-order-sheet-no-coupons': {
     parameters: {
       query?: {
         /**
@@ -13930,32 +16659,32 @@ export interface operations {
          */
         channelType: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
       path: {
         orderSheetNo: string;
@@ -13965,7 +16694,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["order-sheets-orderSheetNo-coupons-maximum-1318207009"];
+          'application/json': components['schemas']['order-sheets-orderSheetNo-coupons-maximum-1318207009'];
         };
       };
     };
@@ -13979,39 +16708,39 @@ export interface operations {
    * ## 화면예시
    * [![](http://image.toast.com/aaaaahb/api-description/order/ordersheet/[POST]%20order-sheets_coupons_apply%20%EC%BF%A0%ED%8F%B0%EC%A0%81%EC%9A%A9.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/ordersheet/[POST]%20order-sheets_coupons_apply%20%EC%BF%A0%ED%8F%B0%EC%A0%81%EC%9A%A9.png)
    */
-  "post-order-sheets-order-sheet-no-coupons-apply": {
+  'post-order-sheets-order-sheet-no-coupons-apply': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 통화 코드
          * @example KRW
          */
-        currency: string;
+        currency?: string;
       };
       path: {
         orderSheetNo: string;
@@ -14019,14 +16748,14 @@ export interface operations {
     };
     requestBody?: {
       content: {
-        "application/json": components["schemas"]["order-sheets-orderSheetNo-coupons-apply-1755276020"];
+        'application/json': components['schemas']['order-sheets-orderSheetNo-coupons-apply-1755276020'];
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["order-sheets-orderSheetNo-calculate559250314"];
+          'application/json': components['schemas']['order-sheets-orderSheetNo-calculate559250314'];
         };
       };
     };
@@ -14040,34 +16769,34 @@ export interface operations {
    * ## 화면예시
    * [![](http://image.toast.com/aaaaahb/api-description/order/ordersheet/[POST]%20order-sheets_coupons_calculate%20%EC%BF%A0%ED%8F%B0%EC%A0%81%EC%9A%A9%20%EA%B8%88%EC%95%A1%20%EA%B3%84%EC%82%B0.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/ordersheet/[POST]%20order-sheets_coupons_calculate%20%EC%BF%A0%ED%8F%B0%EC%A0%81%EC%9A%A9%20%EA%B8%88%EC%95%A1%20%EA%B3%84%EC%82%B0.png)
    */
-  "post-order-sheets-order-sheet-no-coupons-calculate": {
+  'post-order-sheets-order-sheet-no-coupons-calculate': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
       path: {
         orderSheetNo: string;
@@ -14075,14 +16804,14 @@ export interface operations {
     };
     requestBody?: {
       content: {
-        "application/json": components["schemas"]["order-sheets-orderSheetNo-coupons-apply-1755276020"];
+        'application/json': components['schemas']['order-sheets-orderSheetNo-coupons-apply-1755276020'];
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["order-sheets-orderSheetNo-coupons-maximum-1318207009"];
+          'application/json': components['schemas']['order-sheets-orderSheetNo-coupons-maximum-1318207009'];
         };
       };
     };
@@ -14098,34 +16827,34 @@ export interface operations {
    * ## 화면예시
    * [![](http://image.toast.com/aaaaahb/api-description/order/ordersheet/[POST]%20order-sheets_coupons_maximum%20%EC%B5%9C%EB%8C%80%EC%BF%A0%ED%8F%B0%EC%A0%81%EC%9A%A9%EA%B8%88%EC%95%A1%20%EA%B3%84%EC%82%B0.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/ordersheet/[POST]%20order-sheets_coupons_maximum%20%EC%B5%9C%EB%8C%80%EC%BF%A0%ED%8F%B0%EC%A0%81%EC%9A%A9%EA%B8%88%EC%95%A1%20%EA%B3%84%EC%82%B0.png)
    */
-  "post-order-sheets-order-sheet-no-coupons-maximum": {
+  'post-order-sheets-order-sheet-no-coupons-maximum': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
       path: {
         orderSheetNo: string;
@@ -14133,14 +16862,14 @@ export interface operations {
     };
     requestBody?: {
       content: {
-        "application/json": components["schemas"]["order-sheets-orderSheetNo-coupons-maximum-441133280"];
+        'application/json': components['schemas']['order-sheets-orderSheetNo-coupons-maximum-441133280'];
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["order-sheets-orderSheetNo-coupons-maximum-1318207009"];
+          'application/json': components['schemas']['order-sheets-orderSheetNo-coupons-maximum-1318207009'];
         };
       };
     };
@@ -14157,51 +16886,51 @@ export interface operations {
    *
    * 앱(iOS/AOS) 결제 개발 가이드: [https://workspace.shopby.co.kr/guide/skin/dev-cover/app-payment-module?lv=11](https://workspace.shopby.co.kr/guide/skin/dev-cover/app-payment-module?lv=11)
    */
-  "post-payments-reserve": {
+  'post-payments-reserve': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 통화 코드(해외 결제 시 필수)
          * @example KRW
          */
-        currency: string;
+        currency?: string;
       };
     };
     requestBody?: {
       content: {
-        "application/json": components["schemas"]["payments-reserve1642123685"];
+        'application/json': components['schemas']['payments-reserve1642123685'];
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["payments-reserve-92877080"];
+          'application/json': components['schemas']['payments-reserve-92877080'];
         };
       };
     };
@@ -14212,46 +16941,46 @@ export interface operations {
    * ## 부가설명 및 특이사항
    * 네이버페이 주문서를 생성하는 API 입니다.
    */
-  "post-payments-naver-ordersheet": {
+  'post-payments-naver-ordersheet': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     requestBody?: {
       content: {
-        "application/json": components["schemas"]["payments-naver-ordersheet-1158900846"];
+        'application/json': components['schemas']['payments-naver-ordersheet-1158900846'];
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "text/plain": components["schemas"]["payments-naver-wish-list1116014589"];
+          'text/plain': components['schemas']['payments-naver-wish-list1116014589'];
         };
       };
     };
@@ -14262,46 +16991,46 @@ export interface operations {
    * ## 부가설명 및 특이사항
    * 네이버페이 상품구매 가능 여부를 검증하는 API 입니다.
    */
-  "put-payments-naver-validate": {
+  'put-payments-naver-validate': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     requestBody?: {
       content: {
-        "application/json": components["schemas"]["payments-naver-validate-1868535393"];
+        'application/json': components['schemas']['payments-naver-validate-1868535393'];
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["payments-naver-validate149892381"];
+          'application/json': components['schemas']['payments-naver-validate149892381'];
         };
       };
     };
@@ -14312,41 +17041,41 @@ export interface operations {
    * ## 부가설명 및 특이사항
    * 네이버페이 찜을 등록하는 API 입니다.
    */
-  "post-payments-naver-wish-list": {
+  'post-payments-naver-wish-list': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
     };
     requestBody?: {
       content: {
-        "application/json": components["schemas"]["payments-naver-wish-list-1666491885"];
+        'application/json': components['schemas']['payments-naver-wish-list-1666491885'];
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "text/plain": components["schemas"]["payments-naver-wish-list1116014589"];
+          'text/plain': components['schemas']['payments-naver-wish-list1116014589'];
         };
       };
     };
@@ -14355,7 +17084,7 @@ export interface operations {
    * 이전주문 검색
    * @description 이전주문 검색
    */
-  "get-previous-orders": {
+  'get-previous-orders': {
     parameters: {
       query: {
         /**
@@ -14389,39 +17118,39 @@ export interface operations {
          */
         size: number;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["previous-orders-1111310132"];
+          'application/json': components['schemas']['previous-orders-1111310132'];
         };
       };
     };
@@ -14430,34 +17159,34 @@ export interface operations {
    * 이전주문 상세조회
    * @description 이전주문 상세조회
    */
-  "get-previous-order-details": {
+  'get-previous-order-details': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
       path: {
         /**
@@ -14471,7 +17200,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["previous-orders-orderNo-942189284"];
+          'application/json': components['schemas']['previous-orders-orderNo-942189284'];
         };
       };
     };
@@ -14480,34 +17209,34 @@ export interface operations {
    * 비회원 이전주문 상세조회
    * @description 비회원 이전주문 상세조회
    */
-  "get-guest-previous-order-details": {
+  'get-guest-previous-order-details': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description guestToken
          * @example test-guest-token
          */
-        guestToken: string;
+        guestToken?: string;
       };
       path: {
         /**
@@ -14521,7 +17250,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["previous-orders-orderNo-942189284"];
+          'application/json': components['schemas']['previous-orders-orderNo-942189284'];
         };
       };
     };
@@ -14530,29 +17259,29 @@ export interface operations {
    * 이전주문 비회원 토큰 발급
    * @description 이전주문 비회원 토큰 발급
    */
-  "get-previous-order-guest-token": {
+  'get-previous-order-guest-token': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
       path: {
         /**
@@ -14564,14 +17293,14 @@ export interface operations {
     };
     requestBody?: {
       content: {
-        "application/json": components["schemas"]["payments-naver-wish-list1116014589"];
+        'application/json': components['schemas']['payments-naver-wish-list1116014589'];
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["previous-orders-orderNo-942189284"];
+          'application/json': components['schemas']['previous-orders-orderNo-942189284'];
         };
       };
     };
@@ -14586,7 +17315,7 @@ export interface operations {
    * [![](http://image.toast.com/aaaaahb/api-description/order/myorder/[GET]%20profile_orders%20%EC%A3%BC%EB%AC%B8%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%20%EC%A1%B0%ED%9A%8C%201-1.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/myorder/[GET]%20profile_orders%20%EC%A3%BC%EB%AC%B8%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%20%EC%A1%B0%ED%9A%8C%201-1.png)
    * [![](http://image.toast.com/aaaaahb/api-description/order/myorder/[GET]%20profile_orders%20%EC%A3%BC%EB%AC%B8%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%20%EC%A1%B0%ED%9A%8C%201-2.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/myorder/[GET]%20profile_orders%20%EC%A3%BC%EB%AC%B8%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%20%EC%A1%B0%ED%9A%8C%201-2.png)
    */
-  "get-profile-orders": {
+  'get-profile-orders': {
     parameters: {
       query?: {
         /**
@@ -14627,39 +17356,39 @@ export interface operations {
         /** @description 검색어 */
         keyword: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["profile-orders898513268"];
+          'application/json': components['schemas']['profile-orders898513268'];
         };
       };
     };
@@ -14675,41 +17404,41 @@ export interface operations {
    * ## 화면예시
    * [![](http://image.toast.com/aaaaahb/api-description/order/shipping-address/[GET]%20profile_shipping-addresses%20%EB%B0%B0%EC%86%A1%EC%A7%80%20%EB%AA%A9%EB%A1%9D%20%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/shipping-address/[GET]%20profile_shipping-addresses%20%EB%B0%B0%EC%86%A1%EC%A7%80%20%EB%AA%A9%EB%A1%9D%20%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0.png)
    */
-  "get-profile-shipping-addresses": {
+  'get-profile-shipping-addresses': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["profile-shipping-addresses1302588806"];
+          'application/json': components['schemas']['profile-shipping-addresses1302588806'];
         };
       };
     };
@@ -14727,46 +17456,46 @@ export interface operations {
    * ## 화면예시
    * [![](http://image.toast.com/aaaaahb/api-description/order/shipping-address/[GET]%20profile_shipping-addresses%20%EB%B0%B0%EC%86%A1%EC%A7%80%20%EB%AA%A9%EB%A1%9D%20%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/shipping-address/[GET]%20profile_shipping-addresses%20%EB%B0%B0%EC%86%A1%EC%A7%80%20%EB%AA%A9%EB%A1%9D%20%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0.png)
    */
-  "post-profile-shipping-addresses": {
+  'post-profile-shipping-addresses': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     requestBody?: {
       content: {
-        "application/json": components["schemas"]["profile-shipping-addresses790608702"];
+        'application/json': components['schemas']['profile-shipping-addresses790608702'];
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["profile-shipping-addresses-2110780552"];
+          'application/json': components['schemas']['profile-shipping-addresses-2110780552'];
         };
       };
     };
@@ -14782,7 +17511,7 @@ export interface operations {
    * [![](http://image.toast.com/aaaaahb/api-description/order/myorder/[GET]%20profile_orders%20%EC%A3%BC%EB%AC%B8%20%EC%83%81%EC%84%B8%EC%A1%B0%ED%9A%8C%201-2.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/myorder/[GET]%20profile_orders%20%EC%A3%BC%EB%AC%B8%20%EC%83%81%EC%84%B8%EC%A1%B0%ED%9A%8C%201-2.png)
    * [![](http://image.toast.com/aaaaahb/api-description/order/myorder/[GET]%20profile_orders%20%EC%A3%BC%EB%AC%B8%20%EC%83%81%EC%84%B8%EC%A1%B0%ED%9A%8C%201-3.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/myorder/[GET]%20profile_orders%20%EC%A3%BC%EB%AC%B8%20%EC%83%81%EC%84%B8%EC%A1%B0%ED%9A%8C%201-3.png)
    */
-  "get-profile-orders-order-no": {
+  'get-profile-orders-order-no': {
     parameters: {
       query?: {
         /**
@@ -14791,32 +17520,32 @@ export interface operations {
          */
         orderRequestType: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
       path: {
         orderNo: string;
@@ -14826,7 +17555,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["guest-orders-orderNo-236010523"];
+          'application/json': components['schemas']['guest-orders-orderNo-236010523'];
         };
       };
     };
@@ -14840,41 +17569,41 @@ export interface operations {
    * ## 화면예시
    * [![](http://image.toast.com/aaaaahb/api-description/order/shipping-address/[GET]%20profile_shipping-addresses_recent%20%EC%B5%9C%EA%B7%BC%20%EB%B0%B0%EC%86%A1%EC%A7%80%20%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/shipping-address/[GET]%20profile_shipping-addresses_recent%20%EC%B5%9C%EA%B7%BC%20%EB%B0%B0%EC%86%A1%EC%A7%80%20%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0.png)
    */
-  "get-profile-shipping-address-recent": {
+  'get-profile-shipping-address-recent': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["profile-shipping-addresses-recent-1693328833"];
+          'application/json': components['schemas']['profile-shipping-addresses-recent-1693328833'];
         };
       };
     };
@@ -14888,34 +17617,34 @@ export interface operations {
    * ## 화면예시
    * [![](http://image.toast.com/aaaaahb/api-description/order/shipping-address/[GET]%20profile_shipping-addresses%20%EB%B0%B0%EC%86%A1%EC%A7%80%20%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/shipping-address/[GET]%20profile_shipping-addresses%20%EB%B0%B0%EC%86%A1%EC%A7%80%20%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0.png)
    */
-  "get-profile-shipping-addresses-address-no": {
+  'get-profile-shipping-addresses-address-no': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
       path: {
         /**
@@ -14929,7 +17658,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["profile-shipping-addresses-2110780552"];
+          'application/json': components['schemas']['profile-shipping-addresses-2110780552'];
         };
       };
     };
@@ -14943,34 +17672,34 @@ export interface operations {
    * ## 화면예시
    * [![](http://image.toast.com/aaaaahb/api-description/order/shipping-address/[PUT]%20profile_shipping-addresses%20%EB%B0%B0%EC%86%A1%EC%A7%80%20%EC%88%98%EC%A0%95.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/shipping-address/[PUT]%20profile_shipping-addresses%20%EB%B0%B0%EC%86%A1%EC%A7%80%20%EC%88%98%EC%A0%95.png)
    */
-  "put-profile-shipping-addresses-address-no": {
+  'put-profile-shipping-addresses-address-no': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
       path: {
         /**
@@ -14982,14 +17711,14 @@ export interface operations {
     };
     requestBody?: {
       content: {
-        "application/json": components["schemas"]["profile-shipping-addresses-addressNo-635015904"];
+        'application/json': components['schemas']['profile-shipping-addresses-addressNo-635015904'];
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["profile-shipping-addresses-2110780552"];
+          'application/json': components['schemas']['profile-shipping-addresses-2110780552'];
         };
       };
     };
@@ -15003,34 +17732,34 @@ export interface operations {
    * ## 화면예시
    * [![](http://image.toast.com/aaaaahb/api-description/order/shipping-address/[DELETE]%20profile_shipping-addresses%20%EB%B0%B0%EC%86%A1%EC%A7%80%20%EC%82%AD%EC%A0%9C.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/shipping-address/[DELETE]%20profile_shipping-addresses%20%EB%B0%B0%EC%86%A1%EC%A7%80%20%EC%82%AD%EC%A0%9C.png)
    */
-  "delete-profile-shipping-addresses-address-no": {
+  'delete-profile-shipping-addresses-address-no': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
       path: {
         /**
@@ -15058,7 +17787,7 @@ export interface operations {
    * ## 화면예시
    * [![](http://image.toast.com/aaaaahb/api-description/order/myorder/[GET]%20profile_order-options_summary_status%20%EC%83%81%ED%83%9C%EB%B3%84%20%EC%A3%BC%EB%AC%B8%20%EC%98%B5%EC%85%98%EB%B3%84%20%EC%88%98%EB%9F%89.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/myorder/[GET]%20profile_order-options_summary_status%20%EC%83%81%ED%83%9C%EB%B3%84%20%EC%A3%BC%EB%AC%B8%20%EC%98%B5%EC%85%98%EB%B3%84%20%EC%88%98%EB%9F%89.png)
    */
-  "get-profile-order-options-summary-status": {
+  'get-profile-order-options-summary-status': {
     parameters: {
       query?: {
         /**
@@ -15072,39 +17801,39 @@ export interface operations {
          */
         endYmd: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["profile-orders-summary-status1277891083"];
+          'application/json': components['schemas']['profile-orders-summary-status1277891083'];
         };
       };
     };
@@ -15118,34 +17847,34 @@ export interface operations {
    * ## 화면예시
    * [![](http://image.toast.com/aaaaahb/api-description/order/myorder/[PUT]%20profile_order-options_confirm%20%EC%83%81%ED%92%88%20%EC%A3%BC%EB%AC%B8%20%EA%B5%AC%EB%A7%A4%ED%99%95%EC%A0%95.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/myorder/[PUT]%20profile_order-options_confirm%20%EC%83%81%ED%92%88%20%EC%A3%BC%EB%AC%B8%20%EA%B5%AC%EB%A7%A4%ED%99%95%EC%A0%95.png)
    */
-  "put-profile-order-options-order-option-no-confirm": {
+  'put-profile-order-options-order-option-no-confirm': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
       path: {
         /**
@@ -15171,34 +17900,34 @@ export interface operations {
    * ## 화면예시
    * [![](http://image.toast.com/aaaaahb/api-description/order/myorder/[PUT]%20profile_order-options_delivery-done%20%EC%83%81%ED%92%88%20%EC%A3%BC%EB%AC%B8%20%EB%B0%B0%EC%86%A1%EC%99%84%EB%A3%8C.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/myorder/[PUT]%20profile_order-options_delivery-done%20%EC%83%81%ED%92%88%20%EC%A3%BC%EB%AC%B8%20%EB%B0%B0%EC%86%A1%EC%99%84%EB%A3%8C.png)
    */
-  "put-profile-order-options-order-option-no-delivery-done": {
+  'put-profile-order-options-order-option-no-delivery-done': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
       path: {
         /**
@@ -15221,7 +17950,7 @@ export interface operations {
    * ## 부가설명 및 특이사항
    * 시작일과 종료일 사이의 주문 상태별 주문 수량과 결제 금액 조회하는 API 입니다.
    */
-  "get-profile-orders-summary-amount": {
+  'get-profile-orders-summary-amount': {
     parameters: {
       query?: {
         /**
@@ -15240,39 +17969,39 @@ export interface operations {
          */
         endYmd: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["profile-orders-summary-amount-1975758925"];
+          'application/json': components['schemas']['profile-orders-summary-amount-1975758925'];
         };
       };
     };
@@ -15288,7 +18017,7 @@ export interface operations {
    * ## 화면예시
    * [![](http://image.toast.com/aaaaahb/api-description/order/myorder/[GET]%20profile_order-options_summary_status%20%EC%83%81%ED%83%9C%EB%B3%84%20%EC%A3%BC%EB%AC%B8%20%EC%98%B5%EC%85%98%EB%B3%84%20%EC%88%98%EB%9F%89.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/myorder/[GET]%20profile_order-options_summary_status%20%EC%83%81%ED%83%9C%EB%B3%84%20%EC%A3%BC%EB%AC%B8%20%EC%98%B5%EC%85%98%EB%B3%84%20%EC%88%98%EB%9F%89.png)
    */
-  "get-profile-orders-summary-status": {
+  'get-profile-orders-summary-status': {
     parameters: {
       query?: {
         /**
@@ -15302,39 +18031,39 @@ export interface operations {
          */
         endYmd: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["profile-orders-summary-status1277891083"];
+          'application/json': components['schemas']['profile-orders-summary-status1277891083'];
         };
       };
     };
@@ -15348,34 +18077,34 @@ export interface operations {
    * ## 화면예시
    * [![](http://image.toast.com/aaaaahb/api-description/order/myorder/[POST]%20profile_orders_cashReceipt%20%ED%98%84%EA%B8%88%EC%98%81%EC%88%98%EC%A6%9D%20%EC%8B%A0%EC%B2%AD.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/myorder/[POST]%20profile_orders_cashReceipt%20%ED%98%84%EA%B8%88%EC%98%81%EC%88%98%EC%A6%9D%20%EC%8B%A0%EC%B2%AD.png)
    */
-  "post-profile-orders-order-no-cash-receipts": {
+  'post-profile-orders-order-no-cash-receipts': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
       path: {
         /**
@@ -15387,14 +18116,14 @@ export interface operations {
     };
     requestBody?: {
       content: {
-        "application/json": components["schemas"]["profile-orders-orderNo-cashReceipt-1665654877"];
+        'application/json': components['schemas']['profile-orders-orderNo-cashReceipt-1665654877'];
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["profile-orders-orderNo-cashReceipt-2129761381"];
+          'application/json': components['schemas']['profile-orders-orderNo-cashReceipt-2129761381'];
         };
       };
     };
@@ -15411,7 +18140,7 @@ export interface operations {
    * [![](http://image.toast.com/aaaaahb/api-description/order/myorder/[GET]%20profile_orders_claim%20%EC%A0%84%EC%B2%B4%20%EC%A3%BC%EB%AC%B8%EC%B7%A8%EC%86%8C%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EC%A3%BC%EB%AC%B8%20%EC%83%81%EC%84%B8%EC%A1%B0%ED%9A%8C(%ED%81%B4%EB%A0%88%EC%9E%84%20%EC%83%81%EC%84%B8%EC%82%AC%EC%9C%A0%20%ED%8F%AC%ED%95%A8)%201-1.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/myorder/[GET]%20profile_orders_claim%20%EC%A0%84%EC%B2%B4%20%EC%A3%BC%EB%AC%B8%EC%B7%A8%EC%86%8C%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EC%A3%BC%EB%AC%B8%20%EC%83%81%EC%84%B8%EC%A1%B0%ED%9A%8C(%ED%81%B4%EB%A0%88%EC%9E%84%20%EC%83%81%EC%84%B8%EC%82%AC%EC%9C%A0%20%ED%8F%AC%ED%95%A8)%201-1.png)
    * [![](http://image.toast.com/aaaaahb/api-description/order/myorder/[GET]%20profile_orders_claim%20%EC%A0%84%EC%B2%B4%20%EC%A3%BC%EB%AC%B8%EC%B7%A8%EC%86%8C%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EC%A3%BC%EB%AC%B8%20%EC%83%81%EC%84%B8%EC%A1%B0%ED%9A%8C(%ED%81%B4%EB%A0%88%EC%9E%84%20%EC%83%81%EC%84%B8%EC%82%AC%EC%9C%A0%20%ED%8F%AC%ED%95%A8)%201-2.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/myorder/[GET]%20profile_orders_claim%20%EC%A0%84%EC%B2%B4%20%EC%A3%BC%EB%AC%B8%EC%B7%A8%EC%86%8C%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EC%A3%BC%EB%AC%B8%20%EC%83%81%EC%84%B8%EC%A1%B0%ED%9A%8C(%ED%81%B4%EB%A0%88%EC%9E%84%20%EC%83%81%EC%84%B8%EC%82%AC%EC%9C%A0%20%ED%8F%AC%ED%95%A8)%201-2.png)
    */
-  "get-profile-orders-order-no-claim": {
+  'get-profile-orders-order-no-claim': {
     parameters: {
       query: {
         /**
@@ -15425,32 +18154,32 @@ export interface operations {
          */
         claimType: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
       path: {
         orderNo: string;
@@ -15460,7 +18189,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["guest-orders-orderNo-236010523"];
+          'application/json': components['schemas']['guest-orders-orderNo-236010523'];
         };
       };
     };
@@ -15477,7 +18206,7 @@ export interface operations {
    * ## 화면예시
    * [![](http://image.toast.com/aaaaahb/api-description/order/myorder/[PUT]%20profile_orders_deliveries%20%EC%A3%BC%EB%AC%B8%EB%8B%A8%EC%9C%84%20%EB%B0%B0%EC%86%A1%EC%A0%95%EB%B3%B4%20%EC%88%98%EC%A0%95.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/myorder/[PUT]%20profile_orders_deliveries%20%EC%A3%BC%EB%AC%B8%EB%8B%A8%EC%9C%84%20%EB%B0%B0%EC%86%A1%EC%A0%95%EB%B3%B4%20%EC%88%98%EC%A0%95.png)
    */
-  "put-profile-orders-order-no-deliveries": {
+  'put-profile-orders-order-no-deliveries': {
     parameters: {
       query?: {
         /**
@@ -15486,32 +18215,32 @@ export interface operations {
          */
         add: boolean;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
       path: {
         /**
@@ -15523,7 +18252,7 @@ export interface operations {
     };
     requestBody?: {
       content: {
-        "application/json": components["schemas"]["guest-orders-orderNo-deliveries1990893381"];
+        'application/json': components['schemas']['guest-orders-orderNo-deliveries1990893381'];
       };
     };
     responses: {
@@ -15542,34 +18271,34 @@ export interface operations {
    * ## 화면예시
    * [![](http://image.toast.com/aaaaahb/api-description/order/shipping-address/[PUT]%20profile_shipping-addresses_default%20%EA%B8%B0%EB%B3%B8%20%EB%B0%B0%EC%86%A1%EC%A7%80%20%EC%88%98%EC%A0%95.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/shipping-address/[PUT]%20profile_shipping-addresses_default%20%EA%B8%B0%EB%B3%B8%20%EB%B0%B0%EC%86%A1%EC%A7%80%20%EC%88%98%EC%A0%95.png)
    */
-  "put-profile-shipping-addresses-address-no-default": {
+  'put-profile-shipping-addresses-address-no-default': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
       path: {
         /**
@@ -15583,7 +18312,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["profile-shipping-addresses-2110780552"];
+          'application/json': components['schemas']['profile-shipping-addresses-2110780552'];
         };
       };
     };
@@ -15594,7 +18323,7 @@ export interface operations {
    * ## 부가설명 및 특이사항
    * 정기결제를 조회하는 API 입니다.
    */
-  "get-recurring-payments": {
+  'get-recurring-payments': {
     parameters: {
       query?: {
         /**
@@ -15608,39 +18337,39 @@ export interface operations {
          */
         endYmd: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["recurring-payments313754189"];
+          'application/json': components['schemas']['recurring-payments313754189'];
         };
       };
     };
@@ -15653,46 +18382,46 @@ export interface operations {
    *
    * 참고 : 정기결제 신청 시점에 가격이 500원 미만인 상품이 존재하면 400 에러를 응답합니다.
    */
-  "post-recurring-payments": {
+  'post-recurring-payments': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     requestBody?: {
       content: {
-        "application/json": components["schemas"]["recurring-payments1350971406"];
+        'application/json': components['schemas']['recurring-payments1350971406'];
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["recurring-payments-976798933"];
+          'application/json': components['schemas']['recurring-payments-976798933'];
         };
       };
     };
@@ -15705,41 +18434,41 @@ export interface operations {
    *
    * 회원에게 등록된 정기결제 카드가 없을 시 400 에러로 응답합니다.
    */
-  "get-recurring-payments-card": {
+  'get-recurring-payments-card': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["recurring-payments-card247629157"];
+          'application/json': components['schemas']['recurring-payments-card247629157'];
         };
       };
     };
@@ -15750,34 +18479,34 @@ export interface operations {
    * ## 부가설명 및 특이사항
    * 정기결제 카드를 삭제하는 API 입니다.
    */
-  "delete-recurring-payments-card": {
+  'delete-recurring-payments-card': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     responses: {
@@ -15798,7 +18527,7 @@ export interface operations {
    * ## 화면예시
    * [![](http://image.toast.com/aaaaahb/api-description/order/cart/[GET]%20cart%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EB%AA%A9%EB%A1%9D%20%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0%201-2.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/cart/[GET]%20cart%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EB%AA%A9%EB%A1%9D%20%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0%201-2.png)
    */
-  "get-recurring-payments-cart": {
+  'get-recurring-payments-cart': {
     parameters: {
       query?: {
         /**
@@ -15807,39 +18536,39 @@ export interface operations {
          */
         divideInvalidProducts: boolean;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["recurring-payments-cart-subset84337202"];
+          'application/json': components['schemas']['recurring-payments-cart-subset84337202'];
         };
       };
     };
@@ -15854,39 +18583,39 @@ export interface operations {
    *
    * 옵션변경은 변경할 옵션을 삭제한 후 신규등록하는 방법으로 수정합니다.
    */
-  "put-recurring-payments-cart": {
+  'put-recurring-payments-cart': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     requestBody?: {
       content: {
-        "application/json": components["schemas"]["recurring-payments-cart-890037452"];
+        'application/json': components['schemas']['recurring-payments-cart-890037452'];
       };
     };
     responses: {
@@ -15906,46 +18635,46 @@ export interface operations {
    *
    * 참고:정기결제(배송) API화면가이드 https://shopby.works/support/forum/30659
    */
-  "post-recurring-payments-cart": {
+  'post-recurring-payments-cart': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     requestBody?: {
       content: {
-        "application/json": components["schemas"]["cart977837260"];
+        'application/json': components['schemas']['cart977837260'];
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["recurring-payments-cart830330865"];
+          'application/json': components['schemas']['recurring-payments-cart830330865'];
         };
       };
     };
@@ -15958,7 +18687,7 @@ export interface operations {
    *
    * cartNo를 List형으로 전달해야 합니다.
    */
-  "delete-recurring-payments-cart": {
+  'delete-recurring-payments-cart': {
     parameters: {
       query: {
         /**
@@ -15967,39 +18696,39 @@ export interface operations {
          */
         cartNo: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["cart-1843750990"];
+          'application/json': components['schemas']['cart-1843750990'];
         };
       };
     };
@@ -16010,46 +18739,46 @@ export interface operations {
    * ## 부가설명 및 특이사항
    * 정기결제 배송일을 변경하는 API 입니다.
    */
-  "put-recurring-payments-delivery-cycle": {
+  'put-recurring-payments-delivery-cycle': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     requestBody?: {
       content: {
-        "application/json": components["schemas"]["recurring-payments-delivery-cycle1814328293"];
+        'application/json': components['schemas']['recurring-payments-delivery-cycle1814328293'];
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["recurring-payments-delivery-cycle-1813425842"];
+          'application/json': components['schemas']['recurring-payments-delivery-cycle-1813425842'];
         };
       };
     };
@@ -16062,7 +18791,7 @@ export interface operations {
    *
    * 정기결제 신청번호가 없으면 현재 날짜 기준으로 조회합니다.
    */
-  "get-recurring-payments-next-recurring-date": {
+  'get-recurring-payments-next-recurring-date': {
     parameters: {
       query: {
         /**
@@ -16083,39 +18812,39 @@ export interface operations {
         /** @description 정기결제 배송주기 타입^|(MONTH: Month, WEEK: Week) */
         cycleType: number;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["recurring-payments-delivery-cycle-1813425842"];
+          'application/json': components['schemas']['recurring-payments-delivery-cycle-1813425842'];
         };
       };
     };
@@ -16130,46 +18859,46 @@ export interface operations {
    *
    * 참고 : 주문서 생성시점에 가격이 500원 미만인 상품이 존재하면 400 에러를 응답합니다.
    */
-  "post-recurring-payments-order-sheets": {
+  'post-recurring-payments-order-sheets': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     requestBody?: {
       content: {
-        "application/json": components["schemas"]["recurring-payments-order-sheets-1030890519"];
+        'application/json': components['schemas']['recurring-payments-order-sheets-1030890519'];
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["recurring-payments-order-sheets1613778223"];
+          'application/json': components['schemas']['recurring-payments-order-sheets1613778223'];
         };
       };
     };
@@ -16189,7 +18918,7 @@ export interface operations {
    * ## 화면예시
    * [![](http://image.toast.com/aaaaahb/api-description/order/cart/[GET]%20cart_calculate%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EC%84%A0%ED%83%9D%20%EA%B3%84%EC%82%B0.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/cart/[GET]%20cart_calculate%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EC%84%A0%ED%83%9D%20%EA%B3%84%EC%82%B0.png)
    */
-  "get-recurring-payments-cart-calculate": {
+  'get-recurring-payments-cart-calculate': {
     parameters: {
       query: {
         /**
@@ -16203,39 +18932,39 @@ export interface operations {
          */
         divideInvalidProducts: boolean;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["recurring-payments-cart-calculate-1315479487"];
+          'application/json': components['schemas']['recurring-payments-cart-calculate-1315479487'];
         };
       };
     };
@@ -16255,7 +18984,7 @@ export interface operations {
    * ## 화면예시
    * [![](http://image.toast.com/aaaaahb/api-description/order/cart/[GET]%20cart_subset%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%EC%97%90%EC%84%9C%20%EC%84%A0%ED%83%9D%EB%90%9C%20%ED%95%AD%EB%AA%A9%EB%A7%8C%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EA%B7%B8%EB%A3%B9%EB%B3%84%EB%A1%9C%20%EC%9E%AC%20%EA%B3%84%EC%82%B0.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/cart/[GET]%20cart_subset%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%EC%97%90%EC%84%9C%20%EC%84%A0%ED%83%9D%EB%90%9C%20%ED%95%AD%EB%AA%A9%EB%A7%8C%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EA%B7%B8%EB%A3%B9%EB%B3%84%EB%A1%9C%20%EC%9E%AC%20%EA%B3%84%EC%82%B0.png)
    */
-  "get-recurring-payments-cart-subset": {
+  'get-recurring-payments-cart-subset': {
     parameters: {
       query: {
         /**
@@ -16269,39 +18998,39 @@ export interface operations {
          */
         divideInvalidProducts: boolean;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["recurring-payments-cart-subset84337202"];
+          'application/json': components['schemas']['recurring-payments-cart-subset84337202'];
         };
       };
     };
@@ -16314,42 +19043,42 @@ export interface operations {
    *
    * 성공적으로 해지 완료 시 204(noContent) 응답을 반환합니다.
    */
-  "put-recurring-payments-close-recurring-payment-no": {
+  'put-recurring-payments-close-recurring-payment-no': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
       path: {
-        "recurring-payment-no": string;
+        'recurring-payment-no': string;
       };
     };
     requestBody?: {
       content: {
-        "application/json": components["schemas"]["recurring-payments-close-recurring-payment-no1740267411"];
+        'application/json': components['schemas']['recurring-payments-close-recurring-payment-no1740267411'];
       };
     };
     responses: {
@@ -16371,7 +19100,7 @@ export interface operations {
    * [![](http://image.toast.com/aaaaahb/api-description/order/guest/[POST]%20guest_cart%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EA%B3%84%EC%82%B0%201-1.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/guest/[POST]%20guest_cart%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EA%B3%84%EC%82%B0%201-1.png)
    * [![](http://image.toast.com/aaaaahb/api-description/order/guest/[POST]%20guest_cart%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EA%B3%84%EC%82%B0%201-2.png?autox150)](http://image.toast.com/aaaaahb/api-description/order/guest/[POST]%20guest_cart%20%EA%B2%8C%EC%8A%A4%ED%8A%B8%20%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20%EA%B3%84%EC%82%B0%201-2.png)
    */
-  "post-recurring-payments-guest-cart": {
+  'post-recurring-payments-guest-cart': {
     parameters: {
       query?: {
         /**
@@ -16380,39 +19109,39 @@ export interface operations {
          */
         divideInvalidProducts: boolean;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
     };
     requestBody?: {
       content: {
-        "application/json": components["schemas"]["recurring-payments-guest-cart-1583522844"];
+        'application/json': components['schemas']['recurring-payments-guest-cart-1583522844'];
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["recurring-payments-guest-cart816762413"];
+          'application/json': components['schemas']['recurring-payments-guest-cart816762413'];
         };
       };
     };
@@ -16425,7 +19154,7 @@ export interface operations {
    *
    * 참고 : 주문서 내에 가격이 500원 미만인 상품이 존재하면 400 에러를 응답합니다.
    */
-  "get-recurring-payments-order-sheets-order-sheets-no": {
+  'get-recurring-payments-order-sheets-order-sheets-no': {
     parameters: {
       query?: {
         /**
@@ -16434,32 +19163,32 @@ export interface operations {
          */
         includeMemberAddress: boolean;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
       path: {
         orderSheetNo: string;
@@ -16469,7 +19198,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["order-sheets-orderSheetNo515085756"];
+          'application/json': components['schemas']['order-sheets-orderSheetNo515085756'];
         };
       };
     };
@@ -16478,26 +19207,26 @@ export interface operations {
    * 배송 enum 정보 조회
    * @description 배송 enum 정보 조회
    */
-  "get-shippings-enums": {
+  'get-shippings-enums': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["shippings-enums-1215321466"];
+          'application/json': components['schemas']['shippings-enums-1215321466'];
         };
       };
     };
@@ -16509,29 +19238,29 @@ export interface operations {
    * ## 부가설명 및 특이사항
    * 나중에 입력된 배송지를 조회하는 API 입니다.
    */
-  "get-shippings-encrypted-shipping-no-later-input": {
+  'get-shippings-encrypted-shipping-no-later-input': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
       path: {
         /**
@@ -16545,7 +19274,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["shippings-encryptedShippingNo-later-input-305682154"];
+          'application/json': components['schemas']['shippings-encryptedShippingNo-later-input-305682154'];
         };
       };
     };
@@ -16557,29 +19286,29 @@ export interface operations {
    * ## 부가설명 및 특이사항
    * 나중에 입력된 배송지 정보를 수정하는 API 입니다.
    */
-  "put-shippings-encrypted-shipping-no-later-input": {
+  'put-shippings-encrypted-shipping-no-later-input': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
       path: {
         /**
@@ -16591,7 +19320,7 @@ export interface operations {
     };
     requestBody?: {
       content: {
-        "application/json": components["schemas"]["shippings-encryptedShippingNo-later-input350289840"];
+        'application/json': components['schemas']['shippings-encryptedShippingNo-later-input350289840'];
       };
     };
     responses: {
@@ -16607,7 +19336,7 @@ export interface operations {
    * ## 부가설명 및 특이사항
    * 미확인 입금자를 조회하는 API 입니다.
    */
-  "get-unidentified-depositors": {
+  'get-unidentified-depositors': {
     parameters: {
       query: {
         /**
@@ -16636,34 +19365,34 @@ export interface operations {
          */
         size: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["unidentifiedDepositors2122825748"];
+          'application/json': components['schemas']['unidentifiedDepositors2122825748'];
         };
       };
     };
@@ -16674,36 +19403,36 @@ export interface operations {
    * ## 부가설명 및 특이사항
    * 미확인 입금자 설정을 조회하는 API 입니다.
    */
-  "get-unidentified-depositors-config": {
+  'get-unidentified-depositors-config': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["unidentifiedDepositors-config792080057"];
+          'application/json': components['schemas']['unidentifiedDepositors-config792080057'];
         };
       };
     };
@@ -16714,41 +19443,41 @@ export interface operations {
    * ## 부가설명 및 특이사항
    * 위시리스트를 조회하는 API 입니다.
    */
-  "get-wish": {
+  'get-wish': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["wish-938362791"];
+          'application/json': components['schemas']['wish-938362791'];
         };
       };
     };
@@ -16759,39 +19488,39 @@ export interface operations {
    * ## 부가설명 및 특이사항
    * 위시리스트를 수정하는 API 입니다.
    */
-  "put-wish": {
+  'put-wish': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     requestBody?: {
       content: {
-        "application/json": components["schemas"]["wish929069921"];
+        'application/json': components['schemas']['wish929069921'];
       };
     };
     responses: {
@@ -16807,46 +19536,46 @@ export interface operations {
    * ## 부가설명 및 특이사항
    * 위시리스트를 등록하는 API 입니다.
    */
-  "post-wish": {
+  'post-wish': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     requestBody?: {
       content: {
-        "application/json": components["schemas"]["wish1402593107"];
+        'application/json': components['schemas']['wish1402593107'];
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["wish-count655543630"];
+          'application/json': components['schemas']['wish-count655543630'];
         };
       };
     };
@@ -16857,7 +19586,7 @@ export interface operations {
    * ## 부가설명 및 특이사항
    * 위시리스트를 삭제하는 API 입니다.
    */
-  "delete-wish": {
+  'delete-wish': {
     parameters: {
       query: {
         /**
@@ -16866,39 +19595,39 @@ export interface operations {
          */
         wishNos: number;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["wish-count655543630"];
+          'application/json': components['schemas']['wish-count655543630'];
         };
       };
     };
@@ -16909,41 +19638,41 @@ export interface operations {
    * ## 부가설명 및 특이사항
    * 위시리스트 개수를 조회하는 API 입니다.
    */
-  "get-wish-count": {
+  'get-wish-count': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["wish-count655543630"];
+          'application/json': components['schemas']['wish-count655543630'];
         };
       };
     };

@@ -8,8 +8,8 @@ export const generateFullTypedFile = (filePath: string) => {
   const sourceFile = project.addSourceFileAtPath(filePath);
   return pipe(
     sourceFile,
-    modifyNullableDescriptionToUndefinedType,
-    sliceUnionWithDescription,
+    // modifyNullableDescriptionToUndefinedType,
+    // sliceUnionWithDescription,
     makeHeaderOptional
   );
 };

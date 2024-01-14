@@ -527,7 +527,7 @@ export interface components {
          * @example ADMIN
          * @enum {string}
          */
-        registerType: 'ADMIN: 운영자' | 'MEMBER: 회원' | 'GUEST: 비회원';
+        registerType: 'ADMIN' | 'MEMBER' | 'GUEST';
         /**
          * @description 제목
          * @example title
@@ -538,7 +538,7 @@ export interface components {
          * @example ADMIN
          * @enum {string}
          */
-        modifierType?: 'ADMIN: 운영자' | 'MEMBER: 회원' | 'GUEST: 비회원';
+        modifierType?: 'ADMIN' | 'MEMBER' | 'GUEST';
         /**
          * @description 내용 (nullable)
          * @example content
@@ -689,10 +689,7 @@ export interface components {
        * @example ATTACHMENT
        * @enum {string}
        */
-      imageDisplayType:
-        | 'NOT_USED: 사용안함'
-        | 'ATTACHMENT: 첨부파일'
-        | 'PRODUCT: 상품이미지';
+      imageDisplayType: 'NOT_USED' | 'ATTACHMENT' | 'PRODUCT';
       /**
        * @description 답변완료 SMS 템플릿 사용 여부 (false: 템플릿 미사용, true: 템플릿 사용)
        * @example true
@@ -703,11 +700,7 @@ export interface components {
        * @example LIST
        * @enum {string}
        */
-      displayType:
-        | 'LIST: 리스트형'
-        | 'CARD: 카드형'
-        | 'REPLY: 댓글형'
-        | 'INQUIRY: 문의형';
+      displayType: 'LIST' | 'CARD' | 'REPLY' | 'INQUIRY';
       /**
        * @description 첨부파일 게시 허용 여부 (false: 첨부 미허용, true: 첨부 허용)
        * @example false
@@ -742,10 +735,7 @@ export interface components {
          * @example NOT_USED
          * @enum {string}
          */
-        imageDisplayType:
-          | 'NOT_USED: 사용안함'
-          | 'ATTACHMENT: 첨부파일'
-          | 'PRODUCT: 상품이미지';
+        imageDisplayType: 'NOT_USED' | 'ATTACHMENT' | 'PRODUCT';
         /**
          * @description 답글작성 가능 여부 (false: 답글 작성 불가능, true: 답글 작성가능)
          * @example false
@@ -756,11 +746,7 @@ export interface components {
          * @example LIST
          * @enum {string}
          */
-        displayType:
-          | 'LIST: 리스트형'
-          | 'CARD: 카드형'
-          | 'REPLY: 댓글형'
-          | 'INQUIRY: 문의형';
+        displayType: 'LIST' | 'CARD' | 'REPLY' | 'INQUIRY';
         reviewAccumulation?: {
           normalReview?: {
             /**
@@ -830,10 +816,7 @@ export interface components {
          * @example NOT_USED
          * @enum {string}
          */
-        imageDisplayType:
-          | 'NOT_USED: 사용안함'
-          | 'ATTACHMENT: 첨부파일'
-          | 'PRODUCT: 상품이미지';
+        imageDisplayType: 'NOT_USED' | 'ATTACHMENT' | 'PRODUCT';
         /**
          * @description 답글작성 가능 여부 (false: 답글 작성 불가능, true: 답글 작성가능)
          * @example false
@@ -844,11 +827,7 @@ export interface components {
          * @example LIST
          * @enum {string}
          */
-        displayType:
-          | 'LIST: 리스트형'
-          | 'CARD: 카드형'
-          | 'REPLY: 댓글형'
-          | 'INQUIRY: 문의형';
+        displayType: 'LIST' | 'CARD' | 'REPLY' | 'INQUIRY';
         /**
          * @description 비회원 작성가능 여부 (false: 비회원 작성 불가능, true: 비회원 작성가능)
          * @example false
@@ -912,20 +891,13 @@ export interface components {
          * @example NOT_USED
          * @enum {string}
          */
-        imageDisplayType:
-          | 'NOT_USED: 사용안함'
-          | 'ATTACHMENT: 첨부파일'
-          | 'PRODUCT: 상품이미지';
+        imageDisplayType: 'NOT_USED' | 'ATTACHMENT' | 'PRODUCT';
         /**
          * @description 게시판 유형
          * @example LIST
          * @enum {string}
          */
-        displayType:
-          | 'LIST: 리스트형'
-          | 'CARD: 카드형'
-          | 'REPLY: 댓글형'
-          | 'INQUIRY: 문의형';
+        displayType: 'LIST' | 'CARD' | 'REPLY' | 'INQUIRY';
         /**
          * @description 카테고리 사용 여부 (false: 카테고리 미사용, true: 카테고리 사용)
          * @example false
@@ -1011,10 +983,7 @@ export interface components {
          * @example NOT_USED
          * @enum {string}
          */
-        imageDisplayType:
-          | 'NOT_USED: 사용안함'
-          | 'ATTACHMENT: 첨부파일'
-          | 'PRODUCT: 상품이미지';
+        imageDisplayType: 'NOT_USED' | 'ATTACHMENT' | 'PRODUCT';
         /**
          * @description 답변완료 SMS 템플릿 사용 여부 (false: 템플릿 미사용, true: 템플릿 사용)
          * @example false
@@ -1025,11 +994,7 @@ export interface components {
          * @example LIST
          * @enum {string}
          */
-        displayType:
-          | 'LIST: 리스트형'
-          | 'CARD: 카드형'
-          | 'REPLY: 댓글형'
-          | 'INQUIRY: 문의형';
+        displayType: 'LIST' | 'CARD' | 'REPLY' | 'INQUIRY';
         /**
          * @description 첨부파일 게시 허용 여부 (false: 첨부 미허용, true: 첨부 허용)
          * @example false
@@ -1280,11 +1245,7 @@ export interface components {
          * @example ISSUED
          * @enum {string}
          */
-        inquiryStatus:
-          | 'ISSUED: Waiting for Answers'
-          | 'ASKED: Waiting for Answers'
-          | 'IN_PROGRESS: Answering in Progress'
-          | 'ANSWERED: ANSWERED';
+        inquiryStatus: 'ISSUED' | 'ASKED' | 'IN_PROGRESS' | 'ANSWERED';
         /**
          * @description 상품명 (nullable)
          * @example productName
@@ -1572,11 +1533,7 @@ export interface components {
        * @example ASKED
        * @enum {string}
        */
-      inquiryStatus:
-        | 'ISSUED: Waiting for Answers'
-        | 'ASKED: Waiting for Answers'
-        | 'IN_PROGRESS: Answering in Progress'
-        | 'ANSWERED: ANSWERED';
+      inquiryStatus: 'ISSUED' | 'ASKED' | 'IN_PROGRESS' | 'ANSWERED';
       /**
        * @description 상품명 (nullable)
        * @example productName
@@ -1693,7 +1650,7 @@ export interface components {
        * @example MEMBER
        * @enum {string}
        */
-      registerType: 'ADMIN: 운영자' | 'MEMBER: 회원' | 'GUEST: 비회원';
+      registerType: 'ADMIN' | 'MEMBER' | 'GUEST';
       /**
        * @description 제목 (nullable)
        * @example title
@@ -1704,7 +1661,7 @@ export interface components {
        * @example MEMBER
        * @enum {string}
        */
-      modifierType?: 'ADMIN: 운영자' | 'MEMBER: 회원' | 'GUEST: 비회원';
+      modifierType?: 'ADMIN' | 'MEMBER' | 'GUEST';
       /**
        * @description 본문 (nullable)
        * @example content
@@ -1861,28 +1818,28 @@ export interface components {
          * @enum {string}
          */
         accumulationReserveReason:
-          | 'ADD_AFTER_PAYMENT: 상품 구매확정 적립'
-          | 'ADD_AFTER_EVENT_PAYMENT: 이벤트 구매확정 적립'
-          | 'ADD_AFTER_REPLACE_PAYMENT: 상품 교환 결제 추가 적립'
-          | 'ADD_POSTING: 상품평 작성 적립'
-          | 'ADD_CANCEL: 주문취소 재적립'
-          | 'ADD_RETURN: 반품 재적립'
-          | 'ADD_MANUAL: 운영자 지급'
-          | 'ADD_EVENT: 이벤트성 적립'
-          | 'ADD_SIGNUP: 회원가입 적립금'
-          | 'ADD_BIRTHDAY: 생일축하 적립금'
-          | 'ADD_APP_INSTALL: 앱설치 적립금'
-          | 'ADD_GRADE: 회원등급 적립금'
-          | 'ADD_GRADE_BENEFIT: 등급 혜택 즉시 지급 적립금'
-          | 'SUB_PAYMENT_USED: 상품 결제 사용 차감'
-          | 'SUB_EXTRA_PAYMENT_USED: 교환 상품 추가 결제 차감'
-          | 'SUB_CANCEL: 사용적립금 주문취소 재적립'
-          | 'SUB_RETURN: 상품 구매확정 취소 차감'
-          | 'SUB_DELETE_POSTING: 상품평 삭제 차감'
-          | 'SUB_EXPIRED: 유효기간 만료'
-          | 'SUB_MANUAL: 운영자 차감'
-          | 'SUB_DELETE_ACCOUNT: 회원탈퇴 차감'
-          | 'EXTERNAL_ACCUMULATION: 외부적립금';
+          | 'ADD_AFTER_PAYMENT'
+          | 'ADD_AFTER_EVENT_PAYMENT'
+          | 'ADD_AFTER_REPLACE_PAYMENT'
+          | 'ADD_POSTING'
+          | 'ADD_CANCEL'
+          | 'ADD_RETURN'
+          | 'ADD_MANUAL'
+          | 'ADD_EVENT'
+          | 'ADD_SIGNUP'
+          | 'ADD_BIRTHDAY'
+          | 'ADD_APP_INSTALL'
+          | 'ADD_GRADE'
+          | 'ADD_GRADE_BENEFIT'
+          | 'SUB_PAYMENT_USED'
+          | 'SUB_EXTRA_PAYMENT_USED'
+          | 'SUB_CANCEL'
+          | 'SUB_RETURN'
+          | 'SUB_DELETE_POSTING'
+          | 'SUB_EXPIRED'
+          | 'SUB_MANUAL'
+          | 'SUB_DELETE_ACCOUNT'
+          | 'EXTERNAL_ACCUMULATION';
         /**
          * @description 적립사유 코드 표시명
          * @example string
@@ -1919,10 +1876,10 @@ export interface components {
          * @enum {string}
          */
         accumulationStatus:
-          | 'GIVE: 지급'
-          | 'GIVE_BY_CANCELED: 차감롤백'
-          | 'SUBTRACTION: 차감'
-          | 'SUBTRACTION_BY_CANCELED: 지급롤백';
+          | 'GIVE'
+          | 'GIVE_BY_CANCELED'
+          | 'SUBTRACTION'
+          | 'SUBTRACTION_BY_CANCELED';
         /**
          * @description 등록일
          * @example YYYY-MM-DD HH:mm:ss
@@ -1958,7 +1915,7 @@ export interface components {
          * @example ADMIN
          * @enum {string}
          */
-        registerType: 'ADMIN: 운영자' | 'MEMBER: 회원' | 'GUEST: 비회원';
+        registerType: 'ADMIN' | 'MEMBER' | 'GUEST';
         /**
          * @description 제목
          * @example title
@@ -1969,7 +1926,7 @@ export interface components {
          * @example ADMIN
          * @enum {string}
          */
-        modifierType?: 'ADMIN: 운영자' | 'MEMBER: 회원' | 'GUEST: 비회원';
+        modifierType?: 'ADMIN' | 'MEMBER' | 'GUEST';
         /**
          * @description 내용 (nullable)
          * @example content
@@ -2134,7 +2091,7 @@ export interface components {
   responses: never;
   parameters: never;
   requestBodies: never;
-  headers: never;
+  headers?: never;
   pathItems: never;
 }
 
@@ -2176,22 +2133,22 @@ export interface operations {
          */
         keyword: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, IOS, AOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -2211,22 +2168,22 @@ export interface operations {
    */
   'get-board-config': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, IOS, AOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -2313,27 +2270,27 @@ export interface operations {
          */
         includeRecommended: boolean;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, IOS, AOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example accessToken
          */
-        accessToken: string;
+        accessToken?: string;
       };
       path: {
         /**
@@ -2372,27 +2329,27 @@ export interface operations {
    */
   'add-post': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, IOS, AOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example accessToken
          */
-        accessToken: string;
+        accessToken?: string;
       };
       path: {
         /**
@@ -2422,22 +2379,22 @@ export interface operations {
    */
   'get-board-categories': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, IOS, AOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
       path: {
         /**
@@ -2486,27 +2443,27 @@ export interface operations {
          */
         withReplied: boolean;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, IOS, AOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example accessToken
          */
-        accessToken: string;
+        accessToken?: string;
       };
       path: {
         /**
@@ -2541,27 +2498,27 @@ export interface operations {
    */
   'modify-post': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, IOS, AOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example accessToken
          */
-        accessToken: string;
+        accessToken?: string;
       };
       path: {
         /**
@@ -2598,27 +2555,27 @@ export interface operations {
    */
   'remove-post': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, IOS, AOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example accessToken
          */
-        accessToken: string;
+        accessToken?: string;
       };
       path: {
         /**
@@ -2655,27 +2612,27 @@ export interface operations {
    */
   'check-post-editable': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, IOS, AOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example accessToken
          */
-        accessToken: string;
+        accessToken?: string;
       };
       path: {
         /**
@@ -2708,27 +2665,27 @@ export interface operations {
    */
   'recommend-article': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, IOS, AOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example accessToken
          */
-        accessToken: string;
+        accessToken?: string;
       };
       path: {
         /**
@@ -2756,27 +2713,27 @@ export interface operations {
    */
   'cancel-recommend-article': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, IOS, AOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example accessToken
          */
-        accessToken: string;
+        accessToken?: string;
       };
       path: {
         /**
@@ -2823,22 +2780,22 @@ export interface operations {
          */
         includeRecommended: boolean;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, IOS, AOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
       path: {
         /**
@@ -2870,27 +2827,27 @@ export interface operations {
    */
   'report-posts': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, IOS, AOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example accessToken
          */
-        accessToken: string;
+        accessToken?: string;
       };
       path: {
         /**
@@ -2937,22 +2894,22 @@ export interface operations {
          */
         month: number;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, IOS, AOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -3031,27 +2988,27 @@ export interface operations {
          */
         searchType: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, IOS, AOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example accessToken
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     responses: {
@@ -3113,27 +3070,27 @@ export interface operations {
    */
   'add-inquiry': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, IOS, AOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example accessToken
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     requestBody?: {
@@ -3157,27 +3114,27 @@ export interface operations {
    */
   'get-inquiry-configuration': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, IOS, AOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example accessToken
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     responses: {
@@ -3199,27 +3156,27 @@ export interface operations {
    */
   'get-inquiry': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, IOS, AOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example accessToken
          */
-        accessToken: string;
+        accessToken?: string;
       };
       path: {
         /**
@@ -3250,27 +3207,27 @@ export interface operations {
    */
   'modify-inquiry': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, IOS, AOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example accessToken
          */
-        accessToken: string;
+        accessToken?: string;
       };
       path: {
         /**
@@ -3302,27 +3259,27 @@ export interface operations {
    */
   'remove-inquiry': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, IOS, AOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example accessToken
          */
-        accessToken: string;
+        accessToken?: string;
       };
       path: {
         /**
@@ -3363,27 +3320,27 @@ export interface operations {
    */
   'part-update-inquiry': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, IOS, AOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example accessToken
          */
-        accessToken: string;
+        accessToken?: string;
       };
       path: {
         /**
@@ -3419,22 +3376,22 @@ export interface operations {
          */
         pageTypes: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, IOS, AOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -3488,27 +3445,27 @@ export interface operations {
          */
         direction: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, IOS, AOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example accessToken
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     responses: {
@@ -3542,27 +3499,27 @@ export interface operations {
          */
         expireEndYmdt: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, IOS, AOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example accessToken
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     responses: {
@@ -3585,27 +3542,27 @@ export interface operations {
    */
   'search-estimated-accumulations': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, IOS, AOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example accessToken
          */
-        accessToken: string;
+        accessToken?: string;
       };
     };
     responses: {
@@ -3627,22 +3584,22 @@ export interface operations {
    */
   'get-instagram-media': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, IOS, AOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -3665,22 +3622,22 @@ export interface operations {
         /** @description 조회할 약관 타입 리스트 (MALL_INTRODUCTION: 쇼핑몰/회사 소개, USE: 이용약관, E_COMMERCE: 전자금융거래 이용약관, PI_PROCESS: 개인정보처리방침, PI_COLLECTION_AND_USE_REQUIRED: 개인정보 수집/이용, PI_COLLECTION_AND_USE_OPTIONAL: 개인정보 수집/이용, PI_PROCESS_CONSIGNMENT: 개인정보 처리/위탁, PI_THIRD_PARTY_PROVISION: 개인정보 제3자 제공, PI_COLLECTION_AND_USE_FOR_GUEST_ON_ARTICLE: 개인정보 수집/이용, ACCESS_GUIDE: 이용안내, WITHDRAWAL_GUIDE: 탈퇴안내, PI_SELLER_PROVISION: 개인정보 판매자 제공, PI_COLLECTION_AND_USE_ON_ORDER: 개인정보 수집/이용, ORDER_INFO_AGREE: 구매 동의, CLEARANCE_INFO_COLLECTION_AND_USE: 통관정보 수집/이용, TRANSFER_AGREE: 개인정보 국외 이전 동의, REGULAR_PAYMENT_USE: 정기결제(배송) 이용약관, AUTO_APPROVAL_USE: 자동 승인 이용약관, PI_LIQUOR_PURCHASE_PROVISION: 주류구매 개인정보 수집/이용, PI_RESTOCK_NOTICE: 개인정보 수집/이용) */
         termsTypes: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, IOS, AOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -3700,22 +3657,22 @@ export interface operations {
    */
   'post-search-used-terms': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, IOS, AOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     requestBody?: {
@@ -3739,22 +3696,22 @@ export interface operations {
    */
   'get-custom-terms': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, IOS, AOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     requestBody?: {
@@ -3793,22 +3750,22 @@ export interface operations {
          */
         futureDaysToShow: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, IOS, AOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -3830,22 +3787,22 @@ export interface operations {
    */
   'get-term': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, IOS, AOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
       path: {
         /**
@@ -3875,22 +3832,22 @@ export interface operations {
    */
   'post-terms': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, IOS, AOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
       path: {
         /**

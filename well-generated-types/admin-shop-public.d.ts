@@ -3,9 +3,8 @@
  * Do not make direct changes to the file.
  */
 
-
 export interface paths {
-  "/malls": {
+  '/malls': {
     /**
      * 몰 정보 조회하기
      * @description ## 부가설명 및 특이사항
@@ -35,31 +34,31 @@ export interface paths {
      *
      * [https://shopby.works/guide/skin/dev-cover/call-api#call-info](https://shopby.works/guide/skin/dev-cover/call-api#call-info)
      */
-    get: operations["get-malls"];
+    get: operations['get-malls'];
   };
-  "/malls/internationalization": {
+  '/malls/internationalization': {
     /**
      * 현재 몰의 다국어, 환율 설정 조회
      * @description ## 부가설명 및 특이사항
      * 현재 몰의 다국어, 환율 설정 조회을 조회하는 API 입니다.
      */
-    get: operations["get-malls-i18n"];
+    get: operations['get-malls-i18n'];
   };
-  "/malls/partners": {
+  '/malls/partners': {
     /**
      * [샵바이프리미엄 전용] 몰과 계약한 파트너 목록 조회하기
      * @description ## 부가설명 및 특이사항
      * 몰과 계약한 파트너 목록을 조회하는 API입니다.
      */
-    get: operations["get-malls-partners"];
+    get: operations['get-malls-partners'];
   };
-  "/malls/ssl": {
+  '/malls/ssl': {
     /**
      * 현재 도메인의 보안서버정보 조회하기
      * @description ## 부가설명 및 특이사항
      * 현재 도메인의 보안서버정보를 조회하는 API입니다.
      */
-    get: operations["get-malls-ssl"];
+    get: operations['get-malls-ssl'];
   };
 }
 
@@ -67,81 +66,81 @@ export type webhooks = Record<string, never>;
 
 export interface components {
   schemas: {
-    "malls-partners-200843305": {
-        /**
-         * @description 파트너 번호
-         * @example 0
-         */
-        partnerNo: number;
-        /**
-         * @description 대표자명 (nullable)
-         * @example string
-         */
-        ownerName?: string;
-        /**
-         * @description FAX 번호 (nullable)
-         * @example string
-         */
-        faxNo?: string;
-        /**
-         * @description 판매자명 (nullable)
-         * @example string
-         */
-        partnerName?: string;
-        /**
-         * @description 사업장 주소
-         * @example string
-         */
-        officeAddressLabel: string;
-        /**
-         * @description 상호명 (nullable)
-         * @example string
-         */
-        companyName?: string;
-        /**
-         * @description 사업자 번호 (nullable)
-         * @example string
-         */
-        businessRegistrationNo?: string;
-        /**
-         * @description 통신판매신고번호 (nullable)
-         * @example string
-         */
-        onlineMarketingBusinessDeclarationNo?: string;
-        /**
-         * @description 대표 이메일 (nullable)
-         * @example string
-         */
-        email?: string;
-        /**
-         * @description 대표번호 (nullable)
-         * @example string
-         */
-        phoneNo?: string;
-      }[];
-    "malls-ssl-953646756": {
-        /**
-         * @description 디바이스타입
-         * @example PC
-         */
-        deviceType: string;
-        /**
-         * @description 도메인
-         * @example aaa.co.kr
-         */
-        domain: string;
-        /**
-         * @description 몰번호
-         * @example 1
-         */
-        mallNo: number;
-        /**
-         * @description 보안서버 인증서 씰 스크립트 (nullable)
-         * @example trustSeal-script
-         */
-        trustSeal?: string;
-      }[];
-    "malls-internationalization-996890286": {
+    'malls-partners-200843305': {
+      /**
+       * @description 파트너 번호
+       * @example 0
+       */
+      partnerNo: number;
+      /**
+       * @description 대표자명 (nullable)
+       * @example string
+       */
+      ownerName?: string;
+      /**
+       * @description FAX 번호 (nullable)
+       * @example string
+       */
+      faxNo?: string;
+      /**
+       * @description 판매자명 (nullable)
+       * @example string
+       */
+      partnerName?: string;
+      /**
+       * @description 사업장 주소
+       * @example string
+       */
+      officeAddressLabel: string;
+      /**
+       * @description 상호명 (nullable)
+       * @example string
+       */
+      companyName?: string;
+      /**
+       * @description 사업자 번호 (nullable)
+       * @example string
+       */
+      businessRegistrationNo?: string;
+      /**
+       * @description 통신판매신고번호 (nullable)
+       * @example string
+       */
+      onlineMarketingBusinessDeclarationNo?: string;
+      /**
+       * @description 대표 이메일 (nullable)
+       * @example string
+       */
+      email?: string;
+      /**
+       * @description 대표번호 (nullable)
+       * @example string
+       */
+      phoneNo?: string;
+    }[];
+    'malls-ssl-953646756': {
+      /**
+       * @description 디바이스타입
+       * @example PC
+       */
+      deviceType: string;
+      /**
+       * @description 도메인
+       * @example aaa.co.kr
+       */
+      domain: string;
+      /**
+       * @description 몰번호
+       * @example 1
+       */
+      mallNo: number;
+      /**
+       * @description 보안서버 인증서 씰 스크립트 (nullable)
+       * @example trustSeal-script
+       */
+      trustSeal?: string;
+    }[];
+    'malls-internationalization-996890286': {
       /**
        * @description 다국어 설정
        * @example [KO]
@@ -149,17 +148,17 @@ export interface components {
       languages: (Record<string, never> | boolean | string | number)[];
       /** @description 통화 설정^|[CurrencyResponse(exchangeTo=KRW, exchangeRate=1)] */
       currencies: {
-          /**
-           * @description 통화
-           * @example KRW
-           */
-          exchangeTo: string;
-          /**
-           * @description 비율
-           * @example 1
-           */
-          exchangeRate: number;
-        }[];
+        /**
+         * @description 통화
+         * @example KRW
+         */
+        exchangeTo: string;
+        /**
+         * @description 비율
+         * @example 1
+         */
+        exchangeRate: number;
+      }[];
     };
     malls1221953710: {
       /** @description 회원 가입 설정 */
@@ -169,86 +168,86 @@ export interface components {
          * @example NOT_USED
          * @enum {string}
          */
-        birthday?: "USED: 사용함" | "REQUIRED: 필수" | "NOT_USED: 사용안함";
+        birthday?: 'USED' | 'REQUIRED' | 'NOT_USED';
         /**
          * @description 비밀번호 필수 여부 (nullable)
          * @example NOT_USED
          * @enum {string}
          */
-        password?: "USED: 사용함" | "REQUIRED: 필수" | "NOT_USED: 사용안함";
+        password?: 'USED' | 'REQUIRED' | 'NOT_USED';
         /**
          * @description 주소 필수 여부 (nullable)
          * @example NOT_USED
          * @enum {string}
          */
-        address?: "USED: 사용함" | "REQUIRED: 필수" | "NOT_USED: 사용안함";
+        address?: 'USED' | 'REQUIRED' | 'NOT_USED';
         /**
          * @description 국적 필수 여부 (nullable)
          * @example NOT_USED
          * @enum {string}
          */
-        nationality?: "USED: 사용함" | "REQUIRED: 필수" | "NOT_USED: 사용안함";
+        nationality?: 'USED' | 'REQUIRED' | 'NOT_USED';
         /**
          * @description 성별 필수 여부 (nullable)
          * @example NOT_USED
          * @enum {string}
          */
-        sex?: "USED: 사용함" | "REQUIRED: 필수" | "NOT_USED: 사용안함";
+        sex?: 'USED' | 'REQUIRED' | 'NOT_USED';
         /**
          * @description 닉네임 필수 여부 (nullable)
          * @example NOT_USED
          * @enum {string}
          */
-        nickname?: "USED: 사용함" | "REQUIRED: 필수" | "NOT_USED: 사용안함";
+        nickname?: 'USED' | 'REQUIRED' | 'NOT_USED';
         /**
          * @description 회원명 필수 여부 (nullable)
          * @example NOT_USED
          * @enum {string}
          */
-        memberName?: "USED: 사용함" | "REQUIRED: 필수" | "NOT_USED: 사용안함";
+        memberName?: 'USED' | 'REQUIRED' | 'NOT_USED';
         /**
          * @description 휴대전화번호 필수 여부 (nullable)
          * @example NOT_USED
          * @enum {string}
          */
-        mobileNo?: "USED: 사용함" | "REQUIRED: 필수" | "NOT_USED: 사용안함";
+        mobileNo?: 'USED' | 'REQUIRED' | 'NOT_USED';
         /**
          * @description 전화번호 필수 여부 (nullable)
          * @example NOT_USED
          * @enum {string}
          */
-        phoneNo?: "USED: 사용함" | "REQUIRED: 필수" | "NOT_USED: 사용안함";
+        phoneNo?: 'USED' | 'REQUIRED' | 'NOT_USED';
         /**
          * @description 이메일 필수 여부 (nullable)
          * @example NOT_USED
          * @enum {string}
          */
-        email?: "USED: 사용함" | "REQUIRED: 필수" | "NOT_USED: 사용안함";
+        email?: 'USED' | 'REQUIRED' | 'NOT_USED';
         /**
          * @description 아이디 필수 여부 (nullable)
          * @example NOT_USED
          * @enum {string}
          */
-        memberId?: "USED: 사용함" | "REQUIRED: 필수" | "NOT_USED: 사용안함";
+        memberId?: 'USED' | 'REQUIRED' | 'NOT_USED';
       };
       /** @description 1:1문의 유형 목록 */
       inquiryType: {
-          /**
-           * @description 1:1문의 유형 설명
-           * @example 네이버페이 사용 시 네이버페이를 통해서 접수되는 문의가 연동되는 유형입니다.
-           */
-          inquiryTypeDescription: string;
-          /**
-           * @description 1:1문의 유형 번호
-           * @example 6276
-           */
-          inquiryTypeNo: number;
-          /**
-           * @description 1:1문의 유형 이름
-           * @example 네이버페이문의
-           */
-          inquiryTypeName: string;
-        }[];
+        /**
+         * @description 1:1문의 유형 설명
+         * @example 네이버페이 사용 시 네이버페이를 통해서 접수되는 문의가 연동되는 유형입니다.
+         */
+        inquiryTypeDescription: string;
+        /**
+         * @description 1:1문의 유형 번호
+         * @example 6276
+         */
+        inquiryTypeNo: number;
+        /**
+         * @description 1:1문의 유형 이름
+         * @example 네이버페이문의
+         */
+        inquiryTypeName: string;
+      }[];
       /** @description 쇼핑몰 계좌 정보 */
       bankAccountInfo: {
         /**
@@ -268,47 +267,304 @@ export interface components {
         bankName?: string;
       };
       /** @description 은행 목록 */
-      bankType: ({
-          /**
-           * @description KCP 은행 관리코드
-           * @example 04
-           * @enum {string}
-           */
-          kcpCode: "02: 산업은행" | "03: 기업은행" | "04: 국민은행" | "05: 외환은행" | "07: 수협" | "08: 수출입은행" | "11: NH농협은행" | "12: 지역농축협" | "20: 우리은행" | "23: SC제일은행" | "27: 한국씨티은행" | "31: 대구은행" | "32: 부산은행" | "34: 광주은행" | "35: 제주은행" | "37: 전북은행" | "39: 경남은행" | "45: 새마을금고" | "48: 신협" | "54: HSBC은행" | "64: 산림조합중앙회" | "71: 우체국" | "81: KEB하나은행" | "26: 신한은행" | "89: 케이뱅크" | "90: 카카오뱅크" | "92: 토스뱅크" | "209: 유안타증권" | "218: KB증권" | "238: 미래에셋증권" | "238: 미래에셋대우증권" | "240: 삼성증권" | "243: 한국투자증권" | "247: NH투자증권" | "261: 교보증권" | "262: 하이투자증권" | "263: HMC투자증권" | "264: 키움증권" | "265: 이베스트투자증권" | "266: SK증권" | "267: 대신증권" | "268: 솔로몬증권" | "269: 한화투자증권" | "270: 하나금융투자" | "278: 신한금융투자" | "279: DB금융투자" | "280: 유진투자증권" | "287: 메리츠종합금융증권" | "290: 부국증권" | "291: 신영증권" | "292: 케이프투자증권";
-          /**
-           * @description 은행 코드
-           * @example 004
-           * @enum {string}
-           */
-          code: "000: 미확인은행" | "002: 산업은행" | "003: 기업은행" | "004: 국민은행" | "005: 외환은행" | "007: 수협" | "008: 수출입은행" | "011: NH농협은행" | "012: 지역농축협" | "020: 우리은행" | "023: SC제일은행" | "027: 한국씨티은행" | "031: 대구은행" | "032: 부산은행" | "034: 광주은행" | "035: 제주은행" | "037: 전북은행" | "039: 경남은행" | "045: 새마을금고" | "048: 신협" | "050: 상호저축은행" | "054: HSBC은행" | "055: 도이치은행" | "064: 산림조합중앙회" | "071: 우체국" | "081: KEB하나은행" | "088: 신한은행" | "089: 케이뱅크" | "090: 카카오뱅크" | "092: 토스뱅크" | "209: 유안타증권" | "218: KB증권" | "230: 미래에셋증권" | "238: 미래에셋대우증권" | "240: 삼성증권" | "243: 한국투자증권" | "247: NH투자증권" | "261: 교보증권" | "262: 하이투자증권" | "263: HMC투자증권" | "264: 키움증권" | "265: 이베스트투자증권" | "266: SK증권" | "267: 대신증권" | "268: 솔로몬증권" | "269: 한화투자증권" | "270: 하나금융투자" | "278: 신한금융투자" | "279: DB금융투자" | "280: 유진투자증권" | "287: 메리츠종합금융증권" | "290: 부국증권" | "291: 신영증권" | "292: 케이프투자증권" | "901: 미즈호은행" | "905: UFJ은행" | "909: 미쓰이스미토모은행" | "910: 리소나은행";
-          /**
-           * @description 은행명
-           * @example 국민은행
-           * @enum {string}
-           */
-          name: "미확인은행" | "산업은행" | "기업은행" | "국민은행" | "외환은행" | "수협" | "수출입은행" | "NH농협은행" | "지역농축협" | "우리은행" | "SC제일은행" | "한국씨티은행" | "대구은행" | "부산은행" | "광주은행" | "제주은행" | "전북은행" | "경남은행" | "새마을금고" | "신협" | "상호저축은행" | "HSBC은행" | "도이치은행" | "산림조합중앙회" | "우체국" | "KEB하나은행" | "신한은행" | "케이뱅크" | "카카오뱅크" | "토스뱅크" | "유안타증권" | "KB증권" | "미래에셋증권" | "미래에셋대우증권" | "삼성증권" | "한국투자증권" | "NH투자증권" | "교보증권" | "하이투자증권" | "HMC투자증권" | "키움증권" | "이베스트투자증권" | "SK증권" | "대신증권" | "솔로몬증권" | "한화투자증권" | "하나금융투자" | "신한금융투자" | "DB금융투자" | "유진투자증권" | "메리츠종합금융증권" | "부국증권" | "신영증권" | "케이프투자증권" | "미즈호은행" | "UFJ은행" | "미쓰이스미토모은행" | "리소나은행";
-          /**
-           * @description 은행 영문 관리명
-           * @example KB
-           * @enum {string}
-           */
-          value: "ANONYMOUS: 미확인은행" | "KDB: 산업은행" | "IBK: 기업은행" | "KB: 국민은행" | "KEB: 외환은행" | "SUHYUP: 수협" | "KEXIM: 수출입은행" | "NH: NH농협은행" | "NHLOCAL: 지역농축협" | "WOORI: 우리은행" | "SC: SC제일은행" | "CITY: 한국씨티은행" | "DAEGU: 대구은행" | "PUSAN: 부산은행" | "GWANGJU: 광주은행" | "JEJU: 제주은행" | "JEONBUK: 전북은행" | "GYEONGNAM: 경남은행" | "KFCC: 새마을금고" | "CU: 신협" | "SANGHO: 상호저축은행" | "HSBC: HSBC은행" | "DEUTSCHE: 도이치은행" | "NFCF: 산림조합중앙회" | "EPOST: 우체국" | "KEBHANA: KEB하나은행" | "SHINHAN: 신한은행" | "KBANK: 케이뱅크" | "KAKAO: 카카오뱅크" | "TOSS: 토스뱅크" | "YUANTA: 유안타증권" | "KBSEC: KB증권" | "MIRAE: 미래에셋증권" | "MIRAEDAEWOO: 미래에셋대우증권" | "SAMSUNG: 삼성증권" | "HANKOOK: 한국투자증권" | "NH_INVEST: NH투자증권" | "KYOBO: 교보증권" | "HI_INVEST: 하이투자증권" | "HMC_INVEST: HMC투자증권" | "KIWOOM: 키움증권" | "EBEST: 이베스트투자증권" | "SK: SK증권" | "DAISHIN: 대신증권" | "SOLOMON_INVEST: 솔로몬증권" | "HANHWA: 한화투자증권" | "HANA_INVEST: 하나금융투자" | "SHINHAN_INVEST: 신한금융투자" | "DONGBU: DB금융투자" | "EUGENE_INVEST: 유진투자증권" | "MERITZ_COMPREHENSIVE: 메리츠종합금융증권" | "BOOKOOK: 부국증권" | "SHINYOUNG: 신영증권" | "CAPE: 케이프투자증권" | "MIZUHO: 미즈호은행" | "UFJ: UFJ은행" | "SMBC: 미쓰이스미토모은행" | "RESONA: 리소나은행";
-        })[];
+      bankType: {
+        /**
+         * @description KCP 은행 관리코드
+         * @example 04
+         * @enum {string}
+         */
+        kcpCode:
+          | '02'
+          | '03'
+          | '04'
+          | '05'
+          | '07'
+          | '08'
+          | '11'
+          | '12'
+          | '20'
+          | '23'
+          | '27'
+          | '31'
+          | '32'
+          | '34'
+          | '35'
+          | '37'
+          | '39'
+          | '45'
+          | '48'
+          | '54'
+          | '64'
+          | '71'
+          | '81'
+          | '26'
+          | '89'
+          | '90'
+          | '92'
+          | '209'
+          | '218'
+          | '238'
+          | '238'
+          | '240'
+          | '243'
+          | '247'
+          | '261'
+          | '262'
+          | '263'
+          | '264'
+          | '265'
+          | '266'
+          | '267'
+          | '268'
+          | '269'
+          | '270'
+          | '278'
+          | '279'
+          | '280'
+          | '287'
+          | '290'
+          | '291'
+          | '292';
+        /**
+         * @description 은행 코드
+         * @example 004
+         * @enum {string}
+         */
+        code:
+          | '000'
+          | '002'
+          | '003'
+          | '004'
+          | '005'
+          | '007'
+          | '008'
+          | '011'
+          | '012'
+          | '020'
+          | '023'
+          | '027'
+          | '031'
+          | '032'
+          | '034'
+          | '035'
+          | '037'
+          | '039'
+          | '045'
+          | '048'
+          | '050'
+          | '054'
+          | '055'
+          | '064'
+          | '071'
+          | '081'
+          | '088'
+          | '089'
+          | '090'
+          | '092'
+          | '209'
+          | '218'
+          | '230'
+          | '238'
+          | '240'
+          | '243'
+          | '247'
+          | '261'
+          | '262'
+          | '263'
+          | '264'
+          | '265'
+          | '266'
+          | '267'
+          | '268'
+          | '269'
+          | '270'
+          | '278'
+          | '279'
+          | '280'
+          | '287'
+          | '290'
+          | '291'
+          | '292'
+          | '901'
+          | '905'
+          | '909'
+          | '910';
+        /**
+         * @description 은행명
+         * @example 국민은행
+         * @enum {string}
+         */
+        name:
+          | '미확인은행'
+          | '산업은행'
+          | '기업은행'
+          | '국민은행'
+          | '외환은행'
+          | '수협'
+          | '수출입은행'
+          | 'NH농협은행'
+          | '지역농축협'
+          | '우리은행'
+          | 'SC제일은행'
+          | '한국씨티은행'
+          | '대구은행'
+          | '부산은행'
+          | '광주은행'
+          | '제주은행'
+          | '전북은행'
+          | '경남은행'
+          | '새마을금고'
+          | '신협'
+          | '상호저축은행'
+          | 'HSBC은행'
+          | '도이치은행'
+          | '산림조합중앙회'
+          | '우체국'
+          | 'KEB하나은행'
+          | '신한은행'
+          | '케이뱅크'
+          | '카카오뱅크'
+          | '토스뱅크'
+          | '유안타증권'
+          | 'KB증권'
+          | '미래에셋증권'
+          | '미래에셋대우증권'
+          | '삼성증권'
+          | '한국투자증권'
+          | 'NH투자증권'
+          | '교보증권'
+          | '하이투자증권'
+          | 'HMC투자증권'
+          | '키움증권'
+          | '이베스트투자증권'
+          | 'SK증권'
+          | '대신증권'
+          | '솔로몬증권'
+          | '한화투자증권'
+          | '하나금융투자'
+          | '신한금융투자'
+          | 'DB금융투자'
+          | '유진투자증권'
+          | '메리츠종합금융증권'
+          | '부국증권'
+          | '신영증권'
+          | '케이프투자증권'
+          | '미즈호은행'
+          | 'UFJ은행'
+          | '미쓰이스미토모은행'
+          | '리소나은행';
+        /**
+         * @description 은행 영문 관리명
+         * @example KB
+         * @enum {string}
+         */
+        value:
+          | 'ANONYMOUS'
+          | 'KDB'
+          | 'IBK'
+          | 'KB'
+          | 'KEB'
+          | 'SUHYUP'
+          | 'KEXIM'
+          | 'NH'
+          | 'NHLOCAL'
+          | 'WOORI'
+          | 'SC'
+          | 'CITY'
+          | 'DAEGU'
+          | 'PUSAN'
+          | 'GWANGJU'
+          | 'JEJU'
+          | 'JEONBUK'
+          | 'GYEONGNAM'
+          | 'KFCC'
+          | 'CU'
+          | 'SANGHO'
+          | 'HSBC'
+          | 'DEUTSCHE'
+          | 'NFCF'
+          | 'EPOST'
+          | 'KEBHANA'
+          | 'SHINHAN'
+          | 'KBANK'
+          | 'KAKAO'
+          | 'TOSS'
+          | 'YUANTA'
+          | 'KBSEC'
+          | 'MIRAE'
+          | 'MIRAEDAEWOO'
+          | 'SAMSUNG'
+          | 'HANKOOK'
+          | 'NH_INVEST'
+          | 'KYOBO'
+          | 'HI_INVEST'
+          | 'HMC_INVEST'
+          | 'KIWOOM'
+          | 'EBEST'
+          | 'SK'
+          | 'DAISHIN'
+          | 'SOLOMON_INVEST'
+          | 'HANHWA'
+          | 'HANA_INVEST'
+          | 'SHINHAN_INVEST'
+          | 'DONGBU'
+          | 'EUGENE_INVEST'
+          | 'MERITZ_COMPREHENSIVE'
+          | 'BOOKOOK'
+          | 'SHINYOUNG'
+          | 'CAPE'
+          | 'MIZUHO'
+          | 'UFJ'
+          | 'SMBC'
+          | 'RESONA';
+      }[];
       /** @description 주문상태 목록 */
-      orderStatusType: ({
-          /**
-           * @description 주문상태 명칭
-           * @example 입금대기
-           * @enum {string}
-           */
-          label: "입금대기" | "결제완료" | "상품준비중" | "배송준비중" | "배송중" | "배송완료" | "구매확정" | "취소완료" | "반품완료" | "교환완료" | "결제대기" | "결제포기" | "결제실패" | "삭제" | "교환대기" | "환불완료";
-          /**
-           * @description 주문상태 값
-           * @example DEPOSIT_WAIT
-           * @enum {string}
-           */
-          value: "DEPOSIT_WAIT: 입금대기" | "PAY_DONE: 결제완료" | "PRODUCT_PREPARE: 상품준비중" | "DELIVERY_PREPARE: 배송준비중" | "DELIVERY_ING: 배송중" | "DELIVERY_DONE: 배송완료" | "BUY_CONFIRM: 구매확정" | "CANCEL_DONE: 취소완료" | "RETURN_DONE: 반품완료" | "EXCHANGE_DONE: 교환완료" | "PAY_WAIT: 결제대기" | "PAY_CANCEL: 결제포기" | "PAY_FAIL: 결제실패" | "DELETE: 삭제" | "EXCHANGE_WAIT: 교환대기" | "REFUND_DONE: 환불완료";
-        })[];
+      orderStatusType: {
+        /**
+         * @description 주문상태 명칭
+         * @example 입금대기
+         * @enum {string}
+         */
+        label:
+          | '입금대기'
+          | '결제완료'
+          | '상품준비중'
+          | '배송준비중'
+          | '배송중'
+          | '배송완료'
+          | '구매확정'
+          | '취소완료'
+          | '반품완료'
+          | '교환완료'
+          | '결제대기'
+          | '결제포기'
+          | '결제실패'
+          | '삭제'
+          | '교환대기'
+          | '환불완료';
+        /**
+         * @description 주문상태 값
+         * @example DEPOSIT_WAIT
+         * @enum {string}
+         */
+        value:
+          | 'DEPOSIT_WAIT'
+          | 'PAY_DONE'
+          | 'PRODUCT_PREPARE'
+          | 'DELIVERY_PREPARE'
+          | 'DELIVERY_ING'
+          | 'DELIVERY_DONE'
+          | 'BUY_CONFIRM'
+          | 'CANCEL_DONE'
+          | 'RETURN_DONE'
+          | 'EXCHANGE_DONE'
+          | 'PAY_WAIT'
+          | 'PAY_CANCEL'
+          | 'PAY_FAIL'
+          | 'DELETE'
+          | 'EXCHANGE_WAIT'
+          | 'REFUND_DONE';
+      }[];
       /** @description 쇼핑몰 정보 */
       mall: {
         /**
@@ -328,13 +584,13 @@ export interface components {
            * @example ONLY_MEMBER
            * @enum {string}
            */
-          pc: "NONE: 사용안함" | "NO_ACCESS: 접속 불가" | "ONLY_MEMBER: 회원 인증" | "ONLY_ADULT: 성인 인증";
+          pc: 'NONE' | 'NO_ACCESS' | 'ONLY_MEMBER' | 'ONLY_ADULT';
           /**
            * @description 인트로 페이지 모바일 웹 설정정보
            * @example ONLY_ADULT
            * @enum {string}
            */
-          mobile: "NONE: 사용안함" | "NO_ACCESS: 접속 불가" | "ONLY_MEMBER: 회원 인증" | "ONLY_ADULT: 성인 인증";
+          mobile: 'NONE' | 'NO_ACCESS' | 'ONLY_MEMBER' | 'ONLY_ADULT';
         };
         /**
          * @description 쇼핑몰 서비스 국가
@@ -347,108 +603,113 @@ export interface components {
          */
         createdDateTime: string;
         /** @description 등급 */
-        grades: ({
-            /** @description 적립금 자동지급 */
-            reserveAutoSupplying: {
-              /**
-               * @description 적립금 자동지급 적립금액
-               * @example 100
-               */
-              amount: number;
-              /**
-               * @description 적립금 자동지급 사용여부
-               * @example true
-               */
-              used: boolean;
-              /**
-               * @description 적립금 자동지급 유형
-               * @example MONTHLY
-               * @enum {string}
-               */
-              type: "NONE: 사용 안 함" | "ONCE: 1회 지급" | "MONTHLY: 매월 지급";
-            };
-            /** @description 회원 등급 평가 조건 */
-            evaluationCondition: {
-              /**
-               * @description 최소 구매 금액
-               * @example 100000
-               */
-              minimumPayment: number;
-              /**
-               * @description 최소 구매 횟수
-               * @example 10
-               */
-              minimumCount: number;
-            };
-            /** @description 회원 등급에 발급된 쿠폰 */
-            coupons: ({
-                /**
-                 * @description 쿠폰 발급 유형
-                 * @example CODE_DESIGNATE_ADMIN_ONLY
-                 * @enum {string}
-                 */
-                issueType: "DOWNLOAD: 다운로드" | "CODE_DESIGNATE: 지정코드" | "CODE_RANDOM: 난수코드" | "INSERT: 인서트 발급" | "CODE_DESIGNATE_ADMIN_ONLY: 관리자 지정코드";
-                /**
-                 * @description 최대 할인금액 (정률할인시)
-                 * @example 10
-                 */
-                maximumDiscountAmount: number;
-                /**
-                 * @description 쿠폰 이름
-                 * @example 실버쿠폰
-                 */
-                couponName: string;
-                /**
-                 * @description 할인률 (정률할인시)
-                 * @example 10
-                 */
-                discountPercent: number;
-                /**
-                 * @description 할인금액 (정액할인시)
-                 * @example 1000
-                 */
-                discountAmount: number;
-                /**
-                 * @description 쿠폰 할인 유형
-                 * @example PERCENT
-                 * @enum {string}
-                 */
-                discountType: "AMOUNT: 정액할인" | "PERCENT: 정률할인";
-                /**
-                 * @description 쿠폰 번호
-                 * @example 2345
-                 */
-                couponNo: number;
-              })[];
+        grades: {
+          /** @description 적립금 자동지급 */
+          reserveAutoSupplying: {
             /**
-             * @description 등급 설명
-             * @example 기본등급입니다.
+             * @description 적립금 자동지급 적립금액
+             * @example 100
              */
-            description: string;
+            amount: number;
             /**
-             * @description 등급명
-             * @example 기본등급
-             */
-            label: string;
-            /**
-             * @description 등급 사용 여부
+             * @description 적립금 자동지급 사용여부
              * @example true
              */
             used: boolean;
-            /** @description 적립금 혜택 */
-            reserveBenefit: {
-              /**
-               * @description 적립금 혜택 적립률
-               * @example 10
-               */
-              reserveRate: number;
-              /**
-               * @description 적립금 혜택 사용여부
-               * @example true
-               */
-              used: boolean;
-            };
-          })[];
+            /**
+             * @description 적립금 자동지급 유형
+             * @example MONTHLY
+             * @enum {string}
+             */
+            type: 'NONE' | 'ONCE' | 'MONTHLY';
+          };
+          /** @description 회원 등급 평가 조건 */
+          evaluationCondition: {
+            /**
+             * @description 최소 구매 금액
+             * @example 100000
+             */
+            minimumPayment: number;
+            /**
+             * @description 최소 구매 횟수
+             * @example 10
+             */
+            minimumCount: number;
+          };
+          /** @description 회원 등급에 발급된 쿠폰 */
+          coupons: {
+            /**
+             * @description 쿠폰 발급 유형
+             * @example CODE_DESIGNATE_ADMIN_ONLY
+             * @enum {string}
+             */
+            issueType:
+              | 'DOWNLOAD'
+              | 'CODE_DESIGNATE'
+              | 'CODE_RANDOM'
+              | 'INSERT'
+              | 'CODE_DESIGNATE_ADMIN_ONLY';
+            /**
+             * @description 최대 할인금액 (정률할인시)
+             * @example 10
+             */
+            maximumDiscountAmount: number;
+            /**
+             * @description 쿠폰 이름
+             * @example 실버쿠폰
+             */
+            couponName: string;
+            /**
+             * @description 할인률 (정률할인시)
+             * @example 10
+             */
+            discountPercent: number;
+            /**
+             * @description 할인금액 (정액할인시)
+             * @example 1000
+             */
+            discountAmount: number;
+            /**
+             * @description 쿠폰 할인 유형
+             * @example PERCENT
+             * @enum {string}
+             */
+            discountType: 'AMOUNT' | 'PERCENT';
+            /**
+             * @description 쿠폰 번호
+             * @example 2345
+             */
+            couponNo: number;
+          }[];
+          /**
+           * @description 등급 설명
+           * @example 기본등급입니다.
+           */
+          description: string;
+          /**
+           * @description 등급명
+           * @example 기본등급
+           */
+          label: string;
+          /**
+           * @description 등급 사용 여부
+           * @example true
+           */
+          used: boolean;
+          /** @description 적립금 혜택 */
+          reserveBenefit: {
+            /**
+             * @description 적립금 혜택 적립률
+             * @example 10
+             */
+            reserveRate: number;
+            /**
+             * @description 적립금 혜택 사용여부
+             * @example true
+             */
+            used: boolean;
+          };
+        }[];
         /** @description 서비스센터 정보 */
         serviceCenter: {
           /**
@@ -474,7 +735,24 @@ export interface components {
            * @example KCP
            * @enum {string}
            */
-          pgType: "PAYCO: 페이코" | "PAYPAL: 페이팔" | "STRIPE: 스트라이프" | "KCP: KCP" | "INICIS: 이니시스" | "KCP_MOBILE: KCP 모바일" | "KCP_APP: KCP 앱" | "NAVER_PAY: 네이버페이" | "LIIVMATE: 리브메이트" | "PAYPALPRO: 페이팔 프로" | "ATHOR_NET: Athonet" | "KAKAO_PAY: 카카오페이" | "NAVER_EASY_PAY: 이지페이" | "TOSS_PAYMENTS: 토스페이먼츠" | "CHAI: CHAI" | "VERITRANS: VeriTrans" | "EXIMBAY_GLOBAL: 엑심베이";
+          pgType:
+            | 'PAYCO'
+            | 'PAYPAL'
+            | 'STRIPE'
+            | 'KCP'
+            | 'INICIS'
+            | 'KCP_MOBILE'
+            | 'KCP_APP'
+            | 'NAVER_PAY'
+            | 'LIIVMATE'
+            | 'PAYPALPRO'
+            | 'ATHOR_NET'
+            | 'KAKAO_PAY'
+            | 'NAVER_EASY_PAY'
+            | 'TOSS_PAYMENTS'
+            | 'CHAI'
+            | 'VERITRANS'
+            | 'EXIMBAY_GLOBAL';
           /**
            * @description 에스크로 이미지 노출여부
            * @example true
@@ -506,20 +784,40 @@ export interface components {
         };
       };
       /** @description 클레임 사유 목록 */
-      claimReasonType: ({
-          /**
-           * @description 클레임 사유 명칭
-           * @example 입금전취소
-           * @enum {string}
-           */
-          label: "단순변심(색상,사이즈)" | "상품불량/파손" | "배송누락/오배송" | "재고부족(시스템)" | "입금전취소" | "상품상세 정보와 다름" | "판매자 배송 지연" | "상품 품절/재고 없음" | "기타(판매자 귀책)" | "기타(구매자 귀책)";
-          /**
-           * @description 클레임 사유 값
-           * @example CANCEL_BEFORE_PAY
-           * @enum {string}
-           */
-          value: "CHANGE_MIND: 단순변심(색상,사이즈)" | "DEFECTIVE_PRODUCT: 상품불량/파손" | "WRONG_DELIVERY: 배송누락/오배송" | "OUT_OF_STOCK_SYSTEM: 재고부족(시스템)" | "CANCEL_BEFORE_PAY: 입금전취소" | "WRONG_PRODUCT_DETAIL: 상품상세 정보와 다름" | "DELAY_DELIVERY: 판매자 배송 지연" | "OUT_OF_STOCK: 상품 품절/재고 없음" | "OTHERS_SELLER: 기타(판매자 귀책)" | "OTHERS_BUYER: 기타(구매자 귀책)";
-        })[];
+      claimReasonType: {
+        /**
+         * @description 클레임 사유 명칭
+         * @example 입금전취소
+         * @enum {string}
+         */
+        label:
+          | '단순변심(색상,사이즈)'
+          | '상품불량/파손'
+          | '배송누락/오배송'
+          | '재고부족(시스템)'
+          | '입금전취소'
+          | '상품상세 정보와 다름'
+          | '판매자 배송 지연'
+          | '상품 품절/재고 없음'
+          | '기타(판매자 귀책)'
+          | '기타(구매자 귀책)';
+        /**
+         * @description 클레임 사유 값
+         * @example CANCEL_BEFORE_PAY
+         * @enum {string}
+         */
+        value:
+          | 'CHANGE_MIND'
+          | 'DEFECTIVE_PRODUCT'
+          | 'WRONG_DELIVERY'
+          | 'OUT_OF_STOCK_SYSTEM'
+          | 'CANCEL_BEFORE_PAY'
+          | 'WRONG_PRODUCT_DETAIL'
+          | 'DELAY_DELIVERY'
+          | 'OUT_OF_STOCK'
+          | 'OTHERS_SELLER'
+          | 'OTHERS_BUYER';
+      }[];
       /** @description 쇼핑몰 기본정보 */
       serviceBasicInfo: {
         /**
@@ -628,18 +926,36 @@ export interface components {
          * @example SMS_OCCUPANCY_AUTHENTICATION
          * @enum {string}
          */
-        authenticationType?: "AUTHENTICATION_BY_PHONE: 휴대폰 본인 인증" | "SMS_AUTHENTICATION: SMS 비점유 인증" | "SMS_OCCUPANCY_AUTHENTICATION: SMS 점유 인증" | "AUTHENTICATION_BY_EMAIL: EMAIL 인증" | "NOT_USED: 인증 없음";
+        authenticationType?:
+          | 'AUTHENTICATION_BY_PHONE'
+          | 'SMS_AUTHENTICATION'
+          | 'SMS_OCCUPANCY_AUTHENTICATION'
+          | 'AUTHENTICATION_BY_EMAIL'
+          | 'NOT_USED';
         /**
          * @description 오픈아이디 회원인증 시점 (nullable)
          * @example JOIN_TIME
          * @enum {string}
          */
-        authenticationTimeType?: "JOIN_TIME: 회원가입 시 인증" | "PAYMENT_TIME: 최초 상품 구매 시 인증" | "AFTER_JOIN_TIME: 가입 완료 후 바로 인증" | "NONE: 인증하지 않음";
+        authenticationTimeType?:
+          | 'JOIN_TIME'
+          | 'PAYMENT_TIME'
+          | 'AFTER_JOIN_TIME'
+          | 'NONE';
         /**
          * @description 지원하는 오픈아이디 (nullable)
          * @example ["payco","kakao"]
          */
-        providers?: ("PAYCO: 페이코" | "NAVER: 네이버" | "KAKAO: 카카오" | "KAKAO_SYNC: 카카오 싱크" | "FACEBOOK: 페이스북" | "LINE: 라인" | "APPLE: 애플" | "GOOGLE: 구글")[];
+        providers?: (
+          | 'PAYCO'
+          | 'NAVER'
+          | 'KAKAO'
+          | 'KAKAO_SYNC'
+          | 'FACEBOOK'
+          | 'LINE'
+          | 'APPLE'
+          | 'GOOGLE'
+        )[];
       };
       /** @description 외부 서비스 설정 */
       externalServiceConfig: {
@@ -677,20 +993,66 @@ export interface components {
         naverWebmaster?: string;
       };
       /** @description 클레임상태 목록 */
-      claimStatusType: ({
-          /**
-           * @description 클레임상태 명칭
-           * @example 취소완료[환불없음]
-           * @enum {string}
-           */
-          label: "취소완료[환불없음]" | "취소신청[승인대기]" | "취소처리[환불보류]" | "취소처리[환불대기]" | "취소완료[환불완료]" | "반품신청[승인대기]" | "반품신청[철회대기]" | "반품처리[수거진행]" | "반품처리[환불보류]" | "반품처리[환불대기]" | "반품완료[환불완료]" | "교환처리[조정요청]" | "교환신청[승인대기]" | "교환처리[철회대기]" | "교환처리[수거진행]" | "교환처리[결제대기]" | "교환처리[환불보류]" | "교환처리[처리대기]" | "교환완료" | "교환처리[입금처리대기]" | "교환처리[환불대기]" | "교환완료[결제완료]" | "교환완료[환불완료]";
-          /**
-           * @description 클레임상태 값
-           * @example CANCEL_NO_REFUND
-           * @enum {string}
-           */
-          value: "CANCEL_NO_REFUND: 취소완료[환불없음]" | "CANCEL_REQUEST: 취소신청[승인대기]" | "CANCEL_PROC_REQUEST_REFUND: 취소처리[환불보류]" | "CANCEL_PROC_WAITING_REFUND: 취소처리[환불대기]" | "CANCEL_DONE: 취소완료[환불완료]" | "RETURN_REQUEST: 반품신청[승인대기]" | "RETURN_REJECT_REQUEST: 반품신청[철회대기]" | "RETURN_PROC_BEFORE_RECEIVE: 반품처리[수거진행]" | "RETURN_PROC_REQUEST_REFUND: 반품처리[환불보류]" | "RETURN_PROC_WAITING_REFUND: 반품처리[환불대기]" | "RETURN_DONE: 반품완료[환불완료]" | "RETURN_REFUND_AMT_ADJUST_REQUESTED: 교환처리[조정요청]" | "EXCHANGE_REQUEST: 교환신청[승인대기]" | "EXCHANGE_REJECT_REQUEST: 교환처리[철회대기]" | "EXCHANGE_PROC_BEFORE_RECEIVE: 교환처리[수거진행]" | "EXCHANGE_PROC_REQUEST_PAY: 교환처리[결제대기]" | "EXCHANGE_PROC_REQUEST_REFUND: 교환처리[환불보류]" | "EXCHANGE_PROC_WAITING: 교환처리[처리대기]" | "EXCHANGE_DONE: 교환완료" | "EXCHANGE_PROC_WAITING_PAY: 교환처리[입금처리대기]" | "EXCHANGE_PROC_WAITING_REFUND: 교환처리[환불대기]" | "EXCHANGE_DONE_PAY_DONE: 교환완료[결제완료]" | "EXCHANGE_DONE_REFUND_DONE: 교환완료[환불완료]";
-        })[];
+      claimStatusType: {
+        /**
+         * @description 클레임상태 명칭
+         * @example 취소완료[환불없음]
+         * @enum {string}
+         */
+        label:
+          | '취소완료[환불없음]'
+          | '취소신청[승인대기]'
+          | '취소처리[환불보류]'
+          | '취소처리[환불대기]'
+          | '취소완료[환불완료]'
+          | '반품신청[승인대기]'
+          | '반품신청[철회대기]'
+          | '반품처리[수거진행]'
+          | '반품처리[환불보류]'
+          | '반품처리[환불대기]'
+          | '반품완료[환불완료]'
+          | '교환처리[조정요청]'
+          | '교환신청[승인대기]'
+          | '교환처리[철회대기]'
+          | '교환처리[수거진행]'
+          | '교환처리[결제대기]'
+          | '교환처리[환불보류]'
+          | '교환처리[처리대기]'
+          | '교환완료'
+          | '교환처리[입금처리대기]'
+          | '교환처리[환불대기]'
+          | '교환완료[결제완료]'
+          | '교환완료[환불완료]';
+        /**
+         * @description 클레임상태 값
+         * @example CANCEL_NO_REFUND
+         * @enum {string}
+         */
+        value:
+          | 'CANCEL_NO_REFUND'
+          | 'CANCEL_REQUEST'
+          | 'CANCEL_PROC_REQUEST_REFUND'
+          | 'CANCEL_PROC_WAITING_REFUND'
+          | 'CANCEL_DONE'
+          | 'RETURN_REQUEST'
+          | 'RETURN_REJECT_REQUEST'
+          | 'RETURN_PROC_BEFORE_RECEIVE'
+          | 'RETURN_PROC_REQUEST_REFUND'
+          | 'RETURN_PROC_WAITING_REFUND'
+          | 'RETURN_DONE'
+          | 'RETURN_REFUND_AMT_ADJUST_REQUESTED'
+          | 'EXCHANGE_REQUEST'
+          | 'EXCHANGE_REJECT_REQUEST'
+          | 'EXCHANGE_PROC_BEFORE_RECEIVE'
+          | 'EXCHANGE_PROC_REQUEST_PAY'
+          | 'EXCHANGE_PROC_REQUEST_REFUND'
+          | 'EXCHANGE_PROC_WAITING'
+          | 'EXCHANGE_DONE'
+          | 'EXCHANGE_PROC_WAITING_PAY'
+          | 'EXCHANGE_PROC_WAITING_REFUND'
+          | 'EXCHANGE_DONE_PAY_DONE'
+          | 'EXCHANGE_DONE_REFUND_DONE';
+      }[];
       /** @description 장바구니 설정 */
       cartConfig: {
         /**
@@ -703,7 +1065,7 @@ export interface components {
          * @example QUANTITY
          * @enum {string}
          */
-        cartEquivalentOptionUnitType?: "QUANTITY: 수량 추가" | "ROW: 행 추가";
+        cartEquivalentOptionUnitType?: 'QUANTITY' | 'ROW';
         /**
          * @description 무제한 보관 설정 (nullable)
          * @example false
@@ -716,35 +1078,42 @@ export interface components {
         storageMaxQuantity?: number;
       };
       /** @description 상품평 신고 유형 목록 */
-      productReviewReportType: ({
-          /**
-           * @description 상품평 신고 유형 명칭
-           * @example 저작권 침해 및 기타사유
-           * @enum {string}
-           */
-          label: "저작권 침해 및 기타사유" | "욕설 또는 비방";
-          /**
-           * @description 상품평 신고 유형 값
-           * @example COPYRIGHT
-           * @enum {string}
-           */
-          value: "COPYRIGHT: 저작권 침해 및 기타사유" | "SLANDER: 욕설 또는 비방";
-        })[];
+      productReviewReportType: {
+        /**
+         * @description 상품평 신고 유형 명칭
+         * @example 저작권 침해 및 기타사유
+         * @enum {string}
+         */
+        label: '저작권 침해 및 기타사유' | '욕설 또는 비방';
+        /**
+         * @description 상품평 신고 유형 값
+         * @example COPYRIGHT
+         * @enum {string}
+         */
+        value: 'COPYRIGHT' | 'SLANDER';
+      }[];
       /** @description 상품문의 유형 목록 */
-      productInquiryType: ({
-          /**
-           * @description 상품문의 유형 명칭
-           * @example 상품
-           * @enum {string}
-           */
-          label: "상품" | "배송" | "취소" | "반품" | "교환" | "환불" | "기타";
-          /**
-           * @description 상품문의 유형 값
-           * @example PRODUCT
-           * @enum {string}
-           */
-          value: "PRODUCT: 상품" | "DELIVERY: 배송" | "CANCEL: 취소" | "RETURN: 반품" | "EXCHANGE: 교환" | "REFUND: 환불" | "OTHER: 기타";
-        })[];
+      productInquiryType: {
+        /**
+         * @description 상품문의 유형 명칭
+         * @example 상품
+         * @enum {string}
+         */
+        label: '상품' | '배송' | '취소' | '반품' | '교환' | '환불' | '기타';
+        /**
+         * @description 상품문의 유형 값
+         * @example PRODUCT
+         * @enum {string}
+         */
+        value:
+          | 'PRODUCT'
+          | 'DELIVERY'
+          | 'CANCEL'
+          | 'RETURN'
+          | 'EXCHANGE'
+          | 'REFUND'
+          | 'OTHER';
+      }[];
       /** @description 쇼핑몰 회원 인증 수단 */
       mallJoinConfig: {
         /**
@@ -752,13 +1121,22 @@ export interface components {
          * @example SMS_OCCUPANCY_AUTHENTICATION
          * @enum {string}
          */
-        authenticationType?: "AUTHENTICATION_BY_PHONE: 휴대폰 본인 인증" | "SMS_AUTHENTICATION: SMS 비점유 인증" | "SMS_OCCUPANCY_AUTHENTICATION: SMS 점유 인증" | "AUTHENTICATION_BY_EMAIL: EMAIL 인증" | "NOT_USED: 인증 없음";
+        authenticationType?:
+          | 'AUTHENTICATION_BY_PHONE'
+          | 'SMS_AUTHENTICATION'
+          | 'SMS_OCCUPANCY_AUTHENTICATION'
+          | 'AUTHENTICATION_BY_EMAIL'
+          | 'NOT_USED';
         /**
          * @description 쇼핑몰 회원 인증 시점 (nullable)
          * @example JOIN_TIME
          * @enum {string}
          */
-        authenticationTimeType?: "JOIN_TIME: 회원가입 시 인증" | "PAYMENT_TIME: 최초 상품 구매 시 인증" | "AFTER_JOIN_TIME: 가입 완료 후 바로 인증" | "NONE: 인증하지 않음";
+        authenticationTimeType?:
+          | 'JOIN_TIME'
+          | 'PAYMENT_TIME'
+          | 'AFTER_JOIN_TIME'
+          | 'NONE';
       };
       accumulationConfig?: {
         /**
@@ -786,7 +1164,15 @@ export interface components {
          * @example AFTER_A_WEEK
          * @enum {string}
          */
-        accumulationGivePoint?: "IMMEDIATE: 즉시적립" | "NEXTDAY: 익일" | "DAY_AFTER_TOMMOROW: 2일" | "AFTER_A_WEEK: 7일" | "AFTER_TWO_WEEK: 14일" | "AFTER_TWENTY_DAYS: 20일" | "AFTER_THIRTY_DAYS: 30일" | "NEXT_MONTH: 익월";
+        accumulationGivePoint?:
+          | 'IMMEDIATE'
+          | 'NEXTDAY'
+          | 'DAY_AFTER_TOMMOROW'
+          | 'AFTER_A_WEEK'
+          | 'AFTER_TWO_WEEK'
+          | 'AFTER_TWENTY_DAYS'
+          | 'AFTER_THIRTY_DAYS'
+          | 'NEXT_MONTH';
         /**
          * @description 적립금 기본 적립률 (nullable)
          * @example 10
@@ -812,7 +1198,11 @@ export interface components {
          * @example FIXED_AMT
          * @enum {string}
          */
-        accumulationDisplayFormatType?: "FIXED_AMT: 정액 단일표시" | "FIXED_RATE: 정률(%) 단일표시 (ex 2%)" | "FIRST_FIXED_RATE: 정률 정액 동시표시" | "FIRST_FIXED_AMT: 정액 정률 동시표시";
+        accumulationDisplayFormatType?:
+          | 'FIXED_AMT'
+          | 'FIXED_RATE'
+          | 'FIRST_FIXED_RATE'
+          | 'FIRST_FIXED_AMT';
         reviewsAccumulationDetail?: {
           /**
            * @description 포토 상품평 적립금 (nullable)
@@ -885,7 +1275,13 @@ export interface components {
          * @example null
          * @enum {string}
          */
-        productAccumulationBasisType?: "SALE_PRICE: 판매가" | "SALE_STANDARD_PRICE: 판매가 ± 옵션가" | "SALE_PROMOTION_PRICE: 판매가 ± 옵션가 - 프로모션할인" | "DISCOUNTED_PRICE: 할인적용가" | "DISCOUNTED_STANDARD_PRICE: 할인적용가 ± 옵션가" | "DISCOUNTED_PROMOTION_PRICE: 할인적용가 ± 옵션가 - 프로모션할인";
+        productAccumulationBasisType?:
+          | 'SALE_PRICE'
+          | 'SALE_STANDARD_PRICE'
+          | 'SALE_PROMOTION_PRICE'
+          | 'DISCOUNTED_PRICE'
+          | 'DISCOUNTED_STANDARD_PRICE'
+          | 'DISCOUNTED_PROMOTION_PRICE';
         /**
          * @description 적립금명 (nullable)
          * @example 구매 적립금
@@ -905,103 +1301,61 @@ export interface components {
       categories?: {
         /** @description 카테고리 목록(계층) */
         multiLevelCategories: {
+          /**
+           * @description 뎁스
+           * @example 1
+           */
+          depth: number;
+          /** @description 2차 카테고리 */
+          children: {
             /**
-             * @description 뎁스
-             * @example 1
+             * @description 카테고리 뎁스 (nullable)
+             * @example 2
              */
-            depth: number;
-            /** @description 2차 카테고리 */
+            depth?: number;
+            /** @description 3차 카테고리 */
             children: {
+              /**
+               * @description 카테고리 뎁스 (nullable)
+               * @example 3
+               */
+              depth?: number;
+              /** @description 4차 카테고리 */
+              children: {
                 /**
                  * @description 카테고리 뎁스 (nullable)
-                 * @example 2
+                 * @example 4
                  */
                 depth?: number;
-                /** @description 3차 카테고리 */
+                /** @description 5차 카테고리 */
                 children: {
-                    /**
-                     * @description 카테고리 뎁스 (nullable)
-                     * @example 3
-                     */
-                    depth?: number;
-                    /** @description 4차 카테고리 */
-                    children: {
-                        /**
-                         * @description 카테고리 뎁스 (nullable)
-                         * @example 4
-                         */
-                        depth?: number;
-                        /** @description 5차 카테고리 */
-                        children: {
-                            /**
-                             * @description 카테고리 뎁스 (nullable)
-                             * @example 5
-                             */
-                            depth?: number;
-                            children?: Record<string, never>;
-                            /**
-                             * @description 카테고리 아이콘 (nullable)
-                             * @example //image.nhn-commerce.com/icon.png
-                             */
-                            icon?: string;
-                            /**
-                             * @description 카테고리 번호 (nullable)
-                             * @example 5
-                             */
-                            categoryNo?: number;
-                            /**
-                             * @description 카테고리 이름 (nullable)
-                             * @example 게임기 컨트롤러
-                             */
-                            label?: string;
-                            /**
-                             * @description 카테고리 카테고리 상세(HTML) (nullable)
-                             * @example <div>아이콘</div>
-                             */
-                            content?: string;
-                          }[];
-                        /**
-                         * @description 카테고리 아이콘 (nullable)
-                         * @example //image.nhn-commerce.com/icon.png
-                         */
-                        icon?: string;
-                        /**
-                         * @description 카테고리 번호 (nullable)
-                         * @example 4
-                         */
-                        categoryNo?: number;
-                        /**
-                         * @description 카테고리 이름 (nullable)
-                         * @example 악세사리
-                         */
-                        label?: string;
-                        /**
-                         * @description 카테고리 카테고리 상세(HTML) (nullable)
-                         * @example <div>아이콘</div>
-                         */
-                        content?: string;
-                      }[];
-                    /**
-                     * @description 카테고리 아이콘 (nullable)
-                     * @example //image.nhn-commerce.com/icon.png
-                     */
-                    icon?: string;
-                    /**
-                     * @description 카테고리 번호 (nullable)
-                     * @example 3
-                     */
-                    categoryNo?: number;
-                    /**
-                     * @description 카테고리 이름 (nullable)
-                     * @example 닌텐도
-                     */
-                    label?: string;
-                    /**
-                     * @description 카테고리 카테고리 상세(HTML) (nullable)
-                     * @example <div>아이콘</div>
-                     */
-                    content?: string;
-                  }[];
+                  /**
+                   * @description 카테고리 뎁스 (nullable)
+                   * @example 5
+                   */
+                  depth?: number;
+                  children?: Record<string, never>;
+                  /**
+                   * @description 카테고리 아이콘 (nullable)
+                   * @example //image.nhn-commerce.com/icon.png
+                   */
+                  icon?: string;
+                  /**
+                   * @description 카테고리 번호 (nullable)
+                   * @example 5
+                   */
+                  categoryNo?: number;
+                  /**
+                   * @description 카테고리 이름 (nullable)
+                   * @example 게임기 컨트롤러
+                   */
+                  label?: string;
+                  /**
+                   * @description 카테고리 카테고리 상세(HTML) (nullable)
+                   * @example <div>아이콘</div>
+                   */
+                  content?: string;
+                }[];
                 /**
                  * @description 카테고리 아이콘 (nullable)
                  * @example //image.nhn-commerce.com/icon.png
@@ -1009,12 +1363,12 @@ export interface components {
                 icon?: string;
                 /**
                  * @description 카테고리 번호 (nullable)
-                 * @example 2
+                 * @example 4
                  */
                 categoryNo?: number;
                 /**
                  * @description 카테고리 이름 (nullable)
-                 * @example 게임기 주변기기
+                 * @example 악세사리
                  */
                 label?: string;
                 /**
@@ -1023,268 +1377,310 @@ export interface components {
                  */
                 content?: string;
               }[];
+              /**
+               * @description 카테고리 아이콘 (nullable)
+               * @example //image.nhn-commerce.com/icon.png
+               */
+              icon?: string;
+              /**
+               * @description 카테고리 번호 (nullable)
+               * @example 3
+               */
+              categoryNo?: number;
+              /**
+               * @description 카테고리 이름 (nullable)
+               * @example 닌텐도
+               */
+              label?: string;
+              /**
+               * @description 카테고리 카테고리 상세(HTML) (nullable)
+               * @example <div>아이콘</div>
+               */
+              content?: string;
+            }[];
             /**
-             * @description 아이콘
+             * @description 카테고리 아이콘 (nullable)
              * @example //image.nhn-commerce.com/icon.png
              */
-            icon: string;
+            icon?: string;
             /**
-             * @description 카테고리 번호
-             * @example 1
-             */
-            categoryNo: number;
-            /**
-             * @description 카테고리 이름
-             * @example 게임
-             */
-            label: string;
-            /**
-             * @description 카테고리 상세(HTML)
-             * @example <div>아이콘</div>
-             */
-            content: string;
-          }[];
-        /** @description 카테고리 목록 */
-        flatCategories: {
-            /**
-             * @description 카테고리 번호(5차)
-             * @example 5
-             */
-            depth5CategoryNo: number;
-            /**
-             * @description 카테고리 순서(2차)
-             * @example 1
-             */
-            depth2DisplayOrder: number;
-            /**
-             * @description 카테고리 아이콘(3차) (nullable)
-             * @example //image.nhn-commerce.com/icon.png
-             */
-            depth3Icon?: string;
-            /**
-             * @description 카테고리 순서(1차)
-             * @example 1
-             */
-            depth1DisplayOrder: number;
-            /**
-             * @description 카테고리 번호(3차)
-             * @example 3
-             */
-            depth3CategoryNo: number;
-            /**
-             * @description 카테고리 아이콘(2차) (nullable)
-             * @example //image.nhn-commerce.com/icon.png
-             */
-            depth2Icon?: string;
-            /**
-             * @description 카테고리 명(4차)
-             * @example 악세사리
-             */
-            depth4Label: string;
-            /**
-             * @description 카테고리 명(1차)
-             * @example 게임
-             */
-            depth1Label: string;
-            /**
-             * @description 카테고리 아이콘(4차) (nullable)
-             * @example //image.nhn-commerce.com/icon.png
-             */
-            depth4Icon?: string;
-            /**
-             * @description 카테고리 명(2차)
-             * @example 게임기 주변기기
-             */
-            depth2Label: string;
-            /**
-             * @description 카테고리 명(5차)
-             * @example 게임기 컨트롤러
-             */
-            depth5Label: string;
-            /**
-             * @description 카테고리 아이콘(5차) (nullable)
-             * @example //image.nhn-commerce.com/icon.png
-             */
-            depth5Icon?: string;
-            /**
-             * @description 카테고리 번호(2차)
+             * @description 카테고리 번호 (nullable)
              * @example 2
              */
-            depth2CategoryNo: number;
+            categoryNo?: number;
             /**
-             * @description 카테고리 명(3차)
-             * @example 닌텐도
+             * @description 카테고리 이름 (nullable)
+             * @example 게임기 주변기기
              */
-            depth3Label: string;
+            label?: string;
             /**
-             * @description 카테고리 번호(1차)
-             * @example 1
-             */
-            depth1CategoryNo: number;
-            /**
-             * @description 카테고리 상세 HTML(5차) (nullable)
+             * @description 카테고리 카테고리 상세(HTML) (nullable)
              * @example <div>아이콘</div>
              */
-            depth5Content?: string;
-            /**
-             * @description 카테고리 아이콘(1차) (nullable)
-             * @example //image.nhn-commerce.com/icon.png
-             */
-            depth1Icon?: string;
-            /**
-             * @description 1~5차 카테고리 명
-             * @example 카테고리
-             */
-            fullCategoryName: string;
-            /**
-             * @description 카테고리 순서(5차)
-             * @example 1
-             */
-            depth5DisplayOrder: number;
-            /**
-             * @description 카테고리 순서(4차)
-             * @example 1
-             */
-            depth4DisplayOrder: number;
-            /**
-             * @description 카테고리 상세 HTML(3차) (nullable)
-             * @example <div>아이콘</div>
-             */
-            depth3Content?: string;
-            /**
-             * @description 카테고리 번호(4차)
-             * @example 4
-             */
-            depth4CategoryNo: number;
-            /**
-             * @description 카테고리 상세 HTML(2차) (nullable)
-             * @example <div>아이콘</div>
-             */
-            depth2Content?: string;
-            /**
-             * @description 카테고리 상세 HTML(1차) (nullable)
-             * @example <div>아이콘</div>
-             */
-            depth1Content?: string;
-            /**
-             * @description 카테고리 상세 HTML(4차) (nullable)
-             * @example <div>아이콘</div>
-             */
-            depth4Content?: string;
-            /**
-             * @description 카테고리 순서(3차)
-             * @example 1
-             */
-            depth3DisplayOrder: number;
+            content?: string;
           }[];
+          /**
+           * @description 아이콘
+           * @example //image.nhn-commerce.com/icon.png
+           */
+          icon: string;
+          /**
+           * @description 카테고리 번호
+           * @example 1
+           */
+          categoryNo: number;
+          /**
+           * @description 카테고리 이름
+           * @example 게임
+           */
+          label: string;
+          /**
+           * @description 카테고리 상세(HTML)
+           * @example <div>아이콘</div>
+           */
+          content: string;
+        }[];
+        /** @description 카테고리 목록 */
+        flatCategories: {
+          /**
+           * @description 카테고리 번호(5차)
+           * @example 5
+           */
+          depth5CategoryNo: number;
+          /**
+           * @description 카테고리 순서(2차)
+           * @example 1
+           */
+          depth2DisplayOrder: number;
+          /**
+           * @description 카테고리 아이콘(3차) (nullable)
+           * @example //image.nhn-commerce.com/icon.png
+           */
+          depth3Icon?: string;
+          /**
+           * @description 카테고리 순서(1차)
+           * @example 1
+           */
+          depth1DisplayOrder: number;
+          /**
+           * @description 카테고리 번호(3차)
+           * @example 3
+           */
+          depth3CategoryNo: number;
+          /**
+           * @description 카테고리 아이콘(2차) (nullable)
+           * @example //image.nhn-commerce.com/icon.png
+           */
+          depth2Icon?: string;
+          /**
+           * @description 카테고리 명(4차)
+           * @example 악세사리
+           */
+          depth4Label: string;
+          /**
+           * @description 카테고리 명(1차)
+           * @example 게임
+           */
+          depth1Label: string;
+          /**
+           * @description 카테고리 아이콘(4차) (nullable)
+           * @example //image.nhn-commerce.com/icon.png
+           */
+          depth4Icon?: string;
+          /**
+           * @description 카테고리 명(2차)
+           * @example 게임기 주변기기
+           */
+          depth2Label: string;
+          /**
+           * @description 카테고리 명(5차)
+           * @example 게임기 컨트롤러
+           */
+          depth5Label: string;
+          /**
+           * @description 카테고리 아이콘(5차) (nullable)
+           * @example //image.nhn-commerce.com/icon.png
+           */
+          depth5Icon?: string;
+          /**
+           * @description 카테고리 번호(2차)
+           * @example 2
+           */
+          depth2CategoryNo: number;
+          /**
+           * @description 카테고리 명(3차)
+           * @example 닌텐도
+           */
+          depth3Label: string;
+          /**
+           * @description 카테고리 번호(1차)
+           * @example 1
+           */
+          depth1CategoryNo: number;
+          /**
+           * @description 카테고리 상세 HTML(5차) (nullable)
+           * @example <div>아이콘</div>
+           */
+          depth5Content?: string;
+          /**
+           * @description 카테고리 아이콘(1차) (nullable)
+           * @example //image.nhn-commerce.com/icon.png
+           */
+          depth1Icon?: string;
+          /**
+           * @description 1~5차 카테고리 명
+           * @example 카테고리
+           */
+          fullCategoryName: string;
+          /**
+           * @description 카테고리 순서(5차)
+           * @example 1
+           */
+          depth5DisplayOrder: number;
+          /**
+           * @description 카테고리 순서(4차)
+           * @example 1
+           */
+          depth4DisplayOrder: number;
+          /**
+           * @description 카테고리 상세 HTML(3차) (nullable)
+           * @example <div>아이콘</div>
+           */
+          depth3Content?: string;
+          /**
+           * @description 카테고리 번호(4차)
+           * @example 4
+           */
+          depth4CategoryNo: number;
+          /**
+           * @description 카테고리 상세 HTML(2차) (nullable)
+           * @example <div>아이콘</div>
+           */
+          depth2Content?: string;
+          /**
+           * @description 카테고리 상세 HTML(1차) (nullable)
+           * @example <div>아이콘</div>
+           */
+          depth1Content?: string;
+          /**
+           * @description 카테고리 상세 HTML(4차) (nullable)
+           * @example <div>아이콘</div>
+           */
+          depth4Content?: string;
+          /**
+           * @description 카테고리 순서(3차)
+           * @example 1
+           */
+          depth3DisplayOrder: number;
+        }[];
       };
       /** @description 쇼핑몰 계좌 정보 목록 */
       bankAccountInfos: {
-          /**
-           * @description 계좌번호 (nullable)
-           * @example 123456789
-           */
-          bankAccount?: string;
-          /**
-           * @description 예금주명 (nullable)
-           * @example 커머스
-           */
-          bankDepositorName?: string;
-          /**
-           * @description 은행명 (nullable)
-           * @example 우리은행
-           */
-          bankName?: string;
-        }[];
+        /**
+         * @description 계좌번호 (nullable)
+         * @example 123456789
+         */
+        bankAccount?: string;
+        /**
+         * @description 예금주명 (nullable)
+         * @example 커머스
+         */
+        bankDepositorName?: string;
+        /**
+         * @description 은행명 (nullable)
+         * @example 우리은행
+         */
+        bankName?: string;
+      }[];
       /** @description 게시판 카테고리 목록 */
-      boardsCategories: ({
+      boardsCategories: {
+        /**
+         * @description 썸네일 이미지 사용 여부
+         * @example true
+         */
+        thumbnailUsed: boolean;
+        /**
+         * @description 답글 작성 가능 여부
+         * @example false
+         */
+        replied: boolean;
+        /**
+         * @description 회원 작성 가능 여부
+         * @example false
+         */
+        memberWrite: boolean;
+        /**
+         * @description 게시판 사용 여부
+         * @example true
+         */
+        used: boolean;
+        /**
+         * @description 비밀글 작성 가능 여부
+         * @example false
+         */
+        secreted: boolean;
+        /**
+         * @description 게시판 이름
+         * @example 자유게시판
+         */
+        boardName: string;
+        /**
+         * @description 비회원 작성 가능 여부
+         * @example false
+         */
+        guestWrite: boolean;
+        /**
+         * @description 리스트 이미지 유형
+         * @example NOT_USED
+         * @enum {string}
+         */
+        imageDisplayType: 'NOT_USED' | 'ATTACHMENT' | 'PRODUCT';
+        /**
+         * @description 게시판 노출 유형
+         * @example LIST
+         * @enum {string}
+         */
+        displayType: 'LIST' | 'CARD' | 'REPLY' | 'INQUIRY';
+        /**
+         * @description 카테고리 사용 여부
+         * @example true
+         */
+        categoryUsed: boolean;
+        /**
+         * @description 첨부파일 사용 여부
+         * @example false
+         */
+        attachmentUsed: boolean;
+        /**
+         * @description 게시판 ID (nullable)
+         * @example freeboard
+         */
+        boardId?: string;
+        /** @description 게시판 카테고리 정보 */
+        categories: {
           /**
-           * @description 썸네일 이미지 사용 여부
-           * @example true
-           */
-          thumbnailUsed: boolean;
-          /**
-           * @description 답글 작성 가능 여부
-           * @example false
-           */
-          replied: boolean;
-          /**
-           * @description 회원 작성 가능 여부
-           * @example false
-           */
-          memberWrite: boolean;
-          /**
-           * @description 게시판 사용 여부
-           * @example true
-           */
-          used: boolean;
-          /**
-           * @description 비밀글 작성 가능 여부
-           * @example false
-           */
-          secreted: boolean;
-          /**
-           * @description 게시판 이름
-           * @example 자유게시판
-           */
-          boardName: string;
-          /**
-           * @description 비회원 작성 가능 여부
-           * @example false
-           */
-          guestWrite: boolean;
-          /**
-           * @description 리스트 이미지 유형
-           * @example NOT_USED
-           * @enum {string}
-           */
-          imageDisplayType: "NOT_USED: 사용 안함" | "ATTACHMENT: 첨부파일 사용" | "PRODUCT: 상품 이미지 사용";
-          /**
-           * @description 게시판 노출 유형
-           * @example LIST
-           * @enum {string}
-           */
-          displayType: "LIST: 리스트형" | "CARD: 카드형" | "REPLY: 댓글형" | "INQUIRY: 문의형";
-          /**
-           * @description 카테고리 사용 여부
-           * @example true
-           */
-          categoryUsed: boolean;
-          /**
-           * @description 첨부파일 사용 여부
-           * @example false
-           */
-          attachmentUsed: boolean;
-          /**
-           * @description 게시판 ID (nullable)
-           * @example freeboard
-           */
-          boardId?: string;
-          /** @description 게시판 카테고리 정보 */
-          categories: {
-              /**
-               * @description 게시판 카테고리 번호
-               * @example 1
-               */
-              categoryNo: number;
-              /**
-               * @description 게시판 카테고리 명칭
-               * @example 질문
-               */
-              label: string;
-            }[];
-          /**
-           * @description 게시판 번호
+           * @description 게시판 카테고리 번호
            * @example 1
            */
-          boardNo: number;
-        })[];
+          categoryNo: number;
+          /**
+           * @description 게시판 카테고리 명칭
+           * @example 질문
+           */
+          label: string;
+        }[];
+        /**
+         * @description 게시판 번호
+         * @example 1
+         */
+        boardNo: number;
+      }[];
     };
   };
   responses: never;
   parameters: never;
   requestBodies: never;
-  headers: never;
+  headers?: never;
   pathItems: never;
 }
 
@@ -1293,7 +1689,6 @@ export type $defs = Record<string, never>;
 export type external = Record<string, never>;
 
 export interface operations {
-
   /**
    * 몰 정보 조회하기
    * @description ## 부가설명 및 특이사항
@@ -1323,31 +1718,31 @@ export interface operations {
    *
    * [https://shopby.works/guide/skin/dev-cover/call-api#call-info](https://shopby.works/guide/skin/dev-cover/call-api#call-info)
    */
-  "get-malls": {
+  'get-malls': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["malls1221953710"];
+          'application/json': components['schemas']['malls1221953710'];
         };
       };
     };
@@ -1357,31 +1752,31 @@ export interface operations {
    * @description ## 부가설명 및 특이사항
    * 현재 몰의 다국어, 환율 설정 조회을 조회하는 API 입니다.
    */
-  "get-malls-i18n": {
+  'get-malls-i18n': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["malls-internationalization-996890286"];
+          'application/json': components['schemas']['malls-internationalization-996890286'];
         };
       };
     };
@@ -1391,31 +1786,31 @@ export interface operations {
    * @description ## 부가설명 및 특이사항
    * 몰과 계약한 파트너 목록을 조회하는 API입니다.
    */
-  "get-malls-partners": {
+  'get-malls-partners': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["malls-partners-200843305"];
+          'application/json': components['schemas']['malls-partners-200843305'];
         };
       };
     };
@@ -1425,31 +1820,31 @@ export interface operations {
    * @description ## 부가설명 및 특이사항
    * 현재 도메인의 보안서버정보를 조회하는 API입니다.
    */
-  "get-malls-ssl": {
+  'get-malls-ssl': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["malls-ssl-953646756"];
+          'application/json': components['schemas']['malls-ssl-953646756'];
         };
       };
     };

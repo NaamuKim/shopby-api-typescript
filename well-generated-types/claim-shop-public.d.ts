@@ -424,9 +424,9 @@ export interface components {
        * @enum {string}
        */
       validationType:
-        | 'EXISTS_AFTER_CLAIM_WITH_CART_COUPON: 이후 클레임 신청 건이 있고 장바구니 쿠폰이 적용된 경우 철회 불가'
-        | 'EXISTS_SAME_SHIPPING_NO_CLAIM: 동일 배송번호에 클레임 신청 건이 있으면 철회 불가'
-        | 'WITHDRAWABLE: 철회 가능';
+        | 'EXISTS_AFTER_CLAIM_WITH_CART_COUPON'
+        | 'EXISTS_SAME_SHIPPING_NO_CLAIM'
+        | 'WITHDRAWABLE';
       /**
        * @description 배송 번호
        * @example 1, 2
@@ -444,13 +444,13 @@ export interface components {
        * @example BUYER
        * @enum {string}
        */
-      responsibleObjectType?: 'BUYER: 구매자귀책' | 'SELLER: 판매자귀책';
+      responsibleObjectType?: 'BUYER' | 'SELLER';
       /**
        * @description 클레임타입
        * @example CANCEL
        * @enum {string}
        */
-      claimType: 'CANCEL: 취소' | 'RETURN: 반품' | 'EXCHANGE: 교환';
+      claimType: 'CANCEL' | 'RETURN' | 'EXCHANGE';
       /**
        * @description 환불계좌정보 저장 여부(true일 경우 bankAccountInfo 필수)
        * @example true
@@ -474,60 +474,60 @@ export interface components {
          * @enum {string}
          */
         bank?:
-          | 'ANONYMOUS: Unverified Bank'
-          | 'KDB: Korea Development Bank'
-          | 'IBK: Industrial Bank of Korea'
-          | 'KB: KOOKMIN BANK'
-          | 'KEB: Korea Exchange Bank'
-          | 'SUHYUP: National Federation of Fisheries Cooperatives'
-          | 'KEXIM: The Export-Import Bank of Korea'
-          | 'NH: NONGHYUP BANK'
-          | 'NHLOCAL: National Agricultural Cooperative Federation'
-          | 'WOORI: Woori Bank'
-          | 'SC: Standard Chartered Bank Korea Limited'
-          | 'CITY: Citibank Korea'
-          | 'DAEGU: Daegu Gyeongbuk Bank'
-          | 'PUSAN: BUSAN BANK'
-          | 'GWANGJU: The Kwangju Bank'
-          | 'JEJU: Jeju Bank'
-          | 'JEONBUK: Jeonbuk Bank'
-          | 'GYEONGNAM: BNK KYONGNAM BANK'
-          | 'KFCC: The Saemaeul finance firm.'
-          | 'CU: National Credit Union Federation'
-          | 'SANGHO: Mutual Savings Bank / Thrift Institution'
-          | 'HSBC: Hongkong and Shanghai Banking Corporation'
-          | 'DEUTSCHE: Deutsche Bank AG'
-          | 'NFCF: National Forestry Cooperative Federation'
-          | 'EPOST: Post Office'
-          | 'KEBHANA: KEB Hana Bank'
-          | 'SHINHAN: SHINHAN BANK'
-          | 'KBANK: Kbank'
-          | 'KAKAO: Kakao Bank'
-          | 'TOSS: Toss Bank'
-          | 'YUANTA: Yuanta Securities'
-          | 'KBSEC: KB Securities'
-          | 'MIRAE: Mirae Asset Securities'
-          | 'MIRAEDAEWOO: Miraeassetdaewoo Securities'
-          | 'SAMSUNG: Samsung Securities'
-          | 'HANKOOK: Korea Investment ＆ Securities'
-          | 'NH_INVEST: NH Investment & Securities'
-          | 'KYOBO: Kyobo Securities'
-          | 'HI_INVEST: Hi Investment & Securities'
-          | 'HMC_INVEST: HYUNDAI MOTOR SECURITIES'
-          | 'KIWOOM: Kiwoom Securities'
-          | 'EBEST: EBEST INVESTMENT & SECURITIES'
-          | 'SK: SK Securities'
-          | 'DAISHIN: Daishin Securities'
-          | 'SOLOMON_INVEST: SOLOMON INVESTMENT & SECURITIES'
-          | 'HANHWA: Hanwha Investment ＆ Securities'
-          | 'HANA_INVEST: Hana Financial Investment'
-          | 'SHINHAN_INVEST: Shinhan Investment'
-          | 'DONGBU: DB Financial Investment'
-          | 'EUGENE_INVEST: Eugene Investment ＆ Securities'
-          | 'MERITZ_COMPREHENSIVE: Meritz Securities'
-          | 'BOOKOOK: Bookook Securities'
-          | 'SHINYOUNG: Shinyoung Securities'
-          | 'CAPE: CAPE Investment & Securities';
+          | 'ANONYMOUS'
+          | 'KDB'
+          | 'IBK'
+          | 'KB'
+          | 'KEB'
+          | 'SUHYUP'
+          | 'KEXIM'
+          | 'NH'
+          | 'NHLOCAL'
+          | 'WOORI'
+          | 'SC'
+          | 'CITY'
+          | 'DAEGU'
+          | 'PUSAN'
+          | 'GWANGJU'
+          | 'JEJU'
+          | 'JEONBUK'
+          | 'GYEONGNAM'
+          | 'KFCC'
+          | 'CU'
+          | 'SANGHO'
+          | 'HSBC'
+          | 'DEUTSCHE'
+          | 'NFCF'
+          | 'EPOST'
+          | 'KEBHANA'
+          | 'SHINHAN'
+          | 'KBANK'
+          | 'KAKAO'
+          | 'TOSS'
+          | 'YUANTA'
+          | 'KBSEC'
+          | 'MIRAE'
+          | 'MIRAEDAEWOO'
+          | 'SAMSUNG'
+          | 'HANKOOK'
+          | 'NH_INVEST'
+          | 'KYOBO'
+          | 'HI_INVEST'
+          | 'HMC_INVEST'
+          | 'KIWOOM'
+          | 'EBEST'
+          | 'SK'
+          | 'DAISHIN'
+          | 'SOLOMON_INVEST'
+          | 'HANHWA'
+          | 'HANA_INVEST'
+          | 'SHINHAN_INVEST'
+          | 'DONGBU'
+          | 'EUGENE_INVEST'
+          | 'MERITZ_COMPREHENSIVE'
+          | 'BOOKOOK'
+          | 'SHINYOUNG'
+          | 'CAPE';
         /**
          * @description 은행명 (nullable)
          * @example 산업은행
@@ -542,18 +542,18 @@ export interface components {
        * @enum {string}
        */
       claimReasonType:
-        | 'CHANGE_MIND: 단순변심(색상,사이즈 등)'
-        | 'DEFECTIVE_PRODUCT: 상품불량/파손'
-        | 'WRONG_DELIVERY: 배송누락/오배송'
-        | 'OUT_OF_STOCK_SYSTEM: 재고부족(품절취소)'
-        | 'CANCEL_BEFORE_PAY: 입금전취소'
-        | 'WRONG_PRODUCT_DETAIL: 상품상세 정보와 다름'
-        | 'DELAY_DELIVERY: 판매자 배송 지연'
-        | 'OTHERS_SELLER: 기타(판매자 귀책)'
-        | 'OTHERS_BUYER: 기타(구매자 귀책)'
-        | 'OUT_OF_STOCK: 상품 품절/재고 없음'
-        | 'LATER_INPUT_ORDER: 배송지 미입력 취소'
-        | 'LATER_INPUT_ORDER_RECEIVER_CANCEL: 선물거절취소';
+        | 'CHANGE_MIND'
+        | 'DEFECTIVE_PRODUCT'
+        | 'WRONG_DELIVERY'
+        | 'OUT_OF_STOCK_SYSTEM'
+        | 'CANCEL_BEFORE_PAY'
+        | 'WRONG_PRODUCT_DETAIL'
+        | 'DELAY_DELIVERY'
+        | 'OTHERS_SELLER'
+        | 'OTHERS_BUYER'
+        | 'OUT_OF_STOCK'
+        | 'LATER_INPUT_ORDER'
+        | 'LATER_INPUT_ORDER_RECEIVER_CANCEL';
       /**
        * @description 즉시환불여부(기본 값: true)(주문상태가 결제완료인 옵션인 경우 즉시환불 가능)
        * @example true
@@ -571,7 +571,7 @@ export interface components {
        * @example BUYER
        * @enum {string}
        */
-      responsibleObjectType?: 'BUYER: 구매자귀책' | 'SELLER: 판매자귀책';
+      responsibleObjectType?: 'BUYER' | 'SELLER';
       /** @description 주문상품 옵션정보 */
       claimedProductOptions: {
         /**
@@ -590,7 +590,7 @@ export interface components {
        * @example CANCEL
        * @enum {string}
        */
-      claimType: 'CANCEL: 취소' | 'RETURN: 반품' | 'EXCHANGE: 교환';
+      claimType: 'CANCEL' | 'RETURN' | 'EXCHANGE';
       /**
        * @description 환불계좌정보 저장 여부(true일 경우 bankAccountInfo 필수)
        * @example true
@@ -614,60 +614,60 @@ export interface components {
          * @enum {string}
          */
         bank?:
-          | 'ANONYMOUS: Unverified Bank'
-          | 'KDB: Korea Development Bank'
-          | 'IBK: Industrial Bank of Korea'
-          | 'KB: KOOKMIN BANK'
-          | 'KEB: Korea Exchange Bank'
-          | 'SUHYUP: National Federation of Fisheries Cooperatives'
-          | 'KEXIM: The Export-Import Bank of Korea'
-          | 'NH: NONGHYUP BANK'
-          | 'NHLOCAL: National Agricultural Cooperative Federation'
-          | 'WOORI: Woori Bank'
-          | 'SC: Standard Chartered Bank Korea Limited'
-          | 'CITY: Citibank Korea'
-          | 'DAEGU: Daegu Gyeongbuk Bank'
-          | 'PUSAN: BUSAN BANK'
-          | 'GWANGJU: The Kwangju Bank'
-          | 'JEJU: Jeju Bank'
-          | 'JEONBUK: Jeonbuk Bank'
-          | 'GYEONGNAM: BNK KYONGNAM BANK'
-          | 'KFCC: The Saemaeul finance firm.'
-          | 'CU: National Credit Union Federation'
-          | 'SANGHO: Mutual Savings Bank / Thrift Institution'
-          | 'HSBC: Hongkong and Shanghai Banking Corporation'
-          | 'DEUTSCHE: Deutsche Bank AG'
-          | 'NFCF: National Forestry Cooperative Federation'
-          | 'EPOST: Post Office'
-          | 'KEBHANA: KEB Hana Bank'
-          | 'SHINHAN: SHINHAN BANK'
-          | 'KBANK: Kbank'
-          | 'KAKAO: Kakao Bank'
-          | 'TOSS: Toss Bank'
-          | 'YUANTA: Yuanta Securities'
-          | 'KBSEC: KB Securities'
-          | 'MIRAE: Mirae Asset Securities'
-          | 'MIRAEDAEWOO: Miraeassetdaewoo Securities'
-          | 'SAMSUNG: Samsung Securities'
-          | 'HANKOOK: Korea Investment ＆ Securities'
-          | 'NH_INVEST: NH Investment & Securities'
-          | 'KYOBO: Kyobo Securities'
-          | 'HI_INVEST: Hi Investment & Securities'
-          | 'HMC_INVEST: HYUNDAI MOTOR SECURITIES'
-          | 'KIWOOM: Kiwoom Securities'
-          | 'EBEST: EBEST INVESTMENT & SECURITIES'
-          | 'SK: SK Securities'
-          | 'DAISHIN: Daishin Securities'
-          | 'SOLOMON_INVEST: SOLOMON INVESTMENT & SECURITIES'
-          | 'HANHWA: Hanwha Investment ＆ Securities'
-          | 'HANA_INVEST: Hana Financial Investment'
-          | 'SHINHAN_INVEST: Shinhan Investment'
-          | 'DONGBU: DB Financial Investment'
-          | 'EUGENE_INVEST: Eugene Investment ＆ Securities'
-          | 'MERITZ_COMPREHENSIVE: Meritz Securities'
-          | 'BOOKOOK: Bookook Securities'
-          | 'SHINYOUNG: Shinyoung Securities'
-          | 'CAPE: CAPE Investment & Securities';
+          | 'ANONYMOUS'
+          | 'KDB'
+          | 'IBK'
+          | 'KB'
+          | 'KEB'
+          | 'SUHYUP'
+          | 'KEXIM'
+          | 'NH'
+          | 'NHLOCAL'
+          | 'WOORI'
+          | 'SC'
+          | 'CITY'
+          | 'DAEGU'
+          | 'PUSAN'
+          | 'GWANGJU'
+          | 'JEJU'
+          | 'JEONBUK'
+          | 'GYEONGNAM'
+          | 'KFCC'
+          | 'CU'
+          | 'SANGHO'
+          | 'HSBC'
+          | 'DEUTSCHE'
+          | 'NFCF'
+          | 'EPOST'
+          | 'KEBHANA'
+          | 'SHINHAN'
+          | 'KBANK'
+          | 'KAKAO'
+          | 'TOSS'
+          | 'YUANTA'
+          | 'KBSEC'
+          | 'MIRAE'
+          | 'MIRAEDAEWOO'
+          | 'SAMSUNG'
+          | 'HANKOOK'
+          | 'NH_INVEST'
+          | 'KYOBO'
+          | 'HI_INVEST'
+          | 'HMC_INVEST'
+          | 'KIWOOM'
+          | 'EBEST'
+          | 'SK'
+          | 'DAISHIN'
+          | 'SOLOMON_INVEST'
+          | 'HANHWA'
+          | 'HANA_INVEST'
+          | 'SHINHAN_INVEST'
+          | 'DONGBU'
+          | 'EUGENE_INVEST'
+          | 'MERITZ_COMPREHENSIVE'
+          | 'BOOKOOK'
+          | 'SHINYOUNG'
+          | 'CAPE';
         /**
          * @description 은행명 (nullable)
          * @example 산업은행
@@ -680,80 +680,78 @@ export interface components {
        * @enum {string}
        */
       claimReasonType:
-        | 'CHANGE_MIND: 단순변심(색상,사이즈 등)'
-        | 'DEFECTIVE_PRODUCT: 상품불량/파손'
-        | 'WRONG_DELIVERY: 배송누락/오배송'
-        | 'OUT_OF_STOCK_SYSTEM: 재고부족(품절취소)'
-        | 'CANCEL_BEFORE_PAY: 입금전취소'
-        | 'WRONG_PRODUCT_DETAIL: 상품상세 정보와 다름'
-        | 'DELAY_DELIVERY: 판매자 배송 지연'
-        | 'OTHERS_SELLER: 기타(판매자 귀책)'
-        | 'OTHERS_BUYER: 기타(구매자 귀책)'
-        | 'OUT_OF_STOCK: 상품 품절/재고 없음'
-        | 'LATER_INPUT_ORDER: 배송지 미입력 취소'
-        | 'LATER_INPUT_ORDER_RECEIVER_CANCEL: 선물거절취소';
+        | 'CHANGE_MIND'
+        | 'DEFECTIVE_PRODUCT'
+        | 'WRONG_DELIVERY'
+        | 'OUT_OF_STOCK_SYSTEM'
+        | 'CANCEL_BEFORE_PAY'
+        | 'WRONG_PRODUCT_DETAIL'
+        | 'DELAY_DELIVERY'
+        | 'OTHERS_SELLER'
+        | 'OTHERS_BUYER'
+        | 'OUT_OF_STOCK'
+        | 'LATER_INPUT_ORDER'
+        | 'LATER_INPUT_ORDER_RECEIVER_CANCEL';
       /**
        * @description 반품상품 수거방법 (nullable)
        * @example SELLER_COLLECT
        * @enum {string}
        */
-      returnWayType?:
-        | 'SELLER_COLLECT: 판매자수거요청'
-        | 'BUYER_DIRECT_RETURN: 구매자직접반품';
+      returnWayType?: 'SELLER_COLLECT' | 'BUYER_DIRECT_RETURN';
       /**
        * @description 반품 택배사타입 (nullable)
        * @example CJ
        * @enum {string}
        */
       deliveryCompanyType?:
-        | 'CJ: CJ Logistics'
-        | 'POST: Post Office'
-        | 'HANJIN: Hanjin Transportation'
-        | 'GTX: GTX LOGIS'
-        | 'LOTTE: otte Global Logistics Corporation'
-        | 'KGB: KGB LOGIS'
-        | 'LOGEN: Logen'
-        | 'GSI: gsi Express'
-        | 'KGL: KG LOGIS'
-        | 'INTRAS: INTRAS'
-        | 'UPS: UPS'
-        | 'CHUNIL: Chunil Express'
-        | 'KDEXP: Kyungdong Express'
-        | 'HDEXP: Hapdong Express'
-        | 'ILYANG: Ilyang Logis'
-        | 'POST_EMS: Post Office EMS'
-        | 'DAESIN: daesin'
-        | 'CVS: CVS Convenience Shop Delivery Service'
-        | 'DHL: DHL'
-        | 'FEDEX: FEDEX'
-        | 'GSM: GSM International Courier'
-        | 'WARPEX: WarpEx'
-        | 'WIZWA: WIZWA'
-        | 'ACI: ACI Express'
-        | 'PANTOS: LX Pantos'
-        | 'CJ_INTERNATIONAL: CJ Logistics(international courier)'
-        | 'TNT: TNT'
-        | 'CU: CU Convenience Shop Delivery Service'
-        | 'KUNYOUNG: Geonyoung Express'
-        | 'LOTTE_INTERNATIONAL: Lotte Global Logistics Corporation(international courier)'
-        | 'HONAM: Honam Express'
-        | 'HANIPS: Hanui Sarang Express'
-        | 'IPARCEL: i-Parcel'
-        | 'SLX: SLX Express'
-        | 'USPS: USPS'
-        | 'WONDERS: wonders quick'
-        | 'REGISTPOST: Regist Post'
-        | 'DHLDE: DHL(germany)'
-        | 'EZUSA: EZUSA'
-        | 'SWGEXP: Sungwon Global'
-        | 'DAEWOON: Daewoon Global'
-        | 'DODOFLEX: dodoFlex'
-        | 'NH_LOGIS: NongHyup Logis'
-        | 'UFO: UFO'
-        | 'TODAY_PICKUP: Today Pickup'
-        | 'QEXPRESS: 큐익스프레스'
-        | 'PINGPONG: 핑퐁'
-        | 'ETC: ETC';
+        | 'CJ'
+        | 'POST'
+        | 'HANJIN'
+        | 'GTX'
+        | 'LOTTE'
+        | 'KGB'
+        | 'LOGEN'
+        | 'GSI'
+        | 'KGL'
+        | 'INTRAS'
+        | 'UPS'
+        | 'CHUNIL'
+        | 'KDEXP'
+        | 'HDEXP'
+        | 'ILYANG'
+        | 'POST_EMS'
+        | 'DAESIN'
+        | 'CVS'
+        | 'DHL'
+        | 'FEDEX'
+        | 'GSM'
+        | 'WARPEX'
+        | 'WIZWA'
+        | 'ACI'
+        | 'PANTOS'
+        | 'CJ_INTERNATIONAL'
+        | 'TNT'
+        | 'CU'
+        | 'KUNYOUNG'
+        | 'LOTTE_INTERNATIONAL'
+        | 'HONAM'
+        | 'HANIPS'
+        | 'IPARCEL'
+        | 'SLX'
+        | 'USPS'
+        | 'WONDERS'
+        | 'REGISTPOST'
+        | 'DHLDE'
+        | 'EZUSA'
+        | 'SWGEXP'
+        | 'DAEWOON'
+        | 'DODOFLEX'
+        | 'NH_LOGIS'
+        | 'UFO'
+        | 'TODAY_PICKUP'
+        | 'QEXPRESS'
+        | 'PINGPONG'
+        | 'ETC';
       /**
        * @description 첨부파일 url 리스트 (nullable)
        * @example url1,url2
@@ -789,91 +787,91 @@ export interface components {
          * @enum {string}
          */
         countryCd?:
-          | 'AX: 올랜드 제도'
-          | 'AD: 안도라'
-          | 'AU: 호주'
-          | 'AT: 오스트리아'
-          | 'BH: 바레인'
-          | 'BE: 벨기에'
-          | 'BZ: 벨리즈'
-          | 'BR: 브라질'
-          | 'BN: 브루나이'
-          | 'BG: 불가리아'
-          | 'CA: 캐나다'
-          | 'ES_CANARY: 스페인(에스파냐)'
-          | 'CL: 칠레'
-          | 'CN: 중국'
-          | 'CO: 콜롬비아'
-          | 'CR: 코스타리카'
-          | 'CY: 키프로스'
-          | 'CZ: 체코'
-          | 'DK: 덴마크'
-          | 'EC: 에콰도르'
-          | 'EG: 이집트'
-          | 'SV: 엘살바도르'
-          | 'EE: 에스토니아'
-          | 'FR: 프랑스'
-          | 'GF: 프랑스령 기아나'
-          | 'DE: 독일'
-          | 'GR: 그리스'
-          | 'GL: 덴마크'
-          | 'GU: 괌'
-          | 'GT: 과테말라'
-          | 'GG: 건지'
-          | 'GY: 가이아나'
-          | 'HK: 홍콩'
-          | 'HU: 헝가리'
-          | 'IS: 아이슬란드'
-          | 'ID: 인도네시아'
-          | 'IE: 아일랜드'
-          | 'IL: 이스라엘'
-          | 'IT: 이탈리아'
-          | 'JP: 일본'
-          | 'JE: 저지'
-          | 'JO: 요르단'
-          | 'KR: 대한민국'
-          | 'KW: 쿠웨이트'
-          | 'LV: 라트비아'
-          | 'LB: 레바논'
-          | 'LI: 리히텐슈타인'
-          | 'LT: 리투아니아'
-          | 'LU: 룩셈부르크'
-          | 'MO: 마카오'
-          | 'PT_MADEIRA: 포르투갈'
-          | 'MY: 말레이시아'
-          | 'NL: 네덜란드'
-          | 'NZ: 뉴질랜드'
-          | 'GB_NORTHERN_ISLAND: 영국'
-          | 'NO: 노르웨이'
-          | 'PY: 파라과이'
-          | 'PE: 페루'
-          | 'PL: 폴란드'
-          | 'PT: 포르투갈'
-          | 'RO: 루마니아'
-          | 'RU: 러시아'
-          | 'SM: 산마리노'
-          | 'SA: 사우디아라비아'
-          | 'GB_SCOTLAND: 영국'
-          | 'SG: 싱가폴'
-          | 'SK: 슬로바키아'
-          | 'SI: 슬로베니아'
-          | 'ES: 스페인(에스파냐)'
-          | 'CH: 스위스'
-          | 'TW: 대만'
-          | 'TH: 태국'
-          | 'TR: 터키'
-          | 'AE: 아랍에미리트'
-          | 'GB: 영국'
-          | 'US: 미국(대륙)'
-          | 'U2: 미국(대륙)'
-          | 'UY: 우루과이'
-          | 'VN: 베트남'
-          | 'GB_WALES: 영국'
-          | 'YE: 예멘'
-          | 'HR: 크로아티아'
-          | 'MT: 몰타'
-          | 'FI: 핀란드'
-          | 'SE: 스웨덴';
+          | 'AX'
+          | 'AD'
+          | 'AU'
+          | 'AT'
+          | 'BH'
+          | 'BE'
+          | 'BZ'
+          | 'BR'
+          | 'BN'
+          | 'BG'
+          | 'CA'
+          | 'ES_CANARY'
+          | 'CL'
+          | 'CN'
+          | 'CO'
+          | 'CR'
+          | 'CY'
+          | 'CZ'
+          | 'DK'
+          | 'EC'
+          | 'EG'
+          | 'SV'
+          | 'EE'
+          | 'FR'
+          | 'GF'
+          | 'DE'
+          | 'GR'
+          | 'GL'
+          | 'GU'
+          | 'GT'
+          | 'GG'
+          | 'GY'
+          | 'HK'
+          | 'HU'
+          | 'IS'
+          | 'ID'
+          | 'IE'
+          | 'IL'
+          | 'IT'
+          | 'JP'
+          | 'JE'
+          | 'JO'
+          | 'KR'
+          | 'KW'
+          | 'LV'
+          | 'LB'
+          | 'LI'
+          | 'LT'
+          | 'LU'
+          | 'MO'
+          | 'PT_MADEIRA'
+          | 'MY'
+          | 'NL'
+          | 'NZ'
+          | 'GB_NORTHERN_ISLAND'
+          | 'NO'
+          | 'PY'
+          | 'PE'
+          | 'PL'
+          | 'PT'
+          | 'RO'
+          | 'RU'
+          | 'SM'
+          | 'SA'
+          | 'GB_SCOTLAND'
+          | 'SG'
+          | 'SK'
+          | 'SI'
+          | 'ES'
+          | 'CH'
+          | 'TW'
+          | 'TH'
+          | 'TR'
+          | 'AE'
+          | 'GB'
+          | 'US'
+          | 'U2'
+          | 'UY'
+          | 'VN'
+          | 'GB_WALES'
+          | 'YE'
+          | 'HR'
+          | 'MT'
+          | 'FI'
+          | 'SE';
         /**
          * @description 수령자우편번호
          * @example 12345
@@ -918,7 +916,7 @@ export interface components {
        * @example BUYER
        * @enum {string}
        */
-      responsibleObjectType?: 'BUYER: 구매자귀책' | 'SELLER: 판매자귀책';
+      responsibleObjectType?: 'BUYER' | 'SELLER';
       /** @description 주문상품옵션정보 */
       claimedProductOptions: {
         /**
@@ -937,7 +935,7 @@ export interface components {
        * @example CANCEL
        * @enum {string}
        */
-      claimType: 'CANCEL: 취소' | 'RETURN: 반품' | 'EXCHANGE: 교환';
+      claimType: 'CANCEL' | 'RETURN' | 'EXCHANGE';
       /** @description 취소/반품할 제품수량 */
       productCnt: number;
       /**
@@ -946,26 +944,24 @@ export interface components {
        * @enum {string}
        */
       claimReasonType:
-        | 'CHANGE_MIND: 단순변심(색상,사이즈 등)'
-        | 'DEFECTIVE_PRODUCT: 상품불량/파손'
-        | 'WRONG_DELIVERY: 배송누락/오배송'
-        | 'OUT_OF_STOCK_SYSTEM: 재고부족(품절취소)'
-        | 'CANCEL_BEFORE_PAY: 입금전취소'
-        | 'WRONG_PRODUCT_DETAIL: 상품상세 정보와 다름'
-        | 'DELAY_DELIVERY: 판매자 배송 지연'
-        | 'OTHERS_SELLER: 기타(판매자 귀책)'
-        | 'OTHERS_BUYER: 기타(구매자 귀책)'
-        | 'OUT_OF_STOCK: 상품 품절/재고 없음'
-        | 'LATER_INPUT_ORDER: 배송지 미입력 취소'
-        | 'LATER_INPUT_ORDER_RECEIVER_CANCEL: 선물거절취소';
+        | 'CHANGE_MIND'
+        | 'DEFECTIVE_PRODUCT'
+        | 'WRONG_DELIVERY'
+        | 'OUT_OF_STOCK_SYSTEM'
+        | 'CANCEL_BEFORE_PAY'
+        | 'WRONG_PRODUCT_DETAIL'
+        | 'DELAY_DELIVERY'
+        | 'OTHERS_SELLER'
+        | 'OTHERS_BUYER'
+        | 'OUT_OF_STOCK'
+        | 'LATER_INPUT_ORDER'
+        | 'LATER_INPUT_ORDER_RECEIVER_CANCEL';
       /**
        * @description 반품상품 수거방법 (nullable)
        * @example SELLER_COLLECT
        * @enum {string}
        */
-      returnWayType?:
-        | 'SELLER_COLLECT: 판매자수거요청'
-        | 'BUYER_DIRECT_RETURN: 구매자직접반품';
+      returnWayType?: 'SELLER_COLLECT' | 'BUYER_DIRECT_RETURN';
     };
     'guest-claims-cancel507840867': {
       /**
@@ -978,13 +974,13 @@ export interface components {
        * @example BUYER
        * @enum {string}
        */
-      responsibleObjectType?: 'BUYER: 구매자귀책' | 'SELLER: 판매자귀책';
+      responsibleObjectType?: 'BUYER' | 'SELLER';
       /**
        * @description 클레임타입
        * @example CANCEL
        * @enum {string}
        */
-      claimType: 'CANCEL: 취소' | 'RETURN: 반품' | 'EXCHANGE: 교환';
+      claimType: 'CANCEL' | 'RETURN' | 'EXCHANGE';
       /** @description 주문상품옵션정보 */
       claimedProductOptions: {
         /**
@@ -1021,60 +1017,60 @@ export interface components {
          * @enum {string}
          */
         bank?:
-          | 'ANONYMOUS: Unverified Bank'
-          | 'KDB: Korea Development Bank'
-          | 'IBK: Industrial Bank of Korea'
-          | 'KB: KOOKMIN BANK'
-          | 'KEB: Korea Exchange Bank'
-          | 'SUHYUP: National Federation of Fisheries Cooperatives'
-          | 'KEXIM: The Export-Import Bank of Korea'
-          | 'NH: NONGHYUP BANK'
-          | 'NHLOCAL: National Agricultural Cooperative Federation'
-          | 'WOORI: Woori Bank'
-          | 'SC: Standard Chartered Bank Korea Limited'
-          | 'CITY: Citibank Korea'
-          | 'DAEGU: Daegu Gyeongbuk Bank'
-          | 'PUSAN: BUSAN BANK'
-          | 'GWANGJU: The Kwangju Bank'
-          | 'JEJU: Jeju Bank'
-          | 'JEONBUK: Jeonbuk Bank'
-          | 'GYEONGNAM: BNK KYONGNAM BANK'
-          | 'KFCC: The Saemaeul finance firm.'
-          | 'CU: National Credit Union Federation'
-          | 'SANGHO: Mutual Savings Bank / Thrift Institution'
-          | 'HSBC: Hongkong and Shanghai Banking Corporation'
-          | 'DEUTSCHE: Deutsche Bank AG'
-          | 'NFCF: National Forestry Cooperative Federation'
-          | 'EPOST: Post Office'
-          | 'KEBHANA: KEB Hana Bank'
-          | 'SHINHAN: SHINHAN BANK'
-          | 'KBANK: Kbank'
-          | 'KAKAO: Kakao Bank'
-          | 'TOSS: Toss Bank'
-          | 'YUANTA: Yuanta Securities'
-          | 'KBSEC: KB Securities'
-          | 'MIRAE: Mirae Asset Securities'
-          | 'MIRAEDAEWOO: Miraeassetdaewoo Securities'
-          | 'SAMSUNG: Samsung Securities'
-          | 'HANKOOK: Korea Investment ＆ Securities'
-          | 'NH_INVEST: NH Investment & Securities'
-          | 'KYOBO: Kyobo Securities'
-          | 'HI_INVEST: Hi Investment & Securities'
-          | 'HMC_INVEST: HYUNDAI MOTOR SECURITIES'
-          | 'KIWOOM: Kiwoom Securities'
-          | 'EBEST: EBEST INVESTMENT & SECURITIES'
-          | 'SK: SK Securities'
-          | 'DAISHIN: Daishin Securities'
-          | 'SOLOMON_INVEST: SOLOMON INVESTMENT & SECURITIES'
-          | 'HANHWA: Hanwha Investment ＆ Securities'
-          | 'HANA_INVEST: Hana Financial Investment'
-          | 'SHINHAN_INVEST: Shinhan Investment'
-          | 'DONGBU: DB Financial Investment'
-          | 'EUGENE_INVEST: Eugene Investment ＆ Securities'
-          | 'MERITZ_COMPREHENSIVE: Meritz Securities'
-          | 'BOOKOOK: Bookook Securities'
-          | 'SHINYOUNG: Shinyoung Securities'
-          | 'CAPE: CAPE Investment & Securities';
+          | 'ANONYMOUS'
+          | 'KDB'
+          | 'IBK'
+          | 'KB'
+          | 'KEB'
+          | 'SUHYUP'
+          | 'KEXIM'
+          | 'NH'
+          | 'NHLOCAL'
+          | 'WOORI'
+          | 'SC'
+          | 'CITY'
+          | 'DAEGU'
+          | 'PUSAN'
+          | 'GWANGJU'
+          | 'JEJU'
+          | 'JEONBUK'
+          | 'GYEONGNAM'
+          | 'KFCC'
+          | 'CU'
+          | 'SANGHO'
+          | 'HSBC'
+          | 'DEUTSCHE'
+          | 'NFCF'
+          | 'EPOST'
+          | 'KEBHANA'
+          | 'SHINHAN'
+          | 'KBANK'
+          | 'KAKAO'
+          | 'TOSS'
+          | 'YUANTA'
+          | 'KBSEC'
+          | 'MIRAE'
+          | 'MIRAEDAEWOO'
+          | 'SAMSUNG'
+          | 'HANKOOK'
+          | 'NH_INVEST'
+          | 'KYOBO'
+          | 'HI_INVEST'
+          | 'HMC_INVEST'
+          | 'KIWOOM'
+          | 'EBEST'
+          | 'SK'
+          | 'DAISHIN'
+          | 'SOLOMON_INVEST'
+          | 'HANHWA'
+          | 'HANA_INVEST'
+          | 'SHINHAN_INVEST'
+          | 'DONGBU'
+          | 'EUGENE_INVEST'
+          | 'MERITZ_COMPREHENSIVE'
+          | 'BOOKOOK'
+          | 'SHINYOUNG'
+          | 'CAPE';
         /**
          * @description 은행명 (nullable)
          * @example 산업은행
@@ -1087,18 +1083,18 @@ export interface components {
        * @enum {string}
        */
       claimReasonType:
-        | 'CHANGE_MIND: 단순변심(색상,사이즈 등)'
-        | 'DEFECTIVE_PRODUCT: 상품불량/파손'
-        | 'WRONG_DELIVERY: 배송누락/오배송'
-        | 'OUT_OF_STOCK_SYSTEM: 재고부족(품절취소)'
-        | 'CANCEL_BEFORE_PAY: 입금전취소'
-        | 'WRONG_PRODUCT_DETAIL: 상품상세 정보와 다름'
-        | 'DELAY_DELIVERY: 판매자 배송 지연'
-        | 'OTHERS_SELLER: 기타(판매자 귀책)'
-        | 'OTHERS_BUYER: 기타(구매자 귀책)'
-        | 'OUT_OF_STOCK: 상품 품절/재고 없음'
-        | 'LATER_INPUT_ORDER: 배송지 미입력 취소'
-        | 'LATER_INPUT_ORDER_RECEIVER_CANCEL: 선물거절취소';
+        | 'CHANGE_MIND'
+        | 'DEFECTIVE_PRODUCT'
+        | 'WRONG_DELIVERY'
+        | 'OUT_OF_STOCK_SYSTEM'
+        | 'CANCEL_BEFORE_PAY'
+        | 'WRONG_PRODUCT_DETAIL'
+        | 'DELAY_DELIVERY'
+        | 'OTHERS_SELLER'
+        | 'OTHERS_BUYER'
+        | 'OUT_OF_STOCK'
+        | 'LATER_INPUT_ORDER'
+        | 'LATER_INPUT_ORDER_RECEIVER_CANCEL';
       /**
        * @description 즉시환불여부(기본 값: true)(주문상태가 결제완료인 옵션인 경우 즉시환불 가능)
        * @example true
@@ -1116,13 +1112,13 @@ export interface components {
        * @example BUYER
        * @enum {string}
        */
-      responsibleObjectType?: 'BUYER: 구매자귀책' | 'SELLER: 판매자귀책';
+      responsibleObjectType?: 'BUYER' | 'SELLER';
       /**
        * @description 클레임타입
        * @example CANCEL
        * @enum {string}
        */
-      claimType: 'CANCEL: 취소' | 'RETURN: 반품' | 'EXCHANGE: 교환';
+      claimType: 'CANCEL' | 'RETURN' | 'EXCHANGE';
       /**
        * @description 환불계좌정보 저장 여부(true일 경우 bankAccountInfo 필수)
        * @example true
@@ -1146,60 +1142,60 @@ export interface components {
          * @enum {string}
          */
         bank?:
-          | 'ANONYMOUS: Unverified Bank'
-          | 'KDB: Korea Development Bank'
-          | 'IBK: Industrial Bank of Korea'
-          | 'KB: KOOKMIN BANK'
-          | 'KEB: Korea Exchange Bank'
-          | 'SUHYUP: National Federation of Fisheries Cooperatives'
-          | 'KEXIM: The Export-Import Bank of Korea'
-          | 'NH: NONGHYUP BANK'
-          | 'NHLOCAL: National Agricultural Cooperative Federation'
-          | 'WOORI: Woori Bank'
-          | 'SC: Standard Chartered Bank Korea Limited'
-          | 'CITY: Citibank Korea'
-          | 'DAEGU: Daegu Gyeongbuk Bank'
-          | 'PUSAN: BUSAN BANK'
-          | 'GWANGJU: The Kwangju Bank'
-          | 'JEJU: Jeju Bank'
-          | 'JEONBUK: Jeonbuk Bank'
-          | 'GYEONGNAM: BNK KYONGNAM BANK'
-          | 'KFCC: The Saemaeul finance firm.'
-          | 'CU: National Credit Union Federation'
-          | 'SANGHO: Mutual Savings Bank / Thrift Institution'
-          | 'HSBC: Hongkong and Shanghai Banking Corporation'
-          | 'DEUTSCHE: Deutsche Bank AG'
-          | 'NFCF: National Forestry Cooperative Federation'
-          | 'EPOST: Post Office'
-          | 'KEBHANA: KEB Hana Bank'
-          | 'SHINHAN: SHINHAN BANK'
-          | 'KBANK: Kbank'
-          | 'KAKAO: Kakao Bank'
-          | 'TOSS: Toss Bank'
-          | 'YUANTA: Yuanta Securities'
-          | 'KBSEC: KB Securities'
-          | 'MIRAE: Mirae Asset Securities'
-          | 'MIRAEDAEWOO: Miraeassetdaewoo Securities'
-          | 'SAMSUNG: Samsung Securities'
-          | 'HANKOOK: Korea Investment ＆ Securities'
-          | 'NH_INVEST: NH Investment & Securities'
-          | 'KYOBO: Kyobo Securities'
-          | 'HI_INVEST: Hi Investment & Securities'
-          | 'HMC_INVEST: HYUNDAI MOTOR SECURITIES'
-          | 'KIWOOM: Kiwoom Securities'
-          | 'EBEST: EBEST INVESTMENT & SECURITIES'
-          | 'SK: SK Securities'
-          | 'DAISHIN: Daishin Securities'
-          | 'SOLOMON_INVEST: SOLOMON INVESTMENT & SECURITIES'
-          | 'HANHWA: Hanwha Investment ＆ Securities'
-          | 'HANA_INVEST: Hana Financial Investment'
-          | 'SHINHAN_INVEST: Shinhan Investment'
-          | 'DONGBU: DB Financial Investment'
-          | 'EUGENE_INVEST: Eugene Investment ＆ Securities'
-          | 'MERITZ_COMPREHENSIVE: Meritz Securities'
-          | 'BOOKOOK: Bookook Securities'
-          | 'SHINYOUNG: Shinyoung Securities'
-          | 'CAPE: CAPE Investment & Securities';
+          | 'ANONYMOUS'
+          | 'KDB'
+          | 'IBK'
+          | 'KB'
+          | 'KEB'
+          | 'SUHYUP'
+          | 'KEXIM'
+          | 'NH'
+          | 'NHLOCAL'
+          | 'WOORI'
+          | 'SC'
+          | 'CITY'
+          | 'DAEGU'
+          | 'PUSAN'
+          | 'GWANGJU'
+          | 'JEJU'
+          | 'JEONBUK'
+          | 'GYEONGNAM'
+          | 'KFCC'
+          | 'CU'
+          | 'SANGHO'
+          | 'HSBC'
+          | 'DEUTSCHE'
+          | 'NFCF'
+          | 'EPOST'
+          | 'KEBHANA'
+          | 'SHINHAN'
+          | 'KBANK'
+          | 'KAKAO'
+          | 'TOSS'
+          | 'YUANTA'
+          | 'KBSEC'
+          | 'MIRAE'
+          | 'MIRAEDAEWOO'
+          | 'SAMSUNG'
+          | 'HANKOOK'
+          | 'NH_INVEST'
+          | 'KYOBO'
+          | 'HI_INVEST'
+          | 'HMC_INVEST'
+          | 'KIWOOM'
+          | 'EBEST'
+          | 'SK'
+          | 'DAISHIN'
+          | 'SOLOMON_INVEST'
+          | 'HANHWA'
+          | 'HANA_INVEST'
+          | 'SHINHAN_INVEST'
+          | 'DONGBU'
+          | 'EUGENE_INVEST'
+          | 'MERITZ_COMPREHENSIVE'
+          | 'BOOKOOK'
+          | 'SHINYOUNG'
+          | 'CAPE';
         /**
          * @description 은행명 (nullable)
          * @example 산업은행
@@ -1212,18 +1208,18 @@ export interface components {
        * @enum {string}
        */
       claimReasonType:
-        | 'CHANGE_MIND: 단순변심(색상,사이즈 등)'
-        | 'DEFECTIVE_PRODUCT: 상품불량/파손'
-        | 'WRONG_DELIVERY: 배송누락/오배송'
-        | 'OUT_OF_STOCK_SYSTEM: 재고부족(품절취소)'
-        | 'CANCEL_BEFORE_PAY: 입금전취소'
-        | 'WRONG_PRODUCT_DETAIL: 상품상세 정보와 다름'
-        | 'DELAY_DELIVERY: 판매자 배송 지연'
-        | 'OTHERS_SELLER: 기타(판매자 귀책)'
-        | 'OTHERS_BUYER: 기타(구매자 귀책)'
-        | 'OUT_OF_STOCK: 상품 품절/재고 없음'
-        | 'LATER_INPUT_ORDER: 배송지 미입력 취소'
-        | 'LATER_INPUT_ORDER_RECEIVER_CANCEL: 선물거절취소';
+        | 'CHANGE_MIND'
+        | 'DEFECTIVE_PRODUCT'
+        | 'WRONG_DELIVERY'
+        | 'OUT_OF_STOCK_SYSTEM'
+        | 'CANCEL_BEFORE_PAY'
+        | 'WRONG_PRODUCT_DETAIL'
+        | 'DELAY_DELIVERY'
+        | 'OTHERS_SELLER'
+        | 'OTHERS_BUYER'
+        | 'OUT_OF_STOCK'
+        | 'LATER_INPUT_ORDER'
+        | 'LATER_INPUT_ORDER_RECEIVER_CANCEL';
       /**
        * @description 즉시환불여부(기본 값: true)(주문상태가 결제완료인 옵션인 경우 즉시환불 가능)
        * @example true
@@ -1241,7 +1237,7 @@ export interface components {
        * @example BUYER
        * @enum {string}
        */
-      responsibleObjectType?: 'BUYER: 구매자귀책' | 'SELLER: 판매자귀책';
+      responsibleObjectType?: 'BUYER' | 'SELLER';
       /**
        * @description 입금자명(추가결제시) (nullable)
        * @example 홍길동
@@ -1265,60 +1261,60 @@ export interface components {
          * @enum {string}
          */
         bank?:
-          | 'ANONYMOUS: Unverified Bank'
-          | 'KDB: Korea Development Bank'
-          | 'IBK: Industrial Bank of Korea'
-          | 'KB: KOOKMIN BANK'
-          | 'KEB: Korea Exchange Bank'
-          | 'SUHYUP: National Federation of Fisheries Cooperatives'
-          | 'KEXIM: The Export-Import Bank of Korea'
-          | 'NH: NONGHYUP BANK'
-          | 'NHLOCAL: National Agricultural Cooperative Federation'
-          | 'WOORI: Woori Bank'
-          | 'SC: Standard Chartered Bank Korea Limited'
-          | 'CITY: Citibank Korea'
-          | 'DAEGU: Daegu Gyeongbuk Bank'
-          | 'PUSAN: BUSAN BANK'
-          | 'GWANGJU: The Kwangju Bank'
-          | 'JEJU: Jeju Bank'
-          | 'JEONBUK: Jeonbuk Bank'
-          | 'GYEONGNAM: BNK KYONGNAM BANK'
-          | 'KFCC: The Saemaeul finance firm.'
-          | 'CU: National Credit Union Federation'
-          | 'SANGHO: Mutual Savings Bank / Thrift Institution'
-          | 'HSBC: Hongkong and Shanghai Banking Corporation'
-          | 'DEUTSCHE: Deutsche Bank AG'
-          | 'NFCF: National Forestry Cooperative Federation'
-          | 'EPOST: Post Office'
-          | 'KEBHANA: KEB Hana Bank'
-          | 'SHINHAN: SHINHAN BANK'
-          | 'KBANK: Kbank'
-          | 'KAKAO: Kakao Bank'
-          | 'TOSS: Toss Bank'
-          | 'YUANTA: Yuanta Securities'
-          | 'KBSEC: KB Securities'
-          | 'MIRAE: Mirae Asset Securities'
-          | 'MIRAEDAEWOO: Miraeassetdaewoo Securities'
-          | 'SAMSUNG: Samsung Securities'
-          | 'HANKOOK: Korea Investment ＆ Securities'
-          | 'NH_INVEST: NH Investment & Securities'
-          | 'KYOBO: Kyobo Securities'
-          | 'HI_INVEST: Hi Investment & Securities'
-          | 'HMC_INVEST: HYUNDAI MOTOR SECURITIES'
-          | 'KIWOOM: Kiwoom Securities'
-          | 'EBEST: EBEST INVESTMENT & SECURITIES'
-          | 'SK: SK Securities'
-          | 'DAISHIN: Daishin Securities'
-          | 'SOLOMON_INVEST: SOLOMON INVESTMENT & SECURITIES'
-          | 'HANHWA: Hanwha Investment ＆ Securities'
-          | 'HANA_INVEST: Hana Financial Investment'
-          | 'SHINHAN_INVEST: Shinhan Investment'
-          | 'DONGBU: DB Financial Investment'
-          | 'EUGENE_INVEST: Eugene Investment ＆ Securities'
-          | 'MERITZ_COMPREHENSIVE: Meritz Securities'
-          | 'BOOKOOK: Bookook Securities'
-          | 'SHINYOUNG: Shinyoung Securities'
-          | 'CAPE: CAPE Investment & Securities';
+          | 'ANONYMOUS'
+          | 'KDB'
+          | 'IBK'
+          | 'KB'
+          | 'KEB'
+          | 'SUHYUP'
+          | 'KEXIM'
+          | 'NH'
+          | 'NHLOCAL'
+          | 'WOORI'
+          | 'SC'
+          | 'CITY'
+          | 'DAEGU'
+          | 'PUSAN'
+          | 'GWANGJU'
+          | 'JEJU'
+          | 'JEONBUK'
+          | 'GYEONGNAM'
+          | 'KFCC'
+          | 'CU'
+          | 'SANGHO'
+          | 'HSBC'
+          | 'DEUTSCHE'
+          | 'NFCF'
+          | 'EPOST'
+          | 'KEBHANA'
+          | 'SHINHAN'
+          | 'KBANK'
+          | 'KAKAO'
+          | 'TOSS'
+          | 'YUANTA'
+          | 'KBSEC'
+          | 'MIRAE'
+          | 'MIRAEDAEWOO'
+          | 'SAMSUNG'
+          | 'HANKOOK'
+          | 'NH_INVEST'
+          | 'KYOBO'
+          | 'HI_INVEST'
+          | 'HMC_INVEST'
+          | 'KIWOOM'
+          | 'EBEST'
+          | 'SK'
+          | 'DAISHIN'
+          | 'SOLOMON_INVEST'
+          | 'HANHWA'
+          | 'HANA_INVEST'
+          | 'SHINHAN_INVEST'
+          | 'DONGBU'
+          | 'EUGENE_INVEST'
+          | 'MERITZ_COMPREHENSIVE'
+          | 'BOOKOOK'
+          | 'SHINYOUNG'
+          | 'CAPE';
         /**
          * @description 은행명 (nullable)
          * @example 산업은행
@@ -1336,80 +1332,78 @@ export interface components {
        * @enum {string}
        */
       claimReasonType:
-        | 'CHANGE_MIND: 단순변심(색상,사이즈 등)'
-        | 'DEFECTIVE_PRODUCT: 상품불량/파손'
-        | 'WRONG_DELIVERY: 배송누락/오배송'
-        | 'OUT_OF_STOCK_SYSTEM: 재고부족(품절취소)'
-        | 'CANCEL_BEFORE_PAY: 입금전취소'
-        | 'WRONG_PRODUCT_DETAIL: 상품상세 정보와 다름'
-        | 'DELAY_DELIVERY: 판매자 배송 지연'
-        | 'OTHERS_SELLER: 기타(판매자 귀책)'
-        | 'OTHERS_BUYER: 기타(구매자 귀책)'
-        | 'OUT_OF_STOCK: 상품 품절/재고 없음'
-        | 'LATER_INPUT_ORDER: 배송지 미입력 취소'
-        | 'LATER_INPUT_ORDER_RECEIVER_CANCEL: 선물거절취소';
+        | 'CHANGE_MIND'
+        | 'DEFECTIVE_PRODUCT'
+        | 'WRONG_DELIVERY'
+        | 'OUT_OF_STOCK_SYSTEM'
+        | 'CANCEL_BEFORE_PAY'
+        | 'WRONG_PRODUCT_DETAIL'
+        | 'DELAY_DELIVERY'
+        | 'OTHERS_SELLER'
+        | 'OTHERS_BUYER'
+        | 'OUT_OF_STOCK'
+        | 'LATER_INPUT_ORDER'
+        | 'LATER_INPUT_ORDER_RECEIVER_CANCEL';
       /**
        * @description 반품수거방법(SELLER_COLLECT 일 경우 returnAddress(반품수거주소지) 입력 필요) (nullable)
        * @example SELLER_COLLECT
        * @enum {string}
        */
-      returnWayType?:
-        | 'SELLER_COLLECT: 판매자수거요청'
-        | 'BUYER_DIRECT_RETURN: 구매자직접반품';
+      returnWayType?: 'SELLER_COLLECT' | 'BUYER_DIRECT_RETURN';
       /**
        * @description 택배사타입 (nullable)
        * @example CJ
        * @enum {string}
        */
       deliveryCompanyType?:
-        | 'CJ: CJ Logistics'
-        | 'POST: Post Office'
-        | 'HANJIN: Hanjin Transportation'
-        | 'GTX: GTX LOGIS'
-        | 'LOTTE: otte Global Logistics Corporation'
-        | 'KGB: KGB LOGIS'
-        | 'LOGEN: Logen'
-        | 'GSI: gsi Express'
-        | 'KGL: KG LOGIS'
-        | 'INTRAS: INTRAS'
-        | 'UPS: UPS'
-        | 'CHUNIL: Chunil Express'
-        | 'KDEXP: Kyungdong Express'
-        | 'HDEXP: Hapdong Express'
-        | 'ILYANG: Ilyang Logis'
-        | 'POST_EMS: Post Office EMS'
-        | 'DAESIN: daesin'
-        | 'CVS: CVS Convenience Shop Delivery Service'
-        | 'DHL: DHL'
-        | 'FEDEX: FEDEX'
-        | 'GSM: GSM International Courier'
-        | 'WARPEX: WarpEx'
-        | 'WIZWA: WIZWA'
-        | 'ACI: ACI Express'
-        | 'PANTOS: LX Pantos'
-        | 'CJ_INTERNATIONAL: CJ Logistics(international courier)'
-        | 'TNT: TNT'
-        | 'CU: CU Convenience Shop Delivery Service'
-        | 'KUNYOUNG: Geonyoung Express'
-        | 'LOTTE_INTERNATIONAL: Lotte Global Logistics Corporation(international courier)'
-        | 'HONAM: Honam Express'
-        | 'HANIPS: Hanui Sarang Express'
-        | 'IPARCEL: i-Parcel'
-        | 'SLX: SLX Express'
-        | 'USPS: USPS'
-        | 'WONDERS: wonders quick'
-        | 'REGISTPOST: Regist Post'
-        | 'DHLDE: DHL(germany)'
-        | 'EZUSA: EZUSA'
-        | 'SWGEXP: Sungwon Global'
-        | 'DAEWOON: Daewoon Global'
-        | 'DODOFLEX: dodoFlex'
-        | 'NH_LOGIS: NongHyup Logis'
-        | 'UFO: UFO'
-        | 'TODAY_PICKUP: Today Pickup'
-        | 'QEXPRESS: 큐익스프레스'
-        | 'PINGPONG: 핑퐁'
-        | 'ETC: ETC';
+        | 'CJ'
+        | 'POST'
+        | 'HANJIN'
+        | 'GTX'
+        | 'LOTTE'
+        | 'KGB'
+        | 'LOGEN'
+        | 'GSI'
+        | 'KGL'
+        | 'INTRAS'
+        | 'UPS'
+        | 'CHUNIL'
+        | 'KDEXP'
+        | 'HDEXP'
+        | 'ILYANG'
+        | 'POST_EMS'
+        | 'DAESIN'
+        | 'CVS'
+        | 'DHL'
+        | 'FEDEX'
+        | 'GSM'
+        | 'WARPEX'
+        | 'WIZWA'
+        | 'ACI'
+        | 'PANTOS'
+        | 'CJ_INTERNATIONAL'
+        | 'TNT'
+        | 'CU'
+        | 'KUNYOUNG'
+        | 'LOTTE_INTERNATIONAL'
+        | 'HONAM'
+        | 'HANIPS'
+        | 'IPARCEL'
+        | 'SLX'
+        | 'USPS'
+        | 'WONDERS'
+        | 'REGISTPOST'
+        | 'DHLDE'
+        | 'EZUSA'
+        | 'SWGEXP'
+        | 'DAEWOON'
+        | 'DODOFLEX'
+        | 'NH_LOGIS'
+        | 'UFO'
+        | 'TODAY_PICKUP'
+        | 'QEXPRESS'
+        | 'PINGPONG'
+        | 'ETC';
       /**
        * @description 첨부파일 url 리스트 (5개까지 가능, 취소교환은 무시되며, 반품교환만 저장합니다.) (nullable)
        * @example url1,url2
@@ -1440,91 +1434,91 @@ export interface components {
          * @enum {string}
          */
         countryCd?:
-          | 'AX: 올랜드 제도'
-          | 'AD: 안도라'
-          | 'AU: 호주'
-          | 'AT: 오스트리아'
-          | 'BH: 바레인'
-          | 'BE: 벨기에'
-          | 'BZ: 벨리즈'
-          | 'BR: 브라질'
-          | 'BN: 브루나이'
-          | 'BG: 불가리아'
-          | 'CA: 캐나다'
-          | 'ES_CANARY: 스페인(에스파냐)'
-          | 'CL: 칠레'
-          | 'CN: 중국'
-          | 'CO: 콜롬비아'
-          | 'CR: 코스타리카'
-          | 'CY: 키프로스'
-          | 'CZ: 체코'
-          | 'DK: 덴마크'
-          | 'EC: 에콰도르'
-          | 'EG: 이집트'
-          | 'SV: 엘살바도르'
-          | 'EE: 에스토니아'
-          | 'FR: 프랑스'
-          | 'GF: 프랑스령 기아나'
-          | 'DE: 독일'
-          | 'GR: 그리스'
-          | 'GL: 덴마크'
-          | 'GU: 괌'
-          | 'GT: 과테말라'
-          | 'GG: 건지'
-          | 'GY: 가이아나'
-          | 'HK: 홍콩'
-          | 'HU: 헝가리'
-          | 'IS: 아이슬란드'
-          | 'ID: 인도네시아'
-          | 'IE: 아일랜드'
-          | 'IL: 이스라엘'
-          | 'IT: 이탈리아'
-          | 'JP: 일본'
-          | 'JE: 저지'
-          | 'JO: 요르단'
-          | 'KR: 대한민국'
-          | 'KW: 쿠웨이트'
-          | 'LV: 라트비아'
-          | 'LB: 레바논'
-          | 'LI: 리히텐슈타인'
-          | 'LT: 리투아니아'
-          | 'LU: 룩셈부르크'
-          | 'MO: 마카오'
-          | 'PT_MADEIRA: 포르투갈'
-          | 'MY: 말레이시아'
-          | 'NL: 네덜란드'
-          | 'NZ: 뉴질랜드'
-          | 'GB_NORTHERN_ISLAND: 영국'
-          | 'NO: 노르웨이'
-          | 'PY: 파라과이'
-          | 'PE: 페루'
-          | 'PL: 폴란드'
-          | 'PT: 포르투갈'
-          | 'RO: 루마니아'
-          | 'RU: 러시아'
-          | 'SM: 산마리노'
-          | 'SA: 사우디아라비아'
-          | 'GB_SCOTLAND: 영국'
-          | 'SG: 싱가폴'
-          | 'SK: 슬로바키아'
-          | 'SI: 슬로베니아'
-          | 'ES: 스페인(에스파냐)'
-          | 'CH: 스위스'
-          | 'TW: 대만'
-          | 'TH: 태국'
-          | 'TR: 터키'
-          | 'AE: 아랍에미리트'
-          | 'GB: 영국'
-          | 'US: 미국(대륙)'
-          | 'U2: 미국(대륙)'
-          | 'UY: 우루과이'
-          | 'VN: 베트남'
-          | 'GB_WALES: 영국'
-          | 'YE: 예멘'
-          | 'HR: 크로아티아'
-          | 'MT: 몰타'
-          | 'FI: 핀란드'
-          | 'SE: 스웨덴';
+          | 'AX'
+          | 'AD'
+          | 'AU'
+          | 'AT'
+          | 'BH'
+          | 'BE'
+          | 'BZ'
+          | 'BR'
+          | 'BN'
+          | 'BG'
+          | 'CA'
+          | 'ES_CANARY'
+          | 'CL'
+          | 'CN'
+          | 'CO'
+          | 'CR'
+          | 'CY'
+          | 'CZ'
+          | 'DK'
+          | 'EC'
+          | 'EG'
+          | 'SV'
+          | 'EE'
+          | 'FR'
+          | 'GF'
+          | 'DE'
+          | 'GR'
+          | 'GL'
+          | 'GU'
+          | 'GT'
+          | 'GG'
+          | 'GY'
+          | 'HK'
+          | 'HU'
+          | 'IS'
+          | 'ID'
+          | 'IE'
+          | 'IL'
+          | 'IT'
+          | 'JP'
+          | 'JE'
+          | 'JO'
+          | 'KR'
+          | 'KW'
+          | 'LV'
+          | 'LB'
+          | 'LI'
+          | 'LT'
+          | 'LU'
+          | 'MO'
+          | 'PT_MADEIRA'
+          | 'MY'
+          | 'NL'
+          | 'NZ'
+          | 'GB_NORTHERN_ISLAND'
+          | 'NO'
+          | 'PY'
+          | 'PE'
+          | 'PL'
+          | 'PT'
+          | 'RO'
+          | 'RU'
+          | 'SM'
+          | 'SA'
+          | 'GB_SCOTLAND'
+          | 'SG'
+          | 'SK'
+          | 'SI'
+          | 'ES'
+          | 'CH'
+          | 'TW'
+          | 'TH'
+          | 'TR'
+          | 'AE'
+          | 'GB'
+          | 'US'
+          | 'U2'
+          | 'UY'
+          | 'VN'
+          | 'GB_WALES'
+          | 'YE'
+          | 'HR'
+          | 'MT'
+          | 'FI'
+          | 'SE';
         /**
          * @description 수령자우편번호
          * @example 12345
@@ -1575,60 +1569,60 @@ export interface components {
          * @enum {string}
          */
         bank?:
-          | 'ANONYMOUS: Unverified Bank'
-          | 'KDB: Korea Development Bank'
-          | 'IBK: Industrial Bank of Korea'
-          | 'KB: KOOKMIN BANK'
-          | 'KEB: Korea Exchange Bank'
-          | 'SUHYUP: National Federation of Fisheries Cooperatives'
-          | 'KEXIM: The Export-Import Bank of Korea'
-          | 'NH: NONGHYUP BANK'
-          | 'NHLOCAL: National Agricultural Cooperative Federation'
-          | 'WOORI: Woori Bank'
-          | 'SC: Standard Chartered Bank Korea Limited'
-          | 'CITY: Citibank Korea'
-          | 'DAEGU: Daegu Gyeongbuk Bank'
-          | 'PUSAN: BUSAN BANK'
-          | 'GWANGJU: The Kwangju Bank'
-          | 'JEJU: Jeju Bank'
-          | 'JEONBUK: Jeonbuk Bank'
-          | 'GYEONGNAM: BNK KYONGNAM BANK'
-          | 'KFCC: The Saemaeul finance firm.'
-          | 'CU: National Credit Union Federation'
-          | 'SANGHO: Mutual Savings Bank / Thrift Institution'
-          | 'HSBC: Hongkong and Shanghai Banking Corporation'
-          | 'DEUTSCHE: Deutsche Bank AG'
-          | 'NFCF: National Forestry Cooperative Federation'
-          | 'EPOST: Post Office'
-          | 'KEBHANA: KEB Hana Bank'
-          | 'SHINHAN: SHINHAN BANK'
-          | 'KBANK: Kbank'
-          | 'KAKAO: Kakao Bank'
-          | 'TOSS: Toss Bank'
-          | 'YUANTA: Yuanta Securities'
-          | 'KBSEC: KB Securities'
-          | 'MIRAE: Mirae Asset Securities'
-          | 'MIRAEDAEWOO: Miraeassetdaewoo Securities'
-          | 'SAMSUNG: Samsung Securities'
-          | 'HANKOOK: Korea Investment ＆ Securities'
-          | 'NH_INVEST: NH Investment & Securities'
-          | 'KYOBO: Kyobo Securities'
-          | 'HI_INVEST: Hi Investment & Securities'
-          | 'HMC_INVEST: HYUNDAI MOTOR SECURITIES'
-          | 'KIWOOM: Kiwoom Securities'
-          | 'EBEST: EBEST INVESTMENT & SECURITIES'
-          | 'SK: SK Securities'
-          | 'DAISHIN: Daishin Securities'
-          | 'SOLOMON_INVEST: SOLOMON INVESTMENT & SECURITIES'
-          | 'HANHWA: Hanwha Investment ＆ Securities'
-          | 'HANA_INVEST: Hana Financial Investment'
-          | 'SHINHAN_INVEST: Shinhan Investment'
-          | 'DONGBU: DB Financial Investment'
-          | 'EUGENE_INVEST: Eugene Investment ＆ Securities'
-          | 'MERITZ_COMPREHENSIVE: Meritz Securities'
-          | 'BOOKOOK: Bookook Securities'
-          | 'SHINYOUNG: Shinyoung Securities'
-          | 'CAPE: CAPE Investment & Securities';
+          | 'ANONYMOUS'
+          | 'KDB'
+          | 'IBK'
+          | 'KB'
+          | 'KEB'
+          | 'SUHYUP'
+          | 'KEXIM'
+          | 'NH'
+          | 'NHLOCAL'
+          | 'WOORI'
+          | 'SC'
+          | 'CITY'
+          | 'DAEGU'
+          | 'PUSAN'
+          | 'GWANGJU'
+          | 'JEJU'
+          | 'JEONBUK'
+          | 'GYEONGNAM'
+          | 'KFCC'
+          | 'CU'
+          | 'SANGHO'
+          | 'HSBC'
+          | 'DEUTSCHE'
+          | 'NFCF'
+          | 'EPOST'
+          | 'KEBHANA'
+          | 'SHINHAN'
+          | 'KBANK'
+          | 'KAKAO'
+          | 'TOSS'
+          | 'YUANTA'
+          | 'KBSEC'
+          | 'MIRAE'
+          | 'MIRAEDAEWOO'
+          | 'SAMSUNG'
+          | 'HANKOOK'
+          | 'NH_INVEST'
+          | 'KYOBO'
+          | 'HI_INVEST'
+          | 'HMC_INVEST'
+          | 'KIWOOM'
+          | 'EBEST'
+          | 'SK'
+          | 'DAISHIN'
+          | 'SOLOMON_INVEST'
+          | 'HANHWA'
+          | 'HANA_INVEST'
+          | 'SHINHAN_INVEST'
+          | 'DONGBU'
+          | 'EUGENE_INVEST'
+          | 'MERITZ_COMPREHENSIVE'
+          | 'BOOKOOK'
+          | 'SHINYOUNG'
+          | 'CAPE';
         /** @description 은행명 */
         bankName: string;
         /**
@@ -1647,10 +1641,7 @@ export interface components {
        * @example CASH
        * @enum {string}
        */
-      additionalPayType?:
-        | 'CASH: 무통장입금'
-        | 'ACCUMULATION: 적립금 전액 사용'
-        | 'NAVER_PAY: 네이버페이 주문형';
+      additionalPayType?: 'CASH' | 'ACCUMULATION' | 'NAVER_PAY';
       /** @description 교환출고지주소 (nullable) */
       exchangeAddress?: {
         /** @description (해외배송 시 필수) 수령인 lastName (nullable) */
@@ -1676,91 +1667,91 @@ export interface components {
          * @enum {string}
          */
         countryCd?:
-          | 'AX: 올랜드 제도'
-          | 'AD: 안도라'
-          | 'AU: 호주'
-          | 'AT: 오스트리아'
-          | 'BH: 바레인'
-          | 'BE: 벨기에'
-          | 'BZ: 벨리즈'
-          | 'BR: 브라질'
-          | 'BN: 브루나이'
-          | 'BG: 불가리아'
-          | 'CA: 캐나다'
-          | 'ES_CANARY: 스페인(에스파냐)'
-          | 'CL: 칠레'
-          | 'CN: 중국'
-          | 'CO: 콜롬비아'
-          | 'CR: 코스타리카'
-          | 'CY: 키프로스'
-          | 'CZ: 체코'
-          | 'DK: 덴마크'
-          | 'EC: 에콰도르'
-          | 'EG: 이집트'
-          | 'SV: 엘살바도르'
-          | 'EE: 에스토니아'
-          | 'FR: 프랑스'
-          | 'GF: 프랑스령 기아나'
-          | 'DE: 독일'
-          | 'GR: 그리스'
-          | 'GL: 덴마크'
-          | 'GU: 괌'
-          | 'GT: 과테말라'
-          | 'GG: 건지'
-          | 'GY: 가이아나'
-          | 'HK: 홍콩'
-          | 'HU: 헝가리'
-          | 'IS: 아이슬란드'
-          | 'ID: 인도네시아'
-          | 'IE: 아일랜드'
-          | 'IL: 이스라엘'
-          | 'IT: 이탈리아'
-          | 'JP: 일본'
-          | 'JE: 저지'
-          | 'JO: 요르단'
-          | 'KR: 대한민국'
-          | 'KW: 쿠웨이트'
-          | 'LV: 라트비아'
-          | 'LB: 레바논'
-          | 'LI: 리히텐슈타인'
-          | 'LT: 리투아니아'
-          | 'LU: 룩셈부르크'
-          | 'MO: 마카오'
-          | 'PT_MADEIRA: 포르투갈'
-          | 'MY: 말레이시아'
-          | 'NL: 네덜란드'
-          | 'NZ: 뉴질랜드'
-          | 'GB_NORTHERN_ISLAND: 영국'
-          | 'NO: 노르웨이'
-          | 'PY: 파라과이'
-          | 'PE: 페루'
-          | 'PL: 폴란드'
-          | 'PT: 포르투갈'
-          | 'RO: 루마니아'
-          | 'RU: 러시아'
-          | 'SM: 산마리노'
-          | 'SA: 사우디아라비아'
-          | 'GB_SCOTLAND: 영국'
-          | 'SG: 싱가폴'
-          | 'SK: 슬로바키아'
-          | 'SI: 슬로베니아'
-          | 'ES: 스페인(에스파냐)'
-          | 'CH: 스위스'
-          | 'TW: 대만'
-          | 'TH: 태국'
-          | 'TR: 터키'
-          | 'AE: 아랍에미리트'
-          | 'GB: 영국'
-          | 'US: 미국(대륙)'
-          | 'U2: 미국(대륙)'
-          | 'UY: 우루과이'
-          | 'VN: 베트남'
-          | 'GB_WALES: 영국'
-          | 'YE: 예멘'
-          | 'HR: 크로아티아'
-          | 'MT: 몰타'
-          | 'FI: 핀란드'
-          | 'SE: 스웨덴';
+          | 'AX'
+          | 'AD'
+          | 'AU'
+          | 'AT'
+          | 'BH'
+          | 'BE'
+          | 'BZ'
+          | 'BR'
+          | 'BN'
+          | 'BG'
+          | 'CA'
+          | 'ES_CANARY'
+          | 'CL'
+          | 'CN'
+          | 'CO'
+          | 'CR'
+          | 'CY'
+          | 'CZ'
+          | 'DK'
+          | 'EC'
+          | 'EG'
+          | 'SV'
+          | 'EE'
+          | 'FR'
+          | 'GF'
+          | 'DE'
+          | 'GR'
+          | 'GL'
+          | 'GU'
+          | 'GT'
+          | 'GG'
+          | 'GY'
+          | 'HK'
+          | 'HU'
+          | 'IS'
+          | 'ID'
+          | 'IE'
+          | 'IL'
+          | 'IT'
+          | 'JP'
+          | 'JE'
+          | 'JO'
+          | 'KR'
+          | 'KW'
+          | 'LV'
+          | 'LB'
+          | 'LI'
+          | 'LT'
+          | 'LU'
+          | 'MO'
+          | 'PT_MADEIRA'
+          | 'MY'
+          | 'NL'
+          | 'NZ'
+          | 'GB_NORTHERN_ISLAND'
+          | 'NO'
+          | 'PY'
+          | 'PE'
+          | 'PL'
+          | 'PT'
+          | 'RO'
+          | 'RU'
+          | 'SM'
+          | 'SA'
+          | 'GB_SCOTLAND'
+          | 'SG'
+          | 'SK'
+          | 'SI'
+          | 'ES'
+          | 'CH'
+          | 'TW'
+          | 'TH'
+          | 'TR'
+          | 'AE'
+          | 'GB'
+          | 'US'
+          | 'U2'
+          | 'UY'
+          | 'VN'
+          | 'GB_WALES'
+          | 'YE'
+          | 'HR'
+          | 'MT'
+          | 'FI'
+          | 'SE';
         /**
          * @description 수령자우편번호
          * @example 12345
@@ -1882,24 +1873,24 @@ export interface components {
        * @enum {string}
        */
       refundType?:
-        | 'CANCEL_DEPOSIT: 미입금 취소처리'
-        | 'PAYCO: PAYCO'
-        | 'CASH: PG없음'
-        | 'PAYPAL: PAYPAL'
-        | 'STRIPE: STRIPE'
-        | 'ZERO_REFUND: 0원결제'
-        | 'KCP: KCP'
-        | 'CREDIT_CARD: 신용카드'
-        | 'LIIVMATE: 리브메이트'
-        | 'ACCUMULATION: 적립금 전액 사용'
-        | 'INICIS: 이니시스'
-        | 'NAVER_EASY_PAY: 네이버페이(간편결제)'
-        | 'KAKAO_PAY: 카카오페이'
-        | 'NAVER_PAY: 네이버페이(주문형)'
-        | 'LG_U_PLUS: LG유플러스'
-        | 'TOSS_PAYMENTS: 토스페이먼츠'
-        | 'ACCOUNT: 무통장입금'
-        | 'DUMMY: PG없음';
+        | 'CANCEL_DEPOSIT'
+        | 'PAYCO'
+        | 'CASH'
+        | 'PAYPAL'
+        | 'STRIPE'
+        | 'ZERO_REFUND'
+        | 'KCP'
+        | 'CREDIT_CARD'
+        | 'LIIVMATE'
+        | 'ACCUMULATION'
+        | 'INICIS'
+        | 'NAVER_EASY_PAY'
+        | 'KAKAO_PAY'
+        | 'NAVER_PAY'
+        | 'LG_U_PLUS'
+        | 'TOSS_PAYMENTS'
+        | 'ACCOUNT'
+        | 'DUMMY';
       /** @description 배송비정보 */
       deliveryAmtInfo: {
         /**
@@ -1989,41 +1980,41 @@ export interface components {
        * @enum {string}
        */
       refundPayType:
-        | 'CREDIT_CARD: 신용카드'
-        | 'ACCOUNT: 무통장입금'
-        | 'MOBILE: 휴대폰결제'
-        | 'REALTIME_ACCOUNT_TRANSFER: 실시간계좌이체'
-        | 'VIRTUAL_ACCOUNT: 가상계좌'
-        | 'GIFT: 상품권'
-        | 'ATM: ATM'
-        | 'PAYCO: PAYCO'
-        | 'ZERO_PAY: 0원결제'
-        | 'ACCUMULATION: 적립금 전액 사용'
-        | 'PHONE_BILL: 전화결제'
-        | 'POINT: 포인트결제'
-        | 'YPAY: 옐로페이'
-        | 'KPAY: 케이페이'
-        | 'PAYPIN: 페이핀'
-        | 'INIPAY: INIPay 간편결제'
-        | 'PAYPAL: PAYPAL'
-        | 'STRIPE: STRIPE'
-        | 'NAVER_PAY: 네이버페이 주문형'
-        | 'KAKAO_PAY: 카카오페이'
-        | 'NAVER_EASY_PAY: 네이버페이 결제형'
-        | 'SAMSUNG_PAY: 삼성페이'
-        | 'CHAI: 차이'
-        | 'TOSS_PAY: 토스페이'
-        | 'SK_PAY: SK페이'
-        | 'APPLE_PAY: 애플페이'
-        | 'ESCROW_REALTIME_ACCOUNT_TRANSFER: 실시간계좌이체-에스크로'
-        | 'ESCROW_VIRTUAL_ACCOUNT: 가상계좌-에스크로'
-        | 'VERITRANS_CARD: Veritrans CreditCard'
-        | 'TOASTCAM: 토스트캠'
-        | 'RENTAL: 렌탈결제'
-        | 'UNION_PAY: Union Pay'
-        | 'ALIPAY: Alipay Plus'
-        | 'WECHAT_PAY: WeChat Pay'
-        | 'ETC: 기타결제수단';
+        | 'CREDIT_CARD'
+        | 'ACCOUNT'
+        | 'MOBILE'
+        | 'REALTIME_ACCOUNT_TRANSFER'
+        | 'VIRTUAL_ACCOUNT'
+        | 'GIFT'
+        | 'ATM'
+        | 'PAYCO'
+        | 'ZERO_PAY'
+        | 'ACCUMULATION'
+        | 'PHONE_BILL'
+        | 'POINT'
+        | 'YPAY'
+        | 'KPAY'
+        | 'PAYPIN'
+        | 'INIPAY'
+        | 'PAYPAL'
+        | 'STRIPE'
+        | 'NAVER_PAY'
+        | 'KAKAO_PAY'
+        | 'NAVER_EASY_PAY'
+        | 'SAMSUNG_PAY'
+        | 'CHAI'
+        | 'TOSS_PAY'
+        | 'SK_PAY'
+        | 'APPLE_PAY'
+        | 'ESCROW_REALTIME_ACCOUNT_TRANSFER'
+        | 'ESCROW_VIRTUAL_ACCOUNT'
+        | 'VERITRANS_CARD'
+        | 'TOASTCAM'
+        | 'RENTAL'
+        | 'UNION_PAY'
+        | 'ALIPAY'
+        | 'WECHAT_PAY'
+        | 'ETC';
       /** @description 상품금액정보 */
       productAmtInfo: {
         /**
@@ -2089,54 +2080,54 @@ export interface components {
        * @example CJ
        */
       deliveryCompanyTypes: (
-        | 'CJ: CJ Logistics'
-        | 'POST: Post Office'
-        | 'HANJIN: Hanjin Transportation'
-        | 'GTX: GTX LOGIS'
-        | 'LOTTE: otte Global Logistics Corporation'
-        | 'KGB: KGB LOGIS'
-        | 'LOGEN: Logen'
-        | 'GSI: gsi Express'
-        | 'KGL: KG LOGIS'
-        | 'INTRAS: INTRAS'
-        | 'UPS: UPS'
-        | 'CHUNIL: Chunil Express'
-        | 'KDEXP: Kyungdong Express'
-        | 'HDEXP: Hapdong Express'
-        | 'ILYANG: Ilyang Logis'
-        | 'POST_EMS: Post Office EMS'
-        | 'DAESIN: daesin'
-        | 'CVS: CVS Convenience Shop Delivery Service'
-        | 'DHL: DHL'
-        | 'FEDEX: FEDEX'
-        | 'GSM: GSM International Courier'
-        | 'WARPEX: WarpEx'
-        | 'WIZWA: WIZWA'
-        | 'ACI: ACI Express'
-        | 'PANTOS: LX Pantos'
-        | 'CJ_INTERNATIONAL: CJ Logistics(international courier)'
-        | 'TNT: TNT'
-        | 'CU: CU Convenience Shop Delivery Service'
-        | 'KUNYOUNG: Geonyoung Express'
-        | 'LOTTE_INTERNATIONAL: Lotte Global Logistics Corporation(international courier)'
-        | 'HONAM: Honam Express'
-        | 'HANIPS: Hanui Sarang Express'
-        | 'IPARCEL: i-Parcel'
-        | 'SLX: SLX Express'
-        | 'USPS: USPS'
-        | 'WONDERS: wonders quick'
-        | 'REGISTPOST: Regist Post'
-        | 'DHLDE: DHL(germany)'
-        | 'EZUSA: EZUSA'
-        | 'SWGEXP: Sungwon Global'
-        | 'DAEWOON: Daewoon Global'
-        | 'DODOFLEX: dodoFlex'
-        | 'NH_LOGIS: NongHyup Logis'
-        | 'UFO: UFO'
-        | 'TODAY_PICKUP: Today Pickup'
-        | 'QEXPRESS: 큐익스프레스'
-        | 'PINGPONG: 핑퐁'
-        | 'ETC: ETC'
+        | 'CJ'
+        | 'POST'
+        | 'HANJIN'
+        | 'GTX'
+        | 'LOTTE'
+        | 'KGB'
+        | 'LOGEN'
+        | 'GSI'
+        | 'KGL'
+        | 'INTRAS'
+        | 'UPS'
+        | 'CHUNIL'
+        | 'KDEXP'
+        | 'HDEXP'
+        | 'ILYANG'
+        | 'POST_EMS'
+        | 'DAESIN'
+        | 'CVS'
+        | 'DHL'
+        | 'FEDEX'
+        | 'GSM'
+        | 'WARPEX'
+        | 'WIZWA'
+        | 'ACI'
+        | 'PANTOS'
+        | 'CJ_INTERNATIONAL'
+        | 'TNT'
+        | 'CU'
+        | 'KUNYOUNG'
+        | 'LOTTE_INTERNATIONAL'
+        | 'HONAM'
+        | 'HANIPS'
+        | 'IPARCEL'
+        | 'SLX'
+        | 'USPS'
+        | 'WONDERS'
+        | 'REGISTPOST'
+        | 'DHLDE'
+        | 'EZUSA'
+        | 'SWGEXP'
+        | 'DAEWOON'
+        | 'DODOFLEX'
+        | 'NH_LOGIS'
+        | 'UFO'
+        | 'TODAY_PICKUP'
+        | 'QEXPRESS'
+        | 'PINGPONG'
+        | 'ETC'
       )[];
       /** @description 클레임 대상 상품 */
       originalOption: {
@@ -2184,18 +2175,18 @@ export interface components {
          * @enum {string}
          */
         claimReasonType?:
-          | 'CHANGE_MIND: 단순변심(색상,사이즈 등)'
-          | 'DEFECTIVE_PRODUCT: 상품불량/파손'
-          | 'WRONG_DELIVERY: 배송누락/오배송'
-          | 'OUT_OF_STOCK_SYSTEM: 재고부족(품절취소)'
-          | 'CANCEL_BEFORE_PAY: 입금전취소'
-          | 'WRONG_PRODUCT_DETAIL: 상품상세 정보와 다름'
-          | 'DELAY_DELIVERY: 판매자 배송 지연'
-          | 'OTHERS_SELLER: 기타(판매자 귀책)'
-          | 'OTHERS_BUYER: 기타(구매자 귀책)'
-          | 'OUT_OF_STOCK: 상품 품절/재고 없음'
-          | 'LATER_INPUT_ORDER: 배송지 미입력 취소'
-          | 'LATER_INPUT_ORDER_RECEIVER_CANCEL: 선물거절취소';
+          | 'CHANGE_MIND'
+          | 'DEFECTIVE_PRODUCT'
+          | 'WRONG_DELIVERY'
+          | 'OUT_OF_STOCK_SYSTEM'
+          | 'CANCEL_BEFORE_PAY'
+          | 'WRONG_PRODUCT_DETAIL'
+          | 'DELAY_DELIVERY'
+          | 'OTHERS_SELLER'
+          | 'OTHERS_BUYER'
+          | 'OUT_OF_STOCK'
+          | 'LATER_INPUT_ORDER'
+          | 'LATER_INPUT_ORDER_RECEIVER_CANCEL';
         /**
          * @description 배송상품여부
          * @example true
@@ -2224,30 +2215,30 @@ export interface components {
          * @enum {string}
          */
         claimStatusType?:
-          | 'CANCEL_NO_REFUND: Cancel done[No Refund]'
-          | 'CANCEL_REQUEST: Cancel request[Waiting for approval]'
-          | 'CANCEL_PROC_REQUEST_REFUND: Cancellation[Refund pending]'
-          | 'CANCEL_PROC_WAITING_REFUND: Cancellation[Waiting for refund]'
-          | 'CANCEL_DONE: Cancel done[Refund done]'
-          | 'RETURN_NO_REFUND: Return done[No refund]'
-          | 'RETURN_REQUEST: Return request[Waiting for approval]'
-          | 'RETURN_REJECT_REQUEST: Return request[Wait for withdrawal]'
-          | 'RETURN_PROC_BEFORE_RECEIVE: Return processing[Collection progress]'
-          | 'RETURN_PROC_REQUEST_REFUND: Return processing[Refund pending]'
-          | 'RETURN_PROC_WAITING_REFUND: Return processing[Waiting for refund]'
-          | 'RETURN_DONE: Return done[Refund Done]'
-          | 'RETURN_REFUND_AMT_ADJUST_REQUESTED: Return processing[Adjustment request]'
-          | 'EXCHANGE_REQUEST: Exchange request[Waiting for approval]'
-          | 'EXCHANGE_REJECT_REQUEST: Exchange processing[Wait for withdrawal]'
-          | 'EXCHANGE_PROC_BEFORE_RECEIVE: Exchange processing[Collection progress]'
-          | 'EXCHANGE_PROC_REQUEST_PAY: Exchange processing[Waiting for payment]'
-          | 'EXCHANGE_PROC_REQUEST_REFUND: Exchange processing[Refund pending]'
-          | 'EXCHANGE_PROC_WAITING: Exchange processing[Waiting for processing]'
-          | 'EXCHANGE_PROC_WAITING_PAY: Exchange processing[Waiting for deposit processing]'
-          | 'EXCHANGE_PROC_WAITING_REFUND: Exchange processing[Waiting for refund]'
-          | 'EXCHANGE_DONE_PAY_DONE: Exchange Done[Pay Done]'
-          | 'EXCHANGE_DONE_REFUND_DONE: Exchange Done[Refund Done]'
-          | 'EXCHANGE_DONE: Exchange Done[No Refund]';
+          | 'CANCEL_NO_REFUND'
+          | 'CANCEL_REQUEST'
+          | 'CANCEL_PROC_REQUEST_REFUND'
+          | 'CANCEL_PROC_WAITING_REFUND'
+          | 'CANCEL_DONE'
+          | 'RETURN_NO_REFUND'
+          | 'RETURN_REQUEST'
+          | 'RETURN_REJECT_REQUEST'
+          | 'RETURN_PROC_BEFORE_RECEIVE'
+          | 'RETURN_PROC_REQUEST_REFUND'
+          | 'RETURN_PROC_WAITING_REFUND'
+          | 'RETURN_DONE'
+          | 'RETURN_REFUND_AMT_ADJUST_REQUESTED'
+          | 'EXCHANGE_REQUEST'
+          | 'EXCHANGE_REJECT_REQUEST'
+          | 'EXCHANGE_PROC_BEFORE_RECEIVE'
+          | 'EXCHANGE_PROC_REQUEST_PAY'
+          | 'EXCHANGE_PROC_REQUEST_REFUND'
+          | 'EXCHANGE_PROC_WAITING'
+          | 'EXCHANGE_PROC_WAITING_PAY'
+          | 'EXCHANGE_PROC_WAITING_REFUND'
+          | 'EXCHANGE_DONE_PAY_DONE'
+          | 'EXCHANGE_DONE_REFUND_DONE'
+          | 'EXCHANGE_DONE';
         /**
          * @description 추가상품번호
          * @example 1
@@ -2264,41 +2255,41 @@ export interface components {
          * @enum {string}
          */
         payType:
-          | 'CREDIT_CARD: 신용카드'
-          | 'ACCOUNT: 무통장입금'
-          | 'MOBILE: 휴대폰결제'
-          | 'REALTIME_ACCOUNT_TRANSFER: 실시간계좌이체'
-          | 'VIRTUAL_ACCOUNT: 가상계좌'
-          | 'GIFT: 상품권'
-          | 'ATM: ATM'
-          | 'PAYCO: PAYCO'
-          | 'ZERO_PAY: 0원결제'
-          | 'ACCUMULATION: 적립금 전액 사용'
-          | 'PHONE_BILL: 전화결제'
-          | 'POINT: 포인트결제'
-          | 'YPAY: 옐로페이'
-          | 'KPAY: 케이페이'
-          | 'PAYPIN: 페이핀'
-          | 'INIPAY: INIPay 간편결제'
-          | 'PAYPAL: PAYPAL'
-          | 'STRIPE: STRIPE'
-          | 'NAVER_PAY: 네이버페이 주문형'
-          | 'KAKAO_PAY: 카카오페이'
-          | 'NAVER_EASY_PAY: 네이버페이 결제형'
-          | 'SAMSUNG_PAY: 삼성페이'
-          | 'CHAI: 차이'
-          | 'TOSS_PAY: 토스페이'
-          | 'SK_PAY: SK페이'
-          | 'APPLE_PAY: 애플페이'
-          | 'ESCROW_REALTIME_ACCOUNT_TRANSFER: 실시간계좌이체-에스크로'
-          | 'ESCROW_VIRTUAL_ACCOUNT: 가상계좌-에스크로'
-          | 'VERITRANS_CARD: Veritrans CreditCard'
-          | 'TOASTCAM: 토스트캠'
-          | 'RENTAL: 렌탈결제'
-          | 'UNION_PAY: Union Pay'
-          | 'ALIPAY: Alipay Plus'
-          | 'WECHAT_PAY: WeChat Pay'
-          | 'ETC: 기타결제수단';
+          | 'CREDIT_CARD'
+          | 'ACCOUNT'
+          | 'MOBILE'
+          | 'REALTIME_ACCOUNT_TRANSFER'
+          | 'VIRTUAL_ACCOUNT'
+          | 'GIFT'
+          | 'ATM'
+          | 'PAYCO'
+          | 'ZERO_PAY'
+          | 'ACCUMULATION'
+          | 'PHONE_BILL'
+          | 'POINT'
+          | 'YPAY'
+          | 'KPAY'
+          | 'PAYPIN'
+          | 'INIPAY'
+          | 'PAYPAL'
+          | 'STRIPE'
+          | 'NAVER_PAY'
+          | 'KAKAO_PAY'
+          | 'NAVER_EASY_PAY'
+          | 'SAMSUNG_PAY'
+          | 'CHAI'
+          | 'TOSS_PAY'
+          | 'SK_PAY'
+          | 'APPLE_PAY'
+          | 'ESCROW_REALTIME_ACCOUNT_TRANSFER'
+          | 'ESCROW_VIRTUAL_ACCOUNT'
+          | 'VERITRANS_CARD'
+          | 'TOASTCAM'
+          | 'RENTAL'
+          | 'UNION_PAY'
+          | 'ALIPAY'
+          | 'WECHAT_PAY'
+          | 'ETC';
         /**
          * @description 해외배송여부(true: 해외배송, false: 국내배송)
          * @example false
@@ -2438,54 +2429,54 @@ export interface components {
            * @enum {string}
            */
           deliveryCompanyType?:
-            | 'CJ: CJ Logistics'
-            | 'POST: Post Office'
-            | 'HANJIN: Hanjin Transportation'
-            | 'GTX: GTX LOGIS'
-            | 'LOTTE: otte Global Logistics Corporation'
-            | 'KGB: KGB LOGIS'
-            | 'LOGEN: Logen'
-            | 'GSI: gsi Express'
-            | 'KGL: KG LOGIS'
-            | 'INTRAS: INTRAS'
-            | 'UPS: UPS'
-            | 'CHUNIL: Chunil Express'
-            | 'KDEXP: Kyungdong Express'
-            | 'HDEXP: Hapdong Express'
-            | 'ILYANG: Ilyang Logis'
-            | 'POST_EMS: Post Office EMS'
-            | 'DAESIN: daesin'
-            | 'CVS: CVS Convenience Shop Delivery Service'
-            | 'DHL: DHL'
-            | 'FEDEX: FEDEX'
-            | 'GSM: GSM International Courier'
-            | 'WARPEX: WarpEx'
-            | 'WIZWA: WIZWA'
-            | 'ACI: ACI Express'
-            | 'PANTOS: LX Pantos'
-            | 'CJ_INTERNATIONAL: CJ Logistics(international courier)'
-            | 'TNT: TNT'
-            | 'CU: CU Convenience Shop Delivery Service'
-            | 'KUNYOUNG: Geonyoung Express'
-            | 'LOTTE_INTERNATIONAL: Lotte Global Logistics Corporation(international courier)'
-            | 'HONAM: Honam Express'
-            | 'HANIPS: Hanui Sarang Express'
-            | 'IPARCEL: i-Parcel'
-            | 'SLX: SLX Express'
-            | 'USPS: USPS'
-            | 'WONDERS: wonders quick'
-            | 'REGISTPOST: Regist Post'
-            | 'DHLDE: DHL(germany)'
-            | 'EZUSA: EZUSA'
-            | 'SWGEXP: Sungwon Global'
-            | 'DAEWOON: Daewoon Global'
-            | 'DODOFLEX: dodoFlex'
-            | 'NH_LOGIS: NongHyup Logis'
-            | 'UFO: UFO'
-            | 'TODAY_PICKUP: Today Pickup'
-            | 'QEXPRESS: 큐익스프레스'
-            | 'PINGPONG: 핑퐁'
-            | 'ETC: ETC';
+            | 'CJ'
+            | 'POST'
+            | 'HANJIN'
+            | 'GTX'
+            | 'LOTTE'
+            | 'KGB'
+            | 'LOGEN'
+            | 'GSI'
+            | 'KGL'
+            | 'INTRAS'
+            | 'UPS'
+            | 'CHUNIL'
+            | 'KDEXP'
+            | 'HDEXP'
+            | 'ILYANG'
+            | 'POST_EMS'
+            | 'DAESIN'
+            | 'CVS'
+            | 'DHL'
+            | 'FEDEX'
+            | 'GSM'
+            | 'WARPEX'
+            | 'WIZWA'
+            | 'ACI'
+            | 'PANTOS'
+            | 'CJ_INTERNATIONAL'
+            | 'TNT'
+            | 'CU'
+            | 'KUNYOUNG'
+            | 'LOTTE_INTERNATIONAL'
+            | 'HONAM'
+            | 'HANIPS'
+            | 'IPARCEL'
+            | 'SLX'
+            | 'USPS'
+            | 'WONDERS'
+            | 'REGISTPOST'
+            | 'DHLDE'
+            | 'EZUSA'
+            | 'SWGEXP'
+            | 'DAEWOON'
+            | 'DODOFLEX'
+            | 'NH_LOGIS'
+            | 'UFO'
+            | 'TODAY_PICKUP'
+            | 'QEXPRESS'
+            | 'PINGPONG'
+            | 'ETC';
           /**
            * @description 송장추적 URL (nullable)
            * @example url1
@@ -2508,31 +2499,31 @@ export interface components {
          * @enum {string}
          */
         pgType:
-          | 'DUMMY: 없음'
-          | 'PAYCO: PAYCO'
-          | 'PAYPAL: PayPal'
-          | 'STRIPE: STRIPE'
-          | 'KCP: KCP'
-          | 'INICIS: 이니시스'
-          | 'NONE: PG없음'
-          | 'KCP_MOBILE: KCP(모바일)'
-          | 'KCP_APP: KCP(앱)'
-          | 'NAVER_PAY: 네이버페이(주문형)'
-          | 'LIIVMATE: 리브메이트'
-          | 'PAYPALPRO: PAYPAL PRO'
-          | 'ATHOR_NET: AthorizeNet'
-          | 'KAKAO_PAY: 카카오페이'
-          | 'NAVER_EASY_PAY: 네이버페이(간편결제)'
-          | 'CHAI: 차이'
-          | 'SMARTRO_PAY: 스마트로'
-          | 'LG_U_PLUS: 토스페이먼츠'
-          | 'TOSS_PAYMENTS: 토스페이먼츠'
-          | 'VERITRANS: Veritrans'
-          | 'NICEPAY: 나이스페이'
-          | 'MY_PAY: 마이페이'
-          | 'EXIMBAY_GLOBAL: 엑심베이(글로벌)'
-          | 'EASY_PAY: 이지페이'
-          | 'GALAXIA_MONEY_TREE: 갤럭시아머니트리';
+          | 'DUMMY'
+          | 'PAYCO'
+          | 'PAYPAL'
+          | 'STRIPE'
+          | 'KCP'
+          | 'INICIS'
+          | 'NONE'
+          | 'KCP_MOBILE'
+          | 'KCP_APP'
+          | 'NAVER_PAY'
+          | 'LIIVMATE'
+          | 'PAYPALPRO'
+          | 'ATHOR_NET'
+          | 'KAKAO_PAY'
+          | 'NAVER_EASY_PAY'
+          | 'CHAI'
+          | 'SMARTRO_PAY'
+          | 'LG_U_PLUS'
+          | 'TOSS_PAYMENTS'
+          | 'VERITRANS'
+          | 'NICEPAY'
+          | 'MY_PAY'
+          | 'EXIMBAY_GLOBAL'
+          | 'EASY_PAY'
+          | 'GALAXIA_MONEY_TREE';
         /**
          * @description 주문번호
          * @example 1
@@ -2544,22 +2535,22 @@ export interface components {
          * @enum {string}
          */
         orderStatusType:
-          | 'DEPOSIT_WAIT: 입금대기'
-          | 'PAY_DONE: 결제완료'
-          | 'PRODUCT_PREPARE: 상품준비중'
-          | 'DELIVERY_PREPARE: 배송준비중'
-          | 'DELIVERY_ING: 배송중'
-          | 'DELIVERY_DONE: 배송완료'
-          | 'BUY_CONFIRM: 구매확정'
-          | 'CANCEL_DONE: 취소완료'
-          | 'RETURN_DONE: 반품완료'
-          | 'EXCHANGE_DONE: 교환완료'
-          | 'PAY_WAIT: 결제대기'
-          | 'PAY_CANCEL: 결제포기'
-          | 'PAY_FAIL: 결제실패'
-          | 'DELETE: 삭제'
-          | 'EXCHANGE_WAIT: 교환대기'
-          | 'REFUND_DONE: 환불완료';
+          | 'DEPOSIT_WAIT'
+          | 'PAY_DONE'
+          | 'PRODUCT_PREPARE'
+          | 'DELIVERY_PREPARE'
+          | 'DELIVERY_ING'
+          | 'DELIVERY_DONE'
+          | 'BUY_CONFIRM'
+          | 'CANCEL_DONE'
+          | 'RETURN_DONE'
+          | 'EXCHANGE_DONE'
+          | 'PAY_WAIT'
+          | 'PAY_CANCEL'
+          | 'PAY_FAIL'
+          | 'DELETE'
+          | 'EXCHANGE_WAIT'
+          | 'REFUND_DONE';
         /**
          * @description 옵션값
          * @example 255
@@ -2637,25 +2628,25 @@ export interface components {
          * @example BUYER
          * @enum {string}
          */
-        responsibleObjectType: 'BUYER: 구매자귀책' | 'SELLER: 판매자귀책';
+        responsibleObjectType: 'BUYER' | 'SELLER';
         /**
          * @description 클레임사유
          * @example CHANGE_MIND
          * @enum {string}
          */
         claimReasonType:
-          | 'CHANGE_MIND: 단순변심(색상,사이즈 등)'
-          | 'DEFECTIVE_PRODUCT: 상품불량/파손'
-          | 'WRONG_DELIVERY: 배송누락/오배송'
-          | 'OUT_OF_STOCK_SYSTEM: 재고부족(품절취소)'
-          | 'CANCEL_BEFORE_PAY: 입금전취소'
-          | 'WRONG_PRODUCT_DETAIL: 상품상세 정보와 다름'
-          | 'DELAY_DELIVERY: 판매자 배송 지연'
-          | 'OTHERS_SELLER: 기타(판매자 귀책)'
-          | 'OTHERS_BUYER: 기타(구매자 귀책)'
-          | 'OUT_OF_STOCK: 상품 품절/재고 없음'
-          | 'LATER_INPUT_ORDER: 배송지 미입력 취소'
-          | 'LATER_INPUT_ORDER_RECEIVER_CANCEL: 선물거절취소';
+          | 'CHANGE_MIND'
+          | 'DEFECTIVE_PRODUCT'
+          | 'WRONG_DELIVERY'
+          | 'OUT_OF_STOCK_SYSTEM'
+          | 'CANCEL_BEFORE_PAY'
+          | 'WRONG_PRODUCT_DETAIL'
+          | 'DELAY_DELIVERY'
+          | 'OTHERS_SELLER'
+          | 'OTHERS_BUYER'
+          | 'OUT_OF_STOCK'
+          | 'LATER_INPUT_ORDER'
+          | 'LATER_INPUT_ORDER_RECEIVER_CANCEL';
         /**
          * @description 클레임사유명
          * @example 단순변심
@@ -2685,91 +2676,91 @@ export interface components {
          * @enum {string}
          */
         countryCd:
-          | 'AX: 올랜드 제도'
-          | 'AD: 안도라'
-          | 'AU: 호주'
-          | 'AT: 오스트리아'
-          | 'BH: 바레인'
-          | 'BE: 벨기에'
-          | 'BZ: 벨리즈'
-          | 'BR: 브라질'
-          | 'BN: 브루나이'
-          | 'BG: 불가리아'
-          | 'CA: 캐나다'
-          | 'ES_CANARY: 스페인(에스파냐)'
-          | 'CL: 칠레'
-          | 'CN: 중국'
-          | 'CO: 콜롬비아'
-          | 'CR: 코스타리카'
-          | 'CY: 키프로스'
-          | 'CZ: 체코'
-          | 'DK: 덴마크'
-          | 'EC: 에콰도르'
-          | 'EG: 이집트'
-          | 'SV: 엘살바도르'
-          | 'EE: 에스토니아'
-          | 'FR: 프랑스'
-          | 'GF: 프랑스령 기아나'
-          | 'DE: 독일'
-          | 'GR: 그리스'
-          | 'GL: 덴마크'
-          | 'GU: 괌'
-          | 'GT: 과테말라'
-          | 'GG: 건지'
-          | 'GY: 가이아나'
-          | 'HK: 홍콩'
-          | 'HU: 헝가리'
-          | 'IS: 아이슬란드'
-          | 'ID: 인도네시아'
-          | 'IE: 아일랜드'
-          | 'IL: 이스라엘'
-          | 'IT: 이탈리아'
-          | 'JP: 일본'
-          | 'JE: 저지'
-          | 'JO: 요르단'
-          | 'KR: 대한민국'
-          | 'KW: 쿠웨이트'
-          | 'LV: 라트비아'
-          | 'LB: 레바논'
-          | 'LI: 리히텐슈타인'
-          | 'LT: 리투아니아'
-          | 'LU: 룩셈부르크'
-          | 'MO: 마카오'
-          | 'PT_MADEIRA: 포르투갈'
-          | 'MY: 말레이시아'
-          | 'NL: 네덜란드'
-          | 'NZ: 뉴질랜드'
-          | 'GB_NORTHERN_ISLAND: 영국'
-          | 'NO: 노르웨이'
-          | 'PY: 파라과이'
-          | 'PE: 페루'
-          | 'PL: 폴란드'
-          | 'PT: 포르투갈'
-          | 'RO: 루마니아'
-          | 'RU: 러시아'
-          | 'SM: 산마리노'
-          | 'SA: 사우디아라비아'
-          | 'GB_SCOTLAND: 영국'
-          | 'SG: 싱가폴'
-          | 'SK: 슬로바키아'
-          | 'SI: 슬로베니아'
-          | 'ES: 스페인(에스파냐)'
-          | 'CH: 스위스'
-          | 'TW: 대만'
-          | 'TH: 태국'
-          | 'TR: 터키'
-          | 'AE: 아랍에미리트'
-          | 'GB: 영국'
-          | 'US: 미국(대륙)'
-          | 'U2: 미국(대륙)'
-          | 'UY: 우루과이'
-          | 'VN: 베트남'
-          | 'GB_WALES: 영국'
-          | 'YE: 예멘'
-          | 'HR: 크로아티아'
-          | 'MT: 몰타'
-          | 'FI: 핀란드'
-          | 'SE: 스웨덴';
+          | 'AX'
+          | 'AD'
+          | 'AU'
+          | 'AT'
+          | 'BH'
+          | 'BE'
+          | 'BZ'
+          | 'BR'
+          | 'BN'
+          | 'BG'
+          | 'CA'
+          | 'ES_CANARY'
+          | 'CL'
+          | 'CN'
+          | 'CO'
+          | 'CR'
+          | 'CY'
+          | 'CZ'
+          | 'DK'
+          | 'EC'
+          | 'EG'
+          | 'SV'
+          | 'EE'
+          | 'FR'
+          | 'GF'
+          | 'DE'
+          | 'GR'
+          | 'GL'
+          | 'GU'
+          | 'GT'
+          | 'GG'
+          | 'GY'
+          | 'HK'
+          | 'HU'
+          | 'IS'
+          | 'ID'
+          | 'IE'
+          | 'IL'
+          | 'IT'
+          | 'JP'
+          | 'JE'
+          | 'JO'
+          | 'KR'
+          | 'KW'
+          | 'LV'
+          | 'LB'
+          | 'LI'
+          | 'LT'
+          | 'LU'
+          | 'MO'
+          | 'PT_MADEIRA'
+          | 'MY'
+          | 'NL'
+          | 'NZ'
+          | 'GB_NORTHERN_ISLAND'
+          | 'NO'
+          | 'PY'
+          | 'PE'
+          | 'PL'
+          | 'PT'
+          | 'RO'
+          | 'RU'
+          | 'SM'
+          | 'SA'
+          | 'GB_SCOTLAND'
+          | 'SG'
+          | 'SK'
+          | 'SI'
+          | 'ES'
+          | 'CH'
+          | 'TW'
+          | 'TH'
+          | 'TR'
+          | 'AE'
+          | 'GB'
+          | 'US'
+          | 'U2'
+          | 'UY'
+          | 'VN'
+          | 'GB_WALES'
+          | 'YE'
+          | 'HR'
+          | 'MT'
+          | 'FI'
+          | 'SE';
         /**
          * @description 수령자우편번호
          * @example 12345
@@ -2824,48 +2815,48 @@ export interface components {
        * @example CANCEL
        * @enum {string}
        */
-      claimType: 'CANCEL: 취소' | 'RETURN: 반품' | 'EXCHANGE: 교환';
+      claimType: 'CANCEL' | 'RETURN' | 'EXCHANGE';
       /**
        * @description 결제수단 (nullable)
        * @example CREDIT_CARD
        * @enum {string}
        */
       payType?:
-        | 'CREDIT_CARD: 신용카드'
-        | 'ACCOUNT: 무통장입금'
-        | 'MOBILE: 휴대폰결제'
-        | 'REALTIME_ACCOUNT_TRANSFER: 실시간계좌이체'
-        | 'VIRTUAL_ACCOUNT: 가상계좌'
-        | 'GIFT: 상품권'
-        | 'ATM: ATM'
-        | 'PAYCO: PAYCO'
-        | 'ZERO_PAY: 0원결제'
-        | 'ACCUMULATION: 적립금 전액 사용'
-        | 'PHONE_BILL: 전화결제'
-        | 'POINT: 포인트결제'
-        | 'YPAY: 옐로페이'
-        | 'KPAY: 케이페이'
-        | 'PAYPIN: 페이핀'
-        | 'INIPAY: INIPay 간편결제'
-        | 'PAYPAL: PAYPAL'
-        | 'STRIPE: STRIPE'
-        | 'NAVER_PAY: 네이버페이 주문형'
-        | 'KAKAO_PAY: 카카오페이'
-        | 'NAVER_EASY_PAY: 네이버페이 결제형'
-        | 'SAMSUNG_PAY: 삼성페이'
-        | 'CHAI: 차이'
-        | 'TOSS_PAY: 토스페이'
-        | 'SK_PAY: SK페이'
-        | 'APPLE_PAY: 애플페이'
-        | 'ESCROW_REALTIME_ACCOUNT_TRANSFER: 실시간계좌이체-에스크로'
-        | 'ESCROW_VIRTUAL_ACCOUNT: 가상계좌-에스크로'
-        | 'VERITRANS_CARD: Veritrans CreditCard'
-        | 'TOASTCAM: 토스트캠'
-        | 'RENTAL: 렌탈결제'
-        | 'UNION_PAY: Union Pay'
-        | 'ALIPAY: Alipay Plus'
-        | 'WECHAT_PAY: WeChat Pay'
-        | 'ETC: 기타결제수단';
+        | 'CREDIT_CARD'
+        | 'ACCOUNT'
+        | 'MOBILE'
+        | 'REALTIME_ACCOUNT_TRANSFER'
+        | 'VIRTUAL_ACCOUNT'
+        | 'GIFT'
+        | 'ATM'
+        | 'PAYCO'
+        | 'ZERO_PAY'
+        | 'ACCUMULATION'
+        | 'PHONE_BILL'
+        | 'POINT'
+        | 'YPAY'
+        | 'KPAY'
+        | 'PAYPIN'
+        | 'INIPAY'
+        | 'PAYPAL'
+        | 'STRIPE'
+        | 'NAVER_PAY'
+        | 'KAKAO_PAY'
+        | 'NAVER_EASY_PAY'
+        | 'SAMSUNG_PAY'
+        | 'CHAI'
+        | 'TOSS_PAY'
+        | 'SK_PAY'
+        | 'APPLE_PAY'
+        | 'ESCROW_REALTIME_ACCOUNT_TRANSFER'
+        | 'ESCROW_VIRTUAL_ACCOUNT'
+        | 'VERITRANS_CARD'
+        | 'TOASTCAM'
+        | 'RENTAL'
+        | 'UNION_PAY'
+        | 'ALIPAY'
+        | 'WECHAT_PAY'
+        | 'ETC';
       /** @description 교환배송지 (nullable) */
       exchangeAddress?: {
         /**
@@ -2889,91 +2880,91 @@ export interface components {
          * @enum {string}
          */
         countryCd:
-          | 'AX: 올랜드 제도'
-          | 'AD: 안도라'
-          | 'AU: 호주'
-          | 'AT: 오스트리아'
-          | 'BH: 바레인'
-          | 'BE: 벨기에'
-          | 'BZ: 벨리즈'
-          | 'BR: 브라질'
-          | 'BN: 브루나이'
-          | 'BG: 불가리아'
-          | 'CA: 캐나다'
-          | 'ES_CANARY: 스페인(에스파냐)'
-          | 'CL: 칠레'
-          | 'CN: 중국'
-          | 'CO: 콜롬비아'
-          | 'CR: 코스타리카'
-          | 'CY: 키프로스'
-          | 'CZ: 체코'
-          | 'DK: 덴마크'
-          | 'EC: 에콰도르'
-          | 'EG: 이집트'
-          | 'SV: 엘살바도르'
-          | 'EE: 에스토니아'
-          | 'FR: 프랑스'
-          | 'GF: 프랑스령 기아나'
-          | 'DE: 독일'
-          | 'GR: 그리스'
-          | 'GL: 덴마크'
-          | 'GU: 괌'
-          | 'GT: 과테말라'
-          | 'GG: 건지'
-          | 'GY: 가이아나'
-          | 'HK: 홍콩'
-          | 'HU: 헝가리'
-          | 'IS: 아이슬란드'
-          | 'ID: 인도네시아'
-          | 'IE: 아일랜드'
-          | 'IL: 이스라엘'
-          | 'IT: 이탈리아'
-          | 'JP: 일본'
-          | 'JE: 저지'
-          | 'JO: 요르단'
-          | 'KR: 대한민국'
-          | 'KW: 쿠웨이트'
-          | 'LV: 라트비아'
-          | 'LB: 레바논'
-          | 'LI: 리히텐슈타인'
-          | 'LT: 리투아니아'
-          | 'LU: 룩셈부르크'
-          | 'MO: 마카오'
-          | 'PT_MADEIRA: 포르투갈'
-          | 'MY: 말레이시아'
-          | 'NL: 네덜란드'
-          | 'NZ: 뉴질랜드'
-          | 'GB_NORTHERN_ISLAND: 영국'
-          | 'NO: 노르웨이'
-          | 'PY: 파라과이'
-          | 'PE: 페루'
-          | 'PL: 폴란드'
-          | 'PT: 포르투갈'
-          | 'RO: 루마니아'
-          | 'RU: 러시아'
-          | 'SM: 산마리노'
-          | 'SA: 사우디아라비아'
-          | 'GB_SCOTLAND: 영국'
-          | 'SG: 싱가폴'
-          | 'SK: 슬로바키아'
-          | 'SI: 슬로베니아'
-          | 'ES: 스페인(에스파냐)'
-          | 'CH: 스위스'
-          | 'TW: 대만'
-          | 'TH: 태국'
-          | 'TR: 터키'
-          | 'AE: 아랍에미리트'
-          | 'GB: 영국'
-          | 'US: 미국(대륙)'
-          | 'U2: 미국(대륙)'
-          | 'UY: 우루과이'
-          | 'VN: 베트남'
-          | 'GB_WALES: 영국'
-          | 'YE: 예멘'
-          | 'HR: 크로아티아'
-          | 'MT: 몰타'
-          | 'FI: 핀란드'
-          | 'SE: 스웨덴';
+          | 'AX'
+          | 'AD'
+          | 'AU'
+          | 'AT'
+          | 'BH'
+          | 'BE'
+          | 'BZ'
+          | 'BR'
+          | 'BN'
+          | 'BG'
+          | 'CA'
+          | 'ES_CANARY'
+          | 'CL'
+          | 'CN'
+          | 'CO'
+          | 'CR'
+          | 'CY'
+          | 'CZ'
+          | 'DK'
+          | 'EC'
+          | 'EG'
+          | 'SV'
+          | 'EE'
+          | 'FR'
+          | 'GF'
+          | 'DE'
+          | 'GR'
+          | 'GL'
+          | 'GU'
+          | 'GT'
+          | 'GG'
+          | 'GY'
+          | 'HK'
+          | 'HU'
+          | 'IS'
+          | 'ID'
+          | 'IE'
+          | 'IL'
+          | 'IT'
+          | 'JP'
+          | 'JE'
+          | 'JO'
+          | 'KR'
+          | 'KW'
+          | 'LV'
+          | 'LB'
+          | 'LI'
+          | 'LT'
+          | 'LU'
+          | 'MO'
+          | 'PT_MADEIRA'
+          | 'MY'
+          | 'NL'
+          | 'NZ'
+          | 'GB_NORTHERN_ISLAND'
+          | 'NO'
+          | 'PY'
+          | 'PE'
+          | 'PL'
+          | 'PT'
+          | 'RO'
+          | 'RU'
+          | 'SM'
+          | 'SA'
+          | 'GB_SCOTLAND'
+          | 'SG'
+          | 'SK'
+          | 'SI'
+          | 'ES'
+          | 'CH'
+          | 'TW'
+          | 'TH'
+          | 'TR'
+          | 'AE'
+          | 'GB'
+          | 'US'
+          | 'U2'
+          | 'UY'
+          | 'VN'
+          | 'GB_WALES'
+          | 'YE'
+          | 'HR'
+          | 'MT'
+          | 'FI'
+          | 'SE';
         /**
          * @description 수령자우편번호
          * @example 12345
@@ -3064,18 +3055,18 @@ export interface components {
          * @enum {string}
          */
         claimReasonType?:
-          | 'CHANGE_MIND: 단순변심(색상,사이즈 등)'
-          | 'DEFECTIVE_PRODUCT: 상품불량/파손'
-          | 'WRONG_DELIVERY: 배송누락/오배송'
-          | 'OUT_OF_STOCK_SYSTEM: 재고부족(품절취소)'
-          | 'CANCEL_BEFORE_PAY: 입금전취소'
-          | 'WRONG_PRODUCT_DETAIL: 상품상세 정보와 다름'
-          | 'DELAY_DELIVERY: 판매자 배송 지연'
-          | 'OTHERS_SELLER: 기타(판매자 귀책)'
-          | 'OTHERS_BUYER: 기타(구매자 귀책)'
-          | 'OUT_OF_STOCK: 상품 품절/재고 없음'
-          | 'LATER_INPUT_ORDER: 배송지 미입력 취소'
-          | 'LATER_INPUT_ORDER_RECEIVER_CANCEL: 선물거절취소';
+          | 'CHANGE_MIND'
+          | 'DEFECTIVE_PRODUCT'
+          | 'WRONG_DELIVERY'
+          | 'OUT_OF_STOCK_SYSTEM'
+          | 'CANCEL_BEFORE_PAY'
+          | 'WRONG_PRODUCT_DETAIL'
+          | 'DELAY_DELIVERY'
+          | 'OTHERS_SELLER'
+          | 'OTHERS_BUYER'
+          | 'OUT_OF_STOCK'
+          | 'LATER_INPUT_ORDER'
+          | 'LATER_INPUT_ORDER_RECEIVER_CANCEL';
         /**
          * @description 배송상품여부
          * @example true
@@ -3104,30 +3095,30 @@ export interface components {
          * @enum {string}
          */
         claimStatusType?:
-          | 'CANCEL_NO_REFUND: Cancel done[No Refund]'
-          | 'CANCEL_REQUEST: Cancel request[Waiting for approval]'
-          | 'CANCEL_PROC_REQUEST_REFUND: Cancellation[Refund pending]'
-          | 'CANCEL_PROC_WAITING_REFUND: Cancellation[Waiting for refund]'
-          | 'CANCEL_DONE: Cancel done[Refund done]'
-          | 'RETURN_NO_REFUND: Return done[No refund]'
-          | 'RETURN_REQUEST: Return request[Waiting for approval]'
-          | 'RETURN_REJECT_REQUEST: Return request[Wait for withdrawal]'
-          | 'RETURN_PROC_BEFORE_RECEIVE: Return processing[Collection progress]'
-          | 'RETURN_PROC_REQUEST_REFUND: Return processing[Refund pending]'
-          | 'RETURN_PROC_WAITING_REFUND: Return processing[Waiting for refund]'
-          | 'RETURN_DONE: Return done[Refund Done]'
-          | 'RETURN_REFUND_AMT_ADJUST_REQUESTED: Return processing[Adjustment request]'
-          | 'EXCHANGE_REQUEST: Exchange request[Waiting for approval]'
-          | 'EXCHANGE_REJECT_REQUEST: Exchange processing[Wait for withdrawal]'
-          | 'EXCHANGE_PROC_BEFORE_RECEIVE: Exchange processing[Collection progress]'
-          | 'EXCHANGE_PROC_REQUEST_PAY: Exchange processing[Waiting for payment]'
-          | 'EXCHANGE_PROC_REQUEST_REFUND: Exchange processing[Refund pending]'
-          | 'EXCHANGE_PROC_WAITING: Exchange processing[Waiting for processing]'
-          | 'EXCHANGE_PROC_WAITING_PAY: Exchange processing[Waiting for deposit processing]'
-          | 'EXCHANGE_PROC_WAITING_REFUND: Exchange processing[Waiting for refund]'
-          | 'EXCHANGE_DONE_PAY_DONE: Exchange Done[Pay Done]'
-          | 'EXCHANGE_DONE_REFUND_DONE: Exchange Done[Refund Done]'
-          | 'EXCHANGE_DONE: Exchange Done[No Refund]';
+          | 'CANCEL_NO_REFUND'
+          | 'CANCEL_REQUEST'
+          | 'CANCEL_PROC_REQUEST_REFUND'
+          | 'CANCEL_PROC_WAITING_REFUND'
+          | 'CANCEL_DONE'
+          | 'RETURN_NO_REFUND'
+          | 'RETURN_REQUEST'
+          | 'RETURN_REJECT_REQUEST'
+          | 'RETURN_PROC_BEFORE_RECEIVE'
+          | 'RETURN_PROC_REQUEST_REFUND'
+          | 'RETURN_PROC_WAITING_REFUND'
+          | 'RETURN_DONE'
+          | 'RETURN_REFUND_AMT_ADJUST_REQUESTED'
+          | 'EXCHANGE_REQUEST'
+          | 'EXCHANGE_REJECT_REQUEST'
+          | 'EXCHANGE_PROC_BEFORE_RECEIVE'
+          | 'EXCHANGE_PROC_REQUEST_PAY'
+          | 'EXCHANGE_PROC_REQUEST_REFUND'
+          | 'EXCHANGE_PROC_WAITING'
+          | 'EXCHANGE_PROC_WAITING_PAY'
+          | 'EXCHANGE_PROC_WAITING_REFUND'
+          | 'EXCHANGE_DONE_PAY_DONE'
+          | 'EXCHANGE_DONE_REFUND_DONE'
+          | 'EXCHANGE_DONE';
         /**
          * @description 추가상품번호
          * @example 1
@@ -3144,41 +3135,41 @@ export interface components {
          * @enum {string}
          */
         payType:
-          | 'CREDIT_CARD: 신용카드'
-          | 'ACCOUNT: 무통장입금'
-          | 'MOBILE: 휴대폰결제'
-          | 'REALTIME_ACCOUNT_TRANSFER: 실시간계좌이체'
-          | 'VIRTUAL_ACCOUNT: 가상계좌'
-          | 'GIFT: 상품권'
-          | 'ATM: ATM'
-          | 'PAYCO: PAYCO'
-          | 'ZERO_PAY: 0원결제'
-          | 'ACCUMULATION: 적립금 전액 사용'
-          | 'PHONE_BILL: 전화결제'
-          | 'POINT: 포인트결제'
-          | 'YPAY: 옐로페이'
-          | 'KPAY: 케이페이'
-          | 'PAYPIN: 페이핀'
-          | 'INIPAY: INIPay 간편결제'
-          | 'PAYPAL: PAYPAL'
-          | 'STRIPE: STRIPE'
-          | 'NAVER_PAY: 네이버페이 주문형'
-          | 'KAKAO_PAY: 카카오페이'
-          | 'NAVER_EASY_PAY: 네이버페이 결제형'
-          | 'SAMSUNG_PAY: 삼성페이'
-          | 'CHAI: 차이'
-          | 'TOSS_PAY: 토스페이'
-          | 'SK_PAY: SK페이'
-          | 'APPLE_PAY: 애플페이'
-          | 'ESCROW_REALTIME_ACCOUNT_TRANSFER: 실시간계좌이체-에스크로'
-          | 'ESCROW_VIRTUAL_ACCOUNT: 가상계좌-에스크로'
-          | 'VERITRANS_CARD: Veritrans CreditCard'
-          | 'TOASTCAM: 토스트캠'
-          | 'RENTAL: 렌탈결제'
-          | 'UNION_PAY: Union Pay'
-          | 'ALIPAY: Alipay Plus'
-          | 'WECHAT_PAY: WeChat Pay'
-          | 'ETC: 기타결제수단';
+          | 'CREDIT_CARD'
+          | 'ACCOUNT'
+          | 'MOBILE'
+          | 'REALTIME_ACCOUNT_TRANSFER'
+          | 'VIRTUAL_ACCOUNT'
+          | 'GIFT'
+          | 'ATM'
+          | 'PAYCO'
+          | 'ZERO_PAY'
+          | 'ACCUMULATION'
+          | 'PHONE_BILL'
+          | 'POINT'
+          | 'YPAY'
+          | 'KPAY'
+          | 'PAYPIN'
+          | 'INIPAY'
+          | 'PAYPAL'
+          | 'STRIPE'
+          | 'NAVER_PAY'
+          | 'KAKAO_PAY'
+          | 'NAVER_EASY_PAY'
+          | 'SAMSUNG_PAY'
+          | 'CHAI'
+          | 'TOSS_PAY'
+          | 'SK_PAY'
+          | 'APPLE_PAY'
+          | 'ESCROW_REALTIME_ACCOUNT_TRANSFER'
+          | 'ESCROW_VIRTUAL_ACCOUNT'
+          | 'VERITRANS_CARD'
+          | 'TOASTCAM'
+          | 'RENTAL'
+          | 'UNION_PAY'
+          | 'ALIPAY'
+          | 'WECHAT_PAY'
+          | 'ETC';
         /**
          * @description 해외배송여부(true: 해외배송, false: 국내배송)
          * @example false
@@ -3318,54 +3309,54 @@ export interface components {
            * @enum {string}
            */
           deliveryCompanyType?:
-            | 'CJ: CJ Logistics'
-            | 'POST: Post Office'
-            | 'HANJIN: Hanjin Transportation'
-            | 'GTX: GTX LOGIS'
-            | 'LOTTE: otte Global Logistics Corporation'
-            | 'KGB: KGB LOGIS'
-            | 'LOGEN: Logen'
-            | 'GSI: gsi Express'
-            | 'KGL: KG LOGIS'
-            | 'INTRAS: INTRAS'
-            | 'UPS: UPS'
-            | 'CHUNIL: Chunil Express'
-            | 'KDEXP: Kyungdong Express'
-            | 'HDEXP: Hapdong Express'
-            | 'ILYANG: Ilyang Logis'
-            | 'POST_EMS: Post Office EMS'
-            | 'DAESIN: daesin'
-            | 'CVS: CVS Convenience Shop Delivery Service'
-            | 'DHL: DHL'
-            | 'FEDEX: FEDEX'
-            | 'GSM: GSM International Courier'
-            | 'WARPEX: WarpEx'
-            | 'WIZWA: WIZWA'
-            | 'ACI: ACI Express'
-            | 'PANTOS: LX Pantos'
-            | 'CJ_INTERNATIONAL: CJ Logistics(international courier)'
-            | 'TNT: TNT'
-            | 'CU: CU Convenience Shop Delivery Service'
-            | 'KUNYOUNG: Geonyoung Express'
-            | 'LOTTE_INTERNATIONAL: Lotte Global Logistics Corporation(international courier)'
-            | 'HONAM: Honam Express'
-            | 'HANIPS: Hanui Sarang Express'
-            | 'IPARCEL: i-Parcel'
-            | 'SLX: SLX Express'
-            | 'USPS: USPS'
-            | 'WONDERS: wonders quick'
-            | 'REGISTPOST: Regist Post'
-            | 'DHLDE: DHL(germany)'
-            | 'EZUSA: EZUSA'
-            | 'SWGEXP: Sungwon Global'
-            | 'DAEWOON: Daewoon Global'
-            | 'DODOFLEX: dodoFlex'
-            | 'NH_LOGIS: NongHyup Logis'
-            | 'UFO: UFO'
-            | 'TODAY_PICKUP: Today Pickup'
-            | 'QEXPRESS: 큐익스프레스'
-            | 'PINGPONG: 핑퐁'
-            | 'ETC: ETC';
+            | 'CJ'
+            | 'POST'
+            | 'HANJIN'
+            | 'GTX'
+            | 'LOTTE'
+            | 'KGB'
+            | 'LOGEN'
+            | 'GSI'
+            | 'KGL'
+            | 'INTRAS'
+            | 'UPS'
+            | 'CHUNIL'
+            | 'KDEXP'
+            | 'HDEXP'
+            | 'ILYANG'
+            | 'POST_EMS'
+            | 'DAESIN'
+            | 'CVS'
+            | 'DHL'
+            | 'FEDEX'
+            | 'GSM'
+            | 'WARPEX'
+            | 'WIZWA'
+            | 'ACI'
+            | 'PANTOS'
+            | 'CJ_INTERNATIONAL'
+            | 'TNT'
+            | 'CU'
+            | 'KUNYOUNG'
+            | 'LOTTE_INTERNATIONAL'
+            | 'HONAM'
+            | 'HANIPS'
+            | 'IPARCEL'
+            | 'SLX'
+            | 'USPS'
+            | 'WONDERS'
+            | 'REGISTPOST'
+            | 'DHLDE'
+            | 'EZUSA'
+            | 'SWGEXP'
+            | 'DAEWOON'
+            | 'DODOFLEX'
+            | 'NH_LOGIS'
+            | 'UFO'
+            | 'TODAY_PICKUP'
+            | 'QEXPRESS'
+            | 'PINGPONG'
+            | 'ETC';
           /**
            * @description 송장추적 URL (nullable)
            * @example url1
@@ -3388,31 +3379,31 @@ export interface components {
          * @enum {string}
          */
         pgType:
-          | 'DUMMY: 없음'
-          | 'PAYCO: PAYCO'
-          | 'PAYPAL: PayPal'
-          | 'STRIPE: STRIPE'
-          | 'KCP: KCP'
-          | 'INICIS: 이니시스'
-          | 'NONE: PG없음'
-          | 'KCP_MOBILE: KCP(모바일)'
-          | 'KCP_APP: KCP(앱)'
-          | 'NAVER_PAY: 네이버페이(주문형)'
-          | 'LIIVMATE: 리브메이트'
-          | 'PAYPALPRO: PAYPAL PRO'
-          | 'ATHOR_NET: AthorizeNet'
-          | 'KAKAO_PAY: 카카오페이'
-          | 'NAVER_EASY_PAY: 네이버페이(간편결제)'
-          | 'CHAI: 차이'
-          | 'SMARTRO_PAY: 스마트로'
-          | 'LG_U_PLUS: 토스페이먼츠'
-          | 'TOSS_PAYMENTS: 토스페이먼츠'
-          | 'VERITRANS: Veritrans'
-          | 'NICEPAY: 나이스페이'
-          | 'MY_PAY: 마이페이'
-          | 'EXIMBAY_GLOBAL: 엑심베이(글로벌)'
-          | 'EASY_PAY: 이지페이'
-          | 'GALAXIA_MONEY_TREE: 갤럭시아머니트리';
+          | 'DUMMY'
+          | 'PAYCO'
+          | 'PAYPAL'
+          | 'STRIPE'
+          | 'KCP'
+          | 'INICIS'
+          | 'NONE'
+          | 'KCP_MOBILE'
+          | 'KCP_APP'
+          | 'NAVER_PAY'
+          | 'LIIVMATE'
+          | 'PAYPALPRO'
+          | 'ATHOR_NET'
+          | 'KAKAO_PAY'
+          | 'NAVER_EASY_PAY'
+          | 'CHAI'
+          | 'SMARTRO_PAY'
+          | 'LG_U_PLUS'
+          | 'TOSS_PAYMENTS'
+          | 'VERITRANS'
+          | 'NICEPAY'
+          | 'MY_PAY'
+          | 'EXIMBAY_GLOBAL'
+          | 'EASY_PAY'
+          | 'GALAXIA_MONEY_TREE';
         /**
          * @description 주문번호
          * @example 1
@@ -3424,22 +3415,22 @@ export interface components {
          * @enum {string}
          */
         orderStatusType:
-          | 'DEPOSIT_WAIT: 입금대기'
-          | 'PAY_DONE: 결제완료'
-          | 'PRODUCT_PREPARE: 상품준비중'
-          | 'DELIVERY_PREPARE: 배송준비중'
-          | 'DELIVERY_ING: 배송중'
-          | 'DELIVERY_DONE: 배송완료'
-          | 'BUY_CONFIRM: 구매확정'
-          | 'CANCEL_DONE: 취소완료'
-          | 'RETURN_DONE: 반품완료'
-          | 'EXCHANGE_DONE: 교환완료'
-          | 'PAY_WAIT: 결제대기'
-          | 'PAY_CANCEL: 결제포기'
-          | 'PAY_FAIL: 결제실패'
-          | 'DELETE: 삭제'
-          | 'EXCHANGE_WAIT: 교환대기'
-          | 'REFUND_DONE: 환불완료';
+          | 'DEPOSIT_WAIT'
+          | 'PAY_DONE'
+          | 'PRODUCT_PREPARE'
+          | 'DELIVERY_PREPARE'
+          | 'DELIVERY_ING'
+          | 'DELIVERY_DONE'
+          | 'BUY_CONFIRM'
+          | 'CANCEL_DONE'
+          | 'RETURN_DONE'
+          | 'EXCHANGE_DONE'
+          | 'PAY_WAIT'
+          | 'PAY_CANCEL'
+          | 'PAY_FAIL'
+          | 'DELETE'
+          | 'EXCHANGE_WAIT'
+          | 'REFUND_DONE';
         /**
          * @description 옵션값
          * @example 255
@@ -3514,7 +3505,7 @@ export interface components {
        * @description 귀책 - responsibleObjectType이 null이면 ClaimReasonType에 매핑되는 귀책 적용(CHANGE_MIND, CANCEL_BEFORE_PAY, OTHERS_BUYER -> BUYER / DEFECTIVE_PRODUCT, WRONG_DELIVERY, OUT_OF_STOCK_SYSTEM, WRONG_PRODUCT_DETAIL, DELAY_DELIVERY, OUT_OF_STOCK, OTHERS_SELLER -> SELLER)
        * @example BUYER
        */
-      responsibleObjectTypes: ('BUYER: 구매자귀책' | 'SELLER: 판매자귀책')[];
+      responsibleObjectTypes: ('BUYER' | 'SELLER')[];
       /** @description 환불 가능한 은행 */
       availableBanks: {
         /**
@@ -3523,60 +3514,60 @@ export interface components {
          * @enum {string}
          */
         bank:
-          | 'ANONYMOUS: Unverified Bank'
-          | 'KDB: Korea Development Bank'
-          | 'IBK: Industrial Bank of Korea'
-          | 'KB: KOOKMIN BANK'
-          | 'KEB: Korea Exchange Bank'
-          | 'SUHYUP: National Federation of Fisheries Cooperatives'
-          | 'KEXIM: The Export-Import Bank of Korea'
-          | 'NH: NONGHYUP BANK'
-          | 'NHLOCAL: National Agricultural Cooperative Federation'
-          | 'WOORI: Woori Bank'
-          | 'SC: Standard Chartered Bank Korea Limited'
-          | 'CITY: Citibank Korea'
-          | 'DAEGU: Daegu Gyeongbuk Bank'
-          | 'PUSAN: BUSAN BANK'
-          | 'GWANGJU: The Kwangju Bank'
-          | 'JEJU: Jeju Bank'
-          | 'JEONBUK: Jeonbuk Bank'
-          | 'GYEONGNAM: BNK KYONGNAM BANK'
-          | 'KFCC: The Saemaeul finance firm.'
-          | 'CU: National Credit Union Federation'
-          | 'SANGHO: Mutual Savings Bank / Thrift Institution'
-          | 'HSBC: Hongkong and Shanghai Banking Corporation'
-          | 'DEUTSCHE: Deutsche Bank AG'
-          | 'NFCF: National Forestry Cooperative Federation'
-          | 'EPOST: Post Office'
-          | 'KEBHANA: KEB Hana Bank'
-          | 'SHINHAN: SHINHAN BANK'
-          | 'KBANK: Kbank'
-          | 'KAKAO: Kakao Bank'
-          | 'TOSS: Toss Bank'
-          | 'YUANTA: Yuanta Securities'
-          | 'KBSEC: KB Securities'
-          | 'MIRAE: Mirae Asset Securities'
-          | 'MIRAEDAEWOO: Miraeassetdaewoo Securities'
-          | 'SAMSUNG: Samsung Securities'
-          | 'HANKOOK: Korea Investment ＆ Securities'
-          | 'NH_INVEST: NH Investment & Securities'
-          | 'KYOBO: Kyobo Securities'
-          | 'HI_INVEST: Hi Investment & Securities'
-          | 'HMC_INVEST: HYUNDAI MOTOR SECURITIES'
-          | 'KIWOOM: Kiwoom Securities'
-          | 'EBEST: EBEST INVESTMENT & SECURITIES'
-          | 'SK: SK Securities'
-          | 'DAISHIN: Daishin Securities'
-          | 'SOLOMON_INVEST: SOLOMON INVESTMENT & SECURITIES'
-          | 'HANHWA: Hanwha Investment ＆ Securities'
-          | 'HANA_INVEST: Hana Financial Investment'
-          | 'SHINHAN_INVEST: Shinhan Investment'
-          | 'DONGBU: DB Financial Investment'
-          | 'EUGENE_INVEST: Eugene Investment ＆ Securities'
-          | 'MERITZ_COMPREHENSIVE: Meritz Securities'
-          | 'BOOKOOK: Bookook Securities'
-          | 'SHINYOUNG: Shinyoung Securities'
-          | 'CAPE: CAPE Investment & Securities';
+          | 'ANONYMOUS'
+          | 'KDB'
+          | 'IBK'
+          | 'KB'
+          | 'KEB'
+          | 'SUHYUP'
+          | 'KEXIM'
+          | 'NH'
+          | 'NHLOCAL'
+          | 'WOORI'
+          | 'SC'
+          | 'CITY'
+          | 'DAEGU'
+          | 'PUSAN'
+          | 'GWANGJU'
+          | 'JEJU'
+          | 'JEONBUK'
+          | 'GYEONGNAM'
+          | 'KFCC'
+          | 'CU'
+          | 'SANGHO'
+          | 'HSBC'
+          | 'DEUTSCHE'
+          | 'NFCF'
+          | 'EPOST'
+          | 'KEBHANA'
+          | 'SHINHAN'
+          | 'KBANK'
+          | 'KAKAO'
+          | 'TOSS'
+          | 'YUANTA'
+          | 'KBSEC'
+          | 'MIRAE'
+          | 'MIRAEDAEWOO'
+          | 'SAMSUNG'
+          | 'HANKOOK'
+          | 'NH_INVEST'
+          | 'KYOBO'
+          | 'HI_INVEST'
+          | 'HMC_INVEST'
+          | 'KIWOOM'
+          | 'EBEST'
+          | 'SK'
+          | 'DAISHIN'
+          | 'SOLOMON_INVEST'
+          | 'HANHWA'
+          | 'HANA_INVEST'
+          | 'SHINHAN_INVEST'
+          | 'DONGBU'
+          | 'EUGENE_INVEST'
+          | 'MERITZ_COMPREHENSIVE'
+          | 'BOOKOOK'
+          | 'SHINYOUNG'
+          | 'CAPE';
         /**
          * @description 은행명
          * @example 산업은행
@@ -3601,60 +3592,60 @@ export interface components {
          * @enum {string}
          */
         bank?:
-          | 'ANONYMOUS: Unverified Bank'
-          | 'KDB: Korea Development Bank'
-          | 'IBK: Industrial Bank of Korea'
-          | 'KB: KOOKMIN BANK'
-          | 'KEB: Korea Exchange Bank'
-          | 'SUHYUP: National Federation of Fisheries Cooperatives'
-          | 'KEXIM: The Export-Import Bank of Korea'
-          | 'NH: NONGHYUP BANK'
-          | 'NHLOCAL: National Agricultural Cooperative Federation'
-          | 'WOORI: Woori Bank'
-          | 'SC: Standard Chartered Bank Korea Limited'
-          | 'CITY: Citibank Korea'
-          | 'DAEGU: Daegu Gyeongbuk Bank'
-          | 'PUSAN: BUSAN BANK'
-          | 'GWANGJU: The Kwangju Bank'
-          | 'JEJU: Jeju Bank'
-          | 'JEONBUK: Jeonbuk Bank'
-          | 'GYEONGNAM: BNK KYONGNAM BANK'
-          | 'KFCC: The Saemaeul finance firm.'
-          | 'CU: National Credit Union Federation'
-          | 'SANGHO: Mutual Savings Bank / Thrift Institution'
-          | 'HSBC: Hongkong and Shanghai Banking Corporation'
-          | 'DEUTSCHE: Deutsche Bank AG'
-          | 'NFCF: National Forestry Cooperative Federation'
-          | 'EPOST: Post Office'
-          | 'KEBHANA: KEB Hana Bank'
-          | 'SHINHAN: SHINHAN BANK'
-          | 'KBANK: Kbank'
-          | 'KAKAO: Kakao Bank'
-          | 'TOSS: Toss Bank'
-          | 'YUANTA: Yuanta Securities'
-          | 'KBSEC: KB Securities'
-          | 'MIRAE: Mirae Asset Securities'
-          | 'MIRAEDAEWOO: Miraeassetdaewoo Securities'
-          | 'SAMSUNG: Samsung Securities'
-          | 'HANKOOK: Korea Investment ＆ Securities'
-          | 'NH_INVEST: NH Investment & Securities'
-          | 'KYOBO: Kyobo Securities'
-          | 'HI_INVEST: Hi Investment & Securities'
-          | 'HMC_INVEST: HYUNDAI MOTOR SECURITIES'
-          | 'KIWOOM: Kiwoom Securities'
-          | 'EBEST: EBEST INVESTMENT & SECURITIES'
-          | 'SK: SK Securities'
-          | 'DAISHIN: Daishin Securities'
-          | 'SOLOMON_INVEST: SOLOMON INVESTMENT & SECURITIES'
-          | 'HANHWA: Hanwha Investment ＆ Securities'
-          | 'HANA_INVEST: Hana Financial Investment'
-          | 'SHINHAN_INVEST: Shinhan Investment'
-          | 'DONGBU: DB Financial Investment'
-          | 'EUGENE_INVEST: Eugene Investment ＆ Securities'
-          | 'MERITZ_COMPREHENSIVE: Meritz Securities'
-          | 'BOOKOOK: Bookook Securities'
-          | 'SHINYOUNG: Shinyoung Securities'
-          | 'CAPE: CAPE Investment & Securities';
+          | 'ANONYMOUS'
+          | 'KDB'
+          | 'IBK'
+          | 'KB'
+          | 'KEB'
+          | 'SUHYUP'
+          | 'KEXIM'
+          | 'NH'
+          | 'NHLOCAL'
+          | 'WOORI'
+          | 'SC'
+          | 'CITY'
+          | 'DAEGU'
+          | 'PUSAN'
+          | 'GWANGJU'
+          | 'JEJU'
+          | 'JEONBUK'
+          | 'GYEONGNAM'
+          | 'KFCC'
+          | 'CU'
+          | 'SANGHO'
+          | 'HSBC'
+          | 'DEUTSCHE'
+          | 'NFCF'
+          | 'EPOST'
+          | 'KEBHANA'
+          | 'SHINHAN'
+          | 'KBANK'
+          | 'KAKAO'
+          | 'TOSS'
+          | 'YUANTA'
+          | 'KBSEC'
+          | 'MIRAE'
+          | 'MIRAEDAEWOO'
+          | 'SAMSUNG'
+          | 'HANKOOK'
+          | 'NH_INVEST'
+          | 'KYOBO'
+          | 'HI_INVEST'
+          | 'HMC_INVEST'
+          | 'KIWOOM'
+          | 'EBEST'
+          | 'SK'
+          | 'DAISHIN'
+          | 'SOLOMON_INVEST'
+          | 'HANHWA'
+          | 'HANA_INVEST'
+          | 'SHINHAN_INVEST'
+          | 'DONGBU'
+          | 'EUGENE_INVEST'
+          | 'MERITZ_COMPREHENSIVE'
+          | 'BOOKOOK'
+          | 'SHINYOUNG'
+          | 'CAPE';
         /**
          * @description 은행명 (nullable)
          * @example 산업은행
@@ -3669,54 +3660,54 @@ export interface components {
          * @enum {string}
          */
         deliveryCompanyType:
-          | 'CJ: CJ Logistics'
-          | 'POST: Post Office'
-          | 'HANJIN: Hanjin Transportation'
-          | 'GTX: GTX LOGIS'
-          | 'LOTTE: otte Global Logistics Corporation'
-          | 'KGB: KGB LOGIS'
-          | 'LOGEN: Logen'
-          | 'GSI: gsi Express'
-          | 'KGL: KG LOGIS'
-          | 'INTRAS: INTRAS'
-          | 'UPS: UPS'
-          | 'CHUNIL: Chunil Express'
-          | 'KDEXP: Kyungdong Express'
-          | 'HDEXP: Hapdong Express'
-          | 'ILYANG: Ilyang Logis'
-          | 'POST_EMS: Post Office EMS'
-          | 'DAESIN: daesin'
-          | 'CVS: CVS Convenience Shop Delivery Service'
-          | 'DHL: DHL'
-          | 'FEDEX: FEDEX'
-          | 'GSM: GSM International Courier'
-          | 'WARPEX: WarpEx'
-          | 'WIZWA: WIZWA'
-          | 'ACI: ACI Express'
-          | 'PANTOS: LX Pantos'
-          | 'CJ_INTERNATIONAL: CJ Logistics(international courier)'
-          | 'TNT: TNT'
-          | 'CU: CU Convenience Shop Delivery Service'
-          | 'KUNYOUNG: Geonyoung Express'
-          | 'LOTTE_INTERNATIONAL: Lotte Global Logistics Corporation(international courier)'
-          | 'HONAM: Honam Express'
-          | 'HANIPS: Hanui Sarang Express'
-          | 'IPARCEL: i-Parcel'
-          | 'SLX: SLX Express'
-          | 'USPS: USPS'
-          | 'WONDERS: wonders quick'
-          | 'REGISTPOST: Regist Post'
-          | 'DHLDE: DHL(germany)'
-          | 'EZUSA: EZUSA'
-          | 'SWGEXP: Sungwon Global'
-          | 'DAEWOON: Daewoon Global'
-          | 'DODOFLEX: dodoFlex'
-          | 'NH_LOGIS: NongHyup Logis'
-          | 'UFO: UFO'
-          | 'TODAY_PICKUP: Today Pickup'
-          | 'QEXPRESS: 큐익스프레스'
-          | 'PINGPONG: 핑퐁'
-          | 'ETC: ETC';
+          | 'CJ'
+          | 'POST'
+          | 'HANJIN'
+          | 'GTX'
+          | 'LOTTE'
+          | 'KGB'
+          | 'LOGEN'
+          | 'GSI'
+          | 'KGL'
+          | 'INTRAS'
+          | 'UPS'
+          | 'CHUNIL'
+          | 'KDEXP'
+          | 'HDEXP'
+          | 'ILYANG'
+          | 'POST_EMS'
+          | 'DAESIN'
+          | 'CVS'
+          | 'DHL'
+          | 'FEDEX'
+          | 'GSM'
+          | 'WARPEX'
+          | 'WIZWA'
+          | 'ACI'
+          | 'PANTOS'
+          | 'CJ_INTERNATIONAL'
+          | 'TNT'
+          | 'CU'
+          | 'KUNYOUNG'
+          | 'LOTTE_INTERNATIONAL'
+          | 'HONAM'
+          | 'HANIPS'
+          | 'IPARCEL'
+          | 'SLX'
+          | 'USPS'
+          | 'WONDERS'
+          | 'REGISTPOST'
+          | 'DHLDE'
+          | 'EZUSA'
+          | 'SWGEXP'
+          | 'DAEWOON'
+          | 'DODOFLEX'
+          | 'NH_LOGIS'
+          | 'UFO'
+          | 'TODAY_PICKUP'
+          | 'QEXPRESS'
+          | 'PINGPONG'
+          | 'ETC';
         /**
          * @description 택배사명 (nullable)
          * @example CJ대한통운
@@ -3778,13 +3769,13 @@ export interface components {
        * @example BUYER
        * @enum {string}
        */
-      responsibleObjectType?: 'BUYER: 구매자귀책' | 'SELLER: 판매자귀책';
+      responsibleObjectType?: 'BUYER' | 'SELLER';
       /**
        * @description 클레임타입
        * @example CANCEL
        * @enum {string}
        */
-      claimType: 'CANCEL: 취소' | 'RETURN: 반품' | 'EXCHANGE: 교환';
+      claimType: 'CANCEL' | 'RETURN' | 'EXCHANGE';
       /**
        * @description 환불계좌정보 저장 여부(true일 경우 bankAccountInfo 필수)
        * @example true
@@ -3808,60 +3799,60 @@ export interface components {
          * @enum {string}
          */
         bank?:
-          | 'ANONYMOUS: Unverified Bank'
-          | 'KDB: Korea Development Bank'
-          | 'IBK: Industrial Bank of Korea'
-          | 'KB: KOOKMIN BANK'
-          | 'KEB: Korea Exchange Bank'
-          | 'SUHYUP: National Federation of Fisheries Cooperatives'
-          | 'KEXIM: The Export-Import Bank of Korea'
-          | 'NH: NONGHYUP BANK'
-          | 'NHLOCAL: National Agricultural Cooperative Federation'
-          | 'WOORI: Woori Bank'
-          | 'SC: Standard Chartered Bank Korea Limited'
-          | 'CITY: Citibank Korea'
-          | 'DAEGU: Daegu Gyeongbuk Bank'
-          | 'PUSAN: BUSAN BANK'
-          | 'GWANGJU: The Kwangju Bank'
-          | 'JEJU: Jeju Bank'
-          | 'JEONBUK: Jeonbuk Bank'
-          | 'GYEONGNAM: BNK KYONGNAM BANK'
-          | 'KFCC: The Saemaeul finance firm.'
-          | 'CU: National Credit Union Federation'
-          | 'SANGHO: Mutual Savings Bank / Thrift Institution'
-          | 'HSBC: Hongkong and Shanghai Banking Corporation'
-          | 'DEUTSCHE: Deutsche Bank AG'
-          | 'NFCF: National Forestry Cooperative Federation'
-          | 'EPOST: Post Office'
-          | 'KEBHANA: KEB Hana Bank'
-          | 'SHINHAN: SHINHAN BANK'
-          | 'KBANK: Kbank'
-          | 'KAKAO: Kakao Bank'
-          | 'TOSS: Toss Bank'
-          | 'YUANTA: Yuanta Securities'
-          | 'KBSEC: KB Securities'
-          | 'MIRAE: Mirae Asset Securities'
-          | 'MIRAEDAEWOO: Miraeassetdaewoo Securities'
-          | 'SAMSUNG: Samsung Securities'
-          | 'HANKOOK: Korea Investment ＆ Securities'
-          | 'NH_INVEST: NH Investment & Securities'
-          | 'KYOBO: Kyobo Securities'
-          | 'HI_INVEST: Hi Investment & Securities'
-          | 'HMC_INVEST: HYUNDAI MOTOR SECURITIES'
-          | 'KIWOOM: Kiwoom Securities'
-          | 'EBEST: EBEST INVESTMENT & SECURITIES'
-          | 'SK: SK Securities'
-          | 'DAISHIN: Daishin Securities'
-          | 'SOLOMON_INVEST: SOLOMON INVESTMENT & SECURITIES'
-          | 'HANHWA: Hanwha Investment ＆ Securities'
-          | 'HANA_INVEST: Hana Financial Investment'
-          | 'SHINHAN_INVEST: Shinhan Investment'
-          | 'DONGBU: DB Financial Investment'
-          | 'EUGENE_INVEST: Eugene Investment ＆ Securities'
-          | 'MERITZ_COMPREHENSIVE: Meritz Securities'
-          | 'BOOKOOK: Bookook Securities'
-          | 'SHINYOUNG: Shinyoung Securities'
-          | 'CAPE: CAPE Investment & Securities';
+          | 'ANONYMOUS'
+          | 'KDB'
+          | 'IBK'
+          | 'KB'
+          | 'KEB'
+          | 'SUHYUP'
+          | 'KEXIM'
+          | 'NH'
+          | 'NHLOCAL'
+          | 'WOORI'
+          | 'SC'
+          | 'CITY'
+          | 'DAEGU'
+          | 'PUSAN'
+          | 'GWANGJU'
+          | 'JEJU'
+          | 'JEONBUK'
+          | 'GYEONGNAM'
+          | 'KFCC'
+          | 'CU'
+          | 'SANGHO'
+          | 'HSBC'
+          | 'DEUTSCHE'
+          | 'NFCF'
+          | 'EPOST'
+          | 'KEBHANA'
+          | 'SHINHAN'
+          | 'KBANK'
+          | 'KAKAO'
+          | 'TOSS'
+          | 'YUANTA'
+          | 'KBSEC'
+          | 'MIRAE'
+          | 'MIRAEDAEWOO'
+          | 'SAMSUNG'
+          | 'HANKOOK'
+          | 'NH_INVEST'
+          | 'KYOBO'
+          | 'HI_INVEST'
+          | 'HMC_INVEST'
+          | 'KIWOOM'
+          | 'EBEST'
+          | 'SK'
+          | 'DAISHIN'
+          | 'SOLOMON_INVEST'
+          | 'HANHWA'
+          | 'HANA_INVEST'
+          | 'SHINHAN_INVEST'
+          | 'DONGBU'
+          | 'EUGENE_INVEST'
+          | 'MERITZ_COMPREHENSIVE'
+          | 'BOOKOOK'
+          | 'SHINYOUNG'
+          | 'CAPE';
         /**
          * @description 은행명 (nullable)
          * @example 산업은행
@@ -3879,80 +3870,78 @@ export interface components {
        * @enum {string}
        */
       claimReasonType:
-        | 'CHANGE_MIND: 단순변심(색상,사이즈 등)'
-        | 'DEFECTIVE_PRODUCT: 상품불량/파손'
-        | 'WRONG_DELIVERY: 배송누락/오배송'
-        | 'OUT_OF_STOCK_SYSTEM: 재고부족(품절취소)'
-        | 'CANCEL_BEFORE_PAY: 입금전취소'
-        | 'WRONG_PRODUCT_DETAIL: 상품상세 정보와 다름'
-        | 'DELAY_DELIVERY: 판매자 배송 지연'
-        | 'OTHERS_SELLER: 기타(판매자 귀책)'
-        | 'OTHERS_BUYER: 기타(구매자 귀책)'
-        | 'OUT_OF_STOCK: 상품 품절/재고 없음'
-        | 'LATER_INPUT_ORDER: 배송지 미입력 취소'
-        | 'LATER_INPUT_ORDER_RECEIVER_CANCEL: 선물거절취소';
+        | 'CHANGE_MIND'
+        | 'DEFECTIVE_PRODUCT'
+        | 'WRONG_DELIVERY'
+        | 'OUT_OF_STOCK_SYSTEM'
+        | 'CANCEL_BEFORE_PAY'
+        | 'WRONG_PRODUCT_DETAIL'
+        | 'DELAY_DELIVERY'
+        | 'OTHERS_SELLER'
+        | 'OTHERS_BUYER'
+        | 'OUT_OF_STOCK'
+        | 'LATER_INPUT_ORDER'
+        | 'LATER_INPUT_ORDER_RECEIVER_CANCEL';
       /**
        * @description 반품상품 수거방법 (nullable)
        * @example SELLER_COLLECT
        * @enum {string}
        */
-      returnWayType?:
-        | 'SELLER_COLLECT: 판매자수거요청'
-        | 'BUYER_DIRECT_RETURN: 구매자직접반품';
+      returnWayType?: 'SELLER_COLLECT' | 'BUYER_DIRECT_RETURN';
       /**
        * @description 반품택배사타입 (nullable)
        * @example CJ
        * @enum {string}
        */
       deliveryCompanyType?:
-        | 'CJ: CJ Logistics'
-        | 'POST: Post Office'
-        | 'HANJIN: Hanjin Transportation'
-        | 'GTX: GTX LOGIS'
-        | 'LOTTE: otte Global Logistics Corporation'
-        | 'KGB: KGB LOGIS'
-        | 'LOGEN: Logen'
-        | 'GSI: gsi Express'
-        | 'KGL: KG LOGIS'
-        | 'INTRAS: INTRAS'
-        | 'UPS: UPS'
-        | 'CHUNIL: Chunil Express'
-        | 'KDEXP: Kyungdong Express'
-        | 'HDEXP: Hapdong Express'
-        | 'ILYANG: Ilyang Logis'
-        | 'POST_EMS: Post Office EMS'
-        | 'DAESIN: daesin'
-        | 'CVS: CVS Convenience Shop Delivery Service'
-        | 'DHL: DHL'
-        | 'FEDEX: FEDEX'
-        | 'GSM: GSM International Courier'
-        | 'WARPEX: WarpEx'
-        | 'WIZWA: WIZWA'
-        | 'ACI: ACI Express'
-        | 'PANTOS: LX Pantos'
-        | 'CJ_INTERNATIONAL: CJ Logistics(international courier)'
-        | 'TNT: TNT'
-        | 'CU: CU Convenience Shop Delivery Service'
-        | 'KUNYOUNG: Geonyoung Express'
-        | 'LOTTE_INTERNATIONAL: Lotte Global Logistics Corporation(international courier)'
-        | 'HONAM: Honam Express'
-        | 'HANIPS: Hanui Sarang Express'
-        | 'IPARCEL: i-Parcel'
-        | 'SLX: SLX Express'
-        | 'USPS: USPS'
-        | 'WONDERS: wonders quick'
-        | 'REGISTPOST: Regist Post'
-        | 'DHLDE: DHL(germany)'
-        | 'EZUSA: EZUSA'
-        | 'SWGEXP: Sungwon Global'
-        | 'DAEWOON: Daewoon Global'
-        | 'DODOFLEX: dodoFlex'
-        | 'NH_LOGIS: NongHyup Logis'
-        | 'UFO: UFO'
-        | 'TODAY_PICKUP: Today Pickup'
-        | 'QEXPRESS: 큐익스프레스'
-        | 'PINGPONG: 핑퐁'
-        | 'ETC: ETC';
+        | 'CJ'
+        | 'POST'
+        | 'HANJIN'
+        | 'GTX'
+        | 'LOTTE'
+        | 'KGB'
+        | 'LOGEN'
+        | 'GSI'
+        | 'KGL'
+        | 'INTRAS'
+        | 'UPS'
+        | 'CHUNIL'
+        | 'KDEXP'
+        | 'HDEXP'
+        | 'ILYANG'
+        | 'POST_EMS'
+        | 'DAESIN'
+        | 'CVS'
+        | 'DHL'
+        | 'FEDEX'
+        | 'GSM'
+        | 'WARPEX'
+        | 'WIZWA'
+        | 'ACI'
+        | 'PANTOS'
+        | 'CJ_INTERNATIONAL'
+        | 'TNT'
+        | 'CU'
+        | 'KUNYOUNG'
+        | 'LOTTE_INTERNATIONAL'
+        | 'HONAM'
+        | 'HANIPS'
+        | 'IPARCEL'
+        | 'SLX'
+        | 'USPS'
+        | 'WONDERS'
+        | 'REGISTPOST'
+        | 'DHLDE'
+        | 'EZUSA'
+        | 'SWGEXP'
+        | 'DAEWOON'
+        | 'DODOFLEX'
+        | 'NH_LOGIS'
+        | 'UFO'
+        | 'TODAY_PICKUP'
+        | 'QEXPRESS'
+        | 'PINGPONG'
+        | 'ETC';
       /**
        * @description 첨부파일 url 리스트 (nullable)
        * @example url1,url2
@@ -3988,91 +3977,91 @@ export interface components {
          * @enum {string}
          */
         countryCd?:
-          | 'AX: 올랜드 제도'
-          | 'AD: 안도라'
-          | 'AU: 호주'
-          | 'AT: 오스트리아'
-          | 'BH: 바레인'
-          | 'BE: 벨기에'
-          | 'BZ: 벨리즈'
-          | 'BR: 브라질'
-          | 'BN: 브루나이'
-          | 'BG: 불가리아'
-          | 'CA: 캐나다'
-          | 'ES_CANARY: 스페인(에스파냐)'
-          | 'CL: 칠레'
-          | 'CN: 중국'
-          | 'CO: 콜롬비아'
-          | 'CR: 코스타리카'
-          | 'CY: 키프로스'
-          | 'CZ: 체코'
-          | 'DK: 덴마크'
-          | 'EC: 에콰도르'
-          | 'EG: 이집트'
-          | 'SV: 엘살바도르'
-          | 'EE: 에스토니아'
-          | 'FR: 프랑스'
-          | 'GF: 프랑스령 기아나'
-          | 'DE: 독일'
-          | 'GR: 그리스'
-          | 'GL: 덴마크'
-          | 'GU: 괌'
-          | 'GT: 과테말라'
-          | 'GG: 건지'
-          | 'GY: 가이아나'
-          | 'HK: 홍콩'
-          | 'HU: 헝가리'
-          | 'IS: 아이슬란드'
-          | 'ID: 인도네시아'
-          | 'IE: 아일랜드'
-          | 'IL: 이스라엘'
-          | 'IT: 이탈리아'
-          | 'JP: 일본'
-          | 'JE: 저지'
-          | 'JO: 요르단'
-          | 'KR: 대한민국'
-          | 'KW: 쿠웨이트'
-          | 'LV: 라트비아'
-          | 'LB: 레바논'
-          | 'LI: 리히텐슈타인'
-          | 'LT: 리투아니아'
-          | 'LU: 룩셈부르크'
-          | 'MO: 마카오'
-          | 'PT_MADEIRA: 포르투갈'
-          | 'MY: 말레이시아'
-          | 'NL: 네덜란드'
-          | 'NZ: 뉴질랜드'
-          | 'GB_NORTHERN_ISLAND: 영국'
-          | 'NO: 노르웨이'
-          | 'PY: 파라과이'
-          | 'PE: 페루'
-          | 'PL: 폴란드'
-          | 'PT: 포르투갈'
-          | 'RO: 루마니아'
-          | 'RU: 러시아'
-          | 'SM: 산마리노'
-          | 'SA: 사우디아라비아'
-          | 'GB_SCOTLAND: 영국'
-          | 'SG: 싱가폴'
-          | 'SK: 슬로바키아'
-          | 'SI: 슬로베니아'
-          | 'ES: 스페인(에스파냐)'
-          | 'CH: 스위스'
-          | 'TW: 대만'
-          | 'TH: 태국'
-          | 'TR: 터키'
-          | 'AE: 아랍에미리트'
-          | 'GB: 영국'
-          | 'US: 미국(대륙)'
-          | 'U2: 미국(대륙)'
-          | 'UY: 우루과이'
-          | 'VN: 베트남'
-          | 'GB_WALES: 영국'
-          | 'YE: 예멘'
-          | 'HR: 크로아티아'
-          | 'MT: 몰타'
-          | 'FI: 핀란드'
-          | 'SE: 스웨덴';
+          | 'AX'
+          | 'AD'
+          | 'AU'
+          | 'AT'
+          | 'BH'
+          | 'BE'
+          | 'BZ'
+          | 'BR'
+          | 'BN'
+          | 'BG'
+          | 'CA'
+          | 'ES_CANARY'
+          | 'CL'
+          | 'CN'
+          | 'CO'
+          | 'CR'
+          | 'CY'
+          | 'CZ'
+          | 'DK'
+          | 'EC'
+          | 'EG'
+          | 'SV'
+          | 'EE'
+          | 'FR'
+          | 'GF'
+          | 'DE'
+          | 'GR'
+          | 'GL'
+          | 'GU'
+          | 'GT'
+          | 'GG'
+          | 'GY'
+          | 'HK'
+          | 'HU'
+          | 'IS'
+          | 'ID'
+          | 'IE'
+          | 'IL'
+          | 'IT'
+          | 'JP'
+          | 'JE'
+          | 'JO'
+          | 'KR'
+          | 'KW'
+          | 'LV'
+          | 'LB'
+          | 'LI'
+          | 'LT'
+          | 'LU'
+          | 'MO'
+          | 'PT_MADEIRA'
+          | 'MY'
+          | 'NL'
+          | 'NZ'
+          | 'GB_NORTHERN_ISLAND'
+          | 'NO'
+          | 'PY'
+          | 'PE'
+          | 'PL'
+          | 'PT'
+          | 'RO'
+          | 'RU'
+          | 'SM'
+          | 'SA'
+          | 'GB_SCOTLAND'
+          | 'SG'
+          | 'SK'
+          | 'SI'
+          | 'ES'
+          | 'CH'
+          | 'TW'
+          | 'TH'
+          | 'TR'
+          | 'AE'
+          | 'GB'
+          | 'US'
+          | 'U2'
+          | 'UY'
+          | 'VN'
+          | 'GB_WALES'
+          | 'YE'
+          | 'HR'
+          | 'MT'
+          | 'FI'
+          | 'SE';
         /**
          * @description 수령자우편번호
          * @example 12345
@@ -4170,18 +4159,18 @@ export interface components {
            * @enum {string}
            */
           claimReasonType?:
-            | 'CHANGE_MIND: 단순변심(색상,사이즈 등)'
-            | 'DEFECTIVE_PRODUCT: 상품불량/파손'
-            | 'WRONG_DELIVERY: 배송누락/오배송'
-            | 'OUT_OF_STOCK_SYSTEM: 재고부족(품절취소)'
-            | 'CANCEL_BEFORE_PAY: 입금전취소'
-            | 'WRONG_PRODUCT_DETAIL: 상품상세 정보와 다름'
-            | 'DELAY_DELIVERY: 판매자 배송 지연'
-            | 'OTHERS_SELLER: 기타(판매자 귀책)'
-            | 'OTHERS_BUYER: 기타(구매자 귀책)'
-            | 'OUT_OF_STOCK: 상품 품절/재고 없음'
-            | 'LATER_INPUT_ORDER: 배송지 미입력 취소'
-            | 'LATER_INPUT_ORDER_RECEIVER_CANCEL: 선물거절취소';
+            | 'CHANGE_MIND'
+            | 'DEFECTIVE_PRODUCT'
+            | 'WRONG_DELIVERY'
+            | 'OUT_OF_STOCK_SYSTEM'
+            | 'CANCEL_BEFORE_PAY'
+            | 'WRONG_PRODUCT_DETAIL'
+            | 'DELAY_DELIVERY'
+            | 'OTHERS_SELLER'
+            | 'OTHERS_BUYER'
+            | 'OUT_OF_STOCK'
+            | 'LATER_INPUT_ORDER'
+            | 'LATER_INPUT_ORDER_RECEIVER_CANCEL';
           /**
            * @description 배송상품여부
            * @example true
@@ -4210,30 +4199,30 @@ export interface components {
            * @enum {string}
            */
           claimStatusType?:
-            | 'CANCEL_NO_REFUND: Cancel done[No Refund]'
-            | 'CANCEL_REQUEST: Cancel request[Waiting for approval]'
-            | 'CANCEL_PROC_REQUEST_REFUND: Cancellation[Refund pending]'
-            | 'CANCEL_PROC_WAITING_REFUND: Cancellation[Waiting for refund]'
-            | 'CANCEL_DONE: Cancel done[Refund done]'
-            | 'RETURN_NO_REFUND: Return done[No refund]'
-            | 'RETURN_REQUEST: Return request[Waiting for approval]'
-            | 'RETURN_REJECT_REQUEST: Return request[Wait for withdrawal]'
-            | 'RETURN_PROC_BEFORE_RECEIVE: Return processing[Collection progress]'
-            | 'RETURN_PROC_REQUEST_REFUND: Return processing[Refund pending]'
-            | 'RETURN_PROC_WAITING_REFUND: Return processing[Waiting for refund]'
-            | 'RETURN_DONE: Return done[Refund Done]'
-            | 'RETURN_REFUND_AMT_ADJUST_REQUESTED: Return processing[Adjustment request]'
-            | 'EXCHANGE_REQUEST: Exchange request[Waiting for approval]'
-            | 'EXCHANGE_REJECT_REQUEST: Exchange processing[Wait for withdrawal]'
-            | 'EXCHANGE_PROC_BEFORE_RECEIVE: Exchange processing[Collection progress]'
-            | 'EXCHANGE_PROC_REQUEST_PAY: Exchange processing[Waiting for payment]'
-            | 'EXCHANGE_PROC_REQUEST_REFUND: Exchange processing[Refund pending]'
-            | 'EXCHANGE_PROC_WAITING: Exchange processing[Waiting for processing]'
-            | 'EXCHANGE_PROC_WAITING_PAY: Exchange processing[Waiting for deposit processing]'
-            | 'EXCHANGE_PROC_WAITING_REFUND: Exchange processing[Waiting for refund]'
-            | 'EXCHANGE_DONE_PAY_DONE: Exchange Done[Pay Done]'
-            | 'EXCHANGE_DONE_REFUND_DONE: Exchange Done[Refund Done]'
-            | 'EXCHANGE_DONE: Exchange Done[No Refund]';
+            | 'CANCEL_NO_REFUND'
+            | 'CANCEL_REQUEST'
+            | 'CANCEL_PROC_REQUEST_REFUND'
+            | 'CANCEL_PROC_WAITING_REFUND'
+            | 'CANCEL_DONE'
+            | 'RETURN_NO_REFUND'
+            | 'RETURN_REQUEST'
+            | 'RETURN_REJECT_REQUEST'
+            | 'RETURN_PROC_BEFORE_RECEIVE'
+            | 'RETURN_PROC_REQUEST_REFUND'
+            | 'RETURN_PROC_WAITING_REFUND'
+            | 'RETURN_DONE'
+            | 'RETURN_REFUND_AMT_ADJUST_REQUESTED'
+            | 'EXCHANGE_REQUEST'
+            | 'EXCHANGE_REJECT_REQUEST'
+            | 'EXCHANGE_PROC_BEFORE_RECEIVE'
+            | 'EXCHANGE_PROC_REQUEST_PAY'
+            | 'EXCHANGE_PROC_REQUEST_REFUND'
+            | 'EXCHANGE_PROC_WAITING'
+            | 'EXCHANGE_PROC_WAITING_PAY'
+            | 'EXCHANGE_PROC_WAITING_REFUND'
+            | 'EXCHANGE_DONE_PAY_DONE'
+            | 'EXCHANGE_DONE_REFUND_DONE'
+            | 'EXCHANGE_DONE';
           /**
            * @description 추가상품번호
            * @example 1
@@ -4250,41 +4239,41 @@ export interface components {
            * @enum {string}
            */
           payType:
-            | 'CREDIT_CARD: 신용카드'
-            | 'ACCOUNT: 무통장입금'
-            | 'MOBILE: 휴대폰결제'
-            | 'REALTIME_ACCOUNT_TRANSFER: 실시간계좌이체'
-            | 'VIRTUAL_ACCOUNT: 가상계좌'
-            | 'GIFT: 상품권'
-            | 'ATM: ATM'
-            | 'PAYCO: PAYCO'
-            | 'ZERO_PAY: 0원결제'
-            | 'ACCUMULATION: 적립금 전액 사용'
-            | 'PHONE_BILL: 전화결제'
-            | 'POINT: 포인트결제'
-            | 'YPAY: 옐로페이'
-            | 'KPAY: 케이페이'
-            | 'PAYPIN: 페이핀'
-            | 'INIPAY: INIPay 간편결제'
-            | 'PAYPAL: PAYPAL'
-            | 'STRIPE: STRIPE'
-            | 'NAVER_PAY: 네이버페이 주문형'
-            | 'KAKAO_PAY: 카카오페이'
-            | 'NAVER_EASY_PAY: 네이버페이 결제형'
-            | 'SAMSUNG_PAY: 삼성페이'
-            | 'CHAI: 차이'
-            | 'TOSS_PAY: 토스페이'
-            | 'SK_PAY: SK페이'
-            | 'APPLE_PAY: 애플페이'
-            | 'ESCROW_REALTIME_ACCOUNT_TRANSFER: 실시간계좌이체-에스크로'
-            | 'ESCROW_VIRTUAL_ACCOUNT: 가상계좌-에스크로'
-            | 'VERITRANS_CARD: Veritrans CreditCard'
-            | 'TOASTCAM: 토스트캠'
-            | 'RENTAL: 렌탈결제'
-            | 'UNION_PAY: Union Pay'
-            | 'ALIPAY: Alipay Plus'
-            | 'WECHAT_PAY: WeChat Pay'
-            | 'ETC: 기타결제수단';
+            | 'CREDIT_CARD'
+            | 'ACCOUNT'
+            | 'MOBILE'
+            | 'REALTIME_ACCOUNT_TRANSFER'
+            | 'VIRTUAL_ACCOUNT'
+            | 'GIFT'
+            | 'ATM'
+            | 'PAYCO'
+            | 'ZERO_PAY'
+            | 'ACCUMULATION'
+            | 'PHONE_BILL'
+            | 'POINT'
+            | 'YPAY'
+            | 'KPAY'
+            | 'PAYPIN'
+            | 'INIPAY'
+            | 'PAYPAL'
+            | 'STRIPE'
+            | 'NAVER_PAY'
+            | 'KAKAO_PAY'
+            | 'NAVER_EASY_PAY'
+            | 'SAMSUNG_PAY'
+            | 'CHAI'
+            | 'TOSS_PAY'
+            | 'SK_PAY'
+            | 'APPLE_PAY'
+            | 'ESCROW_REALTIME_ACCOUNT_TRANSFER'
+            | 'ESCROW_VIRTUAL_ACCOUNT'
+            | 'VERITRANS_CARD'
+            | 'TOASTCAM'
+            | 'RENTAL'
+            | 'UNION_PAY'
+            | 'ALIPAY'
+            | 'WECHAT_PAY'
+            | 'ETC';
           /**
            * @description 해외배송여부(true: 해외배송, false: 국내배송)
            * @example false
@@ -4424,54 +4413,54 @@ export interface components {
              * @enum {string}
              */
             deliveryCompanyType?:
-              | 'CJ: CJ Logistics'
-              | 'POST: Post Office'
-              | 'HANJIN: Hanjin Transportation'
-              | 'GTX: GTX LOGIS'
-              | 'LOTTE: otte Global Logistics Corporation'
-              | 'KGB: KGB LOGIS'
-              | 'LOGEN: Logen'
-              | 'GSI: gsi Express'
-              | 'KGL: KG LOGIS'
-              | 'INTRAS: INTRAS'
-              | 'UPS: UPS'
-              | 'CHUNIL: Chunil Express'
-              | 'KDEXP: Kyungdong Express'
-              | 'HDEXP: Hapdong Express'
-              | 'ILYANG: Ilyang Logis'
-              | 'POST_EMS: Post Office EMS'
-              | 'DAESIN: daesin'
-              | 'CVS: CVS Convenience Shop Delivery Service'
-              | 'DHL: DHL'
-              | 'FEDEX: FEDEX'
-              | 'GSM: GSM International Courier'
-              | 'WARPEX: WarpEx'
-              | 'WIZWA: WIZWA'
-              | 'ACI: ACI Express'
-              | 'PANTOS: LX Pantos'
-              | 'CJ_INTERNATIONAL: CJ Logistics(international courier)'
-              | 'TNT: TNT'
-              | 'CU: CU Convenience Shop Delivery Service'
-              | 'KUNYOUNG: Geonyoung Express'
-              | 'LOTTE_INTERNATIONAL: Lotte Global Logistics Corporation(international courier)'
-              | 'HONAM: Honam Express'
-              | 'HANIPS: Hanui Sarang Express'
-              | 'IPARCEL: i-Parcel'
-              | 'SLX: SLX Express'
-              | 'USPS: USPS'
-              | 'WONDERS: wonders quick'
-              | 'REGISTPOST: Regist Post'
-              | 'DHLDE: DHL(germany)'
-              | 'EZUSA: EZUSA'
-              | 'SWGEXP: Sungwon Global'
-              | 'DAEWOON: Daewoon Global'
-              | 'DODOFLEX: dodoFlex'
-              | 'NH_LOGIS: NongHyup Logis'
-              | 'UFO: UFO'
-              | 'TODAY_PICKUP: Today Pickup'
-              | 'QEXPRESS: 큐익스프레스'
-              | 'PINGPONG: 핑퐁'
-              | 'ETC: ETC';
+              | 'CJ'
+              | 'POST'
+              | 'HANJIN'
+              | 'GTX'
+              | 'LOTTE'
+              | 'KGB'
+              | 'LOGEN'
+              | 'GSI'
+              | 'KGL'
+              | 'INTRAS'
+              | 'UPS'
+              | 'CHUNIL'
+              | 'KDEXP'
+              | 'HDEXP'
+              | 'ILYANG'
+              | 'POST_EMS'
+              | 'DAESIN'
+              | 'CVS'
+              | 'DHL'
+              | 'FEDEX'
+              | 'GSM'
+              | 'WARPEX'
+              | 'WIZWA'
+              | 'ACI'
+              | 'PANTOS'
+              | 'CJ_INTERNATIONAL'
+              | 'TNT'
+              | 'CU'
+              | 'KUNYOUNG'
+              | 'LOTTE_INTERNATIONAL'
+              | 'HONAM'
+              | 'HANIPS'
+              | 'IPARCEL'
+              | 'SLX'
+              | 'USPS'
+              | 'WONDERS'
+              | 'REGISTPOST'
+              | 'DHLDE'
+              | 'EZUSA'
+              | 'SWGEXP'
+              | 'DAEWOON'
+              | 'DODOFLEX'
+              | 'NH_LOGIS'
+              | 'UFO'
+              | 'TODAY_PICKUP'
+              | 'QEXPRESS'
+              | 'PINGPONG'
+              | 'ETC';
             /**
              * @description 송장추적 URL (nullable)
              * @example url1
@@ -4494,31 +4483,31 @@ export interface components {
            * @enum {string}
            */
           pgType:
-            | 'DUMMY: 없음'
-            | 'PAYCO: PAYCO'
-            | 'PAYPAL: PayPal'
-            | 'STRIPE: STRIPE'
-            | 'KCP: KCP'
-            | 'INICIS: 이니시스'
-            | 'NONE: PG없음'
-            | 'KCP_MOBILE: KCP(모바일)'
-            | 'KCP_APP: KCP(앱)'
-            | 'NAVER_PAY: 네이버페이(주문형)'
-            | 'LIIVMATE: 리브메이트'
-            | 'PAYPALPRO: PAYPAL PRO'
-            | 'ATHOR_NET: AthorizeNet'
-            | 'KAKAO_PAY: 카카오페이'
-            | 'NAVER_EASY_PAY: 네이버페이(간편결제)'
-            | 'CHAI: 차이'
-            | 'SMARTRO_PAY: 스마트로'
-            | 'LG_U_PLUS: 토스페이먼츠'
-            | 'TOSS_PAYMENTS: 토스페이먼츠'
-            | 'VERITRANS: Veritrans'
-            | 'NICEPAY: 나이스페이'
-            | 'MY_PAY: 마이페이'
-            | 'EXIMBAY_GLOBAL: 엑심베이(글로벌)'
-            | 'EASY_PAY: 이지페이'
-            | 'GALAXIA_MONEY_TREE: 갤럭시아머니트리';
+            | 'DUMMY'
+            | 'PAYCO'
+            | 'PAYPAL'
+            | 'STRIPE'
+            | 'KCP'
+            | 'INICIS'
+            | 'NONE'
+            | 'KCP_MOBILE'
+            | 'KCP_APP'
+            | 'NAVER_PAY'
+            | 'LIIVMATE'
+            | 'PAYPALPRO'
+            | 'ATHOR_NET'
+            | 'KAKAO_PAY'
+            | 'NAVER_EASY_PAY'
+            | 'CHAI'
+            | 'SMARTRO_PAY'
+            | 'LG_U_PLUS'
+            | 'TOSS_PAYMENTS'
+            | 'VERITRANS'
+            | 'NICEPAY'
+            | 'MY_PAY'
+            | 'EXIMBAY_GLOBAL'
+            | 'EASY_PAY'
+            | 'GALAXIA_MONEY_TREE';
           /**
            * @description 주문번호
            * @example 1
@@ -4530,22 +4519,22 @@ export interface components {
            * @enum {string}
            */
           orderStatusType:
-            | 'DEPOSIT_WAIT: 입금대기'
-            | 'PAY_DONE: 결제완료'
-            | 'PRODUCT_PREPARE: 상품준비중'
-            | 'DELIVERY_PREPARE: 배송준비중'
-            | 'DELIVERY_ING: 배송중'
-            | 'DELIVERY_DONE: 배송완료'
-            | 'BUY_CONFIRM: 구매확정'
-            | 'CANCEL_DONE: 취소완료'
-            | 'RETURN_DONE: 반품완료'
-            | 'EXCHANGE_DONE: 교환완료'
-            | 'PAY_WAIT: 결제대기'
-            | 'PAY_CANCEL: 결제포기'
-            | 'PAY_FAIL: 결제실패'
-            | 'DELETE: 삭제'
-            | 'EXCHANGE_WAIT: 교환대기'
-            | 'REFUND_DONE: 환불완료';
+            | 'DEPOSIT_WAIT'
+            | 'PAY_DONE'
+            | 'PRODUCT_PREPARE'
+            | 'DELIVERY_PREPARE'
+            | 'DELIVERY_ING'
+            | 'DELIVERY_DONE'
+            | 'BUY_CONFIRM'
+            | 'CANCEL_DONE'
+            | 'RETURN_DONE'
+            | 'EXCHANGE_DONE'
+            | 'PAY_WAIT'
+            | 'PAY_CANCEL'
+            | 'PAY_FAIL'
+            | 'DELETE'
+            | 'EXCHANGE_WAIT'
+            | 'REFUND_DONE';
           /**
            * @description 옵션값
            * @example 255
@@ -4621,7 +4610,7 @@ export interface components {
          * @example CANCEL
          * @enum {string}
          */
-        claimType: 'CANCEL: 취소' | 'RETURN: 반품' | 'EXCHANGE: 교환';
+        claimType: 'CANCEL' | 'RETURN' | 'EXCHANGE';
         /**
          * @description 클레임번호
          * @example 1
@@ -4638,18 +4627,18 @@ export interface components {
          * @enum {string}
          */
         claimReasonType:
-          | 'CHANGE_MIND: 단순변심(색상,사이즈 등)'
-          | 'DEFECTIVE_PRODUCT: 상품불량/파손'
-          | 'WRONG_DELIVERY: 배송누락/오배송'
-          | 'OUT_OF_STOCK_SYSTEM: 재고부족(품절취소)'
-          | 'CANCEL_BEFORE_PAY: 입금전취소'
-          | 'WRONG_PRODUCT_DETAIL: 상품상세 정보와 다름'
-          | 'DELAY_DELIVERY: 판매자 배송 지연'
-          | 'OTHERS_SELLER: 기타(판매자 귀책)'
-          | 'OTHERS_BUYER: 기타(구매자 귀책)'
-          | 'OUT_OF_STOCK: 상품 품절/재고 없음'
-          | 'LATER_INPUT_ORDER: 배송지 미입력 취소'
-          | 'LATER_INPUT_ORDER_RECEIVER_CANCEL: 선물거절취소';
+          | 'CHANGE_MIND'
+          | 'DEFECTIVE_PRODUCT'
+          | 'WRONG_DELIVERY'
+          | 'OUT_OF_STOCK_SYSTEM'
+          | 'CANCEL_BEFORE_PAY'
+          | 'WRONG_PRODUCT_DETAIL'
+          | 'DELAY_DELIVERY'
+          | 'OTHERS_SELLER'
+          | 'OTHERS_BUYER'
+          | 'OUT_OF_STOCK'
+          | 'LATER_INPUT_ORDER'
+          | 'LATER_INPUT_ORDER_RECEIVER_CANCEL';
         /**
          * @description 주문일자
          * @example YYYY-MM-DD hh:mm:ss
@@ -4703,24 +4692,24 @@ export interface components {
            * @enum {string}
            */
           refundType?:
-            | 'CANCEL_DEPOSIT: 미입금 취소처리'
-            | 'PAYCO: PAYCO'
-            | 'CASH: PG없음'
-            | 'PAYPAL: PAYPAL'
-            | 'STRIPE: STRIPE'
-            | 'ZERO_REFUND: 0원결제'
-            | 'KCP: KCP'
-            | 'CREDIT_CARD: 신용카드'
-            | 'LIIVMATE: 리브메이트'
-            | 'ACCUMULATION: 적립금 전액 사용'
-            | 'INICIS: 이니시스'
-            | 'NAVER_EASY_PAY: 네이버페이(간편결제)'
-            | 'KAKAO_PAY: 카카오페이'
-            | 'NAVER_PAY: 네이버페이(주문형)'
-            | 'LG_U_PLUS: LG유플러스'
-            | 'TOSS_PAYMENTS: 토스페이먼츠'
-            | 'ACCOUNT: 무통장입금'
-            | 'DUMMY: PG없음';
+            | 'CANCEL_DEPOSIT'
+            | 'PAYCO'
+            | 'CASH'
+            | 'PAYPAL'
+            | 'STRIPE'
+            | 'ZERO_REFUND'
+            | 'KCP'
+            | 'CREDIT_CARD'
+            | 'LIIVMATE'
+            | 'ACCUMULATION'
+            | 'INICIS'
+            | 'NAVER_EASY_PAY'
+            | 'KAKAO_PAY'
+            | 'NAVER_PAY'
+            | 'LG_U_PLUS'
+            | 'TOSS_PAYMENTS'
+            | 'ACCOUNT'
+            | 'DUMMY';
           /** @description 배송비정보 */
           deliveryAmtInfo: {
             /**
@@ -4810,41 +4799,41 @@ export interface components {
            * @enum {string}
            */
           refundPayType:
-            | 'CREDIT_CARD: 신용카드'
-            | 'ACCOUNT: 무통장입금'
-            | 'MOBILE: 휴대폰결제'
-            | 'REALTIME_ACCOUNT_TRANSFER: 실시간계좌이체'
-            | 'VIRTUAL_ACCOUNT: 가상계좌'
-            | 'GIFT: 상품권'
-            | 'ATM: ATM'
-            | 'PAYCO: PAYCO'
-            | 'ZERO_PAY: 0원결제'
-            | 'ACCUMULATION: 적립금 전액 사용'
-            | 'PHONE_BILL: 전화결제'
-            | 'POINT: 포인트결제'
-            | 'YPAY: 옐로페이'
-            | 'KPAY: 케이페이'
-            | 'PAYPIN: 페이핀'
-            | 'INIPAY: INIPay 간편결제'
-            | 'PAYPAL: PAYPAL'
-            | 'STRIPE: STRIPE'
-            | 'NAVER_PAY: 네이버페이 주문형'
-            | 'KAKAO_PAY: 카카오페이'
-            | 'NAVER_EASY_PAY: 네이버페이 결제형'
-            | 'SAMSUNG_PAY: 삼성페이'
-            | 'CHAI: 차이'
-            | 'TOSS_PAY: 토스페이'
-            | 'SK_PAY: SK페이'
-            | 'APPLE_PAY: 애플페이'
-            | 'ESCROW_REALTIME_ACCOUNT_TRANSFER: 실시간계좌이체-에스크로'
-            | 'ESCROW_VIRTUAL_ACCOUNT: 가상계좌-에스크로'
-            | 'VERITRANS_CARD: Veritrans CreditCard'
-            | 'TOASTCAM: 토스트캠'
-            | 'RENTAL: 렌탈결제'
-            | 'UNION_PAY: Union Pay'
-            | 'ALIPAY: Alipay Plus'
-            | 'WECHAT_PAY: WeChat Pay'
-            | 'ETC: 기타결제수단';
+            | 'CREDIT_CARD'
+            | 'ACCOUNT'
+            | 'MOBILE'
+            | 'REALTIME_ACCOUNT_TRANSFER'
+            | 'VIRTUAL_ACCOUNT'
+            | 'GIFT'
+            | 'ATM'
+            | 'PAYCO'
+            | 'ZERO_PAY'
+            | 'ACCUMULATION'
+            | 'PHONE_BILL'
+            | 'POINT'
+            | 'YPAY'
+            | 'KPAY'
+            | 'PAYPIN'
+            | 'INIPAY'
+            | 'PAYPAL'
+            | 'STRIPE'
+            | 'NAVER_PAY'
+            | 'KAKAO_PAY'
+            | 'NAVER_EASY_PAY'
+            | 'SAMSUNG_PAY'
+            | 'CHAI'
+            | 'TOSS_PAY'
+            | 'SK_PAY'
+            | 'APPLE_PAY'
+            | 'ESCROW_REALTIME_ACCOUNT_TRANSFER'
+            | 'ESCROW_VIRTUAL_ACCOUNT'
+            | 'VERITRANS_CARD'
+            | 'TOASTCAM'
+            | 'RENTAL'
+            | 'UNION_PAY'
+            | 'ALIPAY'
+            | 'WECHAT_PAY'
+            | 'ETC';
           /** @description 상품금액정보 */
           productAmtInfo: {
             /**
@@ -4925,54 +4914,54 @@ export interface components {
          * @enum {string}
          */
         deliveryCompanyType?:
-          | 'CJ: CJ Logistics'
-          | 'POST: Post Office'
-          | 'HANJIN: Hanjin Transportation'
-          | 'GTX: GTX LOGIS'
-          | 'LOTTE: otte Global Logistics Corporation'
-          | 'KGB: KGB LOGIS'
-          | 'LOGEN: Logen'
-          | 'GSI: gsi Express'
-          | 'KGL: KG LOGIS'
-          | 'INTRAS: INTRAS'
-          | 'UPS: UPS'
-          | 'CHUNIL: Chunil Express'
-          | 'KDEXP: Kyungdong Express'
-          | 'HDEXP: Hapdong Express'
-          | 'ILYANG: Ilyang Logis'
-          | 'POST_EMS: Post Office EMS'
-          | 'DAESIN: daesin'
-          | 'CVS: CVS Convenience Shop Delivery Service'
-          | 'DHL: DHL'
-          | 'FEDEX: FEDEX'
-          | 'GSM: GSM International Courier'
-          | 'WARPEX: WarpEx'
-          | 'WIZWA: WIZWA'
-          | 'ACI: ACI Express'
-          | 'PANTOS: LX Pantos'
-          | 'CJ_INTERNATIONAL: CJ Logistics(international courier)'
-          | 'TNT: TNT'
-          | 'CU: CU Convenience Shop Delivery Service'
-          | 'KUNYOUNG: Geonyoung Express'
-          | 'LOTTE_INTERNATIONAL: Lotte Global Logistics Corporation(international courier)'
-          | 'HONAM: Honam Express'
-          | 'HANIPS: Hanui Sarang Express'
-          | 'IPARCEL: i-Parcel'
-          | 'SLX: SLX Express'
-          | 'USPS: USPS'
-          | 'WONDERS: wonders quick'
-          | 'REGISTPOST: Regist Post'
-          | 'DHLDE: DHL(germany)'
-          | 'EZUSA: EZUSA'
-          | 'SWGEXP: Sungwon Global'
-          | 'DAEWOON: Daewoon Global'
-          | 'DODOFLEX: dodoFlex'
-          | 'NH_LOGIS: NongHyup Logis'
-          | 'UFO: UFO'
-          | 'TODAY_PICKUP: Today Pickup'
-          | 'QEXPRESS: 큐익스프레스'
-          | 'PINGPONG: 핑퐁'
-          | 'ETC: ETC';
+          | 'CJ'
+          | 'POST'
+          | 'HANJIN'
+          | 'GTX'
+          | 'LOTTE'
+          | 'KGB'
+          | 'LOGEN'
+          | 'GSI'
+          | 'KGL'
+          | 'INTRAS'
+          | 'UPS'
+          | 'CHUNIL'
+          | 'KDEXP'
+          | 'HDEXP'
+          | 'ILYANG'
+          | 'POST_EMS'
+          | 'DAESIN'
+          | 'CVS'
+          | 'DHL'
+          | 'FEDEX'
+          | 'GSM'
+          | 'WARPEX'
+          | 'WIZWA'
+          | 'ACI'
+          | 'PANTOS'
+          | 'CJ_INTERNATIONAL'
+          | 'TNT'
+          | 'CU'
+          | 'KUNYOUNG'
+          | 'LOTTE_INTERNATIONAL'
+          | 'HONAM'
+          | 'HANIPS'
+          | 'IPARCEL'
+          | 'SLX'
+          | 'USPS'
+          | 'WONDERS'
+          | 'REGISTPOST'
+          | 'DHLDE'
+          | 'EZUSA'
+          | 'SWGEXP'
+          | 'DAEWOON'
+          | 'DODOFLEX'
+          | 'NH_LOGIS'
+          | 'UFO'
+          | 'TODAY_PICKUP'
+          | 'QEXPRESS'
+          | 'PINGPONG'
+          | 'ETC';
         /**
          * @description 송장번호 (nullable)
          * @example 123455
@@ -5030,18 +5019,18 @@ export interface components {
          * @enum {string}
          */
         claimReasonType?:
-          | 'CHANGE_MIND: 단순변심(색상,사이즈 등)'
-          | 'DEFECTIVE_PRODUCT: 상품불량/파손'
-          | 'WRONG_DELIVERY: 배송누락/오배송'
-          | 'OUT_OF_STOCK_SYSTEM: 재고부족(품절취소)'
-          | 'CANCEL_BEFORE_PAY: 입금전취소'
-          | 'WRONG_PRODUCT_DETAIL: 상품상세 정보와 다름'
-          | 'DELAY_DELIVERY: 판매자 배송 지연'
-          | 'OTHERS_SELLER: 기타(판매자 귀책)'
-          | 'OTHERS_BUYER: 기타(구매자 귀책)'
-          | 'OUT_OF_STOCK: 상품 품절/재고 없음'
-          | 'LATER_INPUT_ORDER: 배송지 미입력 취소'
-          | 'LATER_INPUT_ORDER_RECEIVER_CANCEL: 선물거절취소';
+          | 'CHANGE_MIND'
+          | 'DEFECTIVE_PRODUCT'
+          | 'WRONG_DELIVERY'
+          | 'OUT_OF_STOCK_SYSTEM'
+          | 'CANCEL_BEFORE_PAY'
+          | 'WRONG_PRODUCT_DETAIL'
+          | 'DELAY_DELIVERY'
+          | 'OTHERS_SELLER'
+          | 'OTHERS_BUYER'
+          | 'OUT_OF_STOCK'
+          | 'LATER_INPUT_ORDER'
+          | 'LATER_INPUT_ORDER_RECEIVER_CANCEL';
         /**
          * @description 배송상품여부
          * @example true
@@ -5070,30 +5059,30 @@ export interface components {
          * @enum {string}
          */
         claimStatusType?:
-          | 'CANCEL_NO_REFUND: Cancel done[No Refund]'
-          | 'CANCEL_REQUEST: Cancel request[Waiting for approval]'
-          | 'CANCEL_PROC_REQUEST_REFUND: Cancellation[Refund pending]'
-          | 'CANCEL_PROC_WAITING_REFUND: Cancellation[Waiting for refund]'
-          | 'CANCEL_DONE: Cancel done[Refund done]'
-          | 'RETURN_NO_REFUND: Return done[No refund]'
-          | 'RETURN_REQUEST: Return request[Waiting for approval]'
-          | 'RETURN_REJECT_REQUEST: Return request[Wait for withdrawal]'
-          | 'RETURN_PROC_BEFORE_RECEIVE: Return processing[Collection progress]'
-          | 'RETURN_PROC_REQUEST_REFUND: Return processing[Refund pending]'
-          | 'RETURN_PROC_WAITING_REFUND: Return processing[Waiting for refund]'
-          | 'RETURN_DONE: Return done[Refund Done]'
-          | 'RETURN_REFUND_AMT_ADJUST_REQUESTED: Return processing[Adjustment request]'
-          | 'EXCHANGE_REQUEST: Exchange request[Waiting for approval]'
-          | 'EXCHANGE_REJECT_REQUEST: Exchange processing[Wait for withdrawal]'
-          | 'EXCHANGE_PROC_BEFORE_RECEIVE: Exchange processing[Collection progress]'
-          | 'EXCHANGE_PROC_REQUEST_PAY: Exchange processing[Waiting for payment]'
-          | 'EXCHANGE_PROC_REQUEST_REFUND: Exchange processing[Refund pending]'
-          | 'EXCHANGE_PROC_WAITING: Exchange processing[Waiting for processing]'
-          | 'EXCHANGE_PROC_WAITING_PAY: Exchange processing[Waiting for deposit processing]'
-          | 'EXCHANGE_PROC_WAITING_REFUND: Exchange processing[Waiting for refund]'
-          | 'EXCHANGE_DONE_PAY_DONE: Exchange Done[Pay Done]'
-          | 'EXCHANGE_DONE_REFUND_DONE: Exchange Done[Refund Done]'
-          | 'EXCHANGE_DONE: Exchange Done[No Refund]';
+          | 'CANCEL_NO_REFUND'
+          | 'CANCEL_REQUEST'
+          | 'CANCEL_PROC_REQUEST_REFUND'
+          | 'CANCEL_PROC_WAITING_REFUND'
+          | 'CANCEL_DONE'
+          | 'RETURN_NO_REFUND'
+          | 'RETURN_REQUEST'
+          | 'RETURN_REJECT_REQUEST'
+          | 'RETURN_PROC_BEFORE_RECEIVE'
+          | 'RETURN_PROC_REQUEST_REFUND'
+          | 'RETURN_PROC_WAITING_REFUND'
+          | 'RETURN_DONE'
+          | 'RETURN_REFUND_AMT_ADJUST_REQUESTED'
+          | 'EXCHANGE_REQUEST'
+          | 'EXCHANGE_REJECT_REQUEST'
+          | 'EXCHANGE_PROC_BEFORE_RECEIVE'
+          | 'EXCHANGE_PROC_REQUEST_PAY'
+          | 'EXCHANGE_PROC_REQUEST_REFUND'
+          | 'EXCHANGE_PROC_WAITING'
+          | 'EXCHANGE_PROC_WAITING_PAY'
+          | 'EXCHANGE_PROC_WAITING_REFUND'
+          | 'EXCHANGE_DONE_PAY_DONE'
+          | 'EXCHANGE_DONE_REFUND_DONE'
+          | 'EXCHANGE_DONE';
         /**
          * @description 추가상품번호
          * @example 1
@@ -5110,41 +5099,41 @@ export interface components {
          * @enum {string}
          */
         payType:
-          | 'CREDIT_CARD: 신용카드'
-          | 'ACCOUNT: 무통장입금'
-          | 'MOBILE: 휴대폰결제'
-          | 'REALTIME_ACCOUNT_TRANSFER: 실시간계좌이체'
-          | 'VIRTUAL_ACCOUNT: 가상계좌'
-          | 'GIFT: 상품권'
-          | 'ATM: ATM'
-          | 'PAYCO: PAYCO'
-          | 'ZERO_PAY: 0원결제'
-          | 'ACCUMULATION: 적립금 전액 사용'
-          | 'PHONE_BILL: 전화결제'
-          | 'POINT: 포인트결제'
-          | 'YPAY: 옐로페이'
-          | 'KPAY: 케이페이'
-          | 'PAYPIN: 페이핀'
-          | 'INIPAY: INIPay 간편결제'
-          | 'PAYPAL: PAYPAL'
-          | 'STRIPE: STRIPE'
-          | 'NAVER_PAY: 네이버페이 주문형'
-          | 'KAKAO_PAY: 카카오페이'
-          | 'NAVER_EASY_PAY: 네이버페이 결제형'
-          | 'SAMSUNG_PAY: 삼성페이'
-          | 'CHAI: 차이'
-          | 'TOSS_PAY: 토스페이'
-          | 'SK_PAY: SK페이'
-          | 'APPLE_PAY: 애플페이'
-          | 'ESCROW_REALTIME_ACCOUNT_TRANSFER: 실시간계좌이체-에스크로'
-          | 'ESCROW_VIRTUAL_ACCOUNT: 가상계좌-에스크로'
-          | 'VERITRANS_CARD: Veritrans CreditCard'
-          | 'TOASTCAM: 토스트캠'
-          | 'RENTAL: 렌탈결제'
-          | 'UNION_PAY: Union Pay'
-          | 'ALIPAY: Alipay Plus'
-          | 'WECHAT_PAY: WeChat Pay'
-          | 'ETC: 기타결제수단';
+          | 'CREDIT_CARD'
+          | 'ACCOUNT'
+          | 'MOBILE'
+          | 'REALTIME_ACCOUNT_TRANSFER'
+          | 'VIRTUAL_ACCOUNT'
+          | 'GIFT'
+          | 'ATM'
+          | 'PAYCO'
+          | 'ZERO_PAY'
+          | 'ACCUMULATION'
+          | 'PHONE_BILL'
+          | 'POINT'
+          | 'YPAY'
+          | 'KPAY'
+          | 'PAYPIN'
+          | 'INIPAY'
+          | 'PAYPAL'
+          | 'STRIPE'
+          | 'NAVER_PAY'
+          | 'KAKAO_PAY'
+          | 'NAVER_EASY_PAY'
+          | 'SAMSUNG_PAY'
+          | 'CHAI'
+          | 'TOSS_PAY'
+          | 'SK_PAY'
+          | 'APPLE_PAY'
+          | 'ESCROW_REALTIME_ACCOUNT_TRANSFER'
+          | 'ESCROW_VIRTUAL_ACCOUNT'
+          | 'VERITRANS_CARD'
+          | 'TOASTCAM'
+          | 'RENTAL'
+          | 'UNION_PAY'
+          | 'ALIPAY'
+          | 'WECHAT_PAY'
+          | 'ETC';
         /**
          * @description 해외배송여부(true: 해외배송, false: 국내배송)
          * @example false
@@ -5284,54 +5273,54 @@ export interface components {
            * @enum {string}
            */
           deliveryCompanyType?:
-            | 'CJ: CJ Logistics'
-            | 'POST: Post Office'
-            | 'HANJIN: Hanjin Transportation'
-            | 'GTX: GTX LOGIS'
-            | 'LOTTE: otte Global Logistics Corporation'
-            | 'KGB: KGB LOGIS'
-            | 'LOGEN: Logen'
-            | 'GSI: gsi Express'
-            | 'KGL: KG LOGIS'
-            | 'INTRAS: INTRAS'
-            | 'UPS: UPS'
-            | 'CHUNIL: Chunil Express'
-            | 'KDEXP: Kyungdong Express'
-            | 'HDEXP: Hapdong Express'
-            | 'ILYANG: Ilyang Logis'
-            | 'POST_EMS: Post Office EMS'
-            | 'DAESIN: daesin'
-            | 'CVS: CVS Convenience Shop Delivery Service'
-            | 'DHL: DHL'
-            | 'FEDEX: FEDEX'
-            | 'GSM: GSM International Courier'
-            | 'WARPEX: WarpEx'
-            | 'WIZWA: WIZWA'
-            | 'ACI: ACI Express'
-            | 'PANTOS: LX Pantos'
-            | 'CJ_INTERNATIONAL: CJ Logistics(international courier)'
-            | 'TNT: TNT'
-            | 'CU: CU Convenience Shop Delivery Service'
-            | 'KUNYOUNG: Geonyoung Express'
-            | 'LOTTE_INTERNATIONAL: Lotte Global Logistics Corporation(international courier)'
-            | 'HONAM: Honam Express'
-            | 'HANIPS: Hanui Sarang Express'
-            | 'IPARCEL: i-Parcel'
-            | 'SLX: SLX Express'
-            | 'USPS: USPS'
-            | 'WONDERS: wonders quick'
-            | 'REGISTPOST: Regist Post'
-            | 'DHLDE: DHL(germany)'
-            | 'EZUSA: EZUSA'
-            | 'SWGEXP: Sungwon Global'
-            | 'DAEWOON: Daewoon Global'
-            | 'DODOFLEX: dodoFlex'
-            | 'NH_LOGIS: NongHyup Logis'
-            | 'UFO: UFO'
-            | 'TODAY_PICKUP: Today Pickup'
-            | 'QEXPRESS: 큐익스프레스'
-            | 'PINGPONG: 핑퐁'
-            | 'ETC: ETC';
+            | 'CJ'
+            | 'POST'
+            | 'HANJIN'
+            | 'GTX'
+            | 'LOTTE'
+            | 'KGB'
+            | 'LOGEN'
+            | 'GSI'
+            | 'KGL'
+            | 'INTRAS'
+            | 'UPS'
+            | 'CHUNIL'
+            | 'KDEXP'
+            | 'HDEXP'
+            | 'ILYANG'
+            | 'POST_EMS'
+            | 'DAESIN'
+            | 'CVS'
+            | 'DHL'
+            | 'FEDEX'
+            | 'GSM'
+            | 'WARPEX'
+            | 'WIZWA'
+            | 'ACI'
+            | 'PANTOS'
+            | 'CJ_INTERNATIONAL'
+            | 'TNT'
+            | 'CU'
+            | 'KUNYOUNG'
+            | 'LOTTE_INTERNATIONAL'
+            | 'HONAM'
+            | 'HANIPS'
+            | 'IPARCEL'
+            | 'SLX'
+            | 'USPS'
+            | 'WONDERS'
+            | 'REGISTPOST'
+            | 'DHLDE'
+            | 'EZUSA'
+            | 'SWGEXP'
+            | 'DAEWOON'
+            | 'DODOFLEX'
+            | 'NH_LOGIS'
+            | 'UFO'
+            | 'TODAY_PICKUP'
+            | 'QEXPRESS'
+            | 'PINGPONG'
+            | 'ETC';
           /**
            * @description 송장추적 URL (nullable)
            * @example url1
@@ -5354,31 +5343,31 @@ export interface components {
          * @enum {string}
          */
         pgType:
-          | 'DUMMY: 없음'
-          | 'PAYCO: PAYCO'
-          | 'PAYPAL: PayPal'
-          | 'STRIPE: STRIPE'
-          | 'KCP: KCP'
-          | 'INICIS: 이니시스'
-          | 'NONE: PG없음'
-          | 'KCP_MOBILE: KCP(모바일)'
-          | 'KCP_APP: KCP(앱)'
-          | 'NAVER_PAY: 네이버페이(주문형)'
-          | 'LIIVMATE: 리브메이트'
-          | 'PAYPALPRO: PAYPAL PRO'
-          | 'ATHOR_NET: AthorizeNet'
-          | 'KAKAO_PAY: 카카오페이'
-          | 'NAVER_EASY_PAY: 네이버페이(간편결제)'
-          | 'CHAI: 차이'
-          | 'SMARTRO_PAY: 스마트로'
-          | 'LG_U_PLUS: 토스페이먼츠'
-          | 'TOSS_PAYMENTS: 토스페이먼츠'
-          | 'VERITRANS: Veritrans'
-          | 'NICEPAY: 나이스페이'
-          | 'MY_PAY: 마이페이'
-          | 'EXIMBAY_GLOBAL: 엑심베이(글로벌)'
-          | 'EASY_PAY: 이지페이'
-          | 'GALAXIA_MONEY_TREE: 갤럭시아머니트리';
+          | 'DUMMY'
+          | 'PAYCO'
+          | 'PAYPAL'
+          | 'STRIPE'
+          | 'KCP'
+          | 'INICIS'
+          | 'NONE'
+          | 'KCP_MOBILE'
+          | 'KCP_APP'
+          | 'NAVER_PAY'
+          | 'LIIVMATE'
+          | 'PAYPALPRO'
+          | 'ATHOR_NET'
+          | 'KAKAO_PAY'
+          | 'NAVER_EASY_PAY'
+          | 'CHAI'
+          | 'SMARTRO_PAY'
+          | 'LG_U_PLUS'
+          | 'TOSS_PAYMENTS'
+          | 'VERITRANS'
+          | 'NICEPAY'
+          | 'MY_PAY'
+          | 'EXIMBAY_GLOBAL'
+          | 'EASY_PAY'
+          | 'GALAXIA_MONEY_TREE';
         /**
          * @description 주문번호
          * @example 1
@@ -5390,22 +5379,22 @@ export interface components {
          * @enum {string}
          */
         orderStatusType:
-          | 'DEPOSIT_WAIT: 입금대기'
-          | 'PAY_DONE: 결제완료'
-          | 'PRODUCT_PREPARE: 상품준비중'
-          | 'DELIVERY_PREPARE: 배송준비중'
-          | 'DELIVERY_ING: 배송중'
-          | 'DELIVERY_DONE: 배송완료'
-          | 'BUY_CONFIRM: 구매확정'
-          | 'CANCEL_DONE: 취소완료'
-          | 'RETURN_DONE: 반품완료'
-          | 'EXCHANGE_DONE: 교환완료'
-          | 'PAY_WAIT: 결제대기'
-          | 'PAY_CANCEL: 결제포기'
-          | 'PAY_FAIL: 결제실패'
-          | 'DELETE: 삭제'
-          | 'EXCHANGE_WAIT: 교환대기'
-          | 'REFUND_DONE: 환불완료';
+          | 'DEPOSIT_WAIT'
+          | 'PAY_DONE'
+          | 'PRODUCT_PREPARE'
+          | 'DELIVERY_PREPARE'
+          | 'DELIVERY_ING'
+          | 'DELIVERY_DONE'
+          | 'BUY_CONFIRM'
+          | 'CANCEL_DONE'
+          | 'RETURN_DONE'
+          | 'EXCHANGE_DONE'
+          | 'PAY_WAIT'
+          | 'PAY_CANCEL'
+          | 'PAY_FAIL'
+          | 'DELETE'
+          | 'EXCHANGE_WAIT'
+          | 'REFUND_DONE';
         /**
          * @description 옵션값
          * @example 255
@@ -5527,18 +5516,18 @@ export interface components {
          * @enum {string}
          */
         claimReasonType?:
-          | 'CHANGE_MIND: 단순변심(색상,사이즈 등)'
-          | 'DEFECTIVE_PRODUCT: 상품불량/파손'
-          | 'WRONG_DELIVERY: 배송누락/오배송'
-          | 'OUT_OF_STOCK_SYSTEM: 재고부족(품절취소)'
-          | 'CANCEL_BEFORE_PAY: 입금전취소'
-          | 'WRONG_PRODUCT_DETAIL: 상품상세 정보와 다름'
-          | 'DELAY_DELIVERY: 판매자 배송 지연'
-          | 'OTHERS_SELLER: 기타(판매자 귀책)'
-          | 'OTHERS_BUYER: 기타(구매자 귀책)'
-          | 'OUT_OF_STOCK: 상품 품절/재고 없음'
-          | 'LATER_INPUT_ORDER: 배송지 미입력 취소'
-          | 'LATER_INPUT_ORDER_RECEIVER_CANCEL: 선물거절취소';
+          | 'CHANGE_MIND'
+          | 'DEFECTIVE_PRODUCT'
+          | 'WRONG_DELIVERY'
+          | 'OUT_OF_STOCK_SYSTEM'
+          | 'CANCEL_BEFORE_PAY'
+          | 'WRONG_PRODUCT_DETAIL'
+          | 'DELAY_DELIVERY'
+          | 'OTHERS_SELLER'
+          | 'OTHERS_BUYER'
+          | 'OUT_OF_STOCK'
+          | 'LATER_INPUT_ORDER'
+          | 'LATER_INPUT_ORDER_RECEIVER_CANCEL';
         /**
          * @description 배송상품여부
          * @example true
@@ -5567,30 +5556,30 @@ export interface components {
          * @enum {string}
          */
         claimStatusType?:
-          | 'CANCEL_NO_REFUND: Cancel done[No Refund]'
-          | 'CANCEL_REQUEST: Cancel request[Waiting for approval]'
-          | 'CANCEL_PROC_REQUEST_REFUND: Cancellation[Refund pending]'
-          | 'CANCEL_PROC_WAITING_REFUND: Cancellation[Waiting for refund]'
-          | 'CANCEL_DONE: Cancel done[Refund done]'
-          | 'RETURN_NO_REFUND: Return done[No refund]'
-          | 'RETURN_REQUEST: Return request[Waiting for approval]'
-          | 'RETURN_REJECT_REQUEST: Return request[Wait for withdrawal]'
-          | 'RETURN_PROC_BEFORE_RECEIVE: Return processing[Collection progress]'
-          | 'RETURN_PROC_REQUEST_REFUND: Return processing[Refund pending]'
-          | 'RETURN_PROC_WAITING_REFUND: Return processing[Waiting for refund]'
-          | 'RETURN_DONE: Return done[Refund Done]'
-          | 'RETURN_REFUND_AMT_ADJUST_REQUESTED: Return processing[Adjustment request]'
-          | 'EXCHANGE_REQUEST: Exchange request[Waiting for approval]'
-          | 'EXCHANGE_REJECT_REQUEST: Exchange processing[Wait for withdrawal]'
-          | 'EXCHANGE_PROC_BEFORE_RECEIVE: Exchange processing[Collection progress]'
-          | 'EXCHANGE_PROC_REQUEST_PAY: Exchange processing[Waiting for payment]'
-          | 'EXCHANGE_PROC_REQUEST_REFUND: Exchange processing[Refund pending]'
-          | 'EXCHANGE_PROC_WAITING: Exchange processing[Waiting for processing]'
-          | 'EXCHANGE_PROC_WAITING_PAY: Exchange processing[Waiting for deposit processing]'
-          | 'EXCHANGE_PROC_WAITING_REFUND: Exchange processing[Waiting for refund]'
-          | 'EXCHANGE_DONE_PAY_DONE: Exchange Done[Pay Done]'
-          | 'EXCHANGE_DONE_REFUND_DONE: Exchange Done[Refund Done]'
-          | 'EXCHANGE_DONE: Exchange Done[No Refund]';
+          | 'CANCEL_NO_REFUND'
+          | 'CANCEL_REQUEST'
+          | 'CANCEL_PROC_REQUEST_REFUND'
+          | 'CANCEL_PROC_WAITING_REFUND'
+          | 'CANCEL_DONE'
+          | 'RETURN_NO_REFUND'
+          | 'RETURN_REQUEST'
+          | 'RETURN_REJECT_REQUEST'
+          | 'RETURN_PROC_BEFORE_RECEIVE'
+          | 'RETURN_PROC_REQUEST_REFUND'
+          | 'RETURN_PROC_WAITING_REFUND'
+          | 'RETURN_DONE'
+          | 'RETURN_REFUND_AMT_ADJUST_REQUESTED'
+          | 'EXCHANGE_REQUEST'
+          | 'EXCHANGE_REJECT_REQUEST'
+          | 'EXCHANGE_PROC_BEFORE_RECEIVE'
+          | 'EXCHANGE_PROC_REQUEST_PAY'
+          | 'EXCHANGE_PROC_REQUEST_REFUND'
+          | 'EXCHANGE_PROC_WAITING'
+          | 'EXCHANGE_PROC_WAITING_PAY'
+          | 'EXCHANGE_PROC_WAITING_REFUND'
+          | 'EXCHANGE_DONE_PAY_DONE'
+          | 'EXCHANGE_DONE_REFUND_DONE'
+          | 'EXCHANGE_DONE';
         /**
          * @description 추가상품번호
          * @example 1
@@ -5607,41 +5596,41 @@ export interface components {
          * @enum {string}
          */
         payType:
-          | 'CREDIT_CARD: 신용카드'
-          | 'ACCOUNT: 무통장입금'
-          | 'MOBILE: 휴대폰결제'
-          | 'REALTIME_ACCOUNT_TRANSFER: 실시간계좌이체'
-          | 'VIRTUAL_ACCOUNT: 가상계좌'
-          | 'GIFT: 상품권'
-          | 'ATM: ATM'
-          | 'PAYCO: PAYCO'
-          | 'ZERO_PAY: 0원결제'
-          | 'ACCUMULATION: 적립금 전액 사용'
-          | 'PHONE_BILL: 전화결제'
-          | 'POINT: 포인트결제'
-          | 'YPAY: 옐로페이'
-          | 'KPAY: 케이페이'
-          | 'PAYPIN: 페이핀'
-          | 'INIPAY: INIPay 간편결제'
-          | 'PAYPAL: PAYPAL'
-          | 'STRIPE: STRIPE'
-          | 'NAVER_PAY: 네이버페이 주문형'
-          | 'KAKAO_PAY: 카카오페이'
-          | 'NAVER_EASY_PAY: 네이버페이 결제형'
-          | 'SAMSUNG_PAY: 삼성페이'
-          | 'CHAI: 차이'
-          | 'TOSS_PAY: 토스페이'
-          | 'SK_PAY: SK페이'
-          | 'APPLE_PAY: 애플페이'
-          | 'ESCROW_REALTIME_ACCOUNT_TRANSFER: 실시간계좌이체-에스크로'
-          | 'ESCROW_VIRTUAL_ACCOUNT: 가상계좌-에스크로'
-          | 'VERITRANS_CARD: Veritrans CreditCard'
-          | 'TOASTCAM: 토스트캠'
-          | 'RENTAL: 렌탈결제'
-          | 'UNION_PAY: Union Pay'
-          | 'ALIPAY: Alipay Plus'
-          | 'WECHAT_PAY: WeChat Pay'
-          | 'ETC: 기타결제수단';
+          | 'CREDIT_CARD'
+          | 'ACCOUNT'
+          | 'MOBILE'
+          | 'REALTIME_ACCOUNT_TRANSFER'
+          | 'VIRTUAL_ACCOUNT'
+          | 'GIFT'
+          | 'ATM'
+          | 'PAYCO'
+          | 'ZERO_PAY'
+          | 'ACCUMULATION'
+          | 'PHONE_BILL'
+          | 'POINT'
+          | 'YPAY'
+          | 'KPAY'
+          | 'PAYPIN'
+          | 'INIPAY'
+          | 'PAYPAL'
+          | 'STRIPE'
+          | 'NAVER_PAY'
+          | 'KAKAO_PAY'
+          | 'NAVER_EASY_PAY'
+          | 'SAMSUNG_PAY'
+          | 'CHAI'
+          | 'TOSS_PAY'
+          | 'SK_PAY'
+          | 'APPLE_PAY'
+          | 'ESCROW_REALTIME_ACCOUNT_TRANSFER'
+          | 'ESCROW_VIRTUAL_ACCOUNT'
+          | 'VERITRANS_CARD'
+          | 'TOASTCAM'
+          | 'RENTAL'
+          | 'UNION_PAY'
+          | 'ALIPAY'
+          | 'WECHAT_PAY'
+          | 'ETC';
         /**
          * @description 해외배송여부(true: 해외배송, false: 국내배송)
          * @example false
@@ -5781,54 +5770,54 @@ export interface components {
            * @enum {string}
            */
           deliveryCompanyType?:
-            | 'CJ: CJ Logistics'
-            | 'POST: Post Office'
-            | 'HANJIN: Hanjin Transportation'
-            | 'GTX: GTX LOGIS'
-            | 'LOTTE: otte Global Logistics Corporation'
-            | 'KGB: KGB LOGIS'
-            | 'LOGEN: Logen'
-            | 'GSI: gsi Express'
-            | 'KGL: KG LOGIS'
-            | 'INTRAS: INTRAS'
-            | 'UPS: UPS'
-            | 'CHUNIL: Chunil Express'
-            | 'KDEXP: Kyungdong Express'
-            | 'HDEXP: Hapdong Express'
-            | 'ILYANG: Ilyang Logis'
-            | 'POST_EMS: Post Office EMS'
-            | 'DAESIN: daesin'
-            | 'CVS: CVS Convenience Shop Delivery Service'
-            | 'DHL: DHL'
-            | 'FEDEX: FEDEX'
-            | 'GSM: GSM International Courier'
-            | 'WARPEX: WarpEx'
-            | 'WIZWA: WIZWA'
-            | 'ACI: ACI Express'
-            | 'PANTOS: LX Pantos'
-            | 'CJ_INTERNATIONAL: CJ Logistics(international courier)'
-            | 'TNT: TNT'
-            | 'CU: CU Convenience Shop Delivery Service'
-            | 'KUNYOUNG: Geonyoung Express'
-            | 'LOTTE_INTERNATIONAL: Lotte Global Logistics Corporation(international courier)'
-            | 'HONAM: Honam Express'
-            | 'HANIPS: Hanui Sarang Express'
-            | 'IPARCEL: i-Parcel'
-            | 'SLX: SLX Express'
-            | 'USPS: USPS'
-            | 'WONDERS: wonders quick'
-            | 'REGISTPOST: Regist Post'
-            | 'DHLDE: DHL(germany)'
-            | 'EZUSA: EZUSA'
-            | 'SWGEXP: Sungwon Global'
-            | 'DAEWOON: Daewoon Global'
-            | 'DODOFLEX: dodoFlex'
-            | 'NH_LOGIS: NongHyup Logis'
-            | 'UFO: UFO'
-            | 'TODAY_PICKUP: Today Pickup'
-            | 'QEXPRESS: 큐익스프레스'
-            | 'PINGPONG: 핑퐁'
-            | 'ETC: ETC';
+            | 'CJ'
+            | 'POST'
+            | 'HANJIN'
+            | 'GTX'
+            | 'LOTTE'
+            | 'KGB'
+            | 'LOGEN'
+            | 'GSI'
+            | 'KGL'
+            | 'INTRAS'
+            | 'UPS'
+            | 'CHUNIL'
+            | 'KDEXP'
+            | 'HDEXP'
+            | 'ILYANG'
+            | 'POST_EMS'
+            | 'DAESIN'
+            | 'CVS'
+            | 'DHL'
+            | 'FEDEX'
+            | 'GSM'
+            | 'WARPEX'
+            | 'WIZWA'
+            | 'ACI'
+            | 'PANTOS'
+            | 'CJ_INTERNATIONAL'
+            | 'TNT'
+            | 'CU'
+            | 'KUNYOUNG'
+            | 'LOTTE_INTERNATIONAL'
+            | 'HONAM'
+            | 'HANIPS'
+            | 'IPARCEL'
+            | 'SLX'
+            | 'USPS'
+            | 'WONDERS'
+            | 'REGISTPOST'
+            | 'DHLDE'
+            | 'EZUSA'
+            | 'SWGEXP'
+            | 'DAEWOON'
+            | 'DODOFLEX'
+            | 'NH_LOGIS'
+            | 'UFO'
+            | 'TODAY_PICKUP'
+            | 'QEXPRESS'
+            | 'PINGPONG'
+            | 'ETC';
           /**
            * @description 송장추적 URL (nullable)
            * @example url1
@@ -5851,31 +5840,31 @@ export interface components {
          * @enum {string}
          */
         pgType:
-          | 'DUMMY: 없음'
-          | 'PAYCO: PAYCO'
-          | 'PAYPAL: PayPal'
-          | 'STRIPE: STRIPE'
-          | 'KCP: KCP'
-          | 'INICIS: 이니시스'
-          | 'NONE: PG없음'
-          | 'KCP_MOBILE: KCP(모바일)'
-          | 'KCP_APP: KCP(앱)'
-          | 'NAVER_PAY: 네이버페이(주문형)'
-          | 'LIIVMATE: 리브메이트'
-          | 'PAYPALPRO: PAYPAL PRO'
-          | 'ATHOR_NET: AthorizeNet'
-          | 'KAKAO_PAY: 카카오페이'
-          | 'NAVER_EASY_PAY: 네이버페이(간편결제)'
-          | 'CHAI: 차이'
-          | 'SMARTRO_PAY: 스마트로'
-          | 'LG_U_PLUS: 토스페이먼츠'
-          | 'TOSS_PAYMENTS: 토스페이먼츠'
-          | 'VERITRANS: Veritrans'
-          | 'NICEPAY: 나이스페이'
-          | 'MY_PAY: 마이페이'
-          | 'EXIMBAY_GLOBAL: 엑심베이(글로벌)'
-          | 'EASY_PAY: 이지페이'
-          | 'GALAXIA_MONEY_TREE: 갤럭시아머니트리';
+          | 'DUMMY'
+          | 'PAYCO'
+          | 'PAYPAL'
+          | 'STRIPE'
+          | 'KCP'
+          | 'INICIS'
+          | 'NONE'
+          | 'KCP_MOBILE'
+          | 'KCP_APP'
+          | 'NAVER_PAY'
+          | 'LIIVMATE'
+          | 'PAYPALPRO'
+          | 'ATHOR_NET'
+          | 'KAKAO_PAY'
+          | 'NAVER_EASY_PAY'
+          | 'CHAI'
+          | 'SMARTRO_PAY'
+          | 'LG_U_PLUS'
+          | 'TOSS_PAYMENTS'
+          | 'VERITRANS'
+          | 'NICEPAY'
+          | 'MY_PAY'
+          | 'EXIMBAY_GLOBAL'
+          | 'EASY_PAY'
+          | 'GALAXIA_MONEY_TREE';
         /**
          * @description 주문번호
          * @example 1
@@ -5887,22 +5876,22 @@ export interface components {
          * @enum {string}
          */
         orderStatusType:
-          | 'DEPOSIT_WAIT: 입금대기'
-          | 'PAY_DONE: 결제완료'
-          | 'PRODUCT_PREPARE: 상품준비중'
-          | 'DELIVERY_PREPARE: 배송준비중'
-          | 'DELIVERY_ING: 배송중'
-          | 'DELIVERY_DONE: 배송완료'
-          | 'BUY_CONFIRM: 구매확정'
-          | 'CANCEL_DONE: 취소완료'
-          | 'RETURN_DONE: 반품완료'
-          | 'EXCHANGE_DONE: 교환완료'
-          | 'PAY_WAIT: 결제대기'
-          | 'PAY_CANCEL: 결제포기'
-          | 'PAY_FAIL: 결제실패'
-          | 'DELETE: 삭제'
-          | 'EXCHANGE_WAIT: 교환대기'
-          | 'REFUND_DONE: 환불완료';
+          | 'DEPOSIT_WAIT'
+          | 'PAY_DONE'
+          | 'PRODUCT_PREPARE'
+          | 'DELIVERY_PREPARE'
+          | 'DELIVERY_ING'
+          | 'DELIVERY_DONE'
+          | 'BUY_CONFIRM'
+          | 'CANCEL_DONE'
+          | 'RETURN_DONE'
+          | 'EXCHANGE_DONE'
+          | 'PAY_WAIT'
+          | 'PAY_CANCEL'
+          | 'PAY_FAIL'
+          | 'DELETE'
+          | 'EXCHANGE_WAIT'
+          | 'REFUND_DONE';
         /**
          * @description 옵션값
          * @example 255
@@ -5979,26 +5968,24 @@ export interface components {
        * @enum {string}
        */
       claimReasonType:
-        | 'CHANGE_MIND: 단순변심(색상,사이즈 등)'
-        | 'DEFECTIVE_PRODUCT: 상품불량/파손'
-        | 'WRONG_DELIVERY: 배송누락/오배송'
-        | 'OUT_OF_STOCK_SYSTEM: 재고부족(품절취소)'
-        | 'CANCEL_BEFORE_PAY: 입금전취소'
-        | 'WRONG_PRODUCT_DETAIL: 상품상세 정보와 다름'
-        | 'DELAY_DELIVERY: 판매자 배송 지연'
-        | 'OTHERS_SELLER: 기타(판매자 귀책)'
-        | 'OTHERS_BUYER: 기타(구매자 귀책)'
-        | 'OUT_OF_STOCK: 상품 품절/재고 없음'
-        | 'LATER_INPUT_ORDER: 배송지 미입력 취소'
-        | 'LATER_INPUT_ORDER_RECEIVER_CANCEL: 선물거절취소';
+        | 'CHANGE_MIND'
+        | 'DEFECTIVE_PRODUCT'
+        | 'WRONG_DELIVERY'
+        | 'OUT_OF_STOCK_SYSTEM'
+        | 'CANCEL_BEFORE_PAY'
+        | 'WRONG_PRODUCT_DETAIL'
+        | 'DELAY_DELIVERY'
+        | 'OTHERS_SELLER'
+        | 'OTHERS_BUYER'
+        | 'OUT_OF_STOCK'
+        | 'LATER_INPUT_ORDER'
+        | 'LATER_INPUT_ORDER_RECEIVER_CANCEL';
       /**
        * @description 반품상품 수거방법 (nullable)
        * @example SELLER_COLLECT
        * @enum {string}
        */
-      returnWayType?:
-        | 'SELLER_COLLECT: 판매자수거요청'
-        | 'BUYER_DIRECT_RETURN: 구매자직접반품';
+      returnWayType?: 'SELLER_COLLECT' | 'BUYER_DIRECT_RETURN';
       /**
        * @description 주문옵션번호
        * @example 1
@@ -6034,60 +6021,60 @@ export interface components {
            * @enum {string}
            */
           bank?:
-            | 'ANONYMOUS: Unverified Bank'
-            | 'KDB: Korea Development Bank'
-            | 'IBK: Industrial Bank of Korea'
-            | 'KB: KOOKMIN BANK'
-            | 'KEB: Korea Exchange Bank'
-            | 'SUHYUP: National Federation of Fisheries Cooperatives'
-            | 'KEXIM: The Export-Import Bank of Korea'
-            | 'NH: NONGHYUP BANK'
-            | 'NHLOCAL: National Agricultural Cooperative Federation'
-            | 'WOORI: Woori Bank'
-            | 'SC: Standard Chartered Bank Korea Limited'
-            | 'CITY: Citibank Korea'
-            | 'DAEGU: Daegu Gyeongbuk Bank'
-            | 'PUSAN: BUSAN BANK'
-            | 'GWANGJU: The Kwangju Bank'
-            | 'JEJU: Jeju Bank'
-            | 'JEONBUK: Jeonbuk Bank'
-            | 'GYEONGNAM: BNK KYONGNAM BANK'
-            | 'KFCC: The Saemaeul finance firm.'
-            | 'CU: National Credit Union Federation'
-            | 'SANGHO: Mutual Savings Bank / Thrift Institution'
-            | 'HSBC: Hongkong and Shanghai Banking Corporation'
-            | 'DEUTSCHE: Deutsche Bank AG'
-            | 'NFCF: National Forestry Cooperative Federation'
-            | 'EPOST: Post Office'
-            | 'KEBHANA: KEB Hana Bank'
-            | 'SHINHAN: SHINHAN BANK'
-            | 'KBANK: Kbank'
-            | 'KAKAO: Kakao Bank'
-            | 'TOSS: Toss Bank'
-            | 'YUANTA: Yuanta Securities'
-            | 'KBSEC: KB Securities'
-            | 'MIRAE: Mirae Asset Securities'
-            | 'MIRAEDAEWOO: Miraeassetdaewoo Securities'
-            | 'SAMSUNG: Samsung Securities'
-            | 'HANKOOK: Korea Investment ＆ Securities'
-            | 'NH_INVEST: NH Investment & Securities'
-            | 'KYOBO: Kyobo Securities'
-            | 'HI_INVEST: Hi Investment & Securities'
-            | 'HMC_INVEST: HYUNDAI MOTOR SECURITIES'
-            | 'KIWOOM: Kiwoom Securities'
-            | 'EBEST: EBEST INVESTMENT & SECURITIES'
-            | 'SK: SK Securities'
-            | 'DAISHIN: Daishin Securities'
-            | 'SOLOMON_INVEST: SOLOMON INVESTMENT & SECURITIES'
-            | 'HANHWA: Hanwha Investment ＆ Securities'
-            | 'HANA_INVEST: Hana Financial Investment'
-            | 'SHINHAN_INVEST: Shinhan Investment'
-            | 'DONGBU: DB Financial Investment'
-            | 'EUGENE_INVEST: Eugene Investment ＆ Securities'
-            | 'MERITZ_COMPREHENSIVE: Meritz Securities'
-            | 'BOOKOOK: Bookook Securities'
-            | 'SHINYOUNG: Shinyoung Securities'
-            | 'CAPE: CAPE Investment & Securities';
+            | 'ANONYMOUS'
+            | 'KDB'
+            | 'IBK'
+            | 'KB'
+            | 'KEB'
+            | 'SUHYUP'
+            | 'KEXIM'
+            | 'NH'
+            | 'NHLOCAL'
+            | 'WOORI'
+            | 'SC'
+            | 'CITY'
+            | 'DAEGU'
+            | 'PUSAN'
+            | 'GWANGJU'
+            | 'JEJU'
+            | 'JEONBUK'
+            | 'GYEONGNAM'
+            | 'KFCC'
+            | 'CU'
+            | 'SANGHO'
+            | 'HSBC'
+            | 'DEUTSCHE'
+            | 'NFCF'
+            | 'EPOST'
+            | 'KEBHANA'
+            | 'SHINHAN'
+            | 'KBANK'
+            | 'KAKAO'
+            | 'TOSS'
+            | 'YUANTA'
+            | 'KBSEC'
+            | 'MIRAE'
+            | 'MIRAEDAEWOO'
+            | 'SAMSUNG'
+            | 'HANKOOK'
+            | 'NH_INVEST'
+            | 'KYOBO'
+            | 'HI_INVEST'
+            | 'HMC_INVEST'
+            | 'KIWOOM'
+            | 'EBEST'
+            | 'SK'
+            | 'DAISHIN'
+            | 'SOLOMON_INVEST'
+            | 'HANHWA'
+            | 'HANA_INVEST'
+            | 'SHINHAN_INVEST'
+            | 'DONGBU'
+            | 'EUGENE_INVEST'
+            | 'MERITZ_COMPREHENSIVE'
+            | 'BOOKOOK'
+            | 'SHINYOUNG'
+            | 'CAPE';
           /**
            * @description 은행명 (nullable)
            * @example 산업은행
@@ -6099,10 +6086,7 @@ export interface components {
          * @example CASH
          * @enum {string}
          */
-        payType?:
-          | 'CASH: 무통장입금'
-          | 'ACCUMULATION: 적립금 전액 사용'
-          | 'NAVER_PAY: 네이버페이 주문형';
+        payType?: 'CASH' | 'ACCUMULATION' | 'NAVER_PAY';
         /**
          * @description 입금자 (nullable)
          * @example 홍길동
@@ -6165,18 +6149,18 @@ export interface components {
          * @enum {string}
          */
         claimReasonType?:
-          | 'CHANGE_MIND: 단순변심(색상,사이즈 등)'
-          | 'DEFECTIVE_PRODUCT: 상품불량/파손'
-          | 'WRONG_DELIVERY: 배송누락/오배송'
-          | 'OUT_OF_STOCK_SYSTEM: 재고부족(품절취소)'
-          | 'CANCEL_BEFORE_PAY: 입금전취소'
-          | 'WRONG_PRODUCT_DETAIL: 상품상세 정보와 다름'
-          | 'DELAY_DELIVERY: 판매자 배송 지연'
-          | 'OTHERS_SELLER: 기타(판매자 귀책)'
-          | 'OTHERS_BUYER: 기타(구매자 귀책)'
-          | 'OUT_OF_STOCK: 상품 품절/재고 없음'
-          | 'LATER_INPUT_ORDER: 배송지 미입력 취소'
-          | 'LATER_INPUT_ORDER_RECEIVER_CANCEL: 선물거절취소';
+          | 'CHANGE_MIND'
+          | 'DEFECTIVE_PRODUCT'
+          | 'WRONG_DELIVERY'
+          | 'OUT_OF_STOCK_SYSTEM'
+          | 'CANCEL_BEFORE_PAY'
+          | 'WRONG_PRODUCT_DETAIL'
+          | 'DELAY_DELIVERY'
+          | 'OTHERS_SELLER'
+          | 'OTHERS_BUYER'
+          | 'OUT_OF_STOCK'
+          | 'LATER_INPUT_ORDER'
+          | 'LATER_INPUT_ORDER_RECEIVER_CANCEL';
         /**
          * @description 배송상품여부
          * @example true
@@ -6205,30 +6189,30 @@ export interface components {
          * @enum {string}
          */
         claimStatusType?:
-          | 'CANCEL_NO_REFUND: Cancel done[No Refund]'
-          | 'CANCEL_REQUEST: Cancel request[Waiting for approval]'
-          | 'CANCEL_PROC_REQUEST_REFUND: Cancellation[Refund pending]'
-          | 'CANCEL_PROC_WAITING_REFUND: Cancellation[Waiting for refund]'
-          | 'CANCEL_DONE: Cancel done[Refund done]'
-          | 'RETURN_NO_REFUND: Return done[No refund]'
-          | 'RETURN_REQUEST: Return request[Waiting for approval]'
-          | 'RETURN_REJECT_REQUEST: Return request[Wait for withdrawal]'
-          | 'RETURN_PROC_BEFORE_RECEIVE: Return processing[Collection progress]'
-          | 'RETURN_PROC_REQUEST_REFUND: Return processing[Refund pending]'
-          | 'RETURN_PROC_WAITING_REFUND: Return processing[Waiting for refund]'
-          | 'RETURN_DONE: Return done[Refund Done]'
-          | 'RETURN_REFUND_AMT_ADJUST_REQUESTED: Return processing[Adjustment request]'
-          | 'EXCHANGE_REQUEST: Exchange request[Waiting for approval]'
-          | 'EXCHANGE_REJECT_REQUEST: Exchange processing[Wait for withdrawal]'
-          | 'EXCHANGE_PROC_BEFORE_RECEIVE: Exchange processing[Collection progress]'
-          | 'EXCHANGE_PROC_REQUEST_PAY: Exchange processing[Waiting for payment]'
-          | 'EXCHANGE_PROC_REQUEST_REFUND: Exchange processing[Refund pending]'
-          | 'EXCHANGE_PROC_WAITING: Exchange processing[Waiting for processing]'
-          | 'EXCHANGE_PROC_WAITING_PAY: Exchange processing[Waiting for deposit processing]'
-          | 'EXCHANGE_PROC_WAITING_REFUND: Exchange processing[Waiting for refund]'
-          | 'EXCHANGE_DONE_PAY_DONE: Exchange Done[Pay Done]'
-          | 'EXCHANGE_DONE_REFUND_DONE: Exchange Done[Refund Done]'
-          | 'EXCHANGE_DONE: Exchange Done[No Refund]';
+          | 'CANCEL_NO_REFUND'
+          | 'CANCEL_REQUEST'
+          | 'CANCEL_PROC_REQUEST_REFUND'
+          | 'CANCEL_PROC_WAITING_REFUND'
+          | 'CANCEL_DONE'
+          | 'RETURN_NO_REFUND'
+          | 'RETURN_REQUEST'
+          | 'RETURN_REJECT_REQUEST'
+          | 'RETURN_PROC_BEFORE_RECEIVE'
+          | 'RETURN_PROC_REQUEST_REFUND'
+          | 'RETURN_PROC_WAITING_REFUND'
+          | 'RETURN_DONE'
+          | 'RETURN_REFUND_AMT_ADJUST_REQUESTED'
+          | 'EXCHANGE_REQUEST'
+          | 'EXCHANGE_REJECT_REQUEST'
+          | 'EXCHANGE_PROC_BEFORE_RECEIVE'
+          | 'EXCHANGE_PROC_REQUEST_PAY'
+          | 'EXCHANGE_PROC_REQUEST_REFUND'
+          | 'EXCHANGE_PROC_WAITING'
+          | 'EXCHANGE_PROC_WAITING_PAY'
+          | 'EXCHANGE_PROC_WAITING_REFUND'
+          | 'EXCHANGE_DONE_PAY_DONE'
+          | 'EXCHANGE_DONE_REFUND_DONE'
+          | 'EXCHANGE_DONE';
         /**
          * @description 추가상품번호
          * @example 1
@@ -6245,41 +6229,41 @@ export interface components {
          * @enum {string}
          */
         payType:
-          | 'CREDIT_CARD: 신용카드'
-          | 'ACCOUNT: 무통장입금'
-          | 'MOBILE: 휴대폰결제'
-          | 'REALTIME_ACCOUNT_TRANSFER: 실시간계좌이체'
-          | 'VIRTUAL_ACCOUNT: 가상계좌'
-          | 'GIFT: 상품권'
-          | 'ATM: ATM'
-          | 'PAYCO: PAYCO'
-          | 'ZERO_PAY: 0원결제'
-          | 'ACCUMULATION: 적립금 전액 사용'
-          | 'PHONE_BILL: 전화결제'
-          | 'POINT: 포인트결제'
-          | 'YPAY: 옐로페이'
-          | 'KPAY: 케이페이'
-          | 'PAYPIN: 페이핀'
-          | 'INIPAY: INIPay 간편결제'
-          | 'PAYPAL: PAYPAL'
-          | 'STRIPE: STRIPE'
-          | 'NAVER_PAY: 네이버페이 주문형'
-          | 'KAKAO_PAY: 카카오페이'
-          | 'NAVER_EASY_PAY: 네이버페이 결제형'
-          | 'SAMSUNG_PAY: 삼성페이'
-          | 'CHAI: 차이'
-          | 'TOSS_PAY: 토스페이'
-          | 'SK_PAY: SK페이'
-          | 'APPLE_PAY: 애플페이'
-          | 'ESCROW_REALTIME_ACCOUNT_TRANSFER: 실시간계좌이체-에스크로'
-          | 'ESCROW_VIRTUAL_ACCOUNT: 가상계좌-에스크로'
-          | 'VERITRANS_CARD: Veritrans CreditCard'
-          | 'TOASTCAM: 토스트캠'
-          | 'RENTAL: 렌탈결제'
-          | 'UNION_PAY: Union Pay'
-          | 'ALIPAY: Alipay Plus'
-          | 'WECHAT_PAY: WeChat Pay'
-          | 'ETC: 기타결제수단';
+          | 'CREDIT_CARD'
+          | 'ACCOUNT'
+          | 'MOBILE'
+          | 'REALTIME_ACCOUNT_TRANSFER'
+          | 'VIRTUAL_ACCOUNT'
+          | 'GIFT'
+          | 'ATM'
+          | 'PAYCO'
+          | 'ZERO_PAY'
+          | 'ACCUMULATION'
+          | 'PHONE_BILL'
+          | 'POINT'
+          | 'YPAY'
+          | 'KPAY'
+          | 'PAYPIN'
+          | 'INIPAY'
+          | 'PAYPAL'
+          | 'STRIPE'
+          | 'NAVER_PAY'
+          | 'KAKAO_PAY'
+          | 'NAVER_EASY_PAY'
+          | 'SAMSUNG_PAY'
+          | 'CHAI'
+          | 'TOSS_PAY'
+          | 'SK_PAY'
+          | 'APPLE_PAY'
+          | 'ESCROW_REALTIME_ACCOUNT_TRANSFER'
+          | 'ESCROW_VIRTUAL_ACCOUNT'
+          | 'VERITRANS_CARD'
+          | 'TOASTCAM'
+          | 'RENTAL'
+          | 'UNION_PAY'
+          | 'ALIPAY'
+          | 'WECHAT_PAY'
+          | 'ETC';
         /**
          * @description 해외배송여부(true: 해외배송, false: 국내배송)
          * @example false
@@ -6419,54 +6403,54 @@ export interface components {
            * @enum {string}
            */
           deliveryCompanyType?:
-            | 'CJ: CJ Logistics'
-            | 'POST: Post Office'
-            | 'HANJIN: Hanjin Transportation'
-            | 'GTX: GTX LOGIS'
-            | 'LOTTE: otte Global Logistics Corporation'
-            | 'KGB: KGB LOGIS'
-            | 'LOGEN: Logen'
-            | 'GSI: gsi Express'
-            | 'KGL: KG LOGIS'
-            | 'INTRAS: INTRAS'
-            | 'UPS: UPS'
-            | 'CHUNIL: Chunil Express'
-            | 'KDEXP: Kyungdong Express'
-            | 'HDEXP: Hapdong Express'
-            | 'ILYANG: Ilyang Logis'
-            | 'POST_EMS: Post Office EMS'
-            | 'DAESIN: daesin'
-            | 'CVS: CVS Convenience Shop Delivery Service'
-            | 'DHL: DHL'
-            | 'FEDEX: FEDEX'
-            | 'GSM: GSM International Courier'
-            | 'WARPEX: WarpEx'
-            | 'WIZWA: WIZWA'
-            | 'ACI: ACI Express'
-            | 'PANTOS: LX Pantos'
-            | 'CJ_INTERNATIONAL: CJ Logistics(international courier)'
-            | 'TNT: TNT'
-            | 'CU: CU Convenience Shop Delivery Service'
-            | 'KUNYOUNG: Geonyoung Express'
-            | 'LOTTE_INTERNATIONAL: Lotte Global Logistics Corporation(international courier)'
-            | 'HONAM: Honam Express'
-            | 'HANIPS: Hanui Sarang Express'
-            | 'IPARCEL: i-Parcel'
-            | 'SLX: SLX Express'
-            | 'USPS: USPS'
-            | 'WONDERS: wonders quick'
-            | 'REGISTPOST: Regist Post'
-            | 'DHLDE: DHL(germany)'
-            | 'EZUSA: EZUSA'
-            | 'SWGEXP: Sungwon Global'
-            | 'DAEWOON: Daewoon Global'
-            | 'DODOFLEX: dodoFlex'
-            | 'NH_LOGIS: NongHyup Logis'
-            | 'UFO: UFO'
-            | 'TODAY_PICKUP: Today Pickup'
-            | 'QEXPRESS: 큐익스프레스'
-            | 'PINGPONG: 핑퐁'
-            | 'ETC: ETC';
+            | 'CJ'
+            | 'POST'
+            | 'HANJIN'
+            | 'GTX'
+            | 'LOTTE'
+            | 'KGB'
+            | 'LOGEN'
+            | 'GSI'
+            | 'KGL'
+            | 'INTRAS'
+            | 'UPS'
+            | 'CHUNIL'
+            | 'KDEXP'
+            | 'HDEXP'
+            | 'ILYANG'
+            | 'POST_EMS'
+            | 'DAESIN'
+            | 'CVS'
+            | 'DHL'
+            | 'FEDEX'
+            | 'GSM'
+            | 'WARPEX'
+            | 'WIZWA'
+            | 'ACI'
+            | 'PANTOS'
+            | 'CJ_INTERNATIONAL'
+            | 'TNT'
+            | 'CU'
+            | 'KUNYOUNG'
+            | 'LOTTE_INTERNATIONAL'
+            | 'HONAM'
+            | 'HANIPS'
+            | 'IPARCEL'
+            | 'SLX'
+            | 'USPS'
+            | 'WONDERS'
+            | 'REGISTPOST'
+            | 'DHLDE'
+            | 'EZUSA'
+            | 'SWGEXP'
+            | 'DAEWOON'
+            | 'DODOFLEX'
+            | 'NH_LOGIS'
+            | 'UFO'
+            | 'TODAY_PICKUP'
+            | 'QEXPRESS'
+            | 'PINGPONG'
+            | 'ETC';
           /**
            * @description 송장추적 URL (nullable)
            * @example url1
@@ -6489,31 +6473,31 @@ export interface components {
          * @enum {string}
          */
         pgType:
-          | 'DUMMY: 없음'
-          | 'PAYCO: PAYCO'
-          | 'PAYPAL: PayPal'
-          | 'STRIPE: STRIPE'
-          | 'KCP: KCP'
-          | 'INICIS: 이니시스'
-          | 'NONE: PG없음'
-          | 'KCP_MOBILE: KCP(모바일)'
-          | 'KCP_APP: KCP(앱)'
-          | 'NAVER_PAY: 네이버페이(주문형)'
-          | 'LIIVMATE: 리브메이트'
-          | 'PAYPALPRO: PAYPAL PRO'
-          | 'ATHOR_NET: AthorizeNet'
-          | 'KAKAO_PAY: 카카오페이'
-          | 'NAVER_EASY_PAY: 네이버페이(간편결제)'
-          | 'CHAI: 차이'
-          | 'SMARTRO_PAY: 스마트로'
-          | 'LG_U_PLUS: 토스페이먼츠'
-          | 'TOSS_PAYMENTS: 토스페이먼츠'
-          | 'VERITRANS: Veritrans'
-          | 'NICEPAY: 나이스페이'
-          | 'MY_PAY: 마이페이'
-          | 'EXIMBAY_GLOBAL: 엑심베이(글로벌)'
-          | 'EASY_PAY: 이지페이'
-          | 'GALAXIA_MONEY_TREE: 갤럭시아머니트리';
+          | 'DUMMY'
+          | 'PAYCO'
+          | 'PAYPAL'
+          | 'STRIPE'
+          | 'KCP'
+          | 'INICIS'
+          | 'NONE'
+          | 'KCP_MOBILE'
+          | 'KCP_APP'
+          | 'NAVER_PAY'
+          | 'LIIVMATE'
+          | 'PAYPALPRO'
+          | 'ATHOR_NET'
+          | 'KAKAO_PAY'
+          | 'NAVER_EASY_PAY'
+          | 'CHAI'
+          | 'SMARTRO_PAY'
+          | 'LG_U_PLUS'
+          | 'TOSS_PAYMENTS'
+          | 'VERITRANS'
+          | 'NICEPAY'
+          | 'MY_PAY'
+          | 'EXIMBAY_GLOBAL'
+          | 'EASY_PAY'
+          | 'GALAXIA_MONEY_TREE';
         /**
          * @description 주문번호
          * @example 1
@@ -6525,22 +6509,22 @@ export interface components {
          * @enum {string}
          */
         orderStatusType:
-          | 'DEPOSIT_WAIT: 입금대기'
-          | 'PAY_DONE: 결제완료'
-          | 'PRODUCT_PREPARE: 상품준비중'
-          | 'DELIVERY_PREPARE: 배송준비중'
-          | 'DELIVERY_ING: 배송중'
-          | 'DELIVERY_DONE: 배송완료'
-          | 'BUY_CONFIRM: 구매확정'
-          | 'CANCEL_DONE: 취소완료'
-          | 'RETURN_DONE: 반품완료'
-          | 'EXCHANGE_DONE: 교환완료'
-          | 'PAY_WAIT: 결제대기'
-          | 'PAY_CANCEL: 결제포기'
-          | 'PAY_FAIL: 결제실패'
-          | 'DELETE: 삭제'
-          | 'EXCHANGE_WAIT: 교환대기'
-          | 'REFUND_DONE: 환불완료';
+          | 'DEPOSIT_WAIT'
+          | 'PAY_DONE'
+          | 'PRODUCT_PREPARE'
+          | 'DELIVERY_PREPARE'
+          | 'DELIVERY_ING'
+          | 'DELIVERY_DONE'
+          | 'BUY_CONFIRM'
+          | 'CANCEL_DONE'
+          | 'RETURN_DONE'
+          | 'EXCHANGE_DONE'
+          | 'PAY_WAIT'
+          | 'PAY_CANCEL'
+          | 'PAY_FAIL'
+          | 'DELETE'
+          | 'EXCHANGE_WAIT'
+          | 'REFUND_DONE';
         /**
          * @description 옵션값
          * @example 255
@@ -6639,91 +6623,91 @@ export interface components {
          * @enum {string}
          */
         countryCd:
-          | 'AX: 올랜드 제도'
-          | 'AD: 안도라'
-          | 'AU: 호주'
-          | 'AT: 오스트리아'
-          | 'BH: 바레인'
-          | 'BE: 벨기에'
-          | 'BZ: 벨리즈'
-          | 'BR: 브라질'
-          | 'BN: 브루나이'
-          | 'BG: 불가리아'
-          | 'CA: 캐나다'
-          | 'ES_CANARY: 스페인(에스파냐)'
-          | 'CL: 칠레'
-          | 'CN: 중국'
-          | 'CO: 콜롬비아'
-          | 'CR: 코스타리카'
-          | 'CY: 키프로스'
-          | 'CZ: 체코'
-          | 'DK: 덴마크'
-          | 'EC: 에콰도르'
-          | 'EG: 이집트'
-          | 'SV: 엘살바도르'
-          | 'EE: 에스토니아'
-          | 'FR: 프랑스'
-          | 'GF: 프랑스령 기아나'
-          | 'DE: 독일'
-          | 'GR: 그리스'
-          | 'GL: 덴마크'
-          | 'GU: 괌'
-          | 'GT: 과테말라'
-          | 'GG: 건지'
-          | 'GY: 가이아나'
-          | 'HK: 홍콩'
-          | 'HU: 헝가리'
-          | 'IS: 아이슬란드'
-          | 'ID: 인도네시아'
-          | 'IE: 아일랜드'
-          | 'IL: 이스라엘'
-          | 'IT: 이탈리아'
-          | 'JP: 일본'
-          | 'JE: 저지'
-          | 'JO: 요르단'
-          | 'KR: 대한민국'
-          | 'KW: 쿠웨이트'
-          | 'LV: 라트비아'
-          | 'LB: 레바논'
-          | 'LI: 리히텐슈타인'
-          | 'LT: 리투아니아'
-          | 'LU: 룩셈부르크'
-          | 'MO: 마카오'
-          | 'PT_MADEIRA: 포르투갈'
-          | 'MY: 말레이시아'
-          | 'NL: 네덜란드'
-          | 'NZ: 뉴질랜드'
-          | 'GB_NORTHERN_ISLAND: 영국'
-          | 'NO: 노르웨이'
-          | 'PY: 파라과이'
-          | 'PE: 페루'
-          | 'PL: 폴란드'
-          | 'PT: 포르투갈'
-          | 'RO: 루마니아'
-          | 'RU: 러시아'
-          | 'SM: 산마리노'
-          | 'SA: 사우디아라비아'
-          | 'GB_SCOTLAND: 영국'
-          | 'SG: 싱가폴'
-          | 'SK: 슬로바키아'
-          | 'SI: 슬로베니아'
-          | 'ES: 스페인(에스파냐)'
-          | 'CH: 스위스'
-          | 'TW: 대만'
-          | 'TH: 태국'
-          | 'TR: 터키'
-          | 'AE: 아랍에미리트'
-          | 'GB: 영국'
-          | 'US: 미국(대륙)'
-          | 'U2: 미국(대륙)'
-          | 'UY: 우루과이'
-          | 'VN: 베트남'
-          | 'GB_WALES: 영국'
-          | 'YE: 예멘'
-          | 'HR: 크로아티아'
-          | 'MT: 몰타'
-          | 'FI: 핀란드'
-          | 'SE: 스웨덴';
+          | 'AX'
+          | 'AD'
+          | 'AU'
+          | 'AT'
+          | 'BH'
+          | 'BE'
+          | 'BZ'
+          | 'BR'
+          | 'BN'
+          | 'BG'
+          | 'CA'
+          | 'ES_CANARY'
+          | 'CL'
+          | 'CN'
+          | 'CO'
+          | 'CR'
+          | 'CY'
+          | 'CZ'
+          | 'DK'
+          | 'EC'
+          | 'EG'
+          | 'SV'
+          | 'EE'
+          | 'FR'
+          | 'GF'
+          | 'DE'
+          | 'GR'
+          | 'GL'
+          | 'GU'
+          | 'GT'
+          | 'GG'
+          | 'GY'
+          | 'HK'
+          | 'HU'
+          | 'IS'
+          | 'ID'
+          | 'IE'
+          | 'IL'
+          | 'IT'
+          | 'JP'
+          | 'JE'
+          | 'JO'
+          | 'KR'
+          | 'KW'
+          | 'LV'
+          | 'LB'
+          | 'LI'
+          | 'LT'
+          | 'LU'
+          | 'MO'
+          | 'PT_MADEIRA'
+          | 'MY'
+          | 'NL'
+          | 'NZ'
+          | 'GB_NORTHERN_ISLAND'
+          | 'NO'
+          | 'PY'
+          | 'PE'
+          | 'PL'
+          | 'PT'
+          | 'RO'
+          | 'RU'
+          | 'SM'
+          | 'SA'
+          | 'GB_SCOTLAND'
+          | 'SG'
+          | 'SK'
+          | 'SI'
+          | 'ES'
+          | 'CH'
+          | 'TW'
+          | 'TH'
+          | 'TR'
+          | 'AE'
+          | 'GB'
+          | 'US'
+          | 'U2'
+          | 'UY'
+          | 'VN'
+          | 'GB_WALES'
+          | 'YE'
+          | 'HR'
+          | 'MT'
+          | 'FI'
+          | 'SE';
         /**
          * @description 지번주소 (nullable)
          * @example 서울시 용산구 신창동
@@ -6756,30 +6740,30 @@ export interface components {
        * @enum {string}
        */
       refundType?:
-        | 'CANCEL_DEPOSIT: 미입금 취소처리'
-        | 'PAYCO: PAYCO'
-        | 'CASH: PG없음'
-        | 'PAYPAL: PAYPAL'
-        | 'STRIPE: STRIPE'
-        | 'ZERO_REFUND: 0원결제'
-        | 'KCP: KCP'
-        | 'CREDIT_CARD: 신용카드'
-        | 'LIIVMATE: 리브메이트'
-        | 'ACCUMULATION: 적립금 전액 사용'
-        | 'INICIS: 이니시스'
-        | 'NAVER_EASY_PAY: 네이버페이(간편결제)'
-        | 'KAKAO_PAY: 카카오페이'
-        | 'NAVER_PAY: 네이버페이(주문형)'
-        | 'LG_U_PLUS: LG유플러스'
-        | 'TOSS_PAYMENTS: 토스페이먼츠'
-        | 'ACCOUNT: 무통장입금'
-        | 'DUMMY: PG없음';
+        | 'CANCEL_DEPOSIT'
+        | 'PAYCO'
+        | 'CASH'
+        | 'PAYPAL'
+        | 'STRIPE'
+        | 'ZERO_REFUND'
+        | 'KCP'
+        | 'CREDIT_CARD'
+        | 'LIIVMATE'
+        | 'ACCUMULATION'
+        | 'INICIS'
+        | 'NAVER_EASY_PAY'
+        | 'KAKAO_PAY'
+        | 'NAVER_PAY'
+        | 'LG_U_PLUS'
+        | 'TOSS_PAYMENTS'
+        | 'ACCOUNT'
+        | 'DUMMY';
       /**
        * @description 클레임타입
        * @example CANCEL
        * @enum {string}
        */
-      claimType: 'CANCEL: 취소' | 'RETURN: 반품' | 'EXCHANGE: 교환';
+      claimType: 'CANCEL' | 'RETURN' | 'EXCHANGE';
       /** @description 교환출고배송지 (nullable) */
       exchangeAddress?: {
         /**
@@ -6808,91 +6792,91 @@ export interface components {
          * @enum {string}
          */
         countryCd:
-          | 'AX: 올랜드 제도'
-          | 'AD: 안도라'
-          | 'AU: 호주'
-          | 'AT: 오스트리아'
-          | 'BH: 바레인'
-          | 'BE: 벨기에'
-          | 'BZ: 벨리즈'
-          | 'BR: 브라질'
-          | 'BN: 브루나이'
-          | 'BG: 불가리아'
-          | 'CA: 캐나다'
-          | 'ES_CANARY: 스페인(에스파냐)'
-          | 'CL: 칠레'
-          | 'CN: 중국'
-          | 'CO: 콜롬비아'
-          | 'CR: 코스타리카'
-          | 'CY: 키프로스'
-          | 'CZ: 체코'
-          | 'DK: 덴마크'
-          | 'EC: 에콰도르'
-          | 'EG: 이집트'
-          | 'SV: 엘살바도르'
-          | 'EE: 에스토니아'
-          | 'FR: 프랑스'
-          | 'GF: 프랑스령 기아나'
-          | 'DE: 독일'
-          | 'GR: 그리스'
-          | 'GL: 덴마크'
-          | 'GU: 괌'
-          | 'GT: 과테말라'
-          | 'GG: 건지'
-          | 'GY: 가이아나'
-          | 'HK: 홍콩'
-          | 'HU: 헝가리'
-          | 'IS: 아이슬란드'
-          | 'ID: 인도네시아'
-          | 'IE: 아일랜드'
-          | 'IL: 이스라엘'
-          | 'IT: 이탈리아'
-          | 'JP: 일본'
-          | 'JE: 저지'
-          | 'JO: 요르단'
-          | 'KR: 대한민국'
-          | 'KW: 쿠웨이트'
-          | 'LV: 라트비아'
-          | 'LB: 레바논'
-          | 'LI: 리히텐슈타인'
-          | 'LT: 리투아니아'
-          | 'LU: 룩셈부르크'
-          | 'MO: 마카오'
-          | 'PT_MADEIRA: 포르투갈'
-          | 'MY: 말레이시아'
-          | 'NL: 네덜란드'
-          | 'NZ: 뉴질랜드'
-          | 'GB_NORTHERN_ISLAND: 영국'
-          | 'NO: 노르웨이'
-          | 'PY: 파라과이'
-          | 'PE: 페루'
-          | 'PL: 폴란드'
-          | 'PT: 포르투갈'
-          | 'RO: 루마니아'
-          | 'RU: 러시아'
-          | 'SM: 산마리노'
-          | 'SA: 사우디아라비아'
-          | 'GB_SCOTLAND: 영국'
-          | 'SG: 싱가폴'
-          | 'SK: 슬로바키아'
-          | 'SI: 슬로베니아'
-          | 'ES: 스페인(에스파냐)'
-          | 'CH: 스위스'
-          | 'TW: 대만'
-          | 'TH: 태국'
-          | 'TR: 터키'
-          | 'AE: 아랍에미리트'
-          | 'GB: 영국'
-          | 'US: 미국(대륙)'
-          | 'U2: 미국(대륙)'
-          | 'UY: 우루과이'
-          | 'VN: 베트남'
-          | 'GB_WALES: 영국'
-          | 'YE: 예멘'
-          | 'HR: 크로아티아'
-          | 'MT: 몰타'
-          | 'FI: 핀란드'
-          | 'SE: 스웨덴';
+          | 'AX'
+          | 'AD'
+          | 'AU'
+          | 'AT'
+          | 'BH'
+          | 'BE'
+          | 'BZ'
+          | 'BR'
+          | 'BN'
+          | 'BG'
+          | 'CA'
+          | 'ES_CANARY'
+          | 'CL'
+          | 'CN'
+          | 'CO'
+          | 'CR'
+          | 'CY'
+          | 'CZ'
+          | 'DK'
+          | 'EC'
+          | 'EG'
+          | 'SV'
+          | 'EE'
+          | 'FR'
+          | 'GF'
+          | 'DE'
+          | 'GR'
+          | 'GL'
+          | 'GU'
+          | 'GT'
+          | 'GG'
+          | 'GY'
+          | 'HK'
+          | 'HU'
+          | 'IS'
+          | 'ID'
+          | 'IE'
+          | 'IL'
+          | 'IT'
+          | 'JP'
+          | 'JE'
+          | 'JO'
+          | 'KR'
+          | 'KW'
+          | 'LV'
+          | 'LB'
+          | 'LI'
+          | 'LT'
+          | 'LU'
+          | 'MO'
+          | 'PT_MADEIRA'
+          | 'MY'
+          | 'NL'
+          | 'NZ'
+          | 'GB_NORTHERN_ISLAND'
+          | 'NO'
+          | 'PY'
+          | 'PE'
+          | 'PL'
+          | 'PT'
+          | 'RO'
+          | 'RU'
+          | 'SM'
+          | 'SA'
+          | 'GB_SCOTLAND'
+          | 'SG'
+          | 'SK'
+          | 'SI'
+          | 'ES'
+          | 'CH'
+          | 'TW'
+          | 'TH'
+          | 'TR'
+          | 'AE'
+          | 'GB'
+          | 'US'
+          | 'U2'
+          | 'UY'
+          | 'VN'
+          | 'GB_WALES'
+          | 'YE'
+          | 'HR'
+          | 'MT'
+          | 'FI'
+          | 'SE';
         /**
          * @description 지번주소 (nullable)
          * @example 서울시 용산구 신창동
@@ -6925,12 +6909,12 @@ export interface components {
        * @enum {string}
        */
       claimClassType:
-        | 'LEGACY: 레거시'
-        | 'ORDER_CANCEL: 전체취소'
-        | 'OPTION_CANCEL: 부분취소'
-        | 'RETURN_EXCHANGE: 출고 후 교환'
-        | 'CANCEL_EXCHANGE: 출고 전 교환'
-        | 'RETURN: 반품';
+        | 'LEGACY'
+        | 'ORDER_CANCEL'
+        | 'OPTION_CANCEL'
+        | 'RETURN_EXCHANGE'
+        | 'CANCEL_EXCHANGE'
+        | 'RETURN';
       /** @description 금액정보 */
       claimPriceInfo: {
         /** @description 차감금액정보 */
@@ -6974,24 +6958,24 @@ export interface components {
          * @enum {string}
          */
         refundType?:
-          | 'CANCEL_DEPOSIT: 미입금 취소처리'
-          | 'PAYCO: PAYCO'
-          | 'CASH: PG없음'
-          | 'PAYPAL: PAYPAL'
-          | 'STRIPE: STRIPE'
-          | 'ZERO_REFUND: 0원결제'
-          | 'KCP: KCP'
-          | 'CREDIT_CARD: 신용카드'
-          | 'LIIVMATE: 리브메이트'
-          | 'ACCUMULATION: 적립금 전액 사용'
-          | 'INICIS: 이니시스'
-          | 'NAVER_EASY_PAY: 네이버페이(간편결제)'
-          | 'KAKAO_PAY: 카카오페이'
-          | 'NAVER_PAY: 네이버페이(주문형)'
-          | 'LG_U_PLUS: LG유플러스'
-          | 'TOSS_PAYMENTS: 토스페이먼츠'
-          | 'ACCOUNT: 무통장입금'
-          | 'DUMMY: PG없음';
+          | 'CANCEL_DEPOSIT'
+          | 'PAYCO'
+          | 'CASH'
+          | 'PAYPAL'
+          | 'STRIPE'
+          | 'ZERO_REFUND'
+          | 'KCP'
+          | 'CREDIT_CARD'
+          | 'LIIVMATE'
+          | 'ACCUMULATION'
+          | 'INICIS'
+          | 'NAVER_EASY_PAY'
+          | 'KAKAO_PAY'
+          | 'NAVER_PAY'
+          | 'LG_U_PLUS'
+          | 'TOSS_PAYMENTS'
+          | 'ACCOUNT'
+          | 'DUMMY';
         /** @description 배송비정보 */
         deliveryAmtInfo: {
           /**
@@ -7081,41 +7065,41 @@ export interface components {
          * @enum {string}
          */
         refundPayType:
-          | 'CREDIT_CARD: 신용카드'
-          | 'ACCOUNT: 무통장입금'
-          | 'MOBILE: 휴대폰결제'
-          | 'REALTIME_ACCOUNT_TRANSFER: 실시간계좌이체'
-          | 'VIRTUAL_ACCOUNT: 가상계좌'
-          | 'GIFT: 상품권'
-          | 'ATM: ATM'
-          | 'PAYCO: PAYCO'
-          | 'ZERO_PAY: 0원결제'
-          | 'ACCUMULATION: 적립금 전액 사용'
-          | 'PHONE_BILL: 전화결제'
-          | 'POINT: 포인트결제'
-          | 'YPAY: 옐로페이'
-          | 'KPAY: 케이페이'
-          | 'PAYPIN: 페이핀'
-          | 'INIPAY: INIPay 간편결제'
-          | 'PAYPAL: PAYPAL'
-          | 'STRIPE: STRIPE'
-          | 'NAVER_PAY: 네이버페이 주문형'
-          | 'KAKAO_PAY: 카카오페이'
-          | 'NAVER_EASY_PAY: 네이버페이 결제형'
-          | 'SAMSUNG_PAY: 삼성페이'
-          | 'CHAI: 차이'
-          | 'TOSS_PAY: 토스페이'
-          | 'SK_PAY: SK페이'
-          | 'APPLE_PAY: 애플페이'
-          | 'ESCROW_REALTIME_ACCOUNT_TRANSFER: 실시간계좌이체-에스크로'
-          | 'ESCROW_VIRTUAL_ACCOUNT: 가상계좌-에스크로'
-          | 'VERITRANS_CARD: Veritrans CreditCard'
-          | 'TOASTCAM: 토스트캠'
-          | 'RENTAL: 렌탈결제'
-          | 'UNION_PAY: Union Pay'
-          | 'ALIPAY: Alipay Plus'
-          | 'WECHAT_PAY: WeChat Pay'
-          | 'ETC: 기타결제수단';
+          | 'CREDIT_CARD'
+          | 'ACCOUNT'
+          | 'MOBILE'
+          | 'REALTIME_ACCOUNT_TRANSFER'
+          | 'VIRTUAL_ACCOUNT'
+          | 'GIFT'
+          | 'ATM'
+          | 'PAYCO'
+          | 'ZERO_PAY'
+          | 'ACCUMULATION'
+          | 'PHONE_BILL'
+          | 'POINT'
+          | 'YPAY'
+          | 'KPAY'
+          | 'PAYPIN'
+          | 'INIPAY'
+          | 'PAYPAL'
+          | 'STRIPE'
+          | 'NAVER_PAY'
+          | 'KAKAO_PAY'
+          | 'NAVER_EASY_PAY'
+          | 'SAMSUNG_PAY'
+          | 'CHAI'
+          | 'TOSS_PAY'
+          | 'SK_PAY'
+          | 'APPLE_PAY'
+          | 'ESCROW_REALTIME_ACCOUNT_TRANSFER'
+          | 'ESCROW_VIRTUAL_ACCOUNT'
+          | 'VERITRANS_CARD'
+          | 'TOASTCAM'
+          | 'RENTAL'
+          | 'UNION_PAY'
+          | 'ALIPAY'
+          | 'WECHAT_PAY'
+          | 'ETC';
         /** @description 상품금액정보 */
         productAmtInfo: {
           /**
@@ -7193,60 +7177,60 @@ export interface components {
          * @enum {string}
          */
         bank?:
-          | 'ANONYMOUS: Unverified Bank'
-          | 'KDB: Korea Development Bank'
-          | 'IBK: Industrial Bank of Korea'
-          | 'KB: KOOKMIN BANK'
-          | 'KEB: Korea Exchange Bank'
-          | 'SUHYUP: National Federation of Fisheries Cooperatives'
-          | 'KEXIM: The Export-Import Bank of Korea'
-          | 'NH: NONGHYUP BANK'
-          | 'NHLOCAL: National Agricultural Cooperative Federation'
-          | 'WOORI: Woori Bank'
-          | 'SC: Standard Chartered Bank Korea Limited'
-          | 'CITY: Citibank Korea'
-          | 'DAEGU: Daegu Gyeongbuk Bank'
-          | 'PUSAN: BUSAN BANK'
-          | 'GWANGJU: The Kwangju Bank'
-          | 'JEJU: Jeju Bank'
-          | 'JEONBUK: Jeonbuk Bank'
-          | 'GYEONGNAM: BNK KYONGNAM BANK'
-          | 'KFCC: The Saemaeul finance firm.'
-          | 'CU: National Credit Union Federation'
-          | 'SANGHO: Mutual Savings Bank / Thrift Institution'
-          | 'HSBC: Hongkong and Shanghai Banking Corporation'
-          | 'DEUTSCHE: Deutsche Bank AG'
-          | 'NFCF: National Forestry Cooperative Federation'
-          | 'EPOST: Post Office'
-          | 'KEBHANA: KEB Hana Bank'
-          | 'SHINHAN: SHINHAN BANK'
-          | 'KBANK: Kbank'
-          | 'KAKAO: Kakao Bank'
-          | 'TOSS: Toss Bank'
-          | 'YUANTA: Yuanta Securities'
-          | 'KBSEC: KB Securities'
-          | 'MIRAE: Mirae Asset Securities'
-          | 'MIRAEDAEWOO: Miraeassetdaewoo Securities'
-          | 'SAMSUNG: Samsung Securities'
-          | 'HANKOOK: Korea Investment ＆ Securities'
-          | 'NH_INVEST: NH Investment & Securities'
-          | 'KYOBO: Kyobo Securities'
-          | 'HI_INVEST: Hi Investment & Securities'
-          | 'HMC_INVEST: HYUNDAI MOTOR SECURITIES'
-          | 'KIWOOM: Kiwoom Securities'
-          | 'EBEST: EBEST INVESTMENT & SECURITIES'
-          | 'SK: SK Securities'
-          | 'DAISHIN: Daishin Securities'
-          | 'SOLOMON_INVEST: SOLOMON INVESTMENT & SECURITIES'
-          | 'HANHWA: Hanwha Investment ＆ Securities'
-          | 'HANA_INVEST: Hana Financial Investment'
-          | 'SHINHAN_INVEST: Shinhan Investment'
-          | 'DONGBU: DB Financial Investment'
-          | 'EUGENE_INVEST: Eugene Investment ＆ Securities'
-          | 'MERITZ_COMPREHENSIVE: Meritz Securities'
-          | 'BOOKOOK: Bookook Securities'
-          | 'SHINYOUNG: Shinyoung Securities'
-          | 'CAPE: CAPE Investment & Securities';
+          | 'ANONYMOUS'
+          | 'KDB'
+          | 'IBK'
+          | 'KB'
+          | 'KEB'
+          | 'SUHYUP'
+          | 'KEXIM'
+          | 'NH'
+          | 'NHLOCAL'
+          | 'WOORI'
+          | 'SC'
+          | 'CITY'
+          | 'DAEGU'
+          | 'PUSAN'
+          | 'GWANGJU'
+          | 'JEJU'
+          | 'JEONBUK'
+          | 'GYEONGNAM'
+          | 'KFCC'
+          | 'CU'
+          | 'SANGHO'
+          | 'HSBC'
+          | 'DEUTSCHE'
+          | 'NFCF'
+          | 'EPOST'
+          | 'KEBHANA'
+          | 'SHINHAN'
+          | 'KBANK'
+          | 'KAKAO'
+          | 'TOSS'
+          | 'YUANTA'
+          | 'KBSEC'
+          | 'MIRAE'
+          | 'MIRAEDAEWOO'
+          | 'SAMSUNG'
+          | 'HANKOOK'
+          | 'NH_INVEST'
+          | 'KYOBO'
+          | 'HI_INVEST'
+          | 'HMC_INVEST'
+          | 'KIWOOM'
+          | 'EBEST'
+          | 'SK'
+          | 'DAISHIN'
+          | 'SOLOMON_INVEST'
+          | 'HANHWA'
+          | 'HANA_INVEST'
+          | 'SHINHAN_INVEST'
+          | 'DONGBU'
+          | 'EUGENE_INVEST'
+          | 'MERITZ_COMPREHENSIVE'
+          | 'BOOKOOK'
+          | 'SHINYOUNG'
+          | 'CAPE';
         /**
          * @description 은행명 (nullable)
          * @example 산업은행
@@ -7266,60 +7250,60 @@ export interface components {
        * @enum {string}
        */
       bank?:
-        | 'ANONYMOUS: Unverified Bank'
-        | 'KDB: Korea Development Bank'
-        | 'IBK: Industrial Bank of Korea'
-        | 'KB: KOOKMIN BANK'
-        | 'KEB: Korea Exchange Bank'
-        | 'SUHYUP: National Federation of Fisheries Cooperatives'
-        | 'KEXIM: The Export-Import Bank of Korea'
-        | 'NH: NONGHYUP BANK'
-        | 'NHLOCAL: National Agricultural Cooperative Federation'
-        | 'WOORI: Woori Bank'
-        | 'SC: Standard Chartered Bank Korea Limited'
-        | 'CITY: Citibank Korea'
-        | 'DAEGU: Daegu Gyeongbuk Bank'
-        | 'PUSAN: BUSAN BANK'
-        | 'GWANGJU: The Kwangju Bank'
-        | 'JEJU: Jeju Bank'
-        | 'JEONBUK: Jeonbuk Bank'
-        | 'GYEONGNAM: BNK KYONGNAM BANK'
-        | 'KFCC: The Saemaeul finance firm.'
-        | 'CU: National Credit Union Federation'
-        | 'SANGHO: Mutual Savings Bank / Thrift Institution'
-        | 'HSBC: Hongkong and Shanghai Banking Corporation'
-        | 'DEUTSCHE: Deutsche Bank AG'
-        | 'NFCF: National Forestry Cooperative Federation'
-        | 'EPOST: Post Office'
-        | 'KEBHANA: KEB Hana Bank'
-        | 'SHINHAN: SHINHAN BANK'
-        | 'KBANK: Kbank'
-        | 'KAKAO: Kakao Bank'
-        | 'TOSS: Toss Bank'
-        | 'YUANTA: Yuanta Securities'
-        | 'KBSEC: KB Securities'
-        | 'MIRAE: Mirae Asset Securities'
-        | 'MIRAEDAEWOO: Miraeassetdaewoo Securities'
-        | 'SAMSUNG: Samsung Securities'
-        | 'HANKOOK: Korea Investment ＆ Securities'
-        | 'NH_INVEST: NH Investment & Securities'
-        | 'KYOBO: Kyobo Securities'
-        | 'HI_INVEST: Hi Investment & Securities'
-        | 'HMC_INVEST: HYUNDAI MOTOR SECURITIES'
-        | 'KIWOOM: Kiwoom Securities'
-        | 'EBEST: EBEST INVESTMENT & SECURITIES'
-        | 'SK: SK Securities'
-        | 'DAISHIN: Daishin Securities'
-        | 'SOLOMON_INVEST: SOLOMON INVESTMENT & SECURITIES'
-        | 'HANHWA: Hanwha Investment ＆ Securities'
-        | 'HANA_INVEST: Hana Financial Investment'
-        | 'SHINHAN_INVEST: Shinhan Investment'
-        | 'DONGBU: DB Financial Investment'
-        | 'EUGENE_INVEST: Eugene Investment ＆ Securities'
-        | 'MERITZ_COMPREHENSIVE: Meritz Securities'
-        | 'BOOKOOK: Bookook Securities'
-        | 'SHINYOUNG: Shinyoung Securities'
-        | 'CAPE: CAPE Investment & Securities';
+        | 'ANONYMOUS'
+        | 'KDB'
+        | 'IBK'
+        | 'KB'
+        | 'KEB'
+        | 'SUHYUP'
+        | 'KEXIM'
+        | 'NH'
+        | 'NHLOCAL'
+        | 'WOORI'
+        | 'SC'
+        | 'CITY'
+        | 'DAEGU'
+        | 'PUSAN'
+        | 'GWANGJU'
+        | 'JEJU'
+        | 'JEONBUK'
+        | 'GYEONGNAM'
+        | 'KFCC'
+        | 'CU'
+        | 'SANGHO'
+        | 'HSBC'
+        | 'DEUTSCHE'
+        | 'NFCF'
+        | 'EPOST'
+        | 'KEBHANA'
+        | 'SHINHAN'
+        | 'KBANK'
+        | 'KAKAO'
+        | 'TOSS'
+        | 'YUANTA'
+        | 'KBSEC'
+        | 'MIRAE'
+        | 'MIRAEDAEWOO'
+        | 'SAMSUNG'
+        | 'HANKOOK'
+        | 'NH_INVEST'
+        | 'KYOBO'
+        | 'HI_INVEST'
+        | 'HMC_INVEST'
+        | 'KIWOOM'
+        | 'EBEST'
+        | 'SK'
+        | 'DAISHIN'
+        | 'SOLOMON_INVEST'
+        | 'HANHWA'
+        | 'HANA_INVEST'
+        | 'SHINHAN_INVEST'
+        | 'DONGBU'
+        | 'EUGENE_INVEST'
+        | 'MERITZ_COMPREHENSIVE'
+        | 'BOOKOOK'
+        | 'SHINYOUNG'
+        | 'CAPE';
       /**
        * @description 계좌번호 (nullable)
        * @example 123-12-1234
@@ -7330,7 +7314,7 @@ export interface components {
   responses: never;
   parameters: never;
   requestBodies: never;
-  headers: never;
+  headers?: never;
   pathItems: never;
 }
 
@@ -7350,32 +7334,32 @@ export interface operations {
    */
   'post-guest-claims-cancel': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        ClientId: string;
+        ClientId?: string;
         /**
          * @description 클라이언트 플랫폼(PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 비회원 토큰
          * @example test-guest-token
          */
-        guestToken: string;
+        guestToken?: string;
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 언어 (기본값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
     };
     requestBody?: {
@@ -7402,32 +7386,32 @@ export interface operations {
    */
   'post-guest-claims-estimate': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        ClientId: string;
+        ClientId?: string;
         /**
          * @description 클라이언트 플랫폼(PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 비회원 토큰
          * @example test-guest-token
          */
-        guestToken: string;
+        guestToken?: string;
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 언어 (기본값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
     };
     requestBody?: {
@@ -7456,32 +7440,32 @@ export interface operations {
    */
   'post-guest-claims-return': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        ClientId: string;
+        ClientId?: string;
         /**
          * @description 클라이언트 플랫폼(PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 비회원 토큰
          * @example test-guest-token
          */
-        guestToken: string;
+        guestToken?: string;
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 언어 (기본값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
     };
     requestBody?: {
@@ -7504,32 +7488,32 @@ export interface operations {
    */
   'put-guest-claims-no-account': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        ClientId: string;
+        ClientId?: string;
         /**
          * @description 클라이언트 플랫폼(PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 비회원 토큰
          * @example test-guest-token
          */
-        guestToken: string;
+        guestToken?: string;
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 언어 (기본값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
       path: {
         /**
@@ -7562,32 +7546,32 @@ export interface operations {
    */
   'get-guest-claims-no-check-withdraw': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        ClientId: string;
+        ClientId?: string;
         /**
          * @description 클라이언트 플랫폼(PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 비회원 토큰
          * @example test-guest-token
          */
-        guestToken: string;
+        guestToken?: string;
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 언어 (기본값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
       path: {
         /**
@@ -7617,32 +7601,32 @@ export interface operations {
    */
   'get-guest-claims-no-result': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        ClientId: string;
+        ClientId?: string;
         /**
          * @description 클라이언트 플랫폼(PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 비회원 토큰
          * @example test-guest-token
          */
-        guestToken: string;
+        guestToken?: string;
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 언어 (기본값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
       path: {
         /**
@@ -7672,32 +7656,32 @@ export interface operations {
    */
   'put-guest-claims-no-withdraw': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        ClientId: string;
+        ClientId?: string;
         /**
          * @description 클라이언트 플랫폼(PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 비회원 토큰
          * @example test-guest-token
          */
-        guestToken: string;
+        guestToken?: string;
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 언어 (기본값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
       path: {
         /**
@@ -7733,32 +7717,32 @@ export interface operations {
          */
         claimType: string;
       };
-      header: {
+      header?: {
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        ClientId: string;
+        ClientId?: string;
         /**
          * @description 클라이언트 플랫폼(PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 비회원 토큰
          * @example test-guest-token
          */
-        guestToken: string;
+        guestToken?: string;
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 언어 (기본값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
       path: {
         /**
@@ -7785,32 +7769,32 @@ export interface operations {
    */
   'post-guest-later-input-shippings-claims-cancel': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        ClientId: string;
+        ClientId?: string;
         /**
          * @description 클라이언트 플랫폼(PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 암호화된 배송 번호
          * @example UFE3Ylo2aUlkSWVuZHVGQjYyS2pZZz09
          */
-        encryptedShippingNo: string;
+        encryptedShippingNo?: string;
         /**
          * @description 언어 (기본값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
     };
     responses: {
@@ -7832,32 +7816,32 @@ export interface operations {
    */
   'post-guest-order-options-order-option-no-claims-cancel': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        ClientId: string;
+        ClientId?: string;
         /**
          * @description 클라이언트 플랫폼(PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 비회원 토큰
          * @example test-guest-token
          */
-        guestToken: string;
+        guestToken?: string;
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 언어 (기본값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
       path: {
         /**
@@ -7933,32 +7917,32 @@ export interface operations {
          */
         returnWayType: string;
       };
-      header: {
+      header?: {
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        ClientId: string;
+        ClientId?: string;
         /**
          * @description 클라이언트 플랫폼(PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 비회원 토큰
          * @example test-guest-token
          */
-        guestToken: string;
+        guestToken?: string;
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 언어 (기본값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
       path: {
         /**
@@ -7989,32 +7973,32 @@ export interface operations {
    */
   'post-guest-order-options-no-claims-exchange': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        ClientId: string;
+        ClientId?: string;
         /**
          * @description 클라이언트 플랫폼(PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 비회원 토큰
          * @example test-guest-token
          */
-        guestToken: string;
+        guestToken?: string;
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 언어 (기본값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
       path: {
         /**
@@ -8047,32 +8031,32 @@ export interface operations {
    */
   'get-guest-order-options-no-claims-result': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        ClientId: string;
+        ClientId?: string;
         /**
          * @description 클라이언트 플랫폼(PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 비회원 토큰
          * @example test-guest-token
          */
-        guestToken: string;
+        guestToken?: string;
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 언어 (기본값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
       path: {
         /**
@@ -8103,32 +8087,32 @@ export interface operations {
    */
   'post-guest-order-options-no-claims-return': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        ClientId: string;
+        ClientId?: string;
         /**
          * @description 클라이언트 플랫폼(PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 비회원 토큰
          * @example test-guest-token
          */
-        guestToken: string;
+        guestToken?: string;
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 언어 (기본값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
       path: {
         /**
@@ -8161,32 +8145,32 @@ export interface operations {
    */
   'put-guest-order-options-no-claims-withdraw': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        ClientId: string;
+        ClientId?: string;
         /**
          * @description 클라이언트 플랫폼(PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 비회원 토큰
          * @example test-guest-token
          */
-        guestToken: string;
+        guestToken?: string;
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 언어 (기본값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
       path: {
         /**
@@ -8214,32 +8198,32 @@ export interface operations {
    */
   'post-guest-orders-order-no-claims-cancel': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        ClientId: string;
+        ClientId?: string;
         /**
          * @description 클라이언트 플랫폼(PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 비회원 토큰
          * @example test-guest-token
          */
-        guestToken: string;
+        guestToken?: string;
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 언어 (기본값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
       path: {
         /**
@@ -8304,32 +8288,32 @@ export interface operations {
          */
         startYmd: string;
       };
-      header: {
+      header?: {
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        ClientId: string;
+        ClientId?: string;
         /**
          * @description 클라이언트 플랫폼(PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 로그인 인증키
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 언어 (기본값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
     };
     responses: {
@@ -8352,32 +8336,32 @@ export interface operations {
    */
   'post-profile-claims-cancel': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        ClientId: string;
+        ClientId?: string;
         /**
          * @description 클라이언트 플랫폼(PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 로그인 인증키
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 언어 (기본값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
     };
     requestBody?: {
@@ -8404,32 +8388,32 @@ export interface operations {
    */
   'post-profile-claims-estimate': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        ClientId: string;
+        ClientId?: string;
         /**
          * @description 클라이언트 플랫폼(PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 로그인 인증키
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 언어 (기본값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
     };
     requestBody?: {
@@ -8458,32 +8442,32 @@ export interface operations {
    */
   'post-profile-claims-return': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        ClientId: string;
+        ClientId?: string;
         /**
          * @description 클라이언트 플랫폼(PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 로그인 인증키
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 언어 (기본값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
     };
     requestBody?: {
@@ -8506,32 +8490,32 @@ export interface operations {
    */
   'put-profile-claims-no-account': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        ClientId: string;
+        ClientId?: string;
         /**
          * @description 클라이언트 플랫폼(PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 로그인 인증키
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 언어 (기본값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
       path: {
         /**
@@ -8565,32 +8549,32 @@ export interface operations {
    */
   'get-pofile-claims-no-check-withdraw': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        ClientId: string;
+        ClientId?: string;
         /**
          * @description 클라이언트 플랫폼(PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 로그인 인증키
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 언어 (기본값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
       path: {
         /**
@@ -8623,32 +8607,32 @@ export interface operations {
    */
   'get-profile-claims-no-result': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        ClientId: string;
+        ClientId?: string;
         /**
          * @description 클라이언트 플랫폼(PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 로그인 인증키
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 언어 (기본값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
       path: {
         /**
@@ -8679,32 +8663,32 @@ export interface operations {
    */
   'put-profile-claims-no-withdraw': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        ClientId: string;
+        ClientId?: string;
         /**
          * @description 클라이언트 플랫폼(PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 로그인 인증키
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 언어 (기본값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
       path: {
         /**
@@ -8740,32 +8724,32 @@ export interface operations {
          */
         claimType: string;
       };
-      header: {
+      header?: {
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        ClientId: string;
+        ClientId?: string;
         /**
          * @description 클라이언트 플랫폼(PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 로그인 인증키
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 언어 (기본값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
       path: {
         /**
@@ -8796,32 +8780,32 @@ export interface operations {
    */
   'post-profile-order-options-no-claims-cancel': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        ClientId: string;
+        ClientId?: string;
         /**
          * @description 클라이언트 플랫폼(PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 로그인 인증키
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 언어 (기본값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
       path: {
         /**
@@ -8901,32 +8885,32 @@ export interface operations {
          */
         returnWayType: string;
       };
-      header: {
+      header?: {
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        ClientId: string;
+        ClientId?: string;
         /**
          * @description 클라이언트 플랫폼(PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 로그인 인증키
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 언어 (기본값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
       path: {
         /**
@@ -8953,32 +8937,32 @@ export interface operations {
    */
   'post-profile-order-options-no-claims-exchange': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        ClientId: string;
+        ClientId?: string;
         /**
          * @description 클라이언트 플랫폼(PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 로그인 인증키
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 언어 (기본값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
       path: {
         /**
@@ -9012,32 +8996,32 @@ export interface operations {
    */
   'get-profile-order-options-no-claims-result': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        ClientId: string;
+        ClientId?: string;
         /**
          * @description 클라이언트 플랫폼(PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 로그인 인증키
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 언어 (기본값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
       path: {
         /**
@@ -9068,32 +9052,32 @@ export interface operations {
    */
   'post-profile-order-options-no-claims-return': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        ClientId: string;
+        ClientId?: string;
         /**
          * @description 클라이언트 플랫폼(PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 로그인 인증키
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 언어 (기본값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
       path: {
         /**
@@ -9127,32 +9111,32 @@ export interface operations {
    */
   'put-profile-order-options-no-claims-withdraw': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        ClientId: string;
+        ClientId?: string;
         /**
          * @description 클라이언트 플랫폼(PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 로그인 인증키
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 언어 (기본값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
       path: {
         /**
@@ -9181,32 +9165,32 @@ export interface operations {
    */
   'post-profile-orders-order-no-claims-cancel': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        ClientId: string;
+        ClientId?: string;
         /**
          * @description 클라이언트 플랫폼(PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 로그인 인증키
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 언어 (기본값: ko)
          * @example ko
          */
-        language: string;
+        language?: string;
       };
       path: {
         /**

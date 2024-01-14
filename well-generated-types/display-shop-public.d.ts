@@ -1552,17 +1552,17 @@ export interface components {
          * @enum {string}
          */
         providerType:
-          | '페이코'
-          | '네이버'
-          | '카카오'
-          | '페이스북'
-          | '아이엠스쿨'
-          | '리브메이트'
-          | '엔에이치엔엔터'
-          | '유니원'
-          | '라인'
-          | '엔씨피스토어'
-          | '카카오싱크';
+          | 'PAYCO'
+          | 'NAVER'
+          | 'KAKAO'
+          | 'FACEBOOK'
+          | 'IAMSCHOOL'
+          | 'LIIVMATE'
+          | 'NHNENT'
+          | 'UNIONE'
+          | 'LINE'
+          | 'NCPSTORE'
+          | 'KAKAO_SYNC';
         /**
          * @description 상품명
          * @example 상품명
@@ -1659,7 +1659,7 @@ export interface components {
            * @example NORMAL_OPTION
            * @enum {string}
            */
-          optionType: '일반 옵션' | '추가 옵션';
+          optionType: 'NORMAL_OPTION' | 'ADDITIONAL_PRODUCT';
           /**
            * @description 옵션 권장 출력값
            * @example string
@@ -2016,22 +2016,23 @@ export interface components {
          */
         productName: string;
         /**
-         * @description provider 유형
-         * @example PAYCO
-         * @enum {string}
-         */
+           * @description provider 유형
+           * @example PAYCO
+           * @enum {string}
+           
+           */
         providerType:
-          | '페이코'
-          | '네이버'
-          | '카카오'
-          | '페이스북'
-          | '아이엠스쿨'
-          | '리브메이트'
-          | '엔에이치엔엔터'
-          | '유니원'
-          | '라인'
-          | '엔씨피스토어'
-          | '카카오싱크';
+          | 'PAYCO'
+          | 'NAVER'
+          | 'KAKAO'
+          | 'FACEBOOK'
+          | 'IAMSCHOOL'
+          | 'LIIVMATE'
+          | 'NHNENT'
+          | 'UNIONE'
+          | 'LINE'
+          | 'NCPSTORE'
+          | 'KAKAO_SYNC';
         /**
          * @description 문의 내용
          * @example 문의 내용
@@ -2359,7 +2360,7 @@ export interface components {
            * @example ADDITIONAL_PRODUCT
            * @enum {string}
            */
-          optionType: '일반 옵션' | '추가 옵션';
+          optionType: 'NORMAL_OPTION' | 'ADDITIONAL_PRODUCT';
           /**
            * @description 옵션 권장 출력값
            * @example 색상/검정
@@ -2636,13 +2637,13 @@ export interface components {
          * @example WON
          * @enum {string}
          */
-        immediateDiscountUnitType: '원' | '비율';
+        immediateDiscountUnitType: 'WON' | 'RATE';
         /**
          * @description 추가상품할인 타입
          * @example WON
          * @enum {string}
          */
-        additionDiscountUnitType: '원' | '비율';
+        additionDiscountUnitType: 'WON' | 'RATE';
         /** @description 화면 노출 여부 */
         frontDisplayYn: boolean;
         /**
@@ -3011,13 +3012,13 @@ export interface components {
          * @example WON
          * @enum {string}
          */
-        immediateDiscountUnitType: '원' | '비율';
+        immediateDiscountUnitType: 'WON' | 'RATE';
         /**
          * @description 추가상품할인 타입
          * @example WON
          * @enum {string}
          */
-        additionDiscountUnitType: '원' | '비율';
+        additionDiscountUnitType: 'WON' | 'RATE';
         /** @description 화면 노출 여부 */
         frontDisplayYn: boolean;
         /**
@@ -3892,17 +3893,17 @@ export interface components {
          * @enum {string}
          */
         providerType:
-          | '페이코'
-          | '네이버'
-          | '카카오'
-          | '페이스북'
-          | '아이엠스쿨'
-          | '리브메이트'
-          | '엔에이치엔엔터'
-          | '유니원'
-          | '라인'
-          | '엔씨피스토어'
-          | '카카오싱크';
+          | 'PAYCO'
+          | 'NAVER'
+          | 'KAKAO'
+          | 'FACEBOOK'
+          | 'IAMSCHOOL'
+          | 'LIIVMATE'
+          | 'NHNENT'
+          | 'UNIONE'
+          | 'LINE'
+          | 'NCPSTORE'
+          | 'KAKAO_SYNC';
         /**
          * @description 상품명
          * @example 상품명 입니다.
@@ -4123,7 +4124,6 @@ export interface components {
          */
         photoReviewsAccumulation?: number;
         /**
-         *
          * @description 포토후기 적립금 글자수 (nullable)
          * @example 20
          */
@@ -5085,17 +5085,17 @@ export interface components {
          * @enum {string}
          */
         providerType:
-          | '페이코'
-          | '네이버'
-          | '카카오'
-          | '페이스북'
-          | '아이엠스쿨'
-          | '리브메이트'
-          | '엔에이치엔엔터'
-          | '유니원'
-          | '라인'
-          | '엔씨피스토어'
-          | '카카오싱크';
+          | 'PAYCO'
+          | 'NAVER'
+          | 'KAKAO'
+          | 'FACEBOOK'
+          | 'IAMSCHOOL'
+          | 'LIIVMATE'
+          | 'NHNENT'
+          | 'UNIONE'
+          | 'LINE'
+          | 'NCPSTORE'
+          | 'KAKAO_SYNC';
         /**
          * @description 문의 내용
          * @example 문의 내용
@@ -5813,13 +5813,13 @@ export interface components {
          * @example WON
          * @enum {string}
          */
-        immediateDiscountUnitType: '원' | '비율';
+        immediateDiscountUnitType: 'WON' | 'RATE';
         /**
          * @description 추가상품할인 타입
          * @example WON
          * @enum {string}
          */
-        additionDiscountUnitType: '원' | '비율';
+        additionDiscountUnitType: 'WON' | 'RATE';
         /** @description 화면 노출 여부 */
         frontDisplayYn: boolean;
         /**
@@ -6127,17 +6127,17 @@ export interface components {
        * @enum {string}
        */
       providerType:
-        | '페이코'
-        | '네이버'
-        | '카카오'
-        | '페이스북'
-        | '아이엠스쿨'
-        | '리브메이트'
-        | '엔에이치엔엔터'
-        | '유니원'
-        | '라인'
-        | '엔씨피스토어'
-        | '카카오싱크';
+        | 'PAYCO'
+        | 'NAVER'
+        | 'KAKAO'
+        | 'FACEBOOK'
+        | 'IAMSCHOOL'
+        | 'LIIVMATE'
+        | 'NHNENT'
+        | 'UNIONE'
+        | 'LINE'
+        | 'NCPSTORE'
+        | 'KAKAO_SYNC';
       /**
        * @description 상품명
        * @example 상품명
@@ -6234,7 +6234,7 @@ export interface components {
          * @example NORMAL_OPTION
          * @enum {string}
          */
-        optionType: '일반 옵션' | '추가 옵션';
+        optionType: 'NORMAL_OPTION' | 'ADDITIONAL_PRODUCT';
         /**
          * @description 옵션 권장 출력값
          * @example string
@@ -8332,7 +8332,7 @@ export interface components {
   responses: never;
   parameters: never;
   requestBodies: never;
-  headers: never;
+  headers?: never;
   pathItems: never;
 }
 
@@ -8362,22 +8362,22 @@ export interface operations {
          */
         keyword: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -8397,22 +8397,22 @@ export interface operations {
    */
   'get-new-product-categories': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -8432,22 +8432,22 @@ export interface operations {
    */
   'get-categories-simple-1depth': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -8471,22 +8471,22 @@ export interface operations {
    */
   'get-category': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
       path: {
         /**
@@ -8580,27 +8580,27 @@ export interface operations {
          */
         hasTotalCount: boolean;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -8622,27 +8622,27 @@ export interface operations {
    */
   'get-design-popup': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     requestBody?: {
@@ -8681,27 +8681,27 @@ export interface operations {
          */
         categoryNos: number;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -8738,27 +8738,27 @@ export interface operations {
          */
         targetNo: number;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -8778,27 +8778,27 @@ export interface operations {
    */
   'get-sections': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -8834,27 +8834,27 @@ export interface operations {
          */
         bannerNos: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -8879,27 +8879,27 @@ export interface operations {
    */
   'get-banners': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
       path: {
         /**
@@ -8983,27 +8983,27 @@ export interface operations {
          */
         'order.direction': string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 2.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -9052,27 +9052,27 @@ export interface operations {
          */
         hasTotalCount: boolean;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -9108,27 +9108,27 @@ export interface operations {
          */
         categoryNos: number;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -9165,27 +9165,27 @@ export interface operations {
          */
         onlyIngStatus: boolean;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -9241,27 +9241,27 @@ export interface operations {
          */
         saleStatus: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -9303,27 +9303,27 @@ export interface operations {
          */
         progressStatus: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -9377,27 +9377,27 @@ export interface operations {
          */
         hasProductDetail: boolean;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
       path: {
         /**
@@ -9439,27 +9439,27 @@ export interface operations {
          */
         targetNo: number;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
       path: {
         /**
@@ -9533,27 +9533,27 @@ export interface operations {
          */
         includeStopProduct: boolean;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.1
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
       path: {
         /**
@@ -9585,27 +9585,27 @@ export interface operations {
    */
   'get-banners-with-ids': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
       path: {
         /**
@@ -9666,27 +9666,27 @@ export interface operations {
          */
         hasProductDetail: boolean;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
       path: {
         /**
@@ -9715,27 +9715,27 @@ export interface operations {
    */
   'get-events-by-product-no': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
       path: {
         /**
@@ -9807,27 +9807,27 @@ export interface operations {
          */
         hasOptionValues: boolean;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
       path: {
         /**
@@ -9854,22 +9854,22 @@ export interface operations {
    */
   'get-product-reviews-configurations': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -9915,27 +9915,27 @@ export interface operations {
         /** @description 검색어 */
         searchKeyword: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -9955,22 +9955,22 @@ export interface operations {
    */
   'get-inquiries-configurations': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -9994,27 +9994,27 @@ export interface operations {
    */
   'put-product-inquiry': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
       path: {
         /**
@@ -10046,27 +10046,27 @@ export interface operations {
    */
   'delete-product-inquiry': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
       path: {
         /**
@@ -10125,27 +10125,27 @@ export interface operations {
          */
         pageSize: number;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
       path: {
         /**
@@ -10172,27 +10172,27 @@ export interface operations {
    */
   'post-product-inquiries': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
       path: {
         /**
@@ -10243,27 +10243,27 @@ export interface operations {
          */
         pageSize: number;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
       path: {
         productNo: string;
@@ -10325,27 +10325,27 @@ export interface operations {
          */
         hasTotalCount: boolean;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
       path: {
         /**
@@ -10372,27 +10372,27 @@ export interface operations {
    */
   'post-product-reviews': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
       path: {
         /**
@@ -10431,27 +10431,27 @@ export interface operations {
          */
         orderNo: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
       path: {
         /**
@@ -10478,27 +10478,27 @@ export interface operations {
    */
   'post-product-inquiry-reports': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
       path: {
         /**
@@ -10530,27 +10530,27 @@ export interface operations {
    */
   'get-product-inquiry': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
       path: {
         /**
@@ -10582,27 +10582,27 @@ export interface operations {
    */
   'get-products-product-reviews': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
       path: {
         /**
@@ -10636,27 +10636,27 @@ export interface operations {
    */
   'put-product-review': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
       path: {
         /**
@@ -10693,27 +10693,27 @@ export interface operations {
    */
   'delete-product-review': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
       path: {
         /**
@@ -10762,27 +10762,27 @@ export interface operations {
          */
         size: number;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
       path: {
         productNo: string;
@@ -10806,27 +10806,27 @@ export interface operations {
    */
   'post-product-reviews-recommend': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
       path: {
         /**
@@ -10856,27 +10856,27 @@ export interface operations {
    */
   'delete-product-reviews-recommend': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
       path: {
         /**
@@ -10906,27 +10906,27 @@ export interface operations {
    */
   'post-product-reviews-report': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
       path: {
         /**
@@ -10993,27 +10993,27 @@ export interface operations {
         /** @description 검색어 */
         searchKeyword: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -11075,27 +11075,27 @@ export interface operations {
          */
         searchKeyword: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -11157,27 +11157,27 @@ export interface operations {
          */
         orderNo: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -11203,27 +11203,27 @@ export interface operations {
         /** @description 조회일 종료일(입력 안 할 경우 오늘, yyyy-MM-dd) */
         endYmd: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -11286,27 +11286,27 @@ export interface operations {
          */
         isWidget: boolean;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -11364,27 +11364,27 @@ export interface operations {
          */
         isWidget: boolean;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 회원 엑세스 토큰
          * @example test-access-token
          */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -11418,22 +11418,22 @@ export interface operations {
          */
         skinNo: number;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -11465,22 +11465,22 @@ export interface operations {
          */
         skinNo: number;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -11507,22 +11507,22 @@ export interface operations {
          */
         skinNo: number;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
       path: {
         /**

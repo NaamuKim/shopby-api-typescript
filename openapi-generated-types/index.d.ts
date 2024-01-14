@@ -1,7 +1,7 @@
 import { paths as AuthShopPublicPaths } from '../well-generated-types/auth-shop-public';
 import { paths as AdminShopPublicPaths } from '../well-generated-types/admin-shop-public';
 import { paths as ClaimShopPublicPaths } from '../well-generated-types/claim-shop-public';
-import { paths as DisplayShopPublicPaths } from '../well-generated-types3/display-shop-public';
+import { paths as DisplayShopPublicPaths } from '../well-generated-types/display-shop-public';
 import { paths as ManageShopPublicPaths } from '../well-generated-types/manage-shop-public';
 import { paths as MemberShopPublicPaths } from '../well-generated-types/member-shop-public';
 import { paths as OrderShopPublicPaths } from '../well-generated-types/order-shop-public';

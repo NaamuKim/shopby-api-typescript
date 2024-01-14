@@ -51,7 +51,7 @@ export interface components {
   responses: never;
   parameters: never;
   requestBodies: never;
-  headers: never;
+  headers?: never;
   pathItems: never;
 }
 
@@ -69,22 +69,22 @@ export interface operations {
    */
   'get-external-scripts': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, IOS, AOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {

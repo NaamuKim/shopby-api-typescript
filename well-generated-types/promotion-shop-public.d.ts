@@ -201,10 +201,7 @@ export interface components {
          * @example PRODUCT
          * @enum {string}
          */
-        couponType:
-          | 'PRODUCT: 상품적용 쿠폰'
-          | 'CART: 주문적용 쿠폰'
-          | 'CART_DELIVERY: 장바구니 배송비 할인';
+        couponType: 'PRODUCT' | 'CART' | 'CART_DELIVERY';
         /**
          * @description 상품쿠폰 사용 가능여부 (true: 사용 가능 / false: 사용 불가능)
          * @example true
@@ -225,40 +222,40 @@ export interface components {
          * @example [PAYCO, NAVER_EASY_PAY, CREDIT_CARD, REALTIME_ACCOUNT_TRANSFER, VIRTUAL_ACCOUNT, ESCROW_REALTIME_ACCOUNT_TRANSFER, ESCROW_VIRTUAL_ACCOUNT]
          */
         limitPayTypes: (
-          | 'CREDIT_CARD: 신용카드'
-          | 'ACCOUNT: 무통장입금'
-          | 'MOBILE: 휴대폰결제'
-          | 'REALTIME_ACCOUNT_TRANSFER: 실시간계좌이체'
-          | 'VIRTUAL_ACCOUNT: 가상계좌'
-          | 'GIFT: 상품권'
-          | 'ATM: ATM'
-          | 'PAYCO: PAYCO'
-          | 'ZERO_PAY: 0원결제'
-          | 'ACCUMULATION: 적립금 전액 사용'
-          | 'PHONE_BILL: 전화결제'
-          | 'POINT: 포인트결제'
-          | 'YPAY: 옐로페이'
-          | 'KPAY: 케이페이'
-          | 'PAYPIN: 페이핀'
-          | 'INIPAY: INIPay 간편결제'
-          | 'PAYPAL: PayPal'
-          | 'STRIPE: STRIPE'
-          | 'NAVER_PAY: 네이버페이 주문형'
-          | 'KAKAO_PAY: 카카오페이'
-          | 'NAVER_EASY_PAY: 네이버페이 결제형'
-          | 'SAMSUNG_PAY: 삼성페이'
-          | 'CHAI: 차이'
-          | 'TOSS_PAY: 토스페이'
-          | 'SK_PAY: SK페이'
-          | 'APPLE_PAY: 애플페이'
-          | 'ESCROW_REALTIME_ACCOUNT_TRANSFER: 실시간계좌이체-에스크로'
-          | 'ESCROW_VIRTUAL_ACCOUNT: 가상계좌-에스크로'
-          | 'VERITRANS_CARD: Veritrans CreditCard'
-          | 'TOASTCAM: 토스트캠'
-          | 'UNION_PAY: UnionPay'
-          | 'ALIPAY: Alipay Plus'
-          | 'WECHAT_PAY: WeChat Pay'
-          | 'ETC: 기타결제수단'
+          | 'CREDIT_CARD'
+          | 'ACCOUNT'
+          | 'MOBILE'
+          | 'REALTIME_ACCOUNT_TRANSFER'
+          | 'VIRTUAL_ACCOUNT'
+          | 'GIFT'
+          | 'ATM'
+          | 'PAYCO'
+          | 'ZERO_PAY'
+          | 'ACCUMULATION'
+          | 'PHONE_BILL'
+          | 'POINT'
+          | 'YPAY'
+          | 'KPAY'
+          | 'PAYPIN'
+          | 'INIPAY'
+          | 'PAYPAL'
+          | 'STRIPE'
+          | 'NAVER_PAY'
+          | 'KAKAO_PAY'
+          | 'NAVER_EASY_PAY'
+          | 'SAMSUNG_PAY'
+          | 'CHAI'
+          | 'TOSS_PAY'
+          | 'SK_PAY'
+          | 'APPLE_PAY'
+          | 'ESCROW_REALTIME_ACCOUNT_TRANSFER'
+          | 'ESCROW_VIRTUAL_ACCOUNT'
+          | 'VERITRANS_CARD'
+          | 'TOASTCAM'
+          | 'UNION_PAY'
+          | 'ALIPAY'
+          | 'WECHAT_PAY'
+          | 'ETC'
         )[];
         /**
          * @description 사용가능 결제수단
@@ -266,40 +263,40 @@ export interface components {
          * @enum {string}
          */
         limitPayType:
-          | 'CREDIT_CARD: 신용카드'
-          | 'ACCOUNT: 무통장입금'
-          | 'MOBILE: 휴대폰결제'
-          | 'REALTIME_ACCOUNT_TRANSFER: 실시간계좌이체'
-          | 'VIRTUAL_ACCOUNT: 가상계좌'
-          | 'GIFT: 상품권'
-          | 'ATM: ATM'
-          | 'PAYCO: PAYCO'
-          | 'ZERO_PAY: 0원결제'
-          | 'ACCUMULATION: 적립금 전액 사용'
-          | 'PHONE_BILL: 전화결제'
-          | 'POINT: 포인트결제'
-          | 'YPAY: 옐로페이'
-          | 'KPAY: 케이페이'
-          | 'PAYPIN: 페이핀'
-          | 'INIPAY: INIPay 간편결제'
-          | 'PAYPAL: PayPal'
-          | 'STRIPE: STRIPE'
-          | 'NAVER_PAY: 네이버페이 주문형'
-          | 'KAKAO_PAY: 카카오페이'
-          | 'NAVER_EASY_PAY: 네이버페이 결제형'
-          | 'SAMSUNG_PAY: 삼성페이'
-          | 'CHAI: 차이'
-          | 'TOSS_PAY: 토스페이'
-          | 'SK_PAY: SK페이'
-          | 'APPLE_PAY: 애플페이'
-          | 'ESCROW_REALTIME_ACCOUNT_TRANSFER: 실시간계좌이체-에스크로'
-          | 'ESCROW_VIRTUAL_ACCOUNT: 가상계좌-에스크로'
-          | 'VERITRANS_CARD: Veritrans CreditCard'
-          | 'TOASTCAM: 토스트캠'
-          | 'UNION_PAY: UnionPay'
-          | 'ALIPAY: Alipay Plus'
-          | 'WECHAT_PAY: WeChat Pay'
-          | 'ETC: 기타결제수단';
+          | 'CREDIT_CARD'
+          | 'ACCOUNT'
+          | 'MOBILE'
+          | 'REALTIME_ACCOUNT_TRANSFER'
+          | 'VIRTUAL_ACCOUNT'
+          | 'GIFT'
+          | 'ATM'
+          | 'PAYCO'
+          | 'ZERO_PAY'
+          | 'ACCUMULATION'
+          | 'PHONE_BILL'
+          | 'POINT'
+          | 'YPAY'
+          | 'KPAY'
+          | 'PAYPIN'
+          | 'INIPAY'
+          | 'PAYPAL'
+          | 'STRIPE'
+          | 'NAVER_PAY'
+          | 'KAKAO_PAY'
+          | 'NAVER_EASY_PAY'
+          | 'SAMSUNG_PAY'
+          | 'CHAI'
+          | 'TOSS_PAY'
+          | 'SK_PAY'
+          | 'APPLE_PAY'
+          | 'ESCROW_REALTIME_ACCOUNT_TRANSFER'
+          | 'ESCROW_VIRTUAL_ACCOUNT'
+          | 'VERITRANS_CARD'
+          | 'TOASTCAM'
+          | 'UNION_PAY'
+          | 'ALIPAY'
+          | 'WECHAT_PAY'
+          | 'ETC';
         /**
          * @description 사용일시
          * @example yyyy-MM-dd HH:mm:ss
@@ -316,11 +313,11 @@ export interface components {
          * @enum {string}
          */
         couponTargetType:
-          | 'ALL_PRODUCT: 전상품'
-          | 'PRODUCT: 개별상품'
-          | 'BRAND: 브랜드'
-          | 'CATEGORY: 카테고리'
-          | 'PARTNER: 파트너사';
+          | 'ALL_PRODUCT'
+          | 'PRODUCT'
+          | 'BRAND'
+          | 'CATEGORY'
+          | 'PARTNER';
         /**
          * @description 적립금 적립 불가 여부 (true: 적립 불가능 / false: 적립 가능)
          * @example true
@@ -336,11 +333,7 @@ export interface components {
          * @description 사용가능 플랫폼
          * @example PC,MOBILE_WEB,MOBILE_APP
          */
-        usablePlatforms: (
-          | 'PC: PC'
-          | 'MOBILE_WEB: MOBILE WEB'
-          | 'MOBILE_APP: MOBLIE APP'
-        )[];
+        usablePlatforms: ('PC' | 'MOBILE_WEB' | 'MOBILE_APP')[];
         /**
          * @description 배송비쿠폰일경우 최소 배송비
          * @example 2500
@@ -437,40 +430,40 @@ export interface components {
          * @enum {string}
          */
         limitPayType:
-          | 'CREDIT_CARD: 신용카드'
-          | 'ACCOUNT: 무통장입금'
-          | 'MOBILE: 휴대폰결제'
-          | 'REALTIME_ACCOUNT_TRANSFER: 실시간계좌이체'
-          | 'VIRTUAL_ACCOUNT: 가상계좌'
-          | 'GIFT: 상품권'
-          | 'ATM: ATM'
-          | 'PAYCO: PAYCO'
-          | 'ZERO_PAY: 0원결제'
-          | 'ACCUMULATION: 적립금 전액 사용'
-          | 'PHONE_BILL: 전화결제'
-          | 'POINT: 포인트결제'
-          | 'YPAY: 옐로페이'
-          | 'KPAY: 케이페이'
-          | 'PAYPIN: 페이핀'
-          | 'INIPAY: INIPay 간편결제'
-          | 'PAYPAL: PayPal'
-          | 'STRIPE: STRIPE'
-          | 'NAVER_PAY: 네이버페이 주문형'
-          | 'KAKAO_PAY: 카카오페이'
-          | 'NAVER_EASY_PAY: 네이버페이 결제형'
-          | 'SAMSUNG_PAY: 삼성페이'
-          | 'CHAI: 차이'
-          | 'TOSS_PAY: 토스페이'
-          | 'SK_PAY: SK페이'
-          | 'APPLE_PAY: 애플페이'
-          | 'ESCROW_REALTIME_ACCOUNT_TRANSFER: 실시간계좌이체-에스크로'
-          | 'ESCROW_VIRTUAL_ACCOUNT: 가상계좌-에스크로'
-          | 'VERITRANS_CARD: Veritrans CreditCard'
-          | 'TOASTCAM: 토스트캠'
-          | 'UNION_PAY: UnionPay'
-          | 'ALIPAY: Alipay Plus'
-          | 'WECHAT_PAY: WeChat Pay'
-          | 'ETC: 기타결제수단';
+          | 'CREDIT_CARD'
+          | 'ACCOUNT'
+          | 'MOBILE'
+          | 'REALTIME_ACCOUNT_TRANSFER'
+          | 'VIRTUAL_ACCOUNT'
+          | 'GIFT'
+          | 'ATM'
+          | 'PAYCO'
+          | 'ZERO_PAY'
+          | 'ACCUMULATION'
+          | 'PHONE_BILL'
+          | 'POINT'
+          | 'YPAY'
+          | 'KPAY'
+          | 'PAYPIN'
+          | 'INIPAY'
+          | 'PAYPAL'
+          | 'STRIPE'
+          | 'NAVER_PAY'
+          | 'KAKAO_PAY'
+          | 'NAVER_EASY_PAY'
+          | 'SAMSUNG_PAY'
+          | 'CHAI'
+          | 'TOSS_PAY'
+          | 'SK_PAY'
+          | 'APPLE_PAY'
+          | 'ESCROW_REALTIME_ACCOUNT_TRANSFER'
+          | 'ESCROW_VIRTUAL_ACCOUNT'
+          | 'VERITRANS_CARD'
+          | 'TOASTCAM'
+          | 'UNION_PAY'
+          | 'ALIPAY'
+          | 'WECHAT_PAY'
+          | 'ETC';
         /**
          * @description 사용가능 기간 - 쿠폰을 발급받은 날부터 (31은 월말까지, -1은 제한없음)
          * @example 1
@@ -490,11 +483,7 @@ export interface components {
          * @description 사용가능플랫폼
          * @example ["PC"]
          */
-        usablePlatformTypes: (
-          | 'PC: PC'
-          | 'MOBILE_WEB: MOBILE WEB'
-          | 'MOBILE_APP: MOBLIE APP'
-        )[];
+        usablePlatformTypes: ('PC' | 'MOBILE_WEB' | 'MOBILE_APP')[];
         /**
          * @description 쿠폰 사용조건 최소 배송비
          * @example 2500
@@ -505,40 +494,40 @@ export interface components {
          * @example [PAYCO, NAVER_EASY_PAY]
          */
         limitPayTypes: (
-          | 'CREDIT_CARD: 신용카드'
-          | 'ACCOUNT: 무통장입금'
-          | 'MOBILE: 휴대폰결제'
-          | 'REALTIME_ACCOUNT_TRANSFER: 실시간계좌이체'
-          | 'VIRTUAL_ACCOUNT: 가상계좌'
-          | 'GIFT: 상품권'
-          | 'ATM: ATM'
-          | 'PAYCO: PAYCO'
-          | 'ZERO_PAY: 0원결제'
-          | 'ACCUMULATION: 적립금 전액 사용'
-          | 'PHONE_BILL: 전화결제'
-          | 'POINT: 포인트결제'
-          | 'YPAY: 옐로페이'
-          | 'KPAY: 케이페이'
-          | 'PAYPIN: 페이핀'
-          | 'INIPAY: INIPay 간편결제'
-          | 'PAYPAL: PayPal'
-          | 'STRIPE: STRIPE'
-          | 'NAVER_PAY: 네이버페이 주문형'
-          | 'KAKAO_PAY: 카카오페이'
-          | 'NAVER_EASY_PAY: 네이버페이 결제형'
-          | 'SAMSUNG_PAY: 삼성페이'
-          | 'CHAI: 차이'
-          | 'TOSS_PAY: 토스페이'
-          | 'SK_PAY: SK페이'
-          | 'APPLE_PAY: 애플페이'
-          | 'ESCROW_REALTIME_ACCOUNT_TRANSFER: 실시간계좌이체-에스크로'
-          | 'ESCROW_VIRTUAL_ACCOUNT: 가상계좌-에스크로'
-          | 'VERITRANS_CARD: Veritrans CreditCard'
-          | 'TOASTCAM: 토스트캠'
-          | 'UNION_PAY: UnionPay'
-          | 'ALIPAY: Alipay Plus'
-          | 'WECHAT_PAY: WeChat Pay'
-          | 'ETC: 기타결제수단'
+          | 'CREDIT_CARD'
+          | 'ACCOUNT'
+          | 'MOBILE'
+          | 'REALTIME_ACCOUNT_TRANSFER'
+          | 'VIRTUAL_ACCOUNT'
+          | 'GIFT'
+          | 'ATM'
+          | 'PAYCO'
+          | 'ZERO_PAY'
+          | 'ACCUMULATION'
+          | 'PHONE_BILL'
+          | 'POINT'
+          | 'YPAY'
+          | 'KPAY'
+          | 'PAYPIN'
+          | 'INIPAY'
+          | 'PAYPAL'
+          | 'STRIPE'
+          | 'NAVER_PAY'
+          | 'KAKAO_PAY'
+          | 'NAVER_EASY_PAY'
+          | 'SAMSUNG_PAY'
+          | 'CHAI'
+          | 'TOSS_PAY'
+          | 'SK_PAY'
+          | 'APPLE_PAY'
+          | 'ESCROW_REALTIME_ACCOUNT_TRANSFER'
+          | 'ESCROW_VIRTUAL_ACCOUNT'
+          | 'VERITRANS_CARD'
+          | 'TOASTCAM'
+          | 'UNION_PAY'
+          | 'ALIPAY'
+          | 'WECHAT_PAY'
+          | 'ETC'
         )[];
         /**
          * @description 쿠폰 사용조건 최대 구매액
@@ -567,11 +556,7 @@ export interface components {
          * @description 발행가능 플랫폼
          * @example ["PC"]
          */
-        issuablePlatformTypes: (
-          | 'PC: PC'
-          | 'MOBILE_WEB: MOBILE WEB'
-          | 'MOBILE_APP: MOBLIE APP'
-        )[];
+        issuablePlatformTypes: ('PC' | 'MOBILE_WEB' | 'MOBILE_APP')[];
         /**
          * @description 발급대상 회원 등급 json
          * @example ["VIP"]
@@ -608,10 +593,7 @@ export interface components {
        * @example PRODUCT
        * @enum {string}
        */
-      couponType:
-        | 'PRODUCT: 상품적용 쿠폰'
-        | 'CART: 주문적용 쿠폰'
-        | 'CART_DELIVERY: 장바구니 배송비 할인';
+      couponType: 'PRODUCT' | 'CART' | 'CART_DELIVERY';
       /** @description 쿠폰발급상태 */
       couponStatus: {
         /**
@@ -684,11 +666,11 @@ export interface components {
        * @enum {string}
        */
       couponTargetType:
-        | 'ALL_PRODUCT: 전상품'
-        | 'PRODUCT: 개별상품'
-        | 'BRAND: 브랜드'
-        | 'CATEGORY: 카테고리'
-        | 'PARTNER: 파트너사';
+        | 'ALL_PRODUCT'
+        | 'PRODUCT'
+        | 'BRAND'
+        | 'CATEGORY'
+        | 'PARTNER';
       /**
        * @description deprecated(더 이상 제공하지 않는 개체항목입니다)
        * 제휴 방문처 타입
@@ -744,11 +726,11 @@ export interface components {
          * @enum {string}
          */
         targetType:
-          | 'ALL_PRODUCT: 전상품'
-          | 'PRODUCT: 개별상품'
-          | 'BRAND: 브랜드'
-          | 'CATEGORY: 카테고리'
-          | 'PARTNER: 파트너사';
+          | 'ALL_PRODUCT'
+          | 'PRODUCT'
+          | 'BRAND'
+          | 'CATEGORY'
+          | 'PARTNER';
         /**
          * @description 대상 번호
          * @example 1
@@ -803,7 +785,7 @@ export interface components {
   responses: never;
   parameters: never;
   requestBodies: never;
-  headers: never;
+  headers?: never;
   pathItems: never;
 }
 
@@ -859,29 +841,29 @@ export interface operations {
          */
         usable: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /** @description 회원 엑세스 토큰 */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example PC
          */
-        language: string;
+        language?: string;
       };
     };
     responses: {
@@ -903,29 +885,29 @@ export interface operations {
    */
   'get-issuable-coupons': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /** @description 회원 엑세스 토큰 */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example PC
          */
-        language: string;
+        language?: string;
       };
     };
     responses: {
@@ -954,29 +936,29 @@ export interface operations {
          */
         expireDay: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /** @description 회원 엑세스 토큰 */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example PC
          */
-        language: string;
+        language?: string;
       };
     };
     responses: {
@@ -998,29 +980,29 @@ export interface operations {
    */
   'post-register-code-download': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /** @description 회원 엑세스 토큰 */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example PC
          */
-        language: string;
+        language?: string;
       };
       path: {
         /**
@@ -1049,29 +1031,29 @@ export interface operations {
    */
   'post-download-coupons': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /** @description 회원 엑세스 토큰 */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example PC
          */
-        language: string;
+        language?: string;
       };
       path: {
         /**
@@ -1114,29 +1096,29 @@ export interface operations {
          */
         pageSize: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /** @description 회원 엑세스 토큰 */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example PC
          */
-        language: string;
+        language?: string;
       };
       path: {
         /**
@@ -1174,29 +1156,29 @@ export interface operations {
          */
         pageSize: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /** @description 회원 엑세스 토큰 */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example PC
          */
-        language: string;
+        language?: string;
       };
       path: {
         /**
@@ -1225,29 +1207,29 @@ export interface operations {
    */
   'post-download-coupon-by-event': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /** @description 회원 엑세스 토큰 */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example PC
          */
-        language: string;
+        language?: string;
       };
       path: {
         /**
@@ -1276,29 +1258,29 @@ export interface operations {
    */
   'post-download-coupon-by-product': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /** @description 회원 엑세스 토큰 */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example PC
          */
-        language: string;
+        language?: string;
       };
       path: {
         /**
@@ -1339,29 +1321,29 @@ export interface operations {
          */
         channelType: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /** @description 회원 엑세스 토큰 */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example test-client-id
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
         /**
          * @description 언어 (기본 값: ko)
          * @example PC
          */
-        language: string;
+        language?: string;
       };
       path: {
         /**

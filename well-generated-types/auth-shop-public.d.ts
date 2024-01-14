@@ -664,17 +664,17 @@ export interface components {
        * @enum {string}
        */
       usage:
-        | 'FIND_ID: 아이디 찾기'
-        | 'FIND_PASSWORD: 비밀번호 찾기'
-        | 'CHANGE_MOBILE_NO: 휴대폰번호 변경'
-        | 'RELEASE_DORMANT: 휴면 해제'
-        | 'ADMIN: 운영자 인증'
-        | 'JOIN: 가입인증'
-        | 'JOIN_URI: 가입인증'
-        | 'CHANGE_ID: 아이디 변경'
-        | 'ADMIN_SECONDARY: 운영자 2차인증'
-        | 'CHANGE_EMAIL: 이메일 변경'
-        | 'JOIN_URI_EMPLOYEE: 관계사 임직원 가입인증';
+        | 'FIND_ID'
+        | 'FIND_PASSWORD'
+        | 'CHANGE_MOBILE_NO'
+        | 'RELEASE_DORMANT'
+        | 'ADMIN'
+        | 'JOIN'
+        | 'JOIN_URI'
+        | 'CHANGE_ID'
+        | 'ADMIN_SECONDARY'
+        | 'CHANGE_EMAIL'
+        | 'JOIN_URI_EMPLOYEE';
       /**
        * @description 회원 이름 (JOIN_URI: 가입인증이 아닌 경우 필수) (nullable)
        * @example 홍길동
@@ -789,17 +789,17 @@ export interface components {
        * @enum {string}
        */
       usage:
-        | 'FIND_ID: 아이디 찾기'
-        | 'FIND_PASSWORD: 비밀번호 찾기'
-        | 'CHANGE_MOBILE_NO: 휴대폰번호 변경'
-        | 'RELEASE_DORMANT: 휴면 해제'
-        | 'ADMIN: 운영자 인증'
-        | 'JOIN: 가입인증'
-        | 'JOIN_URI: 가입인증'
-        | 'CHANGE_ID: 아이디 변경'
-        | 'ADMIN_SECONDARY: 운영자 2차인증'
-        | 'CHANGE_EMAIL: 이메일 변경'
-        | 'JOIN_URI_EMPLOYEE: 관계사 임직원 가입인증';
+        | 'FIND_ID'
+        | 'FIND_PASSWORD'
+        | 'CHANGE_MOBILE_NO'
+        | 'RELEASE_DORMANT'
+        | 'ADMIN'
+        | 'JOIN'
+        | 'JOIN_URI'
+        | 'CHANGE_ID'
+        | 'ADMIN_SECONDARY'
+        | 'CHANGE_EMAIL'
+        | 'JOIN_URI_EMPLOYEE';
       /**
        * @description 회원 이름
        * @example 홍길동
@@ -865,17 +865,17 @@ export interface components {
        * @enum {string}
        */
       usage:
-        | 'FIND_ID: 아이디 찾기'
-        | 'FIND_PASSWORD: 비밀번호 찾기'
-        | 'CHANGE_MOBILE_NO: 휴대폰번호 변경'
-        | 'RELEASE_DORMANT: 휴면 해제'
-        | 'ADMIN: 운영자 인증'
-        | 'JOIN: 가입인증'
-        | 'JOIN_URI: 가입인증'
-        | 'CHANGE_ID: 아이디 변경'
-        | 'ADMIN_SECONDARY: 운영자 2차인증'
-        | 'CHANGE_EMAIL: 이메일 변경'
-        | 'JOIN_URI_EMPLOYEE: 관계사 임직원 가입인증';
+        | 'FIND_ID'
+        | 'FIND_PASSWORD'
+        | 'CHANGE_MOBILE_NO'
+        | 'RELEASE_DORMANT'
+        | 'ADMIN'
+        | 'JOIN'
+        | 'JOIN_URI'
+        | 'CHANGE_ID'
+        | 'ADMIN_SECONDARY'
+        | 'CHANGE_EMAIL'
+        | 'JOIN_URI_EMPLOYEE';
       /**
        * @description 회원 이름 (nullable)
        * @example 홍길동
@@ -886,7 +886,7 @@ export interface components {
        * @example EMAIL
        * @enum {string}
        */
-      type: 'SMS: SMS 인증' | 'EMAIL: 이메일 인증';
+      type: 'SMS' | 'EMAIL';
     };
     authentications1664299215: {
       /**
@@ -964,7 +964,7 @@ export interface components {
   responses: never;
   parameters: never;
   requestBodies: never;
-  headers: never;
+  headers?: never;
   pathItems: never;
 }
 
@@ -1002,22 +1002,22 @@ export interface operations {
         /** @description 이메일 주소 | 휴대폰 번호 */
         notiAccount: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example testClientId
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -1048,22 +1048,22 @@ export interface operations {
    */
   SendAuthenticationNumber: {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example testClientId
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     requestBody?: {
@@ -1088,22 +1088,22 @@ export interface operations {
    */
   'post-authentications-bizmall': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example testClientId
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     requestBody?: {
@@ -1145,22 +1145,22 @@ export interface operations {
          */
         certificatedNumber: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example testClientId
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -1180,22 +1180,22 @@ export interface operations {
    */
   'post-authentications-email': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example testClientId
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     requestBody?: {
@@ -1237,22 +1237,22 @@ export interface operations {
          */
         key: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example testClientId
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -1272,22 +1272,22 @@ export interface operations {
    */
   'post-authentications-sms': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example testClientId
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     requestBody?: {
@@ -1318,22 +1318,22 @@ export interface operations {
         /** @description 캡챠 구분키 */
         key: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example testClientId
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -1359,22 +1359,22 @@ export interface operations {
         /** @description 캡챠 구분키 */
         key: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example testClientId
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -1403,24 +1403,24 @@ export interface operations {
          */
         key: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example testClientId
          */
-        clientId: string;
+        clientId?: string;
         /** @description 회원 엑세스 토큰 */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -1454,22 +1454,22 @@ export interface operations {
          */
         domestic: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example testClientId
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -1496,22 +1496,22 @@ export interface operations {
          */
         key: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example testClientId
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -1532,22 +1532,22 @@ export interface operations {
    */
   'post-kcp-certification-member': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example testClientId
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     requestBody?: {
@@ -1580,22 +1580,22 @@ export interface operations {
          */
         key: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example testClientId
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -1643,9 +1643,9 @@ export interface operations {
     responses: {
       /** @description 303 */
       303: {
-        headers: {
+        headers?: {
           /** @description OAuth2 프로바이더 로그인 URL^|https://id.payco.com/oauth2.0/oauthLogin.nhn */
-          Location: string;
+          Location?: string;
         };
         content: never;
       };
@@ -1683,9 +1683,9 @@ export interface operations {
     responses: {
       /** @description 303 */
       303: {
-        headers: {
+        headers?: {
           /** @description 토큰과 함께 리다이렉트될 URL */
-          Location: string;
+          Location?: string;
         };
         content: never;
       };
@@ -1713,22 +1713,22 @@ export interface operations {
         /** @description CSRF 공격을 방지하기 위해 애플리케이션에서 생성한 상태 토큰 */
         state: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example testClientId
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -1806,22 +1806,22 @@ export interface operations {
         /** @description 클라이언트 플랫폼(PC, MOBILE_WEB, AOS, IOS) */
         platformType: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example testClientId
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -1883,22 +1883,22 @@ export interface operations {
    */
   'post-oauth-openid': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example testClientId
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     requestBody?: {
@@ -1935,22 +1935,22 @@ export interface operations {
         /** @description 간편 로그인 제공사(ncp_naver, ncp_kakao, ncp_kakao-sync, ncp_line, ncp_facebook, ncp_payco) */
         provider: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example testClientId
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -1995,22 +1995,22 @@ export interface operations {
    */
   'post-oauth-token-1-success': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example testClientId
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     requestBody?: {
@@ -2043,24 +2043,24 @@ export interface operations {
    */
   RevokeToken: {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example testClientId
          */
-        clientId: string;
+        clientId?: string;
         /** @description 회원 엑세스 토큰 */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -2120,22 +2120,22 @@ export interface operations {
         /** @description 클라이언트 플랫폼(PC, MOBILE_WEB, AOS, IOS) */
         platformType: string;
       };
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example testClientId
          */
-        clientId: string;
+        clientId?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
@@ -2177,24 +2177,24 @@ export interface operations {
    */
   'get-openid-token': {
     parameters: {
-      header: {
+      header?: {
         /**
          * @description API 버전
          * @example 1.0
          */
-        Version: string;
+        Version?: string;
         /**
          * @description 쇼핑몰 클라이언트 아이디
          * @example testClientId
          */
-        clientId: string;
+        clientId?: string;
         /** @description 회원 엑세스 토큰 */
-        accessToken: string;
+        accessToken?: string;
         /**
          * @description 클라이언트 플랫폼 (PC, MOBILE_WEB, AOS, IOS)
          * @example PC
          */
-        platform: string;
+        platform?: string;
       };
     };
     responses: {
