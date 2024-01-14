@@ -5,7 +5,7 @@ import { paths as DisplayShopPublicPaths } from '../well-generated-types/display
 import { paths as ManageShopPublicPaths } from '../well-generated-types/manage-shop-public';
 import { paths as MemberShopPublicPaths } from '../well-generated-types/member-shop-public';
 import { paths as OrderShopPublicPaths } from '../well-generated-types/order-shop-public';
-import { paths as ProductShopPublicPaths } from '../well-generated-types2/product-shop-public';
+import { paths as ProductShopPublicPaths } from '../well-generated-types/product-shop-public';
 import { paths as PromotionShopPublicPaths } from '../well-generated-types/promotion-shop-public';
 import { paths as WorkspaceShopPublicPaths } from '../well-generated-types/workspace-shop-public';
 
