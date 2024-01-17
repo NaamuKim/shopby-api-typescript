@@ -9,11 +9,17 @@ interface ShopByApiHeader {
   Version?: string;
   accessToken?: string;
 }
+interface GetClientParams extends ShopByApiHeader {
+  shopByApiBaseUrl?: string;
+}
 
-export function getClient(
-  shopByApiBaseUrl: string = defaultShopByApiBaseUrl,
-  { clientId, platform, Version, accessToken }: ShopByApiHeader
-) {
+export function getClient({
+  shopByApiBaseUrl = defaultShopByApiBaseUrl,
+  clientId,
+  platform,
+  Version,
+  accessToken,
+}: GetClientParams) {
   return createClient<OpenShopByApiPaths>({
     baseUrl: shopByApiBaseUrl,
     headers: {
