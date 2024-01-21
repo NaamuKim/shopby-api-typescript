@@ -6,7 +6,7 @@ import {
   Delete as AuthDelete,
   Options as AuthOptions,
   Trace as AuthTrace,
-} from '@/openapi-types/shopby-api-flatten/auth-shop';
+} from '@/shopby-api/openapi-types/shopby-api-flatten/auth-shop';
 import {
   Get as AdminGet,
   Post as AdminPost,
@@ -15,7 +15,7 @@ import {
   Delete as AdminDelete,
   Options as AdminOptions,
   Trace as AdminTrace,
-} from '@/openapi-types/shopby-api-flatten/admin-shop';
+} from '@/shopby-api/openapi-types/shopby-api-flatten/admin-shop';
 import {
   Get as ClaimGet,
   Post as ClaimPost,
@@ -24,7 +24,7 @@ import {
   Delete as ClaimDelete,
   Options as ClaimOptions,
   Trace as ClaimTrace,
-} from '@/openapi-types/shopby-api-flatten/claim-shop';
+} from '@/shopby-api/openapi-types/shopby-api-flatten/claim-shop';
 import {
   Get as DisplayGet,
   Post as DisplayPost,
@@ -33,7 +33,7 @@ import {
   Delete as DisplayDelete,
   Options as DisplayOptions,
   Trace as DisplayTrace,
-} from '@/openapi-types/shopby-api-flatten/display-shop';
+} from '@/shopby-api/openapi-types/shopby-api-flatten/display-shop';
 import {
   Get as ManageGet,
   Post as ManagePost,
@@ -42,7 +42,7 @@ import {
   Delete as ManageDelete,
   Options as ManageOptions,
   Trace as ManageTrace,
-} from '@/openapi-types/shopby-api-flatten/manage-shop';
+} from '@/shopby-api/openapi-types/shopby-api-flatten/manage-shop';
 import {
   Get as MemberGet,
   Post as MemberPost,
@@ -51,7 +51,7 @@ import {
   Delete as MemberDelete,
   Options as MemberOptions,
   Trace as MemberTrace,
-} from '@/openapi-types/shopby-api-flatten/member-shop';
+} from '@/shopby-api/openapi-types/shopby-api-flatten/member-shop';
 import {
   Get as OrderGet,
   Post as OrderPost,
@@ -60,7 +60,7 @@ import {
   Delete as OrderDelete,
   Options as OrderOptions,
   Trace as OrderTrace,
-} from '@/openapi-types/shopby-api-flatten/order-shop';
+} from '@/shopby-api/openapi-types/shopby-api-flatten/order-shop';
 import {
   Get as ProductGet,
   Post as ProductPost,
@@ -69,7 +69,7 @@ import {
   Delete as ProductDelete,
   Options as ProductOptions,
   Trace as ProductTrace,
-} from '@/openapi-types/shopby-api-flatten/product-shop';
+} from '@/shopby-api/openapi-types/shopby-api-flatten/product-shop';
 import {
   Get as PromotionGet,
   Post as PromotionPost,
@@ -78,7 +78,7 @@ import {
   Delete as PromotionDelete,
   Options as PromotionOptions,
   Trace as PromotionTrace,
-} from '@/openapi-types/shopby-api-flatten/promotion-shop';
+} from '@/shopby-api/openapi-types/shopby-api-flatten/promotion-shop';
 import {
   Get as WorkspaceGet,
   Post as WorkspacePost,
@@ -87,7 +87,7 @@ import {
   Delete as WorkspaceDelete,
   Options as WorkspaceOptions,
   Trace as WorkspaceTrace,
-} from '@/openapi-types/shopby-api-flatten/workspace-shop';
+} from '@/shopby-api/openapi-types/shopby-api-flatten/workspace-shop';
 
 export interface Get
   extends AuthGet,

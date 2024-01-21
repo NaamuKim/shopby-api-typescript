@@ -7,13 +7,15 @@ import {
   useMutation,
   useQuery,
 } from '@tanstack/react-query';
-import { useContext, createContext } from 'react';
-import createClient, { ClientOptions, ParseAs } from 'openapi-fetch';
-import { paths } from '@/openapi-types/shopby-api-types';
-import { Delete, Get, Patch, Post } from '@/openapi-types/shopby-api-flatten';
-
-type Client = ReturnType<typeof createClient<paths>>;
-export const FetchClientContext = createContext<Client>(null!);
+import { ClientOptions, ParseAs } from 'openapi-fetch';
+import { paths } from '@/shopby-api/openapi-types/shopby-api-types';
+import {
+  Delete,
+  Get,
+  Patch,
+  Post,
+} from '@/shopby-api/openapi-types/shopby-api-flatten';
+import { useShopByQueryClient } from '@/ShopByQueryProvider';
 
 type EndpointLike = { params?: any; body?: any; data: any; error: any };
 
@@ -47,7 +49,7 @@ export function useShopByGet<TUrl extends keyof Get, TData = Get[TUrl]['data']>(
     ? [QueryOptions<Get[TUrl], TData>]
     : [QueryOptions<Get[TUrl], TData>?]
 ): UseQueryResult<TData, Get[TUrl]['error']> & { queryKey: QueryKey } {
-  const client = useContext(FetchClientContext);
+  const client = useShopByQueryClient();
   const [options] = init;
   const { queryOptions, ...requestOptions } = options || {};
 
