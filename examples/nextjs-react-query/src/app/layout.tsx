@@ -1,10 +1,8 @@
-import { useRef } from 'react';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import './globals.css';
-import { OpenApiClient, ShopByQueryProvider } from '@/ShopByQueryProvider';
-import { getClient } from '../../../../shopby-api-fetch/openapi-fetch-client';
+import { ShopByProvider } from '@/ShopByQueryProvider';
+import QueryProvider from '@/QueryProvider';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -18,22 +16,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const queryClientRef = useRef<QueryClient>(new QueryClient());
-  const shopByQueryClientRef = useRef<OpenApiClient>(
-    getClient({
-      clientId: '123',
-      platform: 'PC',
-    })
-  );
-
   return (
     <html lang="en">
       <body className={inter.className}>
-        <QueryClientProvider client={queryClientRef.current}>
-          <ShopByQueryProvider client={shopByQueryClientRef.current}>
-            {children}
-          </ShopByQueryProvider>
-        </QueryClientProvider>
+        <QueryProvider>
+          <ShopByProvider>{children}</ShopByProvider>
+        </QueryProvider>
       </body>
     </html>
   );
