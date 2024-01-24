@@ -8459,117 +8459,117 @@ export interface operations {
          * @description 판매가 - 즉시할인 - 추가상품할인이 적용된 "최종 할인가격", between검색일 경우 입력값 2개 필요(다수 정보는 항목 추가 필요
          * @example "1000"
          */
-        'filter.discountedPrices': number;
+        'filter.discountedPrices'?: number;
         /**
          * @description 검색어(여러 검색어일 경우 space 로 구분 AND 연산)
          * @example "검색어1 검색어2"
          */
-        'filter.keywords': string;
+        'filter.keywords'?: string;
         /**
          * @description 결과내 검색(결과 내 검색의 검색어 space 구분 AND 연산)
          * @example "검색어1 검색어2"
          */
-        'filter.keywordInResult': string;
+        'filter.keywordInResult'?: string;
         /**
          * @description 최종 할인가격 검색 조건 (GT: 초과 - GREATER THAN, LTE: 미만 -LESS GREATER THAN, GTE: 이상 - GREATER THAN or EQUAL, EQ: 동등 - EQUAL, BETWEEN: 사이의
          * @example "GT"
          */
-        'filter.discountedComparison': string;
+        'filter.discountedComparison'?: string;
         /**
          * @description 배송비 타입 (FREE: Free, CONDITIONAL: conditional free, FIXED_FEE: Paid (Fixed Shipping Fee))
          * @example "free"
          */
-        'filter.deliveryConditionType': string;
+        'filter.deliveryConditionType'?: string;
         /**
          * @description 판매 상태 ( 전체 판매 상태 조회: ALL_CONDITIONS, 판매대기와 판매중 상품 조회: READY_ONSALE, 판매중 상품만 조회: ONSALE - default, 예약판매중인 상품과 판매중인 상품만 조회: RESERVATION_AND_ONSALE)
          * @example "ALL_CONDITIONS"
          */
-        'filter.saleStatus': string;
+        'filter.saleStatus'?: string;
         /**
          * @description 품절 상품 포함 여부(default: false)
          * @example "false"
          */
-        'filter.soldout': boolean;
+        'filter.soldout'?: boolean;
         /**
          * @description 총 상품평 수 포함 여부(default: false, false 설정 시 무조건 0)
          * @example "false"
          */
-        'filter.totalReviewCount': boolean;
+        'filter.totalReviewCount'?: boolean;
         /**
          * @description 서비스에 계약된 모든 쇼핑몰 조회 여부 (default: false)
          * @example "false"
          */
-        'filter.familyMalls': boolean;
+        'filter.familyMalls'?: boolean;
         /**
          * @description 판매자관리코드 같은 상품 검색
          * @example "managementcode"
          */
-        'filter.productManagementCd': string;
+        'filter.productManagementCd'?: string;
         /**
          * @description 조회시 제외할 상품번호
          * @example "10001"
          */
-        'filter.excludeMallProductNo': number;
+        'filter.excludeMallProductNo'?: number;
         /**
          * @description 조회할 상품번호
          * @example "10000"
          */
-        'filter.includeMallProductNo': number;
+        'filter.includeMallProductNo'?: number;
         /**
          * @description 조회할 상품항목추가정보 번호
          * @example "100,101,102"
          */
-        'filter.customProperties.propNos': string;
+        'filter.customProperties.propNos'?: string;
         /**
          * @description 조회할 상품항목추가정보 값
          * @example "1 2,3 4,5 6"
          */
-        'filter.customProperties.propValueNos': string;
+        'filter.customProperties.propValueNos'?: string;
         /**
          * @description POPULAR:판매인기순 (DEFAULT), SALE_YMD:판매일자, SALE_END_YMD:판매종료일자, DISCOUNTED_PRICE:가격순, REVIEW:상품평, SALE_CNT:총판매량순, RECENT_PRODUCT:최근상품순, MD_RECOMMEND:MD추천순, LIKE_CNT: 좋아요, EXPIRATION_DATE: 유효일자
          * @example "POPULAR"
          */
-        'order.by': string;
+        'order.by'?: string;
         /**
          * @description 정렬기준(default : DESC)
          * @example "DESC"
          */
-        'order.direction': string;
+        'order.direction'?: string;
         /**
          * @description 품절상품 뒤로 배치 여부(default = false)
          * @example "false"
          */
-        'order.soldoutPlaceEnd': boolean;
+        'order.soldoutPlaceEnd'?: boolean;
         /**
          * @description 전시 카테고리 번호(여러개 일 경우 항목 추가)
          * @example "1,2,3,4"
          */
-        categoryNos: string;
+        categoryNos?: string;
         /**
          * @description 제외할 전시 카테고리 번호(여러개 일 경우 항목 추가, 번호에 속한 모든 하위 카테고리 제외)
          * @example "1,2,3,4"
          */
-        excludeCategoryNos: string;
+        excludeCategoryNos?: string;
         /**
          * @description 전시카테고리 검색 조건 (AND : 모두다 포함, OR : 한개라도 포함), default: OR
          * @example "AND"
          */
-        categoryOperator: string;
+        categoryOperator?: string;
         /**
          * @description 브랜드 번호(여러개 일 경우 항목 추가)
          * @example "1,2,3,4"
          */
-        brandNos: string;
+        brandNos?: string;
         /**
          * @description 파트너 번호(상품 공급업체 번호)
          * @example "1"
          */
-        partnerNo: number;
+        partnerNo?: number;
         /**
          * @description 클라이언트 키
          * @example "test-client-key"
          */
-        clientKey: number;
+        clientKey?: number;
         /**
          * @description 페이지 번호
          * @example "1"
@@ -8584,42 +8584,42 @@ export interface operations {
          * @description 세일 상품만 조회 여부(default: false)
          * @example "false"
          */
-        onlySaleProduct: boolean;
+        onlySaleProduct?: boolean;
         /**
          * @description 목록에 최대 할인 쿠폰 가격 포함 여부(default: false)
          * @example "false"
          */
-        hasMaxCouponAmt: boolean;
+        hasMaxCouponAmt?: boolean;
         /**
          * @description 목록 카운트 포함 여부(default: false)
          * @example "false"
          */
-        hasTotalCount: boolean;
+        hasTotalCount?: boolean;
         /**
          * @description 목록에 옵션 value 포함 여부(default: false)
          * @example "false"
          */
-        hasOptionValues: boolean;
+        hasOptionValues?: boolean;
         /**
          * @description summary 정보 포함 여부(default: true)
          * @example "true"
          */
-        includeSummaryInfo: boolean;
+        includeSummaryInfo?: boolean;
         /**
          * @description 배송 구분 (Enum: [ PARTNER: Partner Shipping, MALL: Mall Shipping ])
          * @example "MALL"
          */
-        shippingAreaType: string;
+        shippingAreaType?: string;
         /**
          * @description 유효일자
          * @example "2023-12-31"
          */
-        expirationDate: string;
+        expirationDate?: string;
         /**
          * @description 상품 그룹관리코드
          * @example "PA000"
          */
-        groupManagementCode: string;
+        groupManagementCode?: string;
       };
       header?: {
         /**

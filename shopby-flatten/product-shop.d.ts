@@ -41,8 +41,8 @@ export interface Get {
       };
     };
     body?: never;
-    data: components['schemas']['additional-discounts-by-product-no-78647450'];
-    error: any;
+    data: components['schemas']['additional-discounts-by-product-no-78647450']
+    error: any
   };
 
   /**
@@ -105,8 +105,8 @@ export interface Get {
       };
     };
     body?: never;
-    data: components['schemas']['display-brands-812449549'];
-    error: any;
+    data: components['schemas']['display-brands-812449549']
+    error: any
   };
 
   /**
@@ -128,8 +128,8 @@ export interface Get {
       };
     };
     body?: never;
-    data: components['schemas']['display-brands-extraInfo1641009473'];
-    error: any;
+    data: components['schemas']['display-brands-extraInfo1641009473']
+    error: any
   };
 
   /**
@@ -159,8 +159,8 @@ export interface Get {
       };
     };
     body?: never;
-    data: components['schemas']['display-brands-brandNo-491175852'];
-    error: any;
+    data: components['schemas']['display-brands-brandNo-491175852']
+    error: any
   };
 
   /**
@@ -183,8 +183,8 @@ export interface Get {
       query?: never;
     };
     body?: never;
-    data: components['schemas']['free-gift-condition-productNo1611589026'];
-    error: any;
+    data: components['schemas']['free-gift-condition-productNo1611589026']
+    error: any
   };
 
   /**
@@ -262,8 +262,8 @@ export interface Get {
       };
     };
     body?: never;
-    data: components['schemas']['profile-recent-products-1008217100'];
-    error: any;
+    data: components['schemas']['profile-recent-products-1008217100']
+    error: any
   };
 
   /**
@@ -352,8 +352,8 @@ export interface Get {
       };
     };
     body?: never;
-    data: components['schemas']['products-bundle-shipping1332557899'];
-    error: any;
+    data: components['schemas']['products-bundle-shipping1332557899']
+    error: any
   };
 
   /**
@@ -367,8 +367,8 @@ export interface Get {
   '/products/custom-properties': {
     params?: never;
     body?: never;
-    data: components['schemas']['products-custom-properties-1913755437'];
-    error: any;
+    data: components['schemas']['products-custom-properties-1913755437']
+    error: any
   };
 
   /**
@@ -389,8 +389,8 @@ export interface Get {
       };
     };
     body?: never;
-    data: components['schemas']['products-extraInfo1880176592'];
-    error: any;
+    data: components['schemas']['products-extraInfo1880176592']
+    error: any
   };
 
   /**
@@ -417,8 +417,8 @@ export interface Get {
       };
     };
     body?: never;
-    data: components['schemas']['products-favoriteKeywords1672933518'];
-    error: any;
+    data: components['schemas']['products-favoriteKeywords1672933518']
+    error: any
   };
 
   /**
@@ -439,8 +439,8 @@ export interface Get {
       };
     };
     body?: never;
-    data: components['schemas']['products-options-814576919'];
-    error: any;
+    data: components['schemas']['products-options-814576919']
+    error: any
   };
 
   /**
@@ -569,117 +569,117 @@ export interface Get {
          * @description 판매가 - 즉시할인 - 추가상품할인이 적용된 "최종 할인가격", between검색일 경우 입력값 2개 필요(다수 정보는 항목 추가 필요
          * @example "1000"
          */
-        'filter.discountedPrices': number;
+        'filter.discountedPrices'?: number;
         /**
          * @description 검색어(여러 검색어일 경우 space 로 구분 AND 연산)
          * @example "검색어1 검색어2"
          */
-        'filter.keywords': string;
+        'filter.keywords'?: string;
         /**
          * @description 결과내 검색(결과 내 검색의 검색어 space 구분 AND 연산)
          * @example "검색어1 검색어2"
          */
-        'filter.keywordInResult': string;
+        'filter.keywordInResult'?: string;
         /**
          * @description 최종 할인가격 검색 조건 (GT: 초과 - GREATER THAN, LTE: 미만 -LESS GREATER THAN, GTE: 이상 - GREATER THAN or EQUAL, EQ: 동등 - EQUAL, BETWEEN: 사이의
          * @example "GT"
          */
-        'filter.discountedComparison': string;
+        'filter.discountedComparison'?: string;
         /**
          * @description 배송비 타입 (FREE: Free, CONDITIONAL: conditional free, FIXED_FEE: Paid (Fixed Shipping Fee))
          * @example "free"
          */
-        'filter.deliveryConditionType': string;
+        'filter.deliveryConditionType'?: string;
         /**
          * @description 판매 상태 ( 전체 판매 상태 조회: ALL_CONDITIONS, 판매대기와 판매중 상품 조회: READY_ONSALE, 판매중 상품만 조회: ONSALE - default, 예약판매중인 상품과 판매중인 상품만 조회: RESERVATION_AND_ONSALE)
          * @example "ALL_CONDITIONS"
          */
-        'filter.saleStatus': string;
+        'filter.saleStatus'?: string;
         /**
          * @description 품절 상품 포함 여부(default: false)
          * @example "false"
          */
-        'filter.soldout': boolean;
+        'filter.soldout'?: boolean;
         /**
          * @description 총 상품평 수 포함 여부(default: false, false 설정 시 무조건 0)
          * @example "false"
          */
-        'filter.totalReviewCount': boolean;
+        'filter.totalReviewCount'?: boolean;
         /**
          * @description 서비스에 계약된 모든 쇼핑몰 조회 여부 (default: false)
          * @example "false"
          */
-        'filter.familyMalls': boolean;
+        'filter.familyMalls'?: boolean;
         /**
          * @description 판매자관리코드 같은 상품 검색
          * @example "managementcode"
          */
-        'filter.productManagementCd': string;
+        'filter.productManagementCd'?: string;
         /**
          * @description 조회시 제외할 상품번호
          * @example "10001"
          */
-        'filter.excludeMallProductNo': number;
+        'filter.excludeMallProductNo'?: number;
         /**
          * @description 조회할 상품번호
          * @example "10000"
          */
-        'filter.includeMallProductNo': number;
+        'filter.includeMallProductNo'?: number;
         /**
          * @description 조회할 상품항목추가정보 번호
          * @example "100,101,102"
          */
-        'filter.customProperties.propNos': string;
+        'filter.customProperties.propNos'?: string;
         /**
          * @description 조회할 상품항목추가정보 값
          * @example "1 2,3 4,5 6"
          */
-        'filter.customProperties.propValueNos': string;
+        'filter.customProperties.propValueNos'?: string;
         /**
          * @description POPULAR:판매인기순 (DEFAULT), SALE_YMD:판매일자, SALE_END_YMD:판매종료일자, DISCOUNTED_PRICE:가격순, REVIEW:상품평, SALE_CNT:총판매량순, RECENT_PRODUCT:최근상품순, MD_RECOMMEND:MD추천순, LIKE_CNT: 좋아요, EXPIRATION_DATE: 유효일자
          * @example "POPULAR"
          */
-        'order.by': string;
+        'order.by'?: string;
         /**
          * @description 정렬기준(default : DESC)
          * @example "DESC"
          */
-        'order.direction': string;
+        'order.direction'?: string;
         /**
          * @description 품절상품 뒤로 배치 여부(default = false)
          * @example "false"
          */
-        'order.soldoutPlaceEnd': boolean;
+        'order.soldoutPlaceEnd'?: boolean;
         /**
          * @description 전시 카테고리 번호(여러개 일 경우 항목 추가)
          * @example "1,2,3,4"
          */
-        categoryNos: string;
+        categoryNos?: string;
         /**
          * @description 제외할 전시 카테고리 번호(여러개 일 경우 항목 추가, 번호에 속한 모든 하위 카테고리 제외)
          * @example "1,2,3,4"
          */
-        excludeCategoryNos: string;
+        excludeCategoryNos?: string;
         /**
          * @description 전시카테고리 검색 조건 (AND : 모두다 포함, OR : 한개라도 포함), default: OR
          * @example "AND"
          */
-        categoryOperator: string;
+        categoryOperator?: string;
         /**
          * @description 브랜드 번호(여러개 일 경우 항목 추가)
          * @example "1,2,3,4"
          */
-        brandNos: string;
+        brandNos?: string;
         /**
          * @description 파트너 번호(상품 공급업체 번호)
          * @example "1"
          */
-        partnerNo: number;
+        partnerNo?: number;
         /**
          * @description 클라이언트 키
          * @example "test-client-key"
          */
-        clientKey: number;
+        clientKey?: number;
         /**
          * @description 페이지 번호
          * @example "1"
@@ -694,47 +694,47 @@ export interface Get {
          * @description 세일 상품만 조회 여부(default: false)
          * @example "false"
          */
-        onlySaleProduct: boolean;
+        onlySaleProduct?: boolean;
         /**
          * @description 목록에 최대 할인 쿠폰 가격 포함 여부(default: false)
          * @example "false"
          */
-        hasMaxCouponAmt: boolean;
+        hasMaxCouponAmt?: boolean;
         /**
          * @description 목록 카운트 포함 여부(default: false)
          * @example "false"
          */
-        hasTotalCount: boolean;
+        hasTotalCount?: boolean;
         /**
          * @description 목록에 옵션 value 포함 여부(default: false)
          * @example "false"
          */
-        hasOptionValues: boolean;
+        hasOptionValues?: boolean;
         /**
          * @description summary 정보 포함 여부(default: true)
          * @example "true"
          */
-        includeSummaryInfo: boolean;
+        includeSummaryInfo?: boolean;
         /**
          * @description 배송 구분 (Enum: [ PARTNER: Partner Shipping, MALL: Mall Shipping ])
          * @example "MALL"
          */
-        shippingAreaType: string;
+        shippingAreaType?: string;
         /**
          * @description 유효일자
          * @example "2023-12-31"
          */
-        expirationDate: string;
+        expirationDate?: string;
         /**
          * @description 상품 그룹관리코드
          * @example "PA000"
          */
-        groupManagementCode: string;
+        groupManagementCode?: string;
       };
     };
     body?: never;
-    data: components['schemas']['products-search1025470211'];
-    error: any;
+    data: components['schemas']['products-search1025470211']
+    error: any
   };
 
   /**
@@ -755,8 +755,8 @@ export interface Get {
       };
     };
     body?: never;
-    data: components['schemas']['products-shipping-info-448668919'];
-    error: any;
+    data: components['schemas']['products-shipping-info-448668919']
+    error: any
   };
 
   /**
@@ -828,8 +828,8 @@ export interface Get {
       };
     };
     body?: never;
-    data: components['schemas']['products-productNo989381871'];
-    error: any;
+    data: components['schemas']['products-productNo989381871']
+    error: any
   };
 
   /**
@@ -929,8 +929,8 @@ export interface Get {
       };
     };
     body?: never;
-    data: components['schemas']['products-best-review-search-1614480433'];
-    error: any;
+    data: components['schemas']['products-best-review-search-1614480433']
+    error: any
   };
 
   /**
@@ -1030,8 +1030,8 @@ export interface Get {
       };
     };
     body?: never;
-    data: components['schemas']['products-best-seller-search1638148323'];
-    error: any;
+    data: components['schemas']['products-best-seller-search1638148323']
+    error: any
   };
 
   /**
@@ -1043,8 +1043,8 @@ export interface Get {
   '/products/configuration/naver-shopping': {
     params?: never;
     body?: never;
-    data: components['schemas']['products-configuration-naver-shopping2141453285'];
-    error: any;
+    data: components['schemas']['products-configuration-naver-shopping2141453285']
+    error: any
   };
 
   /**
@@ -1065,8 +1065,8 @@ export interface Get {
       };
     };
     body?: never;
-    data: components['schemas']['products-search-keywords-937474294'];
-    error: any;
+    data: components['schemas']['products-search-keywords-937474294']
+    error: any
   };
 
   /**
@@ -1183,8 +1183,8 @@ export interface Get {
       };
     };
     body?: never;
-    data: components['schemas']['products-search-summary554148782'];
-    error: any;
+    data: components['schemas']['products-search-summary554148782']
+    error: any
   };
 
   /**
@@ -1207,8 +1207,8 @@ export interface Get {
       query?: never;
     };
     body?: never;
-    data: components['schemas']['products-productNo-display-categories-1677654964'];
-    error: any;
+    data: components['schemas']['products-productNo-display-categories-1677654964']
+    error: any
   };
 
   /**
@@ -1231,8 +1231,8 @@ export interface Get {
       query?: never;
     };
     body?: never;
-    data: components['schemas']['products-productNo-options-583998608'];
-    error: any;
+    data: components['schemas']['products-productNo-options-583998608']
+    error: any
   };
 
   /**
@@ -1253,8 +1253,8 @@ export interface Get {
       query?: never;
     };
     body?: never;
-    data: components['schemas']['products-productNo-purchasable-150417114'];
-    error: any;
+    data: components['schemas']['products-productNo-purchasable-150417114']
+    error: any
   };
 
   /**
@@ -1320,8 +1320,8 @@ export interface Get {
       query?: never;
     };
     body?: never;
-    data: components['schemas']['products-productNo-related-products-1576147319'];
-    error: any;
+    data: components['schemas']['products-productNo-related-products-1576147319']
+    error: any
   };
 
   /**
@@ -1344,8 +1344,8 @@ export interface Get {
       query?: never;
     };
     body?: never;
-    data: components['schemas']['products-productNo-url-shortening-1808461975'];
-    error: any;
+    data: components['schemas']['products-productNo-url-shortening-1808461975']
+    error: any
   };
 
   /**
@@ -1368,8 +1368,8 @@ export interface Get {
       query?: never;
     };
     body?: never;
-    data: components['schemas']['products-productNo-options-images-575738914'];
-    error: any;
+    data: components['schemas']['products-productNo-options-images-575738914']
+    error: any
   };
 
   /**
@@ -1397,8 +1397,8 @@ export interface Get {
       query?: never;
     };
     body?: never;
-    data: components['schemas']['products-productNo-options-optionNo-images-111430120'];
-    error: any;
+    data: components['schemas']['products-productNo-options-optionNo-images-111430120']
+    error: any
   };
 
   /**
@@ -1479,8 +1479,8 @@ export interface Get {
       };
     };
     body?: never;
-    data: components['schemas']['profile-like-products1120109227'];
-    error: any;
+    data: components['schemas']['profile-like-products1120109227']
+    error: any
   };
 
   /**
@@ -1558,8 +1558,8 @@ export interface Get {
       };
     };
     body?: never;
-    data: components['schemas']['profile-recent-products-1008217100'];
-    error: any;
+    data: components['schemas']['profile-recent-products-1008217100']
+    error: any
   };
 
   /**
@@ -1573,12 +1573,13 @@ export interface Get {
   '/profile/like-products/count': {
     params?: never;
     body?: never;
-    data: components['schemas']['profile-like-products-count1871095000'];
-    error: any;
+    data: components['schemas']['profile-like-products-count1871095000']
+    error: any
   };
 }
 
-export interface Head {}
+export interface Head {
+}
 
 export interface Post {
   /**
@@ -1591,9 +1592,9 @@ export interface Post {
    */
   '/products/group-management-code': {
     params?: never;
-    body?: components['schemas']['products-group-management-code1938899284'];
-    data: components['schemas']['products-group-management-code-1777856279'];
-    error: any;
+    body?: components['schemas']['products-group-management-code1938899284']
+    data: components['schemas']['products-group-management-code-1777856279']
+    error: any
   };
 
   /**
@@ -1606,9 +1607,9 @@ export interface Post {
    */
   '/products/restock': {
     params?: never;
-    body?: components['schemas']['products-restock-559898343'];
-    data: any;
-    error: any;
+    body?: components['schemas']['products-restock-559898343']
+    data: any
+    error: any
   };
 
   /**
@@ -1664,9 +1665,9 @@ export interface Post {
    */
   '/products/search-by-nos': {
     params?: never;
-    body?: components['schemas']['products-search-by-nos1116014589'];
-    data: components['schemas']['products-search-by-nos-135481769'];
-    error: any;
+    body?: components['schemas']['products-search-by-nos1116014589']
+    data: components['schemas']['products-search-by-nos-135481769']
+    error: any
   };
 
   /**
@@ -1679,9 +1680,9 @@ export interface Post {
    */
   '/profile/like-products': {
     params?: never;
-    body?: components['schemas']['profile-like-products-2097794731'];
-    data: components['schemas']['profile-like-products-110141960'];
-    error: any;
+    body?: components['schemas']['profile-like-products-2097794731']
+    data: components['schemas']['profile-like-products-110141960']
+    error: any
   };
 
   /**
@@ -1696,9 +1697,9 @@ export interface Post {
    */
   '/profile/recent-products': {
     params?: never;
-    body?: components['schemas']['profile-recent-products-524943492'];
-    data: any;
-    error: any;
+    body?: components['schemas']['profile-recent-products-524943492']
+    data: any
+    error: any
   };
 
   /**
@@ -1717,15 +1718,17 @@ export interface Post {
    */
   '/profile/like-products/': {
     params?: never;
-    body?: components['schemas']['profile-like-products--2041423781'];
-    data: components['schemas']['profile-like-products--2119689378'];
-    error: any;
+    body?: components['schemas']['profile-like-products--2041423781']
+    data: components['schemas']['profile-like-products--2119689378']
+    error: any
   };
 }
 
-export interface Put {}
+export interface Put {
+}
 
-export interface Patch {}
+export interface Patch {
+}
 
 export interface Delete {
   /**
@@ -1748,11 +1751,14 @@ export interface Delete {
       };
     };
     body?: never;
-    data: any;
-    error: any;
+    data: any
+    error: any
   };
 }
 
-export interface Options {}
+export interface Options {
+}
 
-export interface Trace {}
+export interface Trace {
+}
+

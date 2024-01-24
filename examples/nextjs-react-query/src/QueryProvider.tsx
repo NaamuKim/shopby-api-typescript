@@ -9,7 +9,9 @@ interface Props {
 const QueryProvider: React.FC<Props> = ({ children }) => {
   const queryClientRef = useRef<QueryClient>(new QueryClient());
   return (
-    <QueryClientProvider client={queryClientRef.current}></QueryClientProvider>
+    <QueryClientProvider client={queryClientRef.current}>
+      {children}
+    </QueryClientProvider>
   );
 };
 

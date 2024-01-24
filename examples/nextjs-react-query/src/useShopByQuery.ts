@@ -8,7 +8,6 @@ import {
   useQuery,
 } from '@tanstack/react-query';
 import { ClientOptions, ParseAs } from 'openapi-fetch';
-import { paths } from '@/shopby-api/openapi-types/shopby-api-types';
 import {
   Delete,
   Get,
@@ -43,7 +42,10 @@ export type QueryOptions<TEndpoint extends EndpointLike, TData> = Pick<
     >;
   };
 
-export function useShopByGet<TUrl extends keyof Get, TData = Get[TUrl]['data']>(
+export function useShopByQuery<
+  TUrl extends keyof Get,
+  TData = Get[TUrl]['data'],
+>(
   url: TUrl,
   ...init: Get[TUrl] extends { params: any }
     ? [QueryOptions<Get[TUrl], TData>]
