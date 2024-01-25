@@ -10,10 +10,10 @@ import {
 import { ClientOptions, ParseAs } from 'openapi-fetch';
 import {
   Delete,
-  Get,
   Patch,
   Post,
 } from '@/shopby-api/openapi-types/shopby-api-flatten';
+import { Get } from '@/shopby-api/openapi-types/shopby-api-flatten/product-shop';
 import { useShopByQueryClient } from '@/ShopByQueryProvider';
 
 type EndpointLike = { params?: any; body?: any; data: any; error: any };

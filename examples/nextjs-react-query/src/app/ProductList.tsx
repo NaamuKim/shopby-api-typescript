@@ -12,7 +12,9 @@ const ProductList = () => {
       },
     },
   });
-  return <div>{}</div>;
+  return (
+    <div>{data?.items?.map((item) => <span>{item.productName}</span>)}</div>
+  );
 };
 
 export default ProductList;
