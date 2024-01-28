@@ -3,9 +3,8 @@
  * Do not make direct changes to the file.
  */
 
-
 export interface paths {
-  "/additional-discounts/by-product-no": {
+  '/additional-discounts/by-product-no': {
     /**
      * 추가할인 정보 조회하기
      * @description ## 부가설명 및 특이사항
@@ -30,9 +29,9 @@ export interface paths {
      *  | 볼펜(검정) | 5 | 적용가능 | (100 * 5) * (100-10)% | 450 |
      *  | 볼펜(파랑) | 10 | 적용불가 | - | 1000 |
      */
-    get: operations["get-additional-discounts-by-product-no"];
+    get: operations['get-additional-discounts-by-product-no'];
   };
-  "/display/brands": {
+  '/display/brands': {
     /**
      * 브랜드 목록 조회하기
      * @description ## 부가설명 및 특이사항
@@ -41,9 +40,9 @@ export interface paths {
      *
      * Paging 기능 제공합니다
      */
-    get: operations["get-display-brands"];
+    get: operations['get-display-brands'];
   };
-  "/display/brands/extraInfo": {
+  '/display/brands/extraInfo': {
     /**
      * 브랜드 추가 정보 조회하기
      * @description ## 부가설명 및 특이사항
@@ -51,9 +50,9 @@ export interface paths {
      * ### 브랜드 추가정보 조회하는 API입니다.
      * - 브랜드 요청 번호는 최대 30개 까지 가능합니다.
      */
-    get: operations["get-display-brand-extra-info"];
+    get: operations['get-display-brand-extra-info'];
   };
-  "/display/brands/{brandNo}": {
+  '/display/brands/{brandNo}': {
     /**
      * 브랜드 상세 조회하기
      * @description ## 부가설명 및 특이사항
@@ -63,9 +62,9 @@ export interface paths {
      *
      * [![brand-search-img](http://image.toast.com/aaaaahb/api-description/display/[GET]%20display_brands_brandNo%20%EB%B8%8C%EB%9E%9C%EB%93%9C%20%EC%83%81%EC%84%B8.png?autox150)](http://image.toast.com/aaaaahb/api-description/display/[GET]%20display_brands_brandNo%20%EB%B8%8C%EB%9E%9C%EB%93%9C%20%EC%83%81%EC%84%B8.png)
      */
-    get: operations["get-display-brands-brandNo"];
+    get: operations['get-display-brands-brandNo'];
   };
-  "/free-gift-condition/{productNo}": {
+  '/free-gift-condition/{productNo}': {
     /**
      * [샵바이 프리미엄 전용] 사은품 지급가능한 조건 조회하기
      * @description ## 부가설명 및 특이사항
@@ -74,9 +73,9 @@ export interface paths {
      *
      * 샵바이 프리미엄 전용 API로, 샵바이 혹은 샵바이 프로에서는 사용되지 않습니다
      */
-    get: operations["get-free-gift-condition"];
+    get: operations['get-free-gift-condition'];
   };
-  "/guest/recent-products": {
+  '/guest/recent-products': {
     /**
      * 비회원용 최근 본 상품 조회하기
      * @description ## 부가설명 및 특이사항
@@ -130,9 +129,9 @@ export interface paths {
      *
      *     옵션 2 구매가격 : ((15000-5000) + 2000)\*0.9 = 10800
      */
-    get: operations["get-guest-recent-products"];
+    get: operations['get-guest-recent-products'];
   };
-  "/products/bundle-shipping": {
+  '/products/bundle-shipping': {
     /**
      * 묶음 배송 상품 목록 조회하기
      * @description ## 부가설명 및 특이사항
@@ -182,9 +181,9 @@ export interface paths {
      *
      *     옵션 2 구매가격 : ((15000-5000) + 2000)\*0.9 = 10800
      */
-    get: operations["묶음 배송 상품 목록 조회"];
+    get: operations['get-products-bundle-shipping'];
   };
-  "/products/custom-properties": {
+  '/products/custom-properties': {
     /**
      * 상품 항목 조회하기
      * @description ## 부가설명 및 특이사항
@@ -193,18 +192,18 @@ export interface paths {
      *
      * 사용여부 = Y 인 상품 항목만 조횝니다.
      */
-    get: operations["get-custom-property-by-mallno"];
+    get: operations['get-custom-property-by-mallno'];
   };
-  "/products/extraInfo": {
+  '/products/extraInfo': {
     /**
      * 상품 번호 리스트로 추가 정보 조회
      * @description ## 부가설명 및 특이사항
      *
      * 상품번호를 통해 extraInfo(추가정보)를 조회하는 API 입니다.
      */
-    get: operations["get-product-extraInfos"];
+    get: operations['get-product-extraInfos'];
   };
-  "/products/favoriteKeywords": {
+  '/products/favoriteKeywords': {
     /**
      * 인기 검색어 조회하기
      * @description ## 부가설명 및 특이사항
@@ -217,9 +216,9 @@ export interface paths {
      *
      * * 참고: 알파 환경은 검색어 유입이 거의 없는 관계로 개발 편의성을 위해 반환되는 값을 고정적으로 내보냅니다. 따라서 인기검색어 반환 값은 리얼 환경을 통해 확인바랍니다.
      */
-    get: operations["get-products-favorite-keywords"];
+    get: operations['get-products-favorite-keywords'];
   };
-  "/products/group-management-code": {
+  '/products/group-management-code': {
     /**
      * [샵바이 프리미엄 전용] 그룹관리코드 조회하기
      * @description ## 부가설명 및 특이사항
@@ -228,18 +227,18 @@ export interface paths {
      *
      * 샵바이 프리미엄 전용 API로, 샵바이 혹은 샵바이 프로에서는 사용되지 않습니다
      */
-    post: operations["get-products-group-management-code"];
+    post: operations['get-products-group-management-code'];
   };
-  "/products/options": {
+  '/products/options': {
     /**
      * 옵션 목록 조회하기
      * @description ## 부가설명 및 특이사항
      *
      * 옵션 목록을 조회하는 API입니다
      */
-    get: operations["get-products-options"];
+    get: operations['get-products-options'];
   };
-  "/products/restock": {
+  '/products/restock': {
     /**
      * [샵바이 프리미엄 전용] 재입고 알림 신청
      * @description ## 부가설명 및 특이사항
@@ -248,9 +247,9 @@ export interface paths {
      *
      * 샵바이 프리미엄 전용 API로, 샵바이 혹은 샵바이 프로에서는 사용되지 않습니다
      */
-    post: operations["post-restock"];
+    post: operations['post-restock'];
   };
-  "/products/search": {
+  '/products/search': {
     /**
      * 상품 검색(search engine)하기
      * @description
@@ -370,9 +369,9 @@ export interface paths {
      *
      *     옵션 2 구매가격 : ((15000-5000) + 2000)\*0.9 = 10800
      */
-    get: operations["get-products-search"];
+    get: operations['get-products-search'];
   };
-  "/products/search-by-nos": {
+  '/products/search-by-nos': {
     /**
      * 상품번호 리스트로 상품 조회
      * @description ## 부가설명 및 특이사항
@@ -424,18 +423,18 @@ export interface paths {
      *
      *     옵션 2 구매가격 : ((15000-5000) + 2000)\*0.9 = 10800
      */
-    post: operations["get-products-search-by-nos"];
+    post: operations['get-products-search-by-nos'];
   };
-  "/products/shipping-info": {
+  '/products/shipping-info': {
     /**
      * 상품번호를 통한 배송 정보 및 배송 불가 국가 조회 API
      * @description ## 부가설명 및 특이사항
      *
      * 상품번호를 통해 배송 정보 및 배송 불가 국가를 조회하는 API 입니다.
      */
-    get: operations["get-shipping-infos"];
+    get: operations['get-shipping-infos'];
   };
-  "/products/{productNo}": {
+  '/products/{productNo}': {
     /**
      * 상품 상세 조회하기
      * @description ## 부가설명 및 특이사항
@@ -487,9 +486,9 @@ export interface paths {
      *
      *     옵션 2 구매가격 : ((15000-5000) + 2000)\*0.9 = 10800
      */
-    get: operations["get-products-product"];
+    get: operations['get-products-product'];
   };
-  "/products/best-review/search": {
+  '/products/best-review/search': {
     /**
      * 베스트 리뷰 상품 검색(search engine)하기
      * @description ## 부가설명 및 특이사항
@@ -545,9 +544,9 @@ export interface paths {
      *
      *     옵션 2 구매가격 : ((15000-5000) + 2000)\*0.9 = 10800
      */
-    get: operations["get-products-best-review-search"];
+    get: operations['get-products-best-review-search'];
   };
-  "/products/best-seller/search": {
+  '/products/best-seller/search': {
     /**
      * 베스트 셀러 상품 검색(search engine)하기
      * @description ## 부가설명 및 특이사항
@@ -603,27 +602,27 @@ export interface paths {
      *
      *     옵션 2 구매가격 : ((15000-5000) + 2000)\*0.9 = 10800
      */
-    get: operations["get-products-best-seller-search"];
+    get: operations['get-products-best-seller-search'];
   };
-  "/products/configuration/naver-shopping": {
+  '/products/configuration/naver-shopping': {
     /**
      * 네이버 쇼핑 설정정보 조회
      * @description ## 부가설명 및 특이사항
      *
      * 쇼핑몰에서 설정한 네이버 쇼핑 설정 정보를 조회할 수 있습니다.
      */
-    get: operations["get-configuration-naver-shopping"];
+    get: operations['get-configuration-naver-shopping'];
   };
-  "/products/search/keywords": {
+  '/products/search/keywords': {
     /**
      * 상품 번호 리스트로 검색어 조회
      * @description ## 부가설명 및 특이사항
      *
      * 상품번호를 통해 어드민에 등록된 검색어를 조회하는 API 입니다.
      */
-    get: operations["get-product-keywords"];
+    get: operations['get-product-keywords'];
   };
-  "/products/search/summary": {
+  '/products/search/summary': {
     /**
      * 상품 검색 결과 Summary 정보 조회(search engine)하기
      * @description ## 부가설명 및 특이사항
@@ -636,9 +635,9 @@ export interface paths {
      *
      * * ex. 10시 13분에 상품명을 [테스트 상품 -> 임시 상품]으로 변경 후 '임시 상품'으로 검색 시, 10시 19분까지 검색되지않고, 10시 20분이후에 검색 가능합니다.
      */
-    get: operations["get-products-search-summary"];
+    get: operations['get-products-search-summary'];
   };
-  "/products/{productNo}/display-categories": {
+  '/products/{productNo}/display-categories': {
     /**
      * 상품번호에 해당하는 모든 전시카테고리 조회하기
      * @description ## 부가설명 및 특이사항
@@ -647,9 +646,9 @@ export interface paths {
      *
      * 마지막 뎁스 번호는 depth5No, 전체 전시카테고리 경로는 fullCategoryName 으로 확인할 수 있습니다.
      */
-    get: operations["get-products-productNo-display-categories"];
+    get: operations['get-products-productNo-display-categories'];
   };
-  "/products/{productNo}/options": {
+  '/products/{productNo}/options': {
     /**
      * 옵션 조회하기
      * @description ## 부가설명 및 특이사항
@@ -658,18 +657,18 @@ export interface paths {
      *
      * 2가지 옵션 목록(계층, 원본)을 제공합니다
      */
-    get: operations["get-product-options"];
+    get: operations['get-product-options'];
   };
-  "/products/{productNo}/purchasable": {
+  '/products/{productNo}/purchasable': {
     /**
      * 상품번호로 상품우선구매권한 조회
      * @description ## 부가설명 및 특이사항
      *
      * 상품에 매핑된 상품우선구매권한 정보를 조회하는 API 입니다.
      */
-    get: operations["get-product-purchase-permission"];
+    get: operations['get-product-purchase-permission'];
   };
-  "/products/{productNo}/related-products": {
+  '/products/{productNo}/related-products': {
     /**
      * 관련 상품 정보 조회하기
      * @description ## 부가설명 및 특이사항
@@ -721,9 +720,9 @@ export interface paths {
      *
      *     옵션 2 구매가격 : ((15000-5000) + 2000)\*0.9 = 10800
      */
-    get: operations["get-products-related-products"];
+    get: operations['get-products-related-products'];
   };
-  "/products/{productNo}/url-shortening": {
+  '/products/{productNo}/url-shortening': {
     /**
      * [샵바이프로 전용] 상품 번호와 쇼핑몰 번호에 해당하는 단축URL 조회하기
      * @description ## 부가설명 및 특이사항
@@ -732,9 +731,9 @@ export interface paths {
      *
      * 어드민 설정을 제공하는 샵바이 프로에서만 사용가능한 API입니다
      */
-    get: operations["get-products-url-shortening"];
+    get: operations['get-products-url-shortening'];
   };
-  "/products/{productNo}/options/images": {
+  '/products/{productNo}/options/images': {
     /**
      * 상품에 해당하는 옵션 이미지 목록 조회하기
      * @description ## 부가설명 및 특이사항
@@ -743,9 +742,9 @@ export interface paths {
      *
      * 옵션 상세 보기 시, 사용합니다
      */
-    get: operations["get-products-options-images"];
+    get: operations['get-products-options-images'];
   };
-  "/products/{productNo}/options/{optionNo}/images": {
+  '/products/{productNo}/options/{optionNo}/images': {
     /**
      * 옵션의 이미지 정보 조회하기
      * @description ## 부가설명 및 특이사항
@@ -754,9 +753,9 @@ export interface paths {
      *
      * 옵션 상세 보기 시, 사용합니다
      */
-    get: operations["get-products-option-images"];
+    get: operations['get-products-option-images'];
   };
-  "/profile/like-products": {
+  '/profile/like-products': {
     /**
      * 회원이 좋아하는 상품목록 조회하기
      * @description ## 부가설명 및 특이사항
@@ -808,7 +807,7 @@ export interface paths {
      *
      *     옵션 2 구매가격 : ((15000-5000) + 2000)\*0.9 = 10800
      */
-    get: operations["get-profile-like-products"];
+    get: operations['get-profile-like-products'];
     /**
      * 회원이 상품을 좋아한다고 추가/삭제하기
      * @description ## 부가설명 및 특이사항
@@ -817,9 +816,9 @@ export interface paths {
      *
      * 로그인 이후에만 호출 가능합니다(accessToken)
      */
-    post: operations["post-profile-like-products"];
+    post: operations['post-profile-like-products'];
   };
-  "/profile/recent-products": {
+  '/profile/recent-products': {
     /**
      * 최근 본 상품 조회하기
      * @description ## 부가설명 및 특이사항
@@ -873,7 +872,7 @@ export interface paths {
      *
      *     옵션 2 구매가격 : ((15000-5000) + 2000)\*0.9 = 10800
      */
-    get: operations["get-profile-recent-products"];
+    get: operations['get-profile-recent-products'];
     /**
      * 최근 본 상품 등록하기
      * @description ## 부가설명 및 특이사항
@@ -884,7 +883,7 @@ export interface paths {
      *
      * 최근 본 50개 상품까지 서버에서 저장합니다
      */
-    post: operations["post-profile-recent-products"];
+    post: operations['post-profile-recent-products'];
     /**
      * 최근 본 상품 삭제하기
      * @description ## 부가설명 및 특이사항
@@ -893,9 +892,9 @@ export interface paths {
      *
      * 로그인 이후에만 호출 가능(accessToken)합니다
      */
-    delete: operations["delete-profile-recent-products"];
+    delete: operations['delete-profile-recent-products'];
   };
-  "/profile/like-products/": {
+  '/profile/like-products/': {
     /**
      * 상품에 대한 좋아요 설정 및 해제하기
      * @description ## 부가설명 및 특이사항
@@ -910,9 +909,9 @@ export interface paths {
      *
      * header의 `Version` 값은 1.1로 요청해야합니다.
      */
-    post: operations["post-profile-like-products2"];
+    post: operations['post-profile-like-products2'];
   };
-  "/profile/like-products/count": {
+  '/profile/like-products/count': {
     /**
      * 회원이 좋아하는 상품 수 조회하기
      * @description ## 부가설명 및 특이사항
@@ -921,7 +920,7 @@ export interface paths {
      *
      * 로그인 이후에만 호출 가능합니다(accessToken)
      */
-    get: operations["get-profile-like-products-count"];
+    get: operations['get-profile-like-products-count'];
   };
 }
 
@@ -929,7 +928,7 @@ export type webhooks = Record<string, never>;
 
 export interface components {
   schemas: {
-    "products-productNo-options-583998608": {
+    'products-productNo-options-583998608': {
       /**
        * @description 상품 판매가
        * @example 100000
@@ -941,32 +940,151 @@ export interface components {
        */
       immediateDiscountAmt: number;
       /** @description 일체형 옵션 */
-      flatOptions: ({
+      flatOptions: {
+        /**
+         * @description 할인적용가
+         * @example 15000
+         */
+        buyPrice: number;
+        images: {
+          /**
+           * @description 메인이미지 여부 (true: 메인이미지, false: 메인이미지 아님)
+           * @example true
+           */
+          main: boolean;
+          /**
+           * @description 이미지 URL
+           * @example "www.image.com/image.jpg"
+           */
+          url: string;
+        }[];
+        /**
+         * @description 판매타입
+         * @example "AVAILABLE"
+         * @enum {string}
+         */
+        saleType: 'AVAILABLE' | 'SOLD_OUT';
+        /**
+         * @description 대표 옵션 여부 (true: 대표 옵션, false:대표 옵션 아님)
+         * @example true
+         */
+        main: boolean;
+        /**
+         * @description 추가금액
+         * @example 10000
+         */
+        addPrice: number;
+        /**
+         * @description 옵션명
+         * @example "색상"
+         */
+        label: string;
+        /** @description 렌탈료 정보 */
+        rentalInfo: {
+          /**
+           * @description 월 렌탈 금액
+           * @example 473000
+           */
+          monthlyRentalAmount: number;
+          /**
+           * @description 렌탈 기간
+           * @example 12
+           */
+          rentalPeriod: number;
+          /**
+           * @description 서비스 가능 최저 신용 등급
+           * @example 600
+           */
+          creditRating: number;
+        }[];
+        /**
+         * @description 판매수량 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
+         * @example 100
+         */
+        saleCnt: number;
+        /**
+         * @description 예약재고수량 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
+         * @example 10
+         */
+        reservationStockCnt: number;
+        /**
+         * @description 재고수량 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
+         * @example 20
+         */
+        stockCnt: number;
+        /**
+         * @description 옵션 판매자 관리 코드
+         * @example "managementCode"
+         */
+        optionManagementCd: string;
+        /**
+         * @description 옵션번호
+         * @example 1
+         */
+        optionNo: number;
+        /**
+         * @description 옵션값
+         * @example "민트"
+         */
+        value: string;
+        /**
+         * @description 임시 품절 여부 (true: 임시품절, false:임시품절 아님)
+         * @example false
+         */
+        forcedSoldOut: boolean;
+      }[];
+      /** @description 구매자 작성형 정보(텍스트 옵션 내 기입문장) */
+      inputs: {
+        /**
+         * @description 매칭타입
+         * @example "PRODUCT"
+         * @enum {string}
+         */
+        inputMatchingType: 'OPTION' | 'PRODUCT' | 'AMOUNT';
+        /**
+         * @description 텍스트 옵션 입력 문구
+         * @example "최대한 늦게 생산된걸로 보내주세요"
+         */
+        inputLabel: string;
+        /**
+         * @description 필수 여부 (true: 필수, false: 필수 아님)
+         * @example true
+         */
+        required: boolean;
+        /**
+         * @description 텍스트 옵션 번호
+         * @example 1
+         */
+        inputNo: number;
+      }[];
+      /** @description 분리형 옵션 */
+      multiLevelOptions: {
+        children: {
           /**
            * @description 할인적용가
            * @example 15000
            */
           buyPrice: number;
           images: {
-              /**
-               * @description 메인이미지 여부 (true: 메인이미지, false: 메인이미지 아님)
-               * @example true
-               */
-              main: boolean;
-              /**
-               * @description 이미지 URL
-               * @example "www.image.com/image.jpg"
-               */
-              url: string;
-            }[];
+            /**
+             * @description 메인이미지 여부 (true: 메인이미지, false: 메인이미지 아님)
+             * @example true
+             */
+            main: boolean;
+            /**
+             * @description 이미지 URL
+             * @example "www.image.com/image.jpg"
+             */
+            url: string;
+          }[];
           /**
            * @description 판매타입
            * @example "AVAILABLE"
            * @enum {string}
            */
-          saleType: "AVAILABLE" | "SOLD_OUT";
+          saleType: 'AVAILABLE' | 'SOLD_OUT';
           /**
-           * @description 대표 옵션 여부 (true: 대표 옵션, false:대표 옵션 아님)
+           * @description 대표 옵션 여부 (true: 대표옵션, false: 대표옵션아님)
            * @example true
            */
           main: boolean;
@@ -977,27 +1095,27 @@ export interface components {
           addPrice: number;
           /**
            * @description 옵션명
-           * @example "색상"
+           * @example "사이즈"
            */
           label: string;
           /** @description 렌탈료 정보 */
           rentalInfo: {
-              /**
-               * @description 월 렌탈 금액
-               * @example 473000
-               */
-              monthlyRentalAmount: number;
-              /**
-               * @description 렌탈 기간
-               * @example 12
-               */
-              rentalPeriod: number;
-              /**
-               * @description 서비스 가능 최저 신용 등급
-               * @example 600
-               */
-              creditRating: number;
-            }[];
+            /**
+             * @description 월 렌탈 금액
+             * @example 473000
+             */
+            monthlyRentalAmount: number;
+            /**
+             * @description 렌탈 기간
+             * @example 12
+             */
+            rentalPeriod: number;
+            /**
+             * @description 서비스 가능 최저 신용 등급
+             * @example 600
+             */
+            creditRating: number;
+          }[];
           /**
            * @description 판매수량 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
            * @example 100
@@ -1008,6 +1126,11 @@ export interface components {
            * @example 10
            */
           reservationStockCnt: number;
+          /**
+           * @description 자식 옵션 목록
+           * @example "[]"
+           */
+          children: Record<string, never>[];
           /**
            * @description 재고수량 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
            * @example 20
@@ -1025,156 +1148,32 @@ export interface components {
           optionNo: number;
           /**
            * @description 옵션값
-           * @example "민트"
+           * @example "M"
            */
           value: string;
           /**
-           * @description 임시 품절 여부 (true: 임시품절, false:임시품절 아님)
+           * @description 임시 품절 여부 (true: 임시품절, false: 임시품절 아님)
            * @example false
            */
           forcedSoldOut: boolean;
-        })[];
-      /** @description 구매자 작성형 정보(텍스트 옵션 내 기입문장) */
-      inputs: ({
-          /**
-           * @description 매칭타입
-           * @example "PRODUCT"
-           * @enum {string}
-           */
-          inputMatchingType: "OPTION" | "PRODUCT" | "AMOUNT";
-          /**
-           * @description 텍스트 옵션 입력 문구
-           * @example "최대한 늦게 생산된걸로 보내주세요"
-           */
-          inputLabel: string;
-          /**
-           * @description 필수 여부 (true: 필수, false: 필수 아님)
-           * @example true
-           */
-          required: boolean;
-          /**
-           * @description 텍스트 옵션 번호
-           * @example 1
-           */
-          inputNo: number;
-        })[];
-      /** @description 분리형 옵션 */
-      multiLevelOptions: ({
-          children: ({
-              /**
-               * @description 할인적용가
-               * @example 15000
-               */
-              buyPrice: number;
-              images: {
-                  /**
-                   * @description 메인이미지 여부 (true: 메인이미지, false: 메인이미지 아님)
-                   * @example true
-                   */
-                  main: boolean;
-                  /**
-                   * @description 이미지 URL
-                   * @example "www.image.com/image.jpg"
-                   */
-                  url: string;
-                }[];
-              /**
-               * @description 판매타입
-               * @example "AVAILABLE"
-               * @enum {string}
-               */
-              saleType: "AVAILABLE" | "SOLD_OUT";
-              /**
-               * @description 대표 옵션 여부 (true: 대표옵션, false: 대표옵션아님)
-               * @example true
-               */
-              main: boolean;
-              /**
-               * @description 추가금액
-               * @example 10000
-               */
-              addPrice: number;
-              /**
-               * @description 옵션명
-               * @example "사이즈"
-               */
-              label: string;
-              /** @description 렌탈료 정보 */
-              rentalInfo: {
-                  /**
-                   * @description 월 렌탈 금액
-                   * @example 473000
-                   */
-                  monthlyRentalAmount: number;
-                  /**
-                   * @description 렌탈 기간
-                   * @example 12
-                   */
-                  rentalPeriod: number;
-                  /**
-                   * @description 서비스 가능 최저 신용 등급
-                   * @example 600
-                   */
-                  creditRating: number;
-                }[];
-              /**
-               * @description 판매수량 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
-               * @example 100
-               */
-              saleCnt: number;
-              /**
-               * @description 예약재고수량 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
-               * @example 10
-               */
-              reservationStockCnt: number;
-              /**
-               * @description 자식 옵션 목록
-               * @example "[]"
-               */
-              children: Record<string, never>[];
-              /**
-               * @description 재고수량 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
-               * @example 20
-               */
-              stockCnt: number;
-              /**
-               * @description 옵션 판매자 관리 코드
-               * @example "managementCode"
-               */
-              optionManagementCd: string;
-              /**
-               * @description 옵션번호
-               * @example 1
-               */
-              optionNo: number;
-              /**
-               * @description 옵션값
-               * @example "M"
-               */
-              value: string;
-              /**
-               * @description 임시 품절 여부 (true: 임시품절, false: 임시품절 아님)
-               * @example false
-               */
-              forcedSoldOut: boolean;
-            })[];
-          /**
-           * @description 옵션명
-           * @example "색상"
-           */
-          label: string;
-          /**
-           * @description 옵션값
-           * @example "민트"
-           */
-          value: string;
-        })[];
+        }[];
+        /**
+         * @description 옵션명
+         * @example "색상"
+         */
+        label: string;
+        /**
+         * @description 옵션값
+         * @example "민트"
+         */
+        value: string;
+      }[];
       /**
        * @description 옵션 선택 타입
        * @example "MULTI"
        * @enum {string}
        */
-      selectType: "MULTI" | "FLAT";
+      selectType: 'MULTI' | 'FLAT';
       /**
        * @description
        *  재고 노출 여부 (false:재고 미노출 / true:재고 노출)<br><br>
@@ -1192,131 +1191,131 @@ export interface components {
        * @example "COMBINATION"
        * @enum {string}
        */
-      type: "STANDARD" | "COMBINATION" | "DEFAULT" | "MAPPING";
+      type: 'STANDARD' | 'COMBINATION' | 'DEFAULT' | 'MAPPING';
       /**
        * @description 옵션명 목록
        * @example ["색상","사이즈"]
        */
       labels: string[];
     };
-    "products-extraInfo1880176592": {
+    'products-extraInfo1880176592': {
+      /**
+       * @description 상품번호
+       * @example 10000001
+       */
+      productNo: number;
+      /**
+       * @description 추가정보
+       * @example "추가정보1"
+       */
+      extraInfo: string;
+    }[];
+    'products-productNo-options-optionNo-images-111430120': {
+      /**
+       * @description 옵션이미지 URL
+       * @example "www.youtube.com"
+       */
+      imageUrl: string;
+      /**
+       * @description 메인이미지 여부 (true: 메인 이미지, false: 일반이미지)
+       * @example true
+       */
+      main: boolean;
+      /**
+       * @description 옵션 번호
+       * @example 1
+       */
+      optionNo: number;
+      /**
+       * @description 품절 여부 (true: 품절, false: 재고 있음)
+       * @example true
+       */
+      soldout: boolean;
+    }[];
+    'products-productNo-related-products-1576147319': {
+      /**
+       * @description 성인인증 필요 여부
+       * @example false
+       */
+      requiresAgeVerification: boolean;
+      /**
+       * @description 즉시할인액
+       * @example 1000
+       */
+      immediateDiscountAmt: number;
+      /**
+       * @description 추가할인 타입
+       * @example "WON"
+       */
+      additionalDiscountUnitType: string;
+      /**
+       * @description 판매가
+       * @example 10000
+       */
+      salePrice: number;
+      /**
+       * @description 즉시할인 시작일자
+       * @example "2024-01-04 16:11:07"
+       */
+      immediateDiscountStartYmdt: string;
+      /**
+       * @description 즉시할인 타입
+       * @example "WON"
+       */
+      immediateDiscountUnitType: string;
+      /**
+       * @description 이미지 URL 타입
+       * @example "IMAGE_URL"
+       */
+      imageUrlType: string;
+      /**
+       * @description 상품명
+       * @example "아이유 신규 앨범"
+       */
+      productName: string;
+      /**
+       * @description 추가할인액
+       * @example 1000
+       */
+      additionalDiscountAmt: number;
+      /**
+       * @description 즉시할인 종료일자
+       * @example "2024-01-04 16:11:07"
+       */
+      immediateDiscountEndYmdt: string;
+      /**
+       * @description 이미지 URL
+       * @example "imageUrl"
+       */
+      imageUrl: string;
+      /**
+       * @description 스티커
+       * @example [{"type":"IMAGE","name":"대박 할인 스티커","label":"스티커 이미지 url"}]
+       */
+      stickers: {
         /**
-         * @description 상품번호
-         * @example 10000001
+         * @description 스티커 이름
+         * @example "대박 할인 스티커"
          */
-        productNo: number;
+        name: string;
         /**
-         * @description 추가정보
-         * @example "추가정보1"
+         * @description 스티커 레이블
+         * @example "스티커 이미지 url"
          */
-        extraInfo: string;
+        label: string;
+        /**
+         * @description 스티커 타입
+         * @example "IMAGE"
+         */
+        type: string;
       }[];
-    "products-productNo-options-optionNo-images-111430120": {
-        /**
-         * @description 옵션이미지 URL
-         * @example "www.youtube.com"
-         */
-        imageUrl: string;
-        /**
-         * @description 메인이미지 여부 (true: 메인 이미지, false: 일반이미지)
-         * @example true
-         */
-        main: boolean;
-        /**
-         * @description 옵션 번호
-         * @example 1
-         */
-        optionNo: number;
-        /**
-         * @description 품절 여부 (true: 품절, false: 재고 있음)
-         * @example true
-         */
-        soldout: boolean;
-      }[];
-    "products-productNo-related-products-1576147319": {
-        /**
-         * @description 성인인증 필요 여부
-         * @example false
-         */
-        requiresAgeVerification: boolean;
-        /**
-         * @description 즉시할인액
-         * @example 1000
-         */
-        immediateDiscountAmt: number;
-        /**
-         * @description 추가할인 타입
-         * @example "WON"
-         */
-        additionalDiscountUnitType: string;
-        /**
-         * @description 판매가
-         * @example 10000
-         */
-        salePrice: number;
-        /**
-         * @description 즉시할인 시작일자
-         * @example "2024-01-04 16:11:07"
-         */
-        immediateDiscountStartYmdt: string;
-        /**
-         * @description 즉시할인 타입
-         * @example "WON"
-         */
-        immediateDiscountUnitType: string;
-        /**
-         * @description 이미지 URL 타입
-         * @example "IMAGE_URL"
-         */
-        imageUrlType: string;
-        /**
-         * @description 상품명
-         * @example "아이유 신규 앨범"
-         */
-        productName: string;
-        /**
-         * @description 추가할인액
-         * @example 1000
-         */
-        additionalDiscountAmt: number;
-        /**
-         * @description 즉시할인 종료일자
-         * @example "2024-01-04 16:11:07"
-         */
-        immediateDiscountEndYmdt: string;
-        /**
-         * @description 이미지 URL
-         * @example "imageUrl"
-         */
-        imageUrl: string;
-        /**
-         * @description 스티커
-         * @example [{"type":"IMAGE","name":"대박 할인 스티커","label":"스티커 이미지 url"}]
-         */
-        stickers: {
-            /**
-             * @description 스티커 이름
-             * @example "대박 할인 스티커"
-             */
-            name: string;
-            /**
-             * @description 스티커 레이블
-             * @example "스티커 이미지 url"
-             */
-            label: string;
-            /**
-             * @description 스티커 타입
-             * @example "IMAGE"
-             */
-            type: string;
-          }[];
-        /**
-         * @description 상품 번호
-         * @example 10000001
-         */
-        productNo: number;
-      }[];
-    "products-group-management-code1938899284": {
+      /**
+       * @description 상품 번호
+       * @example 10000001
+       */
+      productNo: number;
+    }[];
+    'products-group-management-code1938899284': {
       /**
        * @description 그룹관리코드
        * @example "CODE1,CODE2,CODE3"
@@ -1333,7 +1332,7 @@ export interface components {
        */
       saleStatus?: string;
     };
-    "products-configuration-naver-shopping2141453285": {
+    'products-configuration-naver-shopping2141453285': {
       /**
        * @description 네이버 쇼핑 설정 여부
        * @example true
@@ -1350,7 +1349,7 @@ export interface components {
        */
       authenticationKey: string;
     };
-    "products-best-seller-search1638148323": {
+    'products-best-seller-search1638148323': {
       /**
        * @description 페이지 수
        * @example 100
@@ -1373,1280 +1372,10 @@ export interface components {
        * @example 1000
        */
       totalCount: number;
-      items: ({
-          /**
-           * @description 그룹관리코드 노출명
-           * @example
-           */
-          groupManagementCodeName: string;
-          /**
-           * @description 추가할인 최소 기준금액
-           * @example 1000
-           */
-          minSalePrice: number;
-          /**
-           * @description 그룹관리코드
-           * @example
-           */
-          groupManagementCode: string;
-          /**
-           * @description 좋아요 수
-           * @example 10
-           */
-          likeCount: number;
-          /**
-           * @description 장바구니 사용 여부
-           * @example true
-           */
-          canAddToCart: boolean;
-          /**
-           * @description 총 리뷰 수
-           * @example 8
-           */
-          totalReviewCount: number;
-          /**
-           * @description 상품평 평균점
-           * @example 4.8
-           */
-          reviewRating: number;
-          /**
-           * @description 좋아요 여부
-           * @example false
-           */
-          liked: boolean;
-          /**
-           * @description 상품명
-           * @example "상품명"
-           */
-          productName: string;
-          /**
-           * @description 최대 쿠폰 적용 가격(default: 0)
-           * @example 0
-           */
-          couponDiscountAmt: number;
-          /**
-           * @description 추가상품할인가
-           * @example 1000
-           */
-          additionDiscountAmt: number;
-          /** @description 상품 이미지 정보 */
-          imageUrlInfo: ({
-              /**
-               * @description 상품 이미지 url 타입
-               * @example "IMAGE_URL"
-               * @enum {string}
-               */
-              type: "IMAGE_URL" | "VIDEO_URL";
-              /**
-               * @description 상품 이미지 url
-               * @example "//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"
-               */
-              url: string;
-            })[];
-          /**
-           * @description 브랜드 번호
-           * @example 10
-           */
-          brandNo: number;
-          /**
-           * @description 메인 베스트 상품 여부 - deprecated(더 이상 제공하지 않는 개체항목입니다)
-           * @example false
-           */
-          mainBestProductYn: boolean;
-          /**
-           * @description 브랜드 명
-           * @example "더미 브랜드"
-           */
-          brandName: string;
-          /**
-           * @description 리스트 이미지 URL
-           * @example [["//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"]]
-           */
-          listImageUrls: string[];
-          /**
-           * @description 즉시할인가
-           * @example 1000
-           */
-          immediateDiscountAmt: number;
-          /**
-           * @description 스티커 라벨(배열)
-           * @example ["스티커라벨"]
-           */
-          stickerLabels: string[];
-          /** @description 쿠폰여부 */
-          hasCoupons: {
-            /**
-             * @description 상품쿠폰 태그
-             * @example false
-             */
-            product: boolean;
-            /**
-             * @description 파트너쿠폰 태그
-             * @example false
-             */
-            partner: boolean;
-            /**
-             * @description 기획전쿠폰 태그
-             * @example false
-             */
-            event: boolean;
-            /**
-             * @description 카테고리쿠폰 태그
-             * @example false
-             */
-            category: boolean;
-            /**
-             * @description 브랜드쿠폰 태그
-             * @example false
-             */
-            brand: boolean;
-          };
-          /**
-           * @description 즉시할인 타입
-           * @example "WON"
-           * @enum {string}
-           */
-          immediateDiscountUnitType: "WON" | "RATE";
-          /**
-           * @description 추가상품할인 타입
-           * @example "WON"
-           * @enum {string}
-           */
-          additionDiscountUnitType: "WON" | "RATE";
-          /**
-           * @description 전시 여부
-           * @example true
-           */
-          frontDisplayYn: boolean;
-          /**
-           * @description 판매 수량 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
-           * @example 1000
-           */
-          saleCnt: number;
-          /** @description 상품 항목 추가 정보 */
-          customProperties: {
-              /**
-               * @description 항목 복수선택여부 (true: 복수개 선택가능, false: 1개만 선택가능)
-               * @example false
-               */
-              isMultipleSelection: boolean;
-              /** @description 상품 항목 값 번호 */
-              propValueNo: number;
-              /**
-               * @description 상품 항목 값
-               * @example "2015"
-               */
-              propValue: string;
-              /**
-               * @description 상품 항목명
-               * @example "시즌"
-               */
-              propName: string;
-              /** @description 상품 항목명 번호 */
-              propNo: number;
-            }[];
-          /**
-           * @description 판매시작일시
-           * @example "2024-01-04 16:11:07"
-           */
-          saleStartYmdt: string;
-          /**
-           * @description 브랜드 한글 명
-           * @example "dummy korean brand"
-           */
-          brandNameKo: string;
-          /** @description 상품섹션에서 설정한 종료일 - deprecated(더 이상 제공하지 않는 개체항목입니다) */
-          sectionProductEndYmdt: string;
-          /**
-           * @description 품절여부 (true-품절O, false-품절X)
-           * @example false
-           */
-          isSoldOut: boolean;
-          /**
-           * @description 성인 상품 여부
-           * @example false
-           */
-          adult: boolean;
-          /** @description 상품 조합형 옵션정보 ( 옵션명은 | 라인으로 구분 ) */
-          optionValues: {
-              /**
-               * @description 옵션명
-               * @example "레드"
-               */
-              optionValue: string;
-              /**
-               * @description 재고 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
-               * @example 100
-               */
-              stockCnt: number;
-              /**
-               * @description 상품번호
-               * @example 10000001
-               */
-              mallProductNo: number;
-            }[];
-          /**
-           * @description 전시카테고리 번호 정보
-           * @example "26916"
-           */
-          displayCategoryNos: string;
-          /**
-           * @description 판매자 관리코드
-           * @example "PRDC10001"
-           */
-          productManagementCd: string;
-          /** @description 예약판매정보 */
-          reservationData: {
-            /**
-             * @description 예약판매 배송시작일
-             * @example "2023-12-04 16:11:07"
-             */
-            reservationDeliveryYmdt: string;
-            /**
-             * @description 예약판매 재고수량 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
-             * @example 5
-             */
-            reservationStockCnt: number;
-            /**
-             * @description 예약판매 종료일
-             * @example "2023-11-04 16:11:07"
-             */
-            reservationEndYmdt: string;
-            /**
-             * @description 예약판매 시작일
-             * @example "2023-10-04 16:11:07"
-             */
-            reservationStartYmdt: string;
-          };
-          /**
-           * @description 배송비 타입
-           * @example "CONDITIONAL"
-           * @enum {string}
-           */
-          deliveryConditionType: "FREE" | "CONDITIONAL" | "FIXED_FEE" | "QUANTITY_PROPOSITIONAL_FEE" | "PRICE_FEE" | "QUANTITY_FEE";
-          /** @description 상품섹션에서 설정한 시작일 - deprecated(더 이상 제공하지 않는 개체항목입니다) */
-          sectionProductStartYmdt: string;
-          /**
-           * @description 적립금
-           * @example 0
-           */
-          accumulationAmtWhenBuyConfirm: number;
-          /** @description 배송비 조건 */
-          deliveryConditionInfo: {
-            /**
-             * @description 배송비 요약
-             * @example "배송비 요약"
-             */
-            summary: string;
-            /**
-             * @description 수량 비례 조건에서 수량 (nullable)
-             * @example 2
-             */
-            perOrderCnt?: number;
-            /**
-             * @description 무료배송을 위한 최소 금액 (nullable)
-             * @example 30000
-             */
-            criteria?: number;
-            /** @description 차등 조건 구간 (nullable) */
-            deliveryFeeRanges?: {
-                /**
-                 * @description 해당 구간에서의 배송비
-                 * @example 5000
-                 */
-                deliveryAmt: number;
-                /**
-                 * @description ~미만 (nullable)
-                 * @example 20000
-                 */
-                below?: number;
-                /**
-                 * @description ~이상 (nullable)
-                 * @example 10000
-                 */
-                aboveOrEqual?: number;
-              }[];
-            /** @description 차등 조건 구간 요약 (nullable) */
-            rangeSummaries?: (Record<string, never> | boolean | string | number)[];
-          };
-          /**
-           * @description 브랜드명 타입 (NAME_KO: Korean, NAME_EN: English, NONE: none)
-           * @example "NAME_KO"
-           */
-          brandNameType: string;
-          /** @description 쿠폰 태그 - deprecated(더 이상 제공하지 않는 개체항목입니다) */
-          couponTag: string;
-          /**
-           * @description 최대 쿠폰 적용 가격(default: 0)
-           * @example 0
-           */
-          maxCouponAmt: number;
-          /**
-           * @description 상품의 상품 노출 타입
-           * @example "PERIOD"
-           * @enum {string}
-           */
-          productSalePeriodType: "REGULAR" | "PERIOD";
-          /**
-           * @description 추가할인 정률 최대 할인 금액
-           * @example 0
-           */
-          maxDiscountAmount: number;
-          /**
-           * @description 사용가능쿠폰 존재 여부
-           * @example false
-           */
-          enableCoupons: boolean;
-          /**
-           * @description 상품유형
-           * @example "DEFAULT"
-           * @enum {string}
-           */
-          productType: "DEFAULT" | "EVENT" | "OFFLINE" | "RENTAL";
-          /**
-           * @description 상품번호
-           * @example 10000001
-           */
-          productNo: number;
-          /**
-           * @description 상품 유효기간 (nullable)
-           * @example "2023-12-31"
-           */
-          expirationDate?: string;
-          /**
-           * @description 상품 등록일
-           * @example "2023-11-04 16:11:07"
-           */
-          registerYmdt: string;
-          /**
-           * @description 상품판매가
-           * @example 10000
-           */
-          salePrice: number;
-          /**
-           * @description 파트너명
-           * @example "다팔아"
-           */
-          partnerName: string;
-          /**
-           * @description 즉시할인 시작일자
-           * @example "2024-01-04 16:11:07"
-           */
-          immediateDiscountStartYmdt: string;
-          /**
-           * @description 상품조회화면 노출 여부
-           * @example false
-           */
-          urlDirectDisplayYn: boolean;
-          /**
-           * @description 판매중지 시 가격대체문구
-           * @example "잠시 판매중지 중입니다."
-           */
-          contentsIfPausing: string;
-          /**
-           * @description 판매종료일시
-           * @example "2026-01-04 16:11:07"
-           */
-          saleEndYmdt: string;
-          /** @description 판매기간유형 - deprecated(더 이상 제공하지 않는 개체항목입니다) */
-          salePeriodType: string;
-          /**
-           * @description 추가할인 최대 기준금액
-           * @example 100000
-           */
-          maxSalePrice: number;
-          /**
-           * @description 홍보문구
-           * @example "홍보문구"
-           */
-          promotionText: string;
-          /** @description 스티커 정보 */
-          stickerInfos: ({
-              /**
-               * @description 스티커 이름
-               * @example "스티커라벨"
-               */
-              name: string;
-              /**
-               * @description 스티커 라벨
-               * @example "스티커라벨"
-               */
-              label: string;
-              /**
-               * @description 스티커 타입
-               * @example "TEXT"
-               * @enum {string}
-               */
-              type: "TEXT" | "IMAGE";
-            })[];
-          /** @description 상품 리스트 이미지 정보 */
-          listImageUrlInfo: ({
-              /**
-               * @description 상품 리스트 이미지 url 타입
-               * @example "IMAGE_URL"
-               * @enum {string}
-               */
-              type: "IMAGE_URL" | "VIDEO_URL";
-              /**
-               * @description 상품 리스트 이미지 url
-               * @example "//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"
-               */
-              url: string;
-            })[];
-          /**
-           * @description HS CODE
-           * @example "HSCODE"
-           */
-          hsCode: string;
-          /**
-           * @description 즉시할인 종료일자
-           * @example "2024-02-04 16:11:07"
-           */
-          immediateDiscountEndYmdt: string;
-          /**
-           * @description 상품 이미지 URL
-           * @example ["//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"]
-           */
-          imageUrls: string[];
-          /**
-           * @description 브랜드 영문 명
-           * @example "dummy brand"
-           */
-          brandNameEn: string;
-          /** @description 적립금 정보 */
-          accumulationInfo: {
-            /**
-             * @description 회원등급적립률
-             * @example 0
-             */
-            rewardRateOfMemberBenefit: number;
-            /**
-             * @description 적립금
-             * @example 0
-             */
-            amount: number;
-            /**
-             * @description 상품개별적립률
-             * @example 0
-             */
-            rewardRateOfProduct: number;
-          };
-          /**
-           * @description 대표 옵션 재고 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
-           * @example 50
-           */
-          mainStockCnt: number;
-          /**
-           * @description 영문 상품명
-           * @example "상품명"
-           */
-          productNameEn: string;
-          /** @description 검색상품번호 - deprecated(더 이상 제공하지 않는 개체항목입니다) */
-          searchProductId: string;
-          /**
-           * @description 재고 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
-           * @example 100
-           */
-          stockCnt: number;
-          /**
-           * @description 판매상태
-           * @example "ONSALE"
-           * @enum {string}
-           */
-          saleStatusType: "READY" | "ONSALE" | "FINISHED" | "STOP" | "PROHIBITION";
-        })[];
-    };
-    "products-shipping-info-448668919": ({
-        /**
-         * @description 배송 불가 국가 정보
-         * @example "[\"KR\", \"CN\"]"
-         */
-        undeliverableCountries: (Record<string, never> | boolean | string | number)[];
-        /** @description 배송 정보 */
-        deliveryFee: {
-          /**
-           * @description 배송비타입
-           * @example "CONDITIONAL"
-           * @enum {string}
-           */
-          deliveryConditionType: "FREE" | "CONDITIONAL" | "FIXED_FEE" | "QUANTITY_PROPOSITIONAL_FEE" | "PRICE_FEE" | "QUANTITY_FEE";
-          /** @description 조건부 배송비의 기준값(9,800원 이상인경우 배송비 2,500원일때 aboveDeliveryAmt는 9800 */
-          aboveDeliveryAmt: number;
-          /**
-           * @description 택배사명
-           * @example
-           * @enum {string}
-           */
-          deliveryCompanyTypeLabel: "CJ" | "POST" | "HANJIN" | "GTX" | "LOTTE" | "KGB" | "LOGEN" | "CJHBL" | "GSI" | "KGL" | "INTRAS" | "UPS" | "CHUNIL" | "KDEXP" | "HDEXP" | "ILYANG" | "POST_EMS" | "KYOUNGDONG" | "DAESIN" | "CVS" | "DHL" | "FEDEX" | "GSM" | "WARPEX" | "WIZWA" | "ACI" | "PANTOS" | "CJ_INTERNATIONAL" | "TNT" | "CU" | "KUNYOUNG" | "LOTTE_INTERNATIONAL" | "HONAM" | "HANIPS" | "IPARCEL" | "SLX" | "USPS" | "WONDERS" | "REGISTPOST" | "DHLDE" | "EZUSA" | "SWGEXP" | "DAEWOON" | "DODOFLEX" | "NH_LOGIS" | "UFO" | "TODAY_PICKUP" | "QEXPRESS" | "PINGPONG" | "ETC";
-          /**
-           * @description 배송유형
-           * @example "PARCEL_DELIVERY"
-           * @enum {string}
-           */
-          deliveryType: "PARCEL_DELIVERY" | "DIRECT_DELIVERY";
-          /**
-           * @description 택배사
-           * @example
-           * @enum {string}
-           */
-          deliveryCompanyType: "CJ" | "POST" | "HANJIN" | "GTX" | "LOTTE" | "KGB" | "LOGEN" | "CJHBL" | "GSI" | "KGL" | "INTRAS" | "UPS" | "CHUNIL" | "KDEXP" | "HDEXP" | "ILYANG" | "POST_EMS" | "KYOUNGDONG" | "DAESIN" | "CVS" | "DHL" | "FEDEX" | "GSM" | "WARPEX" | "WIZWA" | "ACI" | "PANTOS" | "CJ_INTERNATIONAL" | "TNT" | "CU" | "KUNYOUNG" | "LOTTE_INTERNATIONAL" | "HONAM" | "HANIPS" | "IPARCEL" | "SLX" | "USPS" | "WONDERS" | "REGISTPOST" | "DHLDE" | "EZUSA" | "SWGEXP" | "DAEWOON" | "DODOFLEX" | "NH_LOGIS" | "UFO" | "TODAY_PICKUP" | "QEXPRESS" | "PINGPONG" | "ETC";
-          /**
-           * @description 배송비템플릿 요약
-           * @example
-           */
-          defaultDeliveryConditionLabel: string;
-          /** @description 지역별 추가 배송비 상세 */
-          remoteDeliveryAreaFees: {
-              /**
-               * @description 추가 배송비 지역
-               * @example "제주도"
-               */
-              address: string;
-              /** @description 추가배송비 */
-              extraDeliveryAmt: number;
-            }[];
-          /**
-           * @description 구간 배송비인경우 배송비에대한 요약
-           * @example []
-           */
-          deliveryAmtLabels: string[];
-          /**
-           * @description 배송비 (고정배송비, 조건부 배송비인 경우)
-           * @example 10
-           */
-          deliveryAmt: number;
-          /**
-           * @description 배송비 선/착불 여부 (기본값 true, 배송비 유형이 무료인 것에 대해서 값이 무엇이든 상관없음)
-           * @example false
-           */
-          deliveryPrePayment: boolean;
-          /** @description 배송비조건 상세 */
-          deliveryConditionDetails: {
-              /** @description 배송비 */
-              deliveryAmt: number;
-              /** @description 가격 미만 */
-              below: number;
-              /** @description 가격 이상 */
-              aboveOrEqual: number;
-            }[];
-          /** @description 수량 비례인 경우 개당 개수 (2개당 배송비 2,500원인 경우 perOrderCnt는 2 */
-          perOrderCnt: number;
-          /** @description 판매자 특이사항/고객안내사항 */
-          deliveryCustomerInfo: string;
-          /**
-           * @description 반품배송비
-           * @example 0
-           */
-          returnDeliveryAmt: number;
-          /** @description 반품/교환지 */
-          returnWarehouse: {
-            /**
-             * @description 해외창고 국가 구분
-             * @example "ADDRESS"
-             * @enum {string}
-             */
-            warehouseAddressType: "ADDRESS" | "SUBSTITUTION";
-            /**
-             * @description 해당 반품지 파트너 번호
-             * @example 1
-             */
-            partnerNo: number;
-            /**
-             * @description 주소
-             * @example "경기도 용인시 기흥구 청덕동 50 11 110호"
-             */
-            addressStr: string;
-            /**
-             * @description 해당 반품지 주소
-             * @example "경기도 용인시 기흥구 청덕동 50"
-             */
-            address: string;
-            /**
-             * @description 기본출고지 Y/N
-             * @example "Y"
-             */
-            defaultReleaseWarehouseYn: string;
-            /**
-             * @description 국가코드
-             * @example "KR"
-             */
-            countryCd: string;
-            /**
-             * @description 기본반품지 Y/N
-             * @example "Y"
-             */
-            defaultReturnWarehouseYn: string;
-            /**
-             * @description 해당 반품지 상세주소
-             * @example "110호"
-             */
-            detailAddress: string;
-            /**
-             * @description 우편번호
-             * @example "12345"
-             */
-            zipCd: string;
-            /**
-             * @description 반품/교환지 이름
-             * @example "1번 배송지"
-             */
-            warehouseName: string;
-            /**
-             * @description 반품/교환지 번호
-             * @example 1
-             */
-            warehouseNo: number;
-          };
-        };
-        /** @description 배송 관련 정보 */
-        shippingInfo: {
-          /** @description 배송 설정 */
-          shippingConfig: {
-            /**
-             * @description 배송 템플릿 번호
-             * @example 7711
-             */
-            templateNo: number;
-            /**
-             * @description 배송지 파트너 번호
-             * @example 2856
-             */
-            shippingAreaPartnerNo: number;
-            /**
-             * @description 출고 유형(배송 구분)
-             * @example "MALL_SHIPPING_AREA"
-             * @enum {string}
-             */
-            shippingAreaType: "PARTNER_SHIPPING_AREA" | "MALL_SHIPPING_AREA";
-            /**
-             * @description 해외 배송 여부 (true: 해외 배송, false:국내 배송)
-             * @example false
-             */
-            internationalShippingAvailable: boolean;
-            /**
-             * @description 묶음배송 가능여부 (true: 묶음 배송 가능, false: 묶음 배송 불가능)
-             * @example false
-             */
-            combinable: boolean;
-          };
-          /**
-           * @description 배송 가능 여부
-           * @example false
-           */
-          shippingAvailable: boolean;
-        };
-        /**
-         * @description 상품번호
-         * @example 10000001
-         */
-        productNo: number;
-      })[];
-    "profile-recent-products-524943492": {
-      /**
-       * @description 상품 번호
-       * @example 1000
-       */
-      productNo: number;
-    };
-    "profile-like-products--2041423781": {
-      items: ({
-          /**
-           * @description 좋아요 설정/해제(Y: 설정, N: 해제)
-           * @example "Y"
-           * @enum {string}
-           */
-          like: "Y" | "N";
-          /**
-           * @description 상품 번호
-           * @example 100000
-           */
-          productNo: number;
-        })[];
-    };
-    "products-best-review-search-1614480433": {
-      /**
-       * @description 페이지 수
-       * @example 100
-       */
-      pageCount: number;
-      /**
-       * @description
-       *  재고 노출 여부 (false:재고 미노출 / true:재고 노출)<br><br>
-       *  false로 재고를 숨김처리 한 경우,
-       *  1) 재고 관련 필드는(실제 재고가 있더라도) -999로 고정으로 리턴하며 실재고 값은 따로 내려주지 않아 조회 불가합니다.
-       *  2) 실재고가 0인 경우에만 0으로 응답합니다.
-       *    만약 재고 숨김처리 시, front에서 [-999]로 표시되도록 처리되고 있는게 있다면 재고노출여부(displayableStock)를 기준으로 수정 작업이 필요합니다.
-       *    만약 재고 숨김처리 시, front에서 [품절]로 표시되도록 처리되고 있는게 있다면 재고/예약재고값을 기준이 아닌, 품절상태(isSoldOut)값을 기준으로 처리되도록 수정 작업이 필요합니다.
-       *
-       * @example false
-       */
-      displayableStock: boolean;
-      /**
-       * @description 총 개수
-       * @example 1000
-       */
-      totalCount: number;
-      items: ({
-          /**
-           * @description 그룹관리코드 노출명
-           * @example
-           */
-          groupManagementCodeName: string;
-          /**
-           * @description 리뷰 번호
-           * @example 3
-           */
-          recentReviewNo: number;
-          /**
-           * @description 추가할인 최소 기준금액
-           * @example 1000
-           */
-          minSalePrice: number;
-          /**
-           * @description 그룹관리코드
-           * @example
-           */
-          groupManagementCode: string;
-          /**
-           * @description 좋아요 수
-           * @example 10
-           */
-          likeCount: number;
-          /**
-           * @description 장바구니 사용 여부
-           * @example true
-           */
-          canAddToCart: boolean;
-          /**
-           * @description 총 리뷰 수
-           * @example 8
-           */
-          totalReviewCount: number;
-          /**
-           * @description 상품평 평균점
-           * @example 4.8
-           */
-          reviewRating: number;
-          /**
-           * @description 리뷰 수
-           * @example 20
-           */
-          recentReviewCnt: number;
-          /**
-           * @description 좋아요 여부
-           * @example false
-           */
-          liked: boolean;
-          /**
-           * @description 상품명
-           * @example "상품명"
-           */
-          productName: string;
-          /**
-           * @description 리뷰 평균점
-           * @example 0
-           */
-          recentReviewRating: number;
-          /**
-           * @description 최대 쿠폰 적용 가격(default: 0)
-           * @example 0
-           */
-          couponDiscountAmt: number;
-          /**
-           * @description 리뷰 내용
-           * @example "리뷰 내용"
-           */
-          reviewContent: string;
-          /**
-           * @description 추가상품할인가
-           * @example 1000
-           */
-          additionDiscountAmt: number;
-          /** @description 상품 이미지 정보 */
-          imageUrlInfo: ({
-              /**
-               * @description 상품 이미지 url 타입
-               * @example "IMAGE_URL"
-               * @enum {string}
-               */
-              type: "IMAGE_URL" | "VIDEO_URL";
-              /**
-               * @description 상품 이미지 url
-               * @example "//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"
-               */
-              url: string;
-            })[];
-          /**
-           * @description 브랜드 번호
-           * @example 10
-           */
-          brandNo: number;
-          /**
-           * @description 브랜드 명
-           * @example "더미 브랜드"
-           */
-          brandName: string;
-          /**
-           * @description 리스트 이미지 URL
-           * @example [["//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"]]
-           */
-          listImageUrls: string[];
-          /**
-           * @description 즉시할인가
-           * @example 1000
-           */
-          immediateDiscountAmt: number;
-          /**
-           * @description 스티커 라벨(배열)
-           * @example ["스티커라벨"]
-           */
-          stickerLabels: string[];
-          /** @description 쿠폰여부 */
-          hasCoupons: {
-            /**
-             * @description 상품쿠폰 태그
-             * @example false
-             */
-            product: boolean;
-            /**
-             * @description 파트너쿠폰 태그
-             * @example false
-             */
-            partner: boolean;
-            /**
-             * @description 기획전쿠폰 태그
-             * @example false
-             */
-            event: boolean;
-            /**
-             * @description 카테고리쿠폰 태그
-             * @example false
-             */
-            category: boolean;
-            /**
-             * @description 브랜드쿠폰 태그
-             * @example false
-             */
-            brand: boolean;
-          };
-          /**
-           * @description 즉시할인 타입
-           * @example "WON"
-           * @enum {string}
-           */
-          immediateDiscountUnitType: "WON" | "RATE";
-          /**
-           * @description 추가상품할인 타입
-           * @example "WON"
-           * @enum {string}
-           */
-          additionDiscountUnitType: "WON" | "RATE";
-          /**
-           * @description 전시 여부
-           * @example true
-           */
-          frontDisplayYn: boolean;
-          /**
-           * @description 판매 수량 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
-           * @example 1000
-           */
-          saleCnt: number;
-          /** @description 상품 항목 추가 정보 */
-          customProperties: {
-              /**
-               * @description 항목 복수선택여부 (true: 복수개 선택가능, false: 1개만 선택가능)
-               * @example false
-               */
-              isMultipleSelection: boolean;
-              /** @description 상품 항목 값 번호 */
-              propValueNo: number;
-              /**
-               * @description 상품 항목 값
-               * @example "2015"
-               */
-              propValue: string;
-              /**
-               * @description 상품 항목명
-               * @example "시즌"
-               */
-              propName: string;
-              /** @description 상품 항목명 번호 */
-              propNo: number;
-            }[];
-          /**
-           * @description 판매시작일시
-           * @example "2024-01-04 16:11:08"
-           */
-          saleStartYmdt: string;
-          /**
-           * @description 브랜드 한글 명
-           * @example "dummy korean brand"
-           */
-          brandNameKo: string;
-          /**
-           * @description 품절여부 (true-품절O, false-품절X)
-           * @example false
-           */
-          isSoldOut: boolean;
-          /**
-           * @description 성인 상품 여부
-           * @example false
-           */
-          adult: boolean;
-          /** @description 상품 조합형 옵션정보 ( 옵션명은 | 라인으로 구분 ) */
-          optionValues: {
-              /**
-               * @description 옵션명
-               * @example "레드"
-               */
-              optionValue: string;
-              /**
-               * @description 재고 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
-               * @example 100
-               */
-              stockCnt: number;
-              /**
-               * @description 상품번호
-               * @example 10000001
-               */
-              mallProductNo: number;
-            }[];
-          /**
-           * @description 전시카테고리 번호 정보
-           * @example "26916"
-           */
-          displayCategoryNos: string;
-          /**
-           * @description 판매자 관리코드
-           * @example "PRDC10001"
-           */
-          productManagementCd: string;
-          /** @description 예약판매정보 */
-          reservationData: {
-            /**
-             * @description 예약판매 배송시작일
-             * @example "2023-12-04 16:11:08"
-             */
-            reservationDeliveryYmdt: string;
-            /**
-             * @description 예약판매 재고수량 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
-             * @example 5
-             */
-            reservationStockCnt: number;
-            /**
-             * @description 예약판매 종료일
-             * @example "2023-11-04 16:11:08"
-             */
-            reservationEndYmdt: string;
-            /**
-             * @description 예약판매 시작일
-             * @example "2023-10-04 16:11:08"
-             */
-            reservationStartYmdt: string;
-          };
-          /**
-           * @description 배송비 타입
-           * @example "CONDITIONAL"
-           * @enum {string}
-           */
-          deliveryConditionType: "FREE" | "CONDITIONAL" | "FIXED_FEE" | "QUANTITY_PROPOSITIONAL_FEE" | "PRICE_FEE" | "QUANTITY_FEE";
-          /**
-           * @description 적립금
-           * @example 0
-           */
-          accumulationAmtWhenBuyConfirm: number;
-          /** @description 배송비 조건 */
-          deliveryConditionInfo: {
-            /**
-             * @description 배송비 요약
-             * @example "배송비 요약"
-             */
-            summary: string;
-            /**
-             * @description 수량 비례 조건에서 수량 (nullable)
-             * @example 2
-             */
-            perOrderCnt?: number;
-            /**
-             * @description 무료배송을 위한 최소 금액 (nullable)
-             * @example 30000
-             */
-            criteria?: number;
-            /** @description 차등 조건 구간 (nullable) */
-            deliveryFeeRanges?: {
-                /**
-                 * @description 해당 구간에서의 배송비
-                 * @example 5000
-                 */
-                deliveryAmt: number;
-                /**
-                 * @description ~미만 (nullable)
-                 * @example 20000
-                 */
-                below?: number;
-                /**
-                 * @description ~이상 (nullable)
-                 * @example 10000
-                 */
-                aboveOrEqual?: number;
-              }[];
-            /** @description 차등 조건 구간 요약 (nullable) */
-            rangeSummaries?: (Record<string, never> | boolean | string | number)[];
-          };
-          /**
-           * @description 브랜드명 타입 (NAME_KO: Korean, NAME_EN: English, NONE: none)
-           * @example "NAME_KO"
-           */
-          brandNameType: string;
-          /**
-           * @description 최대 쿠폰 적용 가격(default: 0)
-           * @example 0
-           */
-          maxCouponAmt: number;
-          /**
-           * @description 상품의 상품 노출 타입
-           * @example "REGULAR"
-           * @enum {string}
-           */
-          productSalePeriodType: "REGULAR" | "PERIOD";
-          /**
-           * @description 추가할인 정률 최대 할인 금액
-           * @example 0
-           */
-          maxDiscountAmount: number;
-          /**
-           * @description 사용가능쿠폰 존재 여부
-           * @example false
-           */
-          enableCoupons: boolean;
-          /**
-           * @description 상품유형
-           * @example "DEFAULT"
-           * @enum {string}
-           */
-          productType: "DEFAULT" | "EVENT" | "OFFLINE" | "RENTAL";
-          /**
-           * @description 상품번호
-           * @example 10000001
-           */
-          productNo: number;
-          /**
-           * @description 상품 유효기간 (nullable)
-           * @example "2023-12-31"
-           */
-          expirationDate?: string;
-          /**
-           * @description 상품 등록일
-           * @example "2023-11-04 16:11:08"
-           */
-          registerYmdt: string;
-          /**
-           * @description 상품판매가
-           * @example 10000
-           */
-          salePrice: number;
-          /**
-           * @description 파트너명
-           * @example "다팔아"
-           */
-          partnerName: string;
-          /**
-           * @description 즉시할인 시작일자
-           * @example "2024-01-04 16:11:08"
-           */
-          immediateDiscountStartYmdt: string;
-          /**
-           * @description 상품조회화면 노출 여부
-           * @example false
-           */
-          urlDirectDisplayYn: boolean;
-          /**
-           * @description 판매중지 시 가격대체문구
-           * @example "잠시 판매중지 중입니다."
-           */
-          contentsIfPausing: string;
-          /**
-           * @description 판매종료일시
-           * @example "2026-01-04 16:11:08"
-           */
-          saleEndYmdt: string;
-          /**
-           * @description 추가할인 최대 기준금액
-           * @example 100000
-           */
-          maxSalePrice: number;
-          /**
-           * @description 홍보문구
-           * @example "홍보문구"
-           */
-          promotionText: string;
-          /** @description 스티커 정보 */
-          stickerInfos: ({
-              /**
-               * @description 스티커 이름
-               * @example "스티커라벨"
-               */
-              name: string;
-              /**
-               * @description 스티커 라벨
-               * @example "스티커라벨"
-               */
-              label: string;
-              /**
-               * @description 스티커 타입
-               * @example "TEXT"
-               * @enum {string}
-               */
-              type: "TEXT" | "IMAGE";
-            })[];
-          /** @description 상품 리스트 이미지 정보 */
-          listImageUrlInfo: ({
-              /**
-               * @description 상품 리스트 이미지 url 타입
-               * @example "IMAGE_URL"
-               * @enum {string}
-               */
-              type: "IMAGE_URL" | "VIDEO_URL";
-              /**
-               * @description 상품 리스트 이미지 url
-               * @example "//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"
-               */
-              url: string;
-            })[];
-          /**
-           * @description HS CODE
-           * @example "HSCODE"
-           */
-          hsCode: string;
-          /**
-           * @description 즉시할인 종료일자
-           * @example "2024-02-04 16:11:08"
-           */
-          immediateDiscountEndYmdt: string;
-          /**
-           * @description 상품 이미지 URL
-           * @example ["//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"]
-           */
-          imageUrls: string[];
-          /**
-           * @description 브랜드 영문 명
-           * @example "dummy brand"
-           */
-          brandNameEn: string;
-          /** @description 적립금 정보 */
-          accumulationInfo: {
-            /**
-             * @description 회원등급적립률
-             * @example 0
-             */
-            rewardRateOfMemberBenefit: number;
-            /**
-             * @description 적립금
-             * @example 0
-             */
-            amount: number;
-            /**
-             * @description 상품개별적립률
-             * @example 0
-             */
-            rewardRateOfProduct: number;
-          };
-          /**
-           * @description 대표 옵션 재고 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
-           * @example 50
-           */
-          mainStockCnt: number;
-          /**
-           * @description 영문 상품명
-           * @example "상품명"
-           */
-          productNameEn: string;
-          /**
-           * @description 재고 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
-           * @example 100
-           */
-          stockCnt: number;
-          /**
-           * @description 판매상태
-           * @example "ONSALE"
-           * @enum {string}
-           */
-          saleStatusType: "READY" | "ONSALE" | "FINISHED" | "STOP" | "PROHIBITION";
-        })[];
-    };
-    "products-productNo-display-categories-1677654964": {
-        /**
-         * @description 마지막 전시카테고리 이름 (항상 최하위 뎁스 카테고리 정보와 매칭됩니다. 예시, depth2까지 밖에 없는 경우 - depth2의 전시카테고리 이름과 매칭, depth3,4는 blank))
-         * @example "중형인형"
-         */
-        depth5Name: string;
-        /**
-         * @description 첫번쩨 전시카테고리 번호
-         * @example 26752
-         */
-        depth1No: number;
-        /**
-         * @description 전시카테고리 전체 이름
-         * @example "토이>중형인형"
-         */
-        fullCategoryName: string;
-        /**
-         * @description 세번째 전시카테고리 이름
-         * @example ""
-         */
-        depth3Name: string;
-        /**
-         * @description 두번째 전시카테고리 이름
-         * @example "중형인형"
-         */
-        depth2Name: string;
-        /**
-         * @description 네번째 전시카테고리 이름
-         * @example ""
-         */
-        depth4Name: string;
-        /**
-         * @description 두번째 전시카테고리 번호
-         * @example 26763
-         */
-        depth2No: number;
-        /**
-         * @description 첫번째 전시카테고리 이름
-         * @example "토이"
-         */
-        depth1Name: string;
-        /**
-         * @description 세번째 전시카테고리 번호
-         * @example 0
-         */
-        depth3No: number;
-        /**
-         * @description 네번째 전시카테고리 번호
-         * @example 0
-         */
-        depth4No: number;
-        /**
-         * @description 마지막 뎁스의 전시카테고리 번호 (항상 최하위 뎁스 카테고리 정보와 매칭됩니다. 예시, depth2까지 밖에 없는 경우 - depth2의 전시카테고리 번호와 매칭, depth3,4는 0)
-         * @example 26763
-         */
-        depth5No: number;
-      }[];
-    "display-brands-extraInfo1641009473": {
-        /**
-         * @description 전시 브랜드 번호
-         * @example 1
-         */
-        displayBrandNo: number;
-        /**
-         * @description 추가 정보
-         * @example "추가 정보"
-         */
-        extraInfo: string;
-      }[];
-    "profile-recent-products-1008217100": ({
+      items: {
         /**
          * @description 그룹관리코드 노출명
-         * @example "CODE NAME"
+         * @example
          */
         groupManagementCodeName: string;
         /**
@@ -2656,7 +1385,7 @@ export interface components {
         minSalePrice: number;
         /**
          * @description 그룹관리코드
-         * @example "CODE"
+         * @example
          */
         groupManagementCode: string;
         /**
@@ -2691,7 +1420,7 @@ export interface components {
         productName: string;
         /**
          * @description 최대 쿠폰 적용 가격(default: 0)
-         * @example 1000
+         * @example 0
          */
         couponDiscountAmt: number;
         /**
@@ -2700,26 +1429,26 @@ export interface components {
          */
         additionDiscountAmt: number;
         /** @description 상품 이미지 정보 */
-        imageUrlInfo: ({
-            /**
-             * @description 상품 이미지 url 타입
-             * @example "IMAGE_URL"
-             * @enum {string}
-             */
-            type: "IMAGE_URL" | "VIDEO_URL";
-            /**
-             * @description 상품 이미지 url
-             * @example "//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"
-             */
-            url: string;
-          })[];
+        imageUrlInfo: {
+          /**
+           * @description 상품 이미지 url 타입
+           * @example "IMAGE_URL"
+           * @enum {string}
+           */
+          type: 'IMAGE_URL' | 'VIDEO_URL';
+          /**
+           * @description 상품 이미지 url
+           * @example "//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"
+           */
+          url: string;
+        }[];
         /**
          * @description 브랜드 번호
          * @example 10
          */
         brandNo: number;
         /**
-         * @description 메인 베스트 상품 여부 deprecated(더 이상 제공하지 않는 개체항목입니다)
+         * @description 메인 베스트 상품 여부 - deprecated(더 이상 제공하지 않는 개체항목입니다)
          * @example false
          */
         mainBestProductYn: boolean;
@@ -2747,27 +1476,27 @@ export interface components {
         hasCoupons: {
           /**
            * @description 상품쿠폰 태그
-           * @example true
+           * @example false
            */
           product: boolean;
           /**
            * @description 파트너쿠폰 태그
-           * @example true
+           * @example false
            */
           partner: boolean;
           /**
            * @description 기획전쿠폰 태그
-           * @example true
+           * @example false
            */
           event: boolean;
           /**
            * @description 카테고리쿠폰 태그
-           * @example true
+           * @example false
            */
           category: boolean;
           /**
            * @description 브랜드쿠폰 태그
-           * @example true
+           * @example false
            */
           brand: boolean;
         };
@@ -2776,13 +1505,13 @@ export interface components {
          * @example "WON"
          * @enum {string}
          */
-        immediateDiscountUnitType: "WON" | "RATE";
+        immediateDiscountUnitType: 'WON' | 'RATE';
         /**
          * @description 추가상품할인 타입
          * @example "WON"
          * @enum {string}
          */
-        additionDiscountUnitType: "WON" | "RATE";
+        additionDiscountUnitType: 'WON' | 'RATE';
         /**
          * @description 전시 여부
          * @example true
@@ -2795,29 +1524,29 @@ export interface components {
         saleCnt: number;
         /** @description 상품 항목 추가 정보 */
         customProperties: {
-            /**
-             * @description 항목 복수선택여부 (true: 복수개 선택가능, false: 1개만 선택가능)
-             * @example false
-             */
-            isMultipleSelection: boolean;
-            /** @description 상품 항목 값 번호 */
-            propValueNo: number;
-            /**
-             * @description 상품 항목 값
-             * @example "2015"
-             */
-            propValue: string;
-            /**
-             * @description 상품 항목명
-             * @example "시즌"
-             */
-            propName: string;
-            /** @description 상품 항목명 번호 */
-            propNo: number;
-          }[];
+          /**
+           * @description 항목 복수선택여부 (true: 복수개 선택가능, false: 1개만 선택가능)
+           * @example false
+           */
+          isMultipleSelection: boolean;
+          /** @description 상품 항목 값 번호 */
+          propValueNo: number;
+          /**
+           * @description 상품 항목 값
+           * @example "2015"
+           */
+          propValue: string;
+          /**
+           * @description 상품 항목명
+           * @example "시즌"
+           */
+          propName: string;
+          /** @description 상품 항목명 번호 */
+          propNo: number;
+        }[];
         /**
          * @description 판매시작일시
-         * @example "2024-01-04 16:11:11"
+         * @example "2024-01-04 16:11:07"
          */
         saleStartYmdt: string;
         /**
@@ -2839,22 +1568,22 @@ export interface components {
         adult: boolean;
         /** @description 상품 조합형 옵션정보 ( 옵션명은 | 라인으로 구분 ) */
         optionValues: {
-            /**
-             * @description 옵션명
-             * @example "레드"
-             */
-            optionValue: string;
-            /**
-             * @description 재고 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
-             * @example 100
-             */
-            stockCnt: number;
-            /**
-             * @description 상품번호
-             * @example 10000001
-             */
-            mallProductNo: number;
-          }[];
+          /**
+           * @description 옵션명
+           * @example "레드"
+           */
+          optionValue: string;
+          /**
+           * @description 재고 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
+           * @example 100
+           */
+          stockCnt: number;
+          /**
+           * @description 상품번호
+           * @example 10000001
+           */
+          mallProductNo: number;
+        }[];
         /**
          * @description 전시카테고리 번호 정보
          * @example "26916"
@@ -2869,7 +1598,7 @@ export interface components {
         reservationData: {
           /**
            * @description 예약판매 배송시작일
-           * @example "2023-12-04 16:11:11"
+           * @example "2023-12-04 16:11:07"
            */
           reservationDeliveryYmdt: string;
           /**
@@ -2879,12 +1608,12 @@ export interface components {
           reservationStockCnt: number;
           /**
            * @description 예약판매 종료일
-           * @example "2023-11-04 16:11:11"
+           * @example "2023-11-04 16:11:07"
            */
           reservationEndYmdt: string;
           /**
            * @description 예약판매 시작일
-           * @example "2023-10-04 16:11:11"
+           * @example "2023-10-04 16:11:07"
            */
           reservationStartYmdt: string;
         };
@@ -2893,7 +1622,13 @@ export interface components {
          * @example "CONDITIONAL"
          * @enum {string}
          */
-        deliveryConditionType: "FREE" | "CONDITIONAL" | "FIXED_FEE" | "QUANTITY_PROPOSITIONAL_FEE" | "PRICE_FEE" | "QUANTITY_FEE";
+        deliveryConditionType:
+          | 'FREE'
+          | 'CONDITIONAL'
+          | 'FIXED_FEE'
+          | 'QUANTITY_PROPOSITIONAL_FEE'
+          | 'PRICE_FEE'
+          | 'QUANTITY_FEE';
         /** @description 상품섹션에서 설정한 시작일 - deprecated(더 이상 제공하지 않는 개체항목입니다) */
         sectionProductStartYmdt: string;
         /**
@@ -2920,56 +1655,56 @@ export interface components {
           criteria?: number;
           /** @description 차등 조건 구간 (nullable) */
           deliveryFeeRanges?: {
-              /**
-               * @description 해당 구간에서의 배송비
-               * @example 5000
-               */
-              deliveryAmt: number;
-              /**
-               * @description ~미만 (nullable)
-               * @example 20000
-               */
-              below?: number;
-              /**
-               * @description ~이상 (nullable)
-               * @example 10000
-               */
-              aboveOrEqual?: number;
-            }[];
+            /**
+             * @description 해당 구간에서의 배송비
+             * @example 5000
+             */
+            deliveryAmt: number;
+            /**
+             * @description ~미만 (nullable)
+             * @example 20000
+             */
+            below?: number;
+            /**
+             * @description ~이상 (nullable)
+             * @example 10000
+             */
+            aboveOrEqual?: number;
+          }[];
           /** @description 차등 조건 구간 요약 (nullable) */
-          rangeSummaries?: (Record<string, never> | boolean | string | number)[];
+          rangeSummaries?: (
+            | Record<string, never>
+            | boolean
+            | string
+            | number
+          )[];
         };
         /**
          * @description 브랜드명 타입 (NAME_KO: Korean, NAME_EN: English, NONE: none)
          * @example "NAME_KO"
          */
         brandNameType: string;
-        /** @description 쿠폰 태그 deprecated(더 이상 제공하지 않는 개체항목입니다) */
+        /** @description 쿠폰 태그 - deprecated(더 이상 제공하지 않는 개체항목입니다) */
         couponTag: string;
         /**
          * @description 최대 쿠폰 적용 가격(default: 0)
-         * @example 5000
+         * @example 0
          */
         maxCouponAmt: number;
         /**
          * @description 상품의 상품 노출 타입
-         * @example "REGULAR"
+         * @example "PERIOD"
          * @enum {string}
          */
-        productSalePeriodType: "REGULAR" | "PERIOD";
+        productSalePeriodType: 'REGULAR' | 'PERIOD';
         /**
          * @description 추가할인 정률 최대 할인 금액
          * @example 0
          */
         maxDiscountAmount: number;
         /**
-         * @description 최근본 상품 날짜
-         * @example
-         */
-        recentlyViewedYmdt: string;
-        /**
          * @description 사용가능쿠폰 존재 여부
-         * @example true
+         * @example false
          */
         enableCoupons: boolean;
         /**
@@ -2977,7 +1712,7 @@ export interface components {
          * @example "DEFAULT"
          * @enum {string}
          */
-        productType: "DEFAULT" | "EVENT" | "OFFLINE" | "RENTAL";
+        productType: 'DEFAULT' | 'EVENT' | 'OFFLINE' | 'RENTAL';
         /**
          * @description 상품번호
          * @example 10000001
@@ -2990,7 +1725,7 @@ export interface components {
         expirationDate?: string;
         /**
          * @description 상품 등록일
-         * @example "2023-11-04 16:11:11"
+         * @example "2023-11-04 16:11:07"
          */
         registerYmdt: string;
         /**
@@ -3005,7 +1740,7 @@ export interface components {
         partnerName: string;
         /**
          * @description 즉시할인 시작일자
-         * @example "2024-01-04 16:11:11"
+         * @example "2024-01-04 16:11:07"
          */
         immediateDiscountStartYmdt: string;
         /**
@@ -3020,14 +1755,11 @@ export interface components {
         contentsIfPausing: string;
         /**
          * @description 판매종료일시
-         * @example "2026-01-04 16:11:11"
+         * @example "2026-01-04 16:11:07"
          */
         saleEndYmdt: string;
-        /**
-         * @description 판매기간 유형 - deprecated(더 이상 제공하지 않는 개체항목입니다)
-         * @enum {string}
-         */
-        salePeriodType: "REGULAR" | "PERIOD";
+        /** @description 판매기간유형 - deprecated(더 이상 제공하지 않는 개체항목입니다) */
+        salePeriodType: string;
         /**
          * @description 추가할인 최대 기준금액
          * @example 100000
@@ -3039,38 +1771,38 @@ export interface components {
          */
         promotionText: string;
         /** @description 스티커 정보 */
-        stickerInfos: ({
-            /**
-             * @description 스티커 이름
-             * @example "스티커라벨"
-             */
-            name: string;
-            /**
-             * @description 스티커 라벨
-             * @example "스티커라벨"
-             */
-            label: string;
-            /**
-             * @description 스티커 타입
-             * @example "TEXT"
-             * @enum {string}
-             */
-            type: "TEXT" | "IMAGE";
-          })[];
+        stickerInfos: {
+          /**
+           * @description 스티커 이름
+           * @example "스티커라벨"
+           */
+          name: string;
+          /**
+           * @description 스티커 라벨
+           * @example "스티커라벨"
+           */
+          label: string;
+          /**
+           * @description 스티커 타입
+           * @example "TEXT"
+           * @enum {string}
+           */
+          type: 'TEXT' | 'IMAGE';
+        }[];
         /** @description 상품 리스트 이미지 정보 */
-        listImageUrlInfo: ({
-            /**
-             * @description 상품 리스트 이미지 url 타입
-             * @example "IMAGE_URL"
-             * @enum {string}
-             */
-            type: "IMAGE_URL" | "VIDEO_URL";
-            /**
-             * @description 상품 리스트 이미지 url
-             * @example "//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"
-             */
-            url: string;
-          })[];
+        listImageUrlInfo: {
+          /**
+           * @description 상품 리스트 이미지 url 타입
+           * @example "IMAGE_URL"
+           * @enum {string}
+           */
+          type: 'IMAGE_URL' | 'VIDEO_URL';
+          /**
+           * @description 상품 리스트 이미지 url
+           * @example "//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"
+           */
+          url: string;
+        }[];
         /**
          * @description HS CODE
          * @example "HSCODE"
@@ -3078,7 +1810,7 @@ export interface components {
         hsCode: string;
         /**
          * @description 즉시할인 종료일자
-         * @example "2024-02-04 16:11:11"
+         * @example "2024-02-04 16:11:07"
          */
         immediateDiscountEndYmdt: string;
         /**
@@ -3122,17 +1854,850 @@ export interface components {
         /** @description 검색상품번호 - deprecated(더 이상 제공하지 않는 개체항목입니다) */
         searchProductId: string;
         /**
-         * @description
-         *  재고 노출 여부 (false:재고 미노출 / true:재고 노출)<br><br>
-         *  false로 재고를 숨김처리 한 경우,
-         *  1) 재고 관련 필드는(실제 재고가 있더라도) -999로 고정으로 리턴하며 실재고 값은 따로 내려주지 않아 조회 불가합니다.
-         *  2) 실재고가 0인 경우에만 0으로 응답합니다.
-         *    만약 재고 숨김처리 시, front에서 [-999]로 표시되도록 처리되고 있는게 있다면 재고노출여부(displayableStock)를 기준으로 수정 작업이 필요합니다.
-         *    만약 재고 숨김처리 시, front에서 [품절]로 표시되도록 처리되고 있는게 있다면 재고/예약재고값을 기준이 아닌, 품절상태(isSoldOut)값을 기준으로 처리되도록 수정 작업이 필요합니다.
-         *
+         * @description 재고 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
+         * @example 100
+         */
+        stockCnt: number;
+        /**
+         * @description 판매상태
+         * @example "ONSALE"
+         * @enum {string}
+         */
+        saleStatusType:
+          | 'READY'
+          | 'ONSALE'
+          | 'FINISHED'
+          | 'STOP'
+          | 'PROHIBITION';
+      }[];
+    };
+    'products-shipping-info-448668919': {
+      /**
+       * @description 배송 불가 국가 정보
+       * @example "[\"KR\", \"CN\"]"
+       */
+      undeliverableCountries: (
+        | Record<string, never>
+        | boolean
+        | string
+        | number
+      )[];
+      /** @description 배송 정보 */
+      deliveryFee: {
+        /**
+         * @description 배송비타입
+         * @example "CONDITIONAL"
+         * @enum {string}
+         */
+        deliveryConditionType:
+          | 'FREE'
+          | 'CONDITIONAL'
+          | 'FIXED_FEE'
+          | 'QUANTITY_PROPOSITIONAL_FEE'
+          | 'PRICE_FEE'
+          | 'QUANTITY_FEE';
+        /** @description 조건부 배송비의 기준값(9,800원 이상인경우 배송비 2,500원일때 aboveDeliveryAmt는 9800 */
+        aboveDeliveryAmt: number;
+        /**
+         * @description 택배사명
+         * @example
+         * @enum {string}
+         */
+        deliveryCompanyTypeLabel:
+          | 'CJ'
+          | 'POST'
+          | 'HANJIN'
+          | 'GTX'
+          | 'LOTTE'
+          | 'KGB'
+          | 'LOGEN'
+          | 'CJHBL'
+          | 'GSI'
+          | 'KGL'
+          | 'INTRAS'
+          | 'UPS'
+          | 'CHUNIL'
+          | 'KDEXP'
+          | 'HDEXP'
+          | 'ILYANG'
+          | 'POST_EMS'
+          | 'KYOUNGDONG'
+          | 'DAESIN'
+          | 'CVS'
+          | 'DHL'
+          | 'FEDEX'
+          | 'GSM'
+          | 'WARPEX'
+          | 'WIZWA'
+          | 'ACI'
+          | 'PANTOS'
+          | 'CJ_INTERNATIONAL'
+          | 'TNT'
+          | 'CU'
+          | 'KUNYOUNG'
+          | 'LOTTE_INTERNATIONAL'
+          | 'HONAM'
+          | 'HANIPS'
+          | 'IPARCEL'
+          | 'SLX'
+          | 'USPS'
+          | 'WONDERS'
+          | 'REGISTPOST'
+          | 'DHLDE'
+          | 'EZUSA'
+          | 'SWGEXP'
+          | 'DAEWOON'
+          | 'DODOFLEX'
+          | 'NH_LOGIS'
+          | 'UFO'
+          | 'TODAY_PICKUP'
+          | 'QEXPRESS'
+          | 'PINGPONG'
+          | 'ETC';
+        /**
+         * @description 배송유형
+         * @example "PARCEL_DELIVERY"
+         * @enum {string}
+         */
+        deliveryType: 'PARCEL_DELIVERY' | 'DIRECT_DELIVERY';
+        /**
+         * @description 택배사
+         * @example
+         * @enum {string}
+         */
+        deliveryCompanyType:
+          | 'CJ'
+          | 'POST'
+          | 'HANJIN'
+          | 'GTX'
+          | 'LOTTE'
+          | 'KGB'
+          | 'LOGEN'
+          | 'CJHBL'
+          | 'GSI'
+          | 'KGL'
+          | 'INTRAS'
+          | 'UPS'
+          | 'CHUNIL'
+          | 'KDEXP'
+          | 'HDEXP'
+          | 'ILYANG'
+          | 'POST_EMS'
+          | 'KYOUNGDONG'
+          | 'DAESIN'
+          | 'CVS'
+          | 'DHL'
+          | 'FEDEX'
+          | 'GSM'
+          | 'WARPEX'
+          | 'WIZWA'
+          | 'ACI'
+          | 'PANTOS'
+          | 'CJ_INTERNATIONAL'
+          | 'TNT'
+          | 'CU'
+          | 'KUNYOUNG'
+          | 'LOTTE_INTERNATIONAL'
+          | 'HONAM'
+          | 'HANIPS'
+          | 'IPARCEL'
+          | 'SLX'
+          | 'USPS'
+          | 'WONDERS'
+          | 'REGISTPOST'
+          | 'DHLDE'
+          | 'EZUSA'
+          | 'SWGEXP'
+          | 'DAEWOON'
+          | 'DODOFLEX'
+          | 'NH_LOGIS'
+          | 'UFO'
+          | 'TODAY_PICKUP'
+          | 'QEXPRESS'
+          | 'PINGPONG'
+          | 'ETC';
+        /**
+         * @description 배송비템플릿 요약
+         * @example
+         */
+        defaultDeliveryConditionLabel: string;
+        /** @description 지역별 추가 배송비 상세 */
+        remoteDeliveryAreaFees: {
+          /**
+           * @description 추가 배송비 지역
+           * @example "제주도"
+           */
+          address: string;
+          /** @description 추가배송비 */
+          extraDeliveryAmt: number;
+        }[];
+        /**
+         * @description 구간 배송비인경우 배송비에대한 요약
+         * @example []
+         */
+        deliveryAmtLabels: string[];
+        /**
+         * @description 배송비 (고정배송비, 조건부 배송비인 경우)
+         * @example 10
+         */
+        deliveryAmt: number;
+        /**
+         * @description 배송비 선/착불 여부 (기본값 true, 배송비 유형이 무료인 것에 대해서 값이 무엇이든 상관없음)
          * @example false
          */
-        displayableStock: boolean;
+        deliveryPrePayment: boolean;
+        /** @description 배송비조건 상세 */
+        deliveryConditionDetails: {
+          /** @description 배송비 */
+          deliveryAmt: number;
+          /** @description 가격 미만 */
+          below: number;
+          /** @description 가격 이상 */
+          aboveOrEqual: number;
+        }[];
+        /** @description 수량 비례인 경우 개당 개수 (2개당 배송비 2,500원인 경우 perOrderCnt는 2 */
+        perOrderCnt: number;
+        /** @description 판매자 특이사항/고객안내사항 */
+        deliveryCustomerInfo: string;
+        /**
+         * @description 반품배송비
+         * @example 0
+         */
+        returnDeliveryAmt: number;
+        /** @description 반품/교환지 */
+        returnWarehouse: {
+          /**
+           * @description 해외창고 국가 구분
+           * @example "ADDRESS"
+           * @enum {string}
+           */
+          warehouseAddressType: 'ADDRESS' | 'SUBSTITUTION';
+          /**
+           * @description 해당 반품지 파트너 번호
+           * @example 1
+           */
+          partnerNo: number;
+          /**
+           * @description 주소
+           * @example "경기도 용인시 기흥구 청덕동 50 11 110호"
+           */
+          addressStr: string;
+          /**
+           * @description 해당 반품지 주소
+           * @example "경기도 용인시 기흥구 청덕동 50"
+           */
+          address: string;
+          /**
+           * @description 기본출고지 Y/N
+           * @example "Y"
+           */
+          defaultReleaseWarehouseYn: string;
+          /**
+           * @description 국가코드
+           * @example "KR"
+           */
+          countryCd: string;
+          /**
+           * @description 기본반품지 Y/N
+           * @example "Y"
+           */
+          defaultReturnWarehouseYn: string;
+          /**
+           * @description 해당 반품지 상세주소
+           * @example "110호"
+           */
+          detailAddress: string;
+          /**
+           * @description 우편번호
+           * @example "12345"
+           */
+          zipCd: string;
+          /**
+           * @description 반품/교환지 이름
+           * @example "1번 배송지"
+           */
+          warehouseName: string;
+          /**
+           * @description 반품/교환지 번호
+           * @example 1
+           */
+          warehouseNo: number;
+        };
+      };
+      /** @description 배송 관련 정보 */
+      shippingInfo: {
+        /** @description 배송 설정 */
+        shippingConfig: {
+          /**
+           * @description 배송 템플릿 번호
+           * @example 7711
+           */
+          templateNo: number;
+          /**
+           * @description 배송지 파트너 번호
+           * @example 2856
+           */
+          shippingAreaPartnerNo: number;
+          /**
+           * @description 출고 유형(배송 구분)
+           * @example "MALL_SHIPPING_AREA"
+           * @enum {string}
+           */
+          shippingAreaType: 'PARTNER_SHIPPING_AREA' | 'MALL_SHIPPING_AREA';
+          /**
+           * @description 해외 배송 여부 (true: 해외 배송, false:국내 배송)
+           * @example false
+           */
+          internationalShippingAvailable: boolean;
+          /**
+           * @description 묶음배송 가능여부 (true: 묶음 배송 가능, false: 묶음 배송 불가능)
+           * @example false
+           */
+          combinable: boolean;
+        };
+        /**
+         * @description 배송 가능 여부
+         * @example false
+         */
+        shippingAvailable: boolean;
+      };
+      /**
+       * @description 상품번호
+       * @example 10000001
+       */
+      productNo: number;
+    }[];
+    'profile-recent-products-524943492': {
+      /**
+       * @description 상품 번호
+       * @example 1000
+       */
+      productNo: number;
+    };
+    'profile-like-products--2041423781': {
+      items: {
+        /**
+         * @description 좋아요 설정/해제(Y: 설정, N: 해제)
+         * @example "Y"
+         * @enum {string}
+         */
+        like: 'Y' | 'N';
+        /**
+         * @description 상품 번호
+         * @example 100000
+         */
+        productNo: number;
+      }[];
+    };
+    'products-best-review-search-1614480433': {
+      /**
+       * @description 페이지 수
+       * @example 100
+       */
+      pageCount: number;
+      /**
+       * @description
+       *  재고 노출 여부 (false:재고 미노출 / true:재고 노출)<br><br>
+       *  false로 재고를 숨김처리 한 경우,
+       *  1) 재고 관련 필드는(실제 재고가 있더라도) -999로 고정으로 리턴하며 실재고 값은 따로 내려주지 않아 조회 불가합니다.
+       *  2) 실재고가 0인 경우에만 0으로 응답합니다.
+       *    만약 재고 숨김처리 시, front에서 [-999]로 표시되도록 처리되고 있는게 있다면 재고노출여부(displayableStock)를 기준으로 수정 작업이 필요합니다.
+       *    만약 재고 숨김처리 시, front에서 [품절]로 표시되도록 처리되고 있는게 있다면 재고/예약재고값을 기준이 아닌, 품절상태(isSoldOut)값을 기준으로 처리되도록 수정 작업이 필요합니다.
+       *
+       * @example false
+       */
+      displayableStock: boolean;
+      /**
+       * @description 총 개수
+       * @example 1000
+       */
+      totalCount: number;
+      items: {
+        /**
+         * @description 그룹관리코드 노출명
+         * @example
+         */
+        groupManagementCodeName: string;
+        /**
+         * @description 리뷰 번호
+         * @example 3
+         */
+        recentReviewNo: number;
+        /**
+         * @description 추가할인 최소 기준금액
+         * @example 1000
+         */
+        minSalePrice: number;
+        /**
+         * @description 그룹관리코드
+         * @example
+         */
+        groupManagementCode: string;
+        /**
+         * @description 좋아요 수
+         * @example 10
+         */
+        likeCount: number;
+        /**
+         * @description 장바구니 사용 여부
+         * @example true
+         */
+        canAddToCart: boolean;
+        /**
+         * @description 총 리뷰 수
+         * @example 8
+         */
+        totalReviewCount: number;
+        /**
+         * @description 상품평 평균점
+         * @example 4.8
+         */
+        reviewRating: number;
+        /**
+         * @description 리뷰 수
+         * @example 20
+         */
+        recentReviewCnt: number;
+        /**
+         * @description 좋아요 여부
+         * @example false
+         */
+        liked: boolean;
+        /**
+         * @description 상품명
+         * @example "상품명"
+         */
+        productName: string;
+        /**
+         * @description 리뷰 평균점
+         * @example 0
+         */
+        recentReviewRating: number;
+        /**
+         * @description 최대 쿠폰 적용 가격(default: 0)
+         * @example 0
+         */
+        couponDiscountAmt: number;
+        /**
+         * @description 리뷰 내용
+         * @example "리뷰 내용"
+         */
+        reviewContent: string;
+        /**
+         * @description 추가상품할인가
+         * @example 1000
+         */
+        additionDiscountAmt: number;
+        /** @description 상품 이미지 정보 */
+        imageUrlInfo: {
+          /**
+           * @description 상품 이미지 url 타입
+           * @example "IMAGE_URL"
+           * @enum {string}
+           */
+          type: 'IMAGE_URL' | 'VIDEO_URL';
+          /**
+           * @description 상품 이미지 url
+           * @example "//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"
+           */
+          url: string;
+        }[];
+        /**
+         * @description 브랜드 번호
+         * @example 10
+         */
+        brandNo: number;
+        /**
+         * @description 브랜드 명
+         * @example "더미 브랜드"
+         */
+        brandName: string;
+        /**
+         * @description 리스트 이미지 URL
+         * @example [["//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"]]
+         */
+        listImageUrls: string[];
+        /**
+         * @description 즉시할인가
+         * @example 1000
+         */
+        immediateDiscountAmt: number;
+        /**
+         * @description 스티커 라벨(배열)
+         * @example ["스티커라벨"]
+         */
+        stickerLabels: string[];
+        /** @description 쿠폰여부 */
+        hasCoupons: {
+          /**
+           * @description 상품쿠폰 태그
+           * @example false
+           */
+          product: boolean;
+          /**
+           * @description 파트너쿠폰 태그
+           * @example false
+           */
+          partner: boolean;
+          /**
+           * @description 기획전쿠폰 태그
+           * @example false
+           */
+          event: boolean;
+          /**
+           * @description 카테고리쿠폰 태그
+           * @example false
+           */
+          category: boolean;
+          /**
+           * @description 브랜드쿠폰 태그
+           * @example false
+           */
+          brand: boolean;
+        };
+        /**
+         * @description 즉시할인 타입
+         * @example "WON"
+         * @enum {string}
+         */
+        immediateDiscountUnitType: 'WON' | 'RATE';
+        /**
+         * @description 추가상품할인 타입
+         * @example "WON"
+         * @enum {string}
+         */
+        additionDiscountUnitType: 'WON' | 'RATE';
+        /**
+         * @description 전시 여부
+         * @example true
+         */
+        frontDisplayYn: boolean;
+        /**
+         * @description 판매 수량 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
+         * @example 1000
+         */
+        saleCnt: number;
+        /** @description 상품 항목 추가 정보 */
+        customProperties: {
+          /**
+           * @description 항목 복수선택여부 (true: 복수개 선택가능, false: 1개만 선택가능)
+           * @example false
+           */
+          isMultipleSelection: boolean;
+          /** @description 상품 항목 값 번호 */
+          propValueNo: number;
+          /**
+           * @description 상품 항목 값
+           * @example "2015"
+           */
+          propValue: string;
+          /**
+           * @description 상품 항목명
+           * @example "시즌"
+           */
+          propName: string;
+          /** @description 상품 항목명 번호 */
+          propNo: number;
+        }[];
+        /**
+         * @description 판매시작일시
+         * @example "2024-01-04 16:11:08"
+         */
+        saleStartYmdt: string;
+        /**
+         * @description 브랜드 한글 명
+         * @example "dummy korean brand"
+         */
+        brandNameKo: string;
+        /**
+         * @description 품절여부 (true-품절O, false-품절X)
+         * @example false
+         */
+        isSoldOut: boolean;
+        /**
+         * @description 성인 상품 여부
+         * @example false
+         */
+        adult: boolean;
+        /** @description 상품 조합형 옵션정보 ( 옵션명은 | 라인으로 구분 ) */
+        optionValues: {
+          /**
+           * @description 옵션명
+           * @example "레드"
+           */
+          optionValue: string;
+          /**
+           * @description 재고 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
+           * @example 100
+           */
+          stockCnt: number;
+          /**
+           * @description 상품번호
+           * @example 10000001
+           */
+          mallProductNo: number;
+        }[];
+        /**
+         * @description 전시카테고리 번호 정보
+         * @example "26916"
+         */
+        displayCategoryNos: string;
+        /**
+         * @description 판매자 관리코드
+         * @example "PRDC10001"
+         */
+        productManagementCd: string;
+        /** @description 예약판매정보 */
+        reservationData: {
+          /**
+           * @description 예약판매 배송시작일
+           * @example "2023-12-04 16:11:08"
+           */
+          reservationDeliveryYmdt: string;
+          /**
+           * @description 예약판매 재고수량 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
+           * @example 5
+           */
+          reservationStockCnt: number;
+          /**
+           * @description 예약판매 종료일
+           * @example "2023-11-04 16:11:08"
+           */
+          reservationEndYmdt: string;
+          /**
+           * @description 예약판매 시작일
+           * @example "2023-10-04 16:11:08"
+           */
+          reservationStartYmdt: string;
+        };
+        /**
+         * @description 배송비 타입
+         * @example "CONDITIONAL"
+         * @enum {string}
+         */
+        deliveryConditionType:
+          | 'FREE'
+          | 'CONDITIONAL'
+          | 'FIXED_FEE'
+          | 'QUANTITY_PROPOSITIONAL_FEE'
+          | 'PRICE_FEE'
+          | 'QUANTITY_FEE';
+        /**
+         * @description 적립금
+         * @example 0
+         */
+        accumulationAmtWhenBuyConfirm: number;
+        /** @description 배송비 조건 */
+        deliveryConditionInfo: {
+          /**
+           * @description 배송비 요약
+           * @example "배송비 요약"
+           */
+          summary: string;
+          /**
+           * @description 수량 비례 조건에서 수량 (nullable)
+           * @example 2
+           */
+          perOrderCnt?: number;
+          /**
+           * @description 무료배송을 위한 최소 금액 (nullable)
+           * @example 30000
+           */
+          criteria?: number;
+          /** @description 차등 조건 구간 (nullable) */
+          deliveryFeeRanges?: {
+            /**
+             * @description 해당 구간에서의 배송비
+             * @example 5000
+             */
+            deliveryAmt: number;
+            /**
+             * @description ~미만 (nullable)
+             * @example 20000
+             */
+            below?: number;
+            /**
+             * @description ~이상 (nullable)
+             * @example 10000
+             */
+            aboveOrEqual?: number;
+          }[];
+          /** @description 차등 조건 구간 요약 (nullable) */
+          rangeSummaries?: (
+            | Record<string, never>
+            | boolean
+            | string
+            | number
+          )[];
+        };
+        /**
+         * @description 브랜드명 타입 (NAME_KO: Korean, NAME_EN: English, NONE: none)
+         * @example "NAME_KO"
+         */
+        brandNameType: string;
+        /**
+         * @description 최대 쿠폰 적용 가격(default: 0)
+         * @example 0
+         */
+        maxCouponAmt: number;
+        /**
+         * @description 상품의 상품 노출 타입
+         * @example "REGULAR"
+         * @enum {string}
+         */
+        productSalePeriodType: 'REGULAR' | 'PERIOD';
+        /**
+         * @description 추가할인 정률 최대 할인 금액
+         * @example 0
+         */
+        maxDiscountAmount: number;
+        /**
+         * @description 사용가능쿠폰 존재 여부
+         * @example false
+         */
+        enableCoupons: boolean;
+        /**
+         * @description 상품유형
+         * @example "DEFAULT"
+         * @enum {string}
+         */
+        productType: 'DEFAULT' | 'EVENT' | 'OFFLINE' | 'RENTAL';
+        /**
+         * @description 상품번호
+         * @example 10000001
+         */
+        productNo: number;
+        /**
+         * @description 상품 유효기간 (nullable)
+         * @example "2023-12-31"
+         */
+        expirationDate?: string;
+        /**
+         * @description 상품 등록일
+         * @example "2023-11-04 16:11:08"
+         */
+        registerYmdt: string;
+        /**
+         * @description 상품판매가
+         * @example 10000
+         */
+        salePrice: number;
+        /**
+         * @description 파트너명
+         * @example "다팔아"
+         */
+        partnerName: string;
+        /**
+         * @description 즉시할인 시작일자
+         * @example "2024-01-04 16:11:08"
+         */
+        immediateDiscountStartYmdt: string;
+        /**
+         * @description 상품조회화면 노출 여부
+         * @example false
+         */
+        urlDirectDisplayYn: boolean;
+        /**
+         * @description 판매중지 시 가격대체문구
+         * @example "잠시 판매중지 중입니다."
+         */
+        contentsIfPausing: string;
+        /**
+         * @description 판매종료일시
+         * @example "2026-01-04 16:11:08"
+         */
+        saleEndYmdt: string;
+        /**
+         * @description 추가할인 최대 기준금액
+         * @example 100000
+         */
+        maxSalePrice: number;
+        /**
+         * @description 홍보문구
+         * @example "홍보문구"
+         */
+        promotionText: string;
+        /** @description 스티커 정보 */
+        stickerInfos: {
+          /**
+           * @description 스티커 이름
+           * @example "스티커라벨"
+           */
+          name: string;
+          /**
+           * @description 스티커 라벨
+           * @example "스티커라벨"
+           */
+          label: string;
+          /**
+           * @description 스티커 타입
+           * @example "TEXT"
+           * @enum {string}
+           */
+          type: 'TEXT' | 'IMAGE';
+        }[];
+        /** @description 상품 리스트 이미지 정보 */
+        listImageUrlInfo: {
+          /**
+           * @description 상품 리스트 이미지 url 타입
+           * @example "IMAGE_URL"
+           * @enum {string}
+           */
+          type: 'IMAGE_URL' | 'VIDEO_URL';
+          /**
+           * @description 상품 리스트 이미지 url
+           * @example "//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"
+           */
+          url: string;
+        }[];
+        /**
+         * @description HS CODE
+         * @example "HSCODE"
+         */
+        hsCode: string;
+        /**
+         * @description 즉시할인 종료일자
+         * @example "2024-02-04 16:11:08"
+         */
+        immediateDiscountEndYmdt: string;
+        /**
+         * @description 상품 이미지 URL
+         * @example ["//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"]
+         */
+        imageUrls: string[];
+        /**
+         * @description 브랜드 영문 명
+         * @example "dummy brand"
+         */
+        brandNameEn: string;
+        /** @description 적립금 정보 */
+        accumulationInfo: {
+          /**
+           * @description 회원등급적립률
+           * @example 0
+           */
+          rewardRateOfMemberBenefit: number;
+          /**
+           * @description 적립금
+           * @example 0
+           */
+          amount: number;
+          /**
+           * @description 상품개별적립률
+           * @example 0
+           */
+          rewardRateOfProduct: number;
+        };
+        /**
+         * @description 대표 옵션 재고 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
+         * @example 50
+         */
+        mainStockCnt: number;
+        /**
+         * @description 영문 상품명
+         * @example "상품명"
+         */
+        productNameEn: string;
         /**
          * @description 재고 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
          * @example 100
@@ -3143,39 +2708,622 @@ export interface components {
          * @example "ONSALE"
          * @enum {string}
          */
-        saleStatusType: "READY" | "ONSALE" | "FINISHED" | "STOP" | "PROHIBITION";
-      })[];
-    "products-search-keywords-937474294": ({
+        saleStatusType:
+          | 'READY'
+          | 'ONSALE'
+          | 'FINISHED'
+          | 'STOP'
+          | 'PROHIBITION';
+      }[];
+    };
+    'products-productNo-display-categories-1677654964': {
+      /**
+       * @description 마지막 전시카테고리 이름 (항상 최하위 뎁스 카테고리 정보와 매칭됩니다. 예시, depth2까지 밖에 없는 경우 - depth2의 전시카테고리 이름과 매칭, depth3,4는 blank))
+       * @example "중형인형"
+       */
+      depth5Name: string;
+      /**
+       * @description 첫번쩨 전시카테고리 번호
+       * @example 26752
+       */
+      depth1No: number;
+      /**
+       * @description 전시카테고리 전체 이름
+       * @example "토이>중형인형"
+       */
+      fullCategoryName: string;
+      /**
+       * @description 세번째 전시카테고리 이름
+       * @example ""
+       */
+      depth3Name: string;
+      /**
+       * @description 두번째 전시카테고리 이름
+       * @example "중형인형"
+       */
+      depth2Name: string;
+      /**
+       * @description 네번째 전시카테고리 이름
+       * @example ""
+       */
+      depth4Name: string;
+      /**
+       * @description 두번째 전시카테고리 번호
+       * @example 26763
+       */
+      depth2No: number;
+      /**
+       * @description 첫번째 전시카테고리 이름
+       * @example "토이"
+       */
+      depth1Name: string;
+      /**
+       * @description 세번째 전시카테고리 번호
+       * @example 0
+       */
+      depth3No: number;
+      /**
+       * @description 네번째 전시카테고리 번호
+       * @example 0
+       */
+      depth4No: number;
+      /**
+       * @description 마지막 뎁스의 전시카테고리 번호 (항상 최하위 뎁스 카테고리 정보와 매칭됩니다. 예시, depth2까지 밖에 없는 경우 - depth2의 전시카테고리 번호와 매칭, depth3,4는 0)
+       * @example 26763
+       */
+      depth5No: number;
+    }[];
+    'display-brands-extraInfo1641009473': {
+      /**
+       * @description 전시 브랜드 번호
+       * @example 1
+       */
+      displayBrandNo: number;
+      /**
+       * @description 추가 정보
+       * @example "추가 정보"
+       */
+      extraInfo: string;
+    }[];
+    'profile-recent-products-1008217100': {
+      /**
+       * @description 그룹관리코드 노출명
+       * @example "CODE NAME"
+       */
+      groupManagementCodeName: string;
+      /**
+       * @description 추가할인 최소 기준금액
+       * @example 1000
+       */
+      minSalePrice: number;
+      /**
+       * @description 그룹관리코드
+       * @example "CODE"
+       */
+      groupManagementCode: string;
+      /**
+       * @description 좋아요 수
+       * @example 10
+       */
+      likeCount: number;
+      /**
+       * @description 장바구니 사용 여부
+       * @example true
+       */
+      canAddToCart: boolean;
+      /**
+       * @description 총 리뷰 수
+       * @example 8
+       */
+      totalReviewCount: number;
+      /**
+       * @description 상품평 평균점
+       * @example 4.8
+       */
+      reviewRating: number;
+      /**
+       * @description 좋아요 여부
+       * @example false
+       */
+      liked: boolean;
+      /**
+       * @description 상품명
+       * @example "상품명"
+       */
+      productName: string;
+      /**
+       * @description 최대 쿠폰 적용 가격(default: 0)
+       * @example 1000
+       */
+      couponDiscountAmt: number;
+      /**
+       * @description 추가상품할인가
+       * @example 1000
+       */
+      additionDiscountAmt: number;
+      /** @description 상품 이미지 정보 */
+      imageUrlInfo: {
         /**
-         * @description 검색어
-         * @example ["검색어1","검색어2"]
+         * @description 상품 이미지 url 타입
+         * @example "IMAGE_URL"
+         * @enum {string}
          */
-        keywords: (Record<string, never> | boolean | string | number)[];
+        type: 'IMAGE_URL' | 'VIDEO_URL';
+        /**
+         * @description 상품 이미지 url
+         * @example "//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"
+         */
+        url: string;
+      }[];
+      /**
+       * @description 브랜드 번호
+       * @example 10
+       */
+      brandNo: number;
+      /**
+       * @description 메인 베스트 상품 여부 deprecated(더 이상 제공하지 않는 개체항목입니다)
+       * @example false
+       */
+      mainBestProductYn: boolean;
+      /**
+       * @description 브랜드 명
+       * @example "더미 브랜드"
+       */
+      brandName: string;
+      /**
+       * @description 리스트 이미지 URL
+       * @example [["//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"]]
+       */
+      listImageUrls: string[];
+      /**
+       * @description 즉시할인가
+       * @example 1000
+       */
+      immediateDiscountAmt: number;
+      /**
+       * @description 스티커 라벨(배열)
+       * @example ["스티커라벨"]
+       */
+      stickerLabels: string[];
+      /** @description 쿠폰여부 */
+      hasCoupons: {
+        /**
+         * @description 상품쿠폰 태그
+         * @example true
+         */
+        product: boolean;
+        /**
+         * @description 파트너쿠폰 태그
+         * @example true
+         */
+        partner: boolean;
+        /**
+         * @description 기획전쿠폰 태그
+         * @example true
+         */
+        event: boolean;
+        /**
+         * @description 카테고리쿠폰 태그
+         * @example true
+         */
+        category: boolean;
+        /**
+         * @description 브랜드쿠폰 태그
+         * @example true
+         */
+        brand: boolean;
+      };
+      /**
+       * @description 즉시할인 타입
+       * @example "WON"
+       * @enum {string}
+       */
+      immediateDiscountUnitType: 'WON' | 'RATE';
+      /**
+       * @description 추가상품할인 타입
+       * @example "WON"
+       * @enum {string}
+       */
+      additionDiscountUnitType: 'WON' | 'RATE';
+      /**
+       * @description 전시 여부
+       * @example true
+       */
+      frontDisplayYn: boolean;
+      /**
+       * @description 판매 수량 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
+       * @example 1000
+       */
+      saleCnt: number;
+      /** @description 상품 항목 추가 정보 */
+      customProperties: {
+        /**
+         * @description 항목 복수선택여부 (true: 복수개 선택가능, false: 1개만 선택가능)
+         * @example false
+         */
+        isMultipleSelection: boolean;
+        /** @description 상품 항목 값 번호 */
+        propValueNo: number;
+        /**
+         * @description 상품 항목 값
+         * @example "2015"
+         */
+        propValue: string;
+        /**
+         * @description 상품 항목명
+         * @example "시즌"
+         */
+        propName: string;
+        /** @description 상품 항목명 번호 */
+        propNo: number;
+      }[];
+      /**
+       * @description 판매시작일시
+       * @example "2024-01-04 16:11:11"
+       */
+      saleStartYmdt: string;
+      /**
+       * @description 브랜드 한글 명
+       * @example "dummy korean brand"
+       */
+      brandNameKo: string;
+      /** @description 상품섹션에서 설정한 종료일 - deprecated(더 이상 제공하지 않는 개체항목입니다) */
+      sectionProductEndYmdt: string;
+      /**
+       * @description 품절여부 (true-품절O, false-품절X)
+       * @example false
+       */
+      isSoldOut: boolean;
+      /**
+       * @description 성인 상품 여부
+       * @example false
+       */
+      adult: boolean;
+      /** @description 상품 조합형 옵션정보 ( 옵션명은 | 라인으로 구분 ) */
+      optionValues: {
+        /**
+         * @description 옵션명
+         * @example "레드"
+         */
+        optionValue: string;
+        /**
+         * @description 재고 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
+         * @example 100
+         */
+        stockCnt: number;
         /**
          * @description 상품번호
-         * @example 100000
+         * @example 10000001
          */
-        productNo: number;
-      })[];
-    "products-productNo989381871": {
+        mallProductNo: number;
+      }[];
+      /**
+       * @description 전시카테고리 번호 정보
+       * @example "26916"
+       */
+      displayCategoryNos: string;
+      /**
+       * @description 판매자 관리코드
+       * @example "PRDC10001"
+       */
+      productManagementCd: string;
+      /** @description 예약판매정보 */
+      reservationData: {
+        /**
+         * @description 예약판매 배송시작일
+         * @example "2023-12-04 16:11:11"
+         */
+        reservationDeliveryYmdt: string;
+        /**
+         * @description 예약판매 재고수량 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
+         * @example 5
+         */
+        reservationStockCnt: number;
+        /**
+         * @description 예약판매 종료일
+         * @example "2023-11-04 16:11:11"
+         */
+        reservationEndYmdt: string;
+        /**
+         * @description 예약판매 시작일
+         * @example "2023-10-04 16:11:11"
+         */
+        reservationStartYmdt: string;
+      };
+      /**
+       * @description 배송비 타입
+       * @example "CONDITIONAL"
+       * @enum {string}
+       */
+      deliveryConditionType:
+        | 'FREE'
+        | 'CONDITIONAL'
+        | 'FIXED_FEE'
+        | 'QUANTITY_PROPOSITIONAL_FEE'
+        | 'PRICE_FEE'
+        | 'QUANTITY_FEE';
+      /** @description 상품섹션에서 설정한 시작일 - deprecated(더 이상 제공하지 않는 개체항목입니다) */
+      sectionProductStartYmdt: string;
+      /**
+       * @description 적립금
+       * @example 0
+       */
+      accumulationAmtWhenBuyConfirm: number;
+      /** @description 배송비 조건 */
+      deliveryConditionInfo: {
+        /**
+         * @description 배송비 요약
+         * @example "배송비 요약"
+         */
+        summary: string;
+        /**
+         * @description 수량 비례 조건에서 수량 (nullable)
+         * @example 2
+         */
+        perOrderCnt?: number;
+        /**
+         * @description 무료배송을 위한 최소 금액 (nullable)
+         * @example 30000
+         */
+        criteria?: number;
+        /** @description 차등 조건 구간 (nullable) */
+        deliveryFeeRanges?: {
+          /**
+           * @description 해당 구간에서의 배송비
+           * @example 5000
+           */
+          deliveryAmt: number;
+          /**
+           * @description ~미만 (nullable)
+           * @example 20000
+           */
+          below?: number;
+          /**
+           * @description ~이상 (nullable)
+           * @example 10000
+           */
+          aboveOrEqual?: number;
+        }[];
+        /** @description 차등 조건 구간 요약 (nullable) */
+        rangeSummaries?: (Record<string, never> | boolean | string | number)[];
+      };
+      /**
+       * @description 브랜드명 타입 (NAME_KO: Korean, NAME_EN: English, NONE: none)
+       * @example "NAME_KO"
+       */
+      brandNameType: string;
+      /** @description 쿠폰 태그 deprecated(더 이상 제공하지 않는 개체항목입니다) */
+      couponTag: string;
+      /**
+       * @description 최대 쿠폰 적용 가격(default: 0)
+       * @example 5000
+       */
+      maxCouponAmt: number;
+      /**
+       * @description 상품의 상품 노출 타입
+       * @example "REGULAR"
+       * @enum {string}
+       */
+      productSalePeriodType: 'REGULAR' | 'PERIOD';
+      /**
+       * @description 추가할인 정률 최대 할인 금액
+       * @example 0
+       */
+      maxDiscountAmount: number;
+      /**
+       * @description 최근본 상품 날짜
+       * @example
+       */
+      recentlyViewedYmdt: string;
+      /**
+       * @description 사용가능쿠폰 존재 여부
+       * @example true
+       */
+      enableCoupons: boolean;
+      /**
+       * @description 상품유형
+       * @example "DEFAULT"
+       * @enum {string}
+       */
+      productType: 'DEFAULT' | 'EVENT' | 'OFFLINE' | 'RENTAL';
+      /**
+       * @description 상품번호
+       * @example 10000001
+       */
+      productNo: number;
+      /**
+       * @description 상품 유효기간 (nullable)
+       * @example "2023-12-31"
+       */
+      expirationDate?: string;
+      /**
+       * @description 상품 등록일
+       * @example "2023-11-04 16:11:11"
+       */
+      registerYmdt: string;
+      /**
+       * @description 상품판매가
+       * @example 10000
+       */
+      salePrice: number;
+      /**
+       * @description 파트너명
+       * @example "다팔아"
+       */
+      partnerName: string;
+      /**
+       * @description 즉시할인 시작일자
+       * @example "2024-01-04 16:11:11"
+       */
+      immediateDiscountStartYmdt: string;
+      /**
+       * @description 상품조회화면 노출 여부
+       * @example false
+       */
+      urlDirectDisplayYn: boolean;
+      /**
+       * @description 판매중지 시 가격대체문구
+       * @example "잠시 판매중지 중입니다."
+       */
+      contentsIfPausing: string;
+      /**
+       * @description 판매종료일시
+       * @example "2026-01-04 16:11:11"
+       */
+      saleEndYmdt: string;
+      /**
+       * @description 판매기간 유형 - deprecated(더 이상 제공하지 않는 개체항목입니다)
+       * @enum {string}
+       */
+      salePeriodType: 'REGULAR' | 'PERIOD';
+      /**
+       * @description 추가할인 최대 기준금액
+       * @example 100000
+       */
+      maxSalePrice: number;
+      /**
+       * @description 홍보문구
+       * @example "홍보문구"
+       */
+      promotionText: string;
+      /** @description 스티커 정보 */
+      stickerInfos: {
+        /**
+         * @description 스티커 이름
+         * @example "스티커라벨"
+         */
+        name: string;
+        /**
+         * @description 스티커 라벨
+         * @example "스티커라벨"
+         */
+        label: string;
+        /**
+         * @description 스티커 타입
+         * @example "TEXT"
+         * @enum {string}
+         */
+        type: 'TEXT' | 'IMAGE';
+      }[];
+      /** @description 상품 리스트 이미지 정보 */
+      listImageUrlInfo: {
+        /**
+         * @description 상품 리스트 이미지 url 타입
+         * @example "IMAGE_URL"
+         * @enum {string}
+         */
+        type: 'IMAGE_URL' | 'VIDEO_URL';
+        /**
+         * @description 상품 리스트 이미지 url
+         * @example "//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"
+         */
+        url: string;
+      }[];
+      /**
+       * @description HS CODE
+       * @example "HSCODE"
+       */
+      hsCode: string;
+      /**
+       * @description 즉시할인 종료일자
+       * @example "2024-02-04 16:11:11"
+       */
+      immediateDiscountEndYmdt: string;
+      /**
+       * @description 상품 이미지 URL
+       * @example ["//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"]
+       */
+      imageUrls: string[];
+      /**
+       * @description 브랜드 영문 명
+       * @example "dummy brand"
+       */
+      brandNameEn: string;
+      /** @description 적립금 정보 */
+      accumulationInfo: {
+        /**
+         * @description 회원등급적립률
+         * @example 0
+         */
+        rewardRateOfMemberBenefit: number;
+        /**
+         * @description 적립금
+         * @example 0
+         */
+        amount: number;
+        /**
+         * @description 상품개별적립률
+         * @example 0
+         */
+        rewardRateOfProduct: number;
+      };
+      /**
+       * @description 대표 옵션 재고 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
+       * @example 50
+       */
+      mainStockCnt: number;
+      /**
+       * @description 영문 상품명
+       * @example "상품명"
+       */
+      productNameEn: string;
+      /** @description 검색상품번호 - deprecated(더 이상 제공하지 않는 개체항목입니다) */
+      searchProductId: string;
+      /**
+       * @description
+       *  재고 노출 여부 (false:재고 미노출 / true:재고 노출)<br><br>
+       *  false로 재고를 숨김처리 한 경우,
+       *  1) 재고 관련 필드는(실제 재고가 있더라도) -999로 고정으로 리턴하며 실재고 값은 따로 내려주지 않아 조회 불가합니다.
+       *  2) 실재고가 0인 경우에만 0으로 응답합니다.
+       *    만약 재고 숨김처리 시, front에서 [-999]로 표시되도록 처리되고 있는게 있다면 재고노출여부(displayableStock)를 기준으로 수정 작업이 필요합니다.
+       *    만약 재고 숨김처리 시, front에서 [품절]로 표시되도록 처리되고 있는게 있다면 재고/예약재고값을 기준이 아닌, 품절상태(isSoldOut)값을 기준으로 처리되도록 수정 작업이 필요합니다.
+       *
+       * @example false
+       */
+      displayableStock: boolean;
+      /**
+       * @description 재고 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
+       * @example 100
+       */
+      stockCnt: number;
+      /**
+       * @description 판매상태
+       * @example "ONSALE"
+       * @enum {string}
+       */
+      saleStatusType: 'READY' | 'ONSALE' | 'FINISHED' | 'STOP' | 'PROHIBITION';
+    }[];
+    'products-search-keywords-937474294': {
+      /**
+       * @description 검색어
+       * @example ["검색어1","검색어2"]
+       */
+      keywords: (Record<string, never> | boolean | string | number)[];
+      /**
+       * @description 상품번호
+       * @example 100000
+       */
+      productNo: number;
+    }[];
+    'products-productNo989381871': {
       /** @description 렌탈 정보 (옵션이 없는 상품의 경우 조회, 옵션이 있는 상품의 경우 옵션 조회 API(/products/{productNo}/options) 에서 렌탈 정보 조회 가능) */
       rentalInfos: {
-          /**
-           * @description 월 렌탈 금액
-           * @example 50000
-           */
-          monthlyRentalAmount: number;
-          /**
-           * @description 렌탈 기간
-           * @example 12
-           */
-          rentalPeriod: number;
-          /**
-           * @description 서비스 가능 최저 신용 등급
-           * @example 600
-           */
-          creditRating: number;
-        }[];
+        /**
+         * @description 월 렌탈 금액
+         * @example 50000
+         */
+        monthlyRentalAmount: number;
+        /**
+         * @description 렌탈 기간
+         * @example 12
+         */
+        rentalPeriod: number;
+        /**
+         * @description 서비스 가능 최저 신용 등급
+         * @example 600
+         */
+        creditRating: number;
+      }[];
       /** @description 예약판매정보 */
       reservationData: {
         /**
@@ -3252,25 +3400,25 @@ export interface components {
          */
         deliveryCustomerInfo: string;
         /** @description 상품 이미지 정보 */
-        imageUrlInfo: ({
-            /**
-             * @description 상품 이미지 url 타입
-             * @example "IMAGE_URL"
-             * @enum {string}
-             */
-            type: "IMAGE_URL" | "VIDEO_URL";
-            /**
-             * @description 상품 이미지 url
-             * @example "//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"
-             */
-            url: string;
-          })[];
+        imageUrlInfo: {
+          /**
+           * @description 상품 이미지 url 타입
+           * @example "IMAGE_URL"
+           * @enum {string}
+           */
+          type: 'IMAGE_URL' | 'VIDEO_URL';
+          /**
+           * @description 상품 이미지 url
+           * @example "//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"
+           */
+          url: string;
+        }[];
         /**
          * @description 상품유형
          * @example "DEFAULT"
          * @enum {string}
          */
-        productType: "DEFAULT" | "EVENT" | "OFFLINE" | "RENTAL";
+        productType: 'DEFAULT' | 'EVENT' | 'OFFLINE' | 'RENTAL';
         /**
          * @description 상품번호
          * @example 10000001
@@ -3278,32 +3426,32 @@ export interface components {
         productNo: number;
         /** @description 상품항목추가 관리 정보 */
         customPropertise: {
-            /**
-             * @description 항목 값 번호
-             * @example 2
-             */
-            propValueNo: number;
-            /**
-             * @description 항목 복수선택여부 (Y: 복수개 선택가능, N: 1개만 선택가능)
-             * @example "Y"
-             */
-            multipleSelectionYn: string;
-            /**
-             * @description 항목 값
-             * @example "2022"
-             */
-            propValue: string;
-            /**
-             * @description 항목명
-             * @example "시즌"
-             */
-            propName: string;
-            /**
-             * @description 항목 번호
-             * @example 1
-             */
-            propNo: number;
-          }[];
+          /**
+           * @description 항목 값 번호
+           * @example 2
+           */
+          propValueNo: number;
+          /**
+           * @description 항목 복수선택여부 (Y: 복수개 선택가능, N: 1개만 선택가능)
+           * @example "Y"
+           */
+          multipleSelectionYn: string;
+          /**
+           * @description 항목 값
+           * @example "2022"
+           */
+          propValue: string;
+          /**
+           * @description 항목명
+           * @example "시즌"
+           */
+          propName: string;
+          /**
+           * @description 항목 번호
+           * @example 1
+           */
+          propNo: number;
+        }[];
         /**
          * @description 재입고 알림 사용 가능 여부 - true(사용가능), false(불가능)
          * @example false
@@ -3329,7 +3477,7 @@ export interface components {
          * @example "TARGET"
          * @enum {string}
          */
-        certificationType: "TARGET" | "NOT_TARGET" | "DETAIL_PAGE";
+        certificationType: 'TARGET' | 'NOT_TARGET' | 'DETAIL_PAGE';
         /**
          * @description 제조일자
          * @example "2023-01-04 16:11:07"
@@ -3345,72 +3493,72 @@ export interface components {
          * @example ["스티커라벨"]
          */
         stickerLabels: string[];
-        certifications: ({
-            /**
-             * @description 인증일자
-             * @example "2021-12-01"
-             */
-            date: string;
-            /**
-             * @description 인증유형번호 -
-             *  no              | 인증유형                   |
-             *  | ----------------|--------------------------|
-             *  | 1               | 공산품 안전인증공산품 안전인증   |
-             *  | 2               | 공산품 자율안전확인           |
-             *  | 3               | 공산품 어린이보호포장          |
-             *  | 4               | 공산품 안전품질표기           |
-             *  | 5               | 전기용품 안전인증            |
-             *  | 6               | 전기용품 자율안전확인         |
-             *  | 7               | 전기용품 공급자적합성         |
-             *  | 8               | 방송통신기자재 적합인증        |
-             *  | 9               | 방송통신기자재 적합등록        |
-             *  | 10              | 방송통신기자재 잠정인증        |
-             *  | 11              | 어린이제품 안전인증           |
-             *  | 12              | 어린이제품 안전확인           |
-             *  | 13              | 어린이제품 공급자적합성 확인    |
-             *  | 14              | 친환경농산물인증 - 유기농산물   |
-             *  | 15              | 친환경농산물인증 - 유기농축산물  |
-             *  | 16              | 친환경농산물인증 - 무농약농산물  |
-             *  | 17              | 친환경농산물인증 - 무항생제축산물 |
-             *  | 18              | 친환경농산물인증 - 저농약농산물  |
-             *  | 19              | 농산물우수관리인증(GAP)       |
-             *  | 20              | 이력추적관리농산물            |
-             *  | 21              | 가공식품산업표준KS인증        |
-             *  | 22              | 전통식품품질인증             |
-             *  | 23              | 유기가공식품인증             |
-             *  | 24              | 수산물품질인증               |
-             *  | 25              | 수산특산품질인증             |
-             *  | 26              | 수산전통식품품질인증           |
-             *  | 27              | HACCP                    |
-             *  | 28              | 축산물등급판정확인서           |
-             *  | 29              | 도축검사증명서               |
-             *  | 30              | GMP - 우수건강기능식품제조기준  |
-             *  | 31              | 건강기능식품 광고사전심의       |
-             *  | 32              | 술품질인증 - 가형            |
-             *  | 33              | 술품질인증 - 나형            |
-             */
-            no: number;
-            /**
-             * @description 인증번호
-             * @example "AAB-82KD"
-             */
-            code: string;
-            /**
-             * @description 인증기관
-             * @example "인증 기관명"
-             */
-            organization: string;
-            /**
-             * @description 인증유형
-             * @example "어린이제품 안전확인"
-             */
-            type: string;
-            /**
-             * @description 인증상호
-             * @example "상호명"
-             */
-            target: string;
-          })[];
+        certifications: {
+          /**
+           * @description 인증일자
+           * @example "2021-12-01"
+           */
+          date: string;
+          /**
+           * @description 인증유형번호 -
+           *  no              | 인증유형                   |
+           *  | ----------------|--------------------------|
+           *  | 1               | 공산품 안전인증공산품 안전인증   |
+           *  | 2               | 공산품 자율안전확인           |
+           *  | 3               | 공산품 어린이보호포장          |
+           *  | 4               | 공산품 안전품질표기           |
+           *  | 5               | 전기용품 안전인증            |
+           *  | 6               | 전기용품 자율안전확인         |
+           *  | 7               | 전기용품 공급자적합성         |
+           *  | 8               | 방송통신기자재 적합인증        |
+           *  | 9               | 방송통신기자재 적합등록        |
+           *  | 10              | 방송통신기자재 잠정인증        |
+           *  | 11              | 어린이제품 안전인증           |
+           *  | 12              | 어린이제품 안전확인           |
+           *  | 13              | 어린이제품 공급자적합성 확인    |
+           *  | 14              | 친환경농산물인증 - 유기농산물   |
+           *  | 15              | 친환경농산물인증 - 유기농축산물  |
+           *  | 16              | 친환경농산물인증 - 무농약농산물  |
+           *  | 17              | 친환경농산물인증 - 무항생제축산물 |
+           *  | 18              | 친환경농산물인증 - 저농약농산물  |
+           *  | 19              | 농산물우수관리인증(GAP)       |
+           *  | 20              | 이력추적관리농산물            |
+           *  | 21              | 가공식품산업표준KS인증        |
+           *  | 22              | 전통식품품질인증             |
+           *  | 23              | 유기가공식품인증             |
+           *  | 24              | 수산물품질인증               |
+           *  | 25              | 수산특산품질인증             |
+           *  | 26              | 수산전통식품품질인증           |
+           *  | 27              | HACCP                    |
+           *  | 28              | 축산물등급판정확인서           |
+           *  | 29              | 도축검사증명서               |
+           *  | 30              | GMP - 우수건강기능식품제조기준  |
+           *  | 31              | 건강기능식품 광고사전심의       |
+           *  | 32              | 술품질인증 - 가형            |
+           *  | 33              | 술품질인증 - 나형            |
+           */
+          no: number;
+          /**
+           * @description 인증번호
+           * @example "AAB-82KD"
+           */
+          code: string;
+          /**
+           * @description 인증기관
+           * @example "인증 기관명"
+           */
+          organization: string;
+          /**
+           * @description 인증유형
+           * @example "어린이제품 안전확인"
+           */
+          type: string;
+          /**
+           * @description 인증상호
+           * @example "상호명"
+           */
+          target: string;
+        }[];
         /**
          * @description 판매종료일시
          * @example "2026-01-04 16:11:07"
@@ -3426,29 +3574,29 @@ export interface components {
          * @example "REGULAR"
          * @enum {string}
          */
-        salePeriodType: "REGULAR" | "PERIOD";
+        salePeriodType: 'REGULAR' | 'PERIOD';
         /**
          * @description 스티커 정보
          * @example [{"type":"TEXT","label":"스티커라벨","name":"스티커명"}]
          */
-        stickerInfos: ({
-            /**
-             * @description 스티커 정보
-             * @example "써머 상품"
-             */
-            name: string;
-            /**
-             * @description 스티커 라벨(이미지url, 라벨명)
-             * @example "신상"
-             */
-            label: string;
-            /**
-             * @description 스티커 타입
-             * @example "TEXT"
-             * @enum {string}
-             */
-            type: "TEXT" | "IMAGE";
-          })[];
+        stickerInfos: {
+          /**
+           * @description 스티커 정보
+           * @example "써머 상품"
+           */
+          name: string;
+          /**
+           * @description 스티커 라벨(이미지url, 라벨명)
+           * @example "신상"
+           */
+          label: string;
+          /**
+           * @description 스티커 타입
+           * @example "TEXT"
+           * @enum {string}
+           */
+          type: 'TEXT' | 'IMAGE';
+        }[];
         /**
          * @description HS CODE
          * @example "HSCODE001"
@@ -3459,7 +3607,7 @@ export interface components {
          * @example "DELIVERY"
          * @enum {string}
          */
-        productGroup: "DELIVERY" | "SERVICE";
+        productGroup: 'DELIVERY' | 'SERVICE';
         /**
          * @description 판매시작일시
          * @example "2024-01-04 16:11:07"
@@ -3510,7 +3658,7 @@ export interface components {
            * @example "PARTNER_SHIPPING_AREA"
            * @enum {string}
            */
-          shippingAreaType: "PARTNER_SHIPPING_AREA" | "MALL_SHIPPING_AREA";
+          shippingAreaType: 'PARTNER_SHIPPING_AREA' | 'MALL_SHIPPING_AREA';
           /**
            * @description 해외 배송 여부 (true: 해외 배송, false:국내 배송)
            * @example false
@@ -3553,7 +3701,7 @@ export interface components {
        * @example "PURCHASE"
        * @enum {string}
        */
-      saleMethodType: "PURCHASE" | "CONSIGNMENT";
+      saleMethodType: 'PURCHASE' | 'CONSIGNMENT';
       /**
        * @description [샵바이 프로 전용] 환불 안내 (nullable)
        * @example "<p>템플릿 내용입니다...</p>"
@@ -3606,7 +3754,7 @@ export interface components {
          * @example "WON"
          * @enum {string}
          */
-        immediateDiscountUnitType: "WON" | "RATE";
+        immediateDiscountUnitType: 'WON' | 'RATE';
         /**
          * @description 판매중지 시 가격대체문구
          * @example "잠시 판매중지 중입니다."
@@ -3622,7 +3770,7 @@ export interface components {
          * @example "WON"
          * @enum {string}
          */
-        additionDiscountUnitType: "WON" | "RATE";
+        additionDiscountUnitType: 'WON' | 'RATE';
         /**
          * @description 추가상품 할인( 원 / % )  additionDiscountUnitType 에따라 달라진다.
          * @example 1000
@@ -3638,7 +3786,55 @@ export interface components {
          * @example "개"
          * @enum {string}
          */
-        unitNameType: "개" | "대" | "마리" | "매" | "발" | "봉" | "쌍" | "알" | "입" | "장" | "정" | "켤레" | "포" | "a" | "ah" | "box" | "cc" | "cm" | "ea" | "g" | "gal" | "gb" | "inch" | "kg" | "L" | "lb" | "m" | "mah" | "mb" | "mg" | "ml" | "mm" | "oz" | "pack" | "pc" | "pg" | "psi" | "R" | "T" | "tb" | "v" | "w" | "캡슐" | "Vcap" | "soft gel" | "구미" | "P" | "권";
+        unitNameType:
+          | '개'
+          | '대'
+          | '마리'
+          | '매'
+          | '발'
+          | '봉'
+          | '쌍'
+          | '알'
+          | '입'
+          | '장'
+          | '정'
+          | '켤레'
+          | '포'
+          | 'a'
+          | 'ah'
+          | 'box'
+          | 'cc'
+          | 'cm'
+          | 'ea'
+          | 'g'
+          | 'gal'
+          | 'gb'
+          | 'inch'
+          | 'kg'
+          | 'L'
+          | 'lb'
+          | 'm'
+          | 'mah'
+          | 'mb'
+          | 'mg'
+          | 'ml'
+          | 'mm'
+          | 'oz'
+          | 'pack'
+          | 'pc'
+          | 'pg'
+          | 'psi'
+          | 'R'
+          | 'T'
+          | 'tb'
+          | 'v'
+          | 'w'
+          | '캡슐'
+          | 'Vcap'
+          | 'soft gel'
+          | '구미'
+          | 'P'
+          | '권';
         /**
          * @description 최대 추가할인 금액
          * @example 0
@@ -3687,30 +3883,30 @@ export interface components {
       reviewAvailable: boolean;
       /** @description 카테고리 목록 */
       categories: {
-          /** @description 세부 카테고리 정보 */
-          categories: {
-              /**
-               * @description 뎁스
-               * @example 1
-               */
-              depth: number;
-              /**
-               * @description 카테고리 번호
-               * @example 26915
-               */
-              categoryNo: number;
-              /**
-               * @description 카테고리 명
-               * @example "신규 카테고리1"
-               */
-              label: string;
-            }[];
+        /** @description 세부 카테고리 정보 */
+        categories: {
           /**
-           * @description 전체 카테고리 명
-           * @example "신규 카테고리1>신규 카테고리1-1"
+           * @description 뎁스
+           * @example 1
            */
-          fullCategoryLabel: string;
+          depth: number;
+          /**
+           * @description 카테고리 번호
+           * @example 26915
+           */
+          categoryNo: number;
+          /**
+           * @description 카테고리 명
+           * @example "신규 카테고리1"
+           */
+          label: string;
         }[];
+        /**
+         * @description 전체 카테고리 명
+         * @example "신규 카테고리1>신규 카테고리1-1"
+         */
+        fullCategoryLabel: string;
+      }[];
       /** @description 재고정보 */
       stock: {
         /**
@@ -3748,7 +3944,7 @@ export interface components {
          * @example "[MON,TUE]"
          * @enum {string}
          */
-        daysOfWeek: "MON" | "TUE" | "WED" | "THU" | "FRI" | "SAT" | "SUN";
+        daysOfWeek: 'MON' | 'TUE' | 'WED' | 'THU' | 'FRI' | 'SAT' | 'SUN';
         /** @description 주문일 기준 */
         daysAfterPurchase: number;
       };
@@ -3759,7 +3955,7 @@ export interface components {
          * @example "NAME_KO"
          * @enum {string}
          */
-        nameType: "NAME_KO" | "NAME_EN" | "NONE";
+        nameType: 'NAME_KO' | 'NAME_EN' | 'NONE';
         /**
          * @description 브랜드명
          * @example "나이키"
@@ -3854,7 +4050,7 @@ export interface components {
            * @example "AMOUNT"
            * @enum {string}
            */
-          type: "AMOUNT" | "PERCENT";
+          type: 'AMOUNT' | 'PERCENT';
           /**
            * @description 즉시 할인 금액/율
            * @example 10000
@@ -3910,7 +4106,13 @@ export interface components {
          * @example "FIXED_FEE"
          * @enum {string}
          */
-        deliveryConditionType: "FREE" | "CONDITIONAL" | "FIXED_FEE" | "QUANTITY_PROPOSITIONAL_FEE" | "PRICE_FEE" | "QUANTITY_FEE";
+        deliveryConditionType:
+          | 'FREE'
+          | 'CONDITIONAL'
+          | 'FIXED_FEE'
+          | 'QUANTITY_PROPOSITIONAL_FEE'
+          | 'PRICE_FEE'
+          | 'QUANTITY_FEE';
         /** @description 조건부 배송비의 기준값(9,800원 이상인경우 배송비 2,500원일때 aboveDeliveryAmt는 9800 */
         aboveDeliveryAmt: number;
         /**
@@ -3918,19 +4120,119 @@ export interface components {
          * @example "CJ"
          * @enum {string}
          */
-        deliveryCompanyTypeLabel: "CJ" | "POST" | "HANJIN" | "GTX" | "LOTTE" | "KGB" | "LOGEN" | "CJHBL" | "GSI" | "KGL" | "INTRAS" | "UPS" | "CHUNIL" | "KDEXP" | "HDEXP" | "ILYANG" | "POST_EMS" | "KYOUNGDONG" | "DAESIN" | "CVS" | "DHL" | "FEDEX" | "GSM" | "WARPEX" | "WIZWA" | "ACI" | "PANTOS" | "CJ_INTERNATIONAL" | "TNT" | "CU" | "KUNYOUNG" | "LOTTE_INTERNATIONAL" | "HONAM" | "HANIPS" | "IPARCEL" | "SLX" | "USPS" | "WONDERS" | "REGISTPOST" | "DHLDE" | "EZUSA" | "SWGEXP" | "DAEWOON" | "DODOFLEX" | "NH_LOGIS" | "UFO" | "TODAY_PICKUP" | "QEXPRESS" | "PINGPONG" | "ETC";
+        deliveryCompanyTypeLabel:
+          | 'CJ'
+          | 'POST'
+          | 'HANJIN'
+          | 'GTX'
+          | 'LOTTE'
+          | 'KGB'
+          | 'LOGEN'
+          | 'CJHBL'
+          | 'GSI'
+          | 'KGL'
+          | 'INTRAS'
+          | 'UPS'
+          | 'CHUNIL'
+          | 'KDEXP'
+          | 'HDEXP'
+          | 'ILYANG'
+          | 'POST_EMS'
+          | 'KYOUNGDONG'
+          | 'DAESIN'
+          | 'CVS'
+          | 'DHL'
+          | 'FEDEX'
+          | 'GSM'
+          | 'WARPEX'
+          | 'WIZWA'
+          | 'ACI'
+          | 'PANTOS'
+          | 'CJ_INTERNATIONAL'
+          | 'TNT'
+          | 'CU'
+          | 'KUNYOUNG'
+          | 'LOTTE_INTERNATIONAL'
+          | 'HONAM'
+          | 'HANIPS'
+          | 'IPARCEL'
+          | 'SLX'
+          | 'USPS'
+          | 'WONDERS'
+          | 'REGISTPOST'
+          | 'DHLDE'
+          | 'EZUSA'
+          | 'SWGEXP'
+          | 'DAEWOON'
+          | 'DODOFLEX'
+          | 'NH_LOGIS'
+          | 'UFO'
+          | 'TODAY_PICKUP'
+          | 'QEXPRESS'
+          | 'PINGPONG'
+          | 'ETC';
         /**
          * @description 배송유형
          * @example "PARCEL_DELIVERY"
          * @enum {string}
          */
-        deliveryType: "PARCEL_DELIVERY" | "DIRECT_DELIVERY";
+        deliveryType: 'PARCEL_DELIVERY' | 'DIRECT_DELIVERY';
         /**
          * @description 택배사
          * @example "CJ"
          * @enum {string}
          */
-        deliveryCompanyType: "CJ" | "POST" | "HANJIN" | "GTX" | "LOTTE" | "KGB" | "LOGEN" | "CJHBL" | "GSI" | "KGL" | "INTRAS" | "UPS" | "CHUNIL" | "KDEXP" | "HDEXP" | "ILYANG" | "POST_EMS" | "KYOUNGDONG" | "DAESIN" | "CVS" | "DHL" | "FEDEX" | "GSM" | "WARPEX" | "WIZWA" | "ACI" | "PANTOS" | "CJ_INTERNATIONAL" | "TNT" | "CU" | "KUNYOUNG" | "LOTTE_INTERNATIONAL" | "HONAM" | "HANIPS" | "IPARCEL" | "SLX" | "USPS" | "WONDERS" | "REGISTPOST" | "DHLDE" | "EZUSA" | "SWGEXP" | "DAEWOON" | "DODOFLEX" | "NH_LOGIS" | "UFO" | "TODAY_PICKUP" | "QEXPRESS" | "PINGPONG" | "ETC";
+        deliveryCompanyType:
+          | 'CJ'
+          | 'POST'
+          | 'HANJIN'
+          | 'GTX'
+          | 'LOTTE'
+          | 'KGB'
+          | 'LOGEN'
+          | 'CJHBL'
+          | 'GSI'
+          | 'KGL'
+          | 'INTRAS'
+          | 'UPS'
+          | 'CHUNIL'
+          | 'KDEXP'
+          | 'HDEXP'
+          | 'ILYANG'
+          | 'POST_EMS'
+          | 'KYOUNGDONG'
+          | 'DAESIN'
+          | 'CVS'
+          | 'DHL'
+          | 'FEDEX'
+          | 'GSM'
+          | 'WARPEX'
+          | 'WIZWA'
+          | 'ACI'
+          | 'PANTOS'
+          | 'CJ_INTERNATIONAL'
+          | 'TNT'
+          | 'CU'
+          | 'KUNYOUNG'
+          | 'LOTTE_INTERNATIONAL'
+          | 'HONAM'
+          | 'HANIPS'
+          | 'IPARCEL'
+          | 'SLX'
+          | 'USPS'
+          | 'WONDERS'
+          | 'REGISTPOST'
+          | 'DHLDE'
+          | 'EZUSA'
+          | 'SWGEXP'
+          | 'DAEWOON'
+          | 'DODOFLEX'
+          | 'NH_LOGIS'
+          | 'UFO'
+          | 'TODAY_PICKUP'
+          | 'QEXPRESS'
+          | 'PINGPONG'
+          | 'ETC';
         /**
          * @description 배송비템플릿 요약
          * @example "배송비 2500원"
@@ -3938,14 +4240,14 @@ export interface components {
         defaultDeliveryConditionLabel: string;
         /** @description 지역별 추가 배송비 상세 */
         remoteDeliveryAreaFees: {
-            /**
-             * @description 추가 배송비 지역
-             * @example "제주도"
-             */
-            address: string;
-            /** @description 추가배송비 */
-            extraDeliveryAmt: number;
-          }[];
+          /**
+           * @description 추가 배송비 지역
+           * @example "제주도"
+           */
+          address: string;
+          /** @description 추가배송비 */
+          extraDeliveryAmt: number;
+        }[];
         /**
          * @description 구간 배송비인경우 배송비에대한 요약
          * @example []
@@ -3963,13 +4265,13 @@ export interface components {
         deliveryPrePayment: boolean;
         /** @description 배송비조건 상세 */
         deliveryConditionDetails: {
-            /** @description 배송비 */
-            deliveryAmt: number;
-            /** @description 가격 미만 */
-            below: number;
-            /** @description 가격 이상 */
-            aboveOrEqual: number;
-          }[];
+          /** @description 배송비 */
+          deliveryAmt: number;
+          /** @description 가격 미만 */
+          below: number;
+          /** @description 가격 이상 */
+          aboveOrEqual: number;
+        }[];
         /** @description 수량 비례인 경우 개당 개수 (2개당 배송비 2,500원인 경우 perOrderCnt는 2 */
         perOrderCnt: number;
         /** @description 판매자 특이사항/고객안내사항 */
@@ -3986,7 +4288,7 @@ export interface components {
            * @example "ADDRESS"
            * @enum {string}
            */
-          warehouseAddressType: "ADDRESS" | "SUBSTITUTION";
+          warehouseAddressType: 'ADDRESS' | 'SUBSTITUTION';
           /**
            * @description 해당 반품지 파트너 번호
            * @example 1
@@ -4111,7 +4413,7 @@ export interface components {
          * @example "DEFAULT"
          * @enum {string}
          */
-        productClassType: "DEFAULT" | "EVENT" | "OFFLINE" | "RENTAL";
+        productClassType: 'DEFAULT' | 'EVENT' | 'OFFLINE' | 'RENTAL';
         /**
          * @description 전시여부
          * @example true
@@ -4127,310 +4429,315 @@ export interface components {
          * @example "ONSALE"
          * @enum {string}
          */
-        saleStatusType: "READY" | "ONSALE" | "FINISHED" | "STOP" | "PROHIBITION";
+        saleStatusType:
+          | 'READY'
+          | 'ONSALE'
+          | 'FINISHED'
+          | 'STOP'
+          | 'PROHIBITION';
       };
     };
-    "profile-like-products-110141960": {
-        /**
-         * @description 결과
-         * @example true
-         */
-        result: boolean;
-        /**
-         * @description 상품 번호
-         * @example 100000
-         */
-        productNo: number;
-      }[];
-    "products-options-814576919": {
-      optionInfos: ({
-          options: ({
-              /**
-               * @description 할인 적용가
-               * @example 20000
-               */
-              buyPrice: number;
-              images: {
-                  /**
-                   * @description 메인이미지 여부 (true: 메인이미지, false: 메인이미지 아님)
-                   * @example true
-                   */
-                  main: boolean;
-                  /**
-                   * @description 이미지 URL
-                   * @example "www.image.com/image.jpg"
-                   */
-                  url: string;
-                }[];
-              /**
-               * @description 판매 상태 유형
-               * @example "AVAILABLE"
-               * @enum {string}
-               */
-              saleType: "AVAILABLE" | "SOLD_OUT";
-              /**
-               * @description 대표옵션 여부 (true: 대표옵션, false: 대표옵션 아님)
-               * @example true
-               */
-              main: boolean;
-              /**
-               * @description 추가금액
-               * @example 10000
-               */
-              addPrice: number;
-              /**
-               * @description 옵션명
-               * @example "색상"
-               */
-              label: string;
-              /**
-               * @description 판매수량
-               * @example 100
-               */
-              saleCnt: number;
-              /**
-               * @description 예약재고수량
-               * @example 10
-               */
-              reservationStockCnt: number;
-              /**
-               * @description 자식 옵션 목록
-               * @example "[]"
-               */
-              children: Record<string, never>[];
-              /**
-               * @description 재고수량
-               * @example 25
-               */
-              stockCnt: number;
-              /**
-               * @description 옵션 관리 코드
-               * @example "shirts"
-               */
-              optionManagementCd: string;
-              /**
-               * @description 옵션 번호
-               * @example 1
-               */
-              optionNo: number;
-              /**
-               * @description 옵션값
-               * @example "민트"
-               */
-              value: string;
-              /**
-               * @description 임시 품절 여부 (true: 임시 품절, false: 임시 품절 아님)
-               * @example false
-               */
-              forcedSoldOut: boolean;
-            })[];
+    'profile-like-products-110141960': {
+      /**
+       * @description 결과
+       * @example true
+       */
+      result: boolean;
+      /**
+       * @description 상품 번호
+       * @example 100000
+       */
+      productNo: number;
+    }[];
+    'products-options-814576919': {
+      optionInfos: {
+        options: {
           /**
-           * @description
-           *  재고 노출 여부 (false:재고 미노출 / true:재고 노출)<br><br>
-           *  false로 재고를 숨김처리 한 경우,
-           *  1) 재고 관련 필드는(실제 재고가 있더라도) -999로 고정으로 리턴하며 실재고 값은 따로 내려주지 않아 조회 불가합니다.
-           *  2) 실재고가 0인 경우에만 0으로 응답합니다.
-           *    만약 재고 숨김처리 시, front에서 [-999]로 표시되도록 처리되고 있는게 있다면 재고노출여부(displayableStock)를 기준으로 수정 작업이 필요합니다.
-           *    만약 재고 숨김처리 시, front에서 [품절]로 표시되도록 처리되고 있는게 있다면 재고/예약재고값을 기준이 아닌, 품절상태(isSoldOut)값을 기준으로 처리되도록 수정 작업이 필요합니다.
-           *
+           * @description 할인 적용가
+           * @example 20000
+           */
+          buyPrice: number;
+          images: {
+            /**
+             * @description 메인이미지 여부 (true: 메인이미지, false: 메인이미지 아님)
+             * @example true
+             */
+            main: boolean;
+            /**
+             * @description 이미지 URL
+             * @example "www.image.com/image.jpg"
+             */
+            url: string;
+          }[];
+          /**
+           * @description 판매 상태 유형
+           * @example "AVAILABLE"
+           * @enum {string}
+           */
+          saleType: 'AVAILABLE' | 'SOLD_OUT';
+          /**
+           * @description 대표옵션 여부 (true: 대표옵션, false: 대표옵션 아님)
+           * @example true
+           */
+          main: boolean;
+          /**
+           * @description 추가금액
+           * @example 10000
+           */
+          addPrice: number;
+          /**
+           * @description 옵션명
+           * @example "색상"
+           */
+          label: string;
+          /**
+           * @description 판매수량
+           * @example 100
+           */
+          saleCnt: number;
+          /**
+           * @description 예약재고수량
+           * @example 10
+           */
+          reservationStockCnt: number;
+          /**
+           * @description 자식 옵션 목록
+           * @example "[]"
+           */
+          children: Record<string, never>[];
+          /**
+           * @description 재고수량
+           * @example 25
+           */
+          stockCnt: number;
+          /**
+           * @description 옵션 관리 코드
+           * @example "shirts"
+           */
+          optionManagementCd: string;
+          /**
+           * @description 옵션 번호
+           * @example 1
+           */
+          optionNo: number;
+          /**
+           * @description 옵션값
+           * @example "민트"
+           */
+          value: string;
+          /**
+           * @description 임시 품절 여부 (true: 임시 품절, false: 임시 품절 아님)
            * @example false
            */
-          displayableStock: boolean;
-          /**
-           * @description 상품번호
-           * @example 2
-           */
-          mallProductNo: number;
-        })[];
+          forcedSoldOut: boolean;
+        }[];
+        /**
+         * @description
+         *  재고 노출 여부 (false:재고 미노출 / true:재고 노출)<br><br>
+         *  false로 재고를 숨김처리 한 경우,
+         *  1) 재고 관련 필드는(실제 재고가 있더라도) -999로 고정으로 리턴하며 실재고 값은 따로 내려주지 않아 조회 불가합니다.
+         *  2) 실재고가 0인 경우에만 0으로 응답합니다.
+         *    만약 재고 숨김처리 시, front에서 [-999]로 표시되도록 처리되고 있는게 있다면 재고노출여부(displayableStock)를 기준으로 수정 작업이 필요합니다.
+         *    만약 재고 숨김처리 시, front에서 [품절]로 표시되도록 처리되고 있는게 있다면 재고/예약재고값을 기준이 아닌, 품절상태(isSoldOut)값을 기준으로 처리되도록 수정 작업이 필요합니다.
+         *
+         * @example false
+         */
+        displayableStock: boolean;
+        /**
+         * @description 상품번호
+         * @example 2
+         */
+        mallProductNo: number;
+      }[];
     };
-    "products-search1025470211": {
+    'products-search1025470211': {
       /**
        * @description 페이지 수
        * @example 1
        */
       pageCount: number;
       brands: {
-          /**
-           * @description 브랜드이름
-           * @example "브랜드 이름"
-           */
-          brandName: string;
-          /**
-           * @description 브랜드 한글명
-           * @example
-           */
-          brandNameKo: string;
-          /**
-           * @description 브랜드 상품 수
-           * @example 1
-           */
-          count: number;
-          /**
-           * @description 브랜드 영문명
-           * @example
-           */
-          brandNameEn: string;
-          /**
-           * @description 브랜드명 타입 (NAME_KO: Korean, NAME_EN: English, NONE: none)
-           * @example "NAME_EN"
-           */
-          brandNameType: string;
-          /**
-           * @description 브랜드번호
-           * @example 1
-           */
-          brandNo: number;
-        }[];
+        /**
+         * @description 브랜드이름
+         * @example "브랜드 이름"
+         */
+        brandName: string;
+        /**
+         * @description 브랜드 한글명
+         * @example
+         */
+        brandNameKo: string;
+        /**
+         * @description 브랜드 상품 수
+         * @example 1
+         */
+        count: number;
+        /**
+         * @description 브랜드 영문명
+         * @example
+         */
+        brandNameEn: string;
+        /**
+         * @description 브랜드명 타입 (NAME_KO: Korean, NAME_EN: English, NONE: none)
+         * @example "NAME_EN"
+         */
+        brandNameType: string;
+        /**
+         * @description 브랜드번호
+         * @example 1
+         */
+        brandNo: number;
+      }[];
       depth4Categories: {
-          /**
-           * @description 부모 카테고리 번호
-           * @example 1010003
-           */
-          parentCategoryNo: number;
-          /**
-           * @description 전시 순서
-           * @example 1
-           */
-          displayOrder: number;
-          /**
-           * @description 카테고리 상품 개수
-           * @example 1
-           */
-          count: number;
-          /**
-           * @description 카테고리번호
-           * @example 1010004
-           */
-          categoryNo: number;
-          /**
-           * @description 카테고리 명
-           * @example "카테고리4 이름"
-           */
-          label: string;
-        }[];
+        /**
+         * @description 부모 카테고리 번호
+         * @example 1010003
+         */
+        parentCategoryNo: number;
+        /**
+         * @description 전시 순서
+         * @example 1
+         */
+        displayOrder: number;
+        /**
+         * @description 카테고리 상품 개수
+         * @example 1
+         */
+        count: number;
+        /**
+         * @description 카테고리번호
+         * @example 1010004
+         */
+        categoryNo: number;
+        /**
+         * @description 카테고리 명
+         * @example "카테고리4 이름"
+         */
+        label: string;
+      }[];
       depth3Categories: {
-          /**
-           * @description 부모 카테고리 번호
-           * @example 1010002
-           */
-          parentCategoryNo: number;
-          /**
-           * @description 전시 순서
-           * @example 1
-           */
-          displayOrder: number;
-          /**
-           * @description 카테고리 상품 개수
-           * @example 1
-           */
-          count: number;
-          /**
-           * @description 카테고리번호
-           * @example 1010003
-           */
-          categoryNo: number;
-          /**
-           * @description 카테고리 명
-           * @example "카테고리3 이름"
-           */
-          label: string;
-        }[];
+        /**
+         * @description 부모 카테고리 번호
+         * @example 1010002
+         */
+        parentCategoryNo: number;
+        /**
+         * @description 전시 순서
+         * @example 1
+         */
+        displayOrder: number;
+        /**
+         * @description 카테고리 상품 개수
+         * @example 1
+         */
+        count: number;
+        /**
+         * @description 카테고리번호
+         * @example 1010003
+         */
+        categoryNo: number;
+        /**
+         * @description 카테고리 명
+         * @example "카테고리3 이름"
+         */
+        label: string;
+      }[];
       depth2Categories: {
-          /**
-           * @description 부모 카테고리 번호
-           * @example 1010001
-           */
-          parentCategoryNo: number;
-          /**
-           * @description 전시 순서
-           * @example 1
-           */
-          displayOrder: number;
-          /**
-           * @description 카테고리 상품 개수
-           * @example 1
-           */
-          count: number;
-          /**
-           * @description 카테고리번호
-           * @example 1010002
-           */
-          categoryNo: number;
-          /**
-           * @description 카테고리 명
-           * @example "카테고리2 이름"
-           */
-          label: string;
-        }[];
+        /**
+         * @description 부모 카테고리 번호
+         * @example 1010001
+         */
+        parentCategoryNo: number;
+        /**
+         * @description 전시 순서
+         * @example 1
+         */
+        displayOrder: number;
+        /**
+         * @description 카테고리 상품 개수
+         * @example 1
+         */
+        count: number;
+        /**
+         * @description 카테고리번호
+         * @example 1010002
+         */
+        categoryNo: number;
+        /**
+         * @description 카테고리 명
+         * @example "카테고리2 이름"
+         */
+        label: string;
+      }[];
       /**
        * @description 총 개수
        * @example 10
        */
       totalCount: number;
       multiLevelCategories: {
-          /**
-           * @description 부모 카테고리 번호
-           * @example 0
-           */
-          parentCategoryNo: number;
-          /**
-           * @description 전시 순서
-           * @example 0
-           */
-          displayOrder: number;
-          /**
-           * @description 카테고리 상품 개수
-           * @example 0
-           */
-          count: number;
-          /**
-           * @description 카테고리번호
-           * @example 0
-           */
-          categoryNo: number;
-          /**
-           * @description 하위 카테고리
-           * @example []
-           */
-          childCategories: Record<string, never>[];
-          /**
-           * @description 카테고리 명
-           * @example ""
-           */
-          label: string;
-        }[];
+        /**
+         * @description 부모 카테고리 번호
+         * @example 0
+         */
+        parentCategoryNo: number;
+        /**
+         * @description 전시 순서
+         * @example 0
+         */
+        displayOrder: number;
+        /**
+         * @description 카테고리 상품 개수
+         * @example 0
+         */
+        count: number;
+        /**
+         * @description 카테고리번호
+         * @example 0
+         */
+        categoryNo: number;
+        /**
+         * @description 하위 카테고리
+         * @example []
+         */
+        childCategories: Record<string, never>[];
+        /**
+         * @description 카테고리 명
+         * @example ""
+         */
+        label: string;
+      }[];
       /**
        * @description 최소 가격
        * @example 0
        */
       minPrice: number;
       depth1Categories: {
-          /**
-           * @description 부모 카테고리 번호
-           * @example 0
-           */
-          parentCategoryNo: number;
-          /**
-           * @description 전시 순서
-           * @example 1
-           */
-          displayOrder: number;
-          /**
-           * @description 카테고리 상품 개수
-           * @example 1
-           */
-          count: number;
-          /**
-           * @description 카테고리번호
-           * @example 1010001
-           */
-          categoryNo: number;
-          /**
-           * @description 카테고리 명
-           * @example "카테고리1 이름"
-           */
-          label: string;
-        }[];
+        /**
+         * @description 부모 카테고리 번호
+         * @example 0
+         */
+        parentCategoryNo: number;
+        /**
+         * @description 전시 순서
+         * @example 1
+         */
+        displayOrder: number;
+        /**
+         * @description 카테고리 상품 개수
+         * @example 1
+         */
+        count: number;
+        /**
+         * @description 카테고리번호
+         * @example 1010001
+         */
+        categoryNo: number;
+        /**
+         * @description 카테고리 명
+         * @example "카테고리1 이름"
+         */
+        label: string;
+      }[];
       /**
        * @description
        *  재고 노출 여부 (false:재고 미노출 / true:재고 노출)<br><br>
@@ -4460,17 +4767,2325 @@ export interface components {
          */
         url: string;
       };
-      items: ({
+      items: {
+        /**
+         * @description 그룹관리코드 노출명
+         * @example "CODE NAME"
+         */
+        groupManagementCodeName: string;
+        /**
+         * @description 추가할인 최소 기준금액
+         * @example 0
+         */
+        minSalePrice: number;
+        /**
+         * @description 그룹관리코드
+         * @example "CODE"
+         */
+        groupManagementCode: string;
+        /**
+         * @description 좋아요 수
+         * @example 10
+         */
+        likeCount: number;
+        /**
+         * @description 장바구니 사용 여부
+         * @example true
+         */
+        canAddToCart: boolean;
+        /**
+         * @description 총 리뷰 수
+         * @example 0
+         */
+        totalReviewCount: number;
+        /**
+         * @description 상품평 평균점
+         * @example 4.8
+         */
+        reviewRating: number;
+        /**
+         * @description 좋아요 여부
+         * @example false
+         */
+        liked: boolean;
+        /**
+         * @description 상품명
+         * @example "상품명"
+         */
+        productName: string;
+        /**
+         * @description 최대 쿠폰 적용 가격(default: 0)
+         * @example 0
+         */
+        couponDiscountAmt: number;
+        /**
+         * @description 추가상품할인가
+         * @example 0
+         */
+        additionDiscountAmt: number;
+        /** @description 상품 이미지 정보 */
+        imageUrlInfo: {
+          /**
+           * @description 상품 이미지 url 타입
+           * @example "IMAGE_URL"
+           * @enum {string}
+           */
+          type: 'IMAGE_URL' | 'VIDEO_URL';
+          /**
+           * @description 상품 이미지 url
+           * @example "//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"
+           */
+          url: string;
+        }[];
+        /**
+         * @description 브랜드 번호
+         * @example 10
+         */
+        brandNo: number;
+        /**
+         * @description 메인 베스트 상품 여부 deprecated(더 이상 제공하지 않는 개체항목입니다)
+         * @example false
+         */
+        mainBestProductYn: boolean;
+        /**
+         * @description 브랜드 명
+         * @example "더미 브랜드"
+         */
+        brandName: string;
+        /**
+         * @description 리스트 이미지 URL
+         * @example [["//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"]]
+         */
+        listImageUrls: string[];
+        /**
+         * @description 즉시할인가
+         * @example 1000
+         */
+        immediateDiscountAmt: number;
+        /**
+         * @description 스티커 라벨(배열)
+         * @example ["스티커라벨"]
+         */
+        stickerLabels: string[];
+        /** @description 쿠폰여부 */
+        hasCoupons: {
+          /**
+           * @description 상품쿠폰 태그
+           * @example false
+           */
+          product: boolean;
+          /**
+           * @description 파트너쿠폰 태그
+           * @example false
+           */
+          partner: boolean;
+          /**
+           * @description 기획전쿠폰 태그
+           * @example false
+           */
+          event: boolean;
+          /**
+           * @description 카테고리쿠폰 태그
+           * @example false
+           */
+          category: boolean;
+          /**
+           * @description 브랜드쿠폰 태그
+           * @example false
+           */
+          brand: boolean;
+        };
+        /**
+         * @description 즉시할인 타입 Enum: [ WON: Sum, RATE: rate ]
+         * @example "WON"
+         */
+        immediateDiscountUnitType: string;
+        /**
+         * @description 추가상품할인 타입 Enum: [ WON: Sum, RATE: rate ]
+         * @example "WON"
+         */
+        additionDiscountUnitType: string;
+        /**
+         * @description 전시 여부
+         * @example true
+         */
+        frontDisplayYn: boolean;
+        /**
+         * @description 판매 수량 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
+         * @example 1000
+         */
+        saleCnt: number;
+        /** @description 상품 항목 추가 정보 */
+        customProperties: {
+          /**
+           * @description 항목 복수선택여부 (true: 복수개 선택가능, false: 1개만 선택가능)
+           * @example false
+           */
+          isMultipleSelection: boolean;
+          /** @description 상품 항목 값 번호 */
+          propValueNo: number;
+          /**
+           * @description 상품 항목 값
+           * @example "2015"
+           */
+          propValue: string;
+          /**
+           * @description 상품 항목명
+           * @example "시즌"
+           */
+          propName: string;
+          /** @description 상품 항목명 번호 */
+          propNo: number;
+        }[];
+        /**
+         * @description 판매시작일시
+         * @example "2024-01-04 16:11:07"
+         */
+        saleStartYmdt: string;
+        /**
+         * @description 브랜드 한글명
+         * @example "dummy korean brand"
+         */
+        brandNameKo: string;
+        /** @description 상품섹션에서 설정한 종료일 - deprecated(더 이상 제공하지 않는 개체항목입니다) */
+        sectionProductEndYmdt: string;
+        /**
+         * @description 품절여부 (true-품절, false-미품절)
+         * @example false
+         */
+        isSoldOut: boolean;
+        /**
+         * @description 성인 상품 여부
+         * @example false
+         */
+        adult: boolean;
+        /** @description 상품 조합형 옵션정보 ( 옵션명은 | 라인으로 구분 ) */
+        optionValues: {
+          /**
+           * @description 옵션명
+           * @example "레드"
+           */
+          optionValue: string;
+          /**
+           * @description 재고 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
+           * @example 100
+           */
+          stockCnt: number;
+          /**
+           * @description 상품번호
+           * @example 10000001
+           */
+          mallProductNo: number;
+        }[];
+        /**
+         * @description 전시카테고리 번호 정보
+         * @example "26916"
+         */
+        displayCategoryNos: string;
+        /**
+         * @description 판매자 관리코드
+         * @example "PRDC10001"
+         */
+        productManagementCd: string;
+        /** @description 예약판매정보 */
+        reservationData: {
+          /**
+           * @description 예약판매 배송시작일
+           * @example "2023-12-04 16:11:07"
+           */
+          reservationDeliveryYmdt: string;
+          /**
+           * @description 예약판매 재고수량 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
+           * @example 5
+           */
+          reservationStockCnt: number;
+          /**
+           * @description 예약판매 종료일
+           * @example "2023-11-04 16:11:07"
+           */
+          reservationEndYmdt: string;
+          /**
+           * @description 예약판매 시작일
+           * @example "2023-10-04 16:11:07"
+           */
+          reservationStartYmdt: string;
+        };
+        /**
+         * @description 배송비 타입 Enum: [ FREE: Free, CONDITIONAL: conditional free, FIXED_FEE: Paid (Fixed Shipping Fee) ]
+         * @example "CONDITIONAL"
+         */
+        deliveryConditionType: string;
+        /** @description 상품섹션에서 설정한 시작일 - deprecated(더 이상 제공하지 않는 개체항목입니다) */
+        sectionProductStartYmdt: string;
+        /**
+         * @description 적립금
+         * @example 0
+         */
+        accumulationAmtWhenBuyConfirm: number;
+        /** @description 배송비 조건 */
+        deliveryConditionInfo: {
+          /**
+           * @description 배송비 요약
+           * @example "배송비 요약"
+           */
+          summary: string;
+          /**
+           * @description 수량 비례 조건에서 수량 (nullable)
+           * @example 2
+           */
+          perOrderCnt?: number;
+          /**
+           * @description 무료배송을 위한 최소 금액 (nullable)
+           * @example 30000
+           */
+          criteria?: number;
+          /** @description 차등 조건 구간 (nullable) */
+          deliveryFeeRanges?: {
+            /**
+             * @description 해당 구간에서의 배송비
+             * @example 5000
+             */
+            deliveryAmt: number;
+            /**
+             * @description ~미만 (nullable)
+             * @example 20000
+             */
+            below?: number;
+            /**
+             * @description ~이상 (nullable)
+             * @example 10000
+             */
+            aboveOrEqual?: number;
+          }[];
+          /** @description 차등 조건 구간 요약 (nullable) */
+          rangeSummaries?: (
+            | Record<string, never>
+            | boolean
+            | string
+            | number
+          )[];
+        };
+        /**
+         * @description 브랜드명 타입 (NAME_KO: Korean, NAME_EN: English, NONE: none)
+         * @example "NAME_KO"
+         */
+        brandNameType: string;
+        /** @description 쿠폰 태그 deprecated(더 이상 제공하지 않는 개체항목입니다) */
+        couponTag: string;
+        /**
+         * @description 최대 쿠폰 적용 가격(default: 0)
+         * @example 0
+         */
+        maxCouponAmt: number;
+        /**
+         * @description 상품의 상품 노출 타입 Enum: [ REGULAR: regular sale, PERIOD: Period Sale ]
+         * @example "REGULAR"
+         */
+        productSalePeriodType: string;
+        /**
+         * @description 추가할인 정률 최대 할인 금액
+         * @example 0
+         */
+        maxDiscountAmount: number;
+        /**
+         * @description 사용가능쿠폰 존재 여부
+         * @example false
+         */
+        enableCoupons: boolean;
+        /**
+         * @description 상품유형
+         * @example "DEFAULT"
+         * @enum {string}
+         */
+        productType: 'DEFAULT' | 'EVENT' | 'OFFLINE' | 'RENTAL';
+        /**
+         * @description 상품번호
+         * @example 10000001
+         */
+        productNo: number;
+        /**
+         * @description 상품 유효기간 (nullable)
+         * @example "2023-12-31"
+         */
+        expirationDate?: string;
+        /**
+         * @description 상품 등록일
+         * @example "2023-11-04 16:11:07"
+         */
+        registerYmdt: string;
+        /**
+         * @description 상품판매가
+         * @example 10000
+         */
+        salePrice: number;
+        /**
+         * @description 파트너명
+         * @example "다팔아"
+         */
+        partnerName: string;
+        /**
+         * @description 즉시할인 시작일자
+         * @example "2024-01-04 16:11:07"
+         */
+        immediateDiscountStartYmdt: string;
+        /**
+         * @description 상품조회화면 노출 여부
+         * @example false
+         */
+        urlDirectDisplayYn: boolean;
+        /**
+         * @description 판매중지 시 가격대체문구
+         * @example "잠시 판매중지 중입니다."
+         */
+        contentsIfPausing: string;
+        /**
+         * @description 배송 구분 (PARTNER_SHIPPING_AREA: Partner Shipping Center Shipping, MALL_SHIPPING_AREA: Shipping from shopping mall distribution center)
+         * @example "PARTNER_SHIPPING_AREA"
+         */
+        shippingArea: string;
+        /**
+         * @description 판매종료일시
+         * @example "2026-01-04 16:11:07"
+         */
+        saleEndYmdt: string;
+        /** @description 판매기간유형 - deprecated(더 이상 제공하지 않는 개체항목입니다) */
+        salePeriodType: string;
+        /**
+         * @description 추가할인 최대 기준금액
+         * @example 0
+         */
+        maxSalePrice: number;
+        /**
+         * @description 홍보문구
+         * @example "홍보문구"
+         */
+        promotionText: string;
+        /** @description 스티커 정보 */
+        stickerInfos: {
+          /**
+           * @description 스티커 이름
+           * @example "스티커라벨"
+           */
+          name: string;
+          /**
+           * @description 스티커 라벨
+           * @example "스티커라벨"
+           */
+          label: string;
+          /**
+           * @description 스티커 타입 Enum: [ TEXT: Text, IMAGE: Image ]
+           * @example "TEXT"
+           */
+          type: string;
+        }[];
+        /** @description 상품 리스트 이미지 정보 */
+        listImageUrlInfo: {
+          /**
+           * @description 상품 리스트 이미지 url 타입
+           * @example "IMAGE_URL"
+           * @enum {string}
+           */
+          type: 'IMAGE_URL' | 'VIDEO_URL';
+          /**
+           * @description 상품 리스트 이미지 url
+           * @example "//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"
+           */
+          url: string;
+        }[];
+        /**
+         * @description HS CODE
+         * @example "HSCODE"
+         */
+        hsCode: string;
+        /**
+         * @description 즉시할인 종료일자
+         * @example "2024-02-04 16:11:07"
+         */
+        immediateDiscountEndYmdt: string;
+        /**
+         * @description 상품 이미지 URL
+         * @example ["//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"]
+         */
+        imageUrls: string[];
+        /**
+         * @description 브랜드 영문 명
+         * @example "dummy brand"
+         */
+        brandNameEn: string;
+        /** @description 적립금 정보 */
+        accumulationInfo: {
+          /**
+           * @description 회원등급적립률
+           * @example 0
+           */
+          rewardRateOfMemberBenefit: number;
+          /**
+           * @description 적립금
+           * @example 0
+           */
+          amount: number;
+          /**
+           * @description 상품개별적립률
+           * @example 0
+           */
+          rewardRateOfProduct: number;
+        };
+        /**
+         * @description 대표 옵션 재고 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
+         * @example 50
+         */
+        mainStockCnt: number;
+        /**
+         * @description 영문 상품명
+         * @example "상품명"
+         */
+        productNameEn: string;
+        /** @description 검색상품번호 - deprecated(더 이상 제공하지 않는 개체항목입니다) */
+        searchProductId: string;
+        /**
+         * @description 재고 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
+         * @example 100
+         */
+        stockCnt: number;
+        /**
+         * @description 판매상태 Enum: [ READY: Ready for sale, ONSALE: on sale, FINISHED: Sales Ended, STOP: Sale Stopped, PROHIBITION: Sell prohibited ]
+         * @example "ONSALE"
+         */
+        saleStatusType: string;
+      }[];
+      depth5Categories: {
+        /**
+         * @description 부모 카테고리 번호
+         * @example 1010004
+         */
+        parentCategoryNo: number;
+        /**
+         * @description 전시 순서
+         * @example 1
+         */
+        displayOrder: number;
+        /**
+         * @description 카테고리 상품 개수
+         * @example 1
+         */
+        count: number;
+        /**
+         * @description 카테고리번호
+         * @example 1010005
+         */
+        categoryNo: number;
+        /**
+         * @description 카테고리 명
+         * @example "카테고리5 이름"
+         */
+        label: string;
+      }[];
+    };
+    'products-productNo-url-shortening-1808461975': {
+      /**
+       * @description 단축URL
+       * @example http://alpha-firstmall.e-ncp.com/s/abCdEfg
+       */
+      url: string;
+    };
+    'profile-like-products-count1871095000': {
+      /**
+       * @description 좋아요 수
+       * @example 10
+       */
+      likedCount: number;
+    };
+    'display-brands-812449549': {
+      /**
+       * @description 전체 브랜드 수
+       * @example 10
+       */
+      totalCount: number;
+      items: {
+        /**
+         * @description 브랜드명 노출타입
+         * @example "NAME_KO"
+         * @enum {string}
+         */
+        nameType: 'NAME_KO' | 'NAME_EN' | 'NONE';
+        /**
+         * @description 브랜드 한글명
+         * @example "브랜드 이름"
+         */
+        nameKo: string;
+        /**
+         * @description 상세(html) (사용안하는 필드로 deprecated 예정)
+         * @example "상세 내용"
+         */
+        detailContent: string;
+        /**
+         * @description 브랜드 홈페이지 주소
+         * @example "homepage url"
+         */
+        homepageUrl: string;
+        /**
+         * @description 브랜드 한글명
+         * @example "브랜드 이름"
+         */
+        name: string;
+        /**
+         * @description 브랜드 설명
+         * @example "설명"
+         */
+        description: string;
+        /**
+         * @description 메인 이미지(html) (사용안하는 필드로 deprecated 예정)
+         * @example "메인 내용"
+         */
+        mainImageContent: string;
+        /**
+         * @description 브랜드 이미지 또는 브랜드 관련 동영상 url
+         * @example "브랜드 이미지 또는 브랜드 관련 동영상 url"
+         */
+        displayAreaContentUrl: string;
+        /**
+         * @description 메이커 명
+         * @example "제작사"
+         */
+        makerName: string;
+        /**
+         * @description 브랜드 영문명
+         * @example "brand name"
+         */
+        nameEn: string;
+        /**
+         * @description 브랜드번호
+         * @example 1
+         */
+        brandNo: number;
+        /**
+         * @description 로고 주소
+         * @example "logo image url"
+         */
+        logoImageUrl: string;
+      }[];
+    };
+    'products-group-management-code-1777856279': {
+      /**
+       * @description 그룹관리코드 노출 설명
+       * @example "Description"
+       */
+      groupManagementCodeDescription: string;
+      /**
+       * @description 그룹관리코드 노출명
+       * @example "CODE NAME"
+       */
+      groupManagementCodeName: string;
+      /**
+       * @description 그룹관리코드
+       * @example "CODE"
+       */
+      groupManagementCode: string;
+      /** @description 그룹관리 상품 */
+      groupManagementMappingProducts: {
+        /**
+         * @description 옵션 타입
+         * @example "DEFAULT"
+         * @enum {string}
+         */
+        optionType: 'STANDARD' | 'COMBINATION' | 'DEFAULT' | 'MAPPING';
+        /**
+         * @description 미성년자 구매가능 여부
+         * @example false
+         */
+        isMinorPurchase: boolean;
+        /**
+         * @description 옵션 사용 여부
+         * @example false
+         */
+        hasOption: boolean;
+        /**
+         * @description 상품 이미지 URL (메인이미지 포함)
+         * @example "[//image.com/abc.jpg]"
+         */
+        imageUrls: string[];
+        /** @description 옵션정보 */
+        options: {
+          /**
+           * @description 옵션명(조합형일 경우 |로 구분해주세요)
+           * @example "색상"
+           */
+          name: string;
+          /**
+           * @description 옵션번호
+           * @example 1000011
+           */
+          optionNo: number;
+          /**
+           * @description 옵션값(조합형일 경우 |로 구분해주세요)
+           * @example "블루"
+           */
+          value: string;
+          /**
+           * @description 임시 품절 여부
+           * @example false
+           */
+          forcedSoldOut: boolean;
+        }[];
+        /**
+         * @description 메인 상품이미지
+         * @example "//image.com/abc.jpg"
+         */
+        mainImageUrl: string;
+        /**
+         * @description 상품명
+         * @example "상품명"
+         */
+        productName: string;
+        /**
+         * @description 상품번호
+         * @example 10000001
+         */
+        productNo: number;
+      }[];
+    }[];
+    'profile-like-products-2097794731': {
+      /**
+       * @description 상품 번호 리스트 (배열)
+       * @example [100000]
+       */
+      productNos: number[];
+    };
+    'products-bundle-shipping1332557899': {
+      /**
+       * @description 페이지
+       * @example 0
+       */
+      pageCount: number;
+      /** @description 브랜드 */
+      brands: {
+        /**
+         * @description 브랜드 명
+         * @example "브랜드명"
+         */
+        brandName: string;
+        /**
+         * @description 브랜드 상품 개수
+         * @example 1
+         */
+        count: number;
+        /**
+         * @description 브랜드 번호
+         * @example 101
+         */
+        brandNo: number;
+      }[];
+      depth4Categories: {
+        /**
+         * @description 부모 카테고리 번호
+         * @example 3
+         */
+        parentCategoryNo: number;
+        /**
+         * @description 전시 순서
+         * @example 1
+         */
+        displayOrder: number;
+        /**
+         * @description 카테고리 상품 개수
+         * @example 1
+         */
+        count: number;
+        /**
+         * @description 카테고리 번호
+         * @example 4
+         */
+        categoryNo: number;
+        /**
+         * @description 카테고리 명
+         * @example "4depth"
+         */
+        label: string;
+      }[];
+      depth3Categories: {
+        /**
+         * @description 부모 카테고리 번호
+         * @example 2
+         */
+        parentCategoryNo: number;
+        /**
+         * @description 전시 순서
+         * @example 1
+         */
+        displayOrder: number;
+        /**
+         * @description 카테고리 상품 개수
+         * @example 1
+         */
+        count: number;
+        /**
+         * @description 카테고리 번호
+         * @example 3
+         */
+        categoryNo: number;
+        /**
+         * @description 카테고리 명
+         * @example "3depth"
+         */
+        label: string;
+      }[];
+      depth2Categories: {
+        /**
+         * @description 부모 카테고리 번호
+         * @example 1
+         */
+        parentCategoryNo: number;
+        /**
+         * @description 전시 순서
+         * @example 1
+         */
+        displayOrder: number;
+        /**
+         * @description 카테고리 상품 개수
+         * @example 1
+         */
+        count: number;
+        /**
+         * @description 카테고리 번호
+         * @example 2
+         */
+        categoryNo: number;
+        /**
+         * @description 카테고리 명
+         * @example "2depth"
+         */
+        label: string;
+      }[];
+      /**
+       * @description 검색된 상품 총 개수
+       * @example 1
+       */
+      totalCount: number;
+      multiLevelCategories: {
+        /**
+         * @description 부모 카테고리 번호
+         * @example 0
+         */
+        parentCategoryNo: number;
+        /**
+         * @description 전시 순서
+         * @example 1
+         */
+        displayOrder: number;
+        /**
+         * @description 카테고리 상품 개수
+         * @example 1
+         */
+        count: number;
+        /**
+         * @description 카테고리 번호
+         * @example 1
+         */
+        categoryNo: number;
+        /** @description 하위 카테고리 */
+        childCategories: Record<string, never>[];
+        /**
+         * @description 카테고리 명
+         * @example "1depth"
+         */
+        label: string;
+      }[];
+      depth1Categories: {
+        /**
+         * @description 부모 카테고리 번호
+         * @example 0
+         */
+        parentCategoryNo: number;
+        /**
+         * @description 전시 순서
+         * @example 1
+         */
+        displayOrder: number;
+        /**
+         * @description 카테고리 상품 개수
+         * @example 1
+         */
+        count: number;
+        /**
+         * @description 카테고리 번호
+         * @example 1
+         */
+        categoryNo: number;
+        /**
+         * @description 카테고리 명
+         * @example "1depth"
+         */
+        label: string;
+      }[];
+      /**
+       * @description 가장 낮은 가격
+       * @example 5000
+       */
+      minPrice: number;
+      /**
+       * @description
+       *  재고 노출 여부 (false:재고 미노출 / true:재고 노출)<br><br>
+       *  false로 재고를 숨김처리 한 경우,
+       *  1) 재고 관련 필드는(실제 재고가 있더라도) -999로 고정으로 리턴하며 실재고 값은 따로 내려주지 않아 조회 불가합니다.
+       *  2) 실재고가 0인 경우에만 0으로 응답합니다.
+       *    만약 재고 숨김처리 시, front에서 [-999]로 표시되도록 처리되고 있는게 있다면 재고노출여부(displayableStock)를 기준으로 수정 작업이 필요합니다.
+       *    만약 재고 숨김처리 시, front에서 [품절]로 표시되도록 처리되고 있는게 있다면 재고/예약재고값을 기준이 아닌, 품절상태(isSoldOut)값을 기준으로 처리되도록 수정 작업이 필요합니다.
+       *
+       * @example false
+       */
+      displayableStock: boolean;
+      /**
+       * @description 가장 높은 가격
+       * @example 5000
+       */
+      maxPrice: number;
+      /** @description 상품 목록 */
+      items: {
+        /**
+         * @description 추가할인 최소 기준금액 (nullable)
+         * @example 1000
+         */
+        minSalePrice?: number;
+        /**
+         * @description 좋아요 수
+         * @example 10
+         */
+        likeCount: number;
+        /**
+         * @description 총 리뷰 개수
+         * @example 8
+         */
+        totalReviewCount: number;
+        /**
+         * @description 리뷰 평점
+         * @example 4.8
+         */
+        reviewRating: number;
+        /**
+         * @description 좋아요 여부
+         * @example false
+         */
+        liked: boolean;
+        /**
+         * @description 상품명
+         * @example "상품명"
+         */
+        productName: string;
+        /**
+         * @description 쿠폰 할인 가격(default: 0)
+         * @example 0
+         */
+        couponDiscountAmt: number;
+        /**
+         * @description 상품조회화면 노출 여부
+         * @example false
+         */
+        urlDirectDisplayable: boolean;
+        /**
+         * @description 추가 할인 금액/율
+         * @example 1000
+         */
+        additionDiscountAmt: number;
+        /** @description 상품 이미지 정보 */
+        imageUrlInfo: {
+          /**
+           * @description 상품 이미지 url 타입
+           * @example "IMAGE_URL"
+           * @enum {string}
+           */
+          type: 'IMAGE_URL' | 'VIDEO_URL';
+          /**
+           * @description 상품 이미지 url
+           * @example ""
+           */
+          url: string;
+        }[];
+        /**
+         * @description 브랜드 번호
+         * @example 101
+         */
+        brandNo: number;
+        /**
+         * @description 브랜드 명
+         * @example "dummy korean brand"
+         */
+        brandName: string;
+        /**
+         * @description 리스트 이미지 URL
+         * @example [""]
+         */
+        listImageUrls: string[];
+        /**
+         * @description 즉시 할인 금액/율
+         * @example 10
+         */
+        immediateDiscountAmt: number;
+        /** @description 스티커 라벨 */
+        stickerLabels: string[];
+        /** @description 쿠폰 여부 */
+        hasCoupons: {
+          /**
+           * @description 상품 쿠폰
+           * @example false
+           */
+          product: boolean;
+          /**
+           * @description 파트너 쿠폰
+           * @example false
+           */
+          partner: boolean;
+          /**
+           * @description 기획전 쿠
+           * @example false
+           */
+          event: boolean;
+          /**
+           * @description 카테고리 쿠폰
+           * @example false
+           */
+          category: boolean;
+          /**
+           * @description 브랜드 쿠폰
+           * @example false
+           */
+          brand: boolean;
+        };
+        /**
+         * @description 즉시 할인 단위
+         * @example "RATE"
+         * @enum {string}
+         */
+        immediateDiscountUnitType: 'WON' | 'RATE';
+        /**
+         * @description 추가 할인 단위
+         * @example "WON"
+         * @enum {string}
+         */
+        additionDiscountUnitType: 'WON' | 'RATE';
+        /**
+         * @description 판매량 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
+         * @example 10
+         */
+        saleCnt: number;
+        /**
+         * @description 판매 시작일
+         * @example "2024-01-04 16:11:10"
+         */
+        saleStartYmdt: string;
+        /**
+         * @description 품절여부 (true-품절, false-미품절)
+         * @example false
+         */
+        isSoldOut: boolean;
+        /**
+         * @description 성인 전용 상품 여부
+         * @example false
+         */
+        adult: boolean;
+        /** @description 상품 조합형 옵션정보 */
+        optionValues: {
+          /**
+           * @description 조합형 옵션값
+           * @example "레드"
+           */
+          optionValue: string;
+          /**
+           * @description 재고 수 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
+           * @example 100
+           */
+          stockCnt: number;
+          /**
+           * @description 상품 번호
+           * @example 10000001
+           */
+          mallProductNo: number;
+        }[];
+        /**
+         * @description 전시 카테고리
+         * @example "5"
+         */
+        displayCategoryNos: string;
+        /**
+         * @description 상품 관리 코드
+         * @example "상품 관리 코드"
+         */
+        productManagementCd: string;
+        /** @description 예약 판매 정보 */
+        reservationData: {
+          /**
+           * @description 예약 판매 배송일
+           * @example "2024-01-04 16:11:10"
+           */
+          reservationDeliveryYmdt: string;
+          /**
+           * @description 예약 판매 재고 수량 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
+           * @example 500
+           */
+          reservationStockCnt: number;
+          /**
+           * @description 예약 판매 종료일
+           * @example "2024-01-04 16:11:10"
+           */
+          reservationEndYmdt: string;
+          /**
+           * @description 예약 판매 시작일
+           * @example "2024-01-04 16:11:10"
+           */
+          reservationStartYmdt: string;
+        };
+        /**
+         * @description 배송비 유형
+         * @example "CONDITIONAL"
+         * @enum {string}
+         */
+        deliveryConditionType:
+          | 'FREE'
+          | 'CONDITIONAL'
+          | 'FIXED_FEE'
+          | 'QUANTITY_PROPOSITIONAL_FEE'
+          | 'PRICE_FEE'
+          | 'QUANTITY_FEE';
+        /**
+         * @description 최대 쿠폰 적용 가격(default: 0)
+         * @example 0
+         */
+        maxCouponAmt: number;
+        /**
+         * @description 판매기간유형 (nullable)
+         * @example "REGULAR"
+         * @enum {string}
+         */
+        productSalePeriodType?: 'REGULAR' | 'PERIOD';
+        /**
+         * @description 추가할인 정률 최대 할인 금액 (nullable)
+         * @example 0
+         */
+        maxDiscountAmount?: number;
+        /**
+         * @description 사용가능쿠폰 존재 여부
+         * @example false
+         */
+        enableCoupons: boolean;
+        /**
+         * @description 전시 노출 여부
+         * @example true
+         */
+        frontDisplayable: boolean;
+        /**
+         * @description 상품 번호
+         * @example 10000001
+         */
+        productNo: number;
+        /**
+         * @description 등록일
+         * @example "2024-01-04 16:11:10"
+         */
+        registerYmdt: string;
+        /**
+         * @description 판매가
+         * @example 5000
+         */
+        salePrice: number;
+        /**
+         * @description 파트너명
+         * @example "다팔아"
+         */
+        partnerName: string;
+        /**
+         * @description 즉시할인 시작일자
+         * @example "2024-01-04 16:11:10"
+         */
+        immediateDiscountStartYmdt: string;
+        /**
+         * @description 가격 대체 문구 (nullable)
+         * @example "가격 대체 문구"
+         */
+        contentsIfPausing?: string;
+        /**
+         * @description 판매 종료일
+         * @example "2024-01-04 16:11:10"
+         */
+        saleEndYmdt: string;
+        /**
+         * @description 추가할인 최대 기준금액 (nullable)
+         * @example 100000
+         */
+        maxSalePrice?: number;
+        /**
+         * @description 홍보문구
+         * @example "프로모션 문구"
+         */
+        promotionText: string;
+        /** @description 스티커 정보 */
+        stickerInfos: {
+          /**
+           * @description 스티커 명
+           * @example "스티커명"
+           */
+          name: string;
+          /**
+           * @description 스티커 라벨
+           * @example "스티커라벨"
+           */
+          label: string;
+          /**
+           * @description 스티커 유형
+           * @example "TEXT"
+           * @enum {string}
+           */
+          type: 'TEXT' | 'IMAGE';
+        }[];
+        /** @description 상품 리스트 이미지 정보 */
+        listImageUrlInfo: {
+          /**
+           * @description 상품 리스트 이미지 url 타입
+           * @example "IMAGE_URL"
+           * @enum {string}
+           */
+          type: 'IMAGE_URL' | 'VIDEO_URL';
+          /**
+           * @description 상품 리스트 이미지 url
+           * @example ""
+           */
+          url: string;
+        }[];
+        /**
+         * @description 즉시할인 종료일자
+         * @example "2024-01-04 16:11:10"
+         */
+        immediateDiscountEndYmdt: string;
+        /**
+         * @description 상품 이미지 URL
+         * @example [""]
+         */
+        imageUrls: string[];
+        /**
+         * @description 브랜드 명(영문)
+         * @example "dummy brand"
+         */
+        brandNameEn: string;
+        /**
+         * @description 대표옵션 재고 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
+         * @example 10
+         */
+        mainStockCnt: number;
+        /**
+         * @description 영문 상품명 (nullable)
+         * @example "상품명 en"
+         */
+        productNameEn?: string;
+        /**
+         * @description 재고수 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
+         * @example 10
+         */
+        stockCnt: number;
+        /**
+         * @description 판매 상태
+         * @example "ONSALE"
+         * @enum {string}
+         */
+        saleStatusType:
+          | 'READY'
+          | 'ONSALE'
+          | 'FINISHED'
+          | 'STOP'
+          | 'PROHIBITION';
+      }[];
+      depth5Categories: {
+        /**
+         * @description 부모 카테고리 번호
+         * @example 4
+         */
+        parentCategoryNo: number;
+        /**
+         * @description 전시 순서
+         * @example 1
+         */
+        displayOrder: number;
+        /**
+         * @description 카테고리 상품 개수
+         * @example 1
+         */
+        count: number;
+        /**
+         * @description 카테고리 번호
+         * @example 5
+         */
+        categoryNo: number;
+        /**
+         * @description 카테고리 명
+         * @example "5depth"
+         */
+        label: string;
+      }[];
+    };
+    'profile-like-products1120109227': {
+      /**
+       * @description
+       *  재고 노출 여부 (false:재고 미노출 / true:재고 노출)<br><br>
+       *  false로 재고를 숨김처리 한 경우,
+       *  1) 재고 관련 필드는(실제 재고가 있더라도) -999로 고정으로 리턴하며 실재고 값은 따로 내려주지 않아 조회 불가합니다.
+       *  2) 실재고가 0인 경우에만 0으로 응답합니다.
+       *    만약 재고 숨김처리 시, front에서 [-999]로 표시되도록 처리되고 있는게 있다면 재고노출여부(displayableStock)를 기준으로 수정 작업이 필요합니다.
+       *    만약 재고 숨김처리 시, front에서 [품절]로 표시되도록 처리되고 있는게 있다면 재고/예약재고값을 기준이 아닌, 품절상태(isSoldOut)값을 기준으로 처리되도록 수정 작업이 필요합니다.
+       *
+       * @example true
+       */
+      displayableStock: boolean;
+      /**
+       * @description 총 상품수
+       * @example 10
+       */
+      totalCount: number;
+      items: {
+        /**
+         * @description 그룹관리코드 노출명
+         * @example "그룹코드1"
+         */
+        groupManagementCodeName: string;
+        /**
+         * @description 추가할인 최소 기준금액
+         * @example 1000
+         */
+        minSalePrice: number;
+        /**
+         * @description 그룹관리코드
+         * @example "CODE0001"
+         */
+        groupManagementCode: string;
+        /** @description 상품 이미지 정보 */
+        imageInfo: {
+          /**
+           * @description 상품 이미지 URL 타입
+           * @example "//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"
+           * @enum {string}
+           */
+          type: 'IMAGE_URL' | 'VIDEO_URL';
+          /**
+           * @description 상품 이미지 URL
+           * @example "//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"
+           */
+          url: string;
+        }[];
+        /**
+         * @description 좋아요 수
+         * @example 10
+         */
+        likeCount: number;
+        /**
+         * @description 장바구니 사용 여부
+         * @example true
+         */
+        canAddToCart: boolean;
+        /**
+         * @description 총 상품평 수
+         * @example 8
+         */
+        totalReviewCount: number;
+        /**
+         * @description 상품평 평균점수
+         * @example 4.8
+         */
+        reviewRating: number;
+        /**
+         * @description 좋아요 여부 (true: 좋아요 누름, false: 좋아요 안누름)
+         * @example false
+         */
+        liked: boolean;
+        /**
+         * @description 상품명
+         * @example "상품명"
+         */
+        productName: string;
+        /**
+         * @description 상품 기본옵션 가격기준으로 적용 가능한 최대 쿠폰 할인가
+         * @example 1000
+         */
+        couponDiscountAmt: number;
+        /** @description 상품 리스트 이미지 정보 */
+        listImageInfo: {
+          /**
+           * @description 상품 리스트 이미지 URL 타입
+           * @example "//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"
+           * @enum {string}
+           */
+          type: 'IMAGE_URL' | 'VIDEO_URL';
+          /**
+           * @description 상품 리스트 이미지 URL
+           * @example "//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"
+           */
+          url: string;
+        }[];
+        /**
+         * @description 추가상품할인가
+         * @example 1000
+         */
+        additionDiscountAmt: number;
+        /**
+         * @description 브랜드 번호
+         * @example 10
+         */
+        brandNo: number;
+        /**
+         * @description 메인 배스트 상품 여부 (Y: 메인 베스트 상품, N:메인 베스트 상품 아님)
+         * @example false
+         */
+        mainBestProductYn: boolean;
+        /**
+         * @description 브랜드 명
+         * @example "더미 브랜드"
+         */
+        brandName: string;
+        /**
+         * @description 리스트 이미지 URL
+         * @example ["//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"]
+         */
+        listImageUrls: string[];
+        /**
+         * @description 즉시할인가
+         * @example 1000
+         */
+        immediateDiscountAmt: number;
+        /** @description 스티커 라벨(배열) */
+        stickerLabels: string[];
+        hasCoupons: {
+          /**
+           * @description 상품쿠폰 태그
+           * @example true
+           */
+          product: boolean;
+          /**
+           * @description 파트너쿠폰 태그
+           * @example true
+           */
+          partner: boolean;
+          /**
+           * @description 기획전쿠폰 태그
+           * @example true
+           */
+          event: boolean;
+          /**
+           * @description 카테고리쿠폰 태그
+           * @example true
+           */
+          category: boolean;
+          /**
+           * @description 브랜드쿠폰 태그
+           * @example true
+           */
+          brand: boolean;
+        };
+        /**
+         * @description 즉시할인 타입
+         * @example "WON"
+         * @enum {string}
+         */
+        immediateDiscountUnitType: 'WON' | 'RATE';
+        /**
+         * @description 추가상품할인 타입
+         * @example "WON"
+         * @enum {string}
+         */
+        additionDiscountUnitType: 'WON' | 'RATE';
+        /**
+         * @description 전시 여부 (Y: 전시, N:비전시)
+         * @example true
+         */
+        frontDisplayYn: boolean;
+        /**
+         * @description 구매 수량 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
+         * @example 1000
+         */
+        saleCnt: number;
+        /**
+         * @description 판매시작일시
+         * @example "2024-01-04 16:11:03"
+         */
+        saleStartYmdt: string;
+        /**
+         * @description 브랜드 한글 명
+         * @example "dummy korean brand"
+         */
+        brandNameKo: string;
+        /**
+         * @description 상품섹션에서 설정한 종료일
+         * @example
+         */
+        sectionProductEndYmdt: string;
+        /**
+         * @description 품절여부 (true-품절, false-미품절)
+         * @example false
+         */
+        isSoldOut: boolean;
+        /**
+         * @description 성인 상품 여부 (true: 성인 상품, false: 비성인 상품)
+         * @example false
+         */
+        adult: boolean;
+        /** @description 상품 조합형 옵션정보 ( 옵션명은 | 라인으로 구분 ) */
+        optionValues: {
+          /**
+           * @description 옵션명
+           * @example "레드"
+           */
+          optionValue: string;
+          /**
+           * @description 재고 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
+           * @example 100
+           */
+          stockCnt: number;
+          /**
+           * @description 상품번호
+           * @example 10000001
+           */
+          mallProductNo: number;
+        }[];
+        /**
+         * @description 전시카테고리 번호 정보
+         * @example "26916"
+         */
+        displayCategoryNos: string;
+        /**
+         * @description 판매자 관리코드
+         * @example "PRDC10001"
+         */
+        productManagementCd: string;
+        reservationData: {
+          /**
+           * @description 예약판매 배송시작일
+           * @example "2023-12-04 16:11:03"
+           */
+          reservationDeliveryYmdt: string;
+          /**
+           * @description 예약판매 재고수량 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
+           * @example 5
+           */
+          reservationStockCnt: number;
+          /**
+           * @description 예약판매 종료일
+           * @example "2023-11-04 16:11:03"
+           */
+          reservationEndYmdt: string;
+          /**
+           * @description 예약판매 시작일
+           * @example "2023-10-04 16:11:03"
+           */
+          reservationStartYmdt: string;
+        };
+        /**
+         * @description 배송비 타입
+         * @example "CONDITIONAL"
+         * @enum {string}
+         */
+        deliveryConditionType:
+          | 'FREE'
+          | 'CONDITIONAL'
+          | 'FIXED_FEE'
+          | 'QUANTITY_PROPOSITIONAL_FEE'
+          | 'PRICE_FEE'
+          | 'QUANTITY_FEE';
+        /**
+         * @description 상품섹션에서 설정한 시작일
+         * @example
+         */
+        sectionProductStartYmdt: string;
+        /**
+         * @description 적립금
+         * @example 0
+         */
+        accumulationAmtWhenBuyConfirm: number;
+        /**
+         * @description 쿠폰 태그
+         * @example "쿠폰"
+         */
+        couponTag: string;
+        /**
+         * @description 최대 쿠폰 적용 가격(default: 0)
+         * @example 5000
+         */
+        maxCouponAmt: number;
+        /**
+         * @description 상품섹션 상품 노출 타입
+         * @example
+         * @enum {string}
+         */
+        productSalePeriodType: 'REGULAR' | 'PERIOD';
+        /**
+         * @description 추가할인 정률 최대 할인 금액
+         * @example 0
+         */
+        maxDiscountAmount: number;
+        /**
+         * @description 사용가능쿠폰 존재 여부 (true: 사용가능쿠폰 존재, false:사용가능 쿠폰 없음)
+         * @example true
+         */
+        enableCoupons: boolean;
+        /**
+         * @description 상품번호
+         * @example 10000001
+         */
+        productNo: number;
+        /**
+         * @description 상품 등록일
+         * @example "2023-11-04 16:11:03"
+         */
+        registerYmdt: string;
+        /**
+         * @description 상품판매가
+         * @example 10000
+         */
+        salePrice: number;
+        /**
+         * @description 파트너명
+         * @example "다팔아"
+         */
+        partnerName: string;
+        /**
+         * @description 즉시할인 시작일자
+         * @example "2024-01-04 16:11:03"
+         */
+        immediateDiscountStartYmdt: string;
+        /**
+         * @description 상품조회화면 노출 여부 (Y: 화면 노출, N:화면 비노출)
+         * @example false
+         */
+        urlDirectDisplayYn: boolean;
+        /**
+         * @description 판매중지 시 가격대체문구
+         * @example "잠시 판매중지 중입니다."
+         */
+        contentsIfPausing: string;
+        /**
+         * @description 판매종료일시
+         * @example "2026-01-04 16:11:03"
+         */
+        saleEndYmdt: string;
+        /**
+         * @description 상품의 상품 노출 타입
+         * @example "REGULAR"
+         * @enum {string}
+         */
+        salePeriodType: 'REGULAR' | 'PERIOD';
+        /**
+         * @description 추가할인 최대 기준금액
+         * @example 100000
+         */
+        maxSalePrice: number;
+        /**
+         * @description 홍보문구
+         * @example "홍보문구"
+         */
+        promotionText: string;
+        stickerInfos: {
+          /**
+           * @description 스티커 라벨
+           * @example "스티커라벨"
+           */
+          label: string;
+          /**
+           * @description 스티커 타입
+           * @example "TEXT"
+           */
+          type: string;
+        }[];
+        /**
+         * @description HS CODE
+         * @example "HSCODE"
+         */
+        hsCode: string;
+        /**
+         * @description 즉시할인 종료일자
+         * @example "2024-02-04 16:11:03"
+         */
+        immediateDiscountEndYmdt: string;
+        /**
+         * @description 상품 이미지 URL
+         * @example ["//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"]
+         */
+        imageUrls: string[];
+        /**
+         * @description 브랜드 영문 명
+         * @example "dummy brand"
+         */
+        brandNameEn: string;
+        /** @description 적립금 정보 */
+        accumulationInfo: {
+          /**
+           * @description 회원등급적립률
+           * @example 0
+           */
+          rewardRateOfMemberBenefit: number;
+          /**
+           * @description 적립금
+           * @example 0
+           */
+          amount: number;
+          /**
+           * @description 상품개별적립률
+           * @example 0
+           */
+          rewardRateOfProduct: number;
+        };
+        /**
+         * @description 대표 옵션 재고 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
+         * @example 50
+         */
+        mainStockCnt: number;
+        /**
+         * @description 영문 상품명
+         * @example ""
+         */
+        productNameEn: string;
+        /**
+         * @description NHNEnt Search ID(상품검색 API응답에만 존재함)
+         * @example
+         */
+        searchProductId: string;
+        /**
+         * @description 재고 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
+         * @example 100
+         */
+        stockCnt: number;
+        /**
+         * @description 판매상태
+         * @example "ONSALE"
+         * @enum {string}
+         */
+        saleStatusType:
+          | 'READY'
+          | 'ONSALE'
+          | 'FINISHED'
+          | 'STOP'
+          | 'PROHIBITION';
+      }[];
+    };
+    'additional-discounts-by-product-no-78647450': {
+      /** @description 할인율 (수량할인 사용시 수량1개 기준 정보) (nullable) */
+      discountRate?: number;
+      /**
+       * @description 추가 할인명
+       * @example "추가할인"
+       */
+      discountName: string;
+      /**
+       * @description 추가 할인 번호
+       * @example 1
+       */
+      discountNo: number;
+      /** @description 추가 할인 시작일 */
+      startDateTime: string;
+      /** @description 최대 할인 금액 (수량할인 사용시 수량1개 기준 정보) (nullable) */
+      maxDiscountAmount?: number;
+      /**
+       * @description 정액 할인 여부 (수량할인 사용시 수량1개 기준 정보)
+       * @example true
+       */
+      isFixedDiscount: boolean;
+      /** @description 구매수량할인 설정 정보 */
+      quantityDiscountInfos: {
+        /**
+         * @description 순서
+         * @example 1
+         */
+        sortNo: number;
+        /**
+         * @description 정액: null, 정률: 할인율 (nullable)
+         * @example 1000
+         */
+        discountRate?: number;
+        /**
+         * @description 최소구매수량
+         * @example 1
+         */
+        minQuantity: number;
+        /** @description 최대구매수량 (nullable) */
+        maxQuantity?: number;
+        /** @description 정률 시 최대 할인금액 (nullable) */
+        maxDiscountAmount?: number;
+        /**
+         * @description true:정액, false:정률
+         * @example true
+         */
+        isFixedDiscount: boolean;
+        /**
+         * @description 정액: 할인 금액, 정률: null (nullable)
+         * @example 1000
+         */
+        discountAmount?: number;
+      }[];
+      /** @description 최소 기준 금액 (nullable) */
+      minSalePrice?: number;
+      /**
+       * @description 할인액 (수량할인 사용시 수량1개 기준 정보) (nullable)
+       * @example 1000
+       */
+      discountAmount?: number;
+      /** @description 추가 할인 종료일 */
+      endDateTime: string;
+      /**
+       * @description 구매수량할인 사용여부
+       * @example true
+       */
+      isQuantityDiscount: boolean;
+      /** @description 최대 기준 금액 (nullable) */
+      maxSalePrice?: number;
+    };
+    'products-search-summary554148782': {
+      brands: {
+        /**
+         * @description 브랜드이름
+         * @example "브랜드 이름"
+         */
+        brandName: string;
+        /**
+         * @description 브랜드 한글명
+         * @example
+         */
+        brandNameKo: string;
+        /**
+         * @description 브랜드 상품 수
+         * @example 1
+         */
+        count: number;
+        /**
+         * @description 브랜드 영문명
+         * @example
+         */
+        brandNameEn: string;
+        /**
+         * @description 브랜드명 타입 (NAME_KO: Korean, NAME_EN: English, NONE: none)
+         * @example "NAME_EN"
+         */
+        brandNameType: string;
+        /**
+         * @description 브랜드번호
+         * @example 1
+         */
+        brandNo: number;
+      }[];
+      multiLevelCategories: {
+        /**
+         * @description 부모 카테고리 번호
+         * @example 0
+         */
+        parentCategoryNo: number;
+        /**
+         * @description 전시 순서
+         * @example 0
+         */
+        displayOrder: number;
+        /**
+         * @description 카테고리 상품 개수
+         * @example 0
+         */
+        count: number;
+        /**
+         * @description 카테고리번호
+         * @example 0
+         */
+        categoryNo: number;
+        /**
+         * @description 하위 카테고리
+         * @example []
+         */
+        childCategories: Record<string, never>[];
+        /**
+         * @description 카테고리 명
+         * @example ""
+         */
+        label: string;
+      }[];
+      depth4Categories: {
+        /**
+         * @description 부모 카테고리 번호
+         * @example 1010003
+         */
+        parentCategoryNo: number;
+        /**
+         * @description 전시 순서
+         * @example 1
+         */
+        displayOrder: number;
+        /**
+         * @description 카테고리 상품 개수
+         * @example 1
+         */
+        count: number;
+        /**
+         * @description 카테고리번호
+         * @example 1010004
+         */
+        categoryNo: number;
+        /**
+         * @description 카테고리 명
+         * @example "카테고리4 이름"
+         */
+        label: string;
+      }[];
+      /**
+       * @description 최소 가격
+       * @example 0
+       */
+      minPrice: number;
+      depth1Categories: {
+        /**
+         * @description 부모 카테고리 번호
+         * @example 0
+         */
+        parentCategoryNo: number;
+        /**
+         * @description 전시 순서
+         * @example 1
+         */
+        displayOrder: number;
+        /**
+         * @description 카테고리 상품 개수
+         * @example 1
+         */
+        count: number;
+        /**
+         * @description 카테고리번호
+         * @example 1010001
+         */
+        categoryNo: number;
+        /**
+         * @description 카테고리 명
+         * @example "카테고리1 이름"
+         */
+        label: string;
+      }[];
+      depth3Categories: {
+        /**
+         * @description 부모 카테고리 번호
+         * @example 1010002
+         */
+        parentCategoryNo: number;
+        /**
+         * @description 전시 순서
+         * @example 1
+         */
+        displayOrder: number;
+        /**
+         * @description 카테고리 상품 개수
+         * @example 1
+         */
+        count: number;
+        /**
+         * @description 카테고리번호
+         * @example 1010003
+         */
+        categoryNo: number;
+        /**
+         * @description 카테고리 명
+         * @example "카테고리3 이름"
+         */
+        label: string;
+      }[];
+      depth2Categories: {
+        /**
+         * @description 부모 카테고리 번호
+         * @example 1010001
+         */
+        parentCategoryNo: number;
+        /**
+         * @description 전시 순서
+         * @example 1
+         */
+        displayOrder: number;
+        /**
+         * @description 카테고리 상품 개수
+         * @example 1
+         */
+        count: number;
+        /**
+         * @description 카테고리번호
+         * @example 1010002
+         */
+        categoryNo: number;
+        /**
+         * @description 카테고리 명
+         * @example "카테고리2 이름"
+         */
+        label: string;
+      }[];
+      /**
+       * @description
+       *  재고 노출 여부 (false:재고 미노출 / true:재고 노출)<br><br>
+       *  false로 재고를 숨김처리 한 경우,
+       *  1) 재고 관련 필드는(실제 재고가 있더라도) -999로 고정으로 리턴하며 실재고 값은 따로 내려주지 않아 조회 불가합니다.
+       *  2) 실재고가 0인 경우에만 0으로 응답합니다.
+       *    만약 재고 숨김처리 시, front에서 [-999]로 표시되도록 처리되고 있는게 있다면 재고노출여부(displayableStock)를 기준으로 수정 작업이 필요합니다.
+       *    만약 재고 숨김처리 시, front에서 [품절]로 표시되도록 처리되고 있는게 있다면 재고/예약재고값을 기준이 아닌, 품절상태(isSoldOut)값을 기준으로 처리되도록 수정 작업이 필요합니다.
+       *
+       * @example false
+       */
+      displayableStock: boolean;
+      /**
+       * @description 최대 가격
+       * @example 0
+       */
+      maxPrice: number;
+      /**
+       * @description 총 개수
+       * @example 10
+       */
+      totalCount: number;
+      clickUrlPrefix: {
+        /**
+         * @description 인자 값
+         * @example "test"
+         */
+        param: string;
+        /**
+         * @description url
+         * @example "/test"
+         */
+        url: string;
+      };
+      depth5Categories: {
+        /**
+         * @description 부모 카테고리 번호
+         * @example 1010004
+         */
+        parentCategoryNo: number;
+        /**
+         * @description 전시 순서
+         * @example 1
+         */
+        displayOrder: number;
+        /**
+         * @description 카테고리 상품 개수
+         * @example 1
+         */
+        count: number;
+        /**
+         * @description 카테고리번호
+         * @example 1010005
+         */
+        categoryNo: number;
+        /**
+         * @description 카테고리 명
+         * @example "카테고리5 이름"
+         */
+        label: string;
+      }[];
+    };
+    'free-gift-condition-productNo1611589026': {
+      /** @description 사은품 지급 조건 리스트 */
+      freeGiftConditions: {
+        /**
+         * @description 제한멤버 유형 (전체 : ALL, 비회원 불가: MEMBER, 회원등급/그룹 : TARGET)
+         * @example "TARGET"
+         * @enum {string}
+         */
+        limitedMemberType: 'ALL' | 'MEMBER' | 'TARGET';
+        /**
+         * @description 시작일
+         * @example "2024-01-04 16:11:02"
+         */
+        giveStartDateTime: string;
+        freeGifts: {
+          /**
+           * @description 대표이미지
+           * @example "//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"
+           */
+          imageUrl: string;
+          /**
+           * @description 옵션값
+           * @example "레드"
+           */
+          optionValue: string;
+          /**
+           * @description 옵션명
+           * @example "옵션명"
+           */
+          optionName: string;
+          /**
+           * @description 사은품 옵션번호
+           * @example 10000
+           */
+          optionNo: number;
+          /**
+           * @description 상품 이름
+           * @example "상품명"
+           */
+          productName: string;
+          /**
+           * @description 사은품 상품번호
+           * @example 10000001
+           */
+          productNo: number;
+        }[];
+        /**
+         * @description 지급조건설명
+         * @example "explain"
+         */
+        giveConditionExplain: string;
+        /** @description TARGET에 해당하는 멤버그룹/등급 */
+        limitedMember: {
+          /**
+           * @description TARGET에 해당하는 맴버등급
+           * @example [1,2,3]
+           */
+          memberGrade: number[];
+          /**
+           * @description TARGET에 해당하는 맴버그룹
+           * @example [1,2,3]
+           */
+          memberGroup: number[];
+        };
+        /**
+         * @description 제한금액
+         * @example 10000
+         */
+        upperPrice: number;
+        /**
+         * @description 종료일
+         * @example "2024-01-14 16:11:02"
+         */
+        giveEndDateTime: string;
+        /**
+         * @description 지급조건번호
+         * @example 1
+         */
+        giveConditionNo: number;
+        /**
+         * @description 지급조건이름
+         * @example "지급조건1"
+         */
+        giveConditionName: string;
+      }[];
+      /**
+       * @description 전체 사은품지급조건 수
+       * @example 1
+       */
+      totalCount: number;
+    };
+    'display-brands-brandNo-491175852': {
+      /**
+       * @description 연결된 상품 수(deprecated 예정)
+       * @example 10
+       */
+      productCnt: number;
+      /**
+       * @description 브랜드 설명
+       * @example "브랜드 설명"
+       */
+      description: string;
+      /**
+       * @description 브랜드 영문명
+       * @example "branName"
+       */
+      nameEn: string;
+      /**
+       * @description 로고 주소
+       * @example "http://logo.image.url"
+       */
+      logoImageUrl: string;
+      /**
+       * @description 브랜드명 노출타입
+       * @example "NAME_KO"
+       * @enum {string}
+       */
+      nameType: 'NAME_KO' | 'NAME_EN' | 'NONE';
+      /**
+       * @description 브랜드 한글명
+       * @example "브랜드명"
+       */
+      nameKo: string;
+      /**
+       * @description 상세(html) (사용안하는 필드로 deprecated 예정)
+       * @example "상세 내용"
+       */
+      detailContent: string;
+      /**
+       * @description 브랜드 홈페이지 주소
+       * @example "http://homepage.url"
+       */
+      homepageUrl: string;
+      /**
+       * @description 브랜드 한글명
+       * @example "브랜드명"
+       */
+      name: string;
+      /**
+       * @description 메인 이미지(html) (사용안하는 필드로 deprecated 예정)
+       * @example "메인 이미지 내용"
+       */
+      mainImageContent: string;
+      /**
+       * @description 브랜드 이미지 또는 브랜드 관련 동영상 url
+       * @example "브랜드 이미지 또는 브랜드 관련 동영상 url"
+       */
+      displayAreaContentUrl: string;
+      /** @description 카테고리 리스트(deprecated 예정) */
+      categories: {
+        /** @description 카테고리에 연결된 상품 수(deprecated 예정) */
+        productCnt: number;
+        /** @description 카테고리 번호(deprecated 예정) */
+        categoryNo: number;
+        /** @description 카테고리명(deprecated 예정) */
+        label: string;
+      }[];
+      /**
+       * @description 메이커 명
+       * @example "maker name"
+       */
+      makerName: string;
+      /**
+       * @description 브랜드번호
+       * @example 100
+       */
+      brandNo: number;
+    };
+    'products-productNo-purchasable-150417114': {
+      /**
+       * @description 회원이 구매가능한 최대개수
+       * @example 10
+       */
+      purchaseCnt: number;
+      /**
+       * @description 상품구매가능 시작일
+       * @example "2024-01-04 16:11:10"
+       */
+      purchaseStartAt: string;
+      /**
+       * @description 상품구매가능 종료일
+       * @example "2024-01-05 16:11:10"
+       */
+      purchaseEndAt: string;
+      /**
+       * @description 구매권한번호
+       * @example 1
+       */
+      permissionNo: number;
+      /**
+       * @description 옵션번호
+       * @example 1
+       */
+      optionNo: number;
+      /**
+       * @description 회원이 구매권한을 통해 구매한 개수
+       * @example 2
+       */
+      purchasedCnt: number;
+    }[];
+    'products-productNo-options-images-575738914': {
+      /**
+       * @description 옵션이미지 URL
+       * @example "www.youtube.com"
+       */
+      imageUrl: string;
+      /**
+       * @description 메인이미지 여부 (true: 메인이미지, false: 일반이미지)
+       * @example true
+       */
+      main: boolean;
+      /**
+       * @description 옵션 번호
+       * @example 1
+       */
+      optionNo: number;
+      /**
+       * @description 매진 여부 (true: 매진, false:재고 있음)
+       * @example true
+       */
+      soldout: boolean;
+    }[];
+    'profile-like-products--2119689378': {
+      /**
+       * @description 좋아요 설정 상태(Y: 좋아요 설정한 상태, N: 좋아요 해제한 상태)
+       * @example "Y"
+       * @enum {string}
+       */
+      like: 'Y' | 'N';
+      /**
+       * @description 상품 번호
+       * @example 100000
+       */
+      productNo: number;
+    }[];
+    /**
+     * @description 인기검색어
+     * @example ["검색어1","검색어2","검색어3"]
+     */
+    'products-favoriteKeywords1672933518': string[];
+    'products-search-by-nos1116014589': Record<string, never>;
+    'products-restock-559898343': {
+      /**
+       * @description 개인정보 수집 동의여부 (true:개인정보 수집 동의 ,false:개인정보 수집 비동의 - default)
+       * @example true
+       */
+      privacyInfoAgreement: boolean;
+      /**
+       * @description 옵션번호
+       * @example "[1,2]"
+       */
+      optionNos: number[];
+      /**
+       * @description 휴대폰번호: -(하이픈) 제외
+       * @example "01000000000"
+       */
+      phone: string;
+      /**
+       * @description 신청자명
+       * @example "신청자명"
+       */
+      name: string;
+    };
+    'products-search-by-nos-135481769': {
+      /**
+       * @description 유효하지 않은 상품 번호
+       * @example "[]"
+       */
+      invalidProductsNos: number[];
+      /** @description 상품 목록 */
+      products: {
+        /** @description 상품 기본 정보 */
+        baseInfo: {
+          /**
+           * @description 판매자 관리코드
+           * @example "PRDC10001"
+           */
+          productManagementCd: string;
+          /** @description 예약판매정보 */
+          reservationData: {
+            /**
+             * @description 예약판매 배송시작일
+             * @example "2023-12-04 16:11:08"
+             */
+            reservationDeliveryYmdt: string;
+            /**
+             * @description 예약판매 재고수량 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
+             * @example 5
+             */
+            reservationStockCnt: number;
+            /**
+             * @description 예약판매 종료일
+             * @example "2023-11-04 16:11:08"
+             */
+            reservationEndYmdt: string;
+            /**
+             * @description 예약판매 시작일
+             * @example "2023-10-04 16:11:08"
+             */
+            reservationStartYmdt: string;
+          };
+          /**
+           * @description 적립금
+           * @example 0
+           */
+          accumulationAmtWhenBuyConfirm: number;
           /**
            * @description 그룹관리코드 노출명
            * @example "CODE NAME"
            */
           groupManagementCodeName: string;
           /**
-           * @description 추가할인 최소 기준금액
-           * @example 0
+           * @description 브랜드명 타입 (NAME_KO: Korean, NAME_EN: English, NONE: none)
+           * @example "NAME_KO"
            */
-          minSalePrice: number;
+          brandNameType: string;
           /**
            * @description 그룹관리코드
            * @example "CODE"
@@ -4481,18 +7096,15 @@ export interface components {
            * @example 10
            */
           likeCount: number;
-          /**
-           * @description 장바구니 사용 여부
-           * @example true
-           */
+          /** @description 장바구니 가능 여부 */
           canAddToCart: boolean;
           /**
            * @description 총 리뷰 수
-           * @example 0
+           * @example 8
            */
           totalReviewCount: number;
           /**
-           * @description 상품평 평균점
+           * @description 상품평 평균점수
            * @example 4.8
            */
           reviewRating: number;
@@ -4506,35 +7118,58 @@ export interface components {
            * @example "상품명"
            */
           productName: string;
+          /** @description 쿠폰 태그 deprecated(더 이상 제공하지 않는 개체항목입니다) */
+          couponTag: string;
+          /**
+           * @description 최대 쿠폰 적용 가격(default: 0)
+           * @example 0
+           */
+          maxCouponAmt: number;
           /**
            * @description 최대 쿠폰 적용 가격(default: 0)
            * @example 0
            */
           couponDiscountAmt: number;
           /**
-           * @description 추가상품할인가
-           * @example 0
+           * @description 사용가능쿠폰 존재 여부
+           * @example false
            */
-          additionDiscountAmt: number;
+          enableCoupons: boolean;
           /** @description 상품 이미지 정보 */
-          imageUrlInfo: ({
-              /**
-               * @description 상품 이미지 url 타입
-               * @example "IMAGE_URL"
-               * @enum {string}
-               */
-              type: "IMAGE_URL" | "VIDEO_URL";
-              /**
-               * @description 상품 이미지 url
-               * @example "//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"
-               */
-              url: string;
-            })[];
+          imageUrlInfo: {
+            /**
+             * @description 상품 이미지 type
+             * @example "IMAGE_URL"
+             * @enum {string}
+             */
+            type: 'IMAGE_URL' | 'VIDEO_URL';
+            /**
+             * @description 상품 이미지 url
+             * @example "//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"
+             */
+            url: string;
+          }[];
           /**
            * @description 브랜드 번호
            * @example 10
            */
           brandNo: number;
+          /**
+           * @description 상품유형
+           * @example "DEFAULT"
+           * @enum {string}
+           */
+          productType: 'DEFAULT' | 'EVENT' | 'OFFLINE' | 'RENTAL';
+          /**
+           * @description 상품번호
+           * @example 10000001
+           */
+          productNo: number;
+          /**
+           * @description 상품 등록일
+           * @example "2023-11-04 16:11:08"
+           */
+          registerYmdt: string;
           /**
            * @description 메인 베스트 상품 여부 deprecated(더 이상 제공하지 않는 개체항목입니다)
            * @example false
@@ -4551,10 +7186,10 @@ export interface components {
            */
           listImageUrls: string[];
           /**
-           * @description 즉시할인가
-           * @example 1000
+           * @description 파트너명
+           * @example "다팔아"
            */
-          immediateDiscountAmt: number;
+          partnerName: string;
           /**
            * @description 스티커 라벨(배열)
            * @example ["스티커라벨"]
@@ -4589,2608 +7224,318 @@ export interface components {
             brand: boolean;
           };
           /**
-           * @description 즉시할인 타입 Enum: [ WON: Sum, RATE: rate ]
-           * @example "WON"
+           * @description 상품조회화면 노출 여부
+           * @example false
            */
-          immediateDiscountUnitType: string;
+          urlDirectDisplayYn: boolean;
           /**
-           * @description 추가상품할인 타입 Enum: [ WON: Sum, RATE: rate ]
-           * @example "WON"
+           * @description 판매중지 시 가격대체문구
+           * @example "잠시 판매중지 중입니다."
            */
-          additionDiscountUnitType: string;
+          contentsIfPausing: string;
           /**
-           * @description 전시 여부
-           * @example true
+           * @description 판매종료일시
+           * @example "2026-01-04 16:11:08"
            */
-          frontDisplayYn: boolean;
+          saleEndYmdt: string;
+          /**
+           * @description 홍보문구
+           * @example "홍보문구"
+           */
+          promotionText: string;
+          /**
+           * @description 판매기간 타입
+           * @example "REGULAR"
+           * @enum {string}
+           */
+          salePeriodType: 'REGULAR' | 'PERIOD';
+          /** @description 스티커 정보 */
+          stickerInfos: {
+            /**
+             * @description 스티커 이름
+             * @example "스티커라벨"
+             */
+            name: string;
+            /**
+             * @description 스티커 라벨
+             * @example "스티커라벨"
+             */
+            label: string;
+            /**
+             * @description 스티커 타입 Enum: [ TEXT: Text, IMAGE: Image ]
+             * @example "TEXT"
+             */
+            type: string;
+          }[];
           /**
            * @description 판매 수량 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
            * @example 1000
            */
           saleCnt: number;
-          /** @description 상품 항목 추가 정보 */
-          customProperties: {
-              /**
-               * @description 항목 복수선택여부 (true: 복수개 선택가능, false: 1개만 선택가능)
-               * @example false
-               */
-              isMultipleSelection: boolean;
-              /** @description 상품 항목 값 번호 */
-              propValueNo: number;
-              /**
-               * @description 상품 항목 값
-               * @example "2015"
-               */
-              propValue: string;
-              /**
-               * @description 상품 항목명
-               * @example "시즌"
-               */
-              propName: string;
-              /** @description 상품 항목명 번호 */
-              propNo: number;
-            }[];
+          /** @description 상품 리스트 이미지 정보 */
+          listImageUrlInfo: {
+            /**
+             * @description 상품 리스트 이미지 type
+             * @example "IMAGE_URL"
+             * @enum {string}
+             */
+            type: 'IMAGE_URL' | 'VIDEO_URL';
+            /**
+             * @description 상품 리스트 이미지 url
+             * @example "//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"
+             */
+            url: string;
+          }[];
           /**
-           * @description 판매시작일시
-           * @example "2024-01-04 16:11:07"
+           * @description HS CODE
+           * @example "HSCODE"
            */
-          saleStartYmdt: string;
+          hsCode: string;
           /**
            * @description 브랜드 한글명
            * @example "dummy korean brand"
            */
           brandNameKo: string;
-          /** @description 상품섹션에서 설정한 종료일 - deprecated(더 이상 제공하지 않는 개체항목입니다) */
-          sectionProductEndYmdt: string;
           /**
-           * @description 품절여부 (true-품절, false-미품절)
-           * @example false
+           * @description 판매시작일시
+           * @example "2024-01-04 16:11:08"
            */
-          isSoldOut: boolean;
+          saleStartYmdt: string;
+          /**
+           * @description 상품 이미지URL
+           * @example ["//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"]
+           */
+          imageUrls: string[];
+          /**
+           * @description 브랜드 영문 명
+           * @example "dummy brand"
+           */
+          brandNameEn: string;
+          /** @description 적립금 정보 */
+          accumulationInfo: {
+            /**
+             * @description 회원등급적립률
+             * @example 0
+             */
+            rewardRateOfMemberBenefit: number;
+            /**
+             * @description 적립금
+             * @example 0
+             */
+            amount: number;
+            /**
+             * @description 상품개별적립률
+             * @example 0
+             */
+            rewardRateOfProduct: number;
+          };
+          /**
+           * @description 대표 옵션 재고 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
+           * @example 50
+           */
+          mainStockCnt: number;
+          /**
+           * @description 영문 상품명
+           * @example ""
+           */
+          productNameEn: string;
+          /**
+           * @description 재고 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
+           * @example 100
+           */
+          stockCnt: number;
           /**
            * @description 성인 상품 여부
            * @example false
            */
           adult: boolean;
-          /** @description 상품 조합형 옵션정보 ( 옵션명은 | 라인으로 구분 ) */
-          optionValues: {
-              /**
-               * @description 옵션명
-               * @example "레드"
-               */
-              optionValue: string;
-              /**
-               * @description 재고 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
-               * @example 100
-               */
-              stockCnt: number;
-              /**
-               * @description 상품번호
-               * @example 10000001
-               */
-              mallProductNo: number;
-            }[];
           /**
            * @description 전시카테고리 번호 정보
            * @example "26916"
            */
           displayCategoryNos: string;
+        };
+        /** @description 상품 항목 추가 정보 */
+        customProperties: {
           /**
-           * @description 판매자 관리코드
-           * @example "PRDC10001"
-           */
-          productManagementCd: string;
-          /** @description 예약판매정보 */
-          reservationData: {
-            /**
-             * @description 예약판매 배송시작일
-             * @example "2023-12-04 16:11:07"
-             */
-            reservationDeliveryYmdt: string;
-            /**
-             * @description 예약판매 재고수량 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
-             * @example 5
-             */
-            reservationStockCnt: number;
-            /**
-             * @description 예약판매 종료일
-             * @example "2023-11-04 16:11:07"
-             */
-            reservationEndYmdt: string;
-            /**
-             * @description 예약판매 시작일
-             * @example "2023-10-04 16:11:07"
-             */
-            reservationStartYmdt: string;
-          };
-          /**
-           * @description 배송비 타입 Enum: [ FREE: Free, CONDITIONAL: conditional free, FIXED_FEE: Paid (Fixed Shipping Fee) ]
-           * @example "CONDITIONAL"
-           */
-          deliveryConditionType: string;
-          /** @description 상품섹션에서 설정한 시작일 - deprecated(더 이상 제공하지 않는 개체항목입니다) */
-          sectionProductStartYmdt: string;
-          /**
-           * @description 적립금
-           * @example 0
-           */
-          accumulationAmtWhenBuyConfirm: number;
-          /** @description 배송비 조건 */
-          deliveryConditionInfo: {
-            /**
-             * @description 배송비 요약
-             * @example "배송비 요약"
-             */
-            summary: string;
-            /**
-             * @description 수량 비례 조건에서 수량 (nullable)
-             * @example 2
-             */
-            perOrderCnt?: number;
-            /**
-             * @description 무료배송을 위한 최소 금액 (nullable)
-             * @example 30000
-             */
-            criteria?: number;
-            /** @description 차등 조건 구간 (nullable) */
-            deliveryFeeRanges?: {
-                /**
-                 * @description 해당 구간에서의 배송비
-                 * @example 5000
-                 */
-                deliveryAmt: number;
-                /**
-                 * @description ~미만 (nullable)
-                 * @example 20000
-                 */
-                below?: number;
-                /**
-                 * @description ~이상 (nullable)
-                 * @example 10000
-                 */
-                aboveOrEqual?: number;
-              }[];
-            /** @description 차등 조건 구간 요약 (nullable) */
-            rangeSummaries?: (Record<string, never> | boolean | string | number)[];
-          };
-          /**
-           * @description 브랜드명 타입 (NAME_KO: Korean, NAME_EN: English, NONE: none)
-           * @example "NAME_KO"
-           */
-          brandNameType: string;
-          /** @description 쿠폰 태그 deprecated(더 이상 제공하지 않는 개체항목입니다) */
-          couponTag: string;
-          /**
-           * @description 최대 쿠폰 적용 가격(default: 0)
-           * @example 0
-           */
-          maxCouponAmt: number;
-          /**
-           * @description 상품의 상품 노출 타입 Enum: [ REGULAR: regular sale, PERIOD: Period Sale ]
-           * @example "REGULAR"
-           */
-          productSalePeriodType: string;
-          /**
-           * @description 추가할인 정률 최대 할인 금액
-           * @example 0
-           */
-          maxDiscountAmount: number;
-          /**
-           * @description 사용가능쿠폰 존재 여부
+           * @description 항목 복수선택여부 (true: 복수개 선택가능, false: 1개만 선택가능)
            * @example false
            */
-          enableCoupons: boolean;
+          isMultipleSelection: boolean;
+          /** @description 상품 항목 값 번호 */
+          propValueNo: number;
           /**
-           * @description 상품유형
-           * @example "DEFAULT"
-           * @enum {string}
+           * @description 상품 항목 값
+           * @example "2015"
            */
-          productType: "DEFAULT" | "EVENT" | "OFFLINE" | "RENTAL";
+          propValue: string;
           /**
-           * @description 상품번호
-           * @example 10000001
+           * @description 상품 항목명
+           * @example "시즌"
            */
-          productNo: number;
-          /**
-           * @description 상품 유효기간 (nullable)
-           * @example "2023-12-31"
-           */
-          expirationDate?: string;
-          /**
-           * @description 상품 등록일
-           * @example "2023-11-04 16:11:07"
-           */
-          registerYmdt: string;
-          /**
-           * @description 상품판매가
-           * @example 10000
-           */
-          salePrice: number;
-          /**
-           * @description 파트너명
-           * @example "다팔아"
-           */
-          partnerName: string;
-          /**
-           * @description 즉시할인 시작일자
-           * @example "2024-01-04 16:11:07"
-           */
-          immediateDiscountStartYmdt: string;
-          /**
-           * @description 상품조회화면 노출 여부
-           * @example false
-           */
-          urlDirectDisplayYn: boolean;
-          /**
-           * @description 판매중지 시 가격대체문구
-           * @example "잠시 판매중지 중입니다."
-           */
-          contentsIfPausing: string;
-          /**
-           * @description 배송 구분 (PARTNER_SHIPPING_AREA: Partner Shipping Center Shipping, MALL_SHIPPING_AREA: Shipping from shopping mall distribution center)
-           * @example "PARTNER_SHIPPING_AREA"
-           */
-          shippingArea: string;
-          /**
-           * @description 판매종료일시
-           * @example "2026-01-04 16:11:07"
-           */
-          saleEndYmdt: string;
-          /** @description 판매기간유형 - deprecated(더 이상 제공하지 않는 개체항목입니다) */
-          salePeriodType: string;
-          /**
-           * @description 추가할인 최대 기준금액
-           * @example 0
-           */
-          maxSalePrice: number;
-          /**
-           * @description 홍보문구
-           * @example "홍보문구"
-           */
-          promotionText: string;
-          /** @description 스티커 정보 */
-          stickerInfos: {
-              /**
-               * @description 스티커 이름
-               * @example "스티커라벨"
-               */
-              name: string;
-              /**
-               * @description 스티커 라벨
-               * @example "스티커라벨"
-               */
-              label: string;
-              /**
-               * @description 스티커 타입 Enum: [ TEXT: Text, IMAGE: Image ]
-               * @example "TEXT"
-               */
-              type: string;
-            }[];
-          /** @description 상품 리스트 이미지 정보 */
-          listImageUrlInfo: ({
-              /**
-               * @description 상품 리스트 이미지 url 타입
-               * @example "IMAGE_URL"
-               * @enum {string}
-               */
-              type: "IMAGE_URL" | "VIDEO_URL";
-              /**
-               * @description 상품 리스트 이미지 url
-               * @example "//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"
-               */
-              url: string;
-            })[];
-          /**
-           * @description HS CODE
-           * @example "HSCODE"
-           */
-          hsCode: string;
-          /**
-           * @description 즉시할인 종료일자
-           * @example "2024-02-04 16:11:07"
-           */
-          immediateDiscountEndYmdt: string;
-          /**
-           * @description 상품 이미지 URL
-           * @example ["//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"]
-           */
-          imageUrls: string[];
-          /**
-           * @description 브랜드 영문 명
-           * @example "dummy brand"
-           */
-          brandNameEn: string;
-          /** @description 적립금 정보 */
-          accumulationInfo: {
-            /**
-             * @description 회원등급적립률
-             * @example 0
-             */
-            rewardRateOfMemberBenefit: number;
-            /**
-             * @description 적립금
-             * @example 0
-             */
-            amount: number;
-            /**
-             * @description 상품개별적립률
-             * @example 0
-             */
-            rewardRateOfProduct: number;
-          };
-          /**
-           * @description 대표 옵션 재고 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
-           * @example 50
-           */
-          mainStockCnt: number;
-          /**
-           * @description 영문 상품명
-           * @example "상품명"
-           */
-          productNameEn: string;
-          /** @description 검색상품번호 - deprecated(더 이상 제공하지 않는 개체항목입니다) */
-          searchProductId: string;
-          /**
-           * @description 재고 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
-           * @example 100
-           */
-          stockCnt: number;
-          /**
-           * @description 판매상태 Enum: [ READY: Ready for sale, ONSALE: on sale, FINISHED: Sales Ended, STOP: Sale Stopped, PROHIBITION: Sell prohibited ]
-           * @example "ONSALE"
-           */
-          saleStatusType: string;
-        })[];
-      depth5Categories: {
-          /**
-           * @description 부모 카테고리 번호
-           * @example 1010004
-           */
-          parentCategoryNo: number;
-          /**
-           * @description 전시 순서
-           * @example 1
-           */
-          displayOrder: number;
-          /**
-           * @description 카테고리 상품 개수
-           * @example 1
-           */
-          count: number;
-          /**
-           * @description 카테고리번호
-           * @example 1010005
-           */
-          categoryNo: number;
-          /**
-           * @description 카테고리 명
-           * @example "카테고리5 이름"
-           */
-          label: string;
+          propName: string;
+          /** @description 상품 항목명 번호 */
+          propNo: number;
         }[];
-    };
-    "products-productNo-url-shortening-1808461975": {
-      /**
-       * @description 단축URL
-       * @example http://alpha-firstmall.e-ncp.com/s/abCdEfg
-       */
-      url: string;
-    };
-    "profile-like-products-count1871095000": {
-      /**
-       * @description 좋아요 수
-       * @example 10
-       */
-      likedCount: number;
-    };
-    "display-brands-812449549": {
-      /**
-       * @description 전체 브랜드 수
-       * @example 10
-       */
-      totalCount: number;
-      items: ({
+        /** @description 배송 정보 */
+        deliveryFee: {
           /**
-           * @description 브랜드명 노출타입
-           * @example "NAME_KO"
-           * @enum {string}
-           */
-          nameType: "NAME_KO" | "NAME_EN" | "NONE";
-          /**
-           * @description 브랜드 한글명
-           * @example "브랜드 이름"
-           */
-          nameKo: string;
-          /**
-           * @description 상세(html) (사용안하는 필드로 deprecated 예정)
-           * @example "상세 내용"
-           */
-          detailContent: string;
-          /**
-           * @description 브랜드 홈페이지 주소
-           * @example "homepage url"
-           */
-          homepageUrl: string;
-          /**
-           * @description 브랜드 한글명
-           * @example "브랜드 이름"
-           */
-          name: string;
-          /**
-           * @description 브랜드 설명
-           * @example "설명"
-           */
-          description: string;
-          /**
-           * @description 메인 이미지(html) (사용안하는 필드로 deprecated 예정)
-           * @example "메인 내용"
-           */
-          mainImageContent: string;
-          /**
-           * @description 브랜드 이미지 또는 브랜드 관련 동영상 url
-           * @example "브랜드 이미지 또는 브랜드 관련 동영상 url"
-           */
-          displayAreaContentUrl: string;
-          /**
-           * @description 메이커 명
-           * @example "제작사"
-           */
-          makerName: string;
-          /**
-           * @description 브랜드 영문명
-           * @example "brand name"
-           */
-          nameEn: string;
-          /**
-           * @description 브랜드번호
-           * @example 1
-           */
-          brandNo: number;
-          /**
-           * @description 로고 주소
-           * @example "logo image url"
-           */
-          logoImageUrl: string;
-        })[];
-    };
-    "products-group-management-code-1777856279": ({
-        /**
-         * @description 그룹관리코드 노출 설명
-         * @example "Description"
-         */
-        groupManagementCodeDescription: string;
-        /**
-         * @description 그룹관리코드 노출명
-         * @example "CODE NAME"
-         */
-        groupManagementCodeName: string;
-        /**
-         * @description 그룹관리코드
-         * @example "CODE"
-         */
-        groupManagementCode: string;
-        /** @description 그룹관리 상품 */
-        groupManagementMappingProducts: ({
-            /**
-             * @description 옵션 타입
-             * @example "DEFAULT"
-             * @enum {string}
-             */
-            optionType: "STANDARD" | "COMBINATION" | "DEFAULT" | "MAPPING";
-            /**
-             * @description 미성년자 구매가능 여부
-             * @example false
-             */
-            isMinorPurchase: boolean;
-            /**
-             * @description 옵션 사용 여부
-             * @example false
-             */
-            hasOption: boolean;
-            /**
-             * @description 상품 이미지 URL (메인이미지 포함)
-             * @example "[//image.com/abc.jpg]"
-             */
-            imageUrls: string[];
-            /** @description 옵션정보 */
-            options: ({
-                /**
-                 * @description 옵션명(조합형일 경우 |로 구분해주세요)
-                 * @example "색상"
-                 */
-                name: string;
-                /**
-                 * @description 옵션번호
-                 * @example 1000011
-                 */
-                optionNo: number;
-                /**
-                 * @description 옵션값(조합형일 경우 |로 구분해주세요)
-                 * @example "블루"
-                 */
-                value: string;
-                /**
-                 * @description 임시 품절 여부
-                 * @example false
-                 */
-                forcedSoldOut: boolean;
-              })[];
-            /**
-             * @description 메인 상품이미지
-             * @example "//image.com/abc.jpg"
-             */
-            mainImageUrl: string;
-            /**
-             * @description 상품명
-             * @example "상품명"
-             */
-            productName: string;
-            /**
-             * @description 상품번호
-             * @example 10000001
-             */
-            productNo: number;
-          })[];
-      })[];
-    "profile-like-products-2097794731": {
-      /**
-       * @description 상품 번호 리스트 (배열)
-       * @example [100000]
-       */
-      productNos: number[];
-    };
-    "products-bundle-shipping1332557899": {
-      /**
-       * @description 페이지
-       * @example 0
-       */
-      pageCount: number;
-      /** @description 브랜드 */
-      brands: {
-          /**
-           * @description 브랜드 명
-           * @example "브랜드명"
-           */
-          brandName: string;
-          /**
-           * @description 브랜드 상품 개수
-           * @example 1
-           */
-          count: number;
-          /**
-           * @description 브랜드 번호
-           * @example 101
-           */
-          brandNo: number;
-        }[];
-      depth4Categories: {
-          /**
-           * @description 부모 카테고리 번호
-           * @example 3
-           */
-          parentCategoryNo: number;
-          /**
-           * @description 전시 순서
-           * @example 1
-           */
-          displayOrder: number;
-          /**
-           * @description 카테고리 상품 개수
-           * @example 1
-           */
-          count: number;
-          /**
-           * @description 카테고리 번호
-           * @example 4
-           */
-          categoryNo: number;
-          /**
-           * @description 카테고리 명
-           * @example "4depth"
-           */
-          label: string;
-        }[];
-      depth3Categories: {
-          /**
-           * @description 부모 카테고리 번호
-           * @example 2
-           */
-          parentCategoryNo: number;
-          /**
-           * @description 전시 순서
-           * @example 1
-           */
-          displayOrder: number;
-          /**
-           * @description 카테고리 상품 개수
-           * @example 1
-           */
-          count: number;
-          /**
-           * @description 카테고리 번호
-           * @example 3
-           */
-          categoryNo: number;
-          /**
-           * @description 카테고리 명
-           * @example "3depth"
-           */
-          label: string;
-        }[];
-      depth2Categories: {
-          /**
-           * @description 부모 카테고리 번호
-           * @example 1
-           */
-          parentCategoryNo: number;
-          /**
-           * @description 전시 순서
-           * @example 1
-           */
-          displayOrder: number;
-          /**
-           * @description 카테고리 상품 개수
-           * @example 1
-           */
-          count: number;
-          /**
-           * @description 카테고리 번호
-           * @example 2
-           */
-          categoryNo: number;
-          /**
-           * @description 카테고리 명
-           * @example "2depth"
-           */
-          label: string;
-        }[];
-      /**
-       * @description 검색된 상품 총 개수
-       * @example 1
-       */
-      totalCount: number;
-      multiLevelCategories: {
-          /**
-           * @description 부모 카테고리 번호
-           * @example 0
-           */
-          parentCategoryNo: number;
-          /**
-           * @description 전시 순서
-           * @example 1
-           */
-          displayOrder: number;
-          /**
-           * @description 카테고리 상품 개수
-           * @example 1
-           */
-          count: number;
-          /**
-           * @description 카테고리 번호
-           * @example 1
-           */
-          categoryNo: number;
-          /** @description 하위 카테고리 */
-          childCategories: Record<string, never>[];
-          /**
-           * @description 카테고리 명
-           * @example "1depth"
-           */
-          label: string;
-        }[];
-      depth1Categories: {
-          /**
-           * @description 부모 카테고리 번호
-           * @example 0
-           */
-          parentCategoryNo: number;
-          /**
-           * @description 전시 순서
-           * @example 1
-           */
-          displayOrder: number;
-          /**
-           * @description 카테고리 상품 개수
-           * @example 1
-           */
-          count: number;
-          /**
-           * @description 카테고리 번호
-           * @example 1
-           */
-          categoryNo: number;
-          /**
-           * @description 카테고리 명
-           * @example "1depth"
-           */
-          label: string;
-        }[];
-      /**
-       * @description 가장 낮은 가격
-       * @example 5000
-       */
-      minPrice: number;
-      /**
-       * @description
-       *  재고 노출 여부 (false:재고 미노출 / true:재고 노출)<br><br>
-       *  false로 재고를 숨김처리 한 경우,
-       *  1) 재고 관련 필드는(실제 재고가 있더라도) -999로 고정으로 리턴하며 실재고 값은 따로 내려주지 않아 조회 불가합니다.
-       *  2) 실재고가 0인 경우에만 0으로 응답합니다.
-       *    만약 재고 숨김처리 시, front에서 [-999]로 표시되도록 처리되고 있는게 있다면 재고노출여부(displayableStock)를 기준으로 수정 작업이 필요합니다.
-       *    만약 재고 숨김처리 시, front에서 [품절]로 표시되도록 처리되고 있는게 있다면 재고/예약재고값을 기준이 아닌, 품절상태(isSoldOut)값을 기준으로 처리되도록 수정 작업이 필요합니다.
-       *
-       * @example false
-       */
-      displayableStock: boolean;
-      /**
-       * @description 가장 높은 가격
-       * @example 5000
-       */
-      maxPrice: number;
-      /** @description 상품 목록 */
-      items: ({
-          /**
-           * @description 추가할인 최소 기준금액 (nullable)
-           * @example 1000
-           */
-          minSalePrice?: number;
-          /**
-           * @description 좋아요 수
-           * @example 10
-           */
-          likeCount: number;
-          /**
-           * @description 총 리뷰 개수
-           * @example 8
-           */
-          totalReviewCount: number;
-          /**
-           * @description 리뷰 평점
-           * @example 4.8
-           */
-          reviewRating: number;
-          /**
-           * @description 좋아요 여부
-           * @example false
-           */
-          liked: boolean;
-          /**
-           * @description 상품명
-           * @example "상품명"
-           */
-          productName: string;
-          /**
-           * @description 쿠폰 할인 가격(default: 0)
-           * @example 0
-           */
-          couponDiscountAmt: number;
-          /**
-           * @description 상품조회화면 노출 여부
-           * @example false
-           */
-          urlDirectDisplayable: boolean;
-          /**
-           * @description 추가 할인 금액/율
-           * @example 1000
-           */
-          additionDiscountAmt: number;
-          /** @description 상품 이미지 정보 */
-          imageUrlInfo: ({
-              /**
-               * @description 상품 이미지 url 타입
-               * @example "IMAGE_URL"
-               * @enum {string}
-               */
-              type: "IMAGE_URL" | "VIDEO_URL";
-              /**
-               * @description 상품 이미지 url
-               * @example ""
-               */
-              url: string;
-            })[];
-          /**
-           * @description 브랜드 번호
-           * @example 101
-           */
-          brandNo: number;
-          /**
-           * @description 브랜드 명
-           * @example "dummy korean brand"
-           */
-          brandName: string;
-          /**
-           * @description 리스트 이미지 URL
-           * @example [""]
-           */
-          listImageUrls: string[];
-          /**
-           * @description 즉시 할인 금액/율
-           * @example 10
-           */
-          immediateDiscountAmt: number;
-          /** @description 스티커 라벨 */
-          stickerLabels: string[];
-          /** @description 쿠폰 여부 */
-          hasCoupons: {
-            /**
-             * @description 상품 쿠폰
-             * @example false
-             */
-            product: boolean;
-            /**
-             * @description 파트너 쿠폰
-             * @example false
-             */
-            partner: boolean;
-            /**
-             * @description 기획전 쿠
-             * @example false
-             */
-            event: boolean;
-            /**
-             * @description 카테고리 쿠폰
-             * @example false
-             */
-            category: boolean;
-            /**
-             * @description 브랜드 쿠폰
-             * @example false
-             */
-            brand: boolean;
-          };
-          /**
-           * @description 즉시 할인 단위
-           * @example "RATE"
-           * @enum {string}
-           */
-          immediateDiscountUnitType: "WON" | "RATE";
-          /**
-           * @description 추가 할인 단위
-           * @example "WON"
-           * @enum {string}
-           */
-          additionDiscountUnitType: "WON" | "RATE";
-          /**
-           * @description 판매량 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
-           * @example 10
-           */
-          saleCnt: number;
-          /**
-           * @description 판매 시작일
-           * @example "2024-01-04 16:11:10"
-           */
-          saleStartYmdt: string;
-          /**
-           * @description 품절여부 (true-품절, false-미품절)
-           * @example false
-           */
-          isSoldOut: boolean;
-          /**
-           * @description 성인 전용 상품 여부
-           * @example false
-           */
-          adult: boolean;
-          /** @description 상품 조합형 옵션정보 */
-          optionValues: {
-              /**
-               * @description 조합형 옵션값
-               * @example "레드"
-               */
-              optionValue: string;
-              /**
-               * @description 재고 수 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
-               * @example 100
-               */
-              stockCnt: number;
-              /**
-               * @description 상품 번호
-               * @example 10000001
-               */
-              mallProductNo: number;
-            }[];
-          /**
-           * @description 전시 카테고리
-           * @example "5"
-           */
-          displayCategoryNos: string;
-          /**
-           * @description 상품 관리 코드
-           * @example "상품 관리 코드"
-           */
-          productManagementCd: string;
-          /** @description 예약 판매 정보 */
-          reservationData: {
-            /**
-             * @description 예약 판매 배송일
-             * @example "2024-01-04 16:11:10"
-             */
-            reservationDeliveryYmdt: string;
-            /**
-             * @description 예약 판매 재고 수량 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
-             * @example 500
-             */
-            reservationStockCnt: number;
-            /**
-             * @description 예약 판매 종료일
-             * @example "2024-01-04 16:11:10"
-             */
-            reservationEndYmdt: string;
-            /**
-             * @description 예약 판매 시작일
-             * @example "2024-01-04 16:11:10"
-             */
-            reservationStartYmdt: string;
-          };
-          /**
-           * @description 배송비 유형
+           * @description 배송비타입
            * @example "CONDITIONAL"
            * @enum {string}
            */
-          deliveryConditionType: "FREE" | "CONDITIONAL" | "FIXED_FEE" | "QUANTITY_PROPOSITIONAL_FEE" | "PRICE_FEE" | "QUANTITY_FEE";
+          deliveryConditionType:
+            | 'FREE'
+            | 'CONDITIONAL'
+            | 'FIXED_FEE'
+            | 'QUANTITY_PROPOSITIONAL_FEE'
+            | 'PRICE_FEE'
+            | 'QUANTITY_FEE';
           /**
-           * @description 최대 쿠폰 적용 가격(default: 0)
+           * @description 배송비 (고정배송비, 조건부 배송비인 경우)
            * @example 0
            */
-          maxCouponAmt: number;
-          /**
-           * @description 판매기간유형 (nullable)
-           * @example "REGULAR"
-           * @enum {string}
-           */
-          productSalePeriodType?: "REGULAR" | "PERIOD";
-          /**
-           * @description 추가할인 정률 최대 할인 금액 (nullable)
-           * @example 0
-           */
-          maxDiscountAmount?: number;
-          /**
-           * @description 사용가능쿠폰 존재 여부
-           * @example false
-           */
-          enableCoupons: boolean;
-          /**
-           * @description 전시 노출 여부
-           * @example true
-           */
-          frontDisplayable: boolean;
-          /**
-           * @description 상품 번호
-           * @example 10000001
-           */
-          productNo: number;
-          /**
-           * @description 등록일
-           * @example "2024-01-04 16:11:10"
-           */
-          registerYmdt: string;
-          /**
-           * @description 판매가
-           * @example 5000
-           */
-          salePrice: number;
-          /**
-           * @description 파트너명
-           * @example "다팔아"
-           */
-          partnerName: string;
-          /**
-           * @description 즉시할인 시작일자
-           * @example "2024-01-04 16:11:10"
-           */
-          immediateDiscountStartYmdt: string;
-          /**
-           * @description 가격 대체 문구 (nullable)
-           * @example "가격 대체 문구"
-           */
-          contentsIfPausing?: string;
-          /**
-           * @description 판매 종료일
-           * @example "2024-01-04 16:11:10"
-           */
-          saleEndYmdt: string;
-          /**
-           * @description 추가할인 최대 기준금액 (nullable)
-           * @example 100000
-           */
-          maxSalePrice?: number;
-          /**
-           * @description 홍보문구
-           * @example "프로모션 문구"
-           */
-          promotionText: string;
-          /** @description 스티커 정보 */
-          stickerInfos: ({
-              /**
-               * @description 스티커 명
-               * @example "스티커명"
-               */
-              name: string;
-              /**
-               * @description 스티커 라벨
-               * @example "스티커라벨"
-               */
-              label: string;
-              /**
-               * @description 스티커 유형
-               * @example "TEXT"
-               * @enum {string}
-               */
-              type: "TEXT" | "IMAGE";
-            })[];
-          /** @description 상품 리스트 이미지 정보 */
-          listImageUrlInfo: ({
-              /**
-               * @description 상품 리스트 이미지 url 타입
-               * @example "IMAGE_URL"
-               * @enum {string}
-               */
-              type: "IMAGE_URL" | "VIDEO_URL";
-              /**
-               * @description 상품 리스트 이미지 url
-               * @example ""
-               */
-              url: string;
-            })[];
-          /**
-           * @description 즉시할인 종료일자
-           * @example "2024-01-04 16:11:10"
-           */
-          immediateDiscountEndYmdt: string;
-          /**
-           * @description 상품 이미지 URL
-           * @example [""]
-           */
-          imageUrls: string[];
-          /**
-           * @description 브랜드 명(영문)
-           * @example "dummy brand"
-           */
-          brandNameEn: string;
-          /**
-           * @description 대표옵션 재고 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
-           * @example 10
-           */
-          mainStockCnt: number;
-          /**
-           * @description 영문 상품명 (nullable)
-           * @example "상품명 en"
-           */
-          productNameEn?: string;
-          /**
-           * @description 재고수 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
-           * @example 10
-           */
-          stockCnt: number;
-          /**
-           * @description 판매 상태
-           * @example "ONSALE"
-           * @enum {string}
-           */
-          saleStatusType: "READY" | "ONSALE" | "FINISHED" | "STOP" | "PROHIBITION";
-        })[];
-      depth5Categories: {
-          /**
-           * @description 부모 카테고리 번호
-           * @example 4
-           */
-          parentCategoryNo: number;
-          /**
-           * @description 전시 순서
-           * @example 1
-           */
-          displayOrder: number;
-          /**
-           * @description 카테고리 상품 개수
-           * @example 1
-           */
-          count: number;
-          /**
-           * @description 카테고리 번호
-           * @example 5
-           */
-          categoryNo: number;
-          /**
-           * @description 카테고리 명
-           * @example "5depth"
-           */
-          label: string;
-        }[];
-    };
-    "profile-like-products1120109227": {
-      /**
-       * @description
-       *  재고 노출 여부 (false:재고 미노출 / true:재고 노출)<br><br>
-       *  false로 재고를 숨김처리 한 경우,
-       *  1) 재고 관련 필드는(실제 재고가 있더라도) -999로 고정으로 리턴하며 실재고 값은 따로 내려주지 않아 조회 불가합니다.
-       *  2) 실재고가 0인 경우에만 0으로 응답합니다.
-       *    만약 재고 숨김처리 시, front에서 [-999]로 표시되도록 처리되고 있는게 있다면 재고노출여부(displayableStock)를 기준으로 수정 작업이 필요합니다.
-       *    만약 재고 숨김처리 시, front에서 [품절]로 표시되도록 처리되고 있는게 있다면 재고/예약재고값을 기준이 아닌, 품절상태(isSoldOut)값을 기준으로 처리되도록 수정 작업이 필요합니다.
-       *
-       * @example true
-       */
-      displayableStock: boolean;
-      /**
-       * @description 총 상품수
-       * @example 10
-       */
-      totalCount: number;
-      items: ({
-          /**
-           * @description 그룹관리코드 노출명
-           * @example "그룹코드1"
-           */
-          groupManagementCodeName: string;
-          /**
-           * @description 추가할인 최소 기준금액
-           * @example 1000
-           */
-          minSalePrice: number;
-          /**
-           * @description 그룹관리코드
-           * @example "CODE0001"
-           */
-          groupManagementCode: string;
-          /** @description 상품 이미지 정보 */
-          imageInfo: ({
-              /**
-               * @description 상품 이미지 URL 타입
-               * @example "//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"
-               * @enum {string}
-               */
-              type: "IMAGE_URL" | "VIDEO_URL";
-              /**
-               * @description 상품 이미지 URL
-               * @example "//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"
-               */
-              url: string;
-            })[];
-          /**
-           * @description 좋아요 수
-           * @example 10
-           */
-          likeCount: number;
-          /**
-           * @description 장바구니 사용 여부
-           * @example true
-           */
-          canAddToCart: boolean;
-          /**
-           * @description 총 상품평 수
-           * @example 8
-           */
-          totalReviewCount: number;
-          /**
-           * @description 상품평 평균점수
-           * @example 4.8
-           */
-          reviewRating: number;
-          /**
-           * @description 좋아요 여부 (true: 좋아요 누름, false: 좋아요 안누름)
-           * @example false
-           */
-          liked: boolean;
-          /**
-           * @description 상품명
-           * @example "상품명"
-           */
-          productName: string;
-          /**
-           * @description 상품 기본옵션 가격기준으로 적용 가능한 최대 쿠폰 할인가
-           * @example 1000
-           */
-          couponDiscountAmt: number;
-          /** @description 상품 리스트 이미지 정보 */
-          listImageInfo: ({
-              /**
-               * @description 상품 리스트 이미지 URL 타입
-               * @example "//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"
-               * @enum {string}
-               */
-              type: "IMAGE_URL" | "VIDEO_URL";
-              /**
-               * @description 상품 리스트 이미지 URL
-               * @example "//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"
-               */
-              url: string;
-            })[];
-          /**
-           * @description 추가상품할인가
-           * @example 1000
-           */
-          additionDiscountAmt: number;
-          /**
-           * @description 브랜드 번호
-           * @example 10
-           */
-          brandNo: number;
-          /**
-           * @description 메인 배스트 상품 여부 (Y: 메인 베스트 상품, N:메인 베스트 상품 아님)
-           * @example false
-           */
-          mainBestProductYn: boolean;
-          /**
-           * @description 브랜드 명
-           * @example "더미 브랜드"
-           */
-          brandName: string;
-          /**
-           * @description 리스트 이미지 URL
-           * @example ["//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"]
-           */
-          listImageUrls: string[];
+          deliveryAmt: number;
+        };
+        /** @description 가격 정보 */
+        price: {
           /**
            * @description 즉시할인가
            * @example 1000
            */
           immediateDiscountAmt: number;
-          /** @description 스티커 라벨(배열) */
-          stickerLabels: string[];
-          hasCoupons: {
-            /**
-             * @description 상품쿠폰 태그
-             * @example true
-             */
-            product: boolean;
-            /**
-             * @description 파트너쿠폰 태그
-             * @example true
-             */
-            partner: boolean;
-            /**
-             * @description 기획전쿠폰 태그
-             * @example true
-             */
-            event: boolean;
-            /**
-             * @description 카테고리쿠폰 태그
-             * @example true
-             */
-            category: boolean;
-            /**
-             * @description 브랜드쿠폰 태그
-             * @example true
-             */
-            brand: boolean;
-          };
           /**
-           * @description 즉시할인 타입
-           * @example "WON"
-           * @enum {string}
+           * @description 즉시할인 종료일자
+           * @example "2024-02-04 16:11:08"
            */
-          immediateDiscountUnitType: "WON" | "RATE";
-          /**
-           * @description 추가상품할인 타입
-           * @example "WON"
-           * @enum {string}
-           */
-          additionDiscountUnitType: "WON" | "RATE";
-          /**
-           * @description 전시 여부 (Y: 전시, N:비전시)
-           * @example true
-           */
-          frontDisplayYn: boolean;
-          /**
-           * @description 구매 수량 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
-           * @example 1000
-           */
-          saleCnt: number;
-          /**
-           * @description 판매시작일시
-           * @example "2024-01-04 16:11:03"
-           */
-          saleStartYmdt: string;
-          /**
-           * @description 브랜드 한글 명
-           * @example "dummy korean brand"
-           */
-          brandNameKo: string;
-          /**
-           * @description 상품섹션에서 설정한 종료일
-           * @example
-           */
-          sectionProductEndYmdt: string;
-          /**
-           * @description 품절여부 (true-품절, false-미품절)
-           * @example false
-           */
-          isSoldOut: boolean;
-          /**
-           * @description 성인 상품 여부 (true: 성인 상품, false: 비성인 상품)
-           * @example false
-           */
-          adult: boolean;
-          /** @description 상품 조합형 옵션정보 ( 옵션명은 | 라인으로 구분 ) */
-          optionValues: {
-              /**
-               * @description 옵션명
-               * @example "레드"
-               */
-              optionValue: string;
-              /**
-               * @description 재고 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
-               * @example 100
-               */
-              stockCnt: number;
-              /**
-               * @description 상품번호
-               * @example 10000001
-               */
-              mallProductNo: number;
-            }[];
-          /**
-           * @description 전시카테고리 번호 정보
-           * @example "26916"
-           */
-          displayCategoryNos: string;
-          /**
-           * @description 판매자 관리코드
-           * @example "PRDC10001"
-           */
-          productManagementCd: string;
-          reservationData: {
-            /**
-             * @description 예약판매 배송시작일
-             * @example "2023-12-04 16:11:03"
-             */
-            reservationDeliveryYmdt: string;
-            /**
-             * @description 예약판매 재고수량 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
-             * @example 5
-             */
-            reservationStockCnt: number;
-            /**
-             * @description 예약판매 종료일
-             * @example "2023-11-04 16:11:03"
-             */
-            reservationEndYmdt: string;
-            /**
-             * @description 예약판매 시작일
-             * @example "2023-10-04 16:11:03"
-             */
-            reservationStartYmdt: string;
-          };
-          /**
-           * @description 배송비 타입
-           * @example "CONDITIONAL"
-           * @enum {string}
-           */
-          deliveryConditionType: "FREE" | "CONDITIONAL" | "FIXED_FEE" | "QUANTITY_PROPOSITIONAL_FEE" | "PRICE_FEE" | "QUANTITY_FEE";
-          /**
-           * @description 상품섹션에서 설정한 시작일
-           * @example
-           */
-          sectionProductStartYmdt: string;
-          /**
-           * @description 적립금
-           * @example 0
-           */
-          accumulationAmtWhenBuyConfirm: number;
-          /**
-           * @description 쿠폰 태그
-           * @example "쿠폰"
-           */
-          couponTag: string;
-          /**
-           * @description 최대 쿠폰 적용 가격(default: 0)
-           * @example 5000
-           */
-          maxCouponAmt: number;
-          /**
-           * @description 상품섹션 상품 노출 타입
-           * @example
-           * @enum {string}
-           */
-          productSalePeriodType: "REGULAR" | "PERIOD";
-          /**
-           * @description 추가할인 정률 최대 할인 금액
-           * @example 0
-           */
-          maxDiscountAmount: number;
-          /**
-           * @description 사용가능쿠폰 존재 여부 (true: 사용가능쿠폰 존재, false:사용가능 쿠폰 없음)
-           * @example true
-           */
-          enableCoupons: boolean;
-          /**
-           * @description 상품번호
-           * @example 10000001
-           */
-          productNo: number;
-          /**
-           * @description 상품 등록일
-           * @example "2023-11-04 16:11:03"
-           */
-          registerYmdt: string;
+          immediateDiscountEndYmdt: string;
           /**
            * @description 상품판매가
            * @example 10000
            */
           salePrice: number;
           /**
-           * @description 파트너명
-           * @example "다팔아"
+           * @description 추가할인 최소 기준금액
+           * @example 0
            */
-          partnerName: string;
+          minSalePrice: number;
           /**
            * @description 즉시할인 시작일자
-           * @example "2024-01-04 16:11:03"
+           * @example "2024-01-04 16:11:08"
            */
           immediateDiscountStartYmdt: string;
           /**
-           * @description 상품조회화면 노출 여부 (Y: 화면 노출, N:화면 비노출)
-           * @example false
+           * @description 추가상품할인가
+           * @example 0
            */
-          urlDirectDisplayYn: boolean;
+          additionDiscountAmt: number;
           /**
-           * @description 판매중지 시 가격대체문구
-           * @example "잠시 판매중지 중입니다."
-           */
-          contentsIfPausing: string;
-          /**
-           * @description 판매종료일시
-           * @example "2026-01-04 16:11:03"
-           */
-          saleEndYmdt: string;
-          /**
-           * @description 상품의 상품 노출 타입
-           * @example "REGULAR"
+           * @description 즉시할인 타입
+           * @example "WON"
            * @enum {string}
            */
-          salePeriodType: "REGULAR" | "PERIOD";
+          immediateDiscountUnitType: 'WON' | 'RATE';
+          /**
+           * @description 추가상품할인 타입
+           * @example "WON"
+           * @enum {string}
+           */
+          additionDiscountUnitType: 'WON' | 'RATE';
+          /**
+           * @description 추가상품 할인( 원 / % )  additionDiscountUnitType 에따라 달라진다.
+           * @example 1000
+           */
+          additionDiscountValue: number;
+          /**
+           * @description 최대 추가할인 금액
+           * @example 0
+           */
+          maxAdditionDiscountAmt: number;
           /**
            * @description 추가할인 최대 기준금액
-           * @example 100000
+           * @example 0
            */
           maxSalePrice: number;
+        };
+        /**
+         * @description 배송 구분 (PARTNER_SHIPPING_AREA: Partner Shipping Center Shipping, MALL_SHIPPING_AREA: Shipping from shopping mall distribution center)
+         * @example "PARTNER_SHIPPING_AREA"
+         */
+        shippingArea: string;
+        /** @description 옵션 정보 */
+        optionValues: {
           /**
-           * @description 홍보문구
-           * @example "홍보문구"
+           * @description 옵션명
+           * @example "레드"
            */
-          promotionText: string;
-          stickerInfos: {
-              /**
-               * @description 스티커 라벨
-               * @example "스티커라벨"
-               */
-              label: string;
-              /**
-               * @description 스티커 타입
-               * @example "TEXT"
-               */
-              type: string;
-            }[];
+          optionValue: string;
           /**
-           * @description HS CODE
-           * @example "HSCODE"
-           */
-          hsCode: string;
-          /**
-           * @description 즉시할인 종료일자
-           * @example "2024-02-04 16:11:03"
-           */
-          immediateDiscountEndYmdt: string;
-          /**
-           * @description 상품 이미지 URL
-           * @example ["//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"]
-           */
-          imageUrls: string[];
-          /**
-           * @description 브랜드 영문 명
-           * @example "dummy brand"
-           */
-          brandNameEn: string;
-          /** @description 적립금 정보 */
-          accumulationInfo: {
-            /**
-             * @description 회원등급적립률
-             * @example 0
-             */
-            rewardRateOfMemberBenefit: number;
-            /**
-             * @description 적립금
-             * @example 0
-             */
-            amount: number;
-            /**
-             * @description 상품개별적립률
-             * @example 0
-             */
-            rewardRateOfProduct: number;
-          };
-          /**
-           * @description 대표 옵션 재고 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
-           * @example 50
-           */
-          mainStockCnt: number;
-          /**
-           * @description 영문 상품명
-           * @example ""
-           */
-          productNameEn: string;
-          /**
-           * @description NHNEnt Search ID(상품검색 API응답에만 존재함)
-           * @example
-           */
-          searchProductId: string;
-          /**
-           * @description 재고 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
+           * @description 재고수
            * @example 100
            */
           stockCnt: number;
+          /**
+           * @description 상품번호
+           * @example 10000001
+           */
+          productNo: number;
+        }[];
+        /** @description 상품 상태 */
+        status: {
+          /**
+           * @description 상품 타입
+           * @example "DEFAULT"
+           * @enum {string}
+           */
+          productClassType: 'DEFAULT' | 'EVENT' | 'OFFLINE' | 'RENTAL';
+          /**
+           * @description 전시여부
+           * @example true
+           */
+          display: boolean;
+          /**
+           * @description 품절여부
+           * @example false
+           */
+          soldout: boolean;
           /**
            * @description 판매상태
            * @example "ONSALE"
            * @enum {string}
            */
-          saleStatusType: "READY" | "ONSALE" | "FINISHED" | "STOP" | "PROHIBITION";
-        })[];
-    };
-    "additional-discounts-by-product-no-78647450": {
-      /** @description 할인율 (수량할인 사용시 수량1개 기준 정보) (nullable) */
-      discountRate?: number;
-      /**
-       * @description 추가 할인명
-       * @example "추가할인"
-       */
-      discountName: string;
-      /**
-       * @description 추가 할인 번호
-       * @example 1
-       */
-      discountNo: number;
-      /** @description 추가 할인 시작일 */
-      startDateTime: string;
-      /** @description 최대 할인 금액 (수량할인 사용시 수량1개 기준 정보) (nullable) */
-      maxDiscountAmount?: number;
-      /**
-       * @description 정액 할인 여부 (수량할인 사용시 수량1개 기준 정보)
-       * @example true
-       */
-      isFixedDiscount: boolean;
-      /** @description 구매수량할인 설정 정보 */
-      quantityDiscountInfos: {
-          /**
-           * @description 순서
-           * @example 1
-           */
-          sortNo: number;
-          /**
-           * @description 정액: null, 정률: 할인율 (nullable)
-           * @example 1000
-           */
-          discountRate?: number;
-          /**
-           * @description 최소구매수량
-           * @example 1
-           */
-          minQuantity: number;
-          /** @description 최대구매수량 (nullable) */
-          maxQuantity?: number;
-          /** @description 정률 시 최대 할인금액 (nullable) */
-          maxDiscountAmount?: number;
-          /**
-           * @description true:정액, false:정률
-           * @example true
-           */
-          isFixedDiscount: boolean;
-          /**
-           * @description 정액: 할인 금액, 정률: null (nullable)
-           * @example 1000
-           */
-          discountAmount?: number;
-        }[];
-      /** @description 최소 기준 금액 (nullable) */
-      minSalePrice?: number;
-      /**
-       * @description 할인액 (수량할인 사용시 수량1개 기준 정보) (nullable)
-       * @example 1000
-       */
-      discountAmount?: number;
-      /** @description 추가 할인 종료일 */
-      endDateTime: string;
-      /**
-       * @description 구매수량할인 사용여부
-       * @example true
-       */
-      isQuantityDiscount: boolean;
-      /** @description 최대 기준 금액 (nullable) */
-      maxSalePrice?: number;
-    };
-    "products-search-summary554148782": {
-      brands: {
-          /**
-           * @description 브랜드이름
-           * @example "브랜드 이름"
-           */
-          brandName: string;
-          /**
-           * @description 브랜드 한글명
-           * @example
-           */
-          brandNameKo: string;
-          /**
-           * @description 브랜드 상품 수
-           * @example 1
-           */
-          count: number;
-          /**
-           * @description 브랜드 영문명
-           * @example
-           */
-          brandNameEn: string;
-          /**
-           * @description 브랜드명 타입 (NAME_KO: Korean, NAME_EN: English, NONE: none)
-           * @example "NAME_EN"
-           */
-          brandNameType: string;
-          /**
-           * @description 브랜드번호
-           * @example 1
-           */
-          brandNo: number;
-        }[];
-      multiLevelCategories: {
-          /**
-           * @description 부모 카테고리 번호
-           * @example 0
-           */
-          parentCategoryNo: number;
-          /**
-           * @description 전시 순서
-           * @example 0
-           */
-          displayOrder: number;
-          /**
-           * @description 카테고리 상품 개수
-           * @example 0
-           */
-          count: number;
-          /**
-           * @description 카테고리번호
-           * @example 0
-           */
-          categoryNo: number;
-          /**
-           * @description 하위 카테고리
-           * @example []
-           */
-          childCategories: Record<string, never>[];
-          /**
-           * @description 카테고리 명
-           * @example ""
-           */
-          label: string;
-        }[];
-      depth4Categories: {
-          /**
-           * @description 부모 카테고리 번호
-           * @example 1010003
-           */
-          parentCategoryNo: number;
-          /**
-           * @description 전시 순서
-           * @example 1
-           */
-          displayOrder: number;
-          /**
-           * @description 카테고리 상품 개수
-           * @example 1
-           */
-          count: number;
-          /**
-           * @description 카테고리번호
-           * @example 1010004
-           */
-          categoryNo: number;
-          /**
-           * @description 카테고리 명
-           * @example "카테고리4 이름"
-           */
-          label: string;
-        }[];
-      /**
-       * @description 최소 가격
-       * @example 0
-       */
-      minPrice: number;
-      depth1Categories: {
-          /**
-           * @description 부모 카테고리 번호
-           * @example 0
-           */
-          parentCategoryNo: number;
-          /**
-           * @description 전시 순서
-           * @example 1
-           */
-          displayOrder: number;
-          /**
-           * @description 카테고리 상품 개수
-           * @example 1
-           */
-          count: number;
-          /**
-           * @description 카테고리번호
-           * @example 1010001
-           */
-          categoryNo: number;
-          /**
-           * @description 카테고리 명
-           * @example "카테고리1 이름"
-           */
-          label: string;
-        }[];
-      depth3Categories: {
-          /**
-           * @description 부모 카테고리 번호
-           * @example 1010002
-           */
-          parentCategoryNo: number;
-          /**
-           * @description 전시 순서
-           * @example 1
-           */
-          displayOrder: number;
-          /**
-           * @description 카테고리 상품 개수
-           * @example 1
-           */
-          count: number;
-          /**
-           * @description 카테고리번호
-           * @example 1010003
-           */
-          categoryNo: number;
-          /**
-           * @description 카테고리 명
-           * @example "카테고리3 이름"
-           */
-          label: string;
-        }[];
-      depth2Categories: {
-          /**
-           * @description 부모 카테고리 번호
-           * @example 1010001
-           */
-          parentCategoryNo: number;
-          /**
-           * @description 전시 순서
-           * @example 1
-           */
-          displayOrder: number;
-          /**
-           * @description 카테고리 상품 개수
-           * @example 1
-           */
-          count: number;
-          /**
-           * @description 카테고리번호
-           * @example 1010002
-           */
-          categoryNo: number;
-          /**
-           * @description 카테고리 명
-           * @example "카테고리2 이름"
-           */
-          label: string;
-        }[];
-      /**
-       * @description
-       *  재고 노출 여부 (false:재고 미노출 / true:재고 노출)<br><br>
-       *  false로 재고를 숨김처리 한 경우,
-       *  1) 재고 관련 필드는(실제 재고가 있더라도) -999로 고정으로 리턴하며 실재고 값은 따로 내려주지 않아 조회 불가합니다.
-       *  2) 실재고가 0인 경우에만 0으로 응답합니다.
-       *    만약 재고 숨김처리 시, front에서 [-999]로 표시되도록 처리되고 있는게 있다면 재고노출여부(displayableStock)를 기준으로 수정 작업이 필요합니다.
-       *    만약 재고 숨김처리 시, front에서 [품절]로 표시되도록 처리되고 있는게 있다면 재고/예약재고값을 기준이 아닌, 품절상태(isSoldOut)값을 기준으로 처리되도록 수정 작업이 필요합니다.
-       *
-       * @example false
-       */
-      displayableStock: boolean;
-      /**
-       * @description 최대 가격
-       * @example 0
-       */
-      maxPrice: number;
-      /**
-       * @description 총 개수
-       * @example 10
-       */
-      totalCount: number;
-      clickUrlPrefix: {
-        /**
-         * @description 인자 값
-         * @example "test"
-         */
-        param: string;
-        /**
-         * @description url
-         * @example "/test"
-         */
-        url: string;
-      };
-      depth5Categories: {
-          /**
-           * @description 부모 카테고리 번호
-           * @example 1010004
-           */
-          parentCategoryNo: number;
-          /**
-           * @description 전시 순서
-           * @example 1
-           */
-          displayOrder: number;
-          /**
-           * @description 카테고리 상품 개수
-           * @example 1
-           */
-          count: number;
-          /**
-           * @description 카테고리번호
-           * @example 1010005
-           */
-          categoryNo: number;
-          /**
-           * @description 카테고리 명
-           * @example "카테고리5 이름"
-           */
-          label: string;
-        }[];
-    };
-    "free-gift-condition-productNo1611589026": {
-      /** @description 사은품 지급 조건 리스트 */
-      freeGiftConditions: ({
-          /**
-           * @description 제한멤버 유형 (전체 : ALL, 비회원 불가: MEMBER, 회원등급/그룹 : TARGET)
-           * @example "TARGET"
-           * @enum {string}
-           */
-          limitedMemberType: "ALL" | "MEMBER" | "TARGET";
-          /**
-           * @description 시작일
-           * @example "2024-01-04 16:11:02"
-           */
-          giveStartDateTime: string;
-          freeGifts: {
-              /**
-               * @description 대표이미지
-               * @example "//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"
-               */
-              imageUrl: string;
-              /**
-               * @description 옵션값
-               * @example "레드"
-               */
-              optionValue: string;
-              /**
-               * @description 옵션명
-               * @example "옵션명"
-               */
-              optionName: string;
-              /**
-               * @description 사은품 옵션번호
-               * @example 10000
-               */
-              optionNo: number;
-              /**
-               * @description 상품 이름
-               * @example "상품명"
-               */
-              productName: string;
-              /**
-               * @description 사은품 상품번호
-               * @example 10000001
-               */
-              productNo: number;
-            }[];
-          /**
-           * @description 지급조건설명
-           * @example "explain"
-           */
-          giveConditionExplain: string;
-          /** @description TARGET에 해당하는 멤버그룹/등급 */
-          limitedMember: {
-            /**
-             * @description TARGET에 해당하는 맴버등급
-             * @example [1,2,3]
-             */
-            memberGrade: number[];
-            /**
-             * @description TARGET에 해당하는 맴버그룹
-             * @example [1,2,3]
-             */
-            memberGroup: number[];
-          };
-          /**
-           * @description 제한금액
-           * @example 10000
-           */
-          upperPrice: number;
-          /**
-           * @description 종료일
-           * @example "2024-01-14 16:11:02"
-           */
-          giveEndDateTime: string;
-          /**
-           * @description 지급조건번호
-           * @example 1
-           */
-          giveConditionNo: number;
-          /**
-           * @description 지급조건이름
-           * @example "지급조건1"
-           */
-          giveConditionName: string;
-        })[];
-      /**
-       * @description 전체 사은품지급조건 수
-       * @example 1
-       */
-      totalCount: number;
-    };
-    "display-brands-brandNo-491175852": {
-      /**
-       * @description 연결된 상품 수(deprecated 예정)
-       * @example 10
-       */
-      productCnt: number;
-      /**
-       * @description 브랜드 설명
-       * @example "브랜드 설명"
-       */
-      description: string;
-      /**
-       * @description 브랜드 영문명
-       * @example "branName"
-       */
-      nameEn: string;
-      /**
-       * @description 로고 주소
-       * @example "http://logo.image.url"
-       */
-      logoImageUrl: string;
-      /**
-       * @description 브랜드명 노출타입
-       * @example "NAME_KO"
-       * @enum {string}
-       */
-      nameType: "NAME_KO" | "NAME_EN" | "NONE";
-      /**
-       * @description 브랜드 한글명
-       * @example "브랜드명"
-       */
-      nameKo: string;
-      /**
-       * @description 상세(html) (사용안하는 필드로 deprecated 예정)
-       * @example "상세 내용"
-       */
-      detailContent: string;
-      /**
-       * @description 브랜드 홈페이지 주소
-       * @example "http://homepage.url"
-       */
-      homepageUrl: string;
-      /**
-       * @description 브랜드 한글명
-       * @example "브랜드명"
-       */
-      name: string;
-      /**
-       * @description 메인 이미지(html) (사용안하는 필드로 deprecated 예정)
-       * @example "메인 이미지 내용"
-       */
-      mainImageContent: string;
-      /**
-       * @description 브랜드 이미지 또는 브랜드 관련 동영상 url
-       * @example "브랜드 이미지 또는 브랜드 관련 동영상 url"
-       */
-      displayAreaContentUrl: string;
-      /** @description 카테고리 리스트(deprecated 예정) */
-      categories: {
-          /** @description 카테고리에 연결된 상품 수(deprecated 예정) */
-          productCnt: number;
-          /** @description 카테고리 번호(deprecated 예정) */
-          categoryNo: number;
-          /** @description 카테고리명(deprecated 예정) */
-          label: string;
-        }[];
-      /**
-       * @description 메이커 명
-       * @example "maker name"
-       */
-      makerName: string;
-      /**
-       * @description 브랜드번호
-       * @example 100
-       */
-      brandNo: number;
-    };
-    "products-productNo-purchasable-150417114": {
-        /**
-         * @description 회원이 구매가능한 최대개수
-         * @example 10
-         */
-        purchaseCnt: number;
-        /**
-         * @description 상품구매가능 시작일
-         * @example "2024-01-04 16:11:10"
-         */
-        purchaseStartAt: string;
-        /**
-         * @description 상품구매가능 종료일
-         * @example "2024-01-05 16:11:10"
-         */
-        purchaseEndAt: string;
-        /**
-         * @description 구매권한번호
-         * @example 1
-         */
-        permissionNo: number;
-        /**
-         * @description 옵션번호
-         * @example 1
-         */
-        optionNo: number;
-        /**
-         * @description 회원이 구매권한을 통해 구매한 개수
-         * @example 2
-         */
-        purchasedCnt: number;
+          saleStatusType:
+            | 'READY'
+            | 'ONSALE'
+            | 'FINISHED'
+            | 'STOP'
+            | 'PROHIBITION';
+        };
       }[];
-    "products-productNo-options-images-575738914": {
-        /**
-         * @description 옵션이미지 URL
-         * @example "www.youtube.com"
-         */
-        imageUrl: string;
-        /**
-         * @description 메인이미지 여부 (true: 메인이미지, false: 일반이미지)
-         * @example true
-         */
-        main: boolean;
-        /**
-         * @description 옵션 번호
-         * @example 1
-         */
-        optionNo: number;
-        /**
-         * @description 매진 여부 (true: 매진, false:재고 있음)
-         * @example true
-         */
-        soldout: boolean;
-      }[];
-    "profile-like-products--2119689378": ({
-        /**
-         * @description 좋아요 설정 상태(Y: 좋아요 설정한 상태, N: 좋아요 해제한 상태)
-         * @example "Y"
-         * @enum {string}
-         */
-        like: "Y" | "N";
-        /**
-         * @description 상품 번호
-         * @example 100000
-         */
-        productNo: number;
-      })[];
-    /**
-     * @description 인기검색어
-     * @example ["검색어1","검색어2","검색어3"]
-     */
-    "products-favoriteKeywords1672933518": string[];
-    "products-search-by-nos1116014589": Record<string, never>;
-    "products-restock-559898343": {
-      /**
-       * @description 개인정보 수집 동의여부 (true:개인정보 수집 동의 ,false:개인정보 수집 비동의 - default)
-       * @example true
-       */
-      privacyInfoAgreement: boolean;
-      /**
-       * @description 옵션번호
-       * @example "[1,2]"
-       */
-      optionNos: number[];
-      /**
-       * @description 휴대폰번호: -(하이픈) 제외
-       * @example "01000000000"
-       */
-      phone: string;
-      /**
-       * @description 신청자명
-       * @example "신청자명"
-       */
-      name: string;
     };
-    "products-search-by-nos-135481769": {
-      /**
-       * @description 유효하지 않은 상품 번호
-       * @example "[]"
-       */
-      invalidProductsNos: number[];
-      /** @description 상품 목록 */
-      products: ({
-          /** @description 상품 기본 정보 */
-          baseInfo: {
-            /**
-             * @description 판매자 관리코드
-             * @example "PRDC10001"
-             */
-            productManagementCd: string;
-            /** @description 예약판매정보 */
-            reservationData: {
-              /**
-               * @description 예약판매 배송시작일
-               * @example "2023-12-04 16:11:08"
-               */
-              reservationDeliveryYmdt: string;
-              /**
-               * @description 예약판매 재고수량 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
-               * @example 5
-               */
-              reservationStockCnt: number;
-              /**
-               * @description 예약판매 종료일
-               * @example "2023-11-04 16:11:08"
-               */
-              reservationEndYmdt: string;
-              /**
-               * @description 예약판매 시작일
-               * @example "2023-10-04 16:11:08"
-               */
-              reservationStartYmdt: string;
-            };
-            /**
-             * @description 적립금
-             * @example 0
-             */
-            accumulationAmtWhenBuyConfirm: number;
-            /**
-             * @description 그룹관리코드 노출명
-             * @example "CODE NAME"
-             */
-            groupManagementCodeName: string;
-            /**
-             * @description 브랜드명 타입 (NAME_KO: Korean, NAME_EN: English, NONE: none)
-             * @example "NAME_KO"
-             */
-            brandNameType: string;
-            /**
-             * @description 그룹관리코드
-             * @example "CODE"
-             */
-            groupManagementCode: string;
-            /**
-             * @description 좋아요 수
-             * @example 10
-             */
-            likeCount: number;
-            /** @description 장바구니 가능 여부 */
-            canAddToCart: boolean;
-            /**
-             * @description 총 리뷰 수
-             * @example 8
-             */
-            totalReviewCount: number;
-            /**
-             * @description 상품평 평균점수
-             * @example 4.8
-             */
-            reviewRating: number;
-            /**
-             * @description 좋아요 여부
-             * @example false
-             */
-            liked: boolean;
-            /**
-             * @description 상품명
-             * @example "상품명"
-             */
-            productName: string;
-            /** @description 쿠폰 태그 deprecated(더 이상 제공하지 않는 개체항목입니다) */
-            couponTag: string;
-            /**
-             * @description 최대 쿠폰 적용 가격(default: 0)
-             * @example 0
-             */
-            maxCouponAmt: number;
-            /**
-             * @description 최대 쿠폰 적용 가격(default: 0)
-             * @example 0
-             */
-            couponDiscountAmt: number;
-            /**
-             * @description 사용가능쿠폰 존재 여부
-             * @example false
-             */
-            enableCoupons: boolean;
-            /** @description 상품 이미지 정보 */
-            imageUrlInfo: ({
-                /**
-                 * @description 상품 이미지 type
-                 * @example "IMAGE_URL"
-                 * @enum {string}
-                 */
-                type: "IMAGE_URL" | "VIDEO_URL";
-                /**
-                 * @description 상품 이미지 url
-                 * @example "//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"
-                 */
-                url: string;
-              })[];
-            /**
-             * @description 브랜드 번호
-             * @example 10
-             */
-            brandNo: number;
-            /**
-             * @description 상품유형
-             * @example "DEFAULT"
-             * @enum {string}
-             */
-            productType: "DEFAULT" | "EVENT" | "OFFLINE" | "RENTAL";
-            /**
-             * @description 상품번호
-             * @example 10000001
-             */
-            productNo: number;
-            /**
-             * @description 상품 등록일
-             * @example "2023-11-04 16:11:08"
-             */
-            registerYmdt: string;
-            /**
-             * @description 메인 베스트 상품 여부 deprecated(더 이상 제공하지 않는 개체항목입니다)
-             * @example false
-             */
-            mainBestProductYn: boolean;
-            /**
-             * @description 브랜드 명
-             * @example "더미 브랜드"
-             */
-            brandName: string;
-            /**
-             * @description 리스트 이미지 URL
-             * @example [["//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"]]
-             */
-            listImageUrls: string[];
-            /**
-             * @description 파트너명
-             * @example "다팔아"
-             */
-            partnerName: string;
-            /**
-             * @description 스티커 라벨(배열)
-             * @example ["스티커라벨"]
-             */
-            stickerLabels: string[];
-            /** @description 쿠폰여부 */
-            hasCoupons: {
-              /**
-               * @description 상품쿠폰 태그
-               * @example false
-               */
-              product: boolean;
-              /**
-               * @description 파트너쿠폰 태그
-               * @example false
-               */
-              partner: boolean;
-              /**
-               * @description 기획전쿠폰 태그
-               * @example false
-               */
-              event: boolean;
-              /**
-               * @description 카테고리쿠폰 태그
-               * @example false
-               */
-              category: boolean;
-              /**
-               * @description 브랜드쿠폰 태그
-               * @example false
-               */
-              brand: boolean;
-            };
-            /**
-             * @description 상품조회화면 노출 여부
-             * @example false
-             */
-            urlDirectDisplayYn: boolean;
-            /**
-             * @description 판매중지 시 가격대체문구
-             * @example "잠시 판매중지 중입니다."
-             */
-            contentsIfPausing: string;
-            /**
-             * @description 판매종료일시
-             * @example "2026-01-04 16:11:08"
-             */
-            saleEndYmdt: string;
-            /**
-             * @description 홍보문구
-             * @example "홍보문구"
-             */
-            promotionText: string;
-            /**
-             * @description 판매기간 타입
-             * @example "REGULAR"
-             * @enum {string}
-             */
-            salePeriodType: "REGULAR" | "PERIOD";
-            /** @description 스티커 정보 */
-            stickerInfos: {
-                /**
-                 * @description 스티커 이름
-                 * @example "스티커라벨"
-                 */
-                name: string;
-                /**
-                 * @description 스티커 라벨
-                 * @example "스티커라벨"
-                 */
-                label: string;
-                /**
-                 * @description 스티커 타입 Enum: [ TEXT: Text, IMAGE: Image ]
-                 * @example "TEXT"
-                 */
-                type: string;
-              }[];
-            /**
-             * @description 판매 수량 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
-             * @example 1000
-             */
-            saleCnt: number;
-            /** @description 상품 리스트 이미지 정보 */
-            listImageUrlInfo: ({
-                /**
-                 * @description 상품 리스트 이미지 type
-                 * @example "IMAGE_URL"
-                 * @enum {string}
-                 */
-                type: "IMAGE_URL" | "VIDEO_URL";
-                /**
-                 * @description 상품 리스트 이미지 url
-                 * @example "//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"
-                 */
-                url: string;
-              })[];
-            /**
-             * @description HS CODE
-             * @example "HSCODE"
-             */
-            hsCode: string;
-            /**
-             * @description 브랜드 한글명
-             * @example "dummy korean brand"
-             */
-            brandNameKo: string;
-            /**
-             * @description 판매시작일시
-             * @example "2024-01-04 16:11:08"
-             */
-            saleStartYmdt: string;
-            /**
-             * @description 상품 이미지URL
-             * @example ["//rlyfaazj0.cdn.toastcloud.com/SERVICE/20191212/XYkrzmG.jpg"]
-             */
-            imageUrls: string[];
-            /**
-             * @description 브랜드 영문 명
-             * @example "dummy brand"
-             */
-            brandNameEn: string;
-            /** @description 적립금 정보 */
-            accumulationInfo: {
-              /**
-               * @description 회원등급적립률
-               * @example 0
-               */
-              rewardRateOfMemberBenefit: number;
-              /**
-               * @description 적립금
-               * @example 0
-               */
-              amount: number;
-              /**
-               * @description 상품개별적립률
-               * @example 0
-               */
-              rewardRateOfProduct: number;
-            };
-            /**
-             * @description 대표 옵션 재고 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
-             * @example 50
-             */
-            mainStockCnt: number;
-            /**
-             * @description 영문 상품명
-             * @example ""
-             */
-            productNameEn: string;
-            /**
-             * @description 재고 (재고 미노출의 경우 -999 재고 미노출 설정일때 실재고가 없는 경우, 0으로 표기)
-             * @example 100
-             */
-            stockCnt: number;
-            /**
-             * @description 성인 상품 여부
-             * @example false
-             */
-            adult: boolean;
-            /**
-             * @description 전시카테고리 번호 정보
-             * @example "26916"
-             */
-            displayCategoryNos: string;
-          };
-          /** @description 상품 항목 추가 정보 */
-          customProperties: {
-              /**
-               * @description 항목 복수선택여부 (true: 복수개 선택가능, false: 1개만 선택가능)
-               * @example false
-               */
-              isMultipleSelection: boolean;
-              /** @description 상품 항목 값 번호 */
-              propValueNo: number;
-              /**
-               * @description 상품 항목 값
-               * @example "2015"
-               */
-              propValue: string;
-              /**
-               * @description 상품 항목명
-               * @example "시즌"
-               */
-              propName: string;
-              /** @description 상품 항목명 번호 */
-              propNo: number;
-            }[];
-          /** @description 배송 정보 */
-          deliveryFee: {
-            /**
-             * @description 배송비타입
-             * @example "CONDITIONAL"
-             * @enum {string}
-             */
-            deliveryConditionType: "FREE" | "CONDITIONAL" | "FIXED_FEE" | "QUANTITY_PROPOSITIONAL_FEE" | "PRICE_FEE" | "QUANTITY_FEE";
-            /**
-             * @description 배송비 (고정배송비, 조건부 배송비인 경우)
-             * @example 0
-             */
-            deliveryAmt: number;
-          };
-          /** @description 가격 정보 */
-          price: {
-            /**
-             * @description 즉시할인가
-             * @example 1000
-             */
-            immediateDiscountAmt: number;
-            /**
-             * @description 즉시할인 종료일자
-             * @example "2024-02-04 16:11:08"
-             */
-            immediateDiscountEndYmdt: string;
-            /**
-             * @description 상품판매가
-             * @example 10000
-             */
-            salePrice: number;
-            /**
-             * @description 추가할인 최소 기준금액
-             * @example 0
-             */
-            minSalePrice: number;
-            /**
-             * @description 즉시할인 시작일자
-             * @example "2024-01-04 16:11:08"
-             */
-            immediateDiscountStartYmdt: string;
-            /**
-             * @description 추가상품할인가
-             * @example 0
-             */
-            additionDiscountAmt: number;
-            /**
-             * @description 즉시할인 타입
-             * @example "WON"
-             * @enum {string}
-             */
-            immediateDiscountUnitType: "WON" | "RATE";
-            /**
-             * @description 추가상품할인 타입
-             * @example "WON"
-             * @enum {string}
-             */
-            additionDiscountUnitType: "WON" | "RATE";
-            /**
-             * @description 추가상품 할인( 원 / % )  additionDiscountUnitType 에따라 달라진다.
-             * @example 1000
-             */
-            additionDiscountValue: number;
-            /**
-             * @description 최대 추가할인 금액
-             * @example 0
-             */
-            maxAdditionDiscountAmt: number;
-            /**
-             * @description 추가할인 최대 기준금액
-             * @example 0
-             */
-            maxSalePrice: number;
-          };
-          /**
-           * @description 배송 구분 (PARTNER_SHIPPING_AREA: Partner Shipping Center Shipping, MALL_SHIPPING_AREA: Shipping from shopping mall distribution center)
-           * @example "PARTNER_SHIPPING_AREA"
-           */
-          shippingArea: string;
-          /** @description 옵션 정보 */
-          optionValues: {
-              /**
-               * @description 옵션명
-               * @example "레드"
-               */
-              optionValue: string;
-              /**
-               * @description 재고수
-               * @example 100
-               */
-              stockCnt: number;
-              /**
-               * @description 상품번호
-               * @example 10000001
-               */
-              productNo: number;
-            }[];
-          /** @description 상품 상태 */
-          status: {
-            /**
-             * @description 상품 타입
-             * @example "DEFAULT"
-             * @enum {string}
-             */
-            productClassType: "DEFAULT" | "EVENT" | "OFFLINE" | "RENTAL";
-            /**
-             * @description 전시여부
-             * @example true
-             */
-            display: boolean;
-            /**
-             * @description 품절여부
-             * @example false
-             */
-            soldout: boolean;
-            /**
-             * @description 판매상태
-             * @example "ONSALE"
-             * @enum {string}
-             */
-            saleStatusType: "READY" | "ONSALE" | "FINISHED" | "STOP" | "PROHIBITION";
-          };
-        })[];
-    };
-    "products-custom-properties-1913755437": {
+    'products-custom-properties-1913755437': {
       /** @description 상품항목 */
       customProperties: {
-          /**
-           * @description 상품항목 번호
-           * @example 1
-           */
+        /**
+         * @description 상품항목 번호
+         * @example 1
+         */
+        no: number;
+        /** @description 상품항목값 목록 */
+        values: {
+          /** @description 상품항목값 번호 */
           no: number;
-          /** @description 상품항목값 목록 */
-          values: {
-              /** @description 상품항목값 번호 */
-              no: number;
-              /**
-               * @description 상품항목 값
-               * @example "F/W"
-               */
-              value: string;
-            }[];
           /**
-           * @description 상품항목 명
-           * @example "시즌"
+           * @description 상품항목 값
+           * @example "F/W"
            */
-          name: string;
+          value: string;
         }[];
+        /**
+         * @description 상품항목 명
+         * @example "시즌"
+         */
+        name: string;
+      }[];
     };
   };
   responses: never;
@@ -7205,7 +7550,6 @@ export type $defs = Record<string, never>;
 export type external = Record<string, never>;
 
 export interface operations {
-
   /**
    * 추가할인 정보 조회하기
    * @description ## 부가설명 및 특이사항
@@ -7230,7 +7574,7 @@ export interface operations {
    *  | 볼펜(검정) | 5 | 적용가능 | (100 * 5) * (100-10)% | 450 |
    *  | 볼펜(파랑) | 10 | 적용불가 | - | 1000 |
    */
-  "get-additional-discounts-by-product-no": {
+  'get-additional-discounts-by-product-no': {
     parameters: {
       query: {
         /**
@@ -7266,7 +7610,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json;charset=UTF-8": components["schemas"]["additional-discounts-by-product-no-78647450"];
+          'application/json;charset=UTF-8': components['schemas']['additional-discounts-by-product-no-78647450'];
         };
       };
     };
@@ -7279,24 +7623,24 @@ export interface operations {
    *
    * Paging 기능 제공합니다
    */
-  "get-display-brands": {
+  'get-display-brands': {
     parameters: {
       query: {
         /**
          * @description 검색할 브랜드명
          * @example "브랜드명"
          */
-        "filter.name": string;
+        'filter.name': string;
         /**
          * @description 검색할 카테고리 번호
          * @example "10000"
          */
-        "filter.categoryNo": number;
+        'filter.categoryNo': number;
         /**
          * @description 품절 상품 포함 여부(default: false)
          * @example false
          */
-        "filter.soldOutIncluded": boolean;
+        'filter.soldOutIncluded': boolean;
         /**
          * @description 페이지 번호
          * @example "1"
@@ -7321,12 +7665,12 @@ export interface operations {
          * @description 정렬 필드(default: PRODUCT_COUNT)
          * @example "PRODUCT_COUNT"
          */
-        "sort.criterion": string;
+        'sort.criterion': string;
         /**
          * @description 정렬 방식(default: DESC)
          * @example "DESC"
          */
-        "sort.direction": string;
+        'sort.direction': string;
       };
       header?: {
         /**
@@ -7350,7 +7694,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json;charset=UTF-8": components["schemas"]["display-brands-812449549"];
+          'application/json;charset=UTF-8': components['schemas']['display-brands-812449549'];
         };
       };
     };
@@ -7362,7 +7706,7 @@ export interface operations {
    * ### 브랜드 추가정보 조회하는 API입니다.
    * - 브랜드 요청 번호는 최대 30개 까지 가능합니다.
    */
-  "get-display-brand-extra-info": {
+  'get-display-brand-extra-info': {
     parameters: {
       query: {
         /**
@@ -7393,7 +7737,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json;charset=UTF-8": components["schemas"]["display-brands-extraInfo1641009473"];
+          'application/json;charset=UTF-8': components['schemas']['display-brands-extraInfo1641009473'];
         };
       };
     };
@@ -7407,7 +7751,7 @@ export interface operations {
    *
    * [![brand-search-img](http://image.toast.com/aaaaahb/api-description/display/[GET]%20display_brands_brandNo%20%EB%B8%8C%EB%9E%9C%EB%93%9C%20%EC%83%81%EC%84%B8.png?autox150)](http://image.toast.com/aaaaahb/api-description/display/[GET]%20display_brands_brandNo%20%EB%B8%8C%EB%9E%9C%EB%93%9C%20%EC%83%81%EC%84%B8.png)
    */
-  "get-display-brands-brandNo": {
+  'get-display-brands-brandNo': {
     parameters: {
       query: {
         /**
@@ -7445,7 +7789,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json;charset=UTF-8": components["schemas"]["display-brands-brandNo-491175852"];
+          'application/json;charset=UTF-8': components['schemas']['display-brands-brandNo-491175852'];
         };
       };
     };
@@ -7458,7 +7802,7 @@ export interface operations {
    *
    * 샵바이 프리미엄 전용 API로, 샵바이 혹은 샵바이 프로에서는 사용되지 않습니다
    */
-  "get-free-gift-condition": {
+  'get-free-gift-condition': {
     parameters: {
       header?: {
         /**
@@ -7494,7 +7838,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["free-gift-condition-productNo1611589026"];
+          'application/json': components['schemas']['free-gift-condition-productNo1611589026'];
         };
       };
     };
@@ -7552,7 +7896,7 @@ export interface operations {
    *
    *     옵션 2 구매가격 : ((15000-5000) + 2000)\*0.9 = 10800
    */
-  "get-guest-recent-products": {
+  'get-guest-recent-products': {
     parameters: {
       query: {
         /**
@@ -7593,7 +7937,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json;charset=UTF-8": components["schemas"]["profile-recent-products-1008217100"];
+          'application/json;charset=UTF-8': components['schemas']['profile-recent-products-1008217100'];
         };
       };
     };
@@ -7647,7 +7991,7 @@ export interface operations {
    *
    *     옵션 2 구매가격 : ((15000-5000) + 2000)\*0.9 = 10800
    */
-  "묶음 배송 상품 목록 조회": {
+  'get-products-bundle-shipping': {
     parameters: {
       query: {
         /**
@@ -7674,12 +8018,12 @@ export interface operations {
          * @description 정렬 기준 (default : RECENT_PRODUCT) (nullable)
          * @example "SALE_CNT"
          */
-        "productSort.criterion"?: string;
+        'productSort.criterion'?: string;
         /**
          * @description 정렬 방법 (default : DESCDeliveryFeignClient) (nullable)
          * @example "DESC"
          */
-        "productSort.direction"?: string;
+        'productSort.direction'?: string;
       };
       header?: {
         /**
@@ -7703,7 +8047,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["products-bundle-shipping1332557899"];
+          'application/json': components['schemas']['products-bundle-shipping1332557899'];
         };
       };
     };
@@ -7716,7 +8060,7 @@ export interface operations {
    *
    * 사용여부 = Y 인 상품 항목만 조횝니다.
    */
-  "get-custom-property-by-mallno": {
+  'get-custom-property-by-mallno': {
     parameters: {
       header?: {
         /**
@@ -7745,7 +8089,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["products-custom-properties-1913755437"];
+          'application/json': components['schemas']['products-custom-properties-1913755437'];
         };
       };
     };
@@ -7756,7 +8100,7 @@ export interface operations {
    *
    * 상품번호를 통해 extraInfo(추가정보)를 조회하는 API 입니다.
    */
-  "get-product-extraInfos": {
+  'get-product-extraInfos': {
     parameters: {
       query: {
         /**
@@ -7792,7 +8136,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["products-extraInfo1880176592"];
+          'application/json': components['schemas']['products-extraInfo1880176592'];
         };
       };
     };
@@ -7809,7 +8153,7 @@ export interface operations {
    *
    * * 참고: 알파 환경은 검색어 유입이 거의 없는 관계로 개발 편의성을 위해 반환되는 값을 고정적으로 내보냅니다. 따라서 인기검색어 반환 값은 리얼 환경을 통해 확인바랍니다.
    */
-  "get-products-favorite-keywords": {
+  'get-products-favorite-keywords': {
     parameters: {
       query: {
         /**
@@ -7845,7 +8189,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json;charset=UTF-8": components["schemas"]["products-favoriteKeywords1672933518"];
+          'application/json;charset=UTF-8': components['schemas']['products-favoriteKeywords1672933518'];
         };
       };
     };
@@ -7858,7 +8202,7 @@ export interface operations {
    *
    * 샵바이 프리미엄 전용 API로, 샵바이 혹은 샵바이 프로에서는 사용되지 않습니다
    */
-  "get-products-group-management-code": {
+  'get-products-group-management-code': {
     parameters: {
       header?: {
         /**
@@ -7885,14 +8229,14 @@ export interface operations {
     };
     requestBody: {
       content: {
-        "application/json": components["schemas"]["products-group-management-code1938899284"];
+        'application/json': components['schemas']['products-group-management-code1938899284'];
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["products-group-management-code-1777856279"];
+          'application/json': components['schemas']['products-group-management-code-1777856279'];
         };
       };
     };
@@ -7903,7 +8247,7 @@ export interface operations {
    *
    * 옵션 목록을 조회하는 API입니다
    */
-  "get-products-options": {
+  'get-products-options': {
     parameters: {
       query: {
         /**
@@ -7939,7 +8283,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json;charset=UTF-8": components["schemas"]["products-options-814576919"];
+          'application/json;charset=UTF-8': components['schemas']['products-options-814576919'];
         };
       };
     };
@@ -7952,7 +8296,7 @@ export interface operations {
    *
    * 샵바이 프리미엄 전용 API로, 샵바이 혹은 샵바이 프로에서는 사용되지 않습니다
    */
-  "post-restock": {
+  'post-restock': {
     parameters: {
       header?: {
         /**
@@ -7979,7 +8323,7 @@ export interface operations {
     };
     requestBody: {
       content: {
-        "application/json": components["schemas"]["products-restock-559898343"];
+        'application/json': components['schemas']['products-restock-559898343'];
       };
     };
     responses: {
@@ -8055,7 +8399,7 @@ export interface operations {
    * 상품항목추가정보 검색
    *    - 하나의 항목에서 여러개의 다중 항목 값을 검색할 경우 (SPACE 구분으로 검색) (아래 예시 참고)
    *        - filter.customProperties.propNos : 100
-   *        - filter.customProperties.propValueNos : 1 2 3
+   *        - filter.customProperties.propValue정Nos : 1 2 3
    *    - 다중 항목에서 여러개의 다중 항목 값을 검색할 경우 (콤마(,) 구분으로 검색) (아래 예시 참고)
    *        - ※ 다중 항목으로 검색 시 콤마(,) 갯수를 맞춰줘야 합니다.
    *        - filter.customProperties.propNos : 100,101,102
@@ -8108,94 +8452,94 @@ export interface operations {
    *
    *     옵션 2 구매가격 : ((15000-5000) + 2000)\*0.9 = 10800
    */
-  "get-products-search": {
+  'get-products-search': {
     parameters: {
       query: {
         /**
          * @description 판매가 - 즉시할인 - 추가상품할인이 적용된 "최종 할인가격", between검색일 경우 입력값 2개 필요(다수 정보는 항목 추가 필요
          * @example "1000"
          */
-        "filter.discountedPrices": number;
+        'filter.discountedPrices': number;
         /**
          * @description 검색어(여러 검색어일 경우 space 로 구분 AND 연산)
          * @example "검색어1 검색어2"
          */
-        "filter.keywords": string;
+        'filter.keywords': string;
         /**
          * @description 결과내 검색(결과 내 검색의 검색어 space 구분 AND 연산)
          * @example "검색어1 검색어2"
          */
-        "filter.keywordInResult": string;
+        'filter.keywordInResult': string;
         /**
          * @description 최종 할인가격 검색 조건 (GT: 초과 - GREATER THAN, LTE: 미만 -LESS GREATER THAN, GTE: 이상 - GREATER THAN or EQUAL, EQ: 동등 - EQUAL, BETWEEN: 사이의
          * @example "GT"
          */
-        "filter.discountedComparison": string;
+        'filter.discountedComparison': string;
         /**
          * @description 배송비 타입 (FREE: Free, CONDITIONAL: conditional free, FIXED_FEE: Paid (Fixed Shipping Fee))
          * @example "free"
          */
-        "filter.deliveryConditionType": string;
+        'filter.deliveryConditionType': string;
         /**
          * @description 판매 상태 ( 전체 판매 상태 조회: ALL_CONDITIONS, 판매대기와 판매중 상품 조회: READY_ONSALE, 판매중 상품만 조회: ONSALE - default, 예약판매중인 상품과 판매중인 상품만 조회: RESERVATION_AND_ONSALE)
          * @example "ALL_CONDITIONS"
          */
-        "filter.saleStatus": string;
+        'filter.saleStatus': string;
         /**
          * @description 품절 상품 포함 여부(default: false)
          * @example "false"
          */
-        "filter.soldout": boolean;
+        'filter.soldout': boolean;
         /**
          * @description 총 상품평 수 포함 여부(default: false, false 설정 시 무조건 0)
          * @example "false"
          */
-        "filter.totalReviewCount": boolean;
+        'filter.totalReviewCount': boolean;
         /**
          * @description 서비스에 계약된 모든 쇼핑몰 조회 여부 (default: false)
          * @example "false"
          */
-        "filter.familyMalls": boolean;
+        'filter.familyMalls': boolean;
         /**
          * @description 판매자관리코드 같은 상품 검색
          * @example "managementcode"
          */
-        "filter.productManagementCd": string;
+        'filter.productManagementCd': string;
         /**
          * @description 조회시 제외할 상품번호
          * @example "10001"
          */
-        "filter.excludeMallProductNo": number;
+        'filter.excludeMallProductNo': number;
         /**
          * @description 조회할 상품번호
          * @example "10000"
          */
-        "filter.includeMallProductNo": number;
+        'filter.includeMallProductNo': number;
         /**
          * @description 조회할 상품항목추가정보 번호
          * @example "100,101,102"
          */
-        "filter.customProperties.propNos": string;
+        'filter.customProperties.propNos': string;
         /**
          * @description 조회할 상품항목추가정보 값
          * @example "1 2,3 4,5 6"
          */
-        "filter.customProperties.propValueNos": string;
+        'filter.customProperties.propValueNos': string;
         /**
          * @description POPULAR:판매인기순 (DEFAULT), SALE_YMD:판매일자, SALE_END_YMD:판매종료일자, DISCOUNTED_PRICE:가격순, REVIEW:상품평, SALE_CNT:총판매량순, RECENT_PRODUCT:최근상품순, MD_RECOMMEND:MD추천순, LIKE_CNT: 좋아요, EXPIRATION_DATE: 유효일자
          * @example "POPULAR"
          */
-        "order.by": string;
+        'order.by': string;
         /**
          * @description 정렬기준(default : DESC)
          * @example "DESC"
          */
-        "order.direction": string;
+        'order.direction': string;
         /**
          * @description 품절상품 뒤로 배치 여부(default = false)
          * @example "false"
          */
-        "order.soldoutPlaceEnd": boolean;
+        'order.soldoutPlaceEnd': boolean;
         /**
          * @description 전시 카테고리 번호(여러개 일 경우 항목 추가)
          * @example "1,2,3,4"
@@ -8304,7 +8648,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json;charset=UTF-8": components["schemas"]["products-search1025470211"];
+          'application/json;charset=UTF-8': components['schemas']['products-search1025470211'];
         };
       };
     };
@@ -8360,7 +8704,7 @@ export interface operations {
    *
    *     옵션 2 구매가격 : ((15000-5000) + 2000)\*0.9 = 10800
    */
-  "get-products-search-by-nos": {
+  'get-products-search-by-nos': {
     parameters: {
       header?: {
         /**
@@ -8387,14 +8731,14 @@ export interface operations {
     };
     requestBody: {
       content: {
-        "application/json": components["schemas"]["products-search-by-nos1116014589"];
+        'application/json': components['schemas']['products-search-by-nos1116014589'];
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json;charset=UTF-8": components["schemas"]["products-search-by-nos-135481769"];
+          'application/json;charset=UTF-8': components['schemas']['products-search-by-nos-135481769'];
         };
       };
     };
@@ -8405,7 +8749,7 @@ export interface operations {
    *
    * 상품번호를 통해 배송 정보 및 배송 불가 국가를 조회하는 API 입니다.
    */
-  "get-shipping-infos": {
+  'get-shipping-infos': {
     parameters: {
       query: {
         /**
@@ -8441,7 +8785,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["products-shipping-info-448668919"];
+          'application/json': components['schemas']['products-shipping-info-448668919'];
         };
       };
     };
@@ -8497,7 +8841,7 @@ export interface operations {
    *
    *     옵션 2 구매가격 : ((15000-5000) + 2000)\*0.9 = 10800
    */
-  "get-products-product": {
+  'get-products-product': {
     parameters: {
       query: {
         /**
@@ -8540,7 +8884,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json;charset=UTF-8": components["schemas"]["products-productNo989381871"];
+          'application/json;charset=UTF-8': components['schemas']['products-productNo989381871'];
         };
       };
     };
@@ -8600,14 +8944,14 @@ export interface operations {
    *
    *     옵션 2 구매가격 : ((15000-5000) + 2000)\*0.9 = 10800
    */
-  "get-products-best-review-search": {
+  'get-products-best-review-search': {
     parameters: {
       query: {
         /**
          * @description 서비스에 계약된 모든 쇼핑몰 조회 여부 (default: false)
          * @example "false"
          */
-        "filter.familyMalls": boolean;
+        'filter.familyMalls': boolean;
         /**
          * @description 카테고리 번호(여러개 일 경우 항목 추가)
          * @example "1"
@@ -8666,7 +9010,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json;charset=UTF-8": components["schemas"]["products-best-review-search-1614480433"];
+          'application/json;charset=UTF-8': components['schemas']['products-best-review-search-1614480433'];
         };
       };
     };
@@ -8726,14 +9070,14 @@ export interface operations {
    *
    *     옵션 2 구매가격 : ((15000-5000) + 2000)\*0.9 = 10800
    */
-  "get-products-best-seller-search": {
+  'get-products-best-seller-search': {
     parameters: {
       query: {
         /**
          * @description 서비스에 계약된 모든 쇼핑몰 조회 여부 (default: false)
          * @example "false"
          */
-        "filter.familyMalls": boolean;
+        'filter.familyMalls': boolean;
         /**
          * @description 카테고리 번호(여러개 일 경우 항목 추가)
          * @example "1"
@@ -8792,7 +9136,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json;charset=UTF-8": components["schemas"]["products-best-seller-search1638148323"];
+          'application/json;charset=UTF-8': components['schemas']['products-best-seller-search1638148323'];
         };
       };
     };
@@ -8803,7 +9147,7 @@ export interface operations {
    *
    * 쇼핑몰에서 설정한 네이버 쇼핑 설정 정보를 조회할 수 있습니다.
    */
-  "get-configuration-naver-shopping": {
+  'get-configuration-naver-shopping': {
     parameters: {
       header?: {
         /**
@@ -8827,7 +9171,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json;charset=UTF-8": components["schemas"]["products-configuration-naver-shopping2141453285"];
+          'application/json;charset=UTF-8': components['schemas']['products-configuration-naver-shopping2141453285'];
         };
       };
     };
@@ -8838,7 +9182,7 @@ export interface operations {
    *
    * 상품번호를 통해 어드민에 등록된 검색어를 조회하는 API 입니다.
    */
-  "get-product-keywords": {
+  'get-product-keywords': {
     parameters: {
       query: {
         /**
@@ -8874,7 +9218,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["products-search-keywords-937474294"];
+          'application/json': components['schemas']['products-search-keywords-937474294'];
         };
       };
     };
@@ -8891,69 +9235,69 @@ export interface operations {
    *
    * * ex. 10시 13분에 상품명을 [테스트 상품 -> 임시 상품]으로 변경 후 '임시 상품'으로 검색 시, 10시 19분까지 검색되지않고, 10시 20분이후에 검색 가능합니다.
    */
-  "get-products-search-summary": {
+  'get-products-search-summary': {
     parameters: {
       query: {
         /**
          * @description 판매가 - 즉시할인 - 추가상품할인이 적용된 "최종 할인가격", between검색일 경우 입력값 2개 필요(다수 정보는 항목 추가 필요
          * @example "1000"
          */
-        "filter.discountedPrices": number;
+        'filter.discountedPrices': number;
         /**
          * @description 검색어(여러 검색어일 경우 space 로 구분 AND 연산)
          * @example "검색어1 검색어2"
          */
-        "filter.keywords": string;
+        'filter.keywords': string;
         /**
          * @description 결과내 검색(결과 내 검색의 검색어 space 구분 AND 연산)
          * @example "검색어1 검색어2"
          */
-        "filter.keywordInResult": string;
+        'filter.keywordInResult': string;
         /**
          * @description 최종 할인가격 검색 조건 (GT: 초과 - GREATER THAN, LTE: 미만 -LESS GREATER THAN, GTE: 이상 - GREATER THAN or EQUAL, EQ: 동등 - EQUAL, BETWEEN: 사이의
          * @example "GT"
          */
-        "filter.discountedComparison": string;
+        'filter.discountedComparison': string;
         /**
          * @description 배송비 타입 (FREE: Free, CONDITIONAL: conditional free, FIXED_FEE: Paid (Fixed Shipping Fee))
          * @example "free"
          */
-        "filter.deliveryConditionType": string;
+        'filter.deliveryConditionType': string;
         /**
          * @description 판매 상태 ( 전체 판매 상태 조회: ALL_CONDITIONS, 판매대기와 판매중 상품 조회: READY_ONSALE, 판매중 상품만 조회: ONSALE - default, 예약판매중인 상품과 판매중인 상품만 조회: RESERVATION_AND_ONSALE)
          * @example "ALL_CONDITIONS"
          */
-        "filter.saleStatus": string;
+        'filter.saleStatus': string;
         /**
          * @description 품절 상품 포함 여부(default: false)
          * @example "false"
          */
-        "filter.soldout": boolean;
+        'filter.soldout': boolean;
         /**
          * @description 총 상품평 수 포함 여부(default: false, false 설정 시 무조건 0)
          * @example "false"
          */
-        "filter.totalReviewCount": boolean;
+        'filter.totalReviewCount': boolean;
         /**
          * @description 서비스에 계약된 모든 쇼핑몰 조회 여부 (default: false)
          * @example "false"
          */
-        "filter.familyMalls": boolean;
+        'filter.familyMalls': boolean;
         /**
          * @description 판매자관리코드 같은 상품 검색
          * @example "managementcode"
          */
-        "filter.productManagementCd": string;
+        'filter.productManagementCd': string;
         /**
          * @description 조회시 제외할 상품번호
          * @example "10001"
          */
-        "filter.excludeMallProductNo": number;
+        'filter.excludeMallProductNo': number;
         /**
          * @description 조회할 상품번호
          * @example "10000"
          */
-        "filter.includeMallProductNo": number;
+        'filter.includeMallProductNo': number;
         /**
          * @description 전시 카테고리 번호(여러개 일 경우 항목 추가)
          * @example "1,2,3,4"
@@ -9017,7 +9361,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json;charset=UTF-8": components["schemas"]["products-search-summary554148782"];
+          'application/json;charset=UTF-8': components['schemas']['products-search-summary554148782'];
         };
       };
     };
@@ -9030,7 +9374,7 @@ export interface operations {
    *
    * 마지막 뎁스 번호는 depth5No, 전체 전시카테고리 경로는 fullCategoryName 으로 확인할 수 있습니다.
    */
-  "get-products-productNo-display-categories": {
+  'get-products-productNo-display-categories': {
     parameters: {
       header?: {
         /**
@@ -9066,7 +9410,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["products-productNo-display-categories-1677654964"];
+          'application/json': components['schemas']['products-productNo-display-categories-1677654964'];
         };
       };
     };
@@ -9079,7 +9423,7 @@ export interface operations {
    *
    * 2가지 옵션 목록(계층, 원본)을 제공합니다
    */
-  "get-product-options": {
+  'get-product-options': {
     parameters: {
       header?: {
         /**
@@ -9115,7 +9459,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json;charset=UTF-8": components["schemas"]["products-productNo-options-583998608"];
+          'application/json;charset=UTF-8': components['schemas']['products-productNo-options-583998608'];
         };
       };
     };
@@ -9126,7 +9470,7 @@ export interface operations {
    *
    * 상품에 매핑된 상품우선구매권한 정보를 조회하는 API 입니다.
    */
-  "get-product-purchase-permission": {
+  'get-product-purchase-permission': {
     parameters: {
       header?: {
         /**
@@ -9162,7 +9506,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["products-productNo-purchasable-150417114"];
+          'application/json': components['schemas']['products-productNo-purchasable-150417114'];
         };
       };
     };
@@ -9218,7 +9562,7 @@ export interface operations {
    *
    *     옵션 2 구매가격 : ((15000-5000) + 2000)\*0.9 = 10800
    */
-  "get-products-related-products": {
+  'get-products-related-products': {
     parameters: {
       header?: {
         /**
@@ -9254,7 +9598,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json;charset=UTF-8": components["schemas"]["products-productNo-related-products-1576147319"];
+          'application/json;charset=UTF-8': components['schemas']['products-productNo-related-products-1576147319'];
         };
       };
     };
@@ -9267,7 +9611,7 @@ export interface operations {
    *
    * 어드민 설정을 제공하는 샵바이 프로에서만 사용가능한 API입니다
    */
-  "get-products-url-shortening": {
+  'get-products-url-shortening': {
     parameters: {
       header?: {
         /**
@@ -9288,7 +9632,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json": components["schemas"]["products-productNo-url-shortening-1808461975"];
+          'application/json': components['schemas']['products-productNo-url-shortening-1808461975'];
         };
       };
     };
@@ -9301,7 +9645,7 @@ export interface operations {
    *
    * 옵션 상세 보기 시, 사용합니다
    */
-  "get-products-options-images": {
+  'get-products-options-images': {
     parameters: {
       header?: {
         /**
@@ -9332,7 +9676,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json;charset=UTF-8": components["schemas"]["products-productNo-options-images-575738914"];
+          'application/json;charset=UTF-8': components['schemas']['products-productNo-options-images-575738914'];
         };
       };
     };
@@ -9345,7 +9689,7 @@ export interface operations {
    *
    * 옵션 상세 보기 시, 사용합니다
    */
-  "get-products-option-images": {
+  'get-products-option-images': {
     parameters: {
       header?: {
         /**
@@ -9381,7 +9725,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json;charset=UTF-8": components["schemas"]["products-productNo-options-optionNo-images-111430120"];
+          'application/json;charset=UTF-8': components['schemas']['products-productNo-options-optionNo-images-111430120'];
         };
       };
     };
@@ -9437,7 +9781,7 @@ export interface operations {
    *
    *     옵션 2 구매가격 : ((15000-5000) + 2000)\*0.9 = 10800
    */
-  "get-profile-like-products": {
+  'get-profile-like-products': {
     parameters: {
       query: {
         /**
@@ -9488,7 +9832,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json;charset=UTF-8": components["schemas"]["profile-like-products1120109227"];
+          'application/json;charset=UTF-8': components['schemas']['profile-like-products1120109227'];
         };
       };
     };
@@ -9501,7 +9845,7 @@ export interface operations {
    *
    * 로그인 이후에만 호출 가능합니다(accessToken)
    */
-  "post-profile-like-products": {
+  'post-profile-like-products': {
     parameters: {
       header?: {
         /**
@@ -9528,14 +9872,14 @@ export interface operations {
     };
     requestBody: {
       content: {
-        "application/json": components["schemas"]["profile-like-products-2097794731"];
+        'application/json': components['schemas']['profile-like-products-2097794731'];
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json;charset=UTF-8": components["schemas"]["profile-like-products-110141960"];
+          'application/json;charset=UTF-8': components['schemas']['profile-like-products-110141960'];
         };
       };
     };
@@ -9593,7 +9937,7 @@ export interface operations {
    *
    *     옵션 2 구매가격 : ((15000-5000) + 2000)\*0.9 = 10800
    */
-  "get-profile-recent-products": {
+  'get-profile-recent-products': {
     parameters: {
       query: {
         /**
@@ -9639,7 +9983,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json;charset=UTF-8": components["schemas"]["profile-recent-products-1008217100"];
+          'application/json;charset=UTF-8': components['schemas']['profile-recent-products-1008217100'];
         };
       };
     };
@@ -9654,7 +9998,7 @@ export interface operations {
    *
    * 최근 본 50개 상품까지 서버에서 저장합니다
    */
-  "post-profile-recent-products": {
+  'post-profile-recent-products': {
     parameters: {
       header?: {
         /**
@@ -9681,7 +10025,7 @@ export interface operations {
     };
     requestBody: {
       content: {
-        "application/json": components["schemas"]["profile-recent-products-524943492"];
+        'application/json': components['schemas']['profile-recent-products-524943492'];
       };
     };
     responses: {
@@ -9699,7 +10043,7 @@ export interface operations {
    *
    * 로그인 이후에만 호출 가능(accessToken)합니다
    */
-  "delete-profile-recent-products": {
+  'delete-profile-recent-products': {
     parameters: {
       query: {
         /**
@@ -9752,7 +10096,7 @@ export interface operations {
    *
    * header의 `Version` 값은 1.1로 요청해야합니다.
    */
-  "post-profile-like-products2": {
+  'post-profile-like-products2': {
     parameters: {
       header?: {
         /**
@@ -9779,14 +10123,14 @@ export interface operations {
     };
     requestBody: {
       content: {
-        "application/json": components["schemas"]["profile-like-products--2041423781"];
+        'application/json': components['schemas']['profile-like-products--2041423781'];
       };
     };
     responses: {
       /** @description 200 */
       200: {
         content: {
-          "application/json;charset=UTF-8": components["schemas"]["profile-like-products--2119689378"];
+          'application/json;charset=UTF-8': components['schemas']['profile-like-products--2119689378'];
         };
       };
     };
@@ -9799,7 +10143,7 @@ export interface operations {
    *
    * 로그인 이후에만 호출 가능합니다(accessToken)
    */
-  "get-profile-like-products-count": {
+  'get-profile-like-products-count': {
     parameters: {
       header?: {
         /**
@@ -9828,7 +10172,7 @@ export interface operations {
       /** @description 200 */
       200: {
         content: {
-          "application/json;charset=UTF-8": components["schemas"]["profile-like-products-count1871095000"];
+          'application/json;charset=UTF-8': components['schemas']['profile-like-products-count1871095000'];
         };
       };
     };
